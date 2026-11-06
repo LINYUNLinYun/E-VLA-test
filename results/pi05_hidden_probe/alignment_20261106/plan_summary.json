@@ -1,0 +1,86 @@
+{
+  "experiment": "label-free pi05_libero -> PaliGemma alignment; color validation first",
+  "source_checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+  "target_checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224",
+  "source_layer": 3,
+  "target_layer": 3,
+  "selector": "image:base_0_rgb",
+  "tokens": 256,
+  "model_precision": "bfloat16",
+  "model_weights": "both frozen",
+  "paired_prompt": "cleaned original robot instruction + newline; same in both models",
+  "train_groups": [
+    "group_2d8da3b36a12d7ff",
+    "group_63652b791d58ea8f",
+    "group_73629ab5fa19fc0b",
+    "group_bb98f9d3cd54396f",
+    "group_bc0b33d6c2b09850",
+    "group_bfef821a1372bd8b",
+    "group_c4bce5cb30eb0a8e",
+    "group_f2de984f9f27b4c7"
+  ],
+  "validation_groups": [
+    "group_609440937bfa7441",
+    "group_addd7ac751a61507",
+    "group_c4094f4d20c39d28",
+    "group_da0251ecbb4615fc"
+  ],
+  "ridge_candidates": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "ridge_selection": "validation paired-state MSE only; no answer labels",
+  "probe": "mean-pool 256 Source tokens; separate binary ridge classifier; validation chooses regularization",
+  "fresh_test": {
+    "suite": "libero_goal",
+    "task": 8,
+    "init_offset": 40,
+    "scenes": 10,
+    "seed": 20261106,
+    "forbidden_origins_manifest": "/root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data_v2/manifest.jsonl",
+    "requirement": "reject previously used suite/task/init; no fitting/selection on new test answers"
+  },
+  "evaluation_routes": [
+    "identity",
+    "mean_scale",
+    "affine",
+    "target_own"
+  ],
+  "evaluation_controls": {
+    "black": 0,
+    "gray": 127
+  },
+  "evaluation_conditions": [
+    "real",
+    "shuffle",
+    "random"
+  ],
+  "max_new_tokens": 8,
+  "report": "candidate BAcc and short-answer generation separately; pairs and donor following",
+  "self_readout_gate": {
+    "matrix_verified": true,
+    "records": 3528,
+    "images": 24,
+    "scene_groups": 12,
+    "source_target_layer": 3,
+    "readout_gate_passed": true,
+    "records_sha256": "bb31ad71cbd71f1cf32caf80db306f3c3f0a71e48942a1ab191448f66224f47c",
+    "precision": "bfloat16",
+    "scope": "previous calibration data only; this does not establish cross-model alignment"
+  },
+  "old_test_policy": "previous test data is not used for fitting or validation",
+  "limitations": [
+    "color idea validation first",
+    "a learned map is not training-free",
+    "a readout does not establish action causality or first semantic layer"
+  ],
+  "identity": "63e4c11dd2e04d6f529fe66f8cc2c203473fe540e7e4db1762e61a3bf81831c4",
+  "source_pair_input_count": 60,
+  "supervised_probe_input_count": 24,
+  "original_plan_sha256": "c2debd11ea40d9c04f8edb513f287aae3d48a1e43c747a57a3f44fafe01613b8",
+  "publication_note": "Read-only scientific configuration summary. Input-row inventories and cache locations are omitted; this file does not replace the full runtime plan.json."
+}

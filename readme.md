@@ -18,7 +18,7 @@
 | idea1：层/模块跳过、去噪与多模型 | [方案与版本索引](docs/experiments/idea1/README.md) | 同一索引内各版本报告，包含阴性与中断记录 |
 | EASE insights：draft 迁移与内部路径 | [准备和实现](preparations/ease_insights_20261103/) | [证据总览](reports/ease_insights_20261103/README_zh.md)；内部路径类别互补性尚未复现 |
 | idea2：编码流水、KV 复用与批处理 | [实验文档](docs/experiments/idea2/) · [代码](preparations/idea2/) | [两阶段批处理报告](docs/experiments/idea2/idea2_batch_pipeline_two_stage_report_20261101.md) |
-| π0.5 隐藏表征与读出 | [方案](idea1_pi05_hidden_representation_inspect_plan.md) · [实现](experiments/pi05_hidden_probe/README.md) | [完成报告](results/pi05_hidden_probe/run_20261105/summary.md) · [self-readout](results/pi05_hidden_probe/self_readout_20261105/summary.md) |
+| π0.5 隐藏表征与读出 | [方案](idea1_pi05_hidden_representation_inspect_plan.md) · [实现](experiments/pi05_hidden_probe/README.md) | [发现与进度](docs/experiments/idea1/idea1_pi05_hidden_representation_report.md) · [首轮结果](results/pi05_hidden_probe/run_20261105/summary.md) |
 | π0.5 表征对齐 | [实现](experiments/pi05_representation_alignment/) | [准备入口](experiments/pi05_representation_alignment/prepare.py) · [评估入口](experiments/pi05_representation_alignment/evaluate.py) |
 | π0.5 SAE 语义与 FFN | [方案](pi05_sae_semantic_skipping_plan.md) · [实现](experiments/pi05_sae_semantic/README.md) | [首轮报告](results/pi05_sae_semantic/run_20261105/interim_results.md)；闭环质量与 GPU 净加速尚未验证 |
 
