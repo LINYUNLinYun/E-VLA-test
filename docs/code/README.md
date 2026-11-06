@@ -8,6 +8,7 @@
 | v3/v4 主线实现 | `preparations/idea1_v3*/`、`preparations/idea1_v4*/` |
 | EASE draft 迁移和内部路径 | `preparations/ease_insights_20261103/`、[证据总览](../../reports/ease_insights_20261103/README_zh.md) |
 | π0.5 隐藏表征与读出 | [实验实现](../../experiments/pi05_hidden_probe/README.md)、`experiments/pi05_self_readout/` |
+| π0.5 表征对齐 | `experiments/pi05_representation_alignment/` |
 | π0.5 SAE 语义与 FFN | [实验实现](../../experiments/pi05_sae_semantic/README.md) |
 | 视觉编码器 A/B | [实现与协议](../../experiments/pi05_vision_ab/README.md) |
 | 编码流水、KV 和批处理 | `preparations/idea2/`、[实验文档](../experiments/idea2/) |

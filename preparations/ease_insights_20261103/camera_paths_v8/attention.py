@@ -1,0 +1,85 @@
+"""Unlaunched role-selected edge masks with unchanged full QK/V storage."""
+from contextlib import contextmanager
+import threading
+import triton
+import triton.language as tl
+from .selection import language_query,state_query
+
+@triton.jit
+def selected_softmax(inp,queries:tl.constexpr,keys:tl.constexpr,prefix:tl.constexpr,out,keep,
+                     BLOCK_SIZE_M:tl.constexpr=4,BLOCK_SIZE:tl.constexpr=1024):
+    pid=tl.program_id(0);psize=tl.num_programs(0)
+    for i in range(pid*BLOCK_SIZE_M,queries,psize*BLOCK_SIZE_M):
+        rows=i+tl.arange(0,BLOCK_SIZE_M)[:,None];cols=tl.arange(0,BLOCK_SIZE)[None,:]
+        visual=tl.load(keep+cols,mask=cols<512,other=True)
+        retained=(cols>=512)|visual
+        mask=(rows<queries)&(cols<keys)&((rows>=8)|(cols<=prefix))&retained
+        values=tl.load(inp+rows*keys+cols,mask=mask,other=-float('inf'))
+        values=tl.exp(values-tl.max(values,axis=1,keep_dims=True))
+        values=values/tl.sum(values,axis=1,keep_dims=True,dtype=tl.float32)
+        tl.store(out+rows*keys+cols,values.to(tl.bfloat16),mask=(rows<queries)&(cols<keys))
+
+def require(value,message):
+    if not value:raise ValueError(message)
+
+class RoleAttention:
+    def __init__(self,native,bounded):
+        self.native=native;self.bounded=bounded;self.original=native.matmul_k8_256_n_softmax_mask0
+        self.kernel=selected_softmax;self.lock=threading.Lock()
+        self.language_selector=language_query;self.state_selector=state_query
+
+    @contextmanager
+    def use(self,context,mode):
+        require(mode in ('all','language_query','state_query'),'Unknown role strategy')
+        prefix=context['seq'];runtime=context['runtime'];buffers=runtime.buffers;original=dict(buffers)
+        require(512<prefix and prefix+51<=1024,'Unexpected actual native prefix length')
+        require(self.lock.acquire(blocking=False),'Role mask is serial and non-reentrant')
+        selection=None;calls=[];installed=False
+        audit=dict(mode=mode,original_prefix=prefix,storage_prefix=prefix,actual_total_key_tokens=prefix+51,
+            original_decoder_absolute_positions=list(range(prefix,prefix+51)),
+            visual_keys_per_camera=[256,256] if mode=='all' else [128,128],language_tokens_retained=prefix-512,
+            selector_calls=0,selection=None,selected_once_per_request=True,mask_reused_across_requests=False,
+            actual_QK_calls=0,actual_QK_shapes=[],original_buffer_references_preserved=False,
+            original_rope_table_reused=True,original_helper_restored=False,no_compaction=True,
+            prefix_compute_reduction_claimed=False,numerical_reference_only=False)
+        def select(value):
+            nonlocal selection
+            require(selection is None,'A role mask was already selected')
+            selection=value;audit['selector_calls']+=1
+            audit['selection']={k:v for k,v in value.items() if k not in ('mask','scores')}
+            keep=value['kept_visual_indices']
+            require(len(keep)==256 and keep==sorted(set(keep)) and sum(i<256 for i in keep)==128 and all(0<=i<512 for i in keep),'Invalid selected visual quota or original positions')
+            audit['kept_prefix_indices']=keep+list(range(512,prefix))
+        def wrapped(Q,K,out,encoder_seq_len,logits_out=None):
+            import torch
+            require(runtime.buffers is buffers and buffers['decoder_rope_weights'] is original['decoder_rope_weights'],'Original RoPE/storage identity changed')
+            m,n,d=Q.shape[0],K.shape[0],Q.shape[1]
+            require(encoder_seq_len==prefix and (m,n,d)==(408,prefix+51,256) and K.shape==(prefix+51,256)
+                and out.shape==(m,n) and all(t.is_contiguous() for t in (Q,K,out)),'Full native QK storage changed')
+            if mode=='all':self.original(Q,K,out,encoder_seq_len,logits_out)
+            else:
+                if selection is None:
+                    require(mode=='state_query' and len(calls)==0,'Only first AE L1 call may select state mask')
+                    select(self.state_selector(Q,K,prefix))
+                require(self.native.matmul_abT_scale is self.bounded,'Unbound QK kernel')
+                logits=out if logits_out is None else logits_out
+                require(logits.shape==out.shape and logits.is_contiguous() and logits.dtype in (torch.bfloat16,torch.float32),'Invalid logit buffer')
+                self.bounded[(((m+31)//32)*((n+31)//32),)](Q,K,logits,m,n,d,d**-.5,
+                    STORE_BF16=logits.dtype==torch.bfloat16,BLOCK_SIZE_M=32,BLOCK_SIZE_N=32,BLOCK_SIZE_K=64)
+                self.kernel[((m+3)//4,)](logits,m,n,prefix,out,selection['mask'],BLOCK_SIZE_M=4,BLOCK_SIZE=1024)
+            calls.append([m,n,d])
+        try:
+            require(self.native.matmul_k8_256_n_softmax_mask0 is self.original,'Attention helper already changed')
+            if mode=='language_query':select(self.language_selector(context))
+            if mode=='all':audit['kept_prefix_indices']=list(range(prefix))
+            self.native.matmul_k8_256_n_softmax_mask0=wrapped;installed=True;yield audit
+        finally:
+            try:
+                if installed:
+                    lost=self.native.matmul_k8_256_n_softmax_mask0 is not wrapped
+                    self.native.matmul_k8_256_n_softmax_mask0=self.original;audit['original_helper_restored']=True
+                    audit['actual_QK_calls']=len(calls);audit['actual_QK_shapes']=[list(x) for x in sorted({tuple(x) for x in calls})]
+                    audit['original_buffer_references_preserved']=runtime.buffers is buffers and set(buffers)==set(original) and all(buffers[k] is v for k,v in original.items())
+                    require(audit['original_buffer_references_preserved'],'Native buffers changed')
+                    if lost:raise RuntimeError('Attention helper ownership changed; original restored')
+            finally:self.lock.release()
