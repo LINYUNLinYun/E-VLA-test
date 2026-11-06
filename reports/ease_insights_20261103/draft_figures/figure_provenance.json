@@ -1,0 +1,209 @@
+{
+  "producer": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/plot_results.py",
+  "producer_sha256": "6ec8795cf263b3699dc499af9a9ae1c307c627fae208fa74a16fee915b03a91a",
+  "input_sha256": {
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_discovery_analysis/summary.json": "cd42e9dde6b8340620cbb8d385b2b58f1b74afa92ae32d81b5a364929d00ca6d",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_discovery_analysis/episodes.json": "c4db50aac2cbf9e51cbbd045d7ae345a38e08b8f52c988c906ff7334ed3b8b15",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_discovery_analysis/audit.json": "39d19cea43ce7fb0dbf3058105fdb809c97902d272868e0ab4ed0d7aa3126167",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_confirmation_analysis/summary.json": "2f1041c9479fcbcf5cd3fb411260eb4a4b84d91bd0f8bac83b7e47a83e652c06",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_confirmation_analysis/episodes.json": "eaae8542f04232f8e972efe1f8506a0baa03f4c1a34a911759c139530cc51f06",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_confirmation_analysis/audit.json": "1a8320c41fcf196705bb81274bad4ee3e6a63ad2499c47fdbd80a6586eb2ba6b",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json": "2b13bbe89412527834f07a03ab43069002a6e72e7837e5f1cfeb601b64c98c60"
+  },
+  "discovery": {
+    "status": "complete_exploratory_discovery",
+    "completed_episodes": 360,
+    "expected_episodes": 360
+  },
+  "replication": {
+    "status": "complete",
+    "plotted_conditions": [
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "draft",
+        "role": "matching",
+        "n": 40,
+        "successes": 40,
+        "success_rate": 1.0,
+        "policy_ms_per_executed_action": 4.131903614129641,
+        "client_rpc_ms_per_executed_action": 4.407485649214431,
+        "mean_episode_wall_seconds": 6.284234159812331,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "draft",
+        "role": "foreign",
+        "n": 40,
+        "successes": 0,
+        "success_rate": 0.0,
+        "policy_ms_per_executed_action": 1.9781882073065,
+        "client_rpc_ms_per_executed_action": 2.237212993869824,
+        "mean_episode_wall_seconds": 9.540721993334591,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "draft",
+        "role": "Full",
+        "n": 40,
+        "successes": 40,
+        "success_rate": 1.0,
+        "policy_ms_per_executed_action": 8.233703281772021,
+        "client_rpc_ms_per_executed_action": 8.503515851681835,
+        "mean_episode_wall_seconds": 6.894805861730129,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "flash",
+        "role": "matching",
+        "n": 40,
+        "successes": 40,
+        "success_rate": 1.0,
+        "policy_ms_per_executed_action": 7.1850996534096465,
+        "client_rpc_ms_per_executed_action": 7.5115169842570175,
+        "mean_episode_wall_seconds": 6.625655835680663,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "flash",
+        "role": "foreign",
+        "n": 40,
+        "successes": 39,
+        "success_rate": 0.975,
+        "policy_ms_per_executed_action": 9.48611127813108,
+        "client_rpc_ms_per_executed_action": 9.954017829244446,
+        "mean_episode_wall_seconds": 7.475819468311966,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_object",
+        "comparison_mode": "flash",
+        "role": "Full",
+        "n": 40,
+        "successes": 40,
+        "success_rate": 1.0,
+        "policy_ms_per_executed_action": 8.233703281772021,
+        "client_rpc_ms_per_executed_action": 8.503515851681835,
+        "mean_episode_wall_seconds": 6.894805861730129,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "draft",
+        "role": "matching",
+        "n": 40,
+        "successes": 35,
+        "success_rate": 0.875,
+        "policy_ms_per_executed_action": 5.202450712112196,
+        "client_rpc_ms_per_executed_action": 5.470304416329985,
+        "mean_episode_wall_seconds": 7.461709229275584,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "draft",
+        "role": "foreign",
+        "n": 40,
+        "successes": 0,
+        "success_rate": 0.0,
+        "policy_ms_per_executed_action": 3.061611590568315,
+        "client_rpc_ms_per_executed_action": 3.3301212562417444,
+        "mean_episode_wall_seconds": 10.324555639456957,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "draft",
+        "role": "Full",
+        "n": 40,
+        "successes": 37,
+        "success_rate": 0.925,
+        "policy_ms_per_executed_action": 11.419368549527682,
+        "client_rpc_ms_per_executed_action": 11.686807560773213,
+        "mean_episode_wall_seconds": 7.518161184992641,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "flash",
+        "role": "matching",
+        "n": 40,
+        "successes": 39,
+        "success_rate": 0.975,
+        "policy_ms_per_executed_action": 12.492180616007428,
+        "client_rpc_ms_per_executed_action": 12.90678729413014,
+        "mean_episode_wall_seconds": 7.96221253760159,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "flash",
+        "role": "foreign",
+        "n": 40,
+        "successes": 39,
+        "success_rate": 0.975,
+        "policy_ms_per_executed_action": 15.608326928198057,
+        "client_rpc_ms_per_executed_action": 16.100873563544088,
+        "mean_episode_wall_seconds": 8.090160757862032,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      },
+      {
+        "target_suite": "libero_spatial",
+        "comparison_mode": "flash",
+        "role": "Full",
+        "n": 40,
+        "successes": 37,
+        "success_rate": 0.925,
+        "policy_ms_per_executed_action": 11.419368549527682,
+        "client_rpc_ms_per_executed_action": 11.686807560773213,
+        "mean_episode_wall_seconds": 7.518161184992641,
+        "policy_metric": "sum(complete native policy-call wall ms) / sum(actually executed actions), including zero-action rejection requests",
+        "cold_calls_included": true
+      }
+    ]
+  },
+  "axes": {
+    "rows": "source checkpoint",
+    "columns": "target evaluation suite",
+    "suite_order": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ]
+  },
+  "missing_data": "White cells labeled missing; never imputed as zero",
+  "fallback_definition": "rejection_full_fraction excludes initial and periodic Full; all-Full-route share saved separately",
+  "timing_definition": "complete native policy/RPC ms per actually executed action, charging rejected zero-action requests; real episode wall and success counts alongside. Mean request latency alone is not actual speedup. GPU stage total_ms is not end-to-end.",
+  "statistical_scope": "Discovery is exploratory; independent graphs require only init21–24",
+  "outputs": [
+    "discovery_overview.pdf",
+    "discovery_overview.png",
+    "flash_acceptance.pdf",
+    "flash_acceptance.png",
+    "flash_all_full.pdf",
+    "flash_all_full.png",
+    "flash_rejection_full.pdf",
+    "flash_rejection_full.png",
+    "flash_success.pdf",
+    "flash_success.png",
+    "independent_replication.pdf",
+    "independent_replication.png",
+    "pure_success.pdf",
+    "pure_success.png"
+  ]
+}

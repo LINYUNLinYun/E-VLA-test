@@ -1,0 +1,10 @@
+--- steady policy.py
++++ final policy.py
+@@ -167,6 +167,7 @@
+                 # Layout changes cannot reuse captured addresses. Drain owned
+                 # events/leases before dropping the only two KV buffers.
+                 self.reset()
++                self.pool.task = instruction
+                 self.graphs.close()
+                 self.graphs = None
+             if self.graphs is None:

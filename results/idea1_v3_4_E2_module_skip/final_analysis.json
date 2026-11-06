@@ -1,0 +1,339 @@
+{
+  "status": "complete",
+  "manifest_hash": "cf9ac44ea0fede5f6c81249467e6f28ff52d1d28b2d068e15d29d097643cde2d",
+  "primary_matrix": {
+    "new": 400,
+    "reused": 80,
+    "total": 480,
+    "audit_passed": true,
+    "strict_prefix_exclusions": 0,
+    "warm_prefix_exclusions": 0
+  },
+  "conditions": [
+    {
+      "condition": "B4_B-R+",
+      "n": 40,
+      "success": 26,
+      "five_request_hot_mean_ms": 94.60574450642474
+    },
+    {
+      "condition": "B4_B-E+",
+      "n": 40,
+      "success": 30,
+      "five_request_hot_mean_ms": 92.77148519526736
+    },
+    {
+      "condition": "B4_F-R0",
+      "n": 40,
+      "success": 31,
+      "five_request_hot_mean_ms": 92.47764550411522
+    },
+    {
+      "condition": "B4_F-R+",
+      "n": 40,
+      "success": 26,
+      "five_request_hot_mean_ms": 92.90955100431401
+    },
+    {
+      "condition": "B4_F-E+",
+      "n": 40,
+      "success": 27,
+      "five_request_hot_mean_ms": 93.33041173980591
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "n": 40,
+      "success": 27,
+      "five_request_hot_mean_ms": 63.035248276625296
+    },
+    {
+      "condition": "B6_B-R+",
+      "n": 40,
+      "success": 20,
+      "five_request_hot_mean_ms": 92.97125348854664
+    },
+    {
+      "condition": "B6_B-E+",
+      "n": 40,
+      "success": 20,
+      "five_request_hot_mean_ms": 91.09351936631002
+    },
+    {
+      "condition": "B6_F-R0",
+      "n": 40,
+      "success": 20,
+      "five_request_hot_mean_ms": 90.9503045275962
+    },
+    {
+      "condition": "B6_F-R+",
+      "n": 40,
+      "success": 17,
+      "five_request_hot_mean_ms": 91.35342528953136
+    },
+    {
+      "condition": "B6_F-E+",
+      "n": 40,
+      "success": 26,
+      "five_request_hot_mean_ms": 91.43974579953793
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "n": 40,
+      "success": 22,
+      "five_request_hot_mean_ms": 61.4555191573158
+    }
+  ],
+  "paired_exploratory": [
+    {
+      "budget": "B4",
+      "comparison": "granularity",
+      "n": 40,
+      "baseline_success": 26,
+      "candidate_success": 26,
+      "recovered": 7,
+      "new_failures": 7,
+      "delta_pp": -0.0,
+      "ci95_pp": [
+        -17.5,
+        17.5
+      ]
+    },
+    {
+      "budget": "B4",
+      "comparison": "compensation",
+      "n": 40,
+      "baseline_success": 31,
+      "candidate_success": 26,
+      "recovered": 4,
+      "new_failures": 9,
+      "delta_pp": -12.5,
+      "ci95_pp": [
+        -27.5,
+        0.0
+      ]
+    },
+    {
+      "budget": "B4",
+      "comparison": "error_scoring",
+      "n": 40,
+      "baseline_success": 26,
+      "candidate_success": 27,
+      "recovered": 3,
+      "new_failures": 2,
+      "delta_pp": 2.5,
+      "ci95_pp": [
+        0.0,
+        7.5
+      ]
+    },
+    {
+      "budget": "B4",
+      "comparison": "controlled_granularity",
+      "n": 40,
+      "baseline_success": 30,
+      "candidate_success": 27,
+      "recovered": 3,
+      "new_failures": 6,
+      "delta_pp": -7.5,
+      "ci95_pp": [
+        -22.5,
+        7.5
+      ]
+    },
+    {
+      "budget": "B4",
+      "comparison": "dynamic_vs_fixed",
+      "n": 40,
+      "baseline_success": 27,
+      "candidate_success": 27,
+      "recovered": 6,
+      "new_failures": 6,
+      "delta_pp": 0.0,
+      "ci95_pp": [
+        -17.5,
+        20.0
+      ]
+    },
+    {
+      "budget": "B6",
+      "comparison": "granularity",
+      "n": 40,
+      "baseline_success": 20,
+      "candidate_success": 17,
+      "recovered": 5,
+      "new_failures": 8,
+      "delta_pp": -7.5,
+      "ci95_pp": [
+        -27.5,
+        12.5
+      ]
+    },
+    {
+      "budget": "B6",
+      "comparison": "compensation",
+      "n": 40,
+      "baseline_success": 20,
+      "candidate_success": 17,
+      "recovered": 9,
+      "new_failures": 12,
+      "delta_pp": -7.5,
+      "ci95_pp": [
+        -30.0,
+        17.5
+      ]
+    },
+    {
+      "budget": "B6",
+      "comparison": "error_scoring",
+      "n": 40,
+      "baseline_success": 17,
+      "candidate_success": 26,
+      "recovered": 10,
+      "new_failures": 1,
+      "delta_pp": 22.5,
+      "ci95_pp": [
+        7.5,
+        37.5
+      ]
+    },
+    {
+      "budget": "B6",
+      "comparison": "controlled_granularity",
+      "n": 40,
+      "baseline_success": 20,
+      "candidate_success": 26,
+      "recovered": 10,
+      "new_failures": 4,
+      "delta_pp": 15.0,
+      "ci95_pp": [
+        -2.5,
+        35.0
+      ]
+    },
+    {
+      "budget": "B6",
+      "comparison": "dynamic_vs_fixed",
+      "n": 40,
+      "baseline_success": 22,
+      "candidate_success": 26,
+      "recovered": 10,
+      "new_failures": 6,
+      "delta_pp": 10.0,
+      "ci95_pp": [
+        -10.0,
+        27.5
+      ]
+    }
+  ],
+  "new_dynamic_timing": {
+    "hot_cycles": 2076,
+    "hot_requests": 10380,
+    "full_hot": {
+      "mean_ms": 260.18837461273165,
+      "p95_ms": 271.38223964720964,
+      "max_ms": 300.6850779056549
+    },
+    "selector_hot_per_full_ms": 149.25635250927684,
+    "selector_hot_amortized_per_request_ms": 29.851270501855367,
+    "selector_fraction_of_hot_full": 0.5736472766372913,
+    "selector_fraction_of_hot_cycles": 0.3246960451940147
+  },
+  "fixed": {
+    "episodes": 80,
+    "requests": 4131,
+    "fulls": 852,
+    "vjp_count": 0,
+    "selector_total_ms": 0.0,
+    "selector_hot_ms": 0.0,
+    "selector_capture_ms": 0.0,
+    "zero_vjp_and_selector_capture_verified": true
+  },
+  "fixed_vs_dynamic": [
+    {
+      "budget": "B4",
+      "dynamic": "F-E+",
+      "fixed": "F-Fixed+",
+      "dynamic_success": 27,
+      "fixed_success": 27,
+      "n_each": 40,
+      "dynamic_cycle_ms": 93.33041173980591,
+      "fixed_cycle_ms": 63.035248276625296,
+      "fixed_descriptive_cost_reduction_fraction": 0.3246011980279261,
+      "dynamic_quality_delta_pp": 0.0,
+      "quality_ci_pp": [
+        -17.5,
+        20.0
+      ],
+      "recovered": 6,
+      "new_failures": 6,
+      "scope": "descriptive costs from own free trajectories; paired exploratory quality, not noninferiority or same-input causal timing"
+    },
+    {
+      "budget": "B6",
+      "dynamic": "F-E+",
+      "fixed": "F-Fixed+",
+      "dynamic_success": 26,
+      "fixed_success": 22,
+      "n_each": 40,
+      "dynamic_cycle_ms": 91.43974579953793,
+      "fixed_cycle_ms": 61.4555191573158,
+      "fixed_descriptive_cost_reduction_fraction": 0.327912401549717,
+      "dynamic_quality_delta_pp": 10.0,
+      "quality_ci_pp": [
+        -10.0,
+        27.500000000000004
+      ],
+      "recovered": 10,
+      "new_failures": 6,
+      "scope": "descriptive costs from own free trajectories; paired exploratory quality, not noninferiority or same-input causal timing"
+    }
+  ],
+  "full_d10_background": {
+    "n": 36,
+    "full_success": 35,
+    "best_observed_B4_F_R0_success": 29,
+    "B6_F_E_plus_success": 24,
+    "scope": "posthoc matched quality background; difference combines D2 and VLM skipping, not timing evidence"
+  },
+  "late_fast_counterfactual": {
+    "status": "stopped_reference_mismatch",
+    "completed_observations": 0,
+    "target_observations": 48,
+    "uncompensated_counterfactuals_dispatched": 0,
+    "probe_native_requests": 3,
+    "base_model_requests": 832,
+    "combined_model_requests": 835,
+    "maximum_model_requests": 1000,
+    "reference_failure": "reference_failure.json",
+    "retry_allowed": false,
+    "time": 1793539537.802027
+  },
+  "late_reference_gate": {
+    "raw_equal": false,
+    "actions_equal": false,
+    "raw_max_abs": 0.015625,
+    "actions_max_abs": 0.00977688655257225,
+    "atol": 1e-05,
+    "rtol": 1e-05,
+    "passed": false
+  },
+  "limitations": [
+    "40 previously used exploratory cases, not unseen validation; intervals not adjusted for multiple comparisons",
+    "FFN-only primary matrix; optional mixed attention/FFN stage and 200-case expansion were not run",
+    "First-Fast compensation mechanism is paired; later-age error growth is descriptive because the additional reference gate failed",
+    "Historical B-R timing and free-trajectory means are not same-input causal module speed measurements",
+    "Fixed uses one frozen random root; equal aggregate success does not establish noninferiority"
+  ],
+  "source_sha256": {
+    "audit.json": "60b805b33a76cecbe6f5ed53a46000c452a379109039dc947db8e59a938af9c5",
+    "summary.csv": "eab612ea7e456bbbb3ae6c98912f98c41f027e04f0dc2923bc6f55f8e44bd887",
+    "paired.csv": "4699ac59f530e688874861e5c827ad926499a75428f94b7084c221d23bdd0fa1",
+    "final_timing_analysis.json": "3a764e76b838e12282f7da2287931268ff2933ea044eaf622469cf3050ea9a3f",
+    "full_d10_background_36.json": "103df284fc602bf2c817ac47e72969dd624e687b50241254f87824b29e87c572",
+    "full_d10_background_36_comparison.json": "198d32e039048ed5acb83b186fcde63c7d4dd126cbac4be4109b57bcaa5c9d72",
+    "late_fast_probe/reference_failure.json": "081cd7c9d87598b0911f1343a2051fc1c7b2c75f45eede5d79f0d8f0d8028eda",
+    "late_fast_probe/failure_analysis.json": "2b6754692b01f0cbe5ee3fab3ca9ad3dea8cd065bae5a1f2efe1e81e83ca81e9"
+  },
+  "time": 1793539537.8149858,
+  "late_reference_failure_analysis": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/late_fast_probe/failure_analysis.json"
+}

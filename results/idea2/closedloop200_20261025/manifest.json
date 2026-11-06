@@ -1,0 +1,48 @@
+{
+  "status": "running",
+  "created_utc": "2026-10-25T09:40:29.728000+00:00",
+  "objective": "200 fixed closed-loop cases per arm to quantify success impact of approximate pipelines",
+  "plan": "docs/experiments/idea2/idea2_closedloop200_plan_20261025.md",
+  "case_universe": "case_universe.json",
+  "conditions": [
+    "fresh18",
+    "sm16_tail0",
+    "sm32_tail0",
+    "sm32_tail2"
+  ],
+  "per_condition": 200,
+  "total_episodes": 800,
+  "reused_episodes": 32,
+  "new_expected": 768,
+  "reuse_proof": "reuse32.json",
+  "statistics_plan": "prospective_statistics.md",
+  "dispatcher": "dispatch_execution.json",
+  "progress": "reports/idea2_closedloop200_20261025/progress.json",
+  "normalized_cases": "normalized_cases.json",
+  "runner_sha256": "4c669289e76d713ad013f613572c69a85eb30c3650621d1e90cd8b4d57385092",
+  "source_policy": "frozen original runtime/model/client, new task batching harness only",
+  "resources": {
+    "GPU2": "active main worker",
+    "GPU3": "E4 explicitly released; handoff verified idle twice, active second worker",
+    "GPU0/1": "excluded occupied externally"
+  },
+  "protocol": {
+    "D": 10,
+    "H": 10,
+    "R": 5,
+    "env_seed": 7,
+    "settling_steps": 10,
+    "B": 1,
+    "body_precision": "BF16",
+    "next_encoder": false
+  },
+  "statistical_claim": "No noninferiority margin presumed; confidence interval and paired failures reported, no p>0.05=unaffected claim",
+  "environment_reuse": false,
+  "pending": [
+    "complete 768 new episodes",
+    "statistics and paired failure audit",
+    "final report and resource release"
+  ],
+  "resource_handoff": "gpu3_handoff.json",
+  "dispatch_port_recovery": "Zero-episode chunk1 preflight Errno98 retained; unique per-chunk ports, initial passed64 new cases never rerun"
+}

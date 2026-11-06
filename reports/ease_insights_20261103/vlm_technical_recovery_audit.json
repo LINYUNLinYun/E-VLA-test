@@ -1,0 +1,922 @@
+{
+  "schema": "ease-vlm-technical-recovery-independent-audit-v1",
+  "status": "passed",
+  "scope": "Recovery of one completed full_d10 case after receipt-finalization TypeError; no new GPU inference initiated by this audit.",
+  "scientific_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+  "manifest_file_sha256": "b2640fb3482ff61b53fe1d45cb6cbea0a9754a4e2bd6b48244958747ea5b6e7d",
+  "case": {
+    "suite": "libero_spatial",
+    "task": 0,
+    "init": 30
+  },
+  "condition": "full_d10",
+  "finding": "Canonical is the earliest completed attempt by complete.json mtime; all original files and all 29 scientific source files are unchanged. Two complete duplicate attempts remain archived and are excluded from the science denominator. Actual worker_v2 argv is independently observed.",
+  "canonical_selection": {
+    "rule": "Earliest complete.json mtime_ns, with lexical original path only for exact timestamp ties; outcome ignored",
+    "chosen_original_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30.invalid.fd1b4a33b31749db9934892b8e1bc60a",
+    "canonical_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30",
+    "independent_before_snapshot_available": true,
+    "selected_by_completion_time_not_outcome": true,
+    "retained_for_analysis": 1,
+    "complete_duplicates_excluded": 2,
+    "all_three_outcomes_happen_to_match": true
+  },
+  "attempts": [
+    {
+      "original_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30.invalid.fd1b4a33b31749db9934892b8e1bc60a",
+      "current_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30",
+      "complete_mtime_ns": "1793697738270042739",
+      "result_mtime_ns": "1793697738270042739",
+      "technical_error": {
+        "error": "TypeError('list indices must be integers or slices, not str')",
+        "attempt": 1,
+        "time": 1793697739.237522
+      },
+      "result": {
+        "valid": true,
+        "success": true,
+        "manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 30
+        },
+        "actions": 76,
+        "predictions": 16,
+        "termination": "success",
+        "wall_s": 13.359083581715822
+      },
+      "first_request": {
+        "input_hash": "2e3dcd668b99abc400b980e11d6deaa3c01824db4646335713f6b5098e9cb464",
+        "input_file_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+        "model_noise_sha256": "d060d154e3b5b3b95b07dea93ed81c120304a3808a1f0592739af83ae91acc97",
+        "seed": 1575781658
+      },
+      "scheduled_NFE_counts": {
+        "2": 0,
+        "10": 16
+      },
+      "file_checks": [
+        {
+          "name": "input_0000.npz",
+          "before_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "after_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "unchanged": true,
+          "after_mtime_ns": "1793697734810043455"
+        },
+        {
+          "name": "identity.json",
+          "before_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "after_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "unchanged": true,
+          "after_mtime_ns": "1793697733750043674"
+        },
+        {
+          "name": "infer.jsonl",
+          "before_sha256": "1c20d1911d1b0102f850c794f9e7dbaefb13ad2b222c96efa882d8ac0c67ceac",
+          "after_sha256": "1c20d1911d1b0102f850c794f9e7dbaefb13ad2b222c96efa882d8ac0c67ceac",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738250042743"
+        },
+        {
+          "name": "telemetry.jsonl",
+          "before_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "after_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738260042741"
+        },
+        {
+          "name": "arrays.npz",
+          "before_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "after_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738270042739"
+        },
+        {
+          "name": "technical_error.json",
+          "before_sha256": "4fe91134c8c1a8164163add356a30b0392633bd46a2e2a3dedcbeab6df2111c5",
+          "after_sha256": "4fe91134c8c1a8164163add356a30b0392633bd46a2e2a3dedcbeab6df2111c5",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738470042698"
+        },
+        {
+          "name": "result.json",
+          "before_sha256": "7f4aae59c405b970f3ab53b94f725c13037f0966144fccc35e950488ee5c7356",
+          "after_sha256": "7f4aae59c405b970f3ab53b94f725c13037f0966144fccc35e950488ee5c7356",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738270042739"
+        },
+        {
+          "name": "complete.json",
+          "before_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "after_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "unchanged": true,
+          "after_mtime_ns": "1793697738270042739"
+        }
+      ],
+      "added_administrative_files": [
+        "episode_receipt.json",
+        "recovery_receipt.json"
+      ]
+    },
+    {
+      "original_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30.invalid.a4d19dda1b5842e7b46558cebf9544f8",
+      "current_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30.invalid.a4d19dda1b5842e7b46558cebf9544f8",
+      "complete_mtime_ns": "1793697744890041370",
+      "result_mtime_ns": "1793697744890041370",
+      "technical_error": {
+        "error": "TypeError('list indices must be integers or slices, not str')",
+        "attempt": 2,
+        "time": 1793697745.857641
+      },
+      "result": {
+        "valid": true,
+        "success": true,
+        "manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 30
+        },
+        "actions": 76,
+        "predictions": 16,
+        "termination": "success",
+        "wall_s": 6.404636140912771
+      },
+      "first_request": {
+        "input_hash": "2e3dcd668b99abc400b980e11d6deaa3c01824db4646335713f6b5098e9cb464",
+        "input_file_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+        "model_noise_sha256": "d060d154e3b5b3b95b07dea93ed81c120304a3808a1f0592739af83ae91acc97",
+        "seed": 1575781658
+      },
+      "scheduled_NFE_counts": {
+        "2": 0,
+        "10": 16
+      },
+      "file_checks": [
+        {
+          "name": "input_0000.npz",
+          "before_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "after_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "unchanged": true,
+          "after_mtime_ns": "1793697741380042096"
+        },
+        {
+          "name": "identity.json",
+          "before_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "after_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "unchanged": true,
+          "after_mtime_ns": "1793697741230042127"
+        },
+        {
+          "name": "infer.jsonl",
+          "before_sha256": "c93ced9f50c7e2ef2750a59129be08bea0ee7cc7576a8dd05d2cb9b372d255f8",
+          "after_sha256": "c93ced9f50c7e2ef2750a59129be08bea0ee7cc7576a8dd05d2cb9b372d255f8",
+          "unchanged": true,
+          "after_mtime_ns": "1793697744860041376"
+        },
+        {
+          "name": "telemetry.jsonl",
+          "before_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "after_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "unchanged": true,
+          "after_mtime_ns": "1793697744870041374"
+        },
+        {
+          "name": "arrays.npz",
+          "before_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "after_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "unchanged": true,
+          "after_mtime_ns": "1793697744880041372"
+        },
+        {
+          "name": "technical_error.json",
+          "before_sha256": "0f4d225d88c8c8bc40d005e862e34e319aa0b6caefcaabd325f9a2ead6e04f3e",
+          "after_sha256": "0f4d225d88c8c8bc40d005e862e34e319aa0b6caefcaabd325f9a2ead6e04f3e",
+          "unchanged": true,
+          "after_mtime_ns": "1793697745090041328"
+        },
+        {
+          "name": "result.json",
+          "before_sha256": "57bc05366e6b5ff931f6c6eea5023d240466af74d696419262a2a3f7cf9cf32a",
+          "after_sha256": "57bc05366e6b5ff931f6c6eea5023d240466af74d696419262a2a3f7cf9cf32a",
+          "unchanged": true,
+          "after_mtime_ns": "1793697744890041370"
+        },
+        {
+          "name": "complete.json",
+          "before_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "after_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "unchanged": true,
+          "after_mtime_ns": "1793697744890041370"
+        }
+      ],
+      "added_administrative_files": []
+    },
+    {
+      "original_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30",
+      "current_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30.duplicate.4fc37f8c6f6243b2b70e64144bc64def",
+      "complete_mtime_ns": "1793697751590039984",
+      "result_mtime_ns": "1793697751590039984",
+      "technical_error": {
+        "error": "TypeError('list indices must be integers or slices, not str')",
+        "attempt": 3,
+        "time": 1793697752.5568678
+      },
+      "result": {
+        "valid": true,
+        "success": true,
+        "manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 30
+        },
+        "actions": 76,
+        "predictions": 16,
+        "termination": "success",
+        "wall_s": 6.485542733222246
+      },
+      "first_request": {
+        "input_hash": "2e3dcd668b99abc400b980e11d6deaa3c01824db4646335713f6b5098e9cb464",
+        "input_file_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+        "model_noise_sha256": "d060d154e3b5b3b95b07dea93ed81c120304a3808a1f0592739af83ae91acc97",
+        "seed": 1575781658
+      },
+      "scheduled_NFE_counts": {
+        "2": 0,
+        "10": 16
+      },
+      "file_checks": [
+        {
+          "name": "input_0000.npz",
+          "before_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "after_sha256": "692c42bae2e7b08ec92f0809b859fd3723a58afd50b90d9d35e7a8347ec62014",
+          "unchanged": true,
+          "after_mtime_ns": "1793697747990040728"
+        },
+        {
+          "name": "identity.json",
+          "before_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "after_sha256": "19a5bb083da82993adaf51ae7532f5c482024a8f6ebacab56f91301f3a4400ca",
+          "unchanged": true,
+          "after_mtime_ns": "1793697747840040759"
+        },
+        {
+          "name": "infer.jsonl",
+          "before_sha256": "9087f13a935b9dfb44c98ec8e7ba9b2603d80f3de62edceb419ac9241351097a",
+          "after_sha256": "9087f13a935b9dfb44c98ec8e7ba9b2603d80f3de62edceb419ac9241351097a",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751560039990"
+        },
+        {
+          "name": "telemetry.jsonl",
+          "before_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "after_sha256": "1653d721d511f2d6f1d045e13b2869a8f57cdd69f51b473d65353d5c6d7dead4",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751570039988"
+        },
+        {
+          "name": "arrays.npz",
+          "before_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "after_sha256": "b0d147e10e69155408c998affa8396c7aa081c71fa299efb038faaab98960d7a",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751580039986"
+        },
+        {
+          "name": "technical_error.json",
+          "before_sha256": "8f45b75cbb30762b8dac50021d16d112adb35b46f92fdaebd111e0d0b4561451",
+          "after_sha256": "8f45b75cbb30762b8dac50021d16d112adb35b46f92fdaebd111e0d0b4561451",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751790039942"
+        },
+        {
+          "name": "result.json",
+          "before_sha256": "f89490b2d8439196379e9aa810afc08fb5389a8aa23d0026f5cc1b3b40beaf23",
+          "after_sha256": "f89490b2d8439196379e9aa810afc08fb5389a8aa23d0026f5cc1b3b40beaf23",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751590039984"
+        },
+        {
+          "name": "complete.json",
+          "before_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "after_sha256": "0fe4694ff79319336cbc86e0000c8f29c0e11f527a8d783002ae7486d035cb1c",
+          "unchanged": true,
+          "after_mtime_ns": "1793697751590039984"
+        }
+      ],
+      "added_administrative_files": []
+    }
+  ],
+  "trajectory_and_initial_identity": {
+    "all_telemetry_sha256_equal": true,
+    "all_arrays_npz_sha256_equal": true,
+    "all_first_input_hash_equal": true,
+    "all_first_noise_hash_equal": true,
+    "all_seed_equal": true
+  },
+  "technical_failure": {
+    "error": "TypeError('list indices must be integers or slices, not str')",
+    "stage": "After native scientific result.json and complete.json; receipt finalize read a list as a dict.",
+    "backend_export": "timing.nodes is an 11-node D10 schedule list; the internal actual_NFE counter is not exported.",
+    "v2_claim": "Checks scheduled_NFE = len(nodes)-1 and records actual_NFE_exported=false; does not claim an independently exported actual counter.",
+    "canonical_ae_audit": {
+      "scope": "exported schedule nodes",
+      "scheduled_NFE_counts": {
+        "10": 16
+      },
+      "actual_NFE_exported": false,
+      "note": "Frozen backend exports time nodes only, not the internal actual_NFE counter"
+    },
+    "completed_science_is_no_longer_retried_on_receipt_failure": true
+  },
+  "code_scope": {
+    "independent_before_after_source_checks": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/manifest.json",
+        "before_sha256": "b2640fb3482ff61b53fe1d45cb6cbea0a9754a4e2bd6b48244958747ea5b6e7d",
+        "after_sha256": "b2640fb3482ff61b53fe1d45cb6cbea0a9754a4e2bd6b48244958747ea5b6e7d",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/common.py",
+        "before_sha256": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+        "after_sha256": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/policy.py",
+        "before_sha256": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+        "after_sha256": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/backend.py",
+        "before_sha256": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+        "after_sha256": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/worker.py",
+        "before_sha256": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+        "after_sha256": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/runner.py",
+        "before_sha256": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+        "after_sha256": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/server.py",
+        "before_sha256": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+        "after_sha256": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+        "unchanged": true
+      }
+    ],
+    "all_scientific_sources_match_manifest": true,
+    "scientific_source_count": 29,
+    "scientific_source_checks": [
+      {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/experiment10/backend.py",
+        "expected": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+        "actual": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py",
+        "expected": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+        "actual": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/fastpath/gpu_binding.py",
+        "expected": "cd3ccd178d46a08ad35b9101fca471622422ca70d62cd536abf7de40bee95e16",
+        "actual": "cd3ccd178d46a08ad35b9101fca471622422ca70d62cd536abf7de40bee95e16",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/__init__.py",
+        "expected": "5d571bbf4a033360af4cb4fbaa2b2a55ad9bcbc865639a1c141c51017e6172f8",
+        "actual": "5d571bbf4a033360af4cb4fbaa2b2a55ad9bcbc865639a1c141c51017e6172f8",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/backend.py",
+        "expected": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+        "actual": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/benchmark.py",
+        "expected": "5797be691721324ee9592a7bbb8fd75c8647982a7289cf2667a0f55a33cf3b5b",
+        "actual": "5797be691721324ee9592a7bbb8fd75c8647982a7289cf2667a0f55a33cf3b5b",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/common.py",
+        "expected": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+        "actual": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/gate.py",
+        "expected": "a61fa631db3e35080c1a70afb7cce5b5c2fed6f4c55b8435989e9225c611d7d8",
+        "actual": "a61fa631db3e35080c1a70afb7cce5b5c2fed6f4c55b8435989e9225c611d7d8",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/policy.py",
+        "expected": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+        "actual": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/prepare.py",
+        "expected": "7ebaabd1feeac6c2ef710c0a702867b800ac84e12406f46c2a16234dac8c5592",
+        "actual": "7ebaabd1feeac6c2ef710c0a702867b800ac84e12406f46c2a16234dac8c5592",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/runner.py",
+        "expected": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+        "actual": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/server.py",
+        "expected": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+        "actual": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/test_protocol.py",
+        "expected": "8c152c4ac3614f1830aacb615e7eabd70289d6bc4b0a0a1b606c48381ef985bf",
+        "actual": "8c152c4ac3614f1830aacb615e7eabd70289d6bc4b0a0a1b606c48381ef985bf",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/worker.py",
+        "expected": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+        "actual": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_1/runtime_client.py",
+        "expected": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+        "actual": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_1/runtime_models.py",
+        "expected": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+        "actual": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/common.py",
+        "expected": "34b0647adc7ea50620617193a0190ef9a13ef43856d49d4fd8f81391cdbfc19c",
+        "actual": "34b0647adc7ea50620617193a0190ef9a13ef43856d49d4fd8f81391cdbfc19c",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/pi0_adapter.py",
+        "expected": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+        "actual": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/provenance.py",
+        "expected": "2b98ca3c8bcb711fd1ce33b635f8bbdcd373a3246e7f3fc438989ae0d587029d",
+        "actual": "2b98ca3c8bcb711fd1ce33b635f8bbdcd373a3246e7f3fc438989ae0d587029d",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3/io.py",
+        "expected": "574d5bb7c900f90711648e7a5c17de5edfd7f8106251284fd682b02c4ba755d9",
+        "actual": "574d5bb7c900f90711648e7a5c17de5edfd7f8106251284fd682b02c4ba755d9",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3/policy.py",
+        "expected": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+        "actual": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3/safe_qk.py",
+        "expected": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+        "actual": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/benchmark.py",
+        "expected": "64940dc54a44de94e14ac1a6f1789c56fb8561e1f7b44704a797bdb43446660a",
+        "actual": "64940dc54a44de94e14ac1a6f1789c56fb8561e1f7b44704a797bdb43446660a",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/common.py",
+        "expected": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+        "actual": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/rollout.py",
+        "expected": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+        "actual": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4/rollout.py",
+        "expected": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+        "actual": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_E2_E4_single/torch_model.py",
+        "expected": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+        "actual": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_v12_compensation/backend.py",
+        "expected": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+        "actual": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+        "unchanged": true
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_v12_compensation/common.py",
+        "expected": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c",
+        "actual": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c",
+        "unchanged": true
+      }
+    ],
+    "new_runtime_revision": {
+      "name": "vlm-technical-receipt-v2",
+      "scientific_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+      "purpose": "Interpret exported schedule-node lists; retain earliest complete scientific outcome; never retry completed science",
+      "source_files": {
+        "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+        "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+        "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3"
+      },
+      "model_backend_policy_changed": false,
+      "scientific_manifest_changed": false,
+      "revision_hash": "40935f16a3d2de77d3c05cafc5e6545d03e61797db6545573a5b1c9bca6f785d"
+    },
+    "reviewed_changes": [
+      "worker_v2 changes schedule-list parsing, adds administrative provenance, and separates receipt finalization failures from scientific retries.",
+      "runner_v2 dispatches worker_v2 while retaining the original model server and adds actual argv/revision provenance.",
+      "recovery.py chooses by earliest native completion timestamp, preserves all original files, renames only directories, and writes administrative receipts."
+    ],
+    "model_policy_backend_checkpoint_scientific_manifest_changed": false
+  },
+  "deduplication_loader_check": {
+    "canonical_case_count": 1,
+    "canonical_success": true,
+    "all_loaded_records": 1,
+    "missing": 159,
+    "invalid": [],
+    "case_receipt": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30/episode_receipt.json",
+        "sha256": "151568ec56249dcd219abafa1bc650bc4db3702e42e4a5d15cf12a1d3b2c9e04"
+      }
+    ]
+  },
+  "dispatch": {
+    "dry_run_receipt": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/technical_recovery/dispatch_check.json",
+      "sha256": "15b952133574d9745b451683a5772a7468bc102184c510d652069dd788f491e4",
+      "data": {
+        "dry_run_only": true,
+        "no_process_spawned": true,
+        "commands": {
+          "dry_run": true,
+          "episodes": 40,
+          "preflight_only": false,
+          "server": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-m",
+            "preparations.ease_insights_20261103.vlm.server",
+            "--manifest",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/manifest.json",
+            "--condition",
+            "full_d10",
+            "--port",
+            "21903",
+            "--gpu-uuid",
+            "GPU-ASSIGNED-BY-MAIN-SCHEDULER",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/runs/discovery_shard00of01_1793698187409061484"
+          ],
+          "worker": [
+            "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+            "-m",
+            "preparations.ease_insights_20261103.vlm.worker_v2",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+            "--condition",
+            "full_d10",
+            "--port",
+            "21903",
+            "--stage",
+            "discovery",
+            "--shard-index",
+            "0",
+            "--shards",
+            "1"
+          ]
+        },
+        "runtime_revision": {
+          "name": "vlm-technical-receipt-v2",
+          "scientific_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+          "purpose": "Interpret exported schedule-node lists; retain earliest complete scientific outcome; never retry completed science",
+          "source_files": {
+            "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+            "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+            "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3"
+          },
+          "model_backend_policy_changed": false,
+          "scientific_manifest_changed": false,
+          "revision_hash": "40935f16a3d2de77d3c05cafc5e6545d03e61797db6545573a5b1c9bca6f785d"
+        }
+      }
+    },
+    "actual_run_identity_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/runs/discovery_shard00of01_1793698263792881021/identity.json",
+    "actual_run_identity_sha256": "6e3c2f2f6d1408431cac3bb491d90d76065fd269c5980b7ab3f2cb6e77ec12b1",
+    "observed_at_ns": "1793698437610927528",
+    "worker_pid": 231927,
+    "actual_proc_cmdline": [
+      "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm.worker_v2",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+      "--condition",
+      "full_d10",
+      "--port",
+      "48457",
+      "--stage",
+      "discovery",
+      "--shard-index",
+      "0",
+      "--shards",
+      "1"
+    ],
+    "recorded_worker_argv": [
+      "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm.worker_v2",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+      "--condition",
+      "full_d10",
+      "--port",
+      "48457",
+      "--stage",
+      "discovery",
+      "--shard-index",
+      "0",
+      "--shards",
+      "1"
+    ],
+    "actual_argv_matches_identity": true,
+    "server_command": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm.server",
+      "--manifest",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/manifest.json",
+      "--condition",
+      "full_d10",
+      "--port",
+      "48457",
+      "--gpu-uuid",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/runs/discovery_shard00of01_1793698263792881021"
+    ],
+    "actual_runtime_revision": {
+      "name": "vlm-technical-receipt-v2",
+      "scientific_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+      "purpose": "Interpret exported schedule-node lists; retain earliest complete scientific outcome; never retry completed science",
+      "source_files": {
+        "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+        "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+        "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3"
+      },
+      "model_backend_policy_changed": false,
+      "scientific_manifest_changed": false,
+      "revision_hash": "40935f16a3d2de77d3c05cafc5e6545d03e61797db6545573a5b1c9bca6f785d"
+    },
+    "new_task01_receipt_verified_present": true,
+    "new_task01_receipt_sha256": "0bddd4a41eeb78745697cb18d16dcbaa298589df6584ebdd695a64b4d2a080b9",
+    "new_task01_worker_pid": 231927,
+    "new_task01_technical_revision": {
+      "name": "vlm-technical-receipt-v2",
+      "scientific_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+      "purpose": "Interpret exported schedule-node lists; retain earliest complete scientific outcome; never retry completed science",
+      "source_files": {
+        "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+        "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+        "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3"
+      },
+      "model_backend_policy_changed": false,
+      "scientific_manifest_changed": false,
+      "revision_hash": "40935f16a3d2de77d3c05cafc5e6545d03e61797db6545573a5b1c9bca6f785d"
+    },
+    "canonical_task00_not_rerun_or_modified": true,
+    "canonical_task00_complete_mtime_ns_after_new_worker": "1793697738270042739"
+  },
+  "scheduler": {
+    "history_snapshot": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/jobs_state.json",
+      "sha256": "7cf619a5101b8db6e1a169d21b5848cdd377b290752ced099267798ed1ce5f77",
+      "shape": [
+        "fp_pilot_pi0_full",
+        "fp_pilot_pi0_keep24_2_front_middle",
+        "fp_pilot_pi0_keep24_1_uniform",
+        "draft_pure_smoke",
+        "discovery_full_libero_spatial",
+        "discovery_flash_libero_goal",
+        "discovery_draft_libero_goal",
+        "discovery_flash_libero_spatial",
+        "discovery_draft_libero_spatial",
+        "discovery_flash_libero_object",
+        "discovery_draft_libero_object",
+        "discovery_flash_libero_10",
+        "discovery_draft_libero_10",
+        "vlm_discovery_full_d10",
+        "vlm_discovery_fixed_v12_jacobian",
+        "vlm_discovery_fixed_v12_action_mse",
+        "vlm_discovery_fixed_v12_cosine",
+        "vlm_discovery_full_d10_receipt_v2"
+      ],
+      "selected": {
+        "vlm_discovery_full_d10": {
+          "status": "failed",
+          "pid": 226686,
+          "gpu": 0,
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "port": 33569,
+          "started": 1793697645.6174273,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-m",
+            "preparations.ease_insights_20261103.vlm.runner",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+            "--condition",
+            "full_d10",
+            "--stage",
+            "discovery",
+            "--gpu-uuid",
+            "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "--port",
+            "33569",
+            "--launch"
+          ],
+          "returncode": 1,
+          "finished": 1793697758.3348749,
+          "completion_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/discovery_shard00of01_complete.json",
+          "completion_file_present": false
+        },
+        "vlm_discovery_full_d10_receipt_v2": {
+          "status": "running",
+          "pid": 231515,
+          "gpu": 3,
+          "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+          "port": 48457,
+          "started": 1793698263.579379,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-m",
+            "preparations.ease_insights_20261103.vlm.runner_v2",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+            "--condition",
+            "full_d10",
+            "--stage",
+            "discovery",
+            "--gpu-uuid",
+            "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "--port",
+            "48457",
+            "--launch"
+          ]
+        }
+      }
+    },
+    "vlm_current_job_configs": [
+      {
+        "id": "vlm_discovery_full_d10_receipt_v2",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm.runner_v2",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+          "--condition",
+          "full_d10",
+          "--stage",
+          "discovery",
+          "--gpu-uuid",
+          "{gpu_uuid}",
+          "--port",
+          "{port}",
+          "--launch"
+        ],
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/discovery_shard00of01_complete.json",
+        "depends_on": [],
+        "retry_of": "vlm_discovery_full_d10",
+        "technical_runtime_revision": "40935f16a3d2de77d3c05cafc5e6545d03e61797db6545573a5b1c9bca6f785d"
+      },
+      {
+        "id": "vlm_discovery_fixed_v12_jacobian",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm.runner_v2",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+          "--condition",
+          "fixed_v12_jacobian",
+          "--stage",
+          "discovery",
+          "--gpu-uuid",
+          "{gpu_uuid}",
+          "--port",
+          "{port}",
+          "--launch"
+        ],
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/discovery_shard00of01_complete.json",
+        "depends_on": [
+          "vlm_discovery_full_d10_receipt_v2"
+        ]
+      },
+      {
+        "id": "vlm_discovery_fixed_v12_action_mse",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm.runner_v2",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+          "--condition",
+          "fixed_v12_action_mse",
+          "--stage",
+          "discovery",
+          "--gpu-uuid",
+          "{gpu_uuid}",
+          "--port",
+          "{port}",
+          "--launch"
+        ],
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/discovery_shard00of01_complete.json",
+        "depends_on": [
+          "vlm_discovery_full_d10_receipt_v2"
+        ]
+      },
+      {
+        "id": "vlm_discovery_fixed_v12_cosine",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm.runner_v2",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm",
+          "--condition",
+          "fixed_v12_cosine",
+          "--stage",
+          "discovery",
+          "--gpu-uuid",
+          "{gpu_uuid}",
+          "--port",
+          "{port}",
+          "--launch"
+        ],
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/discovery_shard00of01_complete.json",
+        "depends_on": [
+          "vlm_discovery_full_d10_receipt_v2"
+        ]
+      }
+    ]
+  },
+  "evidence": {
+    "recovery_ledger_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/technical_recovery/full_d10/libero_spatial/task00/init30_recovered.json",
+    "recovery_ledger_sha256": "c74345305204cd8d381d59368d81d78cb8b9d117baa05dd13868ec6950a7511a",
+    "canonical_recovery_receipt_matches_ledger": true,
+    "initial_canonical_episode_receipt_sha256": "7cf7d0d9813064037711b75e27e8f76e7f39995c60976f421a2fabc17a67aaea"
+  },
+  "limits": [
+    "This audit covers the repaired task00 case and the first observed successful v2 task01 receipt; it is not a final audit of the continuing discovery matrix.",
+    "Native node-list checks establish the exported integration schedule; no internal actual_NFE counter is asserted.",
+    "Snapshots of running scheduler state and /proc argv describe the observation time and may change as the authorized queue progresses."
+  ]
+}

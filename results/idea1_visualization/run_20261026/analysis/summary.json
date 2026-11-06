@@ -1,0 +1,178 @@
+{
+  "episodes": 120,
+  "samples": 2326,
+  "successes": 117,
+  "per_suite": {
+    "libero_spatial": {
+      "episodes": 30,
+      "successes": 30,
+      "samples": 577
+    },
+    "libero_object": {
+      "episodes": 30,
+      "successes": 29,
+      "samples": 600
+    },
+    "libero_goal": {
+      "episodes": 30,
+      "successes": 29,
+      "samples": 549
+    },
+    "libero_10": {
+      "episodes": 30,
+      "successes": 29,
+      "samples": 600
+    }
+  },
+  "phase_counts": {
+    "initial": 345,
+    "approach": 771,
+    "grasp_or_manipulate": 322,
+    "transport": 574,
+    "goal_alignment": 173,
+    "contact": 91,
+    "release_or_final_action": 13,
+    "unknown": 37
+  },
+  "uniform12_samples": 1440,
+  "phase_counts_by_suite": {
+    "libero_spatial": {
+      "initial": 60,
+      "approach": 234,
+      "grasp_or_manipulate": 83,
+      "transport": 141,
+      "goal_alignment": 50,
+      "contact": 9
+    },
+    "libero_object": {
+      "initial": 85,
+      "approach": 182,
+      "grasp_or_manipulate": 62,
+      "transport": 229,
+      "release_or_final_action": 4,
+      "contact": 13,
+      "goal_alignment": 25
+    },
+    "libero_goal": {
+      "initial": 101,
+      "unknown": 28,
+      "approach": 187,
+      "grasp_or_manipulate": 74,
+      "transport": 84,
+      "goal_alignment": 37,
+      "contact": 37,
+      "release_or_final_action": 1
+    },
+    "libero_10": {
+      "initial": 99,
+      "approach": 168,
+      "grasp_or_manipulate": 103,
+      "transport": 120,
+      "goal_alignment": 61,
+      "release_or_final_action": 8,
+      "contact": 32,
+      "unknown": 9
+    }
+  },
+  "phase_counts_by_split": {
+    "libero_spatial": {
+      "train_init01": {
+        "initial": 41,
+        "approach": 157,
+        "grasp_or_manipulate": 53,
+        "transport": 96,
+        "goal_alignment": 33,
+        "contact": 9
+      },
+      "test_init2": {
+        "initial": 19,
+        "approach": 77,
+        "grasp_or_manipulate": 30,
+        "transport": 45,
+        "goal_alignment": 17
+      }
+    },
+    "libero_object": {
+      "train_init01": {
+        "initial": 53,
+        "approach": 121,
+        "grasp_or_manipulate": 42,
+        "transport": 152,
+        "release_or_final_action": 4,
+        "contact": 9,
+        "goal_alignment": 19
+      },
+      "test_init2": {
+        "initial": 32,
+        "approach": 61,
+        "contact": 4,
+        "grasp_or_manipulate": 20,
+        "transport": 77,
+        "goal_alignment": 6
+      }
+    },
+    "libero_goal": {
+      "train_init01": {
+        "initial": 65,
+        "unknown": 20,
+        "approach": 120,
+        "grasp_or_manipulate": 53,
+        "transport": 55,
+        "goal_alignment": 26,
+        "contact": 27,
+        "release_or_final_action": 1
+      },
+      "test_init2": {
+        "initial": 36,
+        "unknown": 8,
+        "approach": 67,
+        "grasp_or_manipulate": 21,
+        "transport": 29,
+        "goal_alignment": 11,
+        "contact": 10
+      }
+    },
+    "libero_10": {
+      "train_init01": {
+        "initial": 67,
+        "approach": 114,
+        "grasp_or_manipulate": 67,
+        "transport": 85,
+        "goal_alignment": 39,
+        "release_or_final_action": 6,
+        "contact": 16,
+        "unknown": 6
+      },
+      "test_init2": {
+        "initial": 32,
+        "approach": 54,
+        "grasp_or_manipulate": 36,
+        "transport": 35,
+        "release_or_final_action": 2,
+        "goal_alignment": 22,
+        "contact": 16,
+        "unknown": 3
+      }
+    }
+  },
+  "split": "Each task: init0/1 train; init2 held out; scalers/PCA fit on train only",
+  "probe": "Fixed RidgeClassifier alpha10 on original pooled dimensions; no model fine-tuning",
+  "conditional_probe": "Selected hidden layers: infer phase within each task and task within each phase, same held-out init2; majority baseline and class coverage reported",
+  "backend_control": "Task is assigned to one persistent model service; additionally fit/evaluate task probes within each service (five tasks per suite), preserving episode split. This is not a cross-service generalization test.",
+  "uniform_probe": "Refit the diagnostic on original uniform12 train samples and score original uniform12 held-out samples; train and test budgets both differ from all-selected results",
+  "clustering": "KMeans in up to 64 PCA dimensions; k5/10/15 x seed0/1/2; fit train, score held-out init2",
+  "clustering_degeneracy": "Requested k above the number of distinct original training vectors is recorded as not estimable; actual fitted cluster count also reported",
+  "pca_numerics": "Fit/transform in float64; zero only numerically undefined training-null coordinates at standard machine-epsilon matrix-rank tolerance; original-dimensional probes unaffected",
+  "caveats": [
+    "Trace phases are inferred labels, not ground truth; phase scores measure consistency with these rules.",
+    "Selected official pi05_libero disables discrete state input; language pool contains instruction prompt tokens.",
+    "Task identity may reflect prompt, scene, object and state differences.",
+    "Task IDs are correlated with persistent service assignment; cross-service BF16 differences were observed. Within-service task probes are supplied as a control; broad semantic or backend-invariance claims are unsupported.",
+    "PCA and probes operate on the defined mean-pooled vectors, not the entire token tensor; poor readout does not establish absence of information in full token states.",
+    "Two-dimensional overlap does not establish absence of higher-dimensional information.",
+    "PCA axes and cluster IDs are fitted independently for each feature/layer/suite and are not aligned across plots.",
+    "Readability, residual magnitude and causal action importance are distinct.",
+    "This native sampler consumes per-layer prefix KV caches and discards the final prefix hidden output; H18 geometry is not a direct action-sensitivity measurement.",
+    "Three initializations per task are exploratory, not the 50-init benchmark."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "status": "complete_no_candidate",
+  "time": 1793931674.7614818,
+  "manifest_hash": "2da5f26a130d26a70a9c2f8e25c2226c78701928c59cce8d6af8230904e5b29f",
+  "new_quality_cases": 160,
+  "preserved_control_cells": 160,
+  "known_control_repeats": 8,
+  "success_counts": {
+    "full_d10": 77,
+    "dense_d2": 74,
+    "center_mask_d2": 52,
+    "checker_mask_d2": 70
+  },
+  "by_suite": {
+    "libero_spatial": {
+      "full_d10": 20,
+      "dense_d2": 20,
+      "center_mask_d2": 17,
+      "checker_mask_d2": 19
+    },
+    "libero_object": {
+      "full_d10": 20,
+      "dense_d2": 19,
+      "center_mask_d2": 18,
+      "checker_mask_d2": 20
+    },
+    "libero_goal": {
+      "full_d10": 20,
+      "dense_d2": 19,
+      "center_mask_d2": 13,
+      "checker_mask_d2": 17
+    },
+    "libero_10": {
+      "full_d10": 17,
+      "dense_d2": 16,
+      "center_mask_d2": 4,
+      "checker_mask_d2": 14
+    }
+  },
+  "native_cost_ratios": {
+    "full_d10": 1.0,
+    "dense_d2": 1.5510764955754337,
+    "center_mask_d2": 1.5487713849799865,
+    "checker_mask_d2": 1.5453049079414098
+  },
+  "condition_eligibility": {
+    "center_mask_d2": {
+      "successes": 52,
+      "n": 80,
+      "success_rate": 0.65,
+      "full_success_rate": 0.9625,
+      "usability_pass": false,
+      "median_fixed_input_speed_ratio": 1.5487713849799865,
+      "cost_pass": true,
+      "qualified": false
+    },
+    "checker_mask_d2": {
+      "successes": 70,
+      "n": 80,
+      "success_rate": 0.875,
+      "full_success_rate": 0.9625,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.5453049079414098,
+      "cost_pass": true,
+      "qualified": true
+    }
+  },
+  "new_inference_requests": 7018,
+  "preserved_recorded_requests": 5345,
+  "completed_new_services": 4,
+  "source_files": 327,
+  "independent_statistics_differences": [],
+  "reason": "Centralmask52/80failsabsolutecandidatequalityandFull-relativequality;checkermask70/80isusableandhaslargersuitesuccesspointestimatesinallfourcategories.Nooppositequalifiedpair.",
+  "exploratory_observation": "Longcentral4/20versuschecker14/20;pathconfigurationcanmatterbutthisdoesnotshowadaptivechoiceisneeded.Noindependentreproductionofthissecondaryobservation.",
+  "no_compaction": true,
+  "prefix_compute_reduction_claimed": false,
+  "adaptive_routing_benefit_established": false,
+  "confirmation_launched": false,
+  "confirmation_unlocked": false,
+  "conditional_confirmation_CPU_preparation_only": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/confirmation_preparation.json",
+    "sha256": "be52723ebbc727a59a7c2efff7e0e1d02d16a6153f5a758997c5673be86fe095",
+    "real_confirmation_cases": 0
+  },
+  "evidence": {
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/calibration_acceptance.json": "cf02ecaab03f3e4e5a332138c555ef76ad97328b24e599f029521a3972157a0b",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/discovery_pipeline_acceptance.json": "53f467bd9bd620692fc2997a028e83859ad536b45a6e2450c9b07a16f5f80411",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/discovery_acceptance.json": "0ad18c787134baf445b237c350f24c85d7df79cfc37dbf21eebd3bfba25b59a8",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/independent_statistics.json": "51775051a514300757bf3a867e941b17d6f40790ce53e4ba361bbd084b681edb",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v6/discovery/analysis/analysis.json": "f4d51ab525938c7ec0f36e5d13e7717d98eb5b7477772a557382823574b58e72",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v6/discovery/analysis/selection.json": "6b755819a9e6a94519ebf3ea8f8b2c002a0ac3a504602ec799c5f093eb3eff19",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v6/discovery/manifest.json": "f6832aa6ed88826882e1de4cfb20ef27dde3bee8633c0115afd9a2e3d27398ef",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/protocol.json": "6e6887d40a14cee9d874b0392dd0d04ea3138dfe28e55db551a341afcdc1da5e",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/figures/provenance.json": "b8715bb6291335c8d7f4b40e51fab9a76eaad069a2c33b3245571614dc7218cc"
+  },
+  "no_valid_failures_rerun": true,
+  "no_threshold_relaxation": true,
+  "original_older_negative_results_preserved": true,
+  "overall_goal_complete": false,
+  "next": "InventoryexistingfixedNFEtime-gridresultsbeforebuildingaseparateequal-NFEtime-placementfamily;do notunblockthisfailedfamilyconfirmation."
+}

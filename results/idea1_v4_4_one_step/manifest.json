@@ -1,0 +1,421 @@
+{
+  "conditions": [
+    {
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "D": 1,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "refresh_interval": 3,
+      "full_ae": false,
+      "verifier": false,
+      "compensation": "extrapolate",
+      "fast_time_embedding": "openpi_linspace",
+      "id": "v12_d1_gaussian_refresh",
+      "initial": "gaussian",
+      "start_time": 1.0,
+      "noise_scale": 1.0,
+      "kalman_dimensions": 0
+    },
+    {
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "D": 1,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "refresh_interval": 3,
+      "full_ae": false,
+      "verifier": false,
+      "compensation": "extrapolate",
+      "fast_time_embedding": "openpi_linspace",
+      "id": "v12_d1_kf6_refresh",
+      "initial": "kalman",
+      "start_time": 0.75,
+      "noise_scale": 1.0,
+      "kalman_dimensions": 6
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v4_4_one_step/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v4_4_one_step/common.py": "ff79071982aac57dc219e605d89082e28932d34f144297f26c388cb5391bf80f",
+    "preparations/idea1_v4_4_one_step/policy.py": "3acf51e2ca2ee33ce4902aead08a7dc090cb2eaf1d8646e08ea899bc6cfd4014",
+    "preparations/idea1_v4_4_one_step/server.py": "d6c454f268603da8f4e8549cfa6d6327b107f4927f928a60b3615bd2a65cb691",
+    "preparations/idea1_v4_4_one_step/evaluate.py": "16ad2e41c81afeeb28009ce3b8460a886fb538b291ec04129c8502501e0aec7c",
+    "preparations/idea1_v4_4_one_step/rollout.py": "14d3ba5d9a50dbab1ed0d6e1d4fc94f451eecac16f4cd5189c75abfda45cf874",
+    "preparations/idea1_v4_4_one_step/preflight.py": "63dc9abbc483dfb46ca2430c544e21660b35e52a35b105b04b2fd71e2e1cd83c",
+    "preparations/idea1_v4_4_one_step/test_policy.py": "c02f6e7bd266023e1c455acf14d2ed79e65d60f484e9fd529d00de75ad5e5145",
+    "preparations/idea1_v4_4_one_step/controller.py": "8948fc9d72eeef00bb9ed41d3057b71e2e44d69ec26dc19f279ca15fa80e005a",
+    "preparations/idea1_v4_4_one_step/finish.py": "57d1bb331d023aab7201a87dbee0db6f94169855c102534de2e934ca23b2bdb3",
+    "preparations/idea1_v4_2_refresh_only/common.py": "eef38e8b50f7415765fcc3ce7224389bb1b257b30cfba9f1fb9dc08e57c5479b",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v3/history.py": "be34853c019cf4bf083346af1f9dd2b2863212470ec4fb3b540b8d0589fb7427",
+    "preparations/idea1_v4_1_warmstart/sampling.py": "4cf4c63a3ead985f829ed78da10516ee0561565177539cd03ccfc173b52a826b",
+    "preparations/idea1_v4_1_warmstart/schedule.py": "b94f3bdbaeae005e47f3c74a728cd9a7e606959bcac1900684a5033a8a75b3ee",
+    "preparations/idea1_v4_3_kalman6/rules.py": "644fc418390db3271127fbbc995437d866a1439fd0ad0616ccb3dafbf2757dab",
+    "preparations/idea1_v4_0/rules.py": "04afe24adf3c2dfb78b8a8a3da1a177f326e5aa5d63d4037444e209fd3c61a0a",
+    "preparations/idea1_v3_3/kalman_frozen.json": "641c0b62056fe442964b0fe1f91497d30e890bb6bd3dd11aad1abb273a03d75d",
+    "policies/realtime-vla-flash/scripts/idea1_v2_1/filter.py": "2ff2c8e606df03551da2bc97a3eee3a462ca5ea6cf2e0d7d4170351115d5f148",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623"
+  },
+  "reference_files": {
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task00/init19/result.json": "d893b5803ac7daf2b123d1304cc39c7a5a6f13907d25344e3cf3b9b170f3b861",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task00/init19/identity.json": "041834372a9a932192489a00100dac8fad573b40031c4f9523c94a94750f2d95",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task00/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task00/init19/result.json": "3bf9c81e34fad727ab018a68fd1909178494982158e5cedd2b106a7b4fd6fa81",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task00/init19/identity.json": "61f69d42fdb3136643f2ad6884bf291b63f21cb046f5f50f658bd9c2efaf2e4f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task00/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task00/init19/result.json": "5ac9798c38041ceb5c69225767d9a4cc1e4479f8a42979e6a072d48bbb4a649f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task00/init19/identity.json": "83915c6a73aa331761c0ab78407a1a7e551f0aca0c1a59abc4cee777db49b1bd",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task00/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task00/init19/result.json": "d5dda89062dad3e5a124c2806aa15cc9cc4edf3ddf79415c07934c78a9b81a3f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task00/init19/identity.json": "dbda813dd2d990aeaf0ac370a40ac154bb9d7c756a7d4fcd47d5f284ec5e28c8",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task00/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task01/init19/result.json": "329474106ce40fd16ec8d856aedddd89d441b88048a50b8b51c0bc499f8b8e68",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task01/init19/identity.json": "e448d77633b4957b007961b737d6e5e4a790a04509a594e43d524d36a9bfb99c",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task01/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task01/init19/result.json": "54f51067925680abcc7faa1a88c2eead8540b1c311bc2732c361265c6660ffec",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task01/init19/identity.json": "6dd72e2f1af5e40512a21445a3f90bce4afd864b81a8bd2dde821adba6c864d3",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task01/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task01/init19/result.json": "d302b358fd832884eb7683ce6cc983fa33409b0db327f0778b511475a2453acc",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task01/init19/identity.json": "8e9d2dd6794bf1dc8b6434b2071c3af3a4f0aee1727476d92dae5f0c8e992366",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task01/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task01/init19/result.json": "8cf58d79c8184934fad2feae21061e446f3d96851d9f0edda943aee1c327d48f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task01/init19/identity.json": "6accf02e686dfa40a8853a9bb7f0e2beb3dbc9594d301b0d0ce5739ff528b2c2",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task01/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task02/init19/result.json": "88d573b4389ca58d4625962edcf544873bdd271f4fa724912fa7328b9efb5a49",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task02/init19/identity.json": "b1511a16871971699c481fddc0a194a1844386f7febf07d04060b28d4599eab8",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task02/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task02/init19/result.json": "8283a70d7e8c4a0d50db6cf0eb05f0c44304da8d3bae2ac2eddd3b4bb49d1558",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task02/init19/identity.json": "61f1e01508f0c0ff9a833c1d4752ff71ceb21cc324a8659d3480eb54a0daaeae",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task02/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task02/init19/result.json": "f680bd306d61a0e35a15397e3b782a3e36f3bc976f8cd12609c02fd0fb909618",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task02/init19/identity.json": "63789763dcfa2069e6beaad389c2968fad5b9f36c9eb9e6d791d4b66b5e50894",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task02/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task02/init19/result.json": "77ab0318f63b5d7e5cf3e6be716e15161905757943add52fc22abf92c644069d",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task02/init19/identity.json": "bc014430d1f58bb3c6a4740d8776318f793761bfb7769337528ba6fa4194eba7",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task02/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task03/init19/result.json": "3d063ed0a13d0620578391f6818f5cb37deefb124b708c624090514cce794add",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task03/init19/identity.json": "17eb7c05b8e33ff12ba912d5b1eb1228bd7b66b253707db2627c205e95ebfa6c",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task03/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task03/init19/result.json": "c173698b18ee9033d1cc1b77e64185c21df981c34c27da2ee1b769070b0f3162",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task03/init19/identity.json": "bb1de74b14ffafe7163d662261cd8d0037cd151fbfd3059f521604f42f52ffc7",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task03/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task03/init19/result.json": "970314f239b0f22409e4f648e2d64e9e0a6d4df3d35570df9e8a0477513670df",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task03/init19/identity.json": "66024863cd12f77f59ba85869820b466a11b6d50fc16f2230a3a59be1aa8ff34",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task03/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task03/init19/result.json": "3fef325898c28c29990d390a18451c30d3c6f06ec015f4509db943d82b79ced5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task03/init19/identity.json": "d7b2c3cff347ed2867c3f8b823cd6a7beebb0fee2657ef15d199a1ff8e4afbfd",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task03/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task04/init19/result.json": "ef0f61d386d59fa672723501bdf48cac11342a825acc96a54e3c2f45e99966ed",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task04/init19/identity.json": "44fe73078d38315837a2a229d18310d6df09282983df3dd601bc9b95c48ac700",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task04/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task04/init19/result.json": "1ccbc1980a93cbdfa22942b43f41d9558dbaf1e58466a63b4e093bead912a505",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task04/init19/identity.json": "71c82a34fc0beb0ab6fd211bf0cfe8a55e5045bd3c801baf1bbb4cfdbd97dcfc",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task04/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task04/init19/result.json": "bb70f3a3862ab73a1ab84e3113d135ffce2e305e728d9047709b95a1ea5647df",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task04/init19/identity.json": "2652810f10da6cc539dbf3af2364883d5aee9296c4dfd85da5d131ecd5b81b30",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task04/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task04/init19/result.json": "a567c42e1821295207443afb4f64dc9d725dc480d3d5c5d8594950f372eb9539",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task04/init19/identity.json": "244c517c903fcb61e40d9cf08c60418160f8207507e98852a68d9c52dec33ee0",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task04/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task05/init19/result.json": "09d31082e464c7091f983bbb5ac275f1f15de071339555d45345612774e701bd",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task05/init19/identity.json": "a8ad75a3fc73a32fe259b2e1ae32754d2ce3d764c1a3c684d1266bf905a6e83f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task05/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task05/init19/result.json": "3aee51c66d1d52c9b3db3fe525775e52dc9ded8f5f60908df6c084c48396990d",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task05/init19/identity.json": "280c8cb588b7d86d91542d8206ff0a7efe0d5d1a94b799582f6b1b3e097d1ac6",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task05/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task05/init19/result.json": "da3a7f5e943b4409fab02034e51397c4a2f1d92a300907955cc4fc45a8a704a2",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task05/init19/identity.json": "c0438b83bc47b65ad69d4b127e49a1d5cad5516eb101c9b1f2c5ccca455788bb",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task05/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task05/init19/result.json": "f706af4d4a39beb1d272805c049c05f84b4ddb279610737314d11c4f8473f4fd",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task05/init19/identity.json": "e9c84fdd95d1b75afb798bcdf32557d178d59ee2c0ec7e2422f79ac35e4c04c8",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task05/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task06/init19/result.json": "fdf5b4c323f46e520ebb9fbea140e0261cf63e6275986ab83b06589a4dcec1ba",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task06/init19/identity.json": "98b3ba3953e7fa8a0af97c64e5462b76f6b36a0df930375064a60dc998d078ec",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task06/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task06/init19/result.json": "f31351d47d520d7a8f1a7ea4305e798a3fe8d0f60aec2c9996892ce7c14e3506",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task06/init19/identity.json": "c1a00298ca13800c7cfd7fad65037a01e1646a102b8edcdfda529c614cc2265b",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task06/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task06/init19/result.json": "a37bdce0244dfd31429daf12c0fd155564664852ee01c15b087bb1b61219f4b7",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task06/init19/identity.json": "ff47bff167cbf067c400da22803c3fd599603ccf858304d5843b8d7bc7adcc3e",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task06/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task06/init19/result.json": "f0b33a97b744e9c3e4a22bafbe0afda067a6ca362e4038124b96ed744fd1bfe6",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task06/init19/identity.json": "5d309c0e78784fb0663857c649d00d856566aca552f1710c7a48b83c6bebaa44",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task06/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task07/init19/result.json": "272ff01f396b16c8182da3de5a7fc827cd47c7736ee9c03d861cd9cd4495cf49",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task07/init19/identity.json": "cb770a5fcb6ab6ceb64d2a2a64e4fc8664c8763cf9b3939e8d8dbd5be20fd74c",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task07/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task07/init19/result.json": "87dcd9f255ab0f7d545702cf172d69b7650717dcc645aea1bff9f06225d89e0a",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task07/init19/identity.json": "43c7ed2044d848401758f8c16485295d9e89766dc96766e2c1f45dfbf24fb82e",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task07/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task07/init19/result.json": "40602eab520691228afc3975799481fa2401e2a40232c24fdf4fc3c1413d6ddd",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task07/init19/identity.json": "44efe38cdbdbc909f9467e56ff02a21a761586c58c13fdef8e1b3ed8c5153e46",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task07/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task07/init19/result.json": "4a4208239b7a5d2730631fd86e6dfd17b06014e1d05eb74227663479fd79c167",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task07/init19/identity.json": "e47d1449c133066bddbd1709cf0191a29e5af31eb86546a7ee30fc00ad6864ea",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task07/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task08/init19/result.json": "a4ad317a6465169aec2694826a2f12c02bce216cf959cd871a99300e349bbe96",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task08/init19/identity.json": "d83c912cce72c3f4889e9925cc398ee1a2cc20fd6abda238f86f46fbbfa81610",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task08/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task08/init19/result.json": "9206da68ffdbb65d564db5e305766047b07482453b585f1d1d0e5d57506d9147",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task08/init19/identity.json": "5732c129df469e907bc6573acb15b8e75336c1a322a2f2b96c8a20e3dc833e1f",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task08/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task08/init19/result.json": "cba6d0b73556db13bfc8385e1a884b896da19378d5a88ffa4e91cd8e6fffbe74",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task08/init19/identity.json": "7c97a57891f14e32328087166954f277357c45b70d66b56b357a7800eab78d96",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task08/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task08/init19/result.json": "2a7a759ea9e410adbf3e4800cb26cfe76ba7d16c51af1569d61b5e91a8c6d085",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task08/init19/identity.json": "67ac0aa0d9349dbb6d3b78da691e155b11cea06b6d46ec035aed7c244b69f5f1",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task08/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task09/init19/result.json": "eaccf7583ed59b05ff2e2c4eba037884d5f84e3004553549a464c2edcc0304d6",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task09/init19/identity.json": "bfc6ae9be667764a5c175d8a381ddb8098ddecd01ca9aafd20f348d0112ab7f7",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_spatial/task09/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task09/init19/result.json": "7eae4279d8c49dbcd0272c49f843f4cda9f224a655c3fb2b4cc0925e09a3bd7d",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task09/init19/identity.json": "dcc6e0c16b60faaf31ccb7a296b812d008c0a5828fd19c00e730c7b13b326f73",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_object/task09/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task09/init19/result.json": "2224af0f2dd64b88976c935926fc1f2eb12d2302f7436144b033bbed96c03039",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task09/init19/identity.json": "e7010b07565f8f236e697476d2e6440c3f22fddf3e82eddc739e07f673ebf060",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_goal/task09/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task09/init19/result.json": "88469a3717ed68eadbf0c0c09c7cd92e8e92bddc8b147f8fa564ea8de8ac3b84",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task09/init19/identity.json": "db36950c7ab7711524094f05075c567a095dc89de1c2534af0b1ccc46655aecb",
+    "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only/v12_d2_refresh_extrapolate/episodes/libero_10/task09/init19/complete.json": "93c4092f360150921cca0f8d218040c5b2cae29133acea6c4612fddaf437deb5"
+  },
+  "reference_manifest_hash": "0d03048682de07705e8fe4c4446bf3f0056eb5d1e994802b35fa1a7a0fc9a511",
+  "reference_id": "v12_d2_refresh_extrapolate",
+  "reference_root": "/root/nfs/embodied/benchmark/results/idea1_v4_2_refresh_only",
+  "plan_sha256": "33f703f91f34c72a93d5ec23eb314d7bb5f99a9701184b219317f07d63f25682",
+  "target_episodes": 80,
+  "max_gpus": 4,
+  "env_seed": 7,
+  "settling": 10,
+  "control_hz": 20,
+  "wall_pacing": false,
+  "bootstrap": "Both conditions use Gaussian D1 until actual commands are acknowledged; only first request in normal rollout",
+  "refresh": "Full VLM only at replans0/3/6; then V12+D1 always; no Full AE, verification, gripper protection or fallback",
+  "extrapolation": "Own latest two histories, actual age/gap; fresh ratio0, first cycle hold",
+  "mask_source": "Same fixed V12 subpath as v4.2; no dynamic selection or gradient computation",
+  "graphs": "No encoder, AE, verifier or selector CUDA Graph",
+  "parameter_source": "Frozen v4.3 six-dimensional D1 champion tau=.75 rho=1; no new search",
+  "timing": "Serial CPU predictor is counted but is not claimed to be an unavoidable GPU/deployment cost",
+  "started": 1793676497.6093237,
+  "manifest_hash": "e872c326649fc18d29b13b48637307c3b1c118f968aa4d4e7c2be977e888be5f"
+}

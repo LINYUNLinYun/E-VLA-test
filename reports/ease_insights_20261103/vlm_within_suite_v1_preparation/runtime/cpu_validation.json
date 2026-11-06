@@ -1,0 +1,110 @@
+{
+  "schema": "ease-within-suite-runtime-cpu-preparation-v1",
+  "created_utc": "2026-11-05T08:03:09.167241+00:00",
+  "status": "cpu_synthetic_validation_passed_not_launched",
+  "owner": "/root/within_suite_runtime",
+  "runtime_source_sha256": {
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/policy.py": "87830a8ebd6dfb0e7465aebdc31ab8096ff8da4f5f16f0d1a7577731f34301ce",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/rollout.py": "b933e042c0d52d567153dab88ee1b0494fe5e6ce7eb17ce1a227dceb045ec337",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/worker.py": "e22181be3a555c412f96e6d7b289a638ab3951df9958aabd20f3f25b2a98cec4",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/server.py": "05858003c1c14e96606a1b1ad6558009b11ccc02241694afe92a21f996c733b2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/runner.py": "b6ab4057e5f79bef4677f8d8f6154924af2afd355922172345b035fffd553103",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_runtime.py": "ebd1f0b305ea1ec9caac9c4da1df73c0f80d5fe971e3fa7fa7ec96379b66ef1e"
+  },
+  "read_only_reused_source_sha256": {
+    "preparations/ease_insights_20261103/vlm_local_search_v1/policy.py": "21d33fd349ae223426cbcfbf461547073b7837bd35a312fd4ce2a812e6d69380",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b",
+    "preparations/ease_insights_20261103/vlm/policy.py": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+    "preparations/ease_insights_20261103/vlm/backend.py": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+    "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "policies/realtime-vla-flash/scripts/spec/spec_client_libero.py": "f30ec5eda07f365b9bf60f17dda77caf14cd71d93a75ac693b6f26c086c89e60"
+  },
+  "cpu_validation": {
+    "command": "policies/libero-eval-v21/.venv/bin/python -m unittest preparations.ease_insights_20261103.vlm_within_suite_v1.test_runtime -v",
+    "exit_code": 0,
+    "tests": 10,
+    "reported_wall_s": 0.534,
+    "coverage": [
+      "Frozen Policy predict/reset/acknowledge/__init__ function identity; all six exact masks, paired noise and Full10/Fast2/Fast2 histories",
+      "Pure runner plan exposes Science.execute-compatible args/output/manifest/scenes/marker/logs/server/worker and rejects direct launch",
+      "Old four-suite finite gate/benchmark stay distinct from the new LIBERO90 case universe",
+      "Synthetic timeout in both task categories executes400 policy actions plus10 separate settling actions and leaves old LIMITS unchanged",
+      "Complete synthetic episode receipts verify raw50x32/decoded50x7 arrays, action prefixes, telemetry, schedules, counts, own histories and physical assets",
+      "Official BDDL/init/prompt/seed/settling/budget and first physical input/noise pairing across conditions",
+      "Completed valid policy failure is preserved; receipt error never retries completed scientific episode",
+      "Numerical reference preserves old/new manifest identities and source NPZ/manifest/protocol hashes; altered source is rejected",
+      "Fresh-process runtime imports load neither torch, libero nor mujoco"
+    ]
+  },
+  "prepared_interface": {
+    "required_by_frozen_Science_execute": [
+      "args",
+      "output",
+      "manifest",
+      "scenes",
+      "marker",
+      "logs",
+      "server",
+      "worker"
+    ],
+    "aliases": [
+      "server_argv",
+      "worker_argv",
+      "complete_file",
+      "plan"
+    ],
+    "json_serializable_cli_result": "prepared[plan]",
+    "external_controller_responsibilities": [
+      "Verify full new manifest/source pins before execution",
+      "Verify and monitor original retained holder/keeper/lease identity and idle boundary",
+      "Manage only new self-created Popen children",
+      "Write resource execution revision describing new scientific manifest and externally borrowed original lease"
+    ]
+  },
+  "historical_reference_contract": {
+    "location": "manifest.preflight.cross_service_reference",
+    "fields": [
+      "path",
+      "sha256",
+      "manifest_hash",
+      "reference_manifest",
+      "source_protocol"
+    ],
+    "nested_pin_fields": [
+      "path",
+      "sha256"
+    ],
+    "protocol_requirements": [
+      "matching historical manifest_hash",
+      "real_input_parity_passed true",
+      "qk_reference_passed true",
+      "same checkpoint_sha256 as new manifest"
+    ],
+    "interpretation": "Old acceptedJac finite four-input numerical reference; does not establish coverage or numerical equivalence on all24 new tasks/20 prompt strings"
+  },
+  "limits": {
+    "policy_actions_per_case": 400,
+    "settling_actions": 10,
+    "env_seed": 7,
+    "H": 50,
+    "R": 5,
+    "AE_layers": 18,
+    "internal_actual_NFE_exported": false
+  },
+  "execution_scope": {
+    "torch_or_checkpoint_loaded": false,
+    "real_environment_loaded": false,
+    "rendering_started": false,
+    "GPU_started": false,
+    "old_or_active_outcomes_scanned": false,
+    "runnable_manifest_written": false
+  },
+  "limitations": [
+    "Only synthetic environments/RPC and CPU imports were exercised; real LIBERO90 rendering/reset and model execution remain unverified here",
+    "Finite old-bank gate and fixed-input timing cannot establish new task quality or closed-loop throughput",
+    "Backend exposes schedule nodes rather than an internal actual_NFE counter"
+  ]
+}

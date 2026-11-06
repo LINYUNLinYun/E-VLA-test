@@ -1,0 +1,62 @@
+{
+  "kind": "root_read_only_full585_data_acceptance",
+  "recorded_unix": 1792704509.1481516,
+  "ledger_path": "reports/idea1_libero_plus_half_final_20261022T2124Z/audit_ledger.json",
+  "ledger_sha256": "87d6db263497cb0fea169687bbbc6555af35bc1b9f4105d07c268df7043be75c",
+  "completed_conditions": 585,
+  "paired_cases": 195,
+  "requests_checked": 42305,
+  "executed_steps_checked": 210828,
+  "saved_initial_array_hash_checks": 2925,
+  "physical_state_instruction_first_seed_mismatches": 0,
+  "exact_initial_three_way_cases": 194,
+  "initial_image_differences": [
+    {"group": "perturbed350", "source_index": 210, "mode": "v14_d10", "field": "robot0_eye_in_hand_image", "different_channels": 4, "different_pixels": 3, "max_abs": 1},
+    {"group": "perturbed350", "source_index": 210, "mode": "draft_object", "field": "robot0_eye_in_hand_image", "different_channels": 4, "different_pixels": 3, "max_abs": 1}
+  ],
+  "all_raw_and_decoded_actions_finite": true,
+  "all_request_seeds_match_frozen_rule": true,
+  "all_telemetry_steps_contiguous": true,
+  "all_executed_actions_equal_saved_predictions": true,
+  "all_native_actions_match_frozen_clip": true,
+  "all_final_oracles_match_results": true,
+  "frozen_parent_source_files_checked": 24,
+  "bindings_sha256": "acd71773ea3382afd3a2dadf99b03dd9073588f3c48410fb5a2c071e30b083af",
+  "binding_definition": "Jobs sorted(group,source_index), modes in half manifest order; [result_path,result_sha256,initial_npz_path,initial_npz_sha256,infer_jsonl_path,infer_sha256,telemetry_jsonl_path,telemetry_sha256]; sha256(json.dumps(bindings,sort_keys=True).encode()).",
+  "closed_loop_path_summary_mm": {
+    "original40/v14_d10": {"cases": 20, "median_case_mean_mm": 69.1376446384232, "q25_case_mean_mm": 42.48675470352081, "q75_case_mean_mm": 83.71481975621093, "median_case_p95_mm": 145.18497901165034, "median_common_seconds": 7.074999999999999},
+    "original40/matching_draft": {"cases": 20, "median_case_mean_mm": 106.21662196019051, "q25_case_mean_mm": 52.69875743763855, "q75_case_mean_mm": 257.80389550474234, "median_case_p95_mm": 239.29231442497087, "median_common_seconds": 6.75},
+    "perturbed350/v14_d10": {"cases": 175, "median_case_mean_mm": 108.66733896920991, "q25_case_mean_mm": 67.13836028679617, "q75_case_mean_mm": 188.75783978432827, "median_case_p95_mm": 247.98003157451853, "median_common_seconds": 7.95},
+    "perturbed350/matching_draft": {"cases": 175, "median_case_mean_mm": 162.26521478569765, "q25_case_mean_mm": 75.32576689866262, "q75_case_mean_mm": 270.1437482347219, "median_case_p95_mm": 305.1867258160478, "median_common_seconds": 8.3}
+  },
+  "descriptive_costs": {
+    "original40/full_d10": {"conditions": 20, "wall_s": 490.779289804399, "client_rpc_s": 205.0171093456447, "requests": 647, "executed_steps": 3201},
+    "original40/v14_d10": {"conditions": 20, "wall_s": 588.4267345443368, "client_rpc_s": 246.60678761452436, "requests": 1021, "executed_steps": 5066},
+    "original40/matching_draft": {"conditions": 20, "wall_s": 681.2317591011524, "client_rpc_s": 264.1169660463929, "requests": 1653, "executed_steps": 8242},
+    "perturbed350/full_d10": {"conditions": 175, "wall_s": 7822.6857078671455, "client_rpc_s": 2809.5435308925807, "requests": 9030, "executed_steps": 44848},
+    "perturbed350/v14_d10": {"conditions": 175, "wall_s": 11260.274111475796, "client_rpc_s": 3473.866520624608, "requests": 13783, "executed_steps": 68728},
+    "perturbed350/matching_draft": {"conditions": 175, "wall_s": 12749.112750526518, "client_rpc_s": 2936.7349809892476, "requests": 16171, "executed_steps": 80743}
+  },
+  "observed_call_signatures": {
+    "full_d10": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 1, "ae_layer_calls": 180, "learned_head_calls": 0, "verify_calls": 0}, "requests": 9677}],
+    "v14_d10": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 1, "ae_layer_calls": 180, "learned_head_calls": 0, "verify_calls": 0}, "requests": 14804}],
+    "draft_spatial": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 0, "ae_layer_calls": 0, "learned_head_calls": 1, "verify_calls": 0}, "requests": 3424}],
+    "draft_object": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 0, "ae_layer_calls": 0, "learned_head_calls": 1, "verify_calls": 0}, "requests": 4836}],
+    "draft_goal": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 0, "ae_layer_calls": 0, "learned_head_calls": 1, "verify_calls": 0}, "requests": 4398}],
+    "draft_10": [{"signature": {"vision_encoder_calls": 1, "vlm_prefix_calls": 0, "ae_layer_calls": 0, "learned_head_calls": 1, "verify_calls": 0}, "requests": 5166}]
+  },
+  "gpu_calls": 0,
+  "simulation_calls": 0,
+  "available_video_full_decode_checks": [
+    {"mode": "full_d10", "source_index": 0, "frames": 93, "result_steps": 92, "codec": "h264", "fps": "20/1", "width": 256, "height": 256, "full_decode_passed": true},
+    {"mode": "v14_d10", "source_index": 0, "frames": 98, "result_steps": 97, "codec": "h264", "fps": "20/1", "width": 256, "height": 256, "full_decode_passed": true},
+    {"mode": "draft_spatial", "source_index": 0, "frames": 93, "result_steps": 92, "codec": "h264", "fps": "20/1", "width": 256, "height": 256, "full_decode_passed": true}
+  ],
+  "missing_representative_videos": 18,
+  "limits": [
+    "One previously disclosed initial wrist-image difference remains; no exclusion, rerun, or causal zero-impact claim.",
+    "Path separation uses each model's independent closed-loop actual EEF positions at common native times, only within both recorded ranges; it is not same-observation action prediction error or first-five-action error.",
+    "Costs are descriptive client RPC and episode wall sums from different closed-loop rollouts, not isolated model latency or a controlled speedup.",
+    "This verifies the585-condition Plus half matrix, not the deferred CALVIN/SimplerEnv/PushT scope or missing videos."
+  ]
+}

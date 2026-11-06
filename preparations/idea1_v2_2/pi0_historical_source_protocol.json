@@ -1,0 +1,47 @@
+{
+  "model_id": "pi0",
+  "H": 50,
+  "R": 5,
+  "D": 10,
+  "depth": 18,
+  "CFG": null,
+  "dtype": "bfloat16",
+  "attention": "native Triton",
+  "backend": "scripts.experiment10.backend.Backend / Triton Pi0Inference",
+  "backend_source": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/experiment10/backend.py",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+  "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+  "cameras": ["agentview", "wrist"],
+  "state_used": true,
+  "image_rotation": 180,
+  "skip_semantics": "hidden-update bypass with original-index KV shells; action expert full18",
+  "R_by_suite": {
+    "libero_spatial": 5,
+    "libero_object": 5,
+    "libero_goal": 5,
+    "libero_10": 5
+  },
+  "native_default_denoise_steps": 10,
+  "historical_masks": {
+    "Full18": [],
+    "V14_A03_skip_1based": [3, 4, 9, 11]
+  },
+  "source_evidence": [
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json",
+      "sha256": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+      "claims": ["action_horizon=50", "replan=5", "checkpoint path and SHA256"]
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/closed_loop_config_formal.json",
+      "sha256": "d83d629858c4893555fc03260b6f98e93f1110ab441b694b09b4ecaee91fe4d7",
+      "claims": ["Full18 empty skip mask", "V14_A03 skip mask", "D3/R5 historical condition"]
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/candidate_manifest.json",
+      "sha256": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+      "claims": ["historical Full18/V14 candidate identity"]
+    }
+  ],
+  "protocol_note": "Curated bridge over hashed historical sources above. v2.2 changes the action schedule; preserve the historical checkpoint and H/R. This JSON is configuration, not a historical result."
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "explicit_execution_window_extension_not_scientific_protocol_change",
+  "authorized_utc": "2026-10-22T11:26:29Z",
+  "authorization": "User continued the active E4 supplemental experiment goal; root authorizes completion of the entire preregistered matrix after auditing the first stage.",
+  "manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "original_manifest": "manifest.json",
+  "old_service_receipt": "service.json",
+  "old_deadline_unix": 1792657800,
+  "new_execution_deadline_utc": "2026-10-22T18:00:00Z",
+  "new_execution_deadline_unix": 1792692000,
+  "reason": "The initial 12-condition stage finished, but agent capacity interruption prevented stage continuation; the old model service exited at its registered deadline. No large evaluation was running during that gap.",
+  "unchanged": ["model checkpoints", "frozen source hashes", "350 perturbed instances", "40 original controls", "mother-suite draft mapping", "Full/V14/D10", "H50/R5", "case seeds", "600-step limit", "five zero-action settling steps", "native success oracle", "native BDDL instructions"],
+  "matrix_conditions": 1170,
+  "verified_completed_conditions": 12,
+  "remaining_conditions": 1158,
+  "verified_initial_stage": {"full_successes": 4, "full_trials": 4, "v14_successes": 3, "v14_trials": 4, "draft_successes": 3, "draft_trials": 4, "technical_failures": 0},
+  "root_audit": "Verified all 12 result identities, case and mode mapping, first-request paired seed/instruction, recorded step/request counts, and selected video full-decode receipts; generic manifest verifier passed all 24 source and 3 receipt hashes.",
+  "resume": "Reuse matching completed attempts in original40; keep the identical full-case plan. Evaluate all 350 selected perturbations in perturbed350. No success-based reselection and no silent overwrite of prior attempts or service receipts.",
+  "allocation": "GPU3 was independently observed at 4 MiB with no compute process at authorization. Recheck before construction. Other GPUs still held external processes; zero utilization is not free allocation.",
+  "scope": "This extension does not certify or complete CALVIN, SimplerEnv, PushT, missing ABCD-trained weights, or the gated-tokenizer branches. They remain within the active unfinished goal."
+}

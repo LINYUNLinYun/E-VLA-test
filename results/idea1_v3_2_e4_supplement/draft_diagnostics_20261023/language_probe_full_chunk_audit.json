@@ -1,0 +1,1355 @@
+{
+  "comparisons": [
+    {
+      "head": "draft_10",
+      "first_arm": "actual",
+      "second_arm": "mother_bddl",
+      "first_instruction": "grasp the bound collection of printed pages and position it within the rear storage section of the wheeled utility cart",
+      "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 1.137978434562683,
+        "rms": 0.15501752495765686,
+        "first5_max_abs": 0.5948523879051208,
+        "first5_rms": 0.1189451813697815,
+        "xyz_first5_l2_mean": 0.07626865804195404,
+        "xyz_first5_l2_max": 0.19987238943576813,
+        "xyz_first1_l2": 0.08506951481103897,
+        "xyz_first5_l2_by_step": [
+          0.08506951481103897,
+          0.00467266608029604,
+          0.09172870963811874,
+          0.19987238943576813,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.02486613392829895,
+        "gripper_max_abs": 1.137978434562683,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.19987820088863373,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.017344752326607704,
+        "rotation_x_first5_max_abs": 0.036976829171180725,
+        "rotation_y_first5_rms": 0.02519892528653145,
+        "rotation_y_first5_max_abs": 0.04532921314239502,
+        "rotation_z_first5_rms": 0.018841827288269997,
+        "rotation_z_first5_max_abs": 0.039266541600227356
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.138671875,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 0.59521484375,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+      "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+    },
+    {
+      "head": "draft_10",
+      "first_arm": "mother_bddl",
+      "second_arm": "legacy_filename",
+      "first_instruction": "pick up the book and place it in the back compartment of the caddy",
+      "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+      "decoded": {
+        "bitwise_equal": true,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "first5_max_abs": 0.0,
+        "first5_rms": 0.0,
+        "xyz_first5_l2_mean": 0.0,
+        "xyz_first5_l2_max": 0.0,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.0,
+        "gripper_max_abs": 0.0,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.0,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0,
+        "rotation_x_first5_max_abs": 0.0,
+        "rotation_y_first5_rms": 0.0,
+        "rotation_y_first5_max_abs": 0.0,
+        "rotation_z_first5_rms": 0.0,
+        "rotation_z_first5_max_abs": 0.0
+      },
+      "raw": {
+        "all_bitwise_equal": true,
+        "effective7_bitwise_equal": true,
+        "effective7_max_abs": 0.0,
+        "first5_effective7_bitwise_equal": true,
+        "first5_effective7_max_abs": 0.0,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [],
+        "first_different_effective_row_zero_based": null
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": true,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+      "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+    },
+    {
+      "head": "draft_10",
+      "first_arm": "actual",
+      "second_arm": "legacy_filename",
+      "first_instruction": "grasp the bound collection of printed pages and position it within the rear storage section of the wheeled utility cart",
+      "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 1.137978434562683,
+        "rms": 0.15501752495765686,
+        "first5_max_abs": 0.5948523879051208,
+        "first5_rms": 0.1189451813697815,
+        "xyz_first5_l2_mean": 0.07626865804195404,
+        "xyz_first5_l2_max": 0.19987238943576813,
+        "xyz_first1_l2": 0.08506951481103897,
+        "xyz_first5_l2_by_step": [
+          0.08506951481103897,
+          0.00467266608029604,
+          0.09172870963811874,
+          0.19987238943576813,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.02486613392829895,
+        "gripper_max_abs": 1.137978434562683,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.19987820088863373,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.017344752326607704,
+        "rotation_x_first5_max_abs": 0.036976829171180725,
+        "rotation_y_first5_rms": 0.02519892528653145,
+        "rotation_y_first5_max_abs": 0.04532921314239502,
+        "rotation_z_first5_rms": 0.018841827288269997,
+        "rotation_z_first5_max_abs": 0.039266541600227356
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.138671875,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 0.59521484375,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.4886472225189209,
+          "l2": 2.7642061710357666
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+      "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+    },
+    {
+      "head": "draft_goal",
+      "first_arm": "actual",
+      "second_arm": "mother_bddl",
+      "first_instruction": "place the bowl on the stove",
+      "second_instruction": "put the bowl on the stove",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 1.0423336029052734,
+        "rms": 0.12368977814912796,
+        "first5_max_abs": 0.0,
+        "first5_rms": 0.0,
+        "xyz_first5_l2_mean": 0.0,
+        "xyz_first5_l2_max": 0.0,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.0,
+        "gripper_max_abs": 1.0423336029052734,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.0,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0,
+        "rotation_x_first5_max_abs": 0.0,
+        "rotation_y_first5_rms": 0.0,
+        "rotation_y_first5_max_abs": 0.0,
+        "rotation_z_first5_rms": 0.0,
+        "rotation_z_first5_max_abs": 0.0
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 2.65234375,
+        "first5_effective7_bitwise_equal": true,
+        "first5_effective7_max_abs": 0.0,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          19,
+          22,
+          24,
+          25,
+          26,
+          27,
+          33,
+          35,
+          36,
+          38,
+          42,
+          44,
+          45,
+          46,
+          47,
+          49
+        ],
+        "first_different_effective_row_zero_based": 7
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+      "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+    },
+    {
+      "head": "draft_goal",
+      "first_arm": "mother_bddl",
+      "second_arm": "legacy_filename",
+      "first_instruction": "put the bowl on the stove",
+      "second_instruction": "put the bowl on the stove",
+      "decoded": {
+        "bitwise_equal": true,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "first5_max_abs": 0.0,
+        "first5_rms": 0.0,
+        "xyz_first5_l2_mean": 0.0,
+        "xyz_first5_l2_max": 0.0,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.0,
+        "gripper_max_abs": 0.0,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.0,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0,
+        "rotation_x_first5_max_abs": 0.0,
+        "rotation_y_first5_rms": 0.0,
+        "rotation_y_first5_max_abs": 0.0,
+        "rotation_z_first5_rms": 0.0,
+        "rotation_z_first5_max_abs": 0.0
+      },
+      "raw": {
+        "all_bitwise_equal": true,
+        "effective7_bitwise_equal": true,
+        "effective7_max_abs": 0.0,
+        "first5_effective7_bitwise_equal": true,
+        "first5_effective7_max_abs": 0.0,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [],
+        "first_different_effective_row_zero_based": null
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": true,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+      "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+    },
+    {
+      "head": "draft_goal",
+      "first_arm": "actual",
+      "second_arm": "legacy_filename",
+      "first_instruction": "place the bowl on the stove",
+      "second_instruction": "put the bowl on the stove",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 1.0423336029052734,
+        "rms": 0.12368977814912796,
+        "first5_max_abs": 0.0,
+        "first5_rms": 0.0,
+        "xyz_first5_l2_mean": 0.0,
+        "xyz_first5_l2_max": 0.0,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.0,
+        "gripper_max_abs": 1.0423336029052734,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.0,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0,
+        "rotation_x_first5_max_abs": 0.0,
+        "rotation_y_first5_rms": 0.0,
+        "rotation_y_first5_max_abs": 0.0,
+        "rotation_z_first5_rms": 0.0,
+        "rotation_z_first5_max_abs": 0.0
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 2.65234375,
+        "first5_effective7_bitwise_equal": true,
+        "first5_effective7_max_abs": 0.0,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          19,
+          22,
+          24,
+          25,
+          26,
+          27,
+          33,
+          35,
+          36,
+          38,
+          42,
+          44,
+          45,
+          46,
+          47,
+          49
+        ],
+        "first_different_effective_row_zero_based": 7
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3767136037349701,
+          "l2": 2.131013870239258
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+      "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+    },
+    {
+      "head": "draft_object",
+      "first_arm": "actual",
+      "second_arm": "mother_bddl",
+      "first_instruction": "the children need their milk pick it up from the counter and place it in their snack basket",
+      "second_instruction": "pick the milk and place it in the basket",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 0.8198130130767822,
+        "rms": 0.11345536261796951,
+        "first5_max_abs": 0.23420093953609467,
+        "first5_rms": 0.09713153541088104,
+        "xyz_first5_l2_mean": 0.17107543349266052,
+        "xyz_first5_l2_max": 0.28540584444999695,
+        "xyz_first1_l2": 0.19206392765045166,
+        "xyz_first5_l2_by_step": [
+          0.19206392765045166,
+          0.16213610768318176,
+          0.28540584444999695,
+          0.06086108461022377,
+          0.1549101620912552
+        ],
+        "rotation_first5_l2_mean": 0.07171155512332916,
+        "gripper_max_abs": 0.8198130130767822,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.11457860469818115,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.03249526396393776,
+        "rotation_x_first5_max_abs": 0.07121463119983673,
+        "rotation_y_first5_rms": 0.10822255909442902,
+        "rotation_y_first5_max_abs": 0.23420093953609467,
+        "rotation_z_first5_rms": 0.018929794430732727,
+        "rotation_z_first5_max_abs": 0.026848915964365005
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.0234375,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 0.517578125,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+      "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+    },
+    {
+      "head": "draft_object",
+      "first_arm": "mother_bddl",
+      "second_arm": "legacy_filename",
+      "first_instruction": "pick the milk and place it in the basket",
+      "second_instruction": "pick up the milk and place it in the basket",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 1.0872281789779663,
+        "rms": 0.09457530081272125,
+        "first5_max_abs": 0.3240213394165039,
+        "first5_rms": 0.10364138334989548,
+        "xyz_first5_l2_mean": 0.1448032259941101,
+        "xyz_first5_l2_max": 0.3096110224723816,
+        "xyz_first1_l2": 0.20573201775550842,
+        "xyz_first5_l2_by_step": [
+          0.20573201775550842,
+          0.11523257941007614,
+          0.3096110224723816,
+          0.09195493906736374,
+          0.001485537737607956
+        ],
+        "rotation_first5_l2_mean": 0.06891686469316483,
+        "gripper_max_abs": 1.0872281789779663,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.13253644108772278,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.029474753886461258,
+        "rotation_x_first5_max_abs": 0.06573658436536789,
+        "rotation_y_first5_rms": 0.1082320511341095,
+        "rotation_y_first5_max_abs": 0.2377561777830124,
+        "rotation_z_first5_rms": 0.024853862822055817,
+        "rotation_z_first5_max_abs": 0.046482183039188385
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.087890625,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 0.802734375,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+      "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+    },
+    {
+      "head": "draft_object",
+      "first_arm": "actual",
+      "second_arm": "legacy_filename",
+      "first_instruction": "the children need their milk pick it up from the counter and place it in their snack basket",
+      "second_instruction": "pick up the milk and place it in the basket",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 0.9183857440948486,
+        "rms": 0.1294371783733368,
+        "first5_max_abs": 0.365011990070343,
+        "first5_rms": 0.09100452065467834,
+        "xyz_first5_l2_mean": 0.1326284110546112,
+        "xyz_first5_l2_max": 0.16352857649326324,
+        "xyz_first1_l2": 0.16352857649326324,
+        "xyz_first5_l2_by_step": [
+          0.16352857649326324,
+          0.13588933646678925,
+          0.12340705841779709,
+          0.08688739687204361,
+          0.15342962741851807
+        ],
+        "rotation_first5_l2_mean": 0.01783870719373226,
+        "gripper_max_abs": 0.9183857440948486,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.1674761027097702,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.00716871302574873,
+        "rotation_x_first5_max_abs": 0.015064634382724762,
+        "rotation_y_first5_rms": 0.012036706320941448,
+        "rotation_y_first5_max_abs": 0.01955377869307995,
+        "rotation_z_first5_rms": 0.012638845480978489,
+        "rotation_z_first5_max_abs": 0.021982550621032715
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.38671875,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 0.365234375,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3372860550880432,
+          "l2": 1.9079780578613281
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+      "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+    },
+    {
+      "head": "draft_spatial",
+      "first_arm": "actual",
+      "second_arm": "mother_bddl",
+      "first_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+      "second_instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 2.0038936138153076,
+        "rms": 0.23405970633029938,
+        "first5_max_abs": 2.0038936138153076,
+        "first5_rms": 0.593193531036377,
+        "xyz_first5_l2_mean": 1.1334327459335327,
+        "xyz_first5_l2_max": 2.2721500396728516,
+        "xyz_first1_l2": 1.4029885530471802,
+        "xyz_first5_l2_by_step": [
+          1.4029885530471802,
+          2.2721500396728516,
+          1.8354253768920898,
+          0.1266571432352066,
+          0.029942994937300682
+        ],
+        "rotation_first5_l2_mean": 0.1843169927597046,
+        "gripper_max_abs": 1.1262669563293457,
+        "gripper_first5_sign_disagreements": 2,
+        "gripper_first5_abs_mean": 0.45575255155563354,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.07387436926364899,
+        "rotation_x_first5_max_abs": 0.1534709483385086,
+        "rotation_y_first5_rms": 0.11565934121608734,
+        "rotation_y_first5_max_abs": 0.19376015663146973,
+        "rotation_z_first5_rms": 0.19696271419525146,
+        "rotation_z_first5_max_abs": 0.4047474265098572
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 6.099609375,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 6.099609375,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+      "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+    },
+    {
+      "head": "draft_spatial",
+      "first_arm": "mother_bddl",
+      "second_arm": "legacy_filename",
+      "first_instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+      "second_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 0.6636581420898438,
+        "rms": 0.08482218533754349,
+        "first5_max_abs": 0.4206421375274658,
+        "first5_rms": 0.1408834010362625,
+        "xyz_first5_l2_mean": 0.1845116913318634,
+        "xyz_first5_l2_max": 0.5194209814071655,
+        "xyz_first1_l2": 0.2235819548368454,
+        "xyz_first5_l2_by_step": [
+          0.2235819548368454,
+          0.5194209814071655,
+          0.07840437442064285,
+          0.07601038366556168,
+          0.025140730664134026
+        ],
+        "rotation_first5_l2_mean": 0.04538588598370552,
+        "gripper_max_abs": 0.6636581420898438,
+        "gripper_first5_sign_disagreements": 1,
+        "gripper_first5_abs_mean": 0.20673438906669617,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.010344123467803001,
+        "rotation_x_first5_max_abs": 0.019857924431562424,
+        "rotation_y_first5_rms": 0.05739698186516762,
+        "rotation_y_first5_max_abs": 0.11865588277578354,
+        "rotation_z_first5_rms": 0.01574394293129444,
+        "rotation_z_first5_max_abs": 0.029701612889766693
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 1.103515625,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 1.103515625,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+      "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+    },
+    {
+      "head": "draft_spatial",
+      "first_arm": "actual",
+      "second_arm": "legacy_filename",
+      "first_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+      "second_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "decoded": {
+        "bitwise_equal": false,
+        "max_abs": 2.366429567337036,
+        "rms": 0.26438429951667786,
+        "first5_max_abs": 2.366429567337036,
+        "first5_rms": 0.7068537473678589,
+        "xyz_first5_l2_mean": 1.2785519361495972,
+        "xyz_first5_l2_max": 2.768300771713257,
+        "xyz_first1_l2": 1.6230541467666626,
+        "xyz_first5_l2_by_step": [
+          1.6230541467666626,
+          2.768300771713257,
+          1.9101887941360474,
+          0.05192815139889717,
+          0.03928801417350769
+        ],
+        "rotation_first5_l2_mean": 0.18789497017860413,
+        "gripper_max_abs": 1.3839223384857178,
+        "gripper_first5_sign_disagreements": 3,
+        "gripper_first5_abs_mean": 0.6624869704246521,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.08253924548625946,
+        "rotation_x_first5_max_abs": 0.17332887649536133,
+        "rotation_y_first5_rms": 0.10708274692296982,
+        "rotation_y_first5_max_abs": 0.20798107981681824,
+        "rotation_z_first5_rms": 0.2064608782529831,
+        "rotation_z_first5_max_abs": 0.413557231426239
+      },
+      "raw": {
+        "all_bitwise_equal": false,
+        "effective7_bitwise_equal": false,
+        "effective7_max_abs": 7.203125,
+        "first5_effective7_bitwise_equal": false,
+        "first5_effective7_max_abs": 7.203125,
+        "padding25_bitwise_equal": true,
+        "padding25_max_abs": 0.0,
+        "different_effective_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "first_different_effective_row_zero_based": 0
+      },
+      "first_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "second_feature_scales": {
+        "normalized_state": {
+          "shape": [
+            32
+          ],
+          "rms": 0.3730795085430145,
+          "l2": 2.1104564666748047
+        },
+        "visual_preencoder": {
+          "valid": false,
+          "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+        }
+      },
+      "input_hash_equal": false,
+      "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+      "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+    }
+  ],
+  "count": 12,
+  "interpretation": "First R5 is the executed prefix. Future H50 differences show conditioning sensitivity but do not describe executed motion before replanning. Raw32 channels0:7 are effective native action channels;7:32 are padding. Input hash includes instruction, so prompt-only pairs should differ there."
+}

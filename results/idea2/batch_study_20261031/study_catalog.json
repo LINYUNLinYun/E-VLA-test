@@ -1,0 +1,415 @@
+{
+  "status": "completed",
+  "model": "pi05_libero_full",
+  "num_steps": 10,
+  "action_horizon": 10,
+  "performance": [
+    {
+      "phase": "stage1",
+      "name": "stage1_original_b1_full_prepared",
+      "eligibility": "strict"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b1_sm16_prepared_full",
+      "eligibility": "strict"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_full_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_full_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_sm16_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_sm16_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_sm24_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_sm24_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b1_full_online_full",
+      "eligibility": "strict"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_sm20_prepared_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_full_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_full_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b1_sm16_online_full",
+      "eligibility": "strict"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_sm16_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_sm16_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b2_sm24_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "phase": "stage2",
+      "name": "stage2_b4_sm20_online_full",
+      "eligibility": "same_batch_diagnostic"
+    },
+    {
+      "name": "stage2_tail_b2_sm24_dedicated",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 2,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 24,
+      "prepare_stream": "dedicated",
+      "queue_key": "b2_sm24_dedicated"
+    },
+    {
+      "name": "stage2_tail_b1_sm16_dedicated",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b1_sm16_dedicated"
+    },
+    {
+      "name": "stage2_tail_b4_sm20_dedicated",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "dedicated",
+      "queue_key": "b4_sm20_dedicated"
+    },
+    {
+      "name": "stage2_tail_b1_full_online_reverse",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "caller",
+      "queue_key": "b1_full_online_reverse"
+    },
+    {
+      "name": "stage2_tail_b2_sm16_dedicated",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 2,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b2_sm16_dedicated"
+    },
+    {
+      "name": "stage2_tail_b4_sm16_dedicated",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b4_sm16_dedicated"
+    },
+    {
+      "name": "stage2_tail_b4_sm20_prepared_reverse",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "prepared",
+      "ae_sm_min": 20,
+      "prepare_stream": "caller",
+      "queue_key": "b4_sm20_prepared_reverse"
+    },
+    {
+      "name": "stage2_tail_b4_sm24_prepared_reverse",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "prepared",
+      "ae_sm_min": 24,
+      "prepare_stream": "caller",
+      "queue_key": "b4_sm24_prepared_reverse"
+    },
+    {
+      "name": "stage2_latency_b1_caller_matched",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "caller",
+      "queue_key": "b1_caller_matched",
+      "lookahead_enabled": true
+    },
+    {
+      "name": "stage2_latency_b2_caller_matched",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 2,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 24,
+      "prepare_stream": "caller",
+      "queue_key": "b2_caller_matched",
+      "lookahead_enabled": true
+    },
+    {
+      "name": "stage2_latency_b4_caller_matched",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "caller",
+      "queue_key": "b4_caller_matched",
+      "lookahead_enabled": true
+    },
+    {
+      "name": "stage2_latency_b1_fresh_full",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "caller",
+      "queue_key": "b1_fresh_full",
+      "lookahead_enabled": false
+    },
+    {
+      "name": "stage2_latency_b2_fresh_full",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 2,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 24,
+      "prepare_stream": "caller",
+      "queue_key": "b2_fresh_full",
+      "lookahead_enabled": false
+    },
+    {
+      "name": "stage2_latency_b4_fresh_full",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "caller",
+      "queue_key": "b4_fresh_full",
+      "lookahead_enabled": false
+    },
+    {
+      "name": "stage2_latency_b1_fresh_green",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b1_fresh_green",
+      "lookahead_enabled": false
+    },
+    {
+      "name": "stage2_latency_b2_fresh_green",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 2,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 24,
+      "prepare_stream": "dedicated",
+      "queue_key": "b2_fresh_green",
+      "lookahead_enabled": false
+    },
+    {
+      "name": "stage2_latency_b4_fresh_green",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "dedicated",
+      "queue_key": "b4_fresh_green",
+      "lookahead_enabled": false
+    }
+  ],
+  "failures": [
+    {
+      "name": "stage1_smoke_b2_paired_prepared",
+      "kind": "strict_cross_batch_numerical_failure"
+    },
+    {
+      "name": "stage1_original_b4_numeric",
+      "kind": "strict_cross_batch_numerical_failure"
+    },
+    {
+      "name": "stage1_original_b1_sm16_prepared",
+      "kind": "technical_abort_on_cleanup_not_adopted"
+    },
+    {
+      "name": "stage2_input_dedicated_b1_sm16_smoke",
+      "kind": "admission_rejected_external_occupancy"
+    },
+    {
+      "name": "stage2_input_dedicated_b4_sm20_smoke",
+      "kind": "admission_rejected_external_occupancy"
+    },
+    {
+      "name": "stage2_input_dedicated_b2_sm24_online_full",
+      "kind": "admission_rejected_external_occupancy"
+    }
+  ],
+  "plan": "docs/experiments/idea2/idea2_batch_pipeline_stage2_plan_20261101.md",
+  "profiles": [
+    {
+      "name": "stage2_profile_b4_serial_prepared",
+      "batch": 4,
+      "mode": "serial",
+      "input_mode": "prepared"
+    },
+    {
+      "name": "stage2_profile_b4_pipeline_prepared",
+      "batch": 4,
+      "mode": "pipeline",
+      "input_mode": "prepared"
+    },
+    {
+      "name": "stage2_profile_b4_sm16_online",
+      "batch": 4,
+      "mode": "green",
+      "ae_sm_min": 16,
+      "input_mode": "online"
+    },
+    {
+      "name": "stage2_profile_b4_sm20_prepared",
+      "batch": 4,
+      "mode": "green",
+      "ae_sm_min": 20,
+      "input_mode": "prepared"
+    },
+    {
+      "name": "stage2_tail_b1_dedicated_profile",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b1_dedicated_profile"
+    },
+    {
+      "name": "stage2_tail_b4_dedicated_profile",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "dedicated",
+      "queue_key": "b4_dedicated_profile"
+    }
+  ],
+  "continuity": [
+    {
+      "name": "stage2_tail_b1_green_continuous",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "dedicated",
+      "queue_key": "b1_green_continuous"
+    },
+    {
+      "name": "stage2_tail_b1_full_continuous",
+      "phase": "stage2",
+      "eligibility": "strict",
+      "batch": 1,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "caller",
+      "queue_key": "b1_full_continuous"
+    },
+    {
+      "name": "stage2_tail_b4_green_continuous",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "green",
+      "input_mode": "online",
+      "ae_sm_min": 20,
+      "prepare_stream": "dedicated",
+      "queue_key": "b4_green_continuous"
+    },
+    {
+      "name": "stage2_tail_b4_full_continuous",
+      "phase": "stage2",
+      "eligibility": "same_batch_diagnostic",
+      "batch": 4,
+      "mode": "paired",
+      "input_mode": "online",
+      "ae_sm_min": 16,
+      "prepare_stream": "caller",
+      "queue_key": "b4_full_continuous"
+    }
+  ],
+  "completed_utc": "2026-10-31T20:07:36.714712+00:00",
+  "final_audit": "results/idea2/batch_study_20261031/final_audit.json",
+  "final_csv": "results/idea2/batch_study_20261031/final_analysis/table.csv"
+}

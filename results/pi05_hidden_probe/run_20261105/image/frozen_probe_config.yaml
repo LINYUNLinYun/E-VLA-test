@@ -1,0 +1,95 @@
+stage: evaluation
+manifest: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data_v2/manifest.jsonl
+output_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/image/evaluation
+cache_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/external_source_cache
+model:
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero
+  config_name: pi05_libero
+  openpi_root: /root/nfs/embodied/benchmark/policies/openpi
+seed: 42
+source_layers: all
+max_new_tokens: 8
+score_candidates: true
+length_normalize: false
+selection_prediction: score_prediction
+controls:
+- id: gray
+  kind: constant
+  value: 127
+- id: black
+  kind: constant
+  value: 0
+conditions:
+- real
+- nopatch
+- self
+- shuffle
+- random
+- direct
+- layer0
+integrity:
+  atol: 1.0e-05
+  rtol: 1.0e-05
+aliases: {}
+probes:
+- id: visual_image
+  task_type: visual_attribute
+  source_selector: image:base_0_rgb
+  target_selector: image:base_0_rgb
+  target_layers:
+  - 3
+  prompt: null
+- id: spatial_image
+  task_type: spatial_relation
+  source_selector: image:base_0_rgb
+  target_selector: image:base_0_rgb
+  target_layers:
+  - 6
+  prompt: null
+- id: instruction_image
+  task_type: instruction_conditioned
+  source_selector: images
+  target_selector: images
+  target_layers:
+  - 12
+  prompt: 'answer en Is the task target to the left or right of the gripper?
+
+    '
+  direct_include_instruction: true
+target_model:
+  backend: hf_paligemma
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224
+  device: cuda:0
+  dtype: bfloat16
+  hf_runtime: /root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime
+  decode_implementation: patched_prefill_kv_cache
+calibration_provenance:
+  results: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/image/calibration/probe_results.jsonl
+  sha256: ad1d49777dd915219ffc332290691dbc52f095faba13854158f052153447866e
+  selection_prediction: score_prediction
+  selection:
+    visual_image:
+      target_layer: 3
+      mean_balanced_accuracy: 0.6755952380952381
+      candidates:
+        3: 0.6755952380952381
+        6: 0.6666666666666667
+        9: 0.6666666666666667
+        12: 0.625
+    spatial_image:
+      target_layer: 6
+      mean_balanced_accuracy: 0.5476190476190477
+      candidates:
+        3: 0.5476190476190476
+        6: 0.5476190476190477
+        9: 0.5059523809523809
+        12: 0.5059523809523809
+    instruction_image:
+      target_layer: 12
+      mean_balanced_accuracy: 0.5238095238095238
+      candidates:
+        3: 0.49553571428571436
+        6: 0.505952380952381
+        9: 0.511904761904762
+        12: 0.5238095238095238
+frozen_hash: adc595428926ce22b5637727aaacb6e3179c8f17aa3181d194c95fd95366033b

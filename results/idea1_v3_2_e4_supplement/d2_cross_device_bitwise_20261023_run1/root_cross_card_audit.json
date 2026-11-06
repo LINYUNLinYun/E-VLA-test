@@ -1,0 +1,21 @@
+{
+  "status": "probe_complete_not_quality_approved",
+  "manifest_hash": "00bc9f0cad3b4e8b3a82a674859493add471fe1dbcd5f69ae69f5acb0d17d65f",
+  "fixed_reference_count": 16,
+  "cards": [0,1],
+  "GPU0_vs_GPU1_raw_and_decoded_bitwise_matching_references": 16,
+  "per_card_historical_bitwise_matching_references": 14,
+  "per_card_same_input_repeat_bitwise_matching_references": 16,
+  "per_card_capture_vs_uncaptured_bitwise_matching_references": 2,
+  "per_card_matched_raw32_D2_wrapper_native_bitwise_matching_references": 2,
+  "cross_card_captured_stage_check": "For both original startup references, all normalized RGB/state, final vision output, real projected H0, VLM K/V, initial noise, Euler1..10 latent, raw and decoded arrays match bitwise between GPU0 and GPU1",
+  "historical_exceptions": [
+    {"group":"perturbed350","source_index":0,"mode":"full_d10","raw_max_abs":0.03125,"decoded_max_abs":0.010266542434692383},
+    {"group":"perturbed350","source_index":0,"mode":"v14_d10","raw_max_abs":0.02001953125,"decoded_max_abs":0.00963294506072998}
+  ],
+  "quality_requests": 0,
+  "probe_processes_naturally_exited": [3801072,3801084],
+  "GPU0_GPU1_memory_after_exit_mib": [1,1],
+  "interpretation": "The discrepancy is not a universal cross-card effect:14 historical references reproduce bitwise, and both current cards agree at every captured stage. The2 historical case0 exceptions still prevent the requested strict all-reference gate. Their cause is not yet established; do not drop or relabel them to force approval.",
+  "next_action": "Audit historical case0 provenance, alternate saved attempts and request history before deciding the next minimal diagnostic. No gate relaxation or quality dispatch."
+}

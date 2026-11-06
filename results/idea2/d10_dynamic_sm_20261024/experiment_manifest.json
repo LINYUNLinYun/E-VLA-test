@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-24T10:23:30.063509+00:00",
+  "objective": "idea2 D10: ordinary overlap, stagewise SM reclaim, matching baselines, numerical and lifecycle gates, repeated timings and nsys",
+  "plan": "docs/experiments/idea2/idea2_d10_dynamic_sm_plan_20261024.md",
+  "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+  "gpu_handoff": {
+    "gpu": 1,
+    "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+    "active": false,
+    "owner": "user-authorized idea2",
+    "time": 1792836861.8516934,
+    "released_at_complete": [
+      "/root/nfs/embodied/benchmark/results/idea1_v3_3/pi0_pure_d2/episodes/libero_10/task00/init07/complete.json"
+    ],
+    "preserved_valid": 8,
+    "condition": "pi0_pure_d2",
+    "old_pids": [
+      38509,
+      38716,
+      39054
+    ],
+    "compute_pids_after_release": "",
+    "independent_parent_verification": {
+      "time_local": "2026-10-24 18:20 Asia/Shanghai",
+      "GPU1_processes": "None",
+      "memory_used_MiB": 2,
+      "utilization_pct": 0,
+      "note": "After stopping misbound GPU2 render; parent reported direct nvidia-smi query"
+    }
+  },
+  "isolation": "compute and graphics processes both checked; graphics EGL indexing collision found and cleared before first GPU run",
+  "driver": "580.95.05",
+  "tolerance": {
+    "max_abs": 1e-05,
+    "mae": 1e-06
+  },
+  "num_steps": 10,
+  "input_bank": "results/idea1_v3_1/input_bank.pkl",
+  "cases": {
+    "d2_regression": "passed; regression only, not performance evidence",
+    "d10_whole_screen": "passed; 20-pair screening, not final performance",
+    "d10_split_full_screen": "passed; 20-pair screening",
+    "d10_dynamic16_gate": "passed; numeric/lifecycle gate only",
+    "sm_curves": "passed; isolated fixed-input curves, not end-to-end ranking",
+    "d10_dynamic16_profile": "passed; actual resources and ordering verified by sm_trace_audit",
+    "sm_curves8": "passed; additional isolated module screening",
+    "iteration_audit": "passed; 52 requests, 520 iteration checks, all bitwise; inplace/reset/two slots passed",
+    "encoder_pair_cpu": "passed; two-slot and Event ordering tests",
+    "screen_matrix": "passed; four cases each20paired+20continuous, raw/decoded numeric gates passed",
+    "baseline_matrix": "completed with two source-drift exclusions replaced by stable cases",
+    "d10_crossframe_screen": "passed; 20 x 16-frame pairs, only screening",
+    "encoder_pair_curves": "passed; AE64/Vision64 about1.6ms faster in fixed-input pairing; AE32 rejected",
+    "d10_split_full_repeat": "passed; frozen runtime source, 100pairs+100continuous",
+    "d10_whole_repeat": "passed; frozen runtime source, 100pairs+100continuous",
+    "p4_and_stable_matrix": "passed",
+    "d10_encoder64_vlmfull_screen": "passed; 20x16-frame screen, +1.16% vs ordinary Encoder, slower than ordinary combined; not recommended based on screening",
+    "d10_whole_formal_stable": "passed; 100paired+100continuous, unchanged runtime source receipt",
+    "d10_split_full_formal_stable": "passed; 100paired+100continuous, unchanged runtime source receipt",
+    "d10_oldkv_encoder_screen": "passed; 20pairs+20continuous, age1/prefill1/recapture0",
+    "d10_oldkv_full_screen": "passed; AE-first slightly ahead of Prefill-first, both much slower action return than Encoder selective",
+    "confirmation_matrix": "interrupted_user_pause; first five cases passed; encoder64 profile interrupted",
+    "d10_oldkv_mixed_gate": "passed; same Graph engine, both selective modes, no recapture, freshness and numerical gates passed",
+    "d10_oldkv_formal": "passed; 100 paired each comparison +100 continuous each mode; 700 rows; exact outputs",
+    "d10_oldkv_repeat": "passed; independent reversed order same counts; exact outputs",
+    "d10_encoder64_vlmfull_profile_resumed": "passed; full replacement of interrupted profile",
+    "d10_crossframe_formal": "passed; 100x16 paired4arms plus100continuous each; 6800 exact rows",
+    "d10_crossframe_repeat": "passed; independent reverse; 6800 exact rows",
+    "resume_confirmation_matrix": "passed; 8cases including3 old-KV profiles",
+    "slo": "six valid conditions passed; failed zero-row 62ms repeat retained and replaced",
+    "closedloop_oldkv": "16 valid episodes;4/8 successes each;428 matched inference outputs exact incl8 bootstraps",
+    "async_serial_control": "gate,formal100pairs,repeat100pairs,profile8 passed",
+    "oldkv_trace_analysis": "passed",
+    "async_control_trace_analysis": "passed",
+    "closedloop_fresh_gpu0": "passed;8/8 successful,1181 steps;all bootstrap input/noise/actions identical to old baseline;cross-GPU timing excluded"
+  },
+  "unfinished": [],
+  "plan_sha256": "d4c33c3c04c2e86906f14fcef6a38eb51822caaeea5f06e5e7ca73ef4769a262",
+  "candidate_note": "Frozen after isolated sensitivity: only 8/120 and 16/112 are tested for G2/G3; no wider arbitrary quota search.",
+  "resumed_utc": "2026-10-24T11:30:42.830102+00:00",
+  "frozen_dynamic_candidates": [
+    {
+      "ae_sm_min": 8,
+      "prefix_sm_min": 120
+    },
+    {
+      "ae_sm_min": 16,
+      "prefix_sm_min": 112
+    }
+  ],
+  "next_matrix": null,
+  "p3_decision": "Both 8/120 and16/112 partition->full lose to unrestricted screening. Stop wider layer-SM search; complete full-GPU controls and investigate Encoder pairing separately.",
+  "excluded_cases": {
+    "d10_whole_formal": "source_snapshot_drift_during_cold_loading; repeat required",
+    "d10_split_full_formal": "source_snapshot_drift_during_cold_loading; repeat required",
+    "d10_slo_62ms_repeat": "startup guard rejected lingering utilization with no GPU processes; zero rows; replaced by d10_slo_62ms_repeat_resumed"
+  },
+  "p4_frozen_candidate": {
+    "ae_sms": 64,
+    "vision_sms": 64,
+    "vlm": "unrestricted primary",
+    "ae_tail": "same64SM",
+    "modes": [
+      "fresh_serial",
+      "lookahead_serial",
+      "encoder_overlap"
+    ],
+    "reason": "Only64 improves Encoder pairing; full ten-step isolated AE64 vs full differs about0.23ms, so do not start with three-stage tail-reclaim machinery."
+  },
+  "p4_decision": "Do not expand cutpoints or three-stage reclaim: micro gain diluted to about1% complete trajectory, no win over ordinary combined. Retain optional flag and negative/small results; profile actual resource placement. Confirm ordinary crossframe baselines and SLO next.",
+  "current_matrix": null,
+  "slo_periods_ms": [
+    33,
+    62,
+    71
+  ],
+  "fairness_addendum": "Compare GPU-serial early-return API against Encoder overlap using same vision_only Graph/2slots; control matrix queued after smoke.",
+  "additional_gpu": {
+    "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "purpose": "fresh KV eight-case quality baseline",
+    "active": false
+  },
+  "updated_utc": "2026-10-24T14:47:19.586748+00:00",
+  "completed_experiments_utc": "2026-10-24T14:53:32.109552+00:00",
+  "artifacts": {
+    "report": "docs/experiments/idea2/idea2_d10_dynamic_sm_report_20261024.md",
+    "csv": "reports/idea2_d10_dynamic_sm_20261024",
+    "commands": "reports/idea2_d10_dynamic_sm_20261024/reproduction_commands.md",
+    "fresh_quality": "reports/idea2_d10_dynamic_sm_20261024/closedloop_fresh_vs_old.json"
+  },
+  "completed_utc": "2026-10-24T14:57:02.927946+00:00",
+  "final_audit": {
+    "path": "results/idea2/d10_dynamic_sm_20261024/requirements_audit.json",
+    "status": "passed",
+    "checks": 39,
+    "errors": []
+  }
+}

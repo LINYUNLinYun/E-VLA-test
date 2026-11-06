@@ -1,0 +1,54 @@
+{
+  "created": 1793696666.8722215,
+  "source_suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "target_suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "inits": [
+    20
+  ],
+  "expected_episodes": 360,
+  "flash_episodes": 160,
+  "draft_episodes": 160,
+  "full_episodes": 40,
+  "reused_smoke_episodes": 8,
+  "case_noise_condition_independent": true,
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/common.py": "68d0100dca2f36a52356b53adeeb2b24e4abe45ca061228baf47e6da2a3f28b4",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py": "4abea4d6af1caded4e100f1a174ea2a3d8bb3db2a51b8831e2e4d33a3aed0f50",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/server.py": "091f14da7fda7b515c2669f444a25f8787068917709208c3bc5e35f2c83f5ac6",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/client.py": "088270462ff5b51058bd3789f3b217061640ebf8f4cc79f9f6256225128b670e"
+  },
+  "jobs": [
+    "discovery_full_libero_spatial",
+    "discovery_flash_libero_goal",
+    "discovery_draft_libero_goal",
+    "discovery_flash_libero_spatial",
+    "discovery_draft_libero_spatial",
+    "discovery_flash_libero_object",
+    "discovery_draft_libero_object",
+    "discovery_flash_libero_10",
+    "discovery_draft_libero_10"
+  ],
+  "selection_rule": "After discovery, rank target/source gaps by pure-draft matched-minus-foreign success difference; choose strongest positive with deterministic suite order ties, and a second strongest distinct target if available. Freeze pair(s) and validate only on init21-24 before scientific conclusions; report null findings too."
+}

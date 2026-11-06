@@ -1,0 +1,191 @@
+{
+  "schema": "gpu-first-handoff-audit-v1",
+  "observed_at_utc": "2026-11-05T05:38:21.882Z",
+  "verdict": "both_slots_retained_same_keeper_context_through_first_completed_task_boundary_and_started_same_uuid_server",
+  "scope": "First completed v3 task boundary per slot, including an address-in-use technical attention and an explicit one-time resource retry. This verifies the keeper-backed context and next server binding for the observed boundary; it does not establish exclusive whole-GPU ownership or global no-gap behavior between watcher samples.",
+  "watcher": {
+    "status_path": "results/ease_insights_20261103/gpu_release_watch/status.json",
+    "events_path": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+    "run_id": "060b0172-ba52-4c9b-9c39-03c7fb604d69",
+    "pid": 385842,
+    "proc_start_ticks": "2618445988",
+    "poll_seconds": 2.0,
+    "observed_heartbeat_utc": "2026-11-05T05:38:21.882+00:00",
+    "latest_event_id": 62,
+    "error": null,
+    "target_uuid_events_since_initial_hold": {
+      "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1": [
+        {
+          "event_id": 47,
+          "utc": "2026-11-05T05:00:49.898+00:00",
+          "state": "busy",
+          "memory_mib": 460.0,
+          "compute_process_count": 1
+        }
+      ],
+      "GPU-599477fb-0507-40dc-14df-d491f7a7b202": [
+        {
+          "event_id": 48,
+          "utc": "2026-11-05T05:00:49.898+00:00",
+          "state": "busy",
+          "memory_mib": 460.0,
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "idle_event_since_initial_hold": false,
+    "pid_attribution": "Watcher host compute PIDs were not equated to local/container /proc PIDs."
+  },
+  "source_lifecycle": {
+    "keeper_source": "preparations/ease_insights_20261103/gpu_owned_keeper.py",
+    "keeper_sha256": "c3719a70ed02b2ac42c8cfea261dba5436f59a10657e350c5d2687f5e2ca1566",
+    "session_source": "preparations/ease_insights_20261103/gpu_resource_session.py",
+    "session_sha256": "db4dbc38562401b58efa6403d692ab14b2776d2150b84533bb5949c3a3899c89",
+    "semantics": [
+      "DriverAllocation.acquire makes one cuCtxCreate_v2 call and one cuMemAlloc_v2 call; its control-pipe loop retains those objects and cleanup frees/destroys them in finally on lease EOF or shutdown.",
+      "The session starts one keeper before its task loop, calls check_keeper around task execution, and returns to the task loop after complete outcomes without starting a replacement keeper.",
+      "A complete task outcome is written only after Science.execute returns. That path requires worker returncode 0, all assigned cases complete, and successful owned-child cleanup. The long-lived server is reaped by the session's owned cleanup, which terminates it if still running and waits; no server exit code is recorded in the outcome."
+    ]
+  },
+  "slots": {
+    "slot00": {
+      "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "original_task": {
+        "id": "task_3947d438914a140a4a5dd75a",
+        "outcome_phase": "complete",
+        "outcome_time_unix": 1793856193.889351,
+        "result_complete": true,
+        "completed_after": 120
+      },
+      "technical_attention": {
+        "id": "task_5d630b5dff3814bc2fb69c88",
+        "outcome_phase": "attention",
+        "error": "OSError(98, 'Address already in use')"
+      },
+      "resumed_retry": {
+        "id": "task_5d630b5dff3814bc2fb69c88__port_retry1",
+        "status_phase": "running",
+        "outcome": "not yet present at observation"
+      },
+      "resume_receipt": {
+        "path": "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot00/resume_receipts/port_reuse_ready_1793856599466824667.json",
+        "phase": "resumed",
+        "session_pid": 631907,
+        "session_start_ticks": "2623408608",
+        "uuid_matches": true,
+        "source_proof_verified": true,
+        "plan_sha256": "18f3609856c026342bd79064a59a8a97f9e5ebdb9d8eb06240b2f8ab05fb5e42"
+      },
+      "session_proc": {
+        "pid": 631907,
+        "start_ticks": "2623408608",
+        "ppid": 600088
+      },
+      "keeper_proc": {
+        "pid": 632159,
+        "start_ticks": "2623410211",
+        "ppid": 631907,
+        "nonce": "9faaecd8f9e440158abee6f9c95d4e62",
+        "uuid_matches": true,
+        "allocation_mib_argv": 64
+      },
+      "keeper_ready_receipt": {
+        "phase": "ready",
+        "context_created": true,
+        "allocated_bytes": 67108864,
+        "driver_version": 13000,
+        "pid_start_matches_proc": true,
+        "nonce_matches_proc_argv": true
+      },
+      "original_server_worker": {
+        "server_pid": 632184,
+        "worker_pid": 632751,
+        "both_original_pid_identities_absent_after_completion": true
+      },
+      "new_server": {
+        "pid": 638221,
+        "start_ticks": "2623585435",
+        "ppid": 631907,
+        "uuid_arg_matches": true,
+        "protocol_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/local_goal/runs/discovery_shard00of01_1793856599947203574/protocol.json",
+        "protocol_server_pid": 638221,
+        "protocol_gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "condition_id": "local_goal",
+        "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+        "real_input_parity_passed": true
+      }
+    },
+    "slot01": {
+      "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "original_task": {
+        "id": "task_56fa9fa47a5a34d22d10e306",
+        "outcome_phase": "complete",
+        "outcome_time_unix": 1793856206.7673457,
+        "result_complete": true,
+        "completed_after": 120
+      },
+      "technical_attention": {
+        "id": "task_69061abe0a3ba39bb9decaf4",
+        "outcome_phase": "attention",
+        "error": "OSError(98, 'Address already in use')"
+      },
+      "resumed_retry": {
+        "id": "task_69061abe0a3ba39bb9decaf4__port_retry1",
+        "status_phase": "running",
+        "outcome": "not yet present at observation"
+      },
+      "resume_receipt": {
+        "path": "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot01/resume_receipts/port_reuse_ready_1793856599466824667.json",
+        "phase": "resumed",
+        "session_pid": 631915,
+        "session_start_ticks": "2623408624",
+        "uuid_matches": true,
+        "source_proof_verified": true,
+        "plan_sha256": "18f3609856c026342bd79064a59a8a97f9e5ebdb9d8eb06240b2f8ab05fb5e42"
+      },
+      "session_proc": {
+        "pid": 631915,
+        "start_ticks": "2623408624",
+        "ppid": 600088
+      },
+      "keeper_proc": {
+        "pid": 632160,
+        "start_ticks": "2623410216",
+        "ppid": 631915,
+        "nonce": "55c894da4b734358ad245ced9b042d68",
+        "uuid_matches": true,
+        "allocation_mib_argv": 64
+      },
+      "keeper_ready_receipt": {
+        "phase": "ready",
+        "context_created": true,
+        "allocated_bytes": 67108864,
+        "driver_version": 13000,
+        "pid_start_matches_proc": true,
+        "nonce_matches_proc_argv": true
+      },
+      "original_server_worker": {
+        "server_pid": 632182,
+        "worker_pid": 632756,
+        "both_original_pid_identities_absent_after_completion": true
+      },
+      "new_server": {
+        "pid": 638228,
+        "start_ticks": "2623585504",
+        "ppid": 631915,
+        "uuid_arg_matches": true,
+        "protocol_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/local_spatial/runs/discovery_shard00of01_1793856600530843353/protocol.json",
+        "protocol_server_pid": 638228,
+        "protocol_gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "condition_id": "local_spatial",
+        "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+        "real_input_parity_passed": true
+      }
+    }
+  },
+  "limitations": [
+    "The 2-second observer recorded no idle transition for either assigned UUID between events 47/48 and event 56. This sampled watcher record is not proof of no unobserved transient shorter than its poll interval.",
+    "The same keeper PID/start/parent/nonce remained live, and source has a single acquire/free lifetime; this supports continuity of the keeper context across the boundary. It does not provide exclusive whole-device enforcement.",
+    "Original task outcomes are complete with 120 assigned cases each; no success-rate claim is made. The resumed retry outcomes were absent at this snapshot, so no completion or scientific result is claimed for them."
+  ]
+}

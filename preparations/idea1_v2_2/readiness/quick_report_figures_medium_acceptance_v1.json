@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "accepted": true,
+  "reviewer_model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "scope": "Reporting-only source/data-mapping CPU review; actual final figures not yet reviewed",
+  "source_receipt_sha256": "28d60be0e22d7374009135b88cd586fe3c693cdf4f708c2161a99fdc52cab0f9",
+  "source_sha256": "de0ed369aef5c1b617a34072251fe45fca8c4670dbcbfe8a075257605fe7b0c0",
+  "test_sha256": "e4a5f2fae979d93331bb142513c95d24864d2d722d991259ce09fed49553703c",
+  "independent_tests": {"passed": 3, "seconds": 1.283, "gpu_queries": 0, "model_calls": 0},
+  "review": "Success heatmap checks each main canonical condition/suite and 120/30 counts. Latency shows observed means with DB640/pi0-X160 denominators and explicit native/D2-u50 core selection. Failure records retain condition and schedule separately, only main valid success=false rows; the plot uses the same core conditions as latency, preserving true zero-failure conditions rather than pooling other schedules. Unknown retained; furthest stage is descriptive, not cause. Full blue/variant orange, new output directory and input hash stability reviewed.",
+  "independent_C01_C08_all_passed": false,
+  "limits": ["No signed scientific source or results modified", "Actual CSV mapping and generated figures remain to be checked after one reporting run; no new raw/media or GPU audit is implied"]
+}

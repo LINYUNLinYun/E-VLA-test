@@ -1,0 +1,312 @@
+{
+  "status": "passed",
+  "generated_unix": 1792775570.446771,
+  "scope": "Final completion audit for the authorized two-step experimental study, not production deployment or closed-loop robot validation",
+  "checks": [
+    {
+      "requirement": "Required formal baseline, ablation and independent-repeat artifacts complete",
+      "passed": true,
+      "evidence": [
+        "d2_original_and_full_graph/result.json",
+        "d2_original_fresh_cyclic/result.json",
+        "d2_prepared_fresh_serial/result.json",
+        "d2_isolated/result.json",
+        "d2_isolated_prepared/result.json",
+        "d2_old_kv_best/result.json",
+        "d2_native_jax/result.json",
+        "a1_block_ready_100/result.json",
+        "a2_full_conn32_100/result.json",
+        "a2_full_conn32_100_repeat/result.json",
+        "a2_per_step_100_retry1/result.json",
+        "a2_group2_100/result.json",
+        "a2_group4_100/result.json",
+        "a2_priority_100/result.json",
+        "a2_sm16_100/result.json",
+        "a2_sm32_100/result.json",
+        "a2_sm64_100/result.json",
+        "a2_sm16_conn8_100_retry1/result.json",
+        "a2_sm16_conn32_100/result.json",
+        "crossframe_capacity_initial_gpu0/result.json",
+        "crossframe_capacity_repeat100_gpu0/result.json",
+        "crossframe_arrival154_w0_control_gpu0_arrival_fix_retry/result.json",
+        "crossframe_arrival62_w15_gpu0/result.json",
+        "crossframe_arrival62_w15_gpu0_repeat_reverse/result.json",
+        "crossframe_arrival77_w0_control_gpu0/result.json",
+        "crossframe_arrival77_w0_control_gpu0_repeat_reverse/result.json",
+        "crossframe_arrival33_w0_gpu0/result.json",
+        "crossframe_arrival33_w0_gpu0_repeat_reverse/result.json",
+        "crossframe_arrival33_delay8_gpu0/result.json",
+        "crossframe_arrival33_delay8_gpu0_repeat_reverse/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Two-step semantics and zero-error modern numerical gates",
+      "passed": true,
+      "evidence": [
+        "report_final_20261024/layer.csv",
+        "report_final_20261024/capacity.csv",
+        "report_final_20261024/arrival.csv"
+      ],
+      "limits": "MAE1e-6/max1e-5 gates; selected fresh routes checked against own actual current source and seed; old-KV has its own old-KV oracle."
+    },
+    {
+      "requirement": "All eligible numerical evidence finite and within predefined tolerance",
+      "passed": true,
+      "evidence": [
+        "report_final_20261024/report.json"
+      ],
+      "limits": "Native JAX has repeatability only, excluded from cross-framework correctness claims."
+    },
+    {
+      "requirement": "Two-slot lifecycle, in-place updates and real pending-work reset",
+      "passed": true,
+      "evidence": [
+        "a2_full_conn32_100_repeat/result.json:lifecycle_audit"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_capacity_initial_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_capacity_initial_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_capacity_repeat100_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_capacity_repeat100_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival154_w0_control_gpu0_arrival_fix_retry",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival154_w0_control_gpu0_arrival_fix_retry/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival62_w15_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival62_w15_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival62_w15_gpu0_repeat_reverse",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival62_w15_gpu0_repeat_reverse/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival77_w0_control_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival77_w0_control_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival77_w0_control_gpu0_repeat_reverse",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival77_w0_control_gpu0_repeat_reverse/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival33_w0_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival33_w0_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival33_w0_gpu0_repeat_reverse",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival33_w0_gpu0_repeat_reverse/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival33_delay8_gpu0",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival33_delay8_gpu0/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Prefill coverage and stable Graphs: crossframe_arrival33_delay8_gpu0_repeat_reverse",
+      "passed": true,
+      "evidence": [
+        "crossframe_arrival33_delay8_gpu0_repeat_reverse/result.json"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "Actual Kernel attribution, matching workload and dependencies: encoder",
+      "passed": true,
+      "evidence": [
+        "crossframe_encoder_trace_analysis/crossframe_findings.json"
+      ],
+      "limits": "Trace proves delay0 capacity mechanism; it does not measure delay8 overlap durations or steady performance."
+    },
+    {
+      "requirement": "Actual Kernel attribution, matching workload and dependencies: combined",
+      "passed": true,
+      "evidence": [
+        "crossframe_combined_trace_analysis/crossframe_findings.json"
+      ],
+      "limits": "Trace proves delay0 capacity mechanism; it does not measure delay8 overlap durations or steady performance."
+    },
+    {
+      "requirement": "Representative nsys and sqlite artifacts present",
+      "passed": true,
+      "evidence": [
+        "d2_layer_kv_ready_20261023_v1",
+        "d2_a2_serial_profile_20261023_v1",
+        "d2_a2_sm16_conn32_profile_20261023_v1",
+        "d2_crossframe_serial_profile_20261023_v1",
+        "d2_crossframe_encoder_profile_20261023_v1",
+        "d2_crossframe_combined_profile_20261023_v1"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "CPU regressions",
+      "passed": true,
+      "evidence": [
+        "final_cpu_checks.log",
+        "final_report_checks.log"
+      ],
+      "limits": "18 reporter checks rerun after adding delay metadata; not 102 distinct tests."
+    },
+    {
+      "requirement": "Known recorded model-source hashes unchanged",
+      "passed": true,
+      "evidence": [
+        "model_provenance_final.json",
+        "case_provenance_final.csv"
+      ],
+      "limits": "48 complete three-file model snapshots;6 legacy snapshots missing, remain unknown. Weight bytes not rehashed. Initial original-matrix noise was noncyclic, corrected in provenance."
+    },
+    {
+      "requirement": "Repeated SLO and per-round comparisons delivered",
+      "passed": true,
+      "evidence": [
+        "slo_repeat_analysis.json",
+        "delay_repeat_analysis.json",
+        "singleframe_repeat_analysis.json"
+      ],
+      "limits": "Empirical repeated100-sample P95, not a universal service guarantee. Capacity is not camera latency. Delay0-vs8 is independent sequential evidence, not randomized paired knob ablation."
+    },
+    {
+      "requirement": "Freshness-failed old-KV speed excluded",
+      "passed": true,
+      "evidence": [
+        "report_final_20261024/excluded.csv"
+      ],
+      "limits": null
+    },
+    {
+      "requirement": "GPU queue stopped after completion",
+      "passed": true,
+      "evidence": [
+        "gpu_watch_status.json",
+        "singleframe_repeat_gpu1.json"
+      ],
+      "limits": "Final nvidia-smi check showed GPU0/GPU1 at1MiB; foreign GPU2/3 processes were untouched."
+    },
+    {
+      "requirement": "Commands and delay8 reproduction included",
+      "passed": true,
+      "evidence": [
+        "reproduction_commands.txt"
+      ],
+      "limits": null
+    }
+  ],
+  "result_files_inspected": 57,
+  "complete_verified_model_cases": 51,
+  "failed_or_unverified_retained": [
+    {
+      "case": "a2_per_step_100",
+      "source_file": "/root/nfs/embodied/benchmark/results/idea2/layer_pipeline_20261023/a2_per_step_100/result.json",
+      "sha256": "4fa2cd47fa8111b50695b1cf7b8783811c6aefce27beeaaac1181ca8400b0085",
+      "family": "layer",
+      "status": "failed",
+      "complete": false,
+      "completion_evidence": "explicit_status=failed",
+      "observed_rows": 0,
+      "expected_rows": 400,
+      "source_integrity": true
+    },
+    {
+      "case": "a2_sm16_conn8_100",
+      "source_file": "/root/nfs/embodied/benchmark/results/idea2/layer_pipeline_20261023/a2_sm16_conn8_100/result.json",
+      "sha256": "c8a2134ace653c69e2e293e918978a68d88e4be66d4f4cb51779266081e562d5",
+      "family": "layer",
+      "status": "failed",
+      "complete": false,
+      "completion_evidence": "explicit_status=failed",
+      "observed_rows": 0,
+      "expected_rows": 400,
+      "source_integrity": true
+    },
+    {
+      "case": "crossframe_arrival154_w0_control_gpu0",
+      "source_file": "/root/nfs/embodied/benchmark/results/idea2/layer_pipeline_20261023/crossframe_arrival154_w0_control_gpu0/result.json",
+      "sha256": "813ae9a828be013b923d0747afa06053ac4ab48b19f9379e7f8cd4fc3cd292cd",
+      "family": "crossframe",
+      "status": "failed",
+      "complete": false,
+      "completion_evidence": "explicit_status=failed",
+      "observed_rows": 300,
+      "expected_rows": 400,
+      "source_integrity": true
+    },
+    {
+      "case": "crossframe_arrival62_w0",
+      "source_file": "/root/nfs/embodied/benchmark/results/idea2/layer_pipeline_20261023/crossframe_arrival62_w0/result.json",
+      "sha256": "9a1e30c8ffaecc2f2f4038300901f909578ba24f6b665e33a809fae27b6fcc6b",
+      "family": "crossframe",
+      "status": "failed",
+      "complete": false,
+      "completion_evidence": "explicit_status=failed",
+      "observed_rows": 0,
+      "expected_rows": 400,
+      "source_integrity": true
+    },
+    {
+      "case": "green_probe/trial_gpu1",
+      "source_file": "/root/nfs/embodied/benchmark/results/idea2/layer_pipeline_20261023/green_probe/trial_gpu1/result.json",
+      "sha256": "0c675859106a686b3d2a7d0efdbe60c65ec661b1f1876edad00549363f18718a",
+      "family": "support",
+      "status": "failed",
+      "complete": false,
+      "completion_evidence": "support_not_verified",
+      "observed_rows": 0,
+      "expected_rows": null,
+      "source_integrity": false
+    }
+  ],
+  "remaining_required_work": [],
+  "limitations": [
+    "No universal optimal schedule or guaranteed SLO; conclusions limited to recorded4090/input-bank/arrival conditions.",
+    "Green Context tests cover selected quotas; mechanism of hardware queue mapping remains unproven.",
+    "Current implementation is an opt-in experimental runner, not a deployed robot policy service.",
+    "P95 evaluates returned actions; dropped observations are separately reported.",
+    "Group4/priority small single-run differences are not ranked as a repeated winner."
+  ]
+}

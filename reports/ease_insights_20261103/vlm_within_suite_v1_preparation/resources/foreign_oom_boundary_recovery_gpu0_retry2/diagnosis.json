@@ -1,0 +1,53 @@
+{
+  "schema": "ease-newscience-zero-case-startup-recovery-v1",
+  "time": 1793875342.3976011,
+  "zero_case_startup_failure_verified": true,
+  "scientific_manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+  "failed_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_goal/runs/discovery_shard00of01_1793872963638580005",
+  "failed_run_files": [
+    "identity.json",
+    "server.log"
+  ],
+  "server_log_sha256": "e40a5a01e1f0e2f7b1e1acfb7b708e712a0a9e5344c7e26f2a96b15b715151e3",
+  "identity_sha256": "0e828585ada53b0cac402e8815ed78d8b405a778cb28dd16c1eba3fb9960d3ae",
+  "local_goal_receipts_at_diagnosis": 0,
+  "failed_borrower_pid": 776439,
+  "failed_borrower_start_ticks": "2625090610",
+  "completed_conditions_preserved": {
+    "full_d10": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/full_d10/discovery_shard00of01_complete.json",
+      "sha256": "42e640e06f02cb2a8152bcdc3fd369c13aa18d00ff12d9245aa37bafdf8a5d76",
+      "cases": 72
+    },
+    "jac_anchor": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/jac_anchor/discovery_shard00of01_complete.json",
+      "sha256": "ee98ba79802ca06fccb4cbde1c02ea6b83abce464fd3b8f8d83c47d249ad1c1a",
+      "cases": 72
+    },
+    "local_spatial": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_spatial/discovery_shard00of01_complete.json",
+      "sha256": "61ee55b0cb97dbb86a508f69e46b2eda81bfac109f89e0af58329defb13667be",
+      "cases": 72
+    },
+    "local_object": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_object/discovery_shard00of01_complete.json",
+      "sha256": "d363abc79d9c1113a135f24e0ef14d5c0f1c0b232bb9ae657ee5f38940505d8c",
+      "cases": 72
+    }
+  },
+  "gpu0_cached_after_own_exit": {
+    "index": 0,
+    "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "memory_mib": 18423.0,
+    "compute_process_count": 2,
+    "host_compute_pids": [
+      1975204,
+      3035632
+    ],
+    "state": "busy",
+    "idle": false
+  },
+  "cached_query_finished_at": 1793875341.9419923,
+  "diagnosis": "FreshserverPi0InferenceinitCUDAOOM beforehealth/protocol/worker/cases, sameexacterrorlogbytesaspreviousreviewedzero-caseerrors. Fourcomplete72caseconditionsretained; no scientificfailure retried. Additionalcompute ownerunknown; outsidecurrentvisibleprocessnamespace.",
+  "recovery": "Reviewedone-shot15s/2s/9samplegate; exactoriginalargv;O_EXCLintent;CPUsharedregistryRMWlock. No sciencemodifications orGPU/processsignals."
+}

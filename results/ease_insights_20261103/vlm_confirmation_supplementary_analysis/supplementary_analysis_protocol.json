@@ -1,0 +1,25 @@
+{
+  "source": {
+    "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/analyze_supplementary.py",
+    "sha256": "b33c85565e0347c235eba013ad9be543da7c8d1533d806a94b7ea09cfd351b4c",
+    "reused_primary_source": {
+      "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/analyze_confirmation.py",
+      "sha256": "3ca73a5dce5dca8cde2e54340df4a1b82b8aec627481b5780321adef3f240824"
+    }
+  },
+  "protocol": {
+    "bootstrap_replicates": 10000,
+    "confidence": 0.95,
+    "case_bootstrap": "Paired per-case success differences; sample 50 cases with replacement within each prespecified suite; percentile 2.5/97.5 intervals",
+    "task_cluster_bootstrap": "Sample ten tasks with replacement, retaining each selected task's five paired initial states; percentile 2.5/97.5 intervals",
+    "seed": "SHA256(manifest hash, frozen suite/better/worse, method); independent of observed outcomes",
+    "primary_tests": "Original Spatial/Long conclusions retain their original Holm family of two; separate three-contrast results use one-sided exact paired tests with Holm across exactly Spatial, Long, Goal",
+    "stability": "Positive paired difference, both bootstrap lower bounds >0, and positive leave-one-task-out and leave-one-init-out differences",
+    "interpretation": "Support complementarity only when both frozen directions meet stability; otherwise distinguish positive directions with uncertainty from directions not reproduced. No single p threshold determines the conclusion.",
+    "caveats": "Ten task clusters and five initial states limit precision; bootstrap intervals are approximate. Non-significance is not equivalence. Other categories are descriptive; no path or suite reselection.",
+    "supplementary_tests": "The registered Goal> and original Long> directions form the separate supplementary claim; no heldout selection or direction reversal",
+    "registration": "Require pinned registration bytes, manifest/selection SHA bindings, and registration strictly before the earliest raw heldout identity mtime, including retained technical attempts",
+    "completeness": "All 600 valid episodes and no missing, invalid, or unexpected completed cases; partial data receive counts only",
+    "inference_scope": "Supplementary Goal/Long support is labelled prospective only when the registration audit passes; original primary failure remains visible"
+  }
+}

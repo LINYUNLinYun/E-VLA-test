@@ -1,0 +1,23 @@
+{
+  "status": "completed_CPU_checks_only",
+  "quality_requests": 0,
+  "gpu_initialized": false,
+  "reference_modes": ["full_d10", "v14_d10"],
+  "reference_case": "libero_plus_20261022T074328Z/perturbed350/case0000",
+  "seed": 2048672356,
+  "original_five_observation_field_hashes_match_first_inference": true,
+  "model_input_digest_matches_saved_first_inference": true,
+  "noise_digest_matches_saved_first_inference": true,
+  "precision_check": {
+    "native_observation_state_dtype": "float64",
+    "raw_wrapper_state_dtype": "float32",
+    "normalized_state_max_abs_difference": 1.271226270915804e-7,
+    "model_bfloat16_state_bitwise_equal": true,
+    "exact_CPU_input_preparer_image_state_noise_bitwise_equal": [true,true,true],
+    "scope": "Both saved startup inputs; official local transforms and actual CPU slow input preparer (float32 intermediate then BF16), no policy constructor or CUDA initialization",
+    "not_exercised": "GPU fast input-preparation kernel and VLM/AE execution"
+  },
+  "historical_runtime_package_versions_recorded": false,
+  "interpretation": "Raw input mismatch and the tested state precision difference do not currently explain the historical D10 raw output discrepancy. This is not proof of a cross-GPU rounding cause or full GPU pipeline parity. Historical VLM intermediates and dependency versions were not saved, so the first divergent layer and runtime package equivalence are not established.",
+  "next_authorized_action": "Keep original-GPU3 strict output/native-D2 gate and no-video195-case queue. No tolerance relaxation or cross-device quality launch."
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "purpose": "Exploratory executed-command Kalman gate for Full18-D3 with calibrated validation quantiles",
+  "calibration": "results/experiment10_phase_draft_20261009/command_gate/calibration.json",
+  "purpose_details": "tasks 8-9, init0-4; 40 episodes per threshold across the four standard suites",
+  "conditions": [
+    {
+      "name": "KalmanD3_Q50",
+      "skip": [],
+      "steps": 3,
+      "mode": "kalman_gate",
+      "horizon": 12,
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "predictor_process_variance": [0.00006848111178125633, 0.00004835625056477495, 0.00004656362451535834, 0.0000017297671082050466, 0.000009003838720942717, 0.0000022323713711225847],
+      "predictor_measurement_variance": [0.000006848111178125633, 0.0000048356250564774955, 0.000004656362451535834, 0.000001, 0.000001, 0.000001],
+      "translation_threshold": 165.96528020448955,
+      "rotation_threshold": 98.28138894656047,
+      "max_observation_age_ms": 100.0,
+      "minimum_executed_history": 4,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    },
+    {
+      "name": "KalmanD3_Q75",
+      "skip": [],
+      "steps": 3,
+      "mode": "kalman_gate",
+      "horizon": 12,
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "predictor_process_variance": [0.00006848111178125633, 0.00004835625056477495, 0.00004656362451535834, 0.0000017297671082050466, 0.000009003838720942717, 0.0000022323713711225847],
+      "predictor_measurement_variance": [0.000006848111178125633, 0.0000048356250564774955, 0.000004656362451535834, 0.000001, 0.000001, 0.000001],
+      "translation_threshold": 344.81090396157117,
+      "rotation_threshold": 253.5061865806914,
+      "max_observation_age_ms": 100.0,
+      "minimum_executed_history": 4,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    },
+    {
+      "name": "KalmanD3_Q90",
+      "skip": [],
+      "steps": 3,
+      "mode": "kalman_gate",
+      "horizon": 12,
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "predictor_process_variance": [0.00006848111178125633, 0.00004835625056477495, 0.00004656362451535834, 0.0000017297671082050466, 0.000009003838720942717, 0.0000022323713711225847],
+      "predictor_measurement_variance": [0.000006848111178125633, 0.0000048356250564774955, 0.000004656362451535834, 0.000001, 0.000001, 0.000001],
+      "translation_threshold": 717.8119058284223,
+      "rotation_threshold": 515.7244834283129,
+      "max_observation_age_ms": 100.0,
+      "minimum_executed_history": 4,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    },
+    {
+      "name": "KalmanD3_Q95",
+      "skip": [],
+      "steps": 3,
+      "mode": "kalman_gate",
+      "horizon": 12,
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "predictor_process_variance": [0.00006848111178125633, 0.00004835625056477495, 0.00004656362451535834, 0.0000017297671082050466, 0.000009003838720942717, 0.0000022323713711225847],
+      "predictor_measurement_variance": [0.000006848111178125633, 0.0000048356250564774955, 0.000004656362451535834, 0.000001, 0.000001, 0.000001],
+      "translation_threshold": 1047.0597757631892,
+      "rotation_threshold": 776.4623285841122,
+      "max_observation_age_ms": 100.0,
+      "minimum_executed_history": 4,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    }
+  ]
+}

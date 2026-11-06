@@ -1,0 +1,4286 @@
+{
+  "status": "complete",
+  "heads": [
+    "draft_spatial",
+    "draft_object",
+    "draft_goal",
+    "draft_10"
+  ],
+  "metric_validity": "metric_validity.json",
+  "interpretation": "Report each released head separately. Fixed-case interventions are local mechanism evidence; no new whole-suite score is implied.",
+  "original40": {
+    "status": "complete",
+    "completed": 40,
+    "target": 40,
+    "missing": [],
+    "physical_pair_failures": [],
+    "limitations": [
+      "Two metadata-selected tasks per head; no new suite accuracy claim.",
+      "Init0 versus6 changes the whole official initial state, not robot pose alone.",
+      "Old/new settle changes duration and gripper command jointly.",
+      "Unified600 cap is a controlled diagnostic, not the historical score protocol."
+    ]
+  },
+  "language_probe": {
+    "comparisons": [
+      {
+        "head": "draft_10",
+        "first_arm": "actual",
+        "second_arm": "mother_bddl",
+        "first_instruction": "grasp the bound collection of printed pages and position it within the rear storage section of the wheeled utility cart",
+        "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 1.137978434562683,
+          "rms": 0.15501752495765686,
+          "first5_max_abs": 0.5948523879051208,
+          "first5_rms": 0.1189451813697815,
+          "xyz_first5_l2_mean": 0.07626865804195404,
+          "xyz_first5_l2_max": 0.19987238943576813,
+          "xyz_first1_l2": 0.08506951481103897,
+          "xyz_first5_l2_by_step": [
+            0.08506951481103897,
+            0.00467266608029604,
+            0.09172870963811874,
+            0.19987238943576813,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.02486613392829895,
+          "gripper_max_abs": 1.137978434562683,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.19987820088863373,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.017344752326607704,
+          "rotation_x_first5_max_abs": 0.036976829171180725,
+          "rotation_y_first5_rms": 0.02519892528653145,
+          "rotation_y_first5_max_abs": 0.04532921314239502,
+          "rotation_z_first5_rms": 0.018841827288269997,
+          "rotation_z_first5_max_abs": 0.039266541600227356
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.138671875,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 0.59521484375,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+        "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+      },
+      {
+        "head": "draft_10",
+        "first_arm": "mother_bddl",
+        "second_arm": "legacy_filename",
+        "first_instruction": "pick up the book and place it in the back compartment of the caddy",
+        "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+        "decoded": {
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "first5_max_abs": 0.0,
+          "first5_rms": 0.0,
+          "xyz_first5_l2_mean": 0.0,
+          "xyz_first5_l2_max": 0.0,
+          "xyz_first1_l2": 0.0,
+          "xyz_first5_l2_by_step": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.0,
+          "gripper_max_abs": 0.0,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.0,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.0,
+          "rotation_x_first5_max_abs": 0.0,
+          "rotation_y_first5_rms": 0.0,
+          "rotation_y_first5_max_abs": 0.0,
+          "rotation_z_first5_rms": 0.0,
+          "rotation_z_first5_max_abs": 0.0
+        },
+        "raw": {
+          "all_bitwise_equal": true,
+          "effective7_bitwise_equal": true,
+          "effective7_max_abs": 0.0,
+          "first5_effective7_bitwise_equal": true,
+          "first5_effective7_max_abs": 0.0,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [],
+          "first_different_effective_row_zero_based": null
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": true,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+        "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+      },
+      {
+        "head": "draft_10",
+        "first_arm": "actual",
+        "second_arm": "legacy_filename",
+        "first_instruction": "grasp the bound collection of printed pages and position it within the rear storage section of the wheeled utility cart",
+        "second_instruction": "pick up the book and place it in the back compartment of the caddy",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 1.137978434562683,
+          "rms": 0.15501752495765686,
+          "first5_max_abs": 0.5948523879051208,
+          "first5_rms": 0.1189451813697815,
+          "xyz_first5_l2_mean": 0.07626865804195404,
+          "xyz_first5_l2_max": 0.19987238943576813,
+          "xyz_first1_l2": 0.08506951481103897,
+          "xyz_first5_l2_by_step": [
+            0.08506951481103897,
+            0.00467266608029604,
+            0.09172870963811874,
+            0.19987238943576813,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.02486613392829895,
+          "gripper_max_abs": 1.137978434562683,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.19987820088863373,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.017344752326607704,
+          "rotation_x_first5_max_abs": 0.036976829171180725,
+          "rotation_y_first5_rms": 0.02519892528653145,
+          "rotation_y_first5_max_abs": 0.04532921314239502,
+          "rotation_z_first5_rms": 0.018841827288269997,
+          "rotation_z_first5_max_abs": 0.039266541600227356
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.138671875,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 0.59521484375,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.4886472225189209,
+            "l2": 2.7642061710357666
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_10_responses.jsonl",
+        "source_sha256": "f56ac3a308c4b4f4a3761b4f15f4e01eeaf53786df85817571875c5755ce1d1a"
+      },
+      {
+        "head": "draft_goal",
+        "first_arm": "actual",
+        "second_arm": "mother_bddl",
+        "first_instruction": "place the bowl on the stove",
+        "second_instruction": "put the bowl on the stove",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 1.0423336029052734,
+          "rms": 0.12368977814912796,
+          "first5_max_abs": 0.0,
+          "first5_rms": 0.0,
+          "xyz_first5_l2_mean": 0.0,
+          "xyz_first5_l2_max": 0.0,
+          "xyz_first1_l2": 0.0,
+          "xyz_first5_l2_by_step": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.0,
+          "gripper_max_abs": 1.0423336029052734,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.0,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.0,
+          "rotation_x_first5_max_abs": 0.0,
+          "rotation_y_first5_rms": 0.0,
+          "rotation_y_first5_max_abs": 0.0,
+          "rotation_z_first5_rms": 0.0,
+          "rotation_z_first5_max_abs": 0.0
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 2.65234375,
+          "first5_effective7_bitwise_equal": true,
+          "first5_effective7_max_abs": 0.0,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            19,
+            22,
+            24,
+            25,
+            26,
+            27,
+            33,
+            35,
+            36,
+            38,
+            42,
+            44,
+            45,
+            46,
+            47,
+            49
+          ],
+          "first_different_effective_row_zero_based": 7
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+        "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+      },
+      {
+        "head": "draft_goal",
+        "first_arm": "mother_bddl",
+        "second_arm": "legacy_filename",
+        "first_instruction": "put the bowl on the stove",
+        "second_instruction": "put the bowl on the stove",
+        "decoded": {
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "first5_max_abs": 0.0,
+          "first5_rms": 0.0,
+          "xyz_first5_l2_mean": 0.0,
+          "xyz_first5_l2_max": 0.0,
+          "xyz_first1_l2": 0.0,
+          "xyz_first5_l2_by_step": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.0,
+          "gripper_max_abs": 0.0,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.0,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.0,
+          "rotation_x_first5_max_abs": 0.0,
+          "rotation_y_first5_rms": 0.0,
+          "rotation_y_first5_max_abs": 0.0,
+          "rotation_z_first5_rms": 0.0,
+          "rotation_z_first5_max_abs": 0.0
+        },
+        "raw": {
+          "all_bitwise_equal": true,
+          "effective7_bitwise_equal": true,
+          "effective7_max_abs": 0.0,
+          "first5_effective7_bitwise_equal": true,
+          "first5_effective7_max_abs": 0.0,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [],
+          "first_different_effective_row_zero_based": null
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": true,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+        "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+      },
+      {
+        "head": "draft_goal",
+        "first_arm": "actual",
+        "second_arm": "legacy_filename",
+        "first_instruction": "place the bowl on the stove",
+        "second_instruction": "put the bowl on the stove",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 1.0423336029052734,
+          "rms": 0.12368977814912796,
+          "first5_max_abs": 0.0,
+          "first5_rms": 0.0,
+          "xyz_first5_l2_mean": 0.0,
+          "xyz_first5_l2_max": 0.0,
+          "xyz_first1_l2": 0.0,
+          "xyz_first5_l2_by_step": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_first5_l2_mean": 0.0,
+          "gripper_max_abs": 1.0423336029052734,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.0,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.0,
+          "rotation_x_first5_max_abs": 0.0,
+          "rotation_y_first5_rms": 0.0,
+          "rotation_y_first5_max_abs": 0.0,
+          "rotation_z_first5_rms": 0.0,
+          "rotation_z_first5_max_abs": 0.0
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 2.65234375,
+          "first5_effective7_bitwise_equal": true,
+          "first5_effective7_max_abs": 0.0,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            19,
+            22,
+            24,
+            25,
+            26,
+            27,
+            33,
+            35,
+            36,
+            38,
+            42,
+            44,
+            45,
+            46,
+            47,
+            49
+          ],
+          "first_different_effective_row_zero_based": 7
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3767136037349701,
+            "l2": 2.131013870239258
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_goal_responses.jsonl",
+        "source_sha256": "7dfab6035bfcfa85f1c6b2140cca205f62bfa1df71a049a1476d2ab801302fbb"
+      },
+      {
+        "head": "draft_object",
+        "first_arm": "actual",
+        "second_arm": "mother_bddl",
+        "first_instruction": "the children need their milk pick it up from the counter and place it in their snack basket",
+        "second_instruction": "pick the milk and place it in the basket",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 0.8198130130767822,
+          "rms": 0.11345536261796951,
+          "first5_max_abs": 0.23420093953609467,
+          "first5_rms": 0.09713153541088104,
+          "xyz_first5_l2_mean": 0.17107543349266052,
+          "xyz_first5_l2_max": 0.28540584444999695,
+          "xyz_first1_l2": 0.19206392765045166,
+          "xyz_first5_l2_by_step": [
+            0.19206392765045166,
+            0.16213610768318176,
+            0.28540584444999695,
+            0.06086108461022377,
+            0.1549101620912552
+          ],
+          "rotation_first5_l2_mean": 0.07171155512332916,
+          "gripper_max_abs": 0.8198130130767822,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.11457860469818115,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.03249526396393776,
+          "rotation_x_first5_max_abs": 0.07121463119983673,
+          "rotation_y_first5_rms": 0.10822255909442902,
+          "rotation_y_first5_max_abs": 0.23420093953609467,
+          "rotation_z_first5_rms": 0.018929794430732727,
+          "rotation_z_first5_max_abs": 0.026848915964365005
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.0234375,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 0.517578125,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+        "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+      },
+      {
+        "head": "draft_object",
+        "first_arm": "mother_bddl",
+        "second_arm": "legacy_filename",
+        "first_instruction": "pick the milk and place it in the basket",
+        "second_instruction": "pick up the milk and place it in the basket",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 1.0872281789779663,
+          "rms": 0.09457530081272125,
+          "first5_max_abs": 0.3240213394165039,
+          "first5_rms": 0.10364138334989548,
+          "xyz_first5_l2_mean": 0.1448032259941101,
+          "xyz_first5_l2_max": 0.3096110224723816,
+          "xyz_first1_l2": 0.20573201775550842,
+          "xyz_first5_l2_by_step": [
+            0.20573201775550842,
+            0.11523257941007614,
+            0.3096110224723816,
+            0.09195493906736374,
+            0.001485537737607956
+          ],
+          "rotation_first5_l2_mean": 0.06891686469316483,
+          "gripper_max_abs": 1.0872281789779663,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.13253644108772278,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.029474753886461258,
+          "rotation_x_first5_max_abs": 0.06573658436536789,
+          "rotation_y_first5_rms": 0.1082320511341095,
+          "rotation_y_first5_max_abs": 0.2377561777830124,
+          "rotation_z_first5_rms": 0.024853862822055817,
+          "rotation_z_first5_max_abs": 0.046482183039188385
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.087890625,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 0.802734375,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+        "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+      },
+      {
+        "head": "draft_object",
+        "first_arm": "actual",
+        "second_arm": "legacy_filename",
+        "first_instruction": "the children need their milk pick it up from the counter and place it in their snack basket",
+        "second_instruction": "pick up the milk and place it in the basket",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 0.9183857440948486,
+          "rms": 0.1294371783733368,
+          "first5_max_abs": 0.365011990070343,
+          "first5_rms": 0.09100452065467834,
+          "xyz_first5_l2_mean": 0.1326284110546112,
+          "xyz_first5_l2_max": 0.16352857649326324,
+          "xyz_first1_l2": 0.16352857649326324,
+          "xyz_first5_l2_by_step": [
+            0.16352857649326324,
+            0.13588933646678925,
+            0.12340705841779709,
+            0.08688739687204361,
+            0.15342962741851807
+          ],
+          "rotation_first5_l2_mean": 0.01783870719373226,
+          "gripper_max_abs": 0.9183857440948486,
+          "gripper_first5_sign_disagreements": 0,
+          "gripper_first5_abs_mean": 0.1674761027097702,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.00716871302574873,
+          "rotation_x_first5_max_abs": 0.015064634382724762,
+          "rotation_y_first5_rms": 0.012036706320941448,
+          "rotation_y_first5_max_abs": 0.01955377869307995,
+          "rotation_z_first5_rms": 0.012638845480978489,
+          "rotation_z_first5_max_abs": 0.021982550621032715
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.38671875,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 0.365234375,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3372860550880432,
+            "l2": 1.9079780578613281
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_object_responses.jsonl",
+        "source_sha256": "8ec99b35f48bceffb52b16ddcd743ff113c04e35d9859f89cfdc7a5fe83bf7e4"
+      },
+      {
+        "head": "draft_spatial",
+        "first_arm": "actual",
+        "second_arm": "mother_bddl",
+        "first_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+        "second_instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 2.0038936138153076,
+          "rms": 0.23405970633029938,
+          "first5_max_abs": 2.0038936138153076,
+          "first5_rms": 0.593193531036377,
+          "xyz_first5_l2_mean": 1.1334327459335327,
+          "xyz_first5_l2_max": 2.2721500396728516,
+          "xyz_first1_l2": 1.4029885530471802,
+          "xyz_first5_l2_by_step": [
+            1.4029885530471802,
+            2.2721500396728516,
+            1.8354253768920898,
+            0.1266571432352066,
+            0.029942994937300682
+          ],
+          "rotation_first5_l2_mean": 0.1843169927597046,
+          "gripper_max_abs": 1.1262669563293457,
+          "gripper_first5_sign_disagreements": 2,
+          "gripper_first5_abs_mean": 0.45575255155563354,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.07387436926364899,
+          "rotation_x_first5_max_abs": 0.1534709483385086,
+          "rotation_y_first5_rms": 0.11565934121608734,
+          "rotation_y_first5_max_abs": 0.19376015663146973,
+          "rotation_z_first5_rms": 0.19696271419525146,
+          "rotation_z_first5_max_abs": 0.4047474265098572
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 6.099609375,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 6.099609375,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+        "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+      },
+      {
+        "head": "draft_spatial",
+        "first_arm": "mother_bddl",
+        "second_arm": "legacy_filename",
+        "first_instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+        "second_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 0.6636581420898438,
+          "rms": 0.08482218533754349,
+          "first5_max_abs": 0.4206421375274658,
+          "first5_rms": 0.1408834010362625,
+          "xyz_first5_l2_mean": 0.1845116913318634,
+          "xyz_first5_l2_max": 0.5194209814071655,
+          "xyz_first1_l2": 0.2235819548368454,
+          "xyz_first5_l2_by_step": [
+            0.2235819548368454,
+            0.5194209814071655,
+            0.07840437442064285,
+            0.07601038366556168,
+            0.025140730664134026
+          ],
+          "rotation_first5_l2_mean": 0.04538588598370552,
+          "gripper_max_abs": 0.6636581420898438,
+          "gripper_first5_sign_disagreements": 1,
+          "gripper_first5_abs_mean": 0.20673438906669617,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.010344123467803001,
+          "rotation_x_first5_max_abs": 0.019857924431562424,
+          "rotation_y_first5_rms": 0.05739698186516762,
+          "rotation_y_first5_max_abs": 0.11865588277578354,
+          "rotation_z_first5_rms": 0.01574394293129444,
+          "rotation_z_first5_max_abs": 0.029701612889766693
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 1.103515625,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 1.103515625,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+        "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+      },
+      {
+        "head": "draft_spatial",
+        "first_arm": "actual",
+        "second_arm": "legacy_filename",
+        "first_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+        "second_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "decoded": {
+          "bitwise_equal": false,
+          "max_abs": 2.366429567337036,
+          "rms": 0.26438429951667786,
+          "first5_max_abs": 2.366429567337036,
+          "first5_rms": 0.7068537473678589,
+          "xyz_first5_l2_mean": 1.2785519361495972,
+          "xyz_first5_l2_max": 2.768300771713257,
+          "xyz_first1_l2": 1.6230541467666626,
+          "xyz_first5_l2_by_step": [
+            1.6230541467666626,
+            2.768300771713257,
+            1.9101887941360474,
+            0.05192815139889717,
+            0.03928801417350769
+          ],
+          "rotation_first5_l2_mean": 0.18789497017860413,
+          "gripper_max_abs": 1.3839223384857178,
+          "gripper_first5_sign_disagreements": 3,
+          "gripper_first5_abs_mean": 0.6624869704246521,
+          "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+          "rotation_x_first5_rms": 0.08253924548625946,
+          "rotation_x_first5_max_abs": 0.17332887649536133,
+          "rotation_y_first5_rms": 0.10708274692296982,
+          "rotation_y_first5_max_abs": 0.20798107981681824,
+          "rotation_z_first5_rms": 0.2064608782529831,
+          "rotation_z_first5_max_abs": 0.413557231426239
+        },
+        "raw": {
+          "all_bitwise_equal": false,
+          "effective7_bitwise_equal": false,
+          "effective7_max_abs": 7.203125,
+          "first5_effective7_bitwise_equal": false,
+          "first5_effective7_max_abs": 7.203125,
+          "padding25_bitwise_equal": true,
+          "padding25_max_abs": 0.0,
+          "different_effective_rows_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "first_different_effective_row_zero_based": 0
+        },
+        "first_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "second_feature_scales": {
+          "normalized_state": {
+            "shape": [
+              32
+            ],
+            "rms": 0.3730795085430145,
+            "l2": 2.1104564666748047
+          },
+          "visual_preencoder": {
+            "valid": false,
+            "reason": "Old diagnostic service read uninitialized encoder_x visual rows in encode=False draft route; discard even when finite. Actual projected prefix lives in spec._vision_prefix_buf."
+          }
+        },
+        "input_hash_equal": false,
+        "source_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/language_same_observation/draft_spatial_responses.jsonl",
+        "source_sha256": "7be69161db6440998a30235939ca96a20205b688188afd96f2e97a76888d676e"
+      }
+    ],
+    "count": 12,
+    "interpretation": "First R5 is the executed prefix. Future H50 differences show conditioning sensitivity but do not describe executed motion before replanning. Raw32 channels0:7 are effective native action channels;7:32 are padding. Input hash includes instruction, so prompt-only pairs should differ there."
+  },
+  "restore8": [
+    {
+      "head": "draft_spatial",
+      "category": "Language Instructions",
+      "source_index": 151,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/restore8/case0151/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": true,
+      "old_actual_steps": 600,
+      "new_steps": 88,
+      "paired_effect": 1,
+      "language_semantic_scope": "Descriptive dark dish/flat dish/dessert dish correspond broadly to bowl/plate/ramekin but make grounding more ambiguous.",
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_spatial",
+      "category": "Sensor Noise",
+      "source_index": 302,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0302/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": true,
+      "new_restored_success": true,
+      "old_actual_steps": 95,
+      "new_steps": 95,
+      "paired_effect": 0,
+      "language_semantic_scope": null,
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_object",
+      "category": "Language Instructions",
+      "source_index": 152,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0152/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": true,
+      "old_actual_steps": 600,
+      "new_steps": 147,
+      "paired_effect": 1,
+      "language_semantic_scope": "Added children/snack narrative; intended milk-to-basket target retained.",
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_object",
+      "category": "Sensor Noise",
+      "source_index": 303,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0303/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": false,
+      "old_actual_steps": 600,
+      "new_steps": 600,
+      "paired_effect": 0,
+      "language_semantic_scope": null,
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_goal",
+      "category": "Language Instructions",
+      "source_index": 153,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0153/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": false,
+      "old_actual_steps": 600,
+      "new_steps": 600,
+      "paired_effect": 0,
+      "language_semantic_scope": "put/place is a direct synonym; same bowl/stove referents",
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_goal",
+      "category": "Sensor Noise",
+      "source_index": 300,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0300/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": false,
+      "old_actual_steps": 600,
+      "new_steps": 600,
+      "paired_effect": 0,
+      "language_semantic_scope": null,
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_10",
+      "category": "Language Instructions",
+      "source_index": 150,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0150/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": false,
+      "old_actual_steps": 600,
+      "new_steps": 600,
+      "paired_effect": 0,
+      "language_semantic_scope": "Book described as bound printed pages; wheeled utility cart for caddy risks semantic/reference drift. Not a strict synonym claim.",
+      "physics_all_bitwise_equal": true
+    },
+    {
+      "head": "draft_10",
+      "category": "Sensor Noise",
+      "source_index": 301,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/restore8/case0301/result.json",
+      "status": "complete",
+      "actual_reproduction_gate_passed": true,
+      "old_actual_success": false,
+      "new_restored_success": false,
+      "old_actual_steps": 600,
+      "new_steps": 600,
+      "paired_effect": 0,
+      "language_semantic_scope": null,
+      "physics_all_bitwise_equal": true
+    }
+  ],
+  "physical_input12": [
+    {
+      "head": "draft_spatial",
+      "category": "Robot Initial States",
+      "source_index": 102,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0102/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 1.5459330081939697,
+        "rms": 0.23093260824680328,
+        "first5_max_abs": 0.7827261686325073,
+        "first5_rms": 0.21712416410446167,
+        "xyz_first5_l2_mean": 0.23024973273277283,
+        "xyz_first5_l2_max": 0.5741750597953796,
+        "xyz_first1_l2": 0.18644917011260986,
+        "xyz_first5_l2_by_step": [
+          0.18644917011260986,
+          0.05271149426698685,
+          0.5741750597953796,
+          0.23736408352851868,
+          0.10054890066385269
+        ],
+        "rotation_first5_l2_mean": 0.0533839650452137,
+        "gripper_max_abs": 1.5459330081939697,
+        "gripper_first5_sign_disagreements": 2,
+        "gripper_first5_abs_mean": 0.3324146270751953,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.01207246445119381,
+        "rotation_x_first5_max_abs": 0.018790945410728455,
+        "rotation_y_first5_rms": 0.04861539602279663,
+        "rotation_y_first5_max_abs": 0.07587580382823944,
+        "rotation_z_first5_rms": 0.03274841606616974,
+        "rotation_z_first5_max_abs": 0.05387356877326965
+      },
+      "intervention": {
+        "kind": "robot_arm_qpos_to_inherited_MountedPanda_default_and_arm_qvel_zero",
+        "pos_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "vel_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target": [
+          0.0,
+          -0.161037389,
+          0.0,
+          -2.44459747,
+          0.0,
+          2.2267522,
+          0.7853981633974483
+        ],
+        "nonrobot_qpos_qvel_bitwise_equal": true,
+        "controller_goal_reset": true,
+        "controller_goal_before": {
+          "position": [
+            -0.20648610334072906,
+            0.020140379676662438,
+            1.177111835907205
+          ],
+          "orientation": [
+            [
+              0.040780136640240834,
+              0.9972098545908211,
+              -0.06252588553993518
+            ],
+            [
+              0.9962344433019342,
+              -0.03578882979735964,
+              0.0789689409870559
+            ],
+            [
+              0.07651087788337535,
+              -0.06551080497662518,
+              -0.9949142777128219
+            ]
+          ]
+        },
+        "controller_goal_after": {
+          "position": [
+            -0.2084646605658239,
+            0.0,
+            1.1732794757296405
+          ],
+          "orientation": [
+            [
+              -0.0004918296871690936,
+              0.9983867450712572,
+              -0.056777331476359764
+            ],
+            [
+              0.9999998786606131,
+              0.0004926243561613802,
+              0.0
+            ],
+            [
+              2.7969896363104485e-05,
+              -0.05677732458703325,
+              -0.9983868662149061
+            ]
+          ]
+        },
+        "limitation": "Robot visual pose and proprioception change jointly. No physical stepping; no claim of exact mother-init trajectory state.",
+        "observation_sampling": "fresh before and after arm-qpos intervention; joint visual/proprioception change"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9988819713606231,
+          -0.017323078197613702,
+          -0.030490728320577386,
+          -0.03170226709488461
+        ],
+        "quaternion_second_xyzw": [
+          0.9995966048795359,
+          0.0002462128318876379,
+          -0.028400120485872885,
+          -6.995295959032551e-06
+        ],
+        "quaternion_signed_dot": 0.9993409242080639,
+        "physical_rotation_geodesic_radians": 0.07261670339415945,
+        "native_axisangle_first": [
+          3.2030345061736925,
+          -0.055548522058638486,
+          -0.0977721670120302
+        ],
+        "native_axisangle_second": [
+          3.140339335467866,
+          0.0007735038685599235,
+          -0.08922200721616239
+        ],
+        "native_axisangle_delta_l2": 0.08471103981720218,
+        "canonical_axisangle_delta_l2": 0.08397042538201038,
+        "native_minus_physical_delta": 0.012094336423042737,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.020731600269448886,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_spatial",
+      "category": "Sensor Noise",
+      "source_index": 302,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0302/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.2810787558555603,
+        "rms": 0.04186500236392021,
+        "first5_max_abs": 0.19424687325954437,
+        "first5_rms": 0.04680880531668663,
+        "xyz_first5_l2_mean": 0.05449129268527031,
+        "xyz_first5_l2_max": 0.19454129040241241,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.033113133162260056,
+          0.0,
+          0.044802043586969376,
+          0.19454129040241241
+        ],
+        "rotation_first5_l2_mean": 0.015357513912022114,
+        "gripper_max_abs": 0.2810787558555603,
+        "gripper_first5_sign_disagreements": 1,
+        "gripper_first5_abs_mean": 0.04482132941484451,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.013794053345918655,
+        "rotation_x_first5_max_abs": 0.030814021825790405,
+        "rotation_y_first5_rms": 0.015104508958756924,
+        "rotation_y_first5_max_abs": 0.03199709206819534,
+        "rotation_z_first5_rms": 0.018045321106910706,
+        "rotation_z_first5_max_abs": 0.039266541600227356
+      },
+      "intervention": {
+        "kind": "official_operator_same_frame_input_capture",
+        "capture": {
+          "noise_id": 35,
+          "operator": "fog",
+          "severity": 5,
+          "call_count": 6,
+          "calls": [
+            {
+              "index": 0,
+              "severity": 5,
+              "input": {
+                "sha256": "237fbed447878477f0705ae97b4a4b7040bd1a5680545f8ea84ef29b9698db4a",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "422173c9aa0ef48efab52a79f59a08ce1912b2e651850108a1ead1320643fb46",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 1,
+              "severity": 5,
+              "input": {
+                "sha256": "670f1472d9a47de9e84b7f50c2870b6878cbef05fc7b87c31afda7d3cbf23fb3",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "7e56f16b266449c19a59089dad7c25a85ce434dc4b3bf02f8c37a7e7f74fd921",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 2,
+              "severity": 5,
+              "input": {
+                "sha256": "c1cc0239c96e047da30f1a0d98725bbd2daac51c86cf3632afd293c442aade2d",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "9eb09db844e9f9095852331d07899ab2006f8c7a45e34f5f89e2c17e20307814",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 3,
+              "severity": 5,
+              "input": {
+                "sha256": "23b9cbfe72bfe8bd7a70877d82481f15b44d0a8a592430d4ae1dc07e0ee0497a",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "2cc66707d7d38167033548ef12e100ff567c583c6b57afabcf1f2012b1250dd9",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 4,
+              "severity": 5,
+              "input": {
+                "sha256": "8fcbd1ff99d6561f82f23efbaf2ded73fb9a4592c4ba3c150ff66040a705ecfe",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "293a259c4574b72bd2e9309b5a3b80197cb2390bcf2bacf2b8212cb336867e9d",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 5,
+              "severity": 5,
+              "input": {
+                "sha256": "bec630671504a249b46f4c0f8c986c0798a2cc7021c9169fa79d1103fa8df644",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "cd976458b842ec9b334596f8f92a97e0fa579d2c409a2ae7ec939bcd40460cd3",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "operator_source": {
+            "path": "/policies/LIBERO-plus/libero/libero/envs/env_wrapper.py",
+            "file_sha256": "e91d7b7b35cc3ad2b073606c99860def6b3ac43b66eba00ef0ddb6bfd8f39c3c",
+            "function_sha256": "6ba50bcfcf831816d691638e9b6584410f8d93ba3a7b25e745639af8a48fefb3"
+          },
+          "clean_agentview": {
+            "sha256": "bec630671504a249b46f4c0f8c986c0798a2cc7021c9169fa79d1103fa8df644",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "last_operator_output": {
+            "sha256": "cd976458b842ec9b334596f8f92a97e0fa579d2c409a2ae7ec939bcd40460cd3",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "float64"
+          },
+          "scope": "Only copies existing PIL operator input, invokes original once with original arguments. No extra random calls, physics steps, renders or observation updates."
+        },
+        "expected_only_agentview_changed": true
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9996780470150474,
+          -0.0024862483121276826,
+          -0.02525078460138317,
+          0.00013697636967350936
+        ],
+        "quaternion_second_xyzw": [
+          0.9996780470150474,
+          -0.0024862483121276826,
+          -0.02525078460138317,
+          0.00013697636967350936
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.140307373377213,
+          -0.007810098391111004,
+          -0.07932076262357875
+        ],
+        "native_axisangle_second": [
+          3.140307373377213,
+          -0.007810098391111004,
+          -0.07932076262357875
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_spatial",
+      "category": "Background Textures",
+      "source_index": 253,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0253/receipt.json",
+      "substitution_scope": "exact_texture_substitution",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.5553257465362549,
+        "rms": 0.10048150271177292,
+        "first5_max_abs": 0.1698184311389923,
+        "first5_rms": 0.06188161298632622,
+        "xyz_first5_l2_mean": 0.09065652638673782,
+        "xyz_first5_l2_max": 0.17009124159812927,
+        "xyz_first1_l2": 0.0374547503888607,
+        "xyz_first5_l2_by_step": [
+          0.0374547503888607,
+          0.018197638913989067,
+          0.11273490637540817,
+          0.11480410397052765,
+          0.17009124159812927
+        ],
+        "rotation_first5_l2_mean": 0.012726390734314919,
+        "gripper_max_abs": 0.5553257465362549,
+        "gripper_first5_sign_disagreements": 1,
+        "gripper_first5_abs_mean": 0.10705146938562393,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.004511082544922829,
+        "rotation_x_first5_max_abs": 0.006162804551422596,
+        "rotation_y_first5_rms": 0.009255987592041492,
+        "rotation_y_first5_max_abs": 0.014220930635929108,
+        "rotation_z_first5_rms": 0.008358342573046684,
+        "rotation_z_first5_max_abs": 0.01543812733143568
+      },
+      "intervention": {
+        "kind": "matching_named_background_texture_bytes_from_mother_BDDL_model",
+        "source_bddl": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+        "changed_textures": [
+          {
+            "texture_name": "tex-table",
+            "texture_id": 2,
+            "source_texture_id": 2,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "changed_channels": 786082,
+            "before_sha256": "ca98d74e0c406caf4366267d7a3bb9d156c0f5b246993f31afd8858ecf8f77a3",
+            "after_sha256": "a6fb56984cce5b16ca00941e1332b8b65078cf8238c2cbea9e0e44a5fb433501",
+            "ownership": [
+              {
+                "material_id": 1,
+                "material_name": "table_texture",
+                "geoms": [
+                  {
+                    "geom_id": 8,
+                    "geom_name": "table_visual",
+                    "body_id": 1,
+                    "body_name": "table",
+                    "static_body_chain": [
+                      1
+                    ],
+                    "static_body": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "skipped_textures": [
+          {
+            "name": "textable",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 4,
+                "material_name": "table_mat",
+                "geoms": []
+              }
+            ]
+          }
+        ],
+        "material_parameters_unchanged": true,
+        "intervention_nonempty": true,
+        "limitation": "Texture-only removal; other material coefficients remain actual Plus values. No whole-scene reload.",
+        "observation_sampling": "fresh before and after texture-only intervention"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9996326991328913,
+          -0.006417619275225219,
+          -0.026304621566282972,
+          -0.001160978631757435
+        ],
+        "quaternion_second_xyzw": [
+          0.9996326991328913,
+          -0.006417619275225219,
+          -0.026304621566282972,
+          -0.001160978631757435
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.1427619668322246,
+          -0.020176460607263438,
+          -0.08269953982311534
+        ],
+        "native_axisangle_second": [
+          3.1427619668322246,
+          -0.020176460607263438,
+          -0.08269953982311534
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_object",
+      "category": "Robot Initial States",
+      "source_index": 103,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0103/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 1.729414939880371,
+        "rms": 0.2576330602169037,
+        "first5_max_abs": 0.5153110027313232,
+        "first5_rms": 0.16008806228637695,
+        "xyz_first5_l2_mean": 0.17392221093177795,
+        "xyz_first5_l2_max": 0.24473974108695984,
+        "xyz_first1_l2": 0.1421748697757721,
+        "xyz_first5_l2_by_step": [
+          0.1421748697757721,
+          0.2405625879764557,
+          0.12535294890403748,
+          0.11678092181682587,
+          0.24473974108695984
+        ],
+        "rotation_first5_l2_mean": 0.052995871752500534,
+        "gripper_max_abs": 1.729414939880371,
+        "gripper_first5_sign_disagreements": 1,
+        "gripper_first5_abs_mean": 0.3620840609073639,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.03481416031718254,
+        "rotation_x_first5_max_abs": 0.07539872825145721,
+        "rotation_y_first5_rms": 0.039906032383441925,
+        "rotation_y_first5_max_abs": 0.06066436320543289,
+        "rotation_z_first5_rms": 0.026273496448993683,
+        "rotation_z_first5_max_abs": 0.032766133546829224
+      },
+      "intervention": {
+        "kind": "robot_arm_qpos_to_inherited_MountedPanda_default_and_arm_qvel_zero",
+        "pos_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "vel_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target": [
+          0.0,
+          -0.161037389,
+          0.0,
+          -2.44459747,
+          0.0,
+          2.2267522,
+          0.7853981633974483
+        ],
+        "nonrobot_qpos_qvel_bitwise_equal": true,
+        "controller_goal_reset": true,
+        "controller_goal_before": {
+          "position": [
+            -0.15133160256836214,
+            -0.03268764617171074,
+            0.2611957694858338
+          ],
+          "orientation": [
+            [
+              0.1646177696856545,
+              0.9841783868675249,
+              0.06552780117289334
+            ],
+            [
+              0.9818747697302819,
+              -0.1698341147446279,
+              0.08413269302721467
+            ],
+            [
+              0.09393043420970526,
+              0.05049035840377851,
+              -0.994297640164871
+            ]
+          ]
+        },
+        "controller_goal_after": {
+          "position": [
+            -0.14846466056582386,
+            0.0,
+            0.26127947572964033
+          ],
+          "orientation": [
+            [
+              -0.0004918296871690936,
+              0.9983867450712572,
+              -0.056777331476359764
+            ],
+            [
+              0.9999998786606131,
+              0.0004926243561613802,
+              0.0
+            ],
+            [
+              2.7969896363104485e-05,
+              -0.05677732458703325,
+              -0.9983868662149061
+            ]
+          ]
+        },
+        "limitation": "Robot visual pose and proprioception change jointly. No physical stepping; no claim of exact mother-init trajectory state.",
+        "observation_sampling": "fresh before and after arm-qpos intervention; joint visual/proprioception change"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9969966353402968,
+          -0.06881752235826685,
+          -0.0028691481086124313,
+          -0.03540657743594481
+        ],
+        "quaternion_second_xyzw": [
+          0.9995966048795359,
+          0.0002462128318876379,
+          -0.028400120485872885,
+          -6.995295959032551e-06
+        ],
+        "quaternion_signed_dot": 0.9966592398368825,
+        "physical_rotation_geodesic_radians": 0.16352668125036252,
+        "native_axisangle_first": [
+          3.2047819703344307,
+          -0.2212095277749692,
+          -0.009222693239643481
+        ],
+        "native_axisangle_second": [
+          3.140339335467866,
+          0.0007735038685599235,
+          -0.08922200721616239
+        ],
+        "native_axisangle_delta_l2": 0.2446001017230187,
+        "canonical_axisangle_delta_l2": 0.23960722332357015,
+        "native_minus_physical_delta": 0.08107342047265617,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.033490679210382644,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_object",
+      "category": "Sensor Noise",
+      "source_index": 303,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0303/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.3167015612125397,
+        "rms": 0.029017262160778046,
+        "first5_max_abs": 0.043348293751478195,
+        "first5_rms": 0.019962893798947334,
+        "xyz_first5_l2_mean": 0.0330628827214241,
+        "xyz_first5_l2_max": 0.062004126608371735,
+        "xyz_first1_l2": 0.006200674921274185,
+        "xyz_first5_l2_by_step": [
+          0.006200674921274185,
+          0.04845435172319412,
+          0.062004126608371735,
+          0.04783566668629646,
+          0.0008196048438549042
+        ],
+        "rotation_first5_l2_mean": 0.015365210361778736,
+        "gripper_max_abs": 0.3167015612125397,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.022642452269792557,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.004416543524712324,
+        "rotation_x_first5_max_abs": 0.0068475608713924885,
+        "rotation_y_first5_rms": 0.015088810585439205,
+        "rotation_y_first5_max_abs": 0.02488662861287594,
+        "rotation_z_first5_rms": 0.008298773318529129,
+        "rotation_z_first5_max_abs": 0.013760067522525787
+      },
+      "intervention": {
+        "kind": "official_operator_same_frame_input_capture",
+        "capture": {
+          "noise_id": 2,
+          "operator": "motion_blur",
+          "severity": 2,
+          "call_count": 6,
+          "calls": [
+            {
+              "index": 0,
+              "severity": 2,
+              "input": {
+                "sha256": "a1ee6b6561bf7dee9bf7faccaf5c87d673403bce63850166007e7dffd884ad15",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "0a0163ff72bba1c039c5c03292d46e4f5e3028a0887d43fef0659d1fa94acb28",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            {
+              "index": 1,
+              "severity": 2,
+              "input": {
+                "sha256": "4b43194d80db72c61104bd74f46860f3f4eccf2fb25de5a2f7df95ae49e64827",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "4d18dc6c1c46ace5ca22bd71e93a461679fe5dd2e9537d00febd6d3e75f78d59",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            {
+              "index": 2,
+              "severity": 2,
+              "input": {
+                "sha256": "be7b9cfb09112c58c5b3bb15f504571cb956a4ed44069cf65a49d88a2389afdb",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "66c053e1ed4ada85183594b0057ebf6afcc9db3f3708c4ad235dd86842c2c973",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            {
+              "index": 3,
+              "severity": 2,
+              "input": {
+                "sha256": "1f1f7635ab07b6ba263d5ada6b0fc6194b51499f06e3f15254739e8b16e4e209",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "ca7f63c7e73c4e5722c38bbf1c381d28f2c9ed157e1e80cf531d41c736437b81",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            {
+              "index": 4,
+              "severity": 2,
+              "input": {
+                "sha256": "0ef013b6e03e318e3d373c06ccc889df3e60c74b7d5a1a8306798e95d312792f",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "09fa0b6cebbe13ff6470293e00dda377d9751c1356b6733c6d3f91494d188cf7",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            },
+            {
+              "index": 5,
+              "severity": 2,
+              "input": {
+                "sha256": "a11f7f8cbf89ed3f5d9ef0a5997c0016b992f5c161bee7cd0f13456ecebaded4",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "ca8a8e51ba4eb934cf4d0021346b8446204b803ae3ad56b00d7bb0600295d522",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              }
+            }
+          ],
+          "operator_source": {
+            "path": "/policies/LIBERO-plus/libero/libero/envs/env_wrapper.py",
+            "file_sha256": "e91d7b7b35cc3ad2b073606c99860def6b3ac43b66eba00ef0ddb6bfd8f39c3c",
+            "function_sha256": "557a6823aeb6480bffde1d970843008ffb9c3742a6e51cfdfb3bda26791a28e0"
+          },
+          "clean_agentview": {
+            "sha256": "a11f7f8cbf89ed3f5d9ef0a5997c0016b992f5c161bee7cd0f13456ecebaded4",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "last_operator_output": {
+            "sha256": "ca8a8e51ba4eb934cf4d0021346b8446204b803ae3ad56b00d7bb0600295d522",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "scope": "Only copies existing PIL operator input, invokes original once with original arguments. No extra random calls, physics steps, renders or observation updates."
+        },
+        "expected_only_agentview_changed": true
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9992736832885131,
+          -0.0013021154411571596,
+          -0.03808295613333037,
+          -0.000314379600489143
+        ],
+        "quaternion_second_xyzw": [
+          0.9992736832885131,
+          -0.0013021154411571596,
+          -0.03808295613333037,
+          -0.000314379600489143
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.139939320045041,
+          -0.004091535223335507,
+          -0.11966508613843838
+        ],
+        "native_axisangle_second": [
+          3.139939320045041,
+          -0.004091535223335507,
+          -0.11966508613843838
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_object",
+      "category": "Background Textures",
+      "source_index": 250,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0250/receipt.json",
+      "substitution_scope": "exact_texture_substitution",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.794437825679779,
+        "rms": 0.1659110188484192,
+        "first5_max_abs": 0.26063501834869385,
+        "first5_rms": 0.0761752799153328,
+        "xyz_first5_l2_mean": 0.17259255051612854,
+        "xyz_first5_l2_max": 0.2654140591621399,
+        "xyz_first1_l2": 0.15307149291038513,
+        "xyz_first5_l2_by_step": [
+          0.15307149291038513,
+          0.22305697202682495,
+          0.2654140591621399,
+          0.1274453103542328,
+          0.09397480636835098
+        ],
+        "rotation_first5_l2_mean": 0.02235722355544567,
+        "gripper_max_abs": 0.794437825679779,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.06441386789083481,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.00997490156441927,
+        "rotation_x_first5_max_abs": 0.015064634382724762,
+        "rotation_y_first5_rms": 0.017606478184461594,
+        "rotation_y_first5_max_abs": 0.03555232286453247,
+        "rotation_z_first5_rms": 0.013174300082027912,
+        "rotation_z_first5_max_abs": 0.017451796680688858
+      },
+      "intervention": {
+        "kind": "matching_named_background_texture_bytes_from_mother_BDDL_model",
+        "source_bddl": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+        "changed_textures": [
+          {
+            "texture_name": "texplane",
+            "texture_id": 1,
+            "source_texture_id": 1,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "changed_channels": 783766,
+            "before_sha256": "4be20843114a9b5612ae3a9cce3ccef6bc9e68e2f02ce5762dec9cf23507d817",
+            "after_sha256": "21f0672ba901a62265de0b80623856d8d898ef84d33e87e7b0431a5a33c0dc5b",
+            "ownership": [
+              {
+                "material_id": 0,
+                "material_name": "floorplane",
+                "geoms": [
+                  {
+                    "geom_id": 6,
+                    "geom_name": "floor",
+                    "body_id": 1,
+                    "body_name": "floor",
+                    "static_body_chain": [
+                      1
+                    ],
+                    "static_body": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "texture_name": "tex-wall",
+            "texture_id": 4,
+            "source_texture_id": 4,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "changed_channels": 780563,
+            "before_sha256": "0129e1d931c4e8b27c6c6b25cc03989ac189e7b2dabed8e6a5777ca7265e8e12",
+            "after_sha256": "b2b2c36952a947d8fe79d0eff28223bb70689164d05b16a7646ae1ee45bf6456",
+            "ownership": [
+              {
+                "material_id": 3,
+                "material_name": "walls_mat",
+                "geoms": [
+                  {
+                    "geom_id": 0,
+                    "geom_name": "wall_leftcorner_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 1,
+                    "geom_name": "wall_rightcorner_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 2,
+                    "geom_name": "wall_left_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 3,
+                    "geom_name": "wall_right_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 4,
+                    "geom_name": "wall_rear_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 5,
+                    "geom_name": "wall_front_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "skipped_textures": [
+          {
+            "name": "tex-table",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 1,
+                "material_name": "table_texture",
+                "geoms": []
+              }
+            ]
+          },
+          {
+            "name": "tex-table-legs",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 2,
+                "material_name": "table_legs",
+                "geoms": []
+              }
+            ]
+          },
+          {
+            "name": "textable",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 4,
+                "material_name": "table_mat",
+                "geoms": []
+              }
+            ]
+          }
+        ],
+        "material_parameters_unchanged": true,
+        "intervention_nonempty": true,
+        "limitation": "Texture-only removal; other material coefficients remain actual Plus values. No whole-scene reload.",
+        "observation_sampling": "fresh before and after texture-only intervention"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9994733107930939,
+          -0.006357134676870607,
+          -0.03175700546063139,
+          0.002044616141279763
+        ],
+        "quaternion_second_xyzw": [
+          0.9994733107930939,
+          -0.006357134676870607,
+          -0.03175700546063139,
+          0.002044616141279763
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.135857483933611,
+          -0.01994557347111136,
+          -0.09963792145887246
+        ],
+        "native_axisangle_second": [
+          3.135857483933611,
+          -0.01994557347111136,
+          -0.09963792145887246
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_goal",
+      "category": "Robot Initial States",
+      "source_index": 100,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0100/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 1.483471155166626,
+        "rms": 0.26039478182792664,
+        "first5_max_abs": 0.5300878882408142,
+        "first5_rms": 0.16362980008125305,
+        "xyz_first5_l2_mean": 0.24096879363059998,
+        "xyz_first5_l2_max": 0.6841408014297485,
+        "xyz_first1_l2": 0.14832936227321625,
+        "xyz_first5_l2_by_step": [
+          0.14832936227321625,
+          0.13983792066574097,
+          0.13592225313186646,
+          0.6841408014297485,
+          0.09661367535591125
+        ],
+        "rotation_first5_l2_mean": 0.1034993901848793,
+        "gripper_max_abs": 1.483471155166626,
+        "gripper_first5_sign_disagreements": 3,
+        "gripper_first5_abs_mean": 0.25133612751960754,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.043627578765153885,
+        "rotation_x_first5_max_abs": 0.07032701373100281,
+        "rotation_y_first5_rms": 0.07730210572481155,
+        "rotation_y_first5_max_abs": 0.1375330239534378,
+        "rotation_z_first5_rms": 0.06712698191404343,
+        "rotation_z_first5_max_abs": 0.08711615204811096
+      },
+      "intervention": {
+        "kind": "robot_arm_qpos_to_inherited_MountedPanda_default_and_arm_qvel_zero",
+        "pos_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "vel_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target": [
+          0.0,
+          -0.161037389,
+          0.0,
+          -2.44459747,
+          0.0,
+          2.2267522,
+          0.7853981633974483
+        ],
+        "nonrobot_qpos_qvel_bitwise_equal": true,
+        "controller_goal_reset": true,
+        "controller_goal_before": {
+          "position": [
+            -0.24208612284623648,
+            -0.011589527595559437,
+            1.1699688103104713
+          ],
+          "orientation": [
+            [
+              0.40155880785847325,
+              0.898174798101585,
+              -0.17897641153642793
+            ],
+            [
+              0.9094609449733099,
+              -0.3680628766393131,
+              0.19341796299270175
+            ],
+            [
+              0.10784856697951065,
+              -0.2404407430016156,
+              -0.9646537905929231
+            ]
+          ]
+        },
+        "controller_goal_after": {
+          "position": [
+            -0.2084646605658239,
+            0.0,
+            1.1732794757296405
+          ],
+          "orientation": [
+            [
+              -0.0004918296871690936,
+              0.9983867450712572,
+              -0.056777331476359764
+            ],
+            [
+              0.9999998786606131,
+              0.0004926243561613802,
+              0.0
+            ],
+            [
+              2.7969896363104485e-05,
+              -0.05677732458703325,
+              -0.9983868662149061
+            ]
+          ]
+        },
+        "limitation": "Robot visual pose and proprioception change jointly. No physical stepping; no claim of exact mother-init trajectory state.",
+        "observation_sampling": "fresh before and after arm-qpos intervention; joint visual/proprioception change"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9895661946100105,
+          -0.11719587646943187,
+          -0.06017073987581568,
+          -0.0583382814832712
+        ],
+        "quaternion_second_xyzw": [
+          0.9995966048795359,
+          0.0002462128318876379,
+          -0.028400120485872885,
+          -6.995295959032551e-06
+        ],
+        "quaternion_signed_dot": 0.9908474176628396,
+        "physical_rotation_geodesic_radians": 0.2707999725400356,
+        "native_axisangle_first": [
+          3.2298394912181507,
+          -0.38251495664529234,
+          -0.1963909366804053
+        ],
+        "native_axisangle_second": [
+          3.140339335467866,
+          0.0007735038685599235,
+          -0.08922200721616239
+        ],
+        "native_axisangle_delta_l2": 0.40792830409879133,
+        "canonical_axisangle_delta_l2": 0.39427952392251,
+        "native_minus_physical_delta": 0.1371283315587557,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.038247572906334494,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_goal",
+      "category": "Sensor Noise",
+      "source_index": 300,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0300/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.19128966331481934,
+        "rms": 0.017730336636304855,
+        "first5_max_abs": 0.022539198398590088,
+        "first5_rms": 0.005222755949944258,
+        "xyz_first5_l2_mean": 0.004959298297762871,
+        "xyz_first5_l2_max": 0.024796491488814354,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.024796491488814354
+        ],
+        "rotation_first5_l2_mean": 0.001959496643394232,
+        "gripper_max_abs": 0.19128966331481934,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.0031231045722961426,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0018373936181887984,
+        "rotation_x_first5_max_abs": 0.00410853698849678,
+        "rotation_y_first5_rms": 0.003974870778620243,
+        "rotation_y_first5_max_abs": 0.008888080716133118,
+        "rotation_z_first5_rms": 0.0001500899816164747,
+        "rotation_z_first5_max_abs": 0.00033561140298843384
+      },
+      "intervention": {
+        "kind": "official_operator_same_frame_input_capture",
+        "capture": {
+          "noise_id": 32,
+          "operator": "fog",
+          "severity": 2,
+          "call_count": 6,
+          "calls": [
+            {
+              "index": 0,
+              "severity": 2,
+              "input": {
+                "sha256": "1972141deb813fa640f09e60527d1fff44fd799e5d33a93d7c84b2a577fd8eac",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "8bb2e4e2c4708c11f3a8419bb9c38f6902c2dd6301060f5decf3f652b020cb77",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 1,
+              "severity": 2,
+              "input": {
+                "sha256": "90e753f71b746884b9e26802de0a07f69e07b0b4d06f2a72b0e94a5a2b15cbe8",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "e1a1d8d9d4b419846ec8db92f2e2d233ec5330cb9fe116b529e9cd2a659f5193",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 2,
+              "severity": 2,
+              "input": {
+                "sha256": "845ac7a7f7b5468061137eaae1776918a2748904d26aa17dda09fd3176f33400",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "f7310c5f4c04fb33c1bbd5873a0ed8b8483273264db63ceaec53e44b8e6e4b81",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 3,
+              "severity": 2,
+              "input": {
+                "sha256": "bc35ee309ded6135b8369a7b029145dbd49532ced8b1764544b40e9de5bf2e59",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "23890aa6253a76b61b3b61217d9b76c801585fe0170dcf560d15e51442727c95",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 4,
+              "severity": 2,
+              "input": {
+                "sha256": "98fc5a9c606858f3920603d08cee631d9e590d827d9d6bd8a351f62b93265aef",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "399db1c8b9eb32fd761bdf75c19c842205ce7051c36aa9a7245f679f51d76a28",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 5,
+              "severity": 2,
+              "input": {
+                "sha256": "0c660534e563d9933ddf6bc07204086a61175da7f2e7041beaa43fb1c866ecc7",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "05f0e8a13fd7bd9053c9a1d75b73e44ca6b332a1a845873342d07a5fe4dd4f18",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "operator_source": {
+            "path": "/policies/LIBERO-plus/libero/libero/envs/env_wrapper.py",
+            "file_sha256": "e91d7b7b35cc3ad2b073606c99860def6b3ac43b66eba00ef0ddb6bfd8f39c3c",
+            "function_sha256": "6ba50bcfcf831816d691638e9b6584410f8d93ba3a7b25e745639af8a48fefb3"
+          },
+          "clean_agentview": {
+            "sha256": "0c660534e563d9933ddf6bc07204086a61175da7f2e7041beaa43fb1c866ecc7",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "last_operator_output": {
+            "sha256": "05f0e8a13fd7bd9053c9a1d75b73e44ca6b332a1a845873342d07a5fe4dd4f18",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "float64"
+          },
+          "scope": "Only copies existing PIL operator input, invokes original once with original arguments. No extra random calls, physics steps, renders or observation updates."
+        },
+        "expected_only_agentview_changed": true
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9995591118812227,
+          0.0029950985206372315,
+          -0.029508432088444978,
+          0.0013651651016500105
+        ],
+        "quaternion_second_xyzw": [
+          0.9995591118812227,
+          0.0029950985206372315,
+          -0.029508432088444978,
+          0.0013651651016500105
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.1374813590592647,
+          0.009401210659127026,
+          -0.09262299198925603
+        ],
+        "native_axisangle_second": [
+          3.1374813590592647,
+          0.009401210659127026,
+          -0.09262299198925603
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_goal",
+      "category": "Background Textures",
+      "source_index": 251,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0251/receipt.json",
+      "substitution_scope": "exact_texture_substitution",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.8237168788909912,
+        "rms": 0.08243021368980408,
+        "first5_max_abs": 0.18072335422039032,
+        "first5_rms": 0.05517910048365593,
+        "xyz_first5_l2_mean": 0.11261077225208282,
+        "xyz_first5_l2_max": 0.20718508958816528,
+        "xyz_first1_l2": 0.04263437166810036,
+        "xyz_first5_l2_by_step": [
+          0.04263437166810036,
+          0.012923693284392357,
+          0.18799549341201782,
+          0.20718508958816528,
+          0.11231523752212524
+        ],
+        "rotation_first5_l2_mean": 0.024144690483808517,
+        "gripper_max_abs": 0.8237168788909912,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.02912045083940029,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.008558081462979317,
+        "rotation_x_first5_max_abs": 0.017803657799959183,
+        "rotation_y_first5_rms": 0.034019410610198975,
+        "rotation_y_first5_max_abs": 0.07465987652540207,
+        "rotation_z_first5_rms": 0.01614825241267681,
+        "rotation_z_first5_max_abs": 0.033980660140514374
+      },
+      "intervention": {
+        "kind": "matching_named_background_texture_bytes_from_mother_BDDL_model",
+        "source_bddl": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl",
+        "changed_textures": [
+          {
+            "texture_name": "tex-table",
+            "texture_id": 2,
+            "source_texture_id": 2,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "changed_channels": 786432,
+            "before_sha256": "ea1ae9236a8e1c6d8c06d001ce2fc717be0c76fcaa0a4ae0adb14d88f516d15d",
+            "after_sha256": "a6fb56984cce5b16ca00941e1332b8b65078cf8238c2cbea9e0e44a5fb433501",
+            "ownership": [
+              {
+                "material_id": 1,
+                "material_name": "table_texture",
+                "geoms": [
+                  {
+                    "geom_id": 8,
+                    "geom_name": "table_visual",
+                    "body_id": 1,
+                    "body_name": "table",
+                    "static_body_chain": [
+                      1
+                    ],
+                    "static_body": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "texture_name": "tex-wall",
+            "texture_id": 4,
+            "source_texture_id": 4,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "changed_channels": 779923,
+            "before_sha256": "6b6520baa2d4cdf029fd61a4a5345229ce02e49d686aaa8ea5654b9fc6e78d2e",
+            "after_sha256": "b2b2c36952a947d8fe79d0eff28223bb70689164d05b16a7646ae1ee45bf6456",
+            "ownership": [
+              {
+                "material_id": 3,
+                "material_name": "walls_mat",
+                "geoms": [
+                  {
+                    "geom_id": 1,
+                    "geom_name": "wall_leftcorner_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 2,
+                    "geom_name": "wall_rightcorner_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 3,
+                    "geom_name": "wall_left_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 4,
+                    "geom_name": "wall_right_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 5,
+                    "geom_name": "wall_rear_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  },
+                  {
+                    "geom_id": 6,
+                    "geom_name": "wall_front_visual",
+                    "body_id": 0,
+                    "body_name": "world",
+                    "static_body_chain": [],
+                    "static_body": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "skipped_textures": [
+          {
+            "name": "textable",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 4,
+                "material_name": "table_mat",
+                "geoms": []
+              }
+            ]
+          }
+        ],
+        "material_parameters_unchanged": true,
+        "intervention_nonempty": true,
+        "limitation": "Texture-only removal; other material coefficients remain actual Plus values. No whole-scene reload.",
+        "observation_sampling": "fresh before and after texture-only intervention"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9995810934631161,
+          0.007980170103963463,
+          -0.027744675457406356,
+          0.002046328408727293
+        ],
+        "quaternion_second_xyzw": [
+          0.9995810934631161,
+          0.007980170103963463,
+          -0.027744675457406356,
+          0.002046328408727293
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.1361922410056886,
+          0.025037836075157086,
+          -0.08704910133631844
+        ],
+        "native_axisangle_second": [
+          3.1361922410056886,
+          0.025037836075157086,
+          -0.08704910133631844
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_10",
+      "category": "Robot Initial States",
+      "source_index": 101,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0101/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.20997904241085052,
+        "rms": 0.039648327976465225,
+        "first5_max_abs": 0.16201066970825195,
+        "first5_rms": 0.039570070803165436,
+        "xyz_first5_l2_mean": 0.05418182536959648,
+        "xyz_first5_l2_max": 0.1448574960231781,
+        "xyz_first1_l2": 0.01727875880897045,
+        "xyz_first5_l2_by_step": [
+          0.01727875880897045,
+          0.027888940647244453,
+          0.031201135367155075,
+          0.04968281462788582,
+          0.1448574960231781
+        ],
+        "rotation_first5_l2_mean": 0.010213364847004414,
+        "gripper_max_abs": 0.17957809567451477,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.050359927117824554,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.004557729698717594,
+        "rotation_x_first5_max_abs": 0.008294772356748581,
+        "rotation_y_first5_rms": 0.00825586263090372,
+        "rotation_y_first5_max_abs": 0.013663798570632935,
+        "rotation_z_first5_rms": 0.005702050402760506,
+        "rotation_z_first5_max_abs": 0.011322883889079094
+      },
+      "intervention": {
+        "kind": "robot_arm_qpos_to_inherited_MountedPanda_default_and_arm_qvel_zero",
+        "pos_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "vel_indexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target": [
+          0.0,
+          -0.161037389,
+          0.0,
+          -2.44459747,
+          0.0,
+          2.2267522,
+          0.7853981633974483
+        ],
+        "nonrobot_qpos_qvel_bitwise_equal": true,
+        "controller_goal_reset": true,
+        "controller_goal_before": {
+          "position": [
+            -0.053438553132081,
+            -0.0004459023784003113,
+            0.6895435125114564
+          ],
+          "orientation": [
+            [
+              -0.0005541483096127837,
+              0.9920764123013841,
+              -0.12563472877696966
+            ],
+            [
+              0.9989462143386507,
+              0.006314915974864749,
+              0.04545968207881096
+            ],
+            [
+              0.045892851056859835,
+              -0.12547714529523762,
+              -0.991034475803152
+            ]
+          ]
+        },
+        "controller_goal_after": {
+          "position": [
+            -0.05846466056582397,
+            0.0,
+            0.6812794757296406
+          ],
+          "orientation": [
+            [
+              -0.0004918296871690936,
+              0.9983867450712572,
+              -0.056777331476359764
+            ],
+            [
+              0.9999998786606131,
+              0.0004926243561613802,
+              0.0
+            ],
+            [
+              2.7969896363104485e-05,
+              -0.05677732458703325,
+              -0.9983868662149061
+            ]
+          ]
+        },
+        "limitation": "Robot visual pose and proprioception change jointly. No physical stepping; no claim of exact mother-init trajectory state.",
+        "observation_sampling": "fresh before and after arm-qpos intervention; joint visual/proprioception change"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9992592912187829,
+          -0.0018185729519653593,
+          -0.03393482528380747,
+          -0.018055174834698665
+        ],
+        "quaternion_second_xyzw": [
+          0.9995966048795359,
+          0.0002462128318876379,
+          -0.028400120485872885,
+          -6.995295959032551e-06
+        ],
+        "quaternion_signed_dot": 0.999819626568649,
+        "physical_rotation_geodesic_radians": 0.03798724565334807,
+        "native_axisangle_first": [
+          3.175868903401645,
+          -0.005779830457888223,
+          -0.10785244361327213
+        ],
+        "native_axisangle_second": [
+          3.140339335467866,
+          0.0007735038685599235,
+          -0.08922200721616239
+        ],
+        "native_axisangle_delta_l2": 0.04064959469296065,
+        "canonical_axisangle_delta_l2": 0.0405517867554292,
+        "native_minus_physical_delta": 0.0026623490396125785,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.008496484033127865,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_10",
+      "category": "Sensor Noise",
+      "source_index": 301,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0301/receipt.json",
+      "substitution_scope": "strict_input_intervention",
+      "approximate_auxiliary_arm": false,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.1951935887336731,
+        "rms": 0.031165502965450287,
+        "first5_max_abs": 0.030735265463590622,
+        "first5_rms": 0.0075822556391358376,
+        "xyz_first5_l2_mean": 0.007597640156745911,
+        "xyz_first5_l2_max": 0.03174152597784996,
+        "xyz_first1_l2": 0.0,
+        "xyz_first5_l2_by_step": [
+          0.0,
+          0.006246676202863455,
+          0.03174152597784996,
+          0.0,
+          0.0
+        ],
+        "rotation_first5_l2_mean": 0.0026131521444767714,
+        "gripper_max_abs": 0.1951935887336731,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.00605100067332387,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.001369511941447854,
+        "rotation_x_first5_max_abs": 0.002739023882895708,
+        "rotation_y_first5_rms": 0.003974870778620243,
+        "rotation_y_first5_max_abs": 0.008888080716133118,
+        "rotation_z_first5_rms": 0.0019511698046699166,
+        "rotation_z_first5_max_abs": 0.004027336835861206
+      },
+      "intervention": {
+        "kind": "official_operator_same_frame_input_capture",
+        "capture": {
+          "noise_id": 33,
+          "operator": "fog",
+          "severity": 3,
+          "call_count": 6,
+          "calls": [
+            {
+              "index": 0,
+              "severity": 3,
+              "input": {
+                "sha256": "f2a95b7116533513583bb44b37d34bd41430259e44ac1ba6d43362503e7fd62a",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "d4776617496ee6cff7475b6e290ce3bce9809dafc6a962ea6552d51f9df6ec12",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 1,
+              "severity": 3,
+              "input": {
+                "sha256": "a3269af00eb46c28ddc90d65d6e4a35974312cee7cab91ee990e62428155cbff",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "91f201a1bded821e848ea55536998edef998f593f33c29dcdf606dd9a8f19ff6",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 2,
+              "severity": 3,
+              "input": {
+                "sha256": "b345edb417b6b3c296eb7ad4f5caae90862087c9677772ea8a33ad5b490c2777",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "6771b9acc7fd04bd229bb29411aa649a8fba6986a178f0584f9de7eccf6839dc",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 3,
+              "severity": 3,
+              "input": {
+                "sha256": "7bfef9df2dbcbde0ac34f9a9e02a6b363552fe846dfd7babcf221f993992929e",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "9a42116170b76f7056051b01b6fa654e019d2d72802c377afd49b1f5c4f1ca0e",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 4,
+              "severity": 3,
+              "input": {
+                "sha256": "d3d9b21ce2800bf740cf34276e9cdb9c286090be3fa673684101a72d145235bc",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "fca8e6d66baa4c3df66683628cacc5c82da30ebc179222fae670bbc4d80df2fb",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            },
+            {
+              "index": 5,
+              "severity": 3,
+              "input": {
+                "sha256": "946ff825b4cad6945d56991e18a34044afe4a86bb669dd3d1c17f2e6be67c559",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "uint8"
+              },
+              "output": {
+                "sha256": "495a3d07465e6781c40aab6a397ac6bc21deb1d1913a68818dfacac635a73eaf",
+                "shape": [
+                  256,
+                  256,
+                  3
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "operator_source": {
+            "path": "/policies/LIBERO-plus/libero/libero/envs/env_wrapper.py",
+            "file_sha256": "e91d7b7b35cc3ad2b073606c99860def6b3ac43b66eba00ef0ddb6bfd8f39c3c",
+            "function_sha256": "6ba50bcfcf831816d691638e9b6584410f8d93ba3a7b25e745639af8a48fefb3"
+          },
+          "clean_agentview": {
+            "sha256": "946ff825b4cad6945d56991e18a34044afe4a86bb669dd3d1c17f2e6be67c559",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "uint8"
+          },
+          "last_operator_output": {
+            "sha256": "495a3d07465e6781c40aab6a397ac6bc21deb1d1913a68818dfacac635a73eaf",
+            "shape": [
+              256,
+              256,
+              3
+            ],
+            "dtype": "float64"
+          },
+          "scope": "Only copies existing PIL operator input, invokes original once with original arguments. No extra random calls, physics steps, renders or observation updates."
+        },
+        "expected_only_agentview_changed": true
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9995742763418143,
+          -0.0027419707914175273,
+          -0.028927809566430436,
+          -0.002632395412104621
+        ],
+        "quaternion_second_xyzw": [
+          0.9995742763418143,
+          -0.0027419707914175273,
+          -0.028927809566430436,
+          -0.002632395412104621
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.1455286573269197,
+          -0.008628621110101297,
+          -0.09103200846455828
+        ],
+        "native_axisangle_second": [
+          3.1455286573269197,
+          -0.008628621110101297,
+          -0.09103200846455828
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    },
+    {
+      "head": "draft_10",
+      "category": "Background Textures",
+      "source_index": 252,
+      "result_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/physical_input_pairs/case0252/receipt.json",
+      "substitution_scope": "resampled_approximate",
+      "approximate_auxiliary_arm": true,
+      "status": "complete",
+      "single_factor_gate": true,
+      "actions": {
+        "bitwise_equal": false,
+        "max_abs": 0.3630600571632385,
+        "rms": 0.08611514419317245,
+        "first5_max_abs": 0.15219077467918396,
+        "first5_rms": 0.05724719539284706,
+        "xyz_first5_l2_mean": 0.10458023846149445,
+        "xyz_first5_l2_max": 0.16058503091335297,
+        "xyz_first1_l2": 0.11665598303079605,
+        "xyz_first5_l2_by_step": [
+          0.11665598303079605,
+          0.040001723915338516,
+          0.16058503091335297,
+          0.05848557874560356,
+          0.14717289805412292
+        ],
+        "rotation_first5_l2_mean": 0.0325319804251194,
+        "gripper_max_abs": 0.3630600571632385,
+        "gripper_first5_sign_disagreements": 0,
+        "gripper_first5_abs_mean": 0.07039166986942291,
+        "units": "Decoded native controller action units; xyz/rotation/gripper separated. No physical EEF distance conversion.",
+        "rotation_x_first5_rms": 0.0068475608713924885,
+        "rotation_x_first5_max_abs": 0.013695121742784977,
+        "rotation_y_first5_rms": 0.026104340329766273,
+        "rotation_y_first5_max_abs": 0.04532921314239502,
+        "rotation_z_first5_rms": 0.02352825552225113,
+        "rotation_z_first5_max_abs": 0.03893093019723892
+      },
+      "intervention": {
+        "kind": "matching_named_background_texture_bytes_from_mother_BDDL_model",
+        "source_bddl": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl",
+        "changed_textures": [
+          {
+            "texture_name": "tex-living_room_table",
+            "texture_id": 6,
+            "source_texture_id": 6,
+            "shape": [
+              512,
+              512,
+              3
+            ],
+            "source_shape": [
+              1024,
+              1024,
+              3
+            ],
+            "approximate_mother_appearance": true,
+            "resampling": "PIL LANCZOS1024-to512 RGB2D",
+            "changed_channels": 785369,
+            "before_sha256": "0056325eb3d71177e32dac92aca8d930c2bae8f694dbdb6c14b0e2c5989cbf09",
+            "after_sha256": "92cab26be779626c08c9ce37f24f431e493c6dd977c3a92157134629f07eefe5",
+            "ownership": [
+              {
+                "material_id": 5,
+                "material_name": "living_room_table",
+                "geoms": [
+                  {
+                    "geom_id": 9,
+                    "geom_name": null,
+                    "body_id": 3,
+                    "body_name": "living_room_table_col",
+                    "static_body_chain": [
+                      3,
+                      2
+                    ],
+                    "static_body": true,
+                    "exact_arena_xml_proof": {
+                      "xml_path": "/policies/LIBERO-plus/libero/libero/assets/scenes/liv_table_Cobblestone01_NRM_6K.xml",
+                      "xml_sha256": "7f437e824aa51199e4d14f22c77362d9e1603fb6202c41e026562a29db759a0a",
+                      "geom_xml": "<geom solimp=\"0.998 0.998 0.001\" solref=\"0.001 1\" density=\"100\" friction=\"0.95 0.3 0.1\" type=\"mesh\" mesh=\"living_room_table_vis\" conaffinity=\"0\" contype=\"0\" group=\"1\" material=\"living_room_table\" />\n        ",
+                      "mesh_path": "/policies/LIBERO-plus/libero/libero/assets/scenes/living_room_table/visual/living_room_table_vis.msh",
+                      "mesh_sha256": "9877f90c22971b98840ca6f8611fec6e0a8bec85f0e5f0a78e9e08bb57a8e2ec",
+                      "material": "living_room_table",
+                      "texture": "tex-living_room_table",
+                      "body_chain": [
+                        "living_room_table_col",
+                        "living_room_table"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "skipped_textures": [
+          {
+            "name": "tex-table",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 1,
+                "material_name": "table_texture",
+                "geoms": []
+              }
+            ]
+          },
+          {
+            "name": "tex-table-legs",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 2,
+                "material_name": "table_legs",
+                "geoms": []
+              }
+            ]
+          },
+          {
+            "name": "textable",
+            "reason": "texture is unused or shared with non-arena geom",
+            "ownership": [
+              {
+                "material_id": 4,
+                "material_name": "table_mat",
+                "geoms": []
+              }
+            ]
+          }
+        ],
+        "material_parameters_unchanged": true,
+        "intervention_nonempty": true,
+        "limitation": "Auxiliary approximate mother appearance at actual target resolution; not exact mother texture restoration. Only registered RGB2D1024-to512 resampling; material/physical properties unchanged.",
+        "observation_sampling": "fresh before and after texture-only intervention"
+      },
+      "state_geometry": {
+        "quaternion_first_xyzw": [
+          0.9997546813203996,
+          -0.0048047118247264735,
+          -0.021541568610854163,
+          -0.0018581560783297558
+        ],
+        "quaternion_second_xyzw": [
+          0.9997546813203996,
+          -0.0048047118247264735,
+          -0.021541568610854163,
+          -0.0018581560783297558
+        ],
+        "quaternion_signed_dot": 1.0,
+        "physical_rotation_geodesic_radians": 0.0,
+        "native_axisangle_first": [
+          3.144542793497434,
+          -0.01511232927994018,
+          -0.06775500590447679
+        ],
+        "native_axisangle_second": [
+          3.144542793497434,
+          -0.01511232927994018,
+          -0.06775500590447679
+        ],
+        "native_axisangle_delta_l2": 0.0,
+        "canonical_axisangle_delta_l2": 0.0,
+        "native_minus_physical_delta": 0.0,
+        "near_2pi_branch_jump_candidate": false,
+        "eef_translation_l2_m": 0.0,
+        "gripper_qpos_delta_l2": 0.0,
+        "interpretation": "Geodesic compares physical orientations modulo q/-q. Native axis-angle is the actual released input convention; a large numeric difference is evidence of representation sensitivity, not proof of failure causality."
+      }
+    }
+  ],
+  "posthoc4": [
+    {
+      "episode_index": 0,
+      "status": "complete",
+      "success": true,
+      "steps": 181,
+      "design": {
+        "case": {
+          "environment": "libero_original",
+          "mother_suite": "libero_object",
+          "mother_task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+          "task_index": 0,
+          "category": "Original unperturbed sanity",
+          "difficulty_level": null,
+          "matching_draft": "draft_object",
+          "trial": 0,
+          "native_max_steps": 600,
+          "seed": 850293239
+        },
+        "head": "draft_object",
+        "init_index": 0,
+        "settle": "five_open",
+        "prompt": "legacy_filename",
+        "episode_index": 0,
+        "reference_episode_indices": {
+          "new": 10,
+          "old": 11
+        }
+      },
+      "reference_gate": {
+        "passed": true,
+        "reset_physical_equal": {
+          "init_vector": true,
+          "time": true,
+          "qpos": true,
+          "qvel": true,
+          "body_xpos": true,
+          "body_xquat": true,
+          "model_body_pos": true,
+          "model_geom_pos": true,
+          "model_geom_size": true
+        },
+        "reference_sha256": {
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode010/result.json": "782e8e2cc74f916218969951a778cd39d449c2c022de91f626f533d2d307a1aa",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode010/reset_physical.npz": "7c6da89587963b50ccdf6e853c6172988484dbe038df783c386b32e9744ae75a",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode011/result.json": "05235d07d5a90ff0dd965ea7750e997ef1f86a522bad79d55889f6549da077a0",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode011/reset_physical.npz": "7c6da89587963b50ccdf6e853c6172988484dbe038df783c386b32e9744ae75a"
+        },
+        "same_service_identity": {
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "server_pid": 3715967,
+          "manifest_hash": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3"
+        }
+      }
+    },
+    {
+      "episode_index": 1,
+      "status": "complete",
+      "success": false,
+      "steps": 600,
+      "design": {
+        "case": {
+          "environment": "libero_original",
+          "mother_suite": "libero_object",
+          "mother_task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+          "name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+          "task_index": 0,
+          "category": "Original unperturbed sanity",
+          "difficulty_level": null,
+          "matching_draft": "draft_object",
+          "trial": 0,
+          "native_max_steps": 600,
+          "seed": 850293239
+        },
+        "head": "draft_object",
+        "init_index": 0,
+        "settle": "ten_zero",
+        "prompt": "legacy_filename",
+        "episode_index": 1,
+        "reference_episode_indices": {
+          "new": 10,
+          "old": 11
+        }
+      },
+      "reference_gate": {
+        "passed": true,
+        "reset_physical_equal": {
+          "init_vector": true,
+          "time": true,
+          "qpos": true,
+          "qvel": true,
+          "body_xpos": true,
+          "body_xquat": true,
+          "model_body_pos": true,
+          "model_geom_pos": true,
+          "model_geom_size": true
+        },
+        "reference_sha256": {
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode010/result.json": "782e8e2cc74f916218969951a778cd39d449c2c022de91f626f533d2d307a1aa",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode010/reset_physical.npz": "7c6da89587963b50ccdf6e853c6172988484dbe038df783c386b32e9744ae75a",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode011/result.json": "05235d07d5a90ff0dd965ea7750e997ef1f86a522bad79d55889f6549da077a0",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode011/reset_physical.npz": "7c6da89587963b50ccdf6e853c6172988484dbe038df783c386b32e9744ae75a"
+        },
+        "same_service_identity": {
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "server_pid": 3715967,
+          "manifest_hash": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3"
+        }
+      }
+    },
+    {
+      "episode_index": 2,
+      "status": "complete",
+      "success": false,
+      "steps": 600,
+      "design": {
+        "case": {
+          "environment": "libero_original",
+          "mother_suite": "libero_object",
+          "mother_task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "task_index": 1,
+          "category": "Original unperturbed sanity",
+          "difficulty_level": null,
+          "matching_draft": "draft_object",
+          "trial": 0,
+          "native_max_steps": 600,
+          "seed": 2551874694
+        },
+        "head": "draft_object",
+        "init_index": 0,
+        "settle": "five_open",
+        "prompt": "legacy_filename",
+        "episode_index": 2,
+        "reference_episode_indices": {
+          "new": 15,
+          "old": 16
+        }
+      },
+      "reference_gate": {
+        "passed": true,
+        "reset_physical_equal": {
+          "init_vector": true,
+          "time": true,
+          "qpos": true,
+          "qvel": true,
+          "body_xpos": true,
+          "body_xquat": true,
+          "model_body_pos": true,
+          "model_geom_pos": true,
+          "model_geom_size": true
+        },
+        "reference_sha256": {
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode015/result.json": "34fdfaf5412f77f22e8531924251e5cbc11c54cf0ade10d070fec22372501634",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode015/reset_physical.npz": "9c613cf9cf897cfb374a0f734bf93c75b49114e08ca0353420f873c6284c64a5",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode016/result.json": "76d3fddfdec1f2312f2a182a0107f93b0ef1bc52d98dd493550b482211effd87",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode016/reset_physical.npz": "9c613cf9cf897cfb374a0f734bf93c75b49114e08ca0353420f873c6284c64a5"
+        },
+        "same_service_identity": {
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "server_pid": 3715967,
+          "manifest_hash": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3"
+        }
+      }
+    },
+    {
+      "episode_index": 3,
+      "status": "complete",
+      "success": false,
+      "steps": 600,
+      "design": {
+        "case": {
+          "environment": "libero_original",
+          "mother_suite": "libero_object",
+          "mother_task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "task_index": 1,
+          "category": "Original unperturbed sanity",
+          "difficulty_level": null,
+          "matching_draft": "draft_object",
+          "trial": 0,
+          "native_max_steps": 600,
+          "seed": 2551874694
+        },
+        "head": "draft_object",
+        "init_index": 0,
+        "settle": "ten_zero",
+        "prompt": "legacy_filename",
+        "episode_index": 3,
+        "reference_episode_indices": {
+          "new": 15,
+          "old": 16
+        }
+      },
+      "reference_gate": {
+        "passed": true,
+        "reset_physical_equal": {
+          "init_vector": true,
+          "time": true,
+          "qpos": true,
+          "qvel": true,
+          "body_xpos": true,
+          "body_xquat": true,
+          "model_body_pos": true,
+          "model_geom_pos": true,
+          "model_geom_size": true
+        },
+        "reference_sha256": {
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode015/result.json": "34fdfaf5412f77f22e8531924251e5cbc11c54cf0ade10d070fec22372501634",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode015/reset_physical.npz": "9c613cf9cf897cfb374a0f734bf93c75b49114e08ca0353420f873c6284c64a5",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode016/result.json": "76d3fddfdec1f2312f2a182a0107f93b0ef1bc52d98dd493550b482211effd87",
+          "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode016/reset_physical.npz": "9c613cf9cf897cfb374a0f734bf93c75b49114e08ca0353420f873c6284c64a5"
+        },
+        "same_service_identity": {
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "server_pid": 3715967,
+          "manifest_hash": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3"
+        }
+      }
+    }
+  ],
+  "response_validation_errors": [],
+  "validated_response_count": 739,
+  "validated_response_counts": {
+    "restore": 667,
+    "language": 24,
+    "physical_input": 48
+  },
+  "reuse_reference_audit": [
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/reused_restore_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/restore8/case0151/result.json",
+      "source_index": 151,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0102/receipt.json",
+      "source_index": 102,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0302/receipt.json",
+      "source_index": 302,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0102/receipt.json",
+      "source_index": 102,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0302/receipt.json",
+      "source_index": 302,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0253/receipt.json",
+      "source_index": 253,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0103/receipt.json",
+      "source_index": 103,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0303/receipt.json",
+      "source_index": 303,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0250/receipt.json",
+      "source_index": 250,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0100/receipt.json",
+      "source_index": 100,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0300/receipt.json",
+      "source_index": 300,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0251/receipt.json",
+      "source_index": 251,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0101/receipt.json",
+      "source_index": 101,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v4/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0301/receipt.json",
+      "source_index": 301,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0102/receipt.json",
+      "source_index": 102,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v2/physical_input_pairs/case0302/receipt.json",
+      "source_index": 302,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0253/receipt.json",
+      "source_index": 253,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0103/receipt.json",
+      "source_index": 103,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0303/receipt.json",
+      "source_index": 303,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0250/receipt.json",
+      "source_index": 250,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0100/receipt.json",
+      "source_index": 100,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0300/receipt.json",
+      "source_index": 300,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0251/receipt.json",
+      "source_index": 251,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0101/receipt.json",
+      "source_index": 101,
+      "sha256_matches": true,
+      "complete": true
+    },
+    {
+      "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v5/reused_input_results.json",
+      "source": "results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/capture_v3/physical_input_pairs/case0301/receipt.json",
+      "source_index": 301,
+      "sha256_matches": true,
+      "complete": true
+    }
+  ],
+  "restore_completed": 8,
+  "restore_gate_failed": 0,
+  "physical_input_completed": 12,
+  "physical_input_gate_failed": 0,
+  "physical_input_strict_completed": 11,
+  "physical_input_approximate_completed": 1,
+  "texture_substitution_counts": {
+    "exact_texture_substitution": 3,
+    "resampled_approximate": 1
+  },
+  "remaining_limitations": [
+    "Long case252 is a preregistered1024-to512 PIL LANCZOS2D RGB approximate appearance arm, not exact mother texel restoration; v4 exact shape failure is preserved.",
+    "Robot input changes require action changes and are not model error or closed-loop failure evidence. Background probes establish nuisance sensitivity only.",
+    "No rescue in four fixed noise restore cases does not establish absence of noise effects elsewhere.",
+    "All first-service visual_preencoder RMS/L2 values are invalid and excluded."
+  ],
+  "posthoc_settle_duration_by_gripper": [
+    {
+      "task": 0,
+      "settle_steps": 5,
+      "settle_gripper_command": -1.0,
+      "success": true,
+      "steps": 181,
+      "initial_two_finger_aperture_mm": 67.88185669150354,
+      "initial_generalized_qvel_norm": 1.0464689663489672,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/posthoc_object_settle4/episode000/result.json"
+    },
+    {
+      "task": 0,
+      "settle_steps": 5,
+      "settle_gripper_command": 0.0,
+      "success": true,
+      "steps": 154,
+      "initial_two_finger_aperture_mm": 41.35168623434406,
+      "initial_generalized_qvel_norm": 1.0432978358744271,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode010/result.json"
+    },
+    {
+      "task": 0,
+      "settle_steps": 10,
+      "settle_gripper_command": -1.0,
+      "success": true,
+      "steps": 139,
+      "initial_two_finger_aperture_mm": 77.4455675264145,
+      "initial_generalized_qvel_norm": 0.050265962924791394,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode011/result.json"
+    },
+    {
+      "task": 0,
+      "settle_steps": 10,
+      "settle_gripper_command": 0.0,
+      "success": false,
+      "steps": 600,
+      "initial_two_finger_aperture_mm": 41.08563673903691,
+      "initial_generalized_qvel_norm": 0.050067737987246876,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/posthoc_object_settle4/episode001/result.json"
+    },
+    {
+      "task": 1,
+      "settle_steps": 5,
+      "settle_gripper_command": -1.0,
+      "success": false,
+      "steps": 600,
+      "initial_two_finger_aperture_mm": 67.8821433005108,
+      "initial_generalized_qvel_norm": 0.49443241212975103,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/posthoc_object_settle4/episode002/result.json"
+    },
+    {
+      "task": 1,
+      "settle_steps": 5,
+      "settle_gripper_command": 0.0,
+      "success": false,
+      "steps": 600,
+      "initial_two_finger_aperture_mm": 41.351666670950124,
+      "initial_generalized_qvel_norm": 0.48768549097409825,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode015/result.json"
+    },
+    {
+      "task": 1,
+      "settle_steps": 10,
+      "settle_gripper_command": -1.0,
+      "success": true,
+      "steps": 128,
+      "initial_two_finger_aperture_mm": 77.44559024793396,
+      "initial_generalized_qvel_norm": 0.06503627195088581,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/original_protocol40/episode016/result.json"
+    },
+    {
+      "task": 1,
+      "settle_steps": 10,
+      "settle_gripper_command": 0.0,
+      "success": false,
+      "steps": 600,
+      "initial_two_finger_aperture_mm": 41.085619314135876,
+      "initial_generalized_qvel_norm": 0.06488328055433312,
+      "qvel_units": "Mixed generalized joint/object coordinates; not meters/second.",
+      "source": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/draft_diagnostics_20261023/posthoc_object_settle4/episode003/result.json"
+    }
+  ]
+}

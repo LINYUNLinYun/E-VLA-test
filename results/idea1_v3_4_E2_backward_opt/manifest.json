@@ -1,0 +1,106 @@
+{
+  "sources": {
+    "preparations/idea1_v3_4_E2_backward_opt/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_backward_opt/probe.py": "316e7ce75f6175ef1f6b8aa3700aca53a131e941ca5c5a2c87e56cdc098f8e80",
+    "preparations/idea1_v3_4_E2_backward_opt/advanced.py": "da8a6c8f5370b9b55d9f6671fa9b8c23acbc527f2b6aea7f5f6e762211f62239",
+    "preparations/idea1_v3_4_E2_backward_opt/fusion.py": "9eec983dd5d1bb4bf1399e5a30223a9a373b55aa36d71d709ba9e0d96c97e13d",
+    "preparations/idea1_v3_4_E2_backward_opt/batched.py": "05361fd733a95f10a6801880cc1b6fb2e74eabf6ac7a007e5a39cea6152ab2c4",
+    "preparations/idea1_v3_4_E2_backward_opt/finish.py": "2398af1ab98ea8dbbc89a6c8c69adac6722d7865a34c8868411c6a8e2ab8e656",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_E2_single_action/common.py": "243f8264b02b905eee060e20b82fad6daaa477366045cd48e49ebe83ccda2c54",
+    "docs/experiments/idea1/idea1_v3_4_E2_backward_opt_plan.md": "fa749bbfb6710a7b541bdf2b84c73b332d1d15e3f07848c066f011848a1a0216"
+  },
+  "cases": [
+    {
+      "id": 1,
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/da73e6d35c1759418193.pt",
+      "sha256": "b2c9ed906d56a2404a8a9b5c62f33a418c88263907d4edbeb98a0e5b633a03a1"
+    },
+    {
+      "id": 9,
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/33b2fad8787f242859e0.pt",
+      "sha256": "688d50f40dfd6a4d5ae942dc61f305bb51d8047e89f5c1bf5cd3f69599517165"
+    },
+    {
+      "id": 41,
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/b98b48347d60f6bc1cca.pt",
+      "sha256": "90b0057e174063b96b239d826b075583e3fbbd93bc8b0a94c98deba16d02f727"
+    },
+    {
+      "id": 49,
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/724fe75765c1c8075395.pt",
+      "sha256": "f16b452e88aed90eead33fdb5db6a0ebb7e991cbae2508b451a34e9cca1555ee"
+    },
+    {
+      "id": 81,
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/7364fbe2ec8e5fd5bc62.pt",
+      "sha256": "cdae5651600ad54fea1573dcf037b9f0e172bfd234df3d7fdf567ec8377e74bc"
+    },
+    {
+      "id": 89,
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/a9b53ccdaf8518c77419.pt",
+      "sha256": "1022ac194a60f13c0255cb43d109e7a83394ec6edac13439b8159db591fb0096"
+    },
+    {
+      "id": 121,
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/36e4756f370d97bf9a14.pt",
+      "sha256": "c5002e20c69101ef9939308d0ab0c2068e1438ddb266dd554415da0f4a3ad10c"
+    },
+    {
+      "id": 129,
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 14
+      },
+      "input": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single/inputs/33edc8df4dabcbf9c03e.pt",
+      "sha256": "7f65c4cd6d38cfa2483b0f22b2a87217aaaa0939cf37b1e94368264a6cd737e4"
+    }
+  ],
+  "environment": {
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "visible": "0",
+    "deterministic": true,
+    "time": 1793334318.1538537
+  },
+  "selection_sha256": "c2a04118e5e7382d96754001f3d3b49d4391d17ff98e3b27821b05ab4b3b546e",
+  "reference_root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_E4_single",
+  "time": 1793334820.557222
+}

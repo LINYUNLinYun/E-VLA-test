@@ -1,0 +1,33 @@
+{
+  "status": "CPU_reference_preparation_only",
+  "time": 1793927249.1998768,
+  "CPU_tests": 8,
+  "source_files": {
+    "reports/ease_insights_20261103/prefix_kv_preparation_v4/oracle.py": "04dfc81d8445c9b9bd9f9cf046006022f4e3d3ffd79e5b9ae7813eaf17dde4ec",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v4/test_oracle.py": "a8aadfafd73ebfa8db7797b93767433e493b361f64eedcb85007db493b6adf44",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v1/layout_contract.py": "0b1163aee0ce45e33ff174d3ba1e35c8945b47deb8371430a66fd1be201ebdc5",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "patterns": [
+    "identity",
+    "center_columns",
+    "checkerboard"
+  ],
+  "reference": "Full original QK/V storage and work;minus-infinity dropped image logits before original state-masked softmax",
+  "CPU_checks": [
+    "identity bitwise fake-native",
+    "two masks vs independently compact float64 attention",
+    "original decoder state mask",
+    "BF16 and explicit FP32 logits",
+    "exception and ownership restoration",
+    "reject packed storage as dense oracle",
+    "serial helper scope"
+  ],
+  "GPU_numerical_passed": false,
+  "model_or_environment_started": false,
+  "policy_integrated": false,
+  "scientific_manifest_created": false,
+  "new_quality_cases": 0,
+  "limitations": "CPUfake-native checks only.RealBF16 full-storage masked reference versus original compact sampler,original-node parity and packing-inclusive costs remain untested;no production speed claim."
+}

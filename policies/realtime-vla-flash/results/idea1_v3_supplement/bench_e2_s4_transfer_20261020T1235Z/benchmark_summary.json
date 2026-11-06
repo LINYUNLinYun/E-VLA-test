@@ -1,0 +1,157 @@
+{
+  "config": {
+    "experiment": "E2",
+    "mask": "s4_transfer",
+    "skip": [
+      3,
+      9,
+      11,
+      15
+    ],
+    "revision": "supplement-pi05-prefix-mask-native-suffix-v1"
+  },
+  "revision": "supplement-prompt-resident-replay-v1",
+  "physical_gpu": 0,
+  "gpu": {
+    "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "memory_mb": 2.0
+  },
+  "model_load_s": 24.233227383345366,
+  "warmup_requests": 20,
+  "measured_requests": 100,
+  "replay_executed_actions": 500,
+  "total_request_ms": 9108.059015125036,
+  "measured_periodic_full_calls": 0,
+  "measured_full_cache_age_ranges": {
+    "rounds": null,
+    "env_steps": null
+  },
+  "measured_requests_with_full_cache_age": 0,
+  "mean_request_ms": 91.08059015125036,
+  "p50_request_ms": 90.5288327485323,
+  "p95_request_ms": 96.17809168994427,
+  "replay_ms_per_executed_action": 18.216118030250072,
+  "measured_requests_with_runtime_setup": 0,
+  "execution_safety": null,
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "XLA_FLAGS": null
+  },
+  "model_protocol": {
+    "model": "pi05_libero",
+    "H": 10,
+    "R": 5,
+    "D": 10,
+    "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+    "backend": "native OpenPI JAX",
+    "skip": [
+      3,
+      9,
+      11,
+      15
+    ],
+    "mask": "s4_transfer",
+    "depth": 18,
+    "mask_semantics": "prefix-only hidden skip with original-index KV shell; contiguous skips allowed",
+    "native_H_preserved": true,
+    "normalization_asset": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json",
+    "revision": "supplement-pi05-prefix-mask-native-suffix-v1",
+    "ae_structure": "original native scanned suffix"
+  },
+  "input_files": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_10/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_goal/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_object/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_spatial/task00/init00/profile_inputs.pkl"
+  ],
+  "input_sha256": [
+    "b6fb26601f05aff66a638fdc7291362f7baf65b73493fe688145751ac58ab4c1",
+    "670ac4149a750142094bdb98211e0e991caa4d2ce84f6a6d2bc38dbe97bd9ebb",
+    "476d2b31db71c8cf0490af99c3e14685224d0b83b3ca3e3fd4c7fa352004b779",
+    "f15e2bd768497da94978a7bc53ec1cef3a23a6768748d7350a59d394b60f708b"
+  ],
+  "state_boundary": "virtual ack; router reset before each actual sequence (or each five-point E2 repeat); not physically executed history",
+  "order": "prompt outermost; captured mode <=5 warm then full actual <=25-point sequence once, otherwise five warm then five measured repeats; persistent model/backend",
+  "timing_boundary": "full input/predict/decode including rejected draft+verify+immediate Full; startup separately; runtime setup flagged",
+  "interpretation": "same-input replay only, not closed-loop route distribution or causal deployment speedup",
+  "native_stage_checks": [
+    {
+      "sequence": 0,
+      "max_abs": 0.0012204647064208984,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 75.52296668291092,
+        "image_embedding_ms": 3219.472650438547,
+        "vlm_prefill_ms": 30273.389469832182,
+        "ae_d10_ms": 3387.106694281101,
+        "decode_ms": 2.409461885690689,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 1,
+      "max_abs": 0.0016168225556612015,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 48.6501008272171,
+        "image_embedding_ms": 13.068005442619324,
+        "vlm_prefill_ms": 31.76066279411316,
+        "ae_d10_ms": 21.4136503636837,
+        "decode_ms": 1.7084404826164246,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 2,
+      "max_abs": 0.0019527673721313477,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 48.94615337252617,
+        "image_embedding_ms": 12.13950663805008,
+        "vlm_prefill_ms": 23.338530212640762,
+        "ae_d10_ms": 20.583759993314743,
+        "decode_ms": 1.4252029359340668,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 3,
+      "max_abs": 0.002440929412841797,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 49.866314977407455,
+        "image_embedding_ms": 11.926334351301193,
+        "vlm_prefill_ms": 23.27853813767433,
+        "ae_d10_ms": 20.576905459165573,
+        "decode_ms": 1.6110539436340332,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    }
+  ]
+}

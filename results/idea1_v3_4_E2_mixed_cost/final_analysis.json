@@ -1,0 +1,302 @@
+{
+  "status": "complete",
+  "manifest_hash": "5b7946d1385f66cd7d36803ea05a5162854f19637f9ec3ce9918e041d5d05dcc",
+  "new_episodes": 160,
+  "audit_passed": true,
+  "prefix_exclusions": 0,
+  "hardware": {
+    "gpu": "RTX4090",
+    "native_profile_requests": 4976,
+    "truth_reinjection_checks": 32,
+    "complete_module_event_profile_ms": {
+      "qkv_ms": 0.05119999870657921,
+      "kv_retained_ms": 0.022048000246286392,
+      "attn_update_and_o_ms": 0.10291199758648872,
+      "attention_complete_ms": 0.15462399646639824,
+      "attention_removable_before_patch_ms": 0.13260799646377563,
+      "ffn_complete_ms": 0.9390079975128174,
+      "attn_patch_kernel_ms": 0.008191999979317188,
+      "ffn_patch_kernel_ms": 0.041471999138593674,
+      "af_patch_kernel_ms": 0.10137599892914295,
+      "af_profile_net_saved_ms": 0.8847999833524227
+    },
+    "uninstrumented_net_saved_ms_layer_median": {
+      "attn": 0.1080322265625,
+      "ffn": 0.8975372314453125,
+      "af": 1.0259990692138672
+    },
+    "ratios": {
+      "full_F_over_A": 6.072847804815831,
+      "net_F_over_A": 8.308050847457627
+    }
+  },
+  "conditions": [
+    {
+      "id": "B4_M-E-U+",
+      "n": 40,
+      "success": 27,
+      "mean_selected_attn": 1.6093366093366093,
+      "mean_selected_ffn": 4.117936117936118,
+      "mean_selected_af": 0.995085995085995,
+      "five_request_hot_mean_ms": 100.716021446993,
+      "full_hot_mean_ms": 288.7109222616928
+    },
+    {
+      "id": "B4_M-E-W+",
+      "n": 40,
+      "success": 26,
+      "mean_selected_attn": 0.4088669950738916,
+      "mean_selected_ffn": 4.657635467980295,
+      "mean_selected_af": 0.25862068965517243,
+      "five_request_hot_mean_ms": 100.3668598387213,
+      "full_hot_mean_ms": 288.410529139496
+    },
+    {
+      "id": "B6_M-E-U+",
+      "n": 40,
+      "success": 25,
+      "mean_selected_attn": 1.672055427251732,
+      "mean_selected_ffn": 6.5796766743648964,
+      "mean_selected_af": 1.3787528868360277,
+      "five_request_hot_mean_ms": 96.94361560393833,
+      "full_hot_mean_ms": 276.9454585581911
+    },
+    {
+      "id": "B6_M-E-W+",
+      "n": 40,
+      "success": 25,
+      "mean_selected_attn": 0.09579439252336448,
+      "mean_selected_ffn": 6.978971962616822,
+      "mean_selected_af": 0.07476635514018691,
+      "five_request_hot_mean_ms": 96.82093037272188,
+      "full_hot_mean_ms": 276.24424729859356
+    }
+  ],
+  "paired_quality": [
+    {
+      "budget": "B4",
+      "n": 40,
+      "delta_pp": -2.4999999999999996,
+      "ci95_pp": [
+        -17.5,
+        10.0
+      ],
+      "recovered": 6,
+      "new_failures": 7
+    },
+    {
+      "budget": "B6",
+      "n": 40,
+      "delta_pp": 0.0,
+      "ci95_pp": [
+        -15.0,
+        15.0
+      ],
+      "recovered": 6,
+      "new_failures": 6
+    }
+  ],
+  "same_input_shadow": {
+    "episodes": 160,
+    "full_inputs": 1674,
+    "actual_choices_replayed": true,
+    "by_budget_and_phase": [
+      {
+        "budget": "B4",
+        "scoring_mode": "comp_error",
+        "full_inputs": 653,
+        "source_episodes": 80,
+        "different_masks": 436,
+        "mask_difference_fraction": 0.667687595712098,
+        "episode_equal_weighted_mask_difference_fraction": 0.6580731676948781,
+        "support_difference_fraction": 0.6370597243491577,
+        "mean_attn_symmetric_difference": 1.2771822358346094,
+        "mean_ffn_symmetric_difference": 1.1669218989280246,
+        "mean_online_mask_selection_ms": 18.988739545093377,
+        "U": {
+          "attn_count": 1.562021439509954,
+          "ffn_count": 4.16385911179173,
+          "af_count": 0.9770290964777948,
+          "a_only_count": 0.5849923430321593,
+          "f_only_count": 3.1868300153139355,
+          "support_count": 4.74885145482389,
+          "module_count": 5.725880551301684,
+          "raw_sensitivity": 0.25311762770143326,
+          "density_objective": 0.5191939178056167,
+          "estimated_saved_ms": 3.859307023321505,
+          "shadow_selection_cpu_ms": 23.053542070467294
+        },
+        "W": {
+          "attn_count": 0.4165390505359878,
+          "ffn_count": 4.653905053598775,
+          "af_count": 0.25267993874425726,
+          "a_only_count": 0.1638591117917305,
+          "f_only_count": 4.401225114854517,
+          "support_count": 4.817764165390505,
+          "module_count": 5.070444104134762,
+          "raw_sensitivity": 0.2844728778031634,
+          "density_objective": 0.3476276528937116,
+          "estimated_saved_ms": 4.093280691465229,
+          "shadow_selection_cpu_ms": 22.976800565469503
+        },
+        "mean_W_minus_U_raw_sensitivity": 0.03135525010173012,
+        "mean_W_minus_U_density_objective": -0.17156626491190508,
+        "mean_W_minus_U_estimated_saved_ms": 0.23397366814372367
+      },
+      {
+        "budget": "B4",
+        "scoring_mode": "warm_original",
+        "full_inputs": 160,
+        "source_episodes": 80,
+        "different_masks": 118,
+        "mask_difference_fraction": 0.7375,
+        "episode_equal_weighted_mask_difference_fraction": 0.7375,
+        "support_difference_fraction": 0.64375,
+        "mean_attn_symmetric_difference": 1.20625,
+        "mean_ffn_symmetric_difference": 1.1375,
+        "mean_online_mask_selection_ms": 20.886051887646317,
+        "U": {
+          "attn_count": 1.4125,
+          "ffn_count": 4.10625,
+          "af_count": 0.85,
+          "a_only_count": 0.5625,
+          "f_only_count": 3.25625,
+          "support_count": 4.66875,
+          "module_count": 5.51875,
+          "raw_sensitivity": 0.10783583407828701,
+          "density_objective": 0.24367522385226556,
+          "estimated_saved_ms": 3.868235695362091,
+          "shadow_selection_cpu_ms": 23.09831641614437
+        },
+        "W": {
+          "attn_count": 0.38125,
+          "ffn_count": 4.66875,
+          "af_count": 0.225,
+          "a_only_count": 0.15625,
+          "f_only_count": 4.44375,
+          "support_count": 4.825,
+          "module_count": 5.05,
+          "raw_sensitivity": 0.13073685577328434,
+          "density_objective": 0.1534766707126362,
+          "estimated_saved_ms": 4.232215291261673,
+          "shadow_selection_cpu_ms": 22.98082341440022
+        },
+        "mean_W_minus_U_raw_sensitivity": 0.022901021694997324,
+        "mean_W_minus_U_density_objective": -0.09019855313962936,
+        "mean_W_minus_U_estimated_saved_ms": 0.3639795958995819
+      },
+      {
+        "budget": "B6",
+        "scoring_mode": "comp_error",
+        "full_inputs": 701,
+        "source_episodes": 80,
+        "different_masks": 354,
+        "mask_difference_fraction": 0.5049928673323824,
+        "episode_equal_weighted_mask_difference_fraction": 0.49690943784887287,
+        "support_difference_fraction": 0.46790299572039945,
+        "mean_attn_symmetric_difference": 1.4750356633380886,
+        "mean_ffn_symmetric_difference": 1.362339514978602,
+        "mean_online_mask_selection_ms": 6.440285667670777,
+        "U": {
+          "attn_count": 1.5620542082738944,
+          "ffn_count": 6.624821683309558,
+          "af_count": 1.3124108416547788,
+          "a_only_count": 0.24964336661911554,
+          "f_only_count": 5.312410841654779,
+          "support_count": 6.8744650499286735,
+          "module_count": 8.186875891583453,
+          "raw_sensitivity": 1.3269836148340122,
+          "density_objective": 1.9503958136222292,
+          "estimated_saved_ms": 5.937636058442773,
+          "shadow_selection_cpu_ms": 5.551152239512445
+        },
+        "W": {
+          "attn_count": 0.10413694721825963,
+          "ffn_count": 6.977175463623396,
+          "af_count": 0.07988587731811697,
+          "a_only_count": 0.024251069900142655,
+          "f_only_count": 6.897289586305278,
+          "support_count": 7.001426533523538,
+          "module_count": 7.0813124108416545,
+          "raw_sensitivity": 1.3794859894802103,
+          "density_objective": 1.5762157521142324,
+          "estimated_saved_ms": 6.007917590556233,
+          "shadow_selection_cpu_ms": 5.55882727283554
+        },
+        "mean_W_minus_U_raw_sensitivity": 0.052502374646198086,
+        "mean_W_minus_U_density_objective": -0.3741800615079972,
+        "mean_W_minus_U_estimated_saved_ms": 0.07028153211346026
+      },
+      {
+        "budget": "B6",
+        "scoring_mode": "warm_original",
+        "full_inputs": 160,
+        "source_episodes": 80,
+        "different_masks": 95,
+        "mask_difference_fraction": 0.59375,
+        "episode_equal_weighted_mask_difference_fraction": 0.59375,
+        "support_difference_fraction": 0.5125,
+        "mean_attn_symmetric_difference": 1.98125,
+        "mean_ffn_symmetric_difference": 1.5,
+        "mean_online_mask_selection_ms": 7.408809568732977,
+        "U": {
+          "attn_count": 2.025,
+          "ffn_count": 6.4625,
+          "af_count": 1.59375,
+          "a_only_count": 0.43125,
+          "f_only_count": 4.86875,
+          "support_count": 6.89375,
+          "module_count": 8.4875,
+          "raw_sensitivity": 0.3196888702266733,
+          "density_objective": 0.7224631636001887,
+          "estimated_saved_ms": 5.9855324447155,
+          "shadow_selection_cpu_ms": 5.590061983093619
+        },
+        "W": {
+          "attn_count": 0.04375,
+          "ffn_count": 6.975,
+          "af_count": 0.01875,
+          "a_only_count": 0.025,
+          "f_only_count": 6.95625,
+          "support_count": 7.0,
+          "module_count": 7.01875,
+          "raw_sensitivity": 0.348287798067031,
+          "density_objective": 0.3939010189524924,
+          "estimated_saved_ms": 6.192797207832337,
+          "shadow_selection_cpu_ms": 5.571971880272031
+        },
+        "mean_W_minus_U_raw_sensitivity": 0.028598927840357648,
+        "mean_W_minus_U_density_objective": -0.3285621446476962,
+        "mean_W_minus_U_estimated_saved_ms": 0.20726476311683656
+      }
+    ]
+  },
+  "conclusion": "Explicit score/cost normalization retains more Attention and skips more FFN, but this forty-case screen shows no net success improvement and no demonstrated meaningful speed advantage over the already cost-constrained unweighted objective.",
+  "limitations": [
+    "Forty previously used exploratory cases, with task-cluster bootstrap intervals not adjusted for multiple comparisons.",
+    "Unweighted U already has the same hardware time-saving constraint; W is an extra density heuristic, not the only hardware-aware method.",
+    "W also applies during the first two raw-score warmup Fulls; effects are for the complete strategy, not isolated E-only weighting.",
+    "Local additive A/F/AF cost estimates and free-trajectory means do not establish equal whole-request latency for every mask.",
+    "Historical FFN-E controls are prefix-compatible quality background; the B6 historical masks do not all meet the fresh exact cost window."
+  ],
+  "source_sha256": {
+    "complete.json": "1d93158536f079d3d85a944517174d12c23d401fda4ceff453a1123b56115144",
+    "audit.json": "f2bddcb58352ac0d5d5bd1c460a876b25ef184a9300559a0a0c26d6d9e066f2c",
+    "manifest.json": "0fc8be8788f8d8d850b5c65ac2fe4f1b87935dab50f99a704fdf39b60430871c",
+    "summary.csv": "93904951c81da2c95f075f6996abdca6e8246e7571cc4309c2f8fa783201adb1",
+    "paired.csv": "51d4492355e27d4ee158c2d6df184fb66ba0924d4f84ef11e4e5dd4c926f200c",
+    "episodes.csv": "d8d3607f41eb7f31886d31e555fd0f44baed4b9b55b251761e2d6bdfacd43109",
+    "requests.csv": "3007227d7e3d35b9dde8f3e4796c5a53e419de7540f7af9013ca3f00d418a40f",
+    "throughput.json": "e95db559a023110b4e96602b53a94e01f61ab69f3b325f0a4e094d15fd87fd35",
+    "hardware_probe/cost_table.json": "7def9c79d4ffe15fd6a11a777efcff300f8debe4da7af5a0ef251aba17316ece",
+    "hardware_probe/summary.json": "2c1345cc8d7ab49a59962435b056bf172740a6d5562bb51d8a98479c1675e472",
+    "hardware_probe/independent_analysis.json": "ed6195f99e329bad7c487aae54248398db495a96cc1b7ce19a0190562412f7dd",
+    "cost_validation.json": "32d528f3cf96eee5e5f13a8842a7cb0850244d12949a51cdc6ba632be2aa1d9b",
+    "runtime_hardware_analysis.json": "f67f1a363270e9da103e8e70b480875d85d3e509871988ad9bfae6a86f3408ed",
+    "quality_independent_review.json": "324fd66299ae48538dceeaf34e08cfcfa69676315f92ac780525a1c82e573f58",
+    "shadow_selection/summary.json": "33fc542846467e7e521c02322e24de2e47da3fe4d9aa34e2c50ade557c7dd416",
+    "shadow_selection/full_inputs.csv": "8fb2272efbf3a9e0c45d9fbb2bd631085e00e27dc12e0b5c84bb4a18c1d19001",
+    "historical_ffn_cost_compatibility.json": "0b22f4996dccf42f46dbe54e4831543381fbe10507c4e0786c63e36798b1a0f7"
+  },
+  "time": 1793542827.5408063
+}

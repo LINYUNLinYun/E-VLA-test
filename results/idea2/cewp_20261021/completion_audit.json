@@ -1,0 +1,1005 @@
+{
+  "updated_unix": 1792583686.7327838,
+  "passed": true,
+  "checks": [
+    {
+      "requirement": "Original eager/dual and Graph scheduling at d10_main",
+      "evidence": [
+        "d10_main/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 2100,
+        "groups": 15,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Original eager/dual and Graph scheduling at d5_main",
+      "evidence": [
+        "d5_main/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 2100,
+        "groups": 15,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Original eager/dual and Graph scheduling at d1_main",
+      "evidence": [
+        "d1_main/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 2100,
+        "groups": 15,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_selective_all",
+      "evidence": [
+        "d10_selective_all/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_selective_vision_only",
+      "evidence": [
+        "d10_selective_vision_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_selective_vlm_only",
+      "evidence": [
+        "d10_selective_vlm_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_hoist",
+      "evidence": [
+        "d10_hoist/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_wait_full",
+      "evidence": [
+        "d10_wait_full/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_vision_wait",
+      "evidence": [
+        "d10_vision_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_modulation",
+      "evidence": [
+        "d10_modulation/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_vision_modulation_wait",
+      "evidence": [
+        "d10_vision_modulation_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d10_vision_modulation_wait_repeat",
+      "evidence": [
+        "d10_vision_modulation_wait_repeat/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Isolated AE/Prefill, eager/Graph D10",
+      "evidence": [
+        "d10_isolated/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 2
+      }
+    },
+    {
+      "requirement": "True preparation off/on ABBA D10",
+      "evidence": [
+        "d10_preparation_pair_gpu3/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 700,
+        "paired_ablation_groups": 2,
+        "continuous_groups": 3
+      }
+    },
+    {
+      "requirement": "Original JAX baseline on same primary GPU D10",
+      "evidence": [
+        "native_d10_gpu2/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 100,
+        "boundary": "native_raw + original Policy.infer preprocessing/noise H2D/inference/output D2H and transforms; explicit CUDA noise generation excluded",
+        "comparison": "No cross-framework exact-output equivalence is assumed; D1/5/10 are independent matched-step strata"
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_selective_all",
+      "evidence": [
+        "d5_selective_all/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_selective_vision_only",
+      "evidence": [
+        "d5_selective_vision_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_selective_vlm_only",
+      "evidence": [
+        "d5_selective_vlm_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_hoist",
+      "evidence": [
+        "d5_hoist/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_wait_full",
+      "evidence": [
+        "d5_wait_full/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_vision_wait",
+      "evidence": [
+        "d5_vision_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_modulation",
+      "evidence": [
+        "d5_modulation/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_vision_modulation_wait",
+      "evidence": [
+        "d5_vision_modulation_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d5_vision_modulation_wait_repeat",
+      "evidence": [
+        "d5_vision_modulation_wait_repeat/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Isolated AE/Prefill, eager/Graph D5",
+      "evidence": [
+        "d5_isolated/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 2
+      }
+    },
+    {
+      "requirement": "True preparation off/on ABBA D5",
+      "evidence": [
+        "d5_preparation_pair_gpu3/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 700,
+        "paired_ablation_groups": 2,
+        "continuous_groups": 3
+      }
+    },
+    {
+      "requirement": "Original JAX baseline on same primary GPU D5",
+      "evidence": [
+        "native_d5_gpu2/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 100,
+        "boundary": "native_raw + original Policy.infer preprocessing/noise H2D/inference/output D2H and transforms; explicit CUDA noise generation excluded",
+        "comparison": "No cross-framework exact-output equivalence is assumed; D1/5/10 are independent matched-step strata"
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_selective_all",
+      "evidence": [
+        "d1_selective_all/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_selective_vision_only",
+      "evidence": [
+        "d1_selective_vision_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_selective_vlm_only",
+      "evidence": [
+        "d1_selective_vlm_only/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_hoist",
+      "evidence": [
+        "d1_hoist/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_wait_full",
+      "evidence": [
+        "d1_wait_full/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_vision_wait",
+      "evidence": [
+        "d1_vision_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_modulation",
+      "evidence": [
+        "d1_modulation/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_vision_modulation_wait",
+      "evidence": [
+        "d1_vision_modulation_wait/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Independent/combined scheduling and repeated evidence: d1_vision_modulation_wait_repeat",
+      "evidence": [
+        "d1_vision_modulation_wait_repeat/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 3,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Isolated AE/Prefill, eager/Graph D1",
+      "evidence": [
+        "d1_isolated/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 400,
+        "groups": 2
+      }
+    },
+    {
+      "requirement": "True preparation off/on ABBA D1",
+      "evidence": [
+        "d1_preparation_pair_gpu3/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 700,
+        "paired_ablation_groups": 2,
+        "continuous_groups": 3
+      }
+    },
+    {
+      "requirement": "Original JAX baseline on same primary GPU D1",
+      "evidence": [
+        "native_d1_gpu2/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "outputs": 100,
+        "boundary": "native_raw + original Policy.infer preprocessing/noise H2D/inference/output D2H and transforms; explicit CUDA noise generation excluded",
+        "comparison": "No cross-framework exact-output equivalence is assumed; D1/5/10 are independent matched-step strata"
+      }
+    },
+    {
+      "requirement": "In-place updates, snapshots, reset and exception ownership: lifecycle_gpu0",
+      "evidence": [
+        "lifecycle_gpu0/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "configs": 8,
+        "checks": [
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true
+          }
+        ]
+      }
+    },
+    {
+      "requirement": "In-place updates, snapshots, reset and exception ownership: lifecycle_wait_modulation_gpu0",
+      "evidence": [
+        "lifecycle_wait_modulation_gpu0/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "configs": 5,
+        "checks": [
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true,
+            "all_parameter_addresses_and_versions_unchanged": true,
+            "adaptive_dense_forwards_restored": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true,
+            "all_parameter_addresses_and_versions_unchanged": true,
+            "adaptive_dense_forwards_restored": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true,
+            "all_parameter_addresses_and_versions_unchanged": true,
+            "adaptive_dense_forwards_restored": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true,
+            "all_parameter_addresses_and_versions_unchanged": true,
+            "adaptive_dense_forwards_restored": true,
+            "adaptive_dense_weights_unchanged": true,
+            "adaptive_dense_count_37": true
+          },
+          {
+            "task_change_reuses_capture_updates_tokens": true,
+            "layout_change_drains_and_recaptures": true,
+            "failure_drains_and_releases": true,
+            "recovery_after_failure": true,
+            "reset_has_no_live_pool_slots": true,
+            "reset_clears_phase_events": true,
+            "inplace_source_addresses_constant": true,
+            "inplace_source_contents_change": true,
+            "inplace_updates_replay_without_recapture": true,
+            "numerical_parity": true,
+            "all_recorded_prefixes_match_eager": true,
+            "old_kv_unchanged_during_reuse": true,
+            "two_disjoint_kv_slots": true,
+            "independent_graph_pools": true,
+            "all_parameter_addresses_and_versions_unchanged": true,
+            "adaptive_dense_forwards_restored": true,
+            "adaptive_dense_weights_unchanged": true,
+            "adaptive_dense_count_37": true
+          }
+        ]
+      }
+    },
+    {
+      "requirement": "Real kernel overlap and runtime sync/capture audit",
+      "evidence": [
+        "request_trace_summary.json"
+      ],
+      "passed": true,
+      "detail": {
+        "traces": 27,
+        "plans": [
+          "profile_d10_all",
+          "profile_d10_full",
+          "profile_d10_vision",
+          "profile_d10_vision_wait",
+          "profile_d10_vision_wait_modulation",
+          "profile_d10_vlm",
+          "profile_d1_full",
+          "profile_d1_vision",
+          "profile_d1_vision_wait",
+          "profile_d5_full",
+          "profile_d5_vision",
+          "profile_d5_vision_wait"
+        ],
+        "overlap_scope": "Kernel interval intersection, including cross-request overlap"
+      }
+    },
+    {
+      "requirement": "Stage pairing and independent repeat",
+      "evidence": [
+        "stage_delivery.json"
+      ],
+      "passed": true,
+      "detail": true
+    },
+    {
+      "requirement": "Full old-KV ready tail quantified without changing publication",
+      "evidence": [
+        "kv_ready_tail/result.json",
+        "kv_ready_tail/measurements.csv",
+        "kv_ready_tail/loaded_source.py"
+      ],
+      "passed": true,
+      "detail": {
+        "measurements": 100,
+        "tail": {
+          "mean": 1.6088063836097717,
+          "p50": 1.6087039709091187,
+          "p95": 1.6138240098953247,
+          "minimum": 1.6015360355377197,
+          "maximum": 1.614848017692566
+        },
+        "scope": "Single isolated full original-computation Prefill graph. Dynamic inputs, all full-end waits. Tail is event elapsed headroom, not GPU busy, overlap, request speedup or a changed publication protocol."
+      }
+    },
+    {
+      "requirement": "Production RPC lifecycle",
+      "evidence": [
+        "server_rpc_gpu0/receipt.json"
+      ],
+      "passed": true,
+      "detail": true
+    },
+    {
+      "requirement": "Final production ownership/error recovery and actual CPU regressions",
+      "evidence": [
+        "final_code_review.json",
+        "final_review_cpu_tests.log"
+      ],
+      "passed": true,
+      "detail": {
+        "tests": 41,
+        "invariant_count": 8,
+        "reviewed_source_matches": true
+      }
+    },
+    {
+      "requirement": "Requested pinned RealtimeWAM source inspection",
+      "evidence": [
+        "reference/sources.json",
+        "reference/source_review.txt"
+      ],
+      "passed": true,
+      "detail": {
+        "fixed_commit": "2c4d69e1dea643fbd162e612254967ba1eb27784",
+        "files": [
+          "blocks.py",
+          "graphs.py",
+          "joint.py",
+          "preparation.py"
+        ]
+      }
+    },
+    {
+      "requirement": "Native baseline does not enable pre-existing model experiments",
+      "evidence": [
+        "native_source_audit.json",
+        "native_provenance_cpu_receipt.json"
+      ],
+      "passed": true,
+      "detail": true
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_smoke",
+      "evidence": [
+        "compile_smoke/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_graph_smoke",
+      "evidence": [
+        "compile_graph_smoke/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 10
+      }
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_d1_only_gate",
+      "evidence": [
+        "compile_d1_only_gate/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_d1_graph_gate",
+      "evidence": [
+        "compile_d1_graph_gate/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 1
+      }
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_d5_only_gate",
+      "evidence": [
+        "compile_d5_only_gate/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Numerically invalid compile candidate retained, excluded: compile_d5_graph_gate",
+      "evidence": [
+        "compile_d5_graph_gate/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "rejected": true,
+        "steps": 5
+      }
+    },
+    {
+      "requirement": "Final implementation actually exercised by critical repeat",
+      "evidence": [
+        "d10_vision_modulation_wait_repeat/result.json"
+      ],
+      "passed": true,
+      "detail": {
+        "final_production_files": [
+          "policy.py",
+          "runtime_graph.py",
+          "graph_sampler.py",
+          "cewp_segmented.py",
+          "cewp_preparation.py",
+          "scheduler.py",
+          "submission.py",
+          "openpi_backend.py"
+        ],
+        "source_matches_final_repeat": true
+      }
+    },
+    {
+      "requirement": "All requested cohorts and conservative freshness-gated ranking",
+      "evidence": [
+        "summary.json",
+        "comparison.csv",
+        "paired_comparison.csv",
+        "native_fresh_comparison.csv"
+      ],
+      "passed": true,
+      "detail": {
+        "primary_best": [
+          {
+            "gpu_uuid": "83fdf473-8633-29d3-4a42-e482cfdf0c25",
+            "steps": 10,
+            "ae_minimum": {
+              "run": "d10_vision_modulation_wait",
+              "mode": "graph_serial_high",
+              "variant": "hoist_modulation_with_schedule+selective_vision_only+await_previous_prefix",
+              "cpu_p50_ms": 97.7404322475195,
+              "ae_p50_ms": 55.32741919159889,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.0575440201443222,
+              "publication_hz_ratio": 1.0575440201443222,
+              "consumed_hz_ratio": 1.0575440201443222,
+              "freshness_gate": true
+            },
+            "lowest_response_preserving_freshness": {
+              "run": "d10_vision_modulation_wait_repeat",
+              "mode": "graph_ae_high",
+              "variant": "hoist_modulation_with_schedule+selective_vision_only+await_previous_prefix",
+              "cpu_p50_ms": 60.51012501120567,
+              "ae_p50_ms": 59.58430655300617,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.6886959199341238,
+              "publication_hz_ratio": 1.6886959199341238,
+              "consumed_hz_ratio": 1.6886959199341238,
+              "freshness_gate": true
+            }
+          },
+          {
+            "gpu_uuid": "83fdf473-8633-29d3-4a42-e482cfdf0c25",
+            "steps": 1,
+            "ae_minimum": {
+              "run": "d1_modulation",
+              "mode": "graph_serial_high",
+              "variant": "hoist_modulation_with_schedule",
+              "cpu_p50_ms": 75.50261355936527,
+              "ae_p50_ms": 32.6595026999712,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.0040280926586524,
+              "publication_hz_ratio": 1.0040280926586524,
+              "consumed_hz_ratio": 1.0040280926586524,
+              "freshness_gate": true
+            },
+            "lowest_response_preserving_freshness": {
+              "run": "d1_vision_modulation_wait_repeat",
+              "mode": "graph_ae_high",
+              "variant": "hoist_modulation_with_schedule+selective_vision_only+await_previous_prefix",
+              "cpu_p50_ms": 42.66645386815071,
+              "ae_p50_ms": 41.740575805306435,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.766427523064902,
+              "publication_hz_ratio": 1.766427523064902,
+              "consumed_hz_ratio": 1.766427523064902,
+              "freshness_gate": true
+            }
+          },
+          {
+            "gpu_uuid": "83fdf473-8633-29d3-4a42-e482cfdf0c25",
+            "steps": 5,
+            "ae_minimum": {
+              "run": "d5_vision_modulation_wait",
+              "mode": "graph_serial_high",
+              "variant": "hoist_modulation_with_schedule+selective_vision_only+await_previous_prefix",
+              "cpu_p50_ms": 84.85746942460537,
+              "ae_p50_ms": 42.32873395085335,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.0597448460663548,
+              "publication_hz_ratio": 1.0597448460663548,
+              "consumed_hz_ratio": 1.0597448460663548,
+              "freshness_gate": true
+            },
+            "lowest_response_preserving_freshness": {
+              "run": "d5_vision_modulation_wait_repeat",
+              "mode": "graph_ae_high",
+              "variant": "hoist_modulation_with_schedule+selective_vision_only+await_previous_prefix",
+              "cpu_p50_ms": 48.23278822004795,
+              "ae_p50_ms": 47.27032780647278,
+              "age_degraded": false,
+              "receipt_age_degraded": false,
+              "update_hz_ratio": 1.8335014072480444,
+              "publication_hz_ratio": 1.8335014072480442,
+              "consumed_hz_ratio": 1.8335014072480442,
+              "freshness_gate": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "note": "Automated evidence audit is necessary, not sufficient: inspect final report, commands, visualizations and causal claims manually."
+}

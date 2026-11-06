@@ -1,0 +1,313 @@
+{
+  "revision": "ease-insights-fastpath-confirmation-v1",
+  "model": "pi0",
+  "conditions": [
+    {
+      "model": "pi0",
+      "experiment": "E3",
+      "depth": 27,
+      "module": "vision",
+      "protected_layers": [],
+      "denoising_steps": 10,
+      "schedule": {
+        "kind": "native",
+        "m": null,
+        "num_steps": 10
+      },
+      "horizon": 50,
+      "execute_length": 5,
+      "id": "pi0_full",
+      "layout": "full",
+      "skip": [],
+      "keep": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "reference": false
+    },
+    {
+      "model": "pi0",
+      "experiment": "E3",
+      "depth": 27,
+      "module": "vision",
+      "protected_layers": [],
+      "denoising_steps": 10,
+      "schedule": {
+        "kind": "native",
+        "m": null,
+        "num_steps": 10
+      },
+      "horizon": 50,
+      "execute_length": 5,
+      "id": "pi0_keep24_2_front_middle",
+      "reference": false,
+      "layout": "front_middle",
+      "collision_redraws": 0,
+      "skip": [
+        8,
+        9,
+        10
+      ],
+      "keep": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "model": "pi0",
+      "experiment": "E3",
+      "depth": 27,
+      "module": "vision",
+      "protected_layers": [],
+      "denoising_steps": 10,
+      "schedule": {
+        "kind": "native",
+        "m": null,
+        "num_steps": 10
+      },
+      "horizon": 50,
+      "execute_length": 5,
+      "id": "pi0_keep24_1_uniform",
+      "reference": false,
+      "layout": "uniform",
+      "collision_redraws": 0,
+      "skip": [
+        5,
+        14,
+        23
+      ],
+      "keep": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27
+      ]
+    }
+  ],
+  "benchmark_references": [],
+  "checkpoints": {
+    "pi0": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero",
+      "identity_artifacts": {
+        "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/_METADATA": "65cc6a84efeb1947131d78a313b8c20bbc95b958c2ba7a41be1a1f523dabf10d",
+        "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/manifest.ocdbt": "a62034cfdc5f7b771819ccde16d124f4d2b5527d19206ea148cfb93c7d03ac11",
+        "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+      },
+      "full_weight_rehash": "Native torch adapter rehashes all verified shards at service startup; JAX identity is original checkpoint manifest and assets"
+    }
+  },
+  "suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "screen_inits": [
+    20
+  ],
+  "confirm_inits": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "quality_environment_reuse": false,
+  "technical_max_attempts": 3,
+  "environment": {
+    "seed": 7,
+    "seed_before_construction": true,
+    "settling_steps": 10,
+    "control_hz": 20,
+    "image_size": 256,
+    "limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "io": "no video or observation dumps; retain telemetry and actions"
+  },
+  "noise": {
+    "function": "preparations.idea1_v3_1.common.seed",
+    "namespace": "idea1-v3.1",
+    "seed": 1701,
+    "key": [
+      "suite",
+      "task",
+      "init",
+      "request"
+    ],
+    "condition_independent": true
+  },
+  "science": {
+    "module": "vision",
+    "keep_blocks": 24,
+    "ae_steps": 10,
+    "H": 50,
+    "R": 5,
+    "residual_compensation": false,
+    "full_refresh": false,
+    "fixed_path": true,
+    "layer_numbering": "original one-based"
+  },
+  "preregistered_hypotheses": [
+    {
+      "suite": "libero_goal",
+      "better": "pi0_keep24_2_front_middle",
+      "worse": "pi0_keep24_1_uniform"
+    },
+    {
+      "suite": "libero_10",
+      "better": "pi0_keep24_1_uniform",
+      "worse": "pi0_keep24_2_front_middle"
+    }
+  ],
+  "analysis": {
+    "primary": "paired success differences in predeclared Goal and Long suites; exact paired tests and intervals",
+    "discovery_inits": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "independent_validation_inits": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "pilot_counts_toward_confirmation": true,
+    "selection": "All three conditions confirm regardless of pilot direction",
+    "other_tasks": "descriptive only; no post-hoc relabeling as preregistered categories",
+    "size": "exploratory 200 episodes/condition, not official 50-init evaluation",
+    "interpretation": "A universal winner supports a fixed path; no complementarity claim without reproduced crossing"
+  },
+  "parity_evidence": {
+    "path": "/root/nfs/embodied/benchmark/results/idea1_v3_1/run/pi0_vision_same_process_parity.json",
+    "sha256": "4dd5206df421fd6bcc19d3c601db9ce47fb34a75b8d476697cd5df2c66480452",
+    "historical_manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+    "passed": true,
+    "scope": "same-loaded-model original native / native retrace / exact v2 selected-scan all27",
+    "compatibility_dependencies": {
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/vision.py": "4377e95d25e5a1041b110dd9d62f2f6a37b4e46b06de2aae1ff7c00f647b95b1",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/models.py": "5b9d9805a540833a1e837a4a88fe97dbce3c601cf8637e508fd7f3568947d328",
+      "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+      "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/siglip.py": "033f80d9f60ddf19bc25526f6d4777ba73254ccddebe528550b3d26541f803dd",
+      "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/_METADATA": "65cc6a84efeb1947131d78a313b8c20bbc95b958c2ba7a41be1a1f523dabf10d",
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/manifest.ocdbt": "a62034cfdc5f7b771819ccde16d124f4d2b5527d19206ea148cfb93c7d03ac11",
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+    },
+    "reuse": "exact implementation/checkpoint identity; historical parity is not a new validation result"
+  },
+  "bank": {
+    "path": "/root/nfs/embodied/benchmark/results/idea1_v3_1/input_bank.pkl",
+    "sha256": "2c2e90a3e1fcac3f02226a433c6db9e19a0f3c169deea77707a9a1fbe8996d55"
+  },
+  "historical_reference": {
+    "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_1/manifest_v2.json",
+    "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+    "candidate_selection": "init0: A 35/40, B 36/40; Goal A +2, Long B +2; exploratory evidence"
+  },
+  "source_files": {
+    "policies/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "policies/openpi/src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+    "policies/openpi/src/openpi/models/siglip.py": "033f80d9f60ddf19bc25526f6d4777ba73254ccddebe528550b3d26541f803dd",
+    "preparations/ease_insights_20261103/fastpath/__init__.py": "0ec0500e0495aae7f321eda7cf6f656ec1f8421db5aaf5f88560fa42c0477d83",
+    "preparations/ease_insights_20261103/fastpath/gpu_binding.py": "cd3ccd178d46a08ad35b9101fca471622422ca70d62cd536abf7de40bee95e16",
+    "preparations/ease_insights_20261103/fastpath/runner.py": "1eb301433316587f7b7759f93b792192f5c693ef2ff252b58a440ac3de962320",
+    "preparations/ease_insights_20261103/fastpath/worker.py": "149ef7de7276c1c32444a3ee4262eb0acce8bf8e6f58d5e931afa865288fc2bf",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v2_1/runtime_models.py": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+    "preparations/idea1_v3_1/benchmark.py": "64940dc54a44de94e14ac1a6f1789c56fb8561e1f7b44704a797bdb43446660a",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "preparations/idea1_v3_1/manifest.py": "d8ba634817d58dad2dd471687571437c0128a05d0869962650ede5074c96de00",
+    "preparations/idea1_v3_1/models.py": "5b9d9805a540833a1e837a4a88fe97dbce3c601cf8637e508fd7f3568947d328",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea1_v3_1/server.py": "ee0cfc42920a9b80c8acb868d7133eadfeda408d6b6cbd92639b1fcd6eb7f2a3",
+    "preparations/idea1_v3_1/vision.py": "4377e95d25e5a1041b110dd9d62f2f6a37b4e46b06de2aae1ff7c00f647b95b1"
+  },
+  "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "enqueued",
+  "time": 1793919380.4594636,
+  "driver": {
+    "pid": 1109786,
+    "start_ticks": "2629863397",
+    "source": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/finish_confirmation.py",
+    "source_sha256": "ff2045ebce69fd4e656540140837b517129f7406e2d2a1ccd98a29fc8e65da11",
+    "bundle_file_sha256": "cfabf0bb9460314c078d9c00ebfe0ca03c4aa21432ba8cbb5ad133ab115123c9",
+    "command": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-B",
+      "-u",
+      "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/finish_confirmation.py",
+      "--bundle-sha256",
+      "cfabf0bb9460314c078d9c00ebfe0ca03c4aa21432ba8cbb5ad133ab115123c9",
+      "--source-sha256",
+      "ff2045ebce69fd4e656540140837b517129f7406e2d2a1ccd98a29fc8e65da11",
+      "--wait"
+    ],
+    "time": 1793919380.1293592,
+    "CPU_only": true,
+    "GPU_jobs_launched": false
+  },
+  "bundle_hash": "9e2385897734b7aafc8ba5883fd19f866763b327a0e828889ba449776a36a326",
+  "requests": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_pool_v4/requests/0013_cross_module_confirmation_noise0.json",
+      "sha256": "6125b550c295b64724e0acf040826a2391c208021567fac300b086613e4c768f"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_pool_v4/requests/0014_cross_module_confirmation_noise1.json",
+      "sha256": "aeda58c9c5ac6d777a0824feccccbf558461d01d6cc8a7fcc24c17a3e01faba3"
+    }
+  ],
+  "new_rollouts": 720,
+  "original_GPU_leases_unchanged": true
+}

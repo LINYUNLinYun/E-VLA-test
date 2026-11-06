@@ -1,0 +1,32 @@
+{
+  "status": "design_only_no_gpu_launch",
+  "revision": "ease-insight1-profile-design-v1",
+  "selection_basis": "Four task0/init20 cases were fixed for smoke before the discovery matrix; no outcome-based case selection.",
+  "cases": [
+    {"suite": "libero_spatial", "task_id": 0, "init_id": 20},
+    {"suite": "libero_object", "task_id": 0, "init_id": 20},
+    {"suite": "libero_goal", "task_id": 0, "init_id": 20},
+    {"suite": "libero_10", "task_id": 0, "init_id": 20}
+  ],
+  "inputs": "Existing first_policy_observation.npz plus, when required, exact replay of recorded Full actions to reconstruct subsequent request observations. Every reconstructed request must match the recorded input SHA256; mismatched reconstructions are technical failures, not silently accepted approximate input banks.",
+  "primary_measurement": {
+    "name": "same_observation_warm_service_cost",
+    "modes": ["full", "pure_draft_each_of_four_sources"],
+    "state": "Reset at case boundaries; full forces every request Full, pure draft has no Full or verify. Use the identical input/noise bank in each source and route.",
+    "warmup": "20 calls per case/prompt/source/route, then inspect the last two 10-call windows. Any further graph construction or large latency shift remains cold and is reported; do not silently reclassify it as warm.",
+    "measured_calls_per_case": 100,
+    "order": "Within the same allocated GPU, run target-fixed conditions sequentially; a second pass reverses source order. Report each pass and the pooled result.",
+    "timing": ["client send-to-receive wall", "complete server policy time", "GPU stage total", "preparation/graph costs separately"],
+    "limitation": "Pure draft and Full request-cost comparison only. This does not measure complete FLASH throughput or acceptance."
+  },
+  "secondary_measurement": {
+    "name": "one_draft_after_full_shadow_verification",
+    "input_requirement": "Adjacent real Full trajectory requests, reconstructed with exact SHA256 agreement.",
+    "state": "For each pair reset policy, run the preceding observation with its original Full noise, then run one native FLASH draft+verify on the next observation using the actual preceding Full execution length. Reset before the next pair. This creates a common authentic Full cache and gripper anchor across source heads.",
+    "warmup": "Warm every target prompt/source/route shape before measured pairs; report anchor-Full and draft+verify calls separately.",
+    "metrics": ["verified prefix length out of12", "scheduled fallback", "radius distance", "draft+verify complete service latency", "anchor Full latency"],
+    "limitation": "Conditional shadow acceptance after one Full anchor; not PF2 steady-state FLASH, not closed-loop success, not end-to-end speedup."
+  },
+  "steady_state_flash_evidence": "Use actual matched closed-loop discovery and held-out init21-24 runs. Their native multi-round cache, acceptance, periodic Full, rejection fallback and real trajectories are authoritative. A static first-observation repetition or forced Full-trajectory replay cannot establish closed-loop steady-state acceptance once accepted actions differ.",
+  "stopping_rule": "Run the fixed cases and measurement counts. No repeated runs to improve a scientific success/failure or acceptance result. Technical bank reconstruction failures are diagnosed separately. No changes to frozen run.py/server.py/client.py/common.py."
+}

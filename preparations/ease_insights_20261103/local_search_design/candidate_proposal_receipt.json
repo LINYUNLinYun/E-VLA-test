@@ -1,0 +1,3852 @@
+{
+  "schema": "ease-vlm-local-search-historical-proposal-v1",
+  "proposal_only": true,
+  "gpu_launched": false,
+  "new_initial_state_outcomes_read": false,
+  "inputs": {
+    "archived_layer_metrics": {
+      "path": "results/idea1_v3_4_E2_E4_single/E2_requests.csv",
+      "sha256": "807db2d6dd11616fee788c198d3d458c4b34270dac53a6c54a70bc398f6d0e0f"
+    },
+    "archived_case_split": {
+      "path": "results/idea1_v3_4_E2_E4_single/selection.json",
+      "sha256": "c2a04118e5e7382d96754001f3d3b49d4391d17ff98e3b27821b05ab4b3b546e"
+    },
+    "archived_metrics_manifest": {
+      "path": "results/idea1_v3_4_E2_E4_single/manifest.json",
+      "sha256": "87f8cc2caa975335d4659da189badd44dcf40c84082b6e9a96e6bc4f2b46501d"
+    },
+    "archived_v12_candidates": {
+      "path": "results/idea1_v3_4_E2_v12_candidates/selection.json",
+      "sha256": "e521d0c9f3e9c1f298ba6b8157040e6a2b651a006dd66f5cae461c2b6ba62c96"
+    }
+  },
+  "generator": {
+    "path": "preparations/ease_insights_20261103/local_search_design/generate_candidates.py",
+    "sha256": "b77b00f0547f4e1c97883f759f40ace55bb4008abbc9f91d821ec7d6d1e60a1a"
+  },
+  "historical_scope": {
+    "init": 14,
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "tasks": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "selected_observations": 20,
+    "gate": 0,
+    "action_groups": [
+      "gripper",
+      "rotation",
+      "translation"
+    ],
+    "metric_rows": 1020,
+    "case_ids": [
+      1,
+      9,
+      17,
+      25,
+      33,
+      41,
+      49,
+      57,
+      65,
+      73,
+      81,
+      89,
+      97,
+      105,
+      113,
+      121,
+      129,
+      137,
+      145,
+      153
+    ]
+  },
+  "rank_definition": {
+    "rank_origin": 0,
+    "rank_unit": "Within each historical observation and action group, among layers 1..17",
+    "directions": {
+      "jacobian": "predicted_rms ascending",
+      "action_mse": "actual_rms ascending",
+      "cosine": "layer_cosine descending"
+    },
+    "metric_ties": "ascending original one-based layer number",
+    "observed_tie_cells": [],
+    "aggregation": "Mean layer rank over five task observations and three action groups within each suite; mask score is sum over six skipped layers",
+    "proposal_objective": "Equal mean of jacobian and action_mse mask rank scores within each suite",
+    "neighbor_ties": "lexicographically ascending sorted skip tuple",
+    "arithmetic": "exact fractions after ordinal ranking"
+  },
+  "prior_score_reproduction": [
+    {
+      "method": "cosine",
+      "skip": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "published_score": 19.8,
+      "reconstructed_score": {
+        "numerator": 99,
+        "denominator": 5,
+        "decimal": 19.8
+      },
+      "passed": true
+    },
+    {
+      "method": "jacobian",
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "published_score": 30.31666666666667,
+      "reconstructed_score": {
+        "numerator": 1819,
+        "denominator": 60,
+        "decimal": 30.316666666666666
+      },
+      "passed": true
+    },
+    {
+      "method": "action_mse",
+      "skip": [
+        2,
+        3,
+        5,
+        11,
+        16,
+        17
+      ],
+      "published_score": 35.86666666666667,
+      "reconstructed_score": {
+        "numerator": 538,
+        "denominator": 15,
+        "decimal": 35.86666666666667
+      },
+      "passed": true
+    }
+  ],
+  "constraints": {
+    "anchor": [
+      2,
+      3,
+      5,
+      14,
+      16,
+      17
+    ],
+    "original_one_based_layers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "skip_count": 6,
+    "retained_layers": 12,
+    "depth": 18,
+    "max_consecutive_skips": 2,
+    "mutation": "Restore exactly one anchor-skipped layer and skip exactly one previously retained layer",
+    "all_one_swap_count": 66,
+    "legal_one_swap_count": 52,
+    "excluded_prior_masks": [
+      [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      [
+        2,
+        3,
+        5,
+        11,
+        16,
+        17
+      ],
+      [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    ],
+    "remaining_neighbor_count": 51
+  },
+  "proposal_rule": "Select the lowest-scoring nonprevious neighbor for each suite using archived calibration only; no closed-loop result or new initial state is used",
+  "proposals": [
+    {
+      "id": "fixed_v12_restore14_skip13",
+      "proposal_suite": "libero_spatial",
+      "restore_layer": 14,
+      "newly_skipped_layer": 13,
+      "skip": [
+        2,
+        3,
+        5,
+        13,
+        16,
+        17
+      ],
+      "combined_rank_score": {
+        "numerator": 1043,
+        "denominator": 30,
+        "decimal": 34.766666666666666
+      },
+      "anchor_combined_rank_score": {
+        "numerator": 526,
+        "denominator": 15,
+        "decimal": 35.06666666666667
+      },
+      "global_jacobian_rank_score": {
+        "numerator": 63,
+        "denominator": 2,
+        "decimal": 31.5
+      },
+      "global_action_mse_rank_score": {
+        "numerator": 1123,
+        "denominator": 30,
+        "decimal": 37.43333333333333
+      }
+    },
+    {
+      "id": "fixed_v12_restore16_skip15",
+      "proposal_suite": "libero_object",
+      "restore_layer": 16,
+      "newly_skipped_layer": 15,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        15,
+        17
+      ],
+      "combined_rank_score": {
+        "numerator": 983,
+        "denominator": 30,
+        "decimal": 32.766666666666666
+      },
+      "anchor_combined_rank_score": {
+        "numerator": 1001,
+        "denominator": 30,
+        "decimal": 33.36666666666667
+      },
+      "global_jacobian_rank_score": {
+        "numerator": 1861,
+        "denominator": 60,
+        "decimal": 31.016666666666666
+      },
+      "global_action_mse_rank_score": {
+        "numerator": 2291,
+        "denominator": 60,
+        "decimal": 38.18333333333333
+      }
+    },
+    {
+      "id": "fixed_v12_restore5_skip11",
+      "proposal_suite": "libero_goal",
+      "restore_layer": 5,
+      "newly_skipped_layer": 11,
+      "skip": [
+        2,
+        3,
+        11,
+        14,
+        16,
+        17
+      ],
+      "combined_rank_score": {
+        "numerator": 97,
+        "denominator": 3,
+        "decimal": 32.333333333333336
+      },
+      "anchor_combined_rank_score": {
+        "numerator": 967,
+        "denominator": 30,
+        "decimal": 32.233333333333334
+      },
+      "global_jacobian_rank_score": {
+        "numerator": 959,
+        "denominator": 30,
+        "decimal": 31.966666666666665
+      },
+      "global_action_mse_rank_score": {
+        "numerator": 155,
+        "denominator": 4,
+        "decimal": 38.75
+      }
+    },
+    {
+      "id": "fixed_v12_restore14_skip12",
+      "proposal_suite": "libero_10",
+      "restore_layer": 14,
+      "newly_skipped_layer": 12,
+      "skip": [
+        2,
+        3,
+        5,
+        12,
+        16,
+        17
+      ],
+      "combined_rank_score": {
+        "numerator": 176,
+        "denominator": 5,
+        "decimal": 35.2
+      },
+      "anchor_combined_rank_score": {
+        "numerator": 1057,
+        "denominator": 30,
+        "decimal": 35.233333333333334
+      },
+      "global_jacobian_rank_score": {
+        "numerator": 383,
+        "denominator": 12,
+        "decimal": 31.916666666666668
+      },
+      "global_action_mse_rank_score": {
+        "numerator": 574,
+        "denominator": 15,
+        "decimal": 38.266666666666666
+      }
+    }
+  ],
+  "complete_neighbor_rankings": {
+    "libero_spatial": [
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1043,
+          "denominator": 30,
+          "decimal": 34.766666666666666
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 4,
+        "skip": [
+          2,
+          4,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 527,
+          "denominator": 15,
+          "decimal": 35.13333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 13,
+        "skip": [
+          3,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 107,
+          "denominator": 3,
+          "decimal": 35.666666666666664
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 536,
+          "denominator": 15,
+          "decimal": 35.733333333333334
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 15,
+        "skip": [
+          2,
+          3,
+          5,
+          14,
+          15,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 179,
+          "denominator": 5,
+          "decimal": 35.8
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 359,
+          "denominator": 10,
+          "decimal": 35.9
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 11,
+        "skip": [
+          3,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 217,
+          "denominator": 6,
+          "decimal": 36.166666666666664
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 109,
+          "denominator": 3,
+          "decimal": 36.333333333333336
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 182,
+          "denominator": 5,
+          "decimal": 36.4
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1093,
+          "denominator": 30,
+          "decimal": 36.43333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1097,
+          "denominator": 30,
+          "decimal": 36.56666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 10,
+        "skip": [
+          3,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1099,
+          "denominator": 30,
+          "decimal": 36.63333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 9,
+        "skip": [
+          3,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 551,
+          "denominator": 15,
+          "decimal": 36.733333333333334
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 184,
+          "denominator": 5,
+          "decimal": 36.8
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 553,
+          "denominator": 15,
+          "decimal": 36.86666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 369,
+          "denominator": 10,
+          "decimal": 36.9
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 554,
+          "denominator": 15,
+          "decimal": 36.93333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1109,
+          "denominator": 30,
+          "decimal": 36.96666666666667
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 223,
+          "denominator": 6,
+          "decimal": 37.166666666666664
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 187,
+          "denominator": 5,
+          "decimal": 37.4
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 12,
+        "skip": [
+          3,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 562,
+          "denominator": 15,
+          "decimal": 37.46666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1129,
+          "denominator": 30,
+          "decimal": 37.63333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 377,
+          "denominator": 10,
+          "decimal": 37.7
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 8,
+        "skip": [
+          3,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 571,
+          "denominator": 15,
+          "decimal": 38.06666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1147,
+          "denominator": 30,
+          "decimal": 38.233333333333334
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1147,
+          "denominator": 30,
+          "decimal": 38.233333333333334
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 383,
+          "denominator": 10,
+          "decimal": 38.3
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 578,
+          "denominator": 15,
+          "decimal": 38.53333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 233,
+          "denominator": 6,
+          "decimal": 38.833333333333336
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1169,
+          "denominator": 30,
+          "decimal": 38.96666666666667
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1171,
+          "denominator": 30,
+          "decimal": 39.03333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 79,
+          "denominator": 2,
+          "decimal": 39.5
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 198,
+          "denominator": 5,
+          "decimal": 39.6
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 6,
+        "skip": [
+          3,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 598,
+          "denominator": 15,
+          "decimal": 39.86666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1201,
+          "denominator": 30,
+          "decimal": 40.03333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 401,
+          "denominator": 10,
+          "decimal": 40.1
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 121,
+          "denominator": 3,
+          "decimal": 40.333333333333336
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1219,
+          "denominator": 30,
+          "decimal": 40.63333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1223,
+          "denominator": 30,
+          "decimal": 40.766666666666666
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 614,
+          "denominator": 15,
+          "decimal": 40.93333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 7,
+        "skip": [
+          3,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 125,
+          "denominator": 3,
+          "decimal": 41.666666666666664
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 251,
+          "denominator": 6,
+          "decimal": 41.833333333333336
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 419,
+          "denominator": 10,
+          "decimal": 41.9
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1273,
+          "denominator": 30,
+          "decimal": 42.43333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 641,
+          "denominator": 15,
+          "decimal": 42.733333333333334
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          3,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1333,
+          "denominator": 30,
+          "decimal": 44.43333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 668,
+          "denominator": 15,
+          "decimal": 44.53333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          2,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 226,
+          "denominator": 5,
+          "decimal": 45.2
+        }
+      }
+    ],
+    "libero_object": [
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 15,
+        "skip": [
+          2,
+          3,
+          5,
+          14,
+          15,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 983,
+          "denominator": 30,
+          "decimal": 32.766666666666666
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 12,
+        "skip": [
+          3,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 997,
+          "denominator": 30,
+          "decimal": 33.233333333333334
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 13,
+        "skip": [
+          3,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 997,
+          "denominator": 30,
+          "decimal": 33.233333333333334
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 503,
+          "denominator": 15,
+          "decimal": 33.53333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 503,
+          "denominator": 15,
+          "decimal": 33.53333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 11,
+        "skip": [
+          3,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 69,
+          "denominator": 2,
+          "decimal": 34.5
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 209,
+          "denominator": 6,
+          "decimal": 34.833333333333336
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 209,
+          "denominator": 6,
+          "decimal": 34.833333333333336
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 10,
+        "skip": [
+          3,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 529,
+          "denominator": 15,
+          "decimal": 35.266666666666666
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 9,
+        "skip": [
+          3,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1061,
+          "denominator": 30,
+          "decimal": 35.36666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 532,
+          "denominator": 15,
+          "decimal": 35.46666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 532,
+          "denominator": 15,
+          "decimal": 35.46666666666667
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1067,
+          "denominator": 30,
+          "decimal": 35.56666666666667
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 107,
+          "denominator": 3,
+          "decimal": 35.666666666666664
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 6,
+        "skip": [
+          3,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 179,
+          "denominator": 5,
+          "decimal": 35.8
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 4,
+        "skip": [
+          2,
+          4,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 361,
+          "denominator": 10,
+          "decimal": 36.1
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 361,
+          "denominator": 10,
+          "decimal": 36.1
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 8,
+        "skip": [
+          3,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 367,
+          "denominator": 10,
+          "decimal": 36.7
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 551,
+          "denominator": 15,
+          "decimal": 36.733333333333334
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 553,
+          "denominator": 15,
+          "decimal": 36.86666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 553,
+          "denominator": 15,
+          "decimal": 36.86666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 553,
+          "denominator": 15,
+          "decimal": 36.86666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1109,
+          "denominator": 30,
+          "decimal": 36.96666666666667
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 37,
+          "denominator": 1,
+          "decimal": 37.0
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 187,
+          "denominator": 5,
+          "decimal": 37.4
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 188,
+          "denominator": 5,
+          "decimal": 37.6
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1141,
+          "denominator": 30,
+          "decimal": 38.03333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 7,
+        "skip": [
+          3,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 381,
+          "denominator": 10,
+          "decimal": 38.1
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 572,
+          "denominator": 15,
+          "decimal": 38.13333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 383,
+          "denominator": 10,
+          "decimal": 38.3
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 192,
+          "denominator": 5,
+          "decimal": 38.4
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1163,
+          "denominator": 30,
+          "decimal": 38.766666666666666
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 389,
+          "denominator": 10,
+          "decimal": 38.9
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 584,
+          "denominator": 15,
+          "decimal": 38.93333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 39,
+          "denominator": 1,
+          "decimal": 39.0
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1183,
+          "denominator": 30,
+          "decimal": 39.43333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 593,
+          "denominator": 15,
+          "decimal": 39.53333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1189,
+          "denominator": 30,
+          "decimal": 39.63333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 397,
+          "denominator": 10,
+          "decimal": 39.7
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 601,
+          "denominator": 15,
+          "decimal": 40.06666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 121,
+          "denominator": 3,
+          "decimal": 40.333333333333336
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 121,
+          "denominator": 3,
+          "decimal": 40.333333333333336
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1229,
+          "denominator": 30,
+          "decimal": 40.96666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          3,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 83,
+          "denominator": 2,
+          "decimal": 41.5
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 626,
+          "denominator": 15,
+          "decimal": 41.733333333333334
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1271,
+          "denominator": 30,
+          "decimal": 42.36666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          2,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 677,
+          "denominator": 15,
+          "decimal": 45.13333333333333
+        }
+      }
+    ],
+    "libero_goal": [
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 97,
+          "denominator": 3,
+          "decimal": 32.333333333333336
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 499,
+          "denominator": 15,
+          "decimal": 33.266666666666666
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 100,
+          "denominator": 3,
+          "decimal": 33.333333333333336
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 169,
+          "denominator": 5,
+          "decimal": 33.8
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 508,
+          "denominator": 15,
+          "decimal": 33.86666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 15,
+        "skip": [
+          2,
+          3,
+          5,
+          14,
+          15,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 339,
+          "denominator": 10,
+          "decimal": 33.9
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 69,
+          "denominator": 2,
+          "decimal": 34.5
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 518,
+          "denominator": 15,
+          "decimal": 34.53333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 518,
+          "denominator": 15,
+          "decimal": 34.53333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 347,
+          "denominator": 10,
+          "decimal": 34.7
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 4,
+        "skip": [
+          2,
+          4,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 349,
+          "denominator": 10,
+          "decimal": 34.9
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 11,
+        "skip": [
+          3,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 524,
+          "denominator": 15,
+          "decimal": 34.93333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1051,
+          "denominator": 30,
+          "decimal": 35.03333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 526,
+          "denominator": 15,
+          "decimal": 35.06666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 353,
+          "denominator": 10,
+          "decimal": 35.3
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 353,
+          "denominator": 10,
+          "decimal": 35.3
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 532,
+          "denominator": 15,
+          "decimal": 35.46666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 533,
+          "denominator": 15,
+          "decimal": 35.53333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 178,
+          "denominator": 5,
+          "decimal": 35.6
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1069,
+          "denominator": 30,
+          "decimal": 35.63333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 357,
+          "denominator": 10,
+          "decimal": 35.7
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 13,
+        "skip": [
+          3,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 538,
+          "denominator": 15,
+          "decimal": 35.86666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 10,
+        "skip": [
+          3,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 539,
+          "denominator": 15,
+          "decimal": 35.93333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 548,
+          "denominator": 15,
+          "decimal": 36.53333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 183,
+          "denominator": 5,
+          "decimal": 36.6
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 183,
+          "denominator": 5,
+          "decimal": 36.6
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 367,
+          "denominator": 10,
+          "decimal": 36.7
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 551,
+          "denominator": 15,
+          "decimal": 36.733333333333334
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 553,
+          "denominator": 15,
+          "decimal": 36.86666666666667
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 369,
+          "denominator": 10,
+          "decimal": 36.9
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 8,
+        "skip": [
+          3,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 371,
+          "denominator": 10,
+          "decimal": 37.1
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 557,
+          "denominator": 15,
+          "decimal": 37.13333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 12,
+        "skip": [
+          3,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 557,
+          "denominator": 15,
+          "decimal": 37.13333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 113,
+          "denominator": 3,
+          "decimal": 37.666666666666664
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 113,
+          "denominator": 3,
+          "decimal": 37.666666666666664
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1133,
+          "denominator": 30,
+          "decimal": 37.766666666666666
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 189,
+          "denominator": 5,
+          "decimal": 37.8
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 6,
+        "skip": [
+          3,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 379,
+          "denominator": 10,
+          "decimal": 37.9
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 9,
+        "skip": [
+          3,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 379,
+          "denominator": 10,
+          "decimal": 37.9
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1157,
+          "denominator": 30,
+          "decimal": 38.56666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1157,
+          "denominator": 30,
+          "decimal": 38.56666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 194,
+          "denominator": 5,
+          "decimal": 38.8
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1169,
+          "denominator": 30,
+          "decimal": 38.96666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 7,
+        "skip": [
+          3,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 196,
+          "denominator": 5,
+          "decimal": 39.2
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 598,
+          "denominator": 15,
+          "decimal": 39.86666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          3,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1297,
+          "denominator": 30,
+          "decimal": 43.233333333333334
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          2,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 439,
+          "denominator": 10,
+          "decimal": 43.9
+        }
+      }
+    ],
+    "libero_10": [
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 176,
+          "denominator": 5,
+          "decimal": 35.2
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1057,
+          "denominator": 30,
+          "decimal": 35.233333333333334
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1063,
+          "denominator": 30,
+          "decimal": 35.43333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 533,
+          "denominator": 15,
+          "decimal": 35.53333333333333
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1073,
+          "denominator": 30,
+          "decimal": 35.766666666666666
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 11,
+        "skip": [
+          3,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 215,
+          "denominator": 6,
+          "decimal": 35.833333333333336
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 15,
+        "skip": [
+          2,
+          3,
+          5,
+          14,
+          15,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 539,
+          "denominator": 15,
+          "decimal": 35.93333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 110,
+          "denominator": 3,
+          "decimal": 36.666666666666664
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1103,
+          "denominator": 30,
+          "decimal": 36.766666666666666
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          3,
+          5,
+          11,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 221,
+          "denominator": 6,
+          "decimal": 36.833333333333336
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 12,
+        "skip": [
+          3,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 554,
+          "denominator": 15,
+          "decimal": 36.93333333333333
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 9,
+        "skip": [
+          3,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1109,
+          "denominator": 30,
+          "decimal": 36.96666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 10,
+        "skip": [
+          3,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 223,
+          "denominator": 6,
+          "decimal": 37.166666666666664
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 8,
+        "skip": [
+          3,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 559,
+          "denominator": 15,
+          "decimal": 37.266666666666666
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 373,
+          "denominator": 10,
+          "decimal": 37.3
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 13,
+        "skip": [
+          3,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 75,
+          "denominator": 2,
+          "decimal": 37.5
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1133,
+          "denominator": 30,
+          "decimal": 37.766666666666666
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 189,
+          "denominator": 5,
+          "decimal": 37.8
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 568,
+          "denominator": 15,
+          "decimal": 37.86666666666667
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 379,
+          "denominator": 10,
+          "decimal": 37.9
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          3,
+          5,
+          12,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 569,
+          "denominator": 15,
+          "decimal": 37.93333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          3,
+          5,
+          9,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1139,
+          "denominator": 30,
+          "decimal": 37.96666666666667
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 38,
+          "denominator": 1,
+          "decimal": 38.0
+        }
+      },
+      {
+        "restore_layer": 14,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1141,
+          "denominator": 30,
+          "decimal": 38.03333333333333
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 381,
+          "denominator": 10,
+          "decimal": 38.1
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 381,
+          "denominator": 10,
+          "decimal": 38.1
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          3,
+          5,
+          10,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 229,
+          "denominator": 6,
+          "decimal": 38.166666666666664
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 191,
+          "denominator": 5,
+          "decimal": 38.2
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          3,
+          5,
+          8,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 574,
+          "denominator": 15,
+          "decimal": 38.266666666666666
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 115,
+          "denominator": 3,
+          "decimal": 38.333333333333336
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1153,
+          "denominator": 30,
+          "decimal": 38.43333333333333
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          3,
+          5,
+          13,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 77,
+          "denominator": 2,
+          "decimal": 38.5
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 4,
+        "skip": [
+          2,
+          4,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 583,
+          "denominator": 15,
+          "decimal": 38.86666666666667
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 6,
+        "skip": [
+          3,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1171,
+          "denominator": 30,
+          "decimal": 39.03333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 11,
+        "skip": [
+          2,
+          5,
+          11,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1193,
+          "denominator": 30,
+          "decimal": 39.766666666666666
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 7,
+        "skip": [
+          3,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1193,
+          "denominator": 30,
+          "decimal": 39.766666666666666
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 598,
+          "denominator": 15,
+          "decimal": 39.86666666666667
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 1199,
+          "denominator": 30,
+          "decimal": 39.96666666666667
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          3,
+          5,
+          6,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1201,
+          "denominator": 30,
+          "decimal": 40.03333333333333
+        }
+      },
+      {
+        "restore_layer": 5,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 203,
+          "denominator": 5,
+          "decimal": 40.6
+        }
+      },
+      {
+        "restore_layer": 17,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          16
+        ],
+        "combined_rank_score": {
+          "numerator": 407,
+          "denominator": 10,
+          "decimal": 40.7
+        }
+      },
+      {
+        "restore_layer": 16,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          3,
+          5,
+          7,
+          14,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1223,
+          "denominator": 30,
+          "decimal": 40.766666666666666
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 12,
+        "skip": [
+          2,
+          5,
+          12,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 613,
+          "denominator": 15,
+          "decimal": 40.86666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 9,
+        "skip": [
+          2,
+          5,
+          9,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 409,
+          "denominator": 10,
+          "decimal": 40.9
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 10,
+        "skip": [
+          2,
+          5,
+          10,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 411,
+          "denominator": 10,
+          "decimal": 41.1
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 8,
+        "skip": [
+          2,
+          5,
+          8,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 206,
+          "denominator": 5,
+          "decimal": 41.2
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 13,
+        "skip": [
+          2,
+          5,
+          13,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1243,
+          "denominator": 30,
+          "decimal": 41.43333333333333
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 6,
+        "skip": [
+          2,
+          5,
+          6,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1289,
+          "denominator": 30,
+          "decimal": 42.96666666666667
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 7,
+        "skip": [
+          2,
+          5,
+          7,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 437,
+          "denominator": 10,
+          "decimal": 43.7
+        }
+      },
+      {
+        "restore_layer": 2,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          3,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 443,
+          "denominator": 10,
+          "decimal": 44.3
+        }
+      },
+      {
+        "restore_layer": 3,
+        "newly_skipped_layer": 1,
+        "skip": [
+          1,
+          2,
+          5,
+          14,
+          16,
+          17
+        ],
+        "combined_rank_score": {
+          "numerator": 1447,
+          "denominator": 30,
+          "decimal": 48.233333333333334
+        }
+      }
+    ]
+  },
+  "proposed_experiment_scope": {
+    "conditions": "Four proposed neighbors plus Jac anchor plus Full",
+    "discovery_inits": [
+      36,
+      37,
+      38
+    ],
+    "discovery_episodes": 720,
+    "confirmation_inits": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "confirmation_episodes_if_qualified": 600,
+    "confirmation_qualification_rule": "Not specified here; root must freeze a separate rule before discovery",
+    "rollout_manifest_created": false
+  },
+  "limitations": [
+    "Layer metrics come from historical Full-trajectory single-layer perturbations, not six-layer compensated-path outcomes.",
+    "proposal_suite labels the calibration source of the proposal; it is not an observed task preference or a confirmatory direction.",
+    "Reproducing three old score sums identifies a compatible ranking calculation; the original candidate-generation script was not located.",
+    "The old candidate file's source_manifest_sha256 does not equal the current archived E2/E4 manifest file hash; this receipt preserves both files and does not assert that historical link is resolved.",
+    "No pair selection, success threshold, stopping rule, or confirmatory hypothesis is set by this proposal generator."
+  ],
+  "receipt_hash": "62e3692b164df921e0a3d8f6ca65c071a07d46495d7fbc3a9f449a3cdd898807"
+}

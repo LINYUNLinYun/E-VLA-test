@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "time": 1793202456.434258,
+  "objective": "我更新了文档 按我文档里的v3.4的内容给我做实验验证",
+  "requirements": [
+    {
+      "requirement": "E1 closed-loop success including Spatial and paired cases",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/final_audit.json",
+        "results/idea1_v3_4/analysis/quality_summary.csv",
+        "results/idea1_v3_4/analysis/paired_quality.csv",
+        "results/idea1_v3_4/analysis/task_summary.csv"
+      ]
+    },
+    {
+      "requirement": "E1 actual truncation, native action parity and checkpoint identity",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/manifest.json",
+        "results/idea1_v3_4/workers/gpu0/gate.json",
+        "results/idea1_v3_4/workers/gpu2/gate.json",
+        "results/idea1_v3_4/workers/gpu3/gate.json",
+        "results/idea1_v3_4/final_audit.json"
+      ]
+    },
+    {
+      "requirement": "E1 module/request/refresh-inclusive action cost and throughput",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/analysis/same_input_timing.csv",
+        "results/idea1_v3_4/analysis/quality_summary.csv",
+        "docs/experiments/idea1/idea1_v3_4_E1_report.md"
+      ]
+    },
+    {
+      "requirement": "E1 L12-18 and single-layer/suffix/oracle mechanisms, same D2/D10 bank",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/analysis/mechanism_summary.csv",
+        "results/idea1_v3_4/analysis/mechanism_layer_summary.csv",
+        "results/idea1_v3_4/analysis/mechanism_layer_effects.csv",
+        "results/idea1_v3_4/analysis/historical_task_scope_diagnostic.csv",
+        "results/idea1_v3_4/final_audit.json"
+      ]
+    },
+    {
+      "requirement": "E3 actual rejects, D2/D10 versus condition controls, refine and shifted remaining actions",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/E3_parent/episodes",
+        "results/idea1_v3_4/analysis/E3_requests.csv",
+        "results/idea1_v3_4/analysis/E3_by_cause.csv",
+        "results/idea1_v3_4/final_audit.json"
+      ]
+    },
+    {
+      "requirement": "E3 independent and matched noise, two Full references, 207 original reproductions",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/E3_noise_control/manifest.json",
+        "results/idea1_v3_4/E3_noise_control/summary.csv",
+        "results/idea1_v3_4/E3_noise_control/audit.json",
+        "results/idea1_v3_4/final_audit.json"
+      ]
+    },
+    {
+      "requirement": "E2 empty source entry documented",
+      "status": "proved",
+      "evidence": [
+        "idea1.md",
+        "docs/experiments/idea1/idea1_v3_4_report.md"
+      ]
+    },
+    {
+      "requirement": "Chinese reports and readable scientific plots",
+      "status": "proved",
+      "evidence": [
+        "docs/experiments/idea1/idea1_v3_4_report.md",
+        "docs/experiments/idea1/idea1_v3_4_E1_report.md",
+        "docs/experiments/idea1/idea1_v3_4_E3_report.md"
+      ],
+      "manual_review": "Three final PNGs visually inspected; all local report links exist; CI numerical negative-zero display normalized to zero without changing analysis"
+    },
+    {
+      "requirement": "Task processes exited and model resources released",
+      "status": "proved",
+      "evidence": [
+        "results/idea1_v3_4/resource_release.json",
+        "results/idea1_v3_4/status.json",
+        "results/idea1_v3_4/finalization_state.json",
+        "docs/experiments/idea1/idea1_v3_4_execution_status.md"
+      ]
+    }
+  ],
+  "final_audit_checks": 41,
+  "episodes": 960,
+  "mechanism_pairs": 160,
+  "E3_original_shadow": 207,
+  "E3_noise_control": 207,
+  "report_links_checked": 17,
+  "links": [
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_report.md",
+      "target": "idea1_v3_4_E1_report.md",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_report.md",
+      "target": "idea1_v3_4_E3_report.md",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_report.md",
+      "target": "../../../results/idea1_v3_4/final_audit.json",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_report.md",
+      "target": "../../../results/idea1_v3_4/analysis/analysis_state.json",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "../../../results/idea1_v3_4/analysis/closed_loop.png",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "../../../results/idea1_v3_4/analysis/suffix_mechanism.png",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "../../../results/idea1_v3_4/analysis/layer_mechanism.png",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "idea1_v3_4_experiment_plan.md",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "../../../results/idea1_v3_4/manifest.json",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E1_report.md",
+      "target": "../../../results/idea1_v3_4/final_audit.json",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "idea1_v3_4_E3_noise_control_plan.md",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "../../../results/idea1_v3_4/E3_noise_control/summary.csv",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "../../../results/idea1_v3_4/E3_noise_control/audit.json",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "idea1_v3_4_experiment_plan.md",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "../../../results/idea1_v3_4/E3_parent/episodes",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "../../../results/idea1_v3_4/analysis/E3_requests.csv",
+      "exists": true
+    },
+    {
+      "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_E3_report.md",
+      "target": "../../../results/idea1_v3_4/final_audit.json",
+      "exists": true
+    }
+  ],
+  "report_sha256": {
+    "docs/experiments/idea1/idea1_v3_4_E1_report.md": "4f2472a5bd41a2d52816f6fb3ab79187ce7d4916a172a35056d41e406c3e6c63",
+    "docs/experiments/idea1/idea1_v3_4_E3_report.md": "745d2b20fbeaddc2b1dbeee47c44826606f77a3e5dca0f87f69d41527ca665cc",
+    "docs/experiments/idea1/idea1_v3_4_report.md": "ace0942852ba03ab70d2edf3309688f826e4e6dbde9c0e5c07ab68963a5cead5"
+  },
+  "experimental_data_or_analysis_changed_during_report_review": false,
+  "report_review_changes": [
+    "Display numerical near-zero CI endpoint as 0.00; retain raw interval in CSV",
+    "Explicit cost ratio denominator and per-action savings",
+    "Describe Spatial shadow/closed-loop discrepancy and inference limits",
+    "Include loading cost and total campaign wall time"
+  ],
+  "E3_limitation": "Refinement is shadow-only; no repaired-policy closed-loop success claim",
+  "E1_limitation": "Exploratory 5-init main conditions; success interval touches zero; no confirmed L17 closed-loop result",
+  "execution_status_sha256": "8f0a76255ad1ca88f9d095a9c07b018a61870381617b4073dd03ca6fa2eb5e41"
+}

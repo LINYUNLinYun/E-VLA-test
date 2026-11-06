@@ -1,0 +1,305 @@
+{
+  "passed": true,
+  "atol": 1e-05,
+  "rtol": 1e-05,
+  "sample_id": "goal8_init03_visual_attribute_0024",
+  "checks": {
+    "source_reference_repeat": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "source_extraction_vs_reference": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "source_logits_vs_reference": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "source_self_replace": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "target_reference_repeat": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "target_extraction_vs_reference": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "target_logits_vs_reference": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "target_self_replace": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "layer0_gray": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "layer0_logits_gray": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "layer0_black": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "layer0_logits_black": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    }
+  },
+  "scope": "native prefix vs explicit blocks; self replacement; target-only layer-0 image replacement",
+  "identity": {
+    "config_hash": "7f2940801f32d8b7ff6981b0b38c4fc1675a25c4b3a9f9f07705d5893edcb5c6",
+    "source_identity": {
+      "model": {
+        "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config_name": "pi05_libero",
+        "openpi_root": "/root/nfs/embodied/benchmark/policies/openpi"
+      },
+      "checkpoint_files_digest": "fca00a9c27a6df18fad8c724c4e90768b04b56d80c15fa45be70cc69a943b7a2",
+      "openpi_code_digest": "af8186a65d82ef6ec82afd0a3659f4950884a8e6d6ff74018c36f0a564dec6cd",
+      "probe_code_digest": "f01c01b2f5012c24f5c6748908dcf2e3fb2e600b377368d486a8fb49d0d2bf41",
+      "audit": {
+        "backend": "openpi-jax",
+        "pi05": true,
+        "config": "pi05_libero",
+        "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "python_version": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+        "dependencies": {
+          "jax": "0.5.3",
+          "jaxlib": "0.5.3",
+          "flax": "0.10.2",
+          "numpy": "1.26.4",
+          "sentencepiece": "0.2.0",
+          "orbax-checkpoint": "0.11.13"
+        },
+        "weight_loading": "upstream BaseModel.load validates all required parameter names and shapes; extra checkpoint parameters may be ignored",
+        "missing_required_weight_keys": [],
+        "checkpoint_files": [
+          {
+            "path": "params/_METADATA",
+            "size": 23493,
+            "mtime_ns": 1789653754836564281
+          },
+          {
+            "path": "params/_sharding",
+            "size": 17952,
+            "mtime_ns": 1789653754826564283
+          },
+          {
+            "path": "params/array_metadatas/process_0",
+            "size": 9062,
+            "mtime_ns": 1789653754736564302
+          },
+          {
+            "path": "params/d/98a77a52a8eb845ae4830eb7fe983979",
+            "size": 42307,
+            "mtime_ns": 1789653754976564252
+          },
+          {
+            "path": "params/manifest.ocdbt",
+            "size": 120,
+            "mtime_ns": 1789653754716564306
+          },
+          {
+            "path": "params/ocdbt.process_0/d/0eaaecefaa9720d30a32cc56e65fd345",
+            "size": 2449323387,
+            "mtime_ns": 1789655000116306699
+          },
+          {
+            "path": "params/ocdbt.process_0/d/155391c1cbf93a1be16266de052e5b48",
+            "size": 2307885530,
+            "mtime_ns": 1789655208366263623
+          },
+          {
+            "path": "params/ocdbt.process_0/d/2b6985f48e9da86f68627a7608c5bc25",
+            "size": 1077,
+            "mtime_ns": 1789653754726564304
+          },
+          {
+            "path": "params/ocdbt.process_0/d/475fab3ee8821662585a8cde3eb32e22",
+            "size": 2150232827,
+            "mtime_ns": 1789655110466283873
+          },
+          {
+            "path": "params/ocdbt.process_0/d/6c54da5a6f62c20a09c0f3f8c3329e00",
+            "size": 1608436908,
+            "mtime_ns": 1789654740376360425
+          },
+          {
+            "path": "params/ocdbt.process_0/d/896bf93c5cf2e8ddd274a6ea0a2feec0",
+            "size": 2240080987,
+            "mtime_ns": 1789655081856289791
+          },
+          {
+            "path": "params/ocdbt.process_0/d/bc613ff288a162563e622d01bb60622a",
+            "size": 217,
+            "mtime_ns": 1789653754726564304
+          },
+          {
+            "path": "params/ocdbt.process_0/d/bda87d9791f23df771cd2d15293780cc",
+            "size": 2926522,
+            "mtime_ns": 1789653757306563770
+          },
+          {
+            "path": "params/ocdbt.process_0/d/efbb46173882cb35ed41ffe0c2db8a5e",
+            "size": 1680102856,
+            "mtime_ns": 1789654949936317078
+          },
+          {
+            "path": "params/ocdbt.process_0/manifest.ocdbt",
+            "size": 322,
+            "mtime_ns": 1789653754736564302
+          }
+        ],
+        "openpi_root": "/root/nfs/embodied/benchmark/policies/openpi",
+        "git_revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+        "git_dirty": true,
+        "code_sha256": {
+          "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+          "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+          "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/tokenizer.py": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+          "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/training/config.py": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d"
+        },
+        "depth": 18,
+        "width": 2048,
+        "vocab_size": 257152,
+        "dtype": "bfloat16",
+        "model_configs": [
+          {
+            "width": 2048,
+            "depth": 18,
+            "mlp_dim": 16384,
+            "num_heads": 8,
+            "num_kv_heads": 1,
+            "head_dim": 256,
+            "lora_configs": {}
+          },
+          {
+            "width": 1024,
+            "depth": 18,
+            "mlp_dim": 4096,
+            "num_heads": 8,
+            "num_kv_heads": 1,
+            "head_dim": 256,
+            "lora_configs": {}
+          }
+        ],
+        "head": "checkpoint embedder/input_embedding transpose (tied); no new parameters",
+        "final_norm": "checkpoint final_norm; applied exactly once after layer depth",
+        "layer_convention": "0=scaled embeddings; k=residual after k blocks, before final norm",
+        "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+        "bos_id": 2,
+        "eos_id": 1,
+        "source_transforms": [
+          "InjectDefaultPrompt",
+          "LiberoInputs",
+          "Normalize",
+          "InjectDefaultPrompt",
+          "ResizeImages",
+          "TokenizePrompt",
+          "PadStatesAndActions"
+        ],
+        "norm_stats_files": [
+          "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json"
+        ],
+        "norm_stats_sha256": {
+          "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+        },
+        "normalization_use_quantiles": [
+          true
+        ],
+        "source_discrete_state_input": false,
+        "proprio_state_enters_prefix": false,
+        "target_text_contract": "BOS + exact supplied prompt; no action template, cleanup, or implicit newline",
+        "generation": "greedy, full recomputation, patch reapplied each step, causal answers after fixed bidirectional prefix",
+        "raw_input_keys": [
+          "observation/image",
+          "observation/wrist_image",
+          "observation/state",
+          "prompt"
+        ]
+      }
+    },
+    "target_identity": {
+      "model": {
+        "backend": "hf_paligemma",
+        "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224",
+        "device": "cuda:0",
+        "dtype": "bfloat16",
+        "hf_runtime": "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime"
+      },
+      "checkpoint_files_digest": "0518d936d408918beec74e7ad6e43f244d9476df78394935e09dd6e0a64adc9b",
+      "openpi_code_digest": "af8186a65d82ef6ec82afd0a3659f4950884a8e6d6ff74018c36f0a564dec6cd",
+      "probe_code_digest": "f01c01b2f5012c24f5c6748908dcf2e3fb2e600b377368d486a8fb49d0d2bf41",
+      "audit": {
+        "backend": "hf-paligemma",
+        "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224",
+        "depth": 18,
+        "width": 2048,
+        "vocab_size": 257216,
+        "device": "cuda:0",
+        "dtype": "torch.bfloat16",
+        "transformers": "4.53.2",
+        "torch": "2.7.1+cu126",
+        "runtime": "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime",
+        "code_sha256": {
+          "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime/transformers/models/gemma/modeling_gemma.py": "bf651117fa9fc681438966cc31fa35792291908da23e0f99b691579c94e97189",
+          "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime/transformers/models/paligemma/modeling_paligemma.py": "34863cbb15195bd3f4aa086f19220d3c9e64bf6097a0b7636ca1c655d311ef2a"
+        },
+        "weight_loading": {
+          "missing_keys": [],
+          "unexpected_keys": [],
+          "mismatched_keys": [],
+          "error_msgs": []
+        },
+        "tokenizer_sha256": "1ab1724071709fc886d11caeb764e027f77eda0f38089608f027b2ccf40077ff",
+        "layer_convention": "0=Gemma-scaled embeddings; k=full block residual before final norm",
+        "input_contract": "agent, wrist, masked zero camera; native HF preprocessing; exact prompt/BOS",
+        "position_ids": "1-indexed cumulative valid positions (native PaliGemma convention)",
+        "attention": "bidirectional fixed prefix; causal answers; full recomputation each step",
+        "mapping": "identity; no pooling, normalization, or trained alignment"
+      }
+    },
+    "sample_ids": [
+      "goal8_init03_instruction_conditioned_0027",
+      "goal8_init03_instruction_conditioned_0028",
+      "goal8_init03_instruction_conditioned_0030",
+      "goal8_init03_instruction_conditioned_0031",
+      "goal8_init03_spatial_relation_0026",
+      "goal8_init03_spatial_relation_0029",
+      "goal8_init03_visual_attribute_0024",
+      "goal8_init03_visual_attribute_0025"
+    ],
+    "manifest_digest": "f16d0bdfc0ff12e29839e8f176dfc1e61a9815b3ce5084384eac920682cfdfb6",
+    "command": "probe",
+    "source_input_digests": {
+      "goal8_init03_visual_attribute_0024": "4ca5e6b10c8b3d43a004ab69a6e08b4177cca4c68694063299d15aa9eb89efe6",
+      "goal8_init03_visual_attribute_0025": "9f71e57e1f2354135624f5bed5381769cdea57ef3551ffe0fc2e14722885c66f",
+      "goal8_init03_spatial_relation_0026": "4ca5e6b10c8b3d43a004ab69a6e08b4177cca4c68694063299d15aa9eb89efe6",
+      "goal8_init03_instruction_conditioned_0027": "4ca5e6b10c8b3d43a004ab69a6e08b4177cca4c68694063299d15aa9eb89efe6",
+      "goal8_init03_instruction_conditioned_0028": "6617bee114d7a119ffa87b23be37c5925303782c2fe7cd7c0762f2f4b374ce94",
+      "goal8_init03_spatial_relation_0029": "1fb159e221ad093636f77ce10d2d7a913ebbc5605bb48745ec1119cd01872ab3",
+      "goal8_init03_instruction_conditioned_0030": "1fb159e221ad093636f77ce10d2d7a913ebbc5605bb48745ec1119cd01872ab3",
+      "goal8_init03_instruction_conditioned_0031": "4414e02e66cd9ceea85ad0ffe0f4dd6e596d72e9bc94440c0bd2c0cf454c0510"
+    }
+  }
+}

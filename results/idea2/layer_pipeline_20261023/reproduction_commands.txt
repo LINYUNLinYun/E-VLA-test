@@ -1,0 +1,147 @@
+CPU audit generated 2026-10-24. Commands below were NOT executed by this audit.
+Run from /root/nfs/embodied/benchmark. Select one allocated, idle GPU before running.
+These commands use the CURRENT scheduler with unchanged recorded Torch model hashes.
+Historical exact arguments/environment/source snapshots: see each case's result.json,
+source/, model_provenance_final.json, baseline_commands.json and trace_queue2.json.
+Do not copy source/ files into the working tree to reproduce a historical run.
+Performance and nsys runs are separate. Warmup/capture are outside measured steady work.
+Native JAX is a performance reference only, never the Torch numerical oracle.
+Delay8 commands below reproduce the two same-device arm orders; performance evidence
+is recorded separately in delay_repeat_analysis.*, not certified by this command list.
+
+# Bash setup: set IDEA2_GPU_UUID to the allocated device UUID; do not assume historical GPU1/GPU0 is free.
+cd /root/nfs/embodied/benchmark
+: "${IDEA2_GPU_UUID:?Set IDEA2_GPU_UUID to the currently allocated idle GPU UUID}"
+export CUDA_VISIBLE_DEVICES="$IDEA2_GPU_UUID"
+export CUDA_DEVICE_MAX_CONNECTIONS=32
+export OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2
+export PYTHONPATH=.:policies/openpi/src
+export OPENPI_DATA_HOME=/root/nfs/embodied/benchmark/shared/checkpoints/openpi
+export JAX_PLATFORMS=cpu JAX_PLATFORM_NAME=cpu
+IDEA2_PY=policies/openpi/.venv/bin/python
+IDEA2_CKPT=shared/checkpoints/openpi/pi05_libero_pytorch_idea2
+IDEA2_BANK=results/idea1_v3_1/input_bank.pkl
+IDEA2_REPRO_ROOT=$(mktemp -d results/idea2/layer_pipeline_20261023/repro_20261024_XXXXXX)
+mkdir "$IDEA2_REPRO_ROOT/traces"
+
+# PERFORMANCE 1: T=2 same-observation layer KV-ready, full GPU, whole AE Graph.
+# Both serial and overlap arms; 100 alternating pairs plus 100 continuous requests/arm.
+# Seeds cycle 1701..1713 over the 13 selected observations via input_schedule.
+# Historical reference: a2_full_conn32_100/result.json.
+"$IDEA2_PY" -m preparations.idea2.layer_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/layer_kv_ready" --boundary kv_ready --group-size 1 \
+  --ae-layout whole --ae-sm-min 0 --prefix-sm-cap 0 --ae-priority 0 \
+  --warmup 10 --count 100 --continuous-count 100 --reset-every 50 \
+  --hoist-modulation --lifecycle-audit
+
+# PERFORMANCE 2: pure Encoder overlap vs same Host lookahead serial control.
+# Each paired trajectory includes 16 frames and fill/drain; this is not 100 isolated requests.
+# No lookahead arrival delay/window, capacity source. Both branches use fresh same-frame KV.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/encoder_vs_lookahead" \
+  --modes lookahead_serial encoder_overlap --boundary kv_ready --group-size 1 \
+  --warmup 10 --pairs 100 --pair-length 16 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 0 --lookahead-window-ms 0 --lookahead-delay-ms 0 --hoist-modulation
+
+# PERFORMANCE 3: combine same-frame layer KV-ready and next-frame Encoder overlap.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/combined_vs_lookahead" \
+  --modes lookahead_serial combined --boundary kv_ready --group-size 1 \
+  --warmup 10 --pairs 100 --pair-length 16 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 0 --lookahead-window-ms 0 --lookahead-delay-ms 0 --hoist-modulation
+
+# PERFORMANCE 4: isolate common Host lookahead/preprocessing benefit, with GPU serial in both arms.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/host_lookahead_control" \
+  --modes fresh_serial lookahead_serial --boundary kv_ready --group-size 1 \
+  --warmup 10 --pairs 100 --pair-length 16 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 0 --lookahead-window-ms 0 --lookahead-delay-ms 0 --hoist-modulation
+
+# Optional arrival/SLO control with all four arms; capacity throughput is not capture-to-action latency.
+# Same current source for all modes, seeds tied to observed source frame. 33 ms is a workload setting.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/arrival33_all_arms" \
+  --modes fresh_serial lookahead_serial encoder_overlap combined \
+  --warmup 10 --pairs 0 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 33 --lookahead-window-ms 0 --lookahead-delay-ms 0 --hoist-modulation
+
+# DELAY8 repeat 1: 33 ms arrivals, delay 8 ms, window 0; 100 requests per arm.
+# All four arms use identical settings. Keep IDEA2_GPU_UUID unchanged for repeat 2.
+# Historical references: crossframe_arrival33_delay8_gpu0 and its repeat_reverse case.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/arrival33_delay8_forward" \
+  --modes fresh_serial lookahead_serial encoder_overlap combined \
+  --warmup 10 --pairs 0 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 33 --lookahead-window-ms 0 --lookahead-delay-ms 8 --hoist-modulation
+
+# DELAY8 repeat 2: fresh process/output, same allocated GPU, reversed arm order.
+"$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+  --output "$IDEA2_REPRO_ROOT/arrival33_delay8_reverse" \
+  --modes combined encoder_overlap lookahead_serial fresh_serial \
+  --warmup 10 --pairs 0 --continuous-count 100 --reset-every 50 \
+  --arrival-period-ms 33 --lookahead-window-ms 0 --lookahead-delay-ms 8 --hoist-modulation
+
+# PERFORMANCE 5: old-KV route, historical best candidate; different freshness from same-frame routes.
+# Await previous complete Prefix, overlap only Vision, hoist fixed schedule modulation; 2 slots retained.
+# Historical reference: d2_old_kv_best/result.json and baseline_commands.json job of same name.
+# Its older capture_sources did not freeze the three model files: see missing provenance, not a pass.
+"$IDEA2_PY" -m preparations.idea2.cewp_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --model-config pi05_libero \
+  --output "$IDEA2_REPRO_ROOT/old_kv_best" --steps 2 --noise-period 13 \
+  --warmup 10 --count 100 --continuous-count 100 --reset-every 50 \
+  --pairs graph_serial_high:graph_ae_high --continuous graph_serial_high graph_ae_high \
+  --selective vision_only --await-previous-prefix --hoist-modulation
+
+# PERFORMANCE 6: original Torch fresh serial baseline, same explicit noise cycle and step count.
+"$IDEA2_PY" -m preparations.idea2.cewp_bench \
+  --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --model-config pi05_libero \
+  --output "$IDEA2_REPRO_ROOT/torch_fresh_baseline" --steps 2 --noise-period 13 \
+  --warmup 10 --count 100 --continuous-count 100 --reset-every 50 \
+  --pairs --continuous eager_fresh_serial graph_fresh_serial
+
+# PERFORMANCE 7: native OpenPI JAX baseline. Separate process; explicit JAX CUDA and no preallocation.
+# CUDA noise generation is excluded from native measured Policy.infer boundary; compare boundary notes.
+# Native source git tree was dirty, compression explicitly off; loaded module hashes are in native_provenance.
+env JAX_PLATFORMS=cuda JAX_PLATFORM_NAME=gpu XLA_PYTHON_CLIENT_PREALLOCATE=false \
+  "$IDEA2_PY" -m preparations.idea2.cewp_native_baseline \
+  --checkpoint shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero \
+  --bank "$IDEA2_BANK" --output "$IDEA2_REPRO_ROOT/native_jax" \
+  --steps 2 --noise-period 13 --warmup 10 --count 100 --sequence continuous
+
+# TRACE ONLY: three matched representative crossframe modes, 8 requests each.
+# All three have identical workload and hoist configuration; nsys durations are NOT performance samples.
+# Historical exports: d2_crossframe_{serial,encoder,combined}_profile_20261023_v1.sqlite.
+# Files go into the fresh mktemp root; no overwrite and no parallel GPU jobs.
+for IDEA2_TRACE_MODE in lookahead_serial encoder_overlap combined; do
+  nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture \
+    --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi \
+    --capture-range-end=stop --force-overwrite=false \
+    -o "$IDEA2_REPRO_ROOT/traces/$IDEA2_TRACE_MODE" \
+    "$IDEA2_PY" -m preparations.idea2.layer_crossframe_bench \
+    --checkpoint "$IDEA2_CKPT" --bank "$IDEA2_BANK" --gpu-uuid "$IDEA2_GPU_UUID" \
+    --output "$IDEA2_REPRO_ROOT/profile_$IDEA2_TRACE_MODE" \
+    --warmup 5 --pairs 0 --continuous-count 8 --reset-every 0 --hoist-modulation \
+    --arrival-period-ms 0 --lookahead-window-ms 0 --lookahead-delay-ms 0 \
+    --profile --profile-mode "$IDEA2_TRACE_MODE"
+  nsys export --type=sqlite --force-overwrite=false \
+    --output "$IDEA2_REPRO_ROOT/traces/$IDEA2_TRACE_MODE.sqlite" \
+    "$IDEA2_REPRO_ROOT/traces/$IDEA2_TRACE_MODE.nsys-rep"
+done
+
+# CPU ONLY analysis, includes recursive Graph-node attribution, submit identity and actual Kernel intervals.
+for IDEA2_TRACE_MODE in lookahead_serial encoder_overlap combined; do
+  env CUDA_VISIBLE_DEVICES='' MPLBACKEND=Agg "$IDEA2_PY" -m preparations.idea2.layer_trace \
+    "$IDEA2_REPRO_ROOT/traces/$IDEA2_TRACE_MODE.sqlite" \
+    --output "$IDEA2_REPRO_ROOT/analysis_$IDEA2_TRACE_MODE"
+done
+
+# Exact historical T2-only and Green connection diagnostic commands are also in trace_queue2.json.
+# Setting connections=32 here is deliberate; do not relabel historical missing environment as 8 or 32.
+# Repeat performance sections in a new process and fresh output root for independent confirmation.

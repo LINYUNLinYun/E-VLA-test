@@ -1,0 +1,332 @@
+{
+  "schema": "ease-startup-oom-attempt25s-v1",
+  "created_at_utc": "2026-11-05T03:09:36.557900+00:00",
+  "scope": {
+    "read_existing_artifacts_only": true,
+    "write_only_report_directory": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/startup_oom_20261105/attempt25s",
+    "live_gpu_queries": 0,
+    "process_queries": 0,
+    "signals": 0,
+    "queue_state_source_writes": 0,
+    "experiment_process_launches": 0,
+    "case_reruns": 0
+  },
+  "conclusion_zh": "Full通过25秒稳定空闲与fresh assigned-UUID检查后，再次在Pi0Inference1633模型初始化处CUDA OOM；无健康服务、0新case。原Jac120有效案例及原case集合完整存在。watch支持约32秒后重新占用及失败后再次重占，不能严格证明OOM当时外部进程身份或同时显存重叠因果。",
+  "attempt": {
+    "run": "results/ease_insights_20261103/vlm_local_search_v1/discovery/full_d10/runs/discovery_shard00of01_1793847620694247948",
+    "controller_local_pid": 579554,
+    "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+    "gpu_index": 1,
+    "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+    "gate_receipt": "results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916__startup_retry1__gate_policy_25s2s_52b31b41c535.json",
+    "gate": {
+      "status": "launching",
+      "pid": 579554,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "elapsed_seconds": 2667.016,
+      "idle_seconds": 26.422,
+      "idle_threshold_seconds": 25.0,
+      "poll_seconds": 2.0,
+      "resource_revision": "assigned-gpu-idle-v2",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "final_idle_check": {
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "status": "idle",
+        "memory_mib": 1.0,
+        "compute_process_count": 0,
+        "idle": true,
+        "elapsed_seconds": 2667.016
+      }
+    },
+    "run_name_creation_unix": 1793847620.694248,
+    "error": "RuntimeError: CUDA error: out of memory; pi0_infer.py:1633 during backend.prepare in first real-input gate",
+    "server_log_sha256": "1abe14a266f372c37d4d5e60a651ccb513ed26ba04a207584ca233854b674c01",
+    "server_log_mtime_unix": 1793847651.8747768,
+    "scheduler_finished_unix": 1793847659.180608,
+    "returncode": 1,
+    "completion_file_present": false,
+    "timing_limit_zh": "gate只有相对elapsed；run名来自time.time_ns，日志无逐行时间。1633可暴露异步错误，不是首次CUDA申请或精确OOM时刻。",
+    "resource_path": "Original assigned-gpu-idle-v2 gate -> frozen local-search runner -> frozen server; this run identity has no persistent-session resource_execution_revision.",
+    "persistent_session_execution_evidence_present": false
+  },
+  "watch_events_33_to_42": [
+    {
+      "event_id": 33,
+      "index": 0,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "state": "idle",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "query_started_at": 1793847593.700872,
+      "query_finished_at": 1793847593.8191392,
+      "query_started_at_utc": "2026-11-05T02:59:53.700+00:00"
+    },
+    {
+      "event_id": 34,
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "state": "idle",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "query_started_at": 1793847593.700872,
+      "query_finished_at": 1793847593.8191392,
+      "query_started_at_utc": "2026-11-05T02:59:53.700+00:00"
+    },
+    {
+      "event_id": 35,
+      "index": 2,
+      "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "state": "idle",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "query_started_at": 1793847593.700872,
+      "query_finished_at": 1793847593.8191392,
+      "query_started_at_utc": "2026-11-05T02:59:53.700+00:00"
+    },
+    {
+      "event_id": 36,
+      "index": 3,
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "state": "idle",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "query_started_at": 1793847593.700872,
+      "query_finished_at": 1793847593.8191392,
+      "query_started_at_utc": "2026-11-05T02:59:53.700+00:00"
+    },
+    {
+      "event_id": 37,
+      "index": 0,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "state": "busy",
+      "memory_mib": 21.0,
+      "compute_process_count": 1,
+      "query_started_at": 1793847623.700899,
+      "query_finished_at": 1793847624.2682621,
+      "query_started_at_utc": "2026-11-05T03:00:23.700+00:00"
+    },
+    {
+      "event_id": 38,
+      "index": 3,
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "state": "busy",
+      "memory_mib": 4.0,
+      "compute_process_count": 1,
+      "query_started_at": 1793847623.700899,
+      "query_finished_at": 1793847624.2682621,
+      "query_started_at_utc": "2026-11-05T03:00:23.700+00:00"
+    },
+    {
+      "event_id": 39,
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "state": "busy",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "query_started_at": 1793847625.7005463,
+      "query_finished_at": 1793847625.916894,
+      "query_started_at_utc": "2026-11-05T03:00:25.700+00:00"
+    },
+    {
+      "event_id": 40,
+      "index": 2,
+      "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "state": "busy",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "query_started_at": 1793847625.7005463,
+      "query_finished_at": 1793847625.916894,
+      "query_started_at_utc": "2026-11-05T03:00:25.700+00:00"
+    },
+    {
+      "event_id": 41,
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "state": "idle",
+      "memory_mib": 1.0,
+      "compute_process_count": 0,
+      "query_started_at": 1793847657.7009058,
+      "query_finished_at": 1793847657.8917449,
+      "query_started_at_utc": "2026-11-05T03:00:57.700+00:00"
+    },
+    {
+      "event_id": 42,
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "state": "busy",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "query_started_at": 1793847675.7009277,
+      "query_finished_at": 1793847675.8842375,
+      "query_started_at_utc": "2026-11-05T03:01:15.700+00:00"
+    }
+  ],
+  "deltas_seconds": {
+    "GPU1_idle34_to_busy39": 31.999674320220947,
+    "run_name_to_busy39": 5.006298303604126,
+    "GPU1_idle41_to_busy42": 18.000021934509277,
+    "controller_failed_to_busy42": 16.52031970024109
+  },
+  "outputs": {
+    "run_files": [
+      "identity.json",
+      "server.log"
+    ],
+    "missing_health_or_science_files": [
+      "protocol.json",
+      "gate.json",
+      "gate_actions.npz",
+      "preparation.json",
+      "fixed_input_cost.json",
+      "qk_receipt.json",
+      "cross_service.json",
+      "worker.log",
+      "result.json"
+    ],
+    "full_new_cases": 0,
+    "full_episode_science_files": 0,
+    "full_empty_lock_files": 96,
+    "full_stage_marker_exists": false,
+    "jac_valid_receipt_result_complete_triples": 120,
+    "jac_expected_case_set_matches": true,
+    "jac_manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+    "jac_stage_marker": {
+      "complete": true,
+      "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+      "condition": "jac_anchor",
+      "gpu_binding": {
+        "egl_index": 3,
+        "cuda_ordinal": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "mapping": [
+          {
+            "egl_index": 0,
+            "cuda_ordinal": 3,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+          },
+          {
+            "egl_index": 1,
+            "cuda_ordinal": 2,
+            "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+          },
+          {
+            "egl_index": 2,
+            "cuda_ordinal": 1,
+            "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202"
+          },
+          {
+            "egl_index": 3,
+            "cuda_ordinal": 0,
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+          }
+        ]
+      },
+      "completed_after": 120,
+      "new_episodes": 120,
+      "closed_loop_wall_s": 1390.692189861089,
+      "total_wall_s": 1497.7847684174776,
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery/jac_anchor/runs/discovery_shard00of01_1793783749619082188"
+    },
+    "jac_stage_marker_sha256": "c3d5ecf9398c176a1d25317128307b1f48aef1ad901102e5023a057a9e2632b1",
+    "jac_receipt_inventory_sha256": "8e55a51735e438dff05287d7b8ad8d063d33a9f2b13ef55905fbdf13f84e5d7a",
+    "limit_zh": "只读确认当前原120有效case产物存在；无历史before-hash基线，不声称完成历史逐字节差异比对。空lock是预检资源元数据，不算新case。"
+  },
+  "reoccupation_evidence": {
+    "saved_status_query_finished_at": 1793848175.8872702,
+    "saved_status_sha256": "fb5f3e2e9699a0b452662484aade397f68f5c7ebc35d0125c81b1c65010f76b1",
+    "assigned_gpu_saved_status": {
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "host_compute_pids": [
+        1637374
+      ],
+      "state": "busy",
+      "idle": false
+    },
+    "saved_snapshot_after_controller_failed_seconds": 516.7066621780396,
+    "supported_zh": [
+      "event39在run目录创建约5秒后记录GPU1为18424MiB/1compute。",
+      "event41回到1MiB/0compute，event42在本controller已失败约16.52秒后再次18424MiB/1compute，后续snapshot仍busy，支持其他持续占用者存在。"
+    ],
+    "limits_zh": [
+      "事件只保存状态转换，不保存当时host PID；后续status的host PID不能反推event39身份。",
+      "server未健康且未保存server PID/NSpid，不把nvidia-smi host PID当容器PID。",
+      "未直接拍到本server与外部进程同时占显存，外部竞争与OOM一致但不是严格重叠因果证明。"
+    ]
+  },
+  "supervisor_recovery": {
+    "has_resume_cli_flag": false,
+    "source": "preparations/ease_insights_20261103/vlm_local_search_v1/supervisor.py",
+    "source_lines": {
+      "needs_attention_terminal": 23,
+      "terminal_advance_noop": 159,
+      "technical_failure_gate": 148,
+      "attention_set": 230,
+      "CLI": 238,
+      "terminal_exit": 268
+    },
+    "original_cli_argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-u",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.supervisor",
+      "--root",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--confirmation-root",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+      "--queue",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+      "--scheduler-output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+      "--scheduler-pid",
+      "335208",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/supervisor",
+      "--poll-seconds",
+      "10",
+      "--launch"
+    ],
+    "cwd": "/root/nfs/embodied/benchmark",
+    "command_executed": false,
+    "preconditions_zh": [
+      "root先完成reviewed queue.lock CAS、归档旧state并采用waiting_discovery proposed state。",
+      "root fresh确认旧supervisor已退出、现有CPU gates保留；本报告未查这些进程。",
+      "保留旧failed state记录，仅queue更换新Full ID；直接原样--launch且state仍needs_attention会保持terminal退出。"
+    ]
+  },
+  "recovery_package_review": {
+    "path": "results/ease_insights_20261103/process_recovery/local_search_startup_20261105_retry2_25s",
+    "result": "PASS",
+    "queue_changed_row_indexes": [
+      30
+    ],
+    "only_queue_changes": [
+      "Full job id",
+      "Full outer gate argv[6] status-file"
+    ],
+    "science_inner_argv_unchanged": true,
+    "only_state_changes": [
+      "phase needs_attention -> waiting_discovery",
+      "remove error",
+      "remove attention_unix"
+    ],
+    "all_other_state_evidence_retained": true,
+    "old_failed_record_retained_and_identical": true,
+    "sha256": {
+      "queue.before.json": "c5b2cbef42cceca177bc64510b58d9cc0646ed1a60257d172012cf491d7e5fd5",
+      "queue.proposed.json": "c894050cabff06a640e83bd6e78a78382f1bb23228277e19cd4a6a90e6874cbf",
+      "supervisor.state.before.json": "b9ac55b196f8fe784027e471dce50a53fb39146c94e16db0ea5ec6995682e411",
+      "supervisor.state.proposed.json": "7cada449c813385cc46f01865c47c166de8db7fa9589eec170991c83d770dd06"
+    },
+    "cas_snapshot_note_zh": "独立review读取那一刻current queue/state均匹配before；root随后动作可能改变current，这些hash只绑定审阅包。",
+    "process_proof_scope_zh": "sup437956 absent、gates592976/593473 CPU-only由root提供并负责fresh重验；本报告未独立查进程。"
+  },
+  "source_sha256": {
+    "preparations/ease_insights_20261103/vlm_local_search_v1/supervisor.py": "b232b49ebffe280a39e3e6438adbd600281ac6bf25b2613e14c2e07209dcaaeb",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/server.py": "4c7ddfbaa1f6d310fcde9f5f1f1ae54234e99dd651004cca18a331dbd13fc8a6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b"
+  }
+}

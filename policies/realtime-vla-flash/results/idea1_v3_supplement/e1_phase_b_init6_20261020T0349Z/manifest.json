@@ -1,0 +1,4502 @@
+{
+  "schema": 1,
+  "stage": "E1",
+  "revision": "supplement-e1-router-v1",
+  "shards": 2,
+  "conditions": [
+    {
+      "id": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      }
+    },
+    {
+      "id": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      }
+    },
+    {
+      "id": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      }
+    },
+    {
+      "id": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ca36fb6cfd538e6b3dd05f65394f8847808690a08d3b4794a92b07001e4de4b3",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "39edce3e0914e413b9b889fb3887c73ccc8fbc9a7cabe170e081e9e394959689",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "df2e7f7cbc63ad7e75e3cd7f12b8aa02f212dfd5a8010df9c95089866acab4ac",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2d6d8a66e5c062ea62c60b7bd1ee1ba0a9f8a4324df3127fbb36f7f71055cde2",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6e8a52c47a90aa2be56755f85233f171fed994730eb17256110cf16b4b545780",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7f3ce29735cca47aa1bcdde44efe02c1bad0851740eea7a6d50a54c1b9bde1d2",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7ee8729d5834bb2cc631a1672037ab82b6191b487bdfc59f3ff9b771271fe5e1",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "de6b1c185809eef36c135fbd7653cc0c15cc4409199b6e64114710e80734625c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "706b847d978e82087a861193492468a1775d6a635a076def207a227d8bd1725f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c954784dff8345f506716c5a58b627c0eda92007b68b714ac28b0b690c67a8ea",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2c2a275391d22c81da2adf59661dd45a7adac33f13e5091cb0833e49a9472ee8",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f2124c3b6e993b405a5afb2a73796819e2978e0b2415f0570d57451825ef5c33",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "538f78daf970ff02e871d8a78faa5b9c8c2d0b4c1994cefa799841f893868be3",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "de7c9b8084b981df1835438afbfd21cd421add9167893c9f3878719f95ff7253",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f60c311260bd44725d3b4b1561bd8b1cc5901aed5267e28896a3b86497865312",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6a6a0337ffa626cf38773c849ad1f90bc1259b4ecc99fbd93f9a8e24af107f89",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "37b8017a5d10428225c02050461604add5202b93cda62b01ad8a350a48b159f7",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c4cd599c5d453b036402bb933aa935738c5348d9497fd16e534d6fcb5f1d1ec2",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7e3d0fb5f8f9465c759c8bdbf90b7438fc7095ad48f5a826f9ad611f30a432c3",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1b578c43c8c9704870f7835828bfd2fd3a88e18aa7e8f6d761005c9bb631addd",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "110de2032e0ffd3203325e905dd30fd24dc2d4509503edc89fe0ffb51a709040",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "57ff349da98a9ff88e630d43da25c44b1b3199d5204d8c940024d93a79232062",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5193092ec38d9fed8320223d4310aaa443c7baeae3558b0e6239271cc6ca82ed",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5d5a5cb5a8a57a2e4046206c81ea2c688845a844fa27a17a157bf5922c76fbe3",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "fe014df3f1970fe37afcd79cd2948a2c4a1329dadf7721fbe80bc78c6df3153c",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "024b11cf1c1dacaed9ca78b949a5629104d8bc5a91b857aa4a4203640552d727",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a99c06b63b800e1409ced0e6a6db433d79f034a5fa2b3086ac8940373e937099",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "48d78a5f1d8c76cc5d799783211edf598569f6d76e877bccc21ec763fe793563",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "43f499aba550fe26ba34a7f40fe8f8d0becf7e4d4db27f65fcb164e80f2ab85b",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "98353cb3515b903d2566f167203cc928cd7779b5fe5e60a3c07bc8ba1ded6b66",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "430a33c88ee216b14d17d51a689c51d321829e2413226900b0c1580d1b48deb9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "448b08cdd7a1a803e7ae2f070d40501d7ae96a2743c10f4ff531ab8256c45926",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "3a3c619a95dc626556823a0dfa1d9a6d7729c1890a969b8f13e31f17e9af1e4c",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "886e1baa509dc7743ca3e8640afae6657c131e274b82a9b66310845e8f8e28eb",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1ffb76483004555bf6eefb00dc7d3eabf8f2758b209120300aeb6e44a6af1675",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "218037fe8546fb49c3018529d61d479f162718e67caab597ff3e9de7b17b5fea",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "43f32fb702c6e6094eb757b829c80883094b270e56219bc1d798e394ff95f1cf",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7a1890f0b3e16b746220a6d00ff432f1a4784d8d827cfa179472b0e174606709",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f1c77021cb539ef574e018214edbdafc0468127ea8d80efa7727f34ca555ad9d",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7d22e398f112905af6c6d1f2db748fbb046f8aeb9f59bccb126a6603728f6b29",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "8dbbdc975d455925382c23d5b06d0f3cef57b394d2d631a19aec343a7c174e20",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "504318b0700ab72ecc079d99318e47735904648fbc3e5198acb66d7a4f99f21c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c75daef86ca2f3c5719c3d9b0e5f964f3cfd3dd004251fdb07fecc6d70fc72c9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "0924428252a4ded3b93a6b72f5641d95e2d1cd2b312e0a05de8637fe96905ddc",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e6121ec6c748e93e176aa25316594d650f26b516ce9cc115998569ba448347f9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2b484bff75222217f77c8feb62b6bd97879a2e1bc4a2e82ca095edda5748a578",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c3d32b3b6506661a71080666c3827c447f60f6106abb0eb31785690559a91603",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "393220d6e66b14ad1b8b6ece60263c5a2836c7b9c62b7c34f96c99880a5f0850",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2ee5b87c8fb4fdc73af942f425c1c939083b9d41a5c412fa49f0d337c23d1f89",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4ae4d066190033f210027ee00f1b12a8db932eb969f510778840c90bb236184b",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "17a17fa7a2abf92f189d9343ecf1e5922cc38ce7ea0e0aed31f91f269fbb1ef4",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d58cfac5fcdcbf58a1e2c2bdbfb169d4d3f9437515e5b915fc0461130179c358",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2a69f00d1adf25e54c5d85b822d0543d612d764b68697c3f1229fbddf63af7ea",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6af567aa7c6e61848d32a24ccac9a2aa01226388d87eb9d14d6e807ed791ad77",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "bb614ff4751d3499819f3c1d089d07dfb85280f978dca5ecfd853e43030cd61a",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5dec18b3d8cc873e8c5e3a92f8e16d5253097b1fa2af8654f490c4dfe2f3f5c4",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4d210d806b4a83f596d2cb10e74bb080187f1a91f7a2380d5b70e5942b8ec2c0",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ab59e932c01745af48c5dbc0984c95628ef9fcd656f90ee6a46ad8d6cc11746f",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1c01c1ecad1baa2d9e04db0590910318114880ef31430f038103d59b1e4d5e1f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f995ac9dab042a88c5320cb9a4b4b015129eacf7eefd84b7f32e92341328e0f9",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "3b99c78cf83ed683f7df5f6bfd5846fae17410407f3a2cb49e0fc6909a1e5aac",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "27ee121b6a741942f222860d32d4d8ba1bfddee4a91ec40882c97339812075b8",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "04925046e505fd84303b40cd646d6e1a2fbaa98eb8a5159cc9a80715fe6751cd",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "9f2f49ccb981884389689fef7fd8efa5c0b4c0ded31046be7f5cf944cb37f8dd",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "adbf6558f4774dab90566ca01f727736e43ccf06e2c309ae449f7919bc7215e0",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e5e347b95792383bb2e2f177d85050ec6d6e6de2fce6654c4c133d67bc2611a9",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7ec3c1c51675e571c4110dfc4677fbcae2d838992fd8e31e24057cb5c7e450cd",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "3b8aaac543788bc7d8e90d6a7502903a0532f990d8781c4893f045090bde76fa",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4053da328696d1cf792464251acaf840e32fdb94ee3f115c11c72f8f9f670eec",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6eeddfd1f6aa0f167e63216d60496ee2f5644c8479bc9a64e88d207ce7850e43",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d7aad79e459b1b46b0c50756db39e58304ce90c49522873afcc21c151a71c389",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "560298f9f4721b0938fcd782ab73c821b5fda0bcfed8b58282e860bf6eb6af96",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "bef7ac8a107ea6f359f11d8d59399b26e1f6d3f0c41710d99f8e83aa70649b8e",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6626e9c0043baabedfc7de4f0da38fb3a31c6f341b56c34e89ad555056e11bfe",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "144d99de391c488170ea5d8297b22081c5c08192e3726b8c97a33ce03d5bd32e",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4de909f43976771929a9d624d2c420e0ad6372bb041c79d83836a3c3a0f04f15",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "b90a42005a8fdf25ec4076f05f643f8acb06a681845d6a6587acda775c7a466b",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a68e4cd0b6d199f8312324c33abceadf7f53fcd99bcc32c0ce6ce3b9b8a1b76a",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ed91bbfee57979d7341ad3e7dd94e3f2069963e656dfc92362d26c2f88c56582",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.1_P2_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ae646124b222f1e0bd37760929191539db753a354acca41e1a6fa2414c4e3cf3",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a904fddb751793e59caf8499d1278409ad78c8d9d6ad773c93aabdd2a5ad8bb7",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c795c53ab800ae1d1ec61fc874f57b7099aa490981859134fdceb4edd5cf63a3",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "13e51084fde92f223fef2d5d78b1219473eab2ee5618a581df897bc573cfcf99",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "88204a2976f820fe9c213b85374da96b12b4f685c2505672d49f01ba7b4f4910",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "8b741dff8ac9d684753e395c5e07a80b0e08a855f1e9918eda5c62957abfa35e",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "45fe4724d96e5a70ef0b4bd2f85aa43592f8de727c3d24f178035e834af0a3db",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "844b6dbc33c0b86ca61e236cdf22effbe2104d6585ac69686851077abff93551",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "85b7099aaa300e43f7f76380fb0326a11a8fbaf2a636daac22d6b4ba87264149",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "71ab4c46e93a215b092e136ae26ad8d5e616687b380b245747b3fb6bd73d7253",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6ce5e9f7bc1e5abe59f2ffdc3403eb735afdb32b13f61ea29fda691edbdb6c2c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "413d39091ada1f21c6a8918cc61c1c4f058954234ac1d119d956349efb635d90",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "9acaf920fd1512bbd5b61100732a1aa01ace48eb16a7b5588eed4c208e41ea63",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "9a697dd5ce437f6b390888bcda3d5563f9bbe2251ffc1158329d67b2004a3fee",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a0b66becb71cc187f2c26690867e5cabf57ab599e628ad765abb892629ea6a65",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4ddc416e7a528f9084d2aea3a5a375ddbb185efd47f3d4b12237951776de856d",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "b16aed378cb9c22b5757d19b107f2f826c8a88c3760712c5f5f9010eca36fc74",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "740f47ab3a38c0a90c7dbfc70c322761848ca4fbb4fbf248e451e7844227b8ce",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "3bc1fff05291fb641814c3cedb629eaa136e550654f9c2735582426decd0f063",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6dca9b7009890b351a27ef4575f6e0c53977d77f0c2a120e4d89ba9620a84710",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e241ee4c16582f9105e2fe2bc89fd45abff25fa26dfc3ed5063c22482e9048a0",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f9c8c2a5192eb5bc3c9ee617f9a25f641627c8b58f066d599e9b957a57cf455f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "158bfdbf10b6fdb0ac06ee30037899ed802f483fb837f02c728201c2acc1e3fa",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "336e691197d975712a61311669a4b72f9d881081df4015f19176141df9fbb2cf",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1003bdaa33ba6d9476d9a95286959eff3d39da1f09c7967dcf48ce1b285c0afe",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "b24ebede05385236ca7f3f54afb52158bd3ad21a169b04c025e6003dbfe5c2a9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "af4f0b3eaa516eee4b8f623fdce5e61b282dfe58b68b01f175a5b456a47e2919",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "76706391c0508b087721fe24d747f33029283410ae9349c5d5da3c18a80c8f50",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "44307ba6300cf7e9a33cbe36e6bfb328add6149817566c3e0b07b68ea3c60a08",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1309447f2c6c86b5af0e3f50886f046d2e9358172cf1e916501480d454af1823",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "fc891fc4dd5a9077816e8a2b28b48dca63d3101e2925d74c5a500af3ad08a3c7",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ca1b83164510af37c7f477e92742716a0709b0f30d54678f29c0a9677ec26153",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "da5ed0adf81084611fa6726493278c873a87d862f68722783276c7096aa36178",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "cc67bdd44ac3c6c3d2414497abffb7e501b7f4d04aad0c6fda5c7a391e3fc4ee",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d11eac72af2d9b8df002e6db91e9b8ed099180d5dbd51203bbf22cb259384fc1",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a41b762582665d1526c568da8a20f4c57692692dd5c3f77083bc22feb9597914",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "983f3294487d7553541991b50bb8cfccffc54c943439676ccea29fc1856ee9cf",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1cd76c946a4f8f213e5d599b402161a1247ad51d9183c78d7d0fde093280b00b",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d6ebc1cb587e325875212f3f585b71bfefa74eace70c6abca05109c9734c1e19",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "52afa5536e010bccc0e949b5a3fd2e66726e7abc43fbc4682817c0e4c87de375",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Gconfirmed_disagreement_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "confirmed_disagreement",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2f85d1b0b0190edffe308d5cb038305896a0fe3b6cdaa5de93d5f4b91556f8b0",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "62579bca1c03813613656abc987bf781cf913cf0cfc4d37872986e11ad4f6b6f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "04aea43a0c8f7259260638050874bd15ebe486c0e35d372789e904d0c5785a7e",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "8d8043ce80a5a3381a78b349642afb2542eebc413cd986d58bb4128fdae7b474",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "324a0594e65a0435497ebe62b8c49aafbc4d5964fac0b9b8e3a334bcecd90590",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "973c5778725578b7b273de85c140b186d860b3557eb05e201c09d3ac54d12247",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5be87591245846238c9203e953ceab76de06e2be3d68e352315a4ac29decfe75",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e197ce656a0081fb18881f76ba81227d90afbacaa2816697f5483795a787646e",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "bbe1d7a8a6b50c32bf2860e0b4731296cdab0f874610587cdec505bd467ed030",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "9b8c3ade72c31f04d9ddd620b82ea3680d84b3da6b3fcc1faa0af47cf91cc9f9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "06444cc78360e8ea92a76839c4243ff73429e6b789b2f456738a6f3cc4d93d97",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "aeb03d5e18b830f10ce1a687c920bcc78c79b21828535c60350a86df1fb3ccd9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f32104c8e18fc48b179abd35fe4b37d9c5ea109553bde6f27f9fde74f9ed88b6",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ad8b0c1978077a4412750b1492e2180007fb8206a8a1bc445cf53e2bce691598",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "2b7b2a7b47ef8850889e7b45869de6b5a20eef2e731ca6cb72b96aceb0143578",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "974e5e08bcd45f369788778812eaa27cf46afa670518d3599fd8cd73ccefa0d6",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "cf1a07d6b55559130777350b1cef00664f6a161f145c2fd8da742a5a3e364b6a",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d7ae0a1fdf29d9e20e424f8c6e4e6eb4df1a03a516ff9eb142e5a6e406780de1",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "32adc574cd8953433a1c72b0d20e49d46f6c236bd5cca0ea4625aa0e91397897",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "0b39f2ae1025baf186fc1195fb30e82e6c7cd19009814d2737f090aef4ac805b",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_object",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "07d4743ad71807204ca1d10be730f7f095f4e42284bc2717f111dafbc6147c6a",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "43feff99b455675e435d9156769403397290f2f1e2ca0798fb5a6364c5ea8548",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "dcdc0ff2b4bd9d6eaba011614ea693901b08a833f809d8ded6792dcd739b4da3",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c3dc65a1e0cd24035b914bb9e0d5a61f54c8523ddfcfc8ec20b1aad43c0e7d84",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "857421dc8eb193645fe23346a2173d3c6d5e533abe97f109abc4ac21afe17851",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4efca86d4e99fef587ba021c37a99c49d8397aefd9ab1c596a7277ef75031cfb",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5f31ea8178d122d9f9899c684311cfedd6f6b672501d77c130ff0ab3a573ae10",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "c8ff7f90b8c13cf29b3fbe235288d5b30bf01d058165990c41efac252cdc70ea",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "a92e813992d36ee633aa2fd21bf1791856101d536b2e089a32d3586907a3eff5",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "65b36bb7124026d4ab57429fc2b90d47bb80cddfc3a354732908becaf89e2663",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "06f83bb92a1e385cde7118190a94667f8b8b4f590c14ac17bc8072c53b9b91f7",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "0f9c0722461602692fa3d4b80878556ac7afcd8928f7fe47de2627daecf47808",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "8028b1e150369dd0fcae0b026f7691fc9fb1fdefa0b866557f6f69a3fbc7603b",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "3915721318b8d538a165e1fe470500443e08a7c5b436f34dcb66d739d375ed21",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f6660300795fdafd0afd31139a6ce83e6a5726a610a6c9e1929e481eb10ceda8",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e7388ca3be88ef9b527b475a17f6706c754d0a709b2d884d384c978f10729c7b",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "06dc6818b5e0b659d32f80baa574fcdf1862a421ba99d40edea3ccacef5a8435",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "fc595c0d2577b2eb4a0dec8b607ba9f7b61b234f4a0044edbba26d9fb012cca9",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "cab639f361c142981968379329abc5d3d9de359b62fe149dccf9188ebd12ea65",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "d61bf18eb072e230eb821cf92cfb2b53de423085871f8df4ac171f2f1679203d",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E1",
+      "condition": "supp_E1_D2_tau0.4_P4_Goff_rejectD10",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.4,
+        "period": 4,
+        "gripper_rule": "off",
+        "reject_steps": 10,
+        "revision": "supplement-e1-router-v1",
+        "safety_revision": "qk-row-bounds-v1",
+        "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "suite": "libero_10",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "0b232e37431b09684b27e6b3074c8981dec38d4663e23839c33dfbb358acdc56",
+      "owner": 1,
+      "execution": "A"
+    }
+  ],
+  "no_pi0_baseline": true,
+  "selection_receipt": {
+    "rule": "highest success then cost; independent >=80% fastest then success; tau/P tie-break none last",
+    "ranked": [
+      {
+        "condition": "E1_D2_tau0.1_P2",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.1,
+          "period": 2
+        },
+        "successes": 37,
+        "episodes": 40,
+        "actual_actions": 6813,
+        "policy_ms": 188692.7259415388,
+        "policy_ms_per_action": 27.69598208447656,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_main_init6_20261019T1514Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "E1_D2_tau0.15_P2",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.15,
+          "period": 2
+        },
+        "successes": 37,
+        "episodes": 40,
+        "actual_actions": 6794,
+        "policy_ms": 210202.45845243335,
+        "policy_ms_per_action": 30.93942573630164,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_main_init6_20261019T1514Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.1_P4_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.1,
+          "period": 4,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 35,
+        "episodes": 40,
+        "actual_actions": 7374,
+        "policy_ms": 194955.70307597518,
+        "policy_ms_per_action": 26.438256451854514,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.4_P4_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.4,
+          "period": 4,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 33,
+        "episodes": 40,
+        "actual_actions": 7945,
+        "policy_ms": 204504.89216297865,
+        "policy_ms_per_action": 25.74007453278523,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.25_P4_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.25,
+          "period": 4,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 33,
+        "episodes": 40,
+        "actual_actions": 7945,
+        "policy_ms": 210312.78217211366,
+        "policy_ms_per_action": 26.4710864911408,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.4_P8_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.4,
+          "period": 8,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 31,
+        "episodes": 40,
+        "actual_actions": 8131,
+        "policy_ms": 206804.37129735947,
+        "policy_ms_per_action": 25.434063620386112,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.25_P8_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.25,
+          "period": 8,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 31,
+        "episodes": 40,
+        "actual_actions": 8148,
+        "policy_ms": 209989.29411917925,
+        "policy_ms_per_action": 25.771881948843795,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.1_P8_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.1,
+          "period": 8,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 31,
+        "episodes": 40,
+        "actual_actions": 8177,
+        "policy_ms": 251650.5784764886,
+        "policy_ms_per_action": 30.77541622557033,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.4_Pnone_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.4,
+          "period": null,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 30,
+        "episodes": 40,
+        "actual_actions": 8689,
+        "policy_ms": 222772.9027159512,
+        "policy_ms_per_action": 25.638497262740383,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.25_Pnone_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.25,
+          "period": null,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 30,
+        "episodes": 40,
+        "actual_actions": 8689,
+        "policy_ms": 237855.09522631764,
+        "policy_ms_per_action": 27.374277273140482,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      }
+    ],
+    "parents": [
+      {
+        "condition": "E1_D2_tau0.1_P2",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.1,
+          "period": 2
+        },
+        "successes": 37,
+        "episodes": 40,
+        "actual_actions": 6813,
+        "policy_ms": 188692.7259415388,
+        "policy_ms_per_action": 27.69598208447656,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_main_init6_20261019T1514Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      },
+      {
+        "condition": "supp_E1_D2_tau0.4_P4_Gstrict_rejectD10",
+        "config": {
+          "experiment": "E1",
+          "draft_steps": 2,
+          "tau": 0.4,
+          "period": 4,
+          "gripper_rule": "strict",
+          "reject_steps": 10,
+          "revision": "supplement-e1-router-v1",
+          "safety_revision": "qk-row-bounds-v1",
+          "safety_sha256": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7"
+        },
+        "successes": 33,
+        "episodes": 40,
+        "actual_actions": 7945,
+        "policy_ms": 204504.89216297865,
+        "policy_ms_per_action": 25.74007453278523,
+        "source_attempts": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+        ],
+        "filter": "init6 only; P0/calibration excluded"
+      }
+    ],
+    "selection_denominator": "common init6 forty only, never old200"
+  },
+  "source_attempts": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_phase_a_init6_20261020T0302Z"
+  ],
+  "reference_attempts": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_main_init6_20261019T1514Z"
+  ]
+}

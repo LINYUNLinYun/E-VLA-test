@@ -1,0 +1,564 @@
+{
+  "status": "pass",
+  "time": 1793926756.4377613,
+  "manifest_hash": "2a5e3e4bb5603580db294eb6dcaf4b74963f5d80bd147c53d6efde798f646823",
+  "known_controls": 8,
+  "independent_quality_cases": 0,
+  "GPU_original_vision_parity_passed": true,
+  "partial_vision_oracle_passed": true,
+  "actual_vision_layers_and_B1_passed": true,
+  "old_Full_bridge_passed": true,
+  "old_DenseD2_bridge_passed": true,
+  "all_eight_controls_bitwise_identical": true,
+  "joint_cost_qualification": {
+    "median_same_service_ratios": {
+      "full_d10": 1.0,
+      "dense_d2": 1.5081219957619987,
+      "agent_deep_d2": 1.4143246424140699,
+      "wrist_deep_d2": 1.3922160638569907
+    },
+    "pair_cost_factor": 1.0158801346508168,
+    "pair_matched": true,
+    "completed_services": 4,
+    "pass": true
+  },
+  "cases": [
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "e61a65bbd55bc212b24c17d40884f2cdd5094149de507d9eb108d96c961885f2",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "74daf92a2ab6cb2343662b1c256d419fbaa939dd469e2f048484dd3ecdbe52d8",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "0fa61f27f4d15ad71c0d7c32d67c94a4f4d059aeb1dfb5066de0cbd333ac1f1a",
+      "success": true,
+      "predictions": 22
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "f9205442a5c50cb4568cf600030691de53f856616ec7211cb06751155b61bc68",
+      "success": true,
+      "predictions": 57
+    },
+    {
+      "condition": "dense_d2",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "b9bd27b29debce690c9f18a4a53d783a5c9b2d5a15e8d0fb81b201c5514338da",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "dense_d2",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "0a3ca834b868997d13f65976d579af2ad6b46ec39ffa7afd924c7c31b0c69777",
+      "success": true,
+      "predictions": 26
+    },
+    {
+      "condition": "dense_d2",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "cc177f980b04b59d002e7c66c6659967f83a0a7cc6b32d42b0c4337e797cd36e",
+      "success": true,
+      "predictions": 23
+    },
+    {
+      "condition": "dense_d2",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "1340a594b441906ea9b52e2de77e6addd10a3c8cd90b61c2d879e763a57a705e",
+      "success": true,
+      "predictions": 62
+    }
+  ],
+  "services": [
+    {
+      "condition": "dense_d2",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/runs/calibration_shard00of02_1793926610477244923",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 324,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "eed8653fcdeaec2be16150638e6b2d3e8cb9269185fc5ce91c8d4b87a17efbef",
+        "identity.json": "20daa2ee81a65aa39a8d1c94797334f860ceb613e0d82116ad986592b78fdf1b",
+        "protocol.json": "2a83645508c9c050415e82fb5212b117339c10dc45ca189a40f25af395a20f83",
+        "gate.json": "4a1572ff0eaeccca87bdd37695eedfd39ebce0b9ccc3315b731188fdb09579e4",
+        "cross_service.json": "0801e2d584faea9eef997c5b30485cc56d4c3bfd3ef76fefcec94e5694488f85",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "d3b890cb08eb2df5f282d559629595ca916139a2be843ce0ac16ea1ddc3e2fd3"
+      }
+    },
+    {
+      "condition": "dense_d2",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/runs/calibration_shard01of02_1793926619784561745",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 324,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "3c9db6c7e0b35c08234660ba6b0e1a909d1ac9846d50a08359a7bdb7ddb54f4b",
+        "identity.json": "9b6ed01025496848f9f5f2f049e935a914dc5fe2e678f3494b0ddaf9a2bdbdce",
+        "protocol.json": "e3e85d0e4bc8056d19d8a787e95b675b515e2a18f5e8e828f750192bedae4668",
+        "gate.json": "4a1572ff0eaeccca87bdd37695eedfd39ebce0b9ccc3315b731188fdb09579e4",
+        "cross_service.json": "0801e2d584faea9eef997c5b30485cc56d4c3bfd3ef76fefcec94e5694488f85",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "a14594e662e5a6aef90b207ac51156740ea91dfa16ab4c2dd22b25ca58397901"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/runs/calibration_shard00of02_1793926479647107547",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 324,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "f48ede627cc1d42d09086bd3a9f77368204dff8dbe40e52fe5c07c59d98b5d2e",
+        "identity.json": "0ed438eb47f072ca26c6e917ddbacfb255e1e26bccc98561c0c19c94acac5fc1",
+        "protocol.json": "cf171ba2494d137051b3abf21a1db6f3650f533bc1689e81f0dfea88e63f66b7",
+        "gate.json": "4a1572ff0eaeccca87bdd37695eedfd39ebce0b9ccc3315b731188fdb09579e4",
+        "cross_service.json": "0801e2d584faea9eef997c5b30485cc56d4c3bfd3ef76fefcec94e5694488f85",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "9724498513a07e5768679345e8d7ee94a9170c33ad7d2bd57ff4fabdbefd6690"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/runs/calibration_shard01of02_1793926479637556928",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 324,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "8ebe81b3e6a136c7662e747d579db44e18f800314745f2b75aa152831d63d2b3",
+        "identity.json": "9293574e72ecb5ca0fd99f7407e48408a69ddb7ccd266872fda8dc33bb8ffd2f",
+        "protocol.json": "09da02069df63adcf73124d41fcd883d47cdaed7291da276be93bf6a85cd583f",
+        "gate.json": "4a1572ff0eaeccca87bdd37695eedfd39ebce0b9ccc3315b731188fdb09579e4",
+        "cross_service.json": "0801e2d584faea9eef997c5b30485cc56d4c3bfd3ef76fefcec94e5694488f85",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "a70145c334f50a09f201cbdc5990ef4aaa680b985a8641826b917d1c5bd5f39a"
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "condition": "full_d10",
+      "source_condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d",
+        "success": true,
+        "predictions": 17
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "e61a65bbd55bc212b24c17d40884f2cdd5094149de507d9eb108d96c961885f2"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "full_d10",
+      "source_condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0",
+        "success": true,
+        "predictions": 27
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "74daf92a2ab6cb2343662b1c256d419fbaa939dd469e2f048484dd3ecdbe52d8"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "full_d10",
+      "source_condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b",
+        "success": true,
+        "predictions": 22
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "0fa61f27f4d15ad71c0d7c32d67c94a4f4d059aeb1dfb5066de0cbd333ac1f1a"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "full_d10",
+      "source_condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1",
+        "success": true,
+        "predictions": 57
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "f9205442a5c50cb4568cf600030691de53f856616ec7211cb06751155b61bc68"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "dense_d2",
+      "source_condition": "dense_d2",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "dense_d2",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/dense_d2/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "ae4c00aed79390566158995e281a76365e9ccb02abb6ac5d5e9b59f13d0dc25b",
+        "success": true,
+        "predictions": 17
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b9bd27b29debce690c9f18a4a53d783a5c9b2d5a15e8d0fb81b201c5514338da"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "dense_d2",
+      "source_condition": "dense_d2",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "dense_d2",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/dense_d2/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ea37dc500993b3f6f1e3370dc6025550389bf5148adb5d71a8e9b0298658acb2",
+        "success": true,
+        "predictions": 26
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "0a3ca834b868997d13f65976d579af2ad6b46ec39ffa7afd924c7c31b0c69777"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "dense_d2",
+      "source_condition": "dense_d2",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "dense_d2",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/dense_d2/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "6ad44846e151ca4c0de9341b9869fcb9d359f4394a444ae45ceb83ca128e5338",
+        "success": true,
+        "predictions": 23
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "cc177f980b04b59d002e7c66c6659967f83a0a7cc6b32d42b0c4337e797cd36e"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "condition": "dense_d2",
+      "source_condition": "dense_d2",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_case": {
+        "condition": "dense_d2",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/dense_d2/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "0ac9c3559b29489af84d742cbbd2bb32c8b230346a917a8f9df9c2723af887cb",
+        "success": true,
+        "predictions": 62
+      },
+      "known_control": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "1340a594b441906ea9b52e2de77e6addd10a3c8cd90b61c2d879e763a57a705e"
+      },
+      "bitwise_actions_and_raw_identical": true
+    }
+  ],
+  "cost_calls_validated": 1152,
+  "cost_records": {
+    "valid_services": 4,
+    "services": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/runs/calibration_shard00of02_1793926610477244923/fixed_input_cost.json",
+        "sha256": "d3b890cb08eb2df5f282d559629595ca916139a2be843ce0ac16ea1ddc3e2fd3",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 318.92042700201273,
+          "dense_d2": 213.86033738963306,
+          "agent_deep_d2": 225.4891605116427,
+          "wrist_deep_d2": 227.22926829010248
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "dense_d2": 1.4912556058535074,
+          "agent_deep_d2": 1.414349258644501,
+          "wrist_deep_d2": 1.4035182589016155
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 106.30680900067091,
+            "fast": null
+          },
+          "dense_d2": {
+            "full": 108.72375383041799,
+            "fast": 52.568291779607534
+          },
+          "agent_deep_d2": {
+            "full": 105.56392278522253,
+            "fast": 59.96261886321008
+          },
+          "wrist_deep_d2": {
+            "full": 106.58643650822341,
+            "fast": 60.321415890939534
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/dense_d2/runs/calibration_shard01of02_1793926619784561745/fixed_input_cost.json",
+        "sha256": "a14594e662e5a6aef90b207ac51156740ea91dfa16ab4c2dd22b25ca58397901",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 354.0361400227994,
+          "dense_d2": 225.52045108750463,
+          "agent_deep_d2": 233.0973595380783,
+          "wrist_deep_d2": 257.0205172523856
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "dense_d2": 1.569862681258247,
+          "agent_deep_d2": 1.5188337642450418,
+          "wrist_deep_d2": 1.3774625613843412
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 118.01204667426646,
+            "fast": null
+          },
+          "dense_d2": {
+            "full": 114.64027455076575,
+            "fast": 55.440088268369436
+          },
+          "agent_deep_d2": {
+            "full": 107.74761624634266,
+            "fast": 62.674871645867825
+          },
+          "wrist_deep_d2": {
+            "full": 122.28057533502579,
+            "fast": 67.36997095867991
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/runs/calibration_shard00of02_1793926479647107547/fixed_input_cost.json",
+        "sha256": "9724498513a07e5768679345e8d7ee94a9170c33ad7d2bd57ff4fabdbefd6690",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 312.8924483899027,
+          "dense_d2": 206.62199379876256,
+          "agent_deep_d2": 221.2348459288478,
+          "wrist_deep_d2": 224.65535253286362
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "dense_d2": 1.5143230526303082,
+          "agent_deep_d2": 1.4143000261836387,
+          "wrist_deep_d2": 1.3927664970463207
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 104.29748279663424,
+            "fast": null
+          },
+          "dense_d2": {
+            "full": 104.55623967573047,
+            "fast": 51.03287706151605
+          },
+          "agent_deep_d2": {
+            "full": 103.23440004140139,
+            "fast": 59.0002229437232
+          },
+          "wrist_deep_d2": {
+            "full": 105.89007358066738,
+            "fast": 59.38263947609812
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/calibration/full_d10/runs/calibration_shard01of02_1793926479637556928/fixed_input_cost.json",
+        "sha256": "a70145c334f50a09f201cbdc5990ef4aaa680b985a8641826b917d1c5bd5f39a",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 315.7188515178859,
+          "dense_d2": 210.21003392525017,
+          "agent_deep_d2": 228.1874567270279,
+          "wrist_deep_d2": 226.8640142865479
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "dense_d2": 1.501920938893689,
+          "agent_deep_d2": 1.3835942432873012,
+          "wrist_deep_d2": 1.391665630667661
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 105.23961717262864,
+            "fast": null
+          },
+          "dense_d2": {
+            "full": 106.14152834750712,
+            "fast": 52.03425278887153
+          },
+          "agent_deep_d2": {
+            "full": 106.66021122597158,
+            "fast": 60.76362275052816
+          },
+          "wrist_deep_d2": {
+            "full": 105.4722024127841,
+            "fast": 60.6959059368819
+          }
+        }
+      }
+    ],
+    "excluded_or_pending": [],
+    "scope": "Actual native fixed-input policy cost including both fresh camera pipelines;not closed-loop speed or quality"
+  },
+  "source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v4/calibration_audit.py",
+    "sha256": "933b1c50a8d0be20dd8018d0e3bc6e442df089e78f3456ad9385be42c0621175"
+  },
+  "scope": "Finite real vision/numerical/dispatch gates,knownnativecontrolbridgeandfixed-inputcosts only;no newtask-category preference or independent quality evidence"
+}

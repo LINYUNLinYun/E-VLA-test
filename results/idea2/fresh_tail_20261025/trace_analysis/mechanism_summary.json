@@ -1,0 +1,720 @@
+{
+  "status": "mechanism_profiles_complete",
+  "rows": [
+    {
+      "condition": "historical_sm32_tail0",
+      "source": "/root/nfs/embodied/benchmark/results/idea2/progressive_kv_20261025/trace_analysis/gpu0_sm32/report.json",
+      "source_sha256": "7ceef78276622bc5eaed2401ff65bcd6909e66518302ed5b42f41b6f8f855de3",
+      "historical_reference_only": true,
+      "requests": 8,
+      "AE_x_VLM_ms": 37.4840495,
+      "AE_x_nextVision_ms": 0.0,
+      "AE_end_minus_VLM_end_kernel_ms": -0.848405,
+      "AE_end_before_VLM_requests": 8,
+      "AE_busy_ms": 37.758188875,
+      "AE_envelope_ms": 38.240714499999996,
+      "VLM_busy_ms": 43.756483875,
+      "VLM_envelope_ms": 44.08794075,
+      "runtime_event_wait_span_ms": null,
+      "resource_verified": true,
+      "eligible_sm_pair": [
+        32,
+        96
+      ],
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "fresh_tail_ready_ordering": null,
+      "observed_frontiers": [
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          17
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          17
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          17
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          17
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          17
+        ]
+      ]
+    },
+    {
+      "condition": "fresh_sm32_tail1",
+      "source": "/root/nfs/embodied/benchmark/results/idea2/fresh_tail_20261025/trace_analysis/sm32_tail1/report.json",
+      "source_sha256": "ab17689e29b4f414362c0ef6013478ae832c39e600710afbae6ac566a6d91789",
+      "historical_reference_only": false,
+      "requests": 8,
+      "AE_x_VLM_ms": 35.990646125,
+      "AE_x_nextVision_ms": 0.0,
+      "AE_end_minus_VLM_end_kernel_ms": 1.283786875,
+      "AE_end_before_VLM_requests": 0,
+      "AE_busy_ms": 37.515007749999995,
+      "AE_envelope_ms": 40.47398825,
+      "VLM_busy_ms": 43.866046,
+      "VLM_envelope_ms": 44.189694125,
+      "runtime_event_wait_span_ms": {
+        "n": 8,
+        "mean": 2.4883000254631042,
+        "p50": 2.1146719455718994,
+        "p95": 3.2038320779800413,
+        "min": 2.0463359355926514,
+        "max": 3.204224109649658
+      },
+      "resource_verified": true,
+      "eligible_sm_pair": [
+        32,
+        96
+      ],
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "fresh_tail_ready_ordering": {
+        "passed": true,
+        "rows": [
+          {
+            "request": 1,
+            "request_id": "286011116486656:host_nvtx_row=2826",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 168664268,
+            "first_mandatory_fresh_snapshot_start_ns": 168671628,
+            "fresh_snapshot_starts_ns": [
+              168671628
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00736
+            ],
+            "passed": true
+          },
+          {
+            "request": 2,
+            "request_id": "286011116486656:host_nvtx_row=2829",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 247157421,
+            "first_mandatory_fresh_snapshot_start_ns": 247164749,
+            "fresh_snapshot_starts_ns": [
+              247164749
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007328
+            ],
+            "passed": true
+          },
+          {
+            "request": 3,
+            "request_id": "286011116486656:host_nvtx_row=2832",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 326383941,
+            "first_mandatory_fresh_snapshot_start_ns": 326391621,
+            "fresh_snapshot_starts_ns": [
+              326391621
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00768
+            ],
+            "passed": true
+          },
+          {
+            "request": 4,
+            "request_id": "286011116486656:host_nvtx_row=2835",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 402869410,
+            "first_mandatory_fresh_snapshot_start_ns": 402876641,
+            "fresh_snapshot_starts_ns": [
+              402876641
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007231
+            ],
+            "passed": true
+          },
+          {
+            "request": 5,
+            "request_id": "286011116486656:host_nvtx_row=2838",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 473646859,
+            "first_mandatory_fresh_snapshot_start_ns": 473653931,
+            "fresh_snapshot_starts_ns": [
+              473653931
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007072
+            ],
+            "passed": true
+          },
+          {
+            "request": 6,
+            "request_id": "286011116486656:host_nvtx_row=2841",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 545261161,
+            "first_mandatory_fresh_snapshot_start_ns": 545267081,
+            "fresh_snapshot_starts_ns": [
+              545267081
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00592
+            ],
+            "passed": true
+          },
+          {
+            "request": 7,
+            "request_id": "286011116486656:host_nvtx_row=2844",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 620494326,
+            "first_mandatory_fresh_snapshot_start_ns": 620501046,
+            "fresh_snapshot_starts_ns": [
+              620501046
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00672
+            ],
+            "passed": true
+          },
+          {
+            "request": 8,
+            "request_id": "286011116486656:host_nvtx_row=2847",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 1,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 694964846,
+            "first_mandatory_fresh_snapshot_start_ns": 694970382,
+            "fresh_snapshot_starts_ns": [
+              694970382
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.005536
+            ],
+            "passed": true
+          }
+        ],
+        "definition": "Ordered single-stream D10 snapshot kernels checked against final current-VLM release-publish kernel end. This corroborates readiness; it does not assign a timestamp or duration to the captured Event wait."
+      },
+      "observed_frontiers": [
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          18
+        ]
+      ]
+    },
+    {
+      "condition": "fresh_sm32_tail2",
+      "source": "/root/nfs/embodied/benchmark/results/idea2/fresh_tail_20261025/trace_analysis/sm32_tail2/report.json",
+      "source_sha256": "6dafdb8752860946935151bcb0a606c49cf57ffc7bbce5c2e586db4fe662f5e5",
+      "historical_reference_only": false,
+      "requests": 8,
+      "AE_x_VLM_ms": 32.224145375,
+      "AE_x_nextVision_ms": 0.0,
+      "AE_end_minus_VLM_end_kernel_ms": 4.39047725,
+      "AE_end_before_VLM_requests": 0,
+      "AE_busy_ms": 36.795076625,
+      "AE_envelope_ms": 43.42692175,
+      "VLM_busy_ms": 43.70750325,
+      "VLM_envelope_ms": 44.0355135,
+      "runtime_event_wait_span_ms": {
+        "n": 8,
+        "mean": 6.161135971546173,
+        "p50": 5.7060160636901855,
+        "p95": 7.023070383071899,
+        "min": 5.582399845123291,
+        "max": 7.026463985443115
+      },
+      "resource_verified": true,
+      "eligible_sm_pair": [
+        32,
+        96
+      ],
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "fresh_tail_ready_ordering": {
+        "passed": true,
+        "rows": [
+          {
+            "request": 1,
+            "request_id": "286031500804096:host_nvtx_row=2826",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 180157912,
+            "first_mandatory_fresh_snapshot_start_ns": 180165432,
+            "fresh_snapshot_starts_ns": [
+              180165432,
+              183863524
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00752,
+              3.705612
+            ],
+            "passed": true
+          },
+          {
+            "request": 2,
+            "request_id": "286031500804096:host_nvtx_row=2829",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 262756609,
+            "first_mandatory_fresh_snapshot_start_ns": 262765057,
+            "fresh_snapshot_starts_ns": [
+              262765057,
+              266469772
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.008448,
+              3.713163
+            ],
+            "passed": true
+          },
+          {
+            "request": 3,
+            "request_id": "286031500804096:host_nvtx_row=2832",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 344869969,
+            "first_mandatory_fresh_snapshot_start_ns": 344877969,
+            "fresh_snapshot_starts_ns": [
+              344877969,
+              348572988
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.008,
+              3.703019
+            ],
+            "passed": true
+          },
+          {
+            "request": 4,
+            "request_id": "286031500804096:host_nvtx_row=2835",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 422257092,
+            "first_mandatory_fresh_snapshot_start_ns": 422264356,
+            "fresh_snapshot_starts_ns": [
+              422264356,
+              425702131
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007264,
+              3.445039
+            ],
+            "passed": true
+          },
+          {
+            "request": 5,
+            "request_id": "286031500804096:host_nvtx_row=2838",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 499947506,
+            "first_mandatory_fresh_snapshot_start_ns": 499954642,
+            "fresh_snapshot_starts_ns": [
+              499954642,
+              503402369
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007136,
+              3.454863
+            ],
+            "passed": true
+          },
+          {
+            "request": 6,
+            "request_id": "286031500804096:host_nvtx_row=2841",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 579632037,
+            "first_mandatory_fresh_snapshot_start_ns": 579639556,
+            "fresh_snapshot_starts_ns": [
+              579639556,
+              583077236
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.007519,
+              3.445199
+            ],
+            "passed": true
+          },
+          {
+            "request": 7,
+            "request_id": "286031500804096:host_nvtx_row=2844",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 659064058,
+            "first_mandatory_fresh_snapshot_start_ns": 659071738,
+            "fresh_snapshot_starts_ns": [
+              659071738,
+              662517545
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.00768,
+              3.453487
+            ],
+            "passed": true
+          },
+          {
+            "request": 8,
+            "request_id": "286031500804096:host_nvtx_row=2847",
+            "publish_kernels": 18,
+            "snapshot_kernels": 10,
+            "fresh_tail_steps": 2,
+            "available": true,
+            "last_KV_publish_kernel_end_ns": 742923057,
+            "first_mandatory_fresh_snapshot_start_ns": 742929265,
+            "fresh_snapshot_starts_ns": [
+              742929265,
+              746372160
+            ],
+            "fresh_snapshot_after_last_publish_ms": [
+              0.006208,
+              3.449103
+            ],
+            "passed": true
+          }
+        ],
+        "definition": "Ordered single-stream D10 snapshot kernels checked against final current-VLM release-publish kernel end. This corroborates readiness; it does not assign a timestamp or duration to the captured Event wait."
+      },
+      "observed_frontiers": [
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ],
+        [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          18,
+          18
+        ]
+      ]
+    }
+  ],
+  "gpu_launched": false,
+  "boundaries": [
+    "Overlap is actual GPU kernel intersection; Host NVTX ends never clip background work.",
+    "Fresh-tail wait duration is the profile runtime CUDA Event span, not nsys kernel-gap inference.",
+    "Historical tail0 is mechanism-only; these profiles do not rank formal steady-state latency.",
+    "Green SM counts are resource eligibility, not measured occupancy.",
+    "Numerical/quality conclusions belong to matched-schedule gates and paired/closed-loop runs, not these traces."
+  ],
+  "fresh_tail_conclusions": [
+    "Both current profiles passed: 8 requests each, all mandatory fresh rounds have frontier 18, and their snapshot kernels start after the final current-VLM release-publish kernel.",
+    "First mandatory fresh snapshot starts 5.536\u20137.680 microseconds after final publish for tail1 and 6.208\u20138.448 microseconds for tail2. This proves kernel ordering, not the exact Event wait timestamp.",
+    "AE uses kernel greenContextId 2, stream 15, 32 eligible SMs; VLM and Vision use greenContextId 3, stream 18, 96 eligible SMs. Both retain ordinary contextId 1. Eligibility is not occupancy.",
+    "No CUDA Event device timestamps are exported in either trace. Wait means 2.4883/6.1611 ms come solely from matching profile runtime fresh_tail_wait_ms.",
+    "Actual AE\u00d7currentVLM intersections are 35.9906/32.2241 ms; AE\u00d7nextVision is zero in these profiles. AE final kernels finish 1.2838/4.3905 ms after VLM final kernels.",
+    "The mandatory tail is all-current KV, not a wait for the final VLM FFN; earlier rounds still use their recorded progressive schedules.",
+    "Both new profiles are GPU3. Old tail0 is GPU0 history only and must not provide a cross-GPU absolute latency comparison."
+  ],
+  "profile_vs_formal": [
+    {
+      "tail": 1,
+      "formal_source": "results/idea2/fresh_tail_20261025/formal_gpu3_sm32_tail1/result.json",
+      "profile_AE_submit_mean_ms": 20.4720227047801,
+      "formal_AE_submit_mean_ms": 0.42196872644126415,
+      "profile_next_encoder_start_after_vlm_mean_ms": 18.187936101640975,
+      "formal_next_encoder_start_after_vlm_mean_ms": 0.0016983771398996136,
+      "note": "Profile changes Host submission and lookahead timing. These profile intervals diagnose mechanics, not steady-state latency or formal anomaly cause."
+    },
+    {
+      "tail": 2,
+      "formal_source": "results/idea2/fresh_tail_20261025/formal_gpu3_sm32_tail2/result.json",
+      "profile_AE_submit_mean_ms": 18.3169674128294,
+      "formal_AE_submit_mean_ms": 0.4139134008437395,
+      "profile_next_encoder_start_after_vlm_mean_ms": 23.581760134015763,
+      "formal_next_encoder_start_after_vlm_mean_ms": 0.0015462399960961192,
+      "note": "Profile changes Host submission and lookahead timing. These profile intervals diagnose mechanics, not steady-state latency or formal anomaly cause."
+    }
+  ],
+  "host_anomaly_notes": "results/idea2/fresh_tail_20261025/host_anomaly_notes.json",
+  "host_anomaly_status": "reproduced_order_or_history_sensitive_preparation_path",
+  "host_anomaly_boundary": "Tail1 performance is unstable across observed configurations/history: one forward normal, two fresh-process reverse slow. Keep the 100-pair formal repeat in formal results and list the 20-pair diagnostic separately. Do not assert order causality; no additional bottleneck fix is in this round."
+}

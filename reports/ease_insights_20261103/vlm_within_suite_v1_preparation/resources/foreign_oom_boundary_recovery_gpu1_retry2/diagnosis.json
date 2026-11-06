@@ -1,0 +1,48 @@
+{
+  "schema": "ease-newscience-zero-case-startup-recovery-v1",
+  "time": 1793872080.0483136,
+  "zero_case_startup_failure_verified": true,
+  "scientific_manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+  "failed_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_goal/runs/discovery_shard00of01_1793871823640879249",
+  "failed_run_files": [
+    "server.log",
+    "identity.json"
+  ],
+  "server_log_sha256": "e40a5a01e1f0e2f7b1e1acfb7b708e712a0a9e5344c7e26f2a96b15b715151e3",
+  "identity_sha256": "c23c8c8829fb0fec0587e43c835432609fb52033c5ddf1f07ce4234f3805f618",
+  "local_goal_receipts_at_diagnosis": 0,
+  "failed_borrower_pid": 780012,
+  "failed_borrower_start_ticks": "2625107683",
+  "completed_conditions_preserved": {
+    "full_d10": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/full_d10/discovery_shard00of01_complete.json",
+      "sha256": "42e640e06f02cb2a8152bcdc3fd369c13aa18d00ff12d9245aa37bafdf8a5d76",
+      "cases": 72
+    },
+    "jac_anchor": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/jac_anchor/discovery_shard00of01_complete.json",
+      "sha256": "ee98ba79802ca06fccb4cbde1c02ea6b83abce464fd3b8f8d83c47d249ad1c1a",
+      "cases": 72
+    },
+    "local_spatial": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_spatial/discovery_shard00of01_complete.json",
+      "sha256": "61ee55b0cb97dbb86a508f69e46b2eda81bfac109f89e0af58329defb13667be",
+      "cases": 72
+    }
+  },
+  "gpu1_cached_after_own_exit": {
+    "index": 1,
+    "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+    "memory_mib": 18423.0,
+    "compute_process_count": 2,
+    "host_compute_pids": [
+      1975205,
+      2937955
+    ],
+    "state": "busy",
+    "idle": false
+  },
+  "cached_query_finished_at": 1793872079.914259,
+  "diagnosis": "SecondGPU1resume passed15savailability but foreigncompute appeared againwhilemodelinitializing. CUDAOOM beforehealth/protocol/worker/cases, zero scientificrecordsfromattempt. Originalholdersretained; validfailuresnotrerun.",
+  "recovery": "Same reviewedone-shot15s/2s/9sample gate; exactoriginalargv, one-shotintent, no model/sourcechanges orsignals."
+}

@@ -1,0 +1,1735 @@
+{
+  "schema": 1,
+  "stage": "E2",
+  "search": "pi05_skip_n_D2",
+  "revision": "pi05-d2-search-native-scan-v1",
+  "shards": 4,
+  "conditions": [
+    {
+      "id": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "03c8299035b5611e2c77df1df28867da3e534c1d2b7ec1a3305df13adb90c6d8",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "bb6ec57911f1969ed7cfa3f25b63dc6864bd4924a54026660d7d718604a17c33",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4749bd5b6909d2cc5a4ec1d235e6ec4a9547674722a9125afd4a0665274436f1",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "0ccf3e90ef905e72022f783c9a9fbb8df6a60b1be33b6eb54e425ce570796ff5",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "7a8605a2d20e3e89ae4fb1bbb37479120434a015b0fa6b357dd9e27c4ddfe090",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "11f443935d52808c628c4e0b2374956cf3d4b2df9679494c3ea5dc65d2d734c8",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f44f60d386bf68f45db5eb3a73a28604ffa77ec3fa622a68511388d09578d413",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "b105006e53475110be4411d5465c21b61d60d138a4079a502118a5f828091355",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "dd569e16697a7cd431172156af7603e7adfeb1837cfabefb8496f1e58da04465",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "190878123c8c4bfe7c27693313996b13a7e6e4cf51b93ed2a150d5402824956c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "04272c3047555c1062ac712497b5354de38542ca79a9e1e0b09492833b11cf97",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "61d0cba23e19e671e197f4c4f997c6a544c490f7c13dde0d5975a424245969cc",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "628f421527855b9b15f747a1e6f75796bbc19e094229f9620595cfc098aec357",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "20461192b49d61b2ed2680a71319a195527e43473c210b914dc1fe26fa3c7e2c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "efd3bd2a8d3692be3adc289e676f89e36b48c114db91341be4afc9224ae601a1",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "daa812b12eae1ae19f9409ab64072811a52dbeda5a822814358c00e638130e3e",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "afcd9098a2eacfb9f13be88d4fea03972183b79d613db3b5f60634715ac9a491",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "234a24c09aa38c3cdf6407beb2248c77ab6c824bc4ebd49c45fd95da166aaab3",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "4cda71c830f1eca88a03e28df17ee43716678a2baea52fab6e3906855264d66c",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_object",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "e21244dd0fa0533c6897a28898cb2474d1b9c149a32d1fdb893e328aaa858662",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5f466a8bb66d432ac8aed906d71f50157a8b3e1c3f48b60981501856c89f29aa",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ee889ed95c1a65e798ae97498cb8091392b808ea81e3c15170fb678b82b222a0",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "26f6d0e06ddcd7750bbacd5d54c923a51ed385e99d16a2bb066a45cf7c265aec",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "9324ae4e2957b9fcb9a85f821e15900f66e63aec34da03c714da156cc1a0d6bb",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ef4c7fba0978377aece64346ce8ebc6111e9b3767d04bcf45302bd95b0e0011c",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f24ea57ed930b0403a95b73e37bf7080611a683f0f9611ddbe9249a416940a33",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "78d505545411f3831c3cd746ad7d901f04e8f5c3189a017e830205c236cfda8d",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "28c27c0392b292ac18dc3c49f78c1f37f8b710814712eac07576f65bb9a9e147",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "1226b04f07833639f3b2504834617d23fc8e6ac95948751bb42c4523d91f044f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "f80aaaa1e97a074b872d12196d69454ea2853a51e52be236a2b20a5250c4ab01",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 0,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "835c69c372cfbbc0cfd309a0398fcc6dbfa7bfd1d2ab6ff15fa3b0447faf42e4",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 1,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "447d22e84ad5d8f94305a5ab64e385e365de3b88d3ed1aeb5af2c7016dfd845f",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 2,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "dae193dbf6555e3bff08a87486a9c3d69d656eb6490ee1acb2d1cfb89a18a59f",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 3,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5816344c2be4bdfa48e5c54e4405a0fbabb1f982736d86a18cac6acb2405e773",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 4,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "44a2c38d984e33af47dec3ea725dfc7cc0e458effccfe8e6fe46f86945e63825",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 5,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "77ee435fe505f8e97850e1a10db68ef17ffeece935741e0953fff1ee43cfdccf",
+      "owner": 3,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 6,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "5830a16669303e901cf8c956ff3c84f6cffe6b11dfcc489c1f7ffb606a3d03c1",
+      "owner": 0,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 7,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "6a0034aafe1f1595058e58acb9076d65577ae28e303dec1c679041926367186c",
+      "owner": 1,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 8,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "ddf42f9b1411599723f4eea5daf68e2b91cb1006059fd97ae2041d0573b112b1",
+      "owner": 2,
+      "execution": "A"
+    },
+    {
+      "experiment": "E2",
+      "condition": "pi05D2_n7_adaptive",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n7_adaptive",
+        "skip": [
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "checkpoint": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+        "config": "pi05_libero",
+        "native_H": 10,
+        "D": 2,
+        "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+      },
+      "suite": "libero_10",
+      "task": 9,
+      "init": 6,
+      "seed_rule": "idea1-v22/1701 suite/task/init/replan",
+      "key": "63c39037f2af2b3d0425050e73e364f7a7856d6361f28a2c99f88c3edf4b8027",
+      "owner": 3,
+      "execution": "A"
+    }
+  ],
+  "quality_threshold": {
+    "overall": 0.65,
+    "per_suite_gate": false
+  },
+  "created_reference": "FullD2 new quality; old FullD10 quality only reused",
+  "screen_limit_conditions": 20,
+  "source_attempts": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_pi05_d2_search/pi05_d2_init6_screen_20261020T1340Z",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_pi05_d2_search/pi05_d2_followup_init6_20261020T0544Z"
+  ],
+  "odd_decision": {
+    "parent": {
+      "condition": "pi05D2_n6b",
+      "config": {
+        "experiment": "E2",
+        "model": "pi05",
+        "mask": "n6b",
+        "skip": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18
+        ],
+        "denoise_steps": 2,
+        "denoise_nodes": [
+          1.0,
+          0.5,
+          0.0
+        ],
+        "H": 10,
+        "R": 5,
+        "revision": "pi05-d2-search-native-scan-v1"
+      },
+      "successes": 33,
+      "episodes": 40,
+      "actual_actions": 7893,
+      "policy_ms": 340507.3880851269,
+      "policy_ms_per_action": 43.14042671799403,
+      "source_attempts": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_pi05_d2_search/pi05_d2_followup_init6_20261020T0544Z"
+      ],
+      "filter": "init6 only; P0/calibration excluded"
+    },
+    "extra_layer": 4,
+    "name": "n7_adaptive",
+    "skip": [
+      3,
+      4,
+      6,
+      9,
+      12,
+      15,
+      18
+    ]
+  },
+  "search_conditions_including_sources": 20
+}

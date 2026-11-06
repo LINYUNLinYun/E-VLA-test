@@ -1,0 +1,25 @@
+{
+  "status": "paused_for_confirmed_initial_gripper_pairing_defect",
+  "time_utc_minute": "2026-10-22 11:56 UTC",
+  "actor": "root",
+  "scientific_manifest_hash": "feafefc7474f5eb30d9a866f47d91f72a5b9a5c5d67fd990e1c79b3822e5a148",
+  "signals_sent": [
+    {"pid": 3383399, "role": "owned_native_watch_v2", "signal": "SIGSTOP", "observed_after": "Ts"},
+    {"pid": 3393371, "role": "owned_native_evaluation_v2", "signal": "SIGSTOP", "observed_after": "T"}
+  ],
+  "model_pid_not_signalled": 3392365,
+  "libero_plus_unaffected": true,
+  "evidence": {
+    "sequence_index": 1,
+    "full_initial_observation": "episodes/seq0001/full_d10/attempt000/initial_native_observation.npz",
+    "v14_initial_observation": "episodes/seq0001/v14_d10/attempt000/initial_native_observation.npz",
+    "robot_obs_first14_bitwise_equal": true,
+    "full_stored_gripper_action": 1.0,
+    "v14_stored_gripper_action": -1.0,
+    "robot_reset_source": "calvin/calvin_env/calvin_env/robot/robot.py:143",
+    "defect": "Native robot.reset resets joints and opening width but does not synchronize persistent gripper_action; the selected sign state input can inherit the previous condition's final command."
+  },
+  "result_policy": "Preserve all existing artifacts. Do not mix these v2 conditions into corrected paired formal estimates or selectively reuse by observed success.",
+  "required_next_gate": "Versioned physical controller sign synchronization at independent sequence reset, fresh actual observation, adversarial previous-sign reset tests, frozen new implementation and manifest before restart. No reset between chained subtasks.",
+  "owner_notified": "/root/v32_e2_residual"
+}

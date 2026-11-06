@@ -1,0 +1,43 @@
+{
+  "status": "CPU_orchestration_preparation_only",
+  "time": 1793927825.4456046,
+  "CPU_tests": 8,
+  "source_files": {
+    "reports/ease_insights_20261103/prefix_kv_preparation_v5/backend.py": "bb9575afaf24605512667716203167ebb90e22fda534fcf339bee3636bafd768",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v5/common.py": "07f69dcd7aca342196cd91c6fc183137773789b6bd41bd9d8d5dc278db032dd0",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v5/policy.py": "5165e48d4089a7f8717f88fc25b6e47293de04a22d6ce68f6083564f7bdbfd96",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v5/test_integration.py": "027dd4d1030a97378371fb834c831cb26e6b0628d0e7d3c6b690f16caeb064fd"
+  },
+  "prior_preparations": [
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v2/preparation.json",
+      "sha256": "5a542b706864ae67472755ab48bbc6d465e096ca8efbf0a2b09dbf6cd081a0fc"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v3/preparation.json",
+      "sha256": "96ba6055992aa7fdce94ab2728f2ff70ebe8d5b16cdf5fb5d171cf64227411f5"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v4/preparation.json",
+      "sha256": "badeb557d95811ec682cf8d8b1d56a33ac6c03933a8686dd1c264c3462025bf1"
+    }
+  ],
+  "actual_sampler_contract": {
+    "path": "preparations/idea1_v2_2/pi0_adapter.py",
+    "sha256": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "checks": "sample uses context.seq,copies immutable contextK/V into active prefix storage,passes context.seq to each decoder helper;no decoder RoPE regeneration in sample"
+  },
+  "prefix_choices": [
+    "all",
+    "center_columns",
+    "checkerboard"
+  ],
+  "vision": "Both full fresh native27-layer cameras;VLM18prefill",
+  "AE": "18layers,FullD10/FastD2,Full+2Fastcadence",
+  "packing_included_in_policy_wall": true,
+  "reference_full_storage_masked_attention": true,
+  "GPU_numerical_passed": false,
+  "policy_or_service_launched": false,
+  "scientific_manifest_created": false,
+  "new_quality_cases": 0
+}

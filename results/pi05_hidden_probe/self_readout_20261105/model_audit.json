@@ -1,0 +1,31 @@
+{
+  "backend": "hf-paligemma",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224",
+  "depth": 18,
+  "width": 2048,
+  "vocab_size": 257216,
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "transformers": "4.53.2",
+  "torch": "2.7.1+cu126",
+  "runtime": "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime",
+  "code_sha256": {
+    "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime/transformers/models/gemma/modeling_gemma.py": "bf651117fa9fc681438966cc31fa35792291908da23e0f99b691579c94e97189",
+    "/root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime/transformers/models/paligemma/modeling_paligemma.py": "34863cbb15195bd3f4aa086f19220d3c9e64bf6097a0b7636ca1c655d311ef2a"
+  },
+  "weight_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "tokenizer_sha256": "1ab1724071709fc886d11caeb764e027f77eda0f38089608f027b2ccf40077ff",
+  "layer_convention": "0=Gemma-scaled embeddings; k=full block residual before final norm",
+  "input_contract": "agent, wrist, masked zero camera; native HF preprocessing; exact prompt/BOS",
+  "position_ids": "1-indexed cumulative valid positions (native PaliGemma convention)",
+  "attention": "bidirectional fixed prefix; causal answers; full recomputation each step",
+  "mapping": "identity; no pooling, normalization, or trained alignment",
+  "generation": "private patched-prefill KV cache; standard greedy causal answer decoding",
+  "generation_implementation_sha256": "4c50ed1e87d53e84d6ef2e9c3f3079b70f4b2e969f92c6b5cea2788902903b80",
+  "candidate_scoring": "reference full recomputation, unchanged"
+}

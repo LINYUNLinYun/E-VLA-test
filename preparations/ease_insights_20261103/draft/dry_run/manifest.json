@@ -1,0 +1,280 @@
+{
+  "protocol": {
+    "H": 50,
+    "R": 12,
+    "settling": 10,
+    "environment_seed": 7,
+    "noise_seed": 7,
+    "denoise_steps": 10,
+    "tau_radius": 0.15,
+    "periodic_full_every_n_draft_rounds": 2,
+    "config": "pi0_libero",
+    "resize_size": 224,
+    "environment_resolution": 256,
+    "max_steps": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "noise_rule": "SHA256(ease-insights-v1|7|suite|task|init|replan), first 8 little-endian bytes; numpy default_rng standard_normal float32 cast",
+    "normalization": "fixed converted/base/assets; shared pi0_libero action/state transformations"
+  },
+  "source_suite": "libero_goal",
+  "mode": "flash",
+  "target_suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "init_id": 20
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "init_id": 20
+    }
+  ],
+  "gpu": null,
+  "gpu_ordinal": null,
+  "gpu_uuid": null,
+  "base_checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+  "draft_checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/draft_triton.pkl",
+  "server_cmd": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/server.py",
+    "--mode",
+    "flash",
+    "--source-suite",
+    "libero_goal",
+    "--artifacts",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/dry_run/artifacts",
+    "--output",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/dry_run",
+    "--port",
+    "39441"
+  ],
+  "client_cmd": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/examples/libero/.venv/bin/python",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/client.py",
+    "--mode",
+    "flash",
+    "--source-suite",
+    "libero_goal",
+    "--cases",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/dry_run/cases.json",
+    "--output",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/dry_run",
+    "--port",
+    "39441"
+  ],
+  "scheduler_owns_allocation": true,
+  "pure_draft_semantics": "native FLASH head, no verify/fallback/initial Full; native input/output transforms",
+  "code_files": [
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/common.py",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/server.py",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/client.py",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py"
+  ],
+  "code_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/common.py": "68d0100dca2f36a52356b53adeeb2b24e4abe45ca061228baf47e6da2a3f28b4",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/server.py": "091f14da7fda7b515c2669f444a25f8787068917709208c3bc5e35f2c83f5ac6",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/client.py": "0dfab02f211709f7547bc76a38289db57a67891262d54de57491acf2247c013c",
+    "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py": "4abea4d6af1caded4e100f1a174ea2a3d8bb3db2a51b8831e2e4d33a3aed0f50"
+  }
+}

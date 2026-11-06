@@ -1,0 +1,170 @@
+{
+  "original": {
+    "kernel_count": 64555,
+    "matched_launches": 64555,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 70.75202900000001,
+    "mean_overlap_ms": 0.001344,
+    "overlap_fraction": 1.899592165759656e-05,
+    "modules": {
+      "ae": {
+        "kernel_count": 10590,
+        "kernel_busy_ms": 31.34714675,
+        "gpu_envelope_ms": 424.96938375
+      },
+      "prefill": {
+        "kernel_count": 2308,
+        "kernel_busy_ms": 39.40622625,
+        "gpu_envelope_ms": 133.360393
+      }
+    },
+    "graph_launch_calls": 0,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "threaded_prefill_first": {
+    "kernel_count": 64555,
+    "matched_launches": 64555,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 69.14965724999999,
+    "mean_overlap_ms": 4.4314105,
+    "overlap_fraction": 0.06408434511799407,
+    "modules": {
+      "ae": {
+        "kernel_count": 10590,
+        "kernel_busy_ms": 33.6206185,
+        "gpu_envelope_ms": 368.20634175
+      },
+      "prefill": {
+        "kernel_count": 2308,
+        "kernel_busy_ms": 39.960449249999996,
+        "gpu_envelope_ms": 148.4211015
+      }
+    },
+    "graph_launch_calls": 0,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "graph_serial": {
+    "kernel_count": 63690,
+    "matched_launches": 63690,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 63.914514249999996,
+    "mean_overlap_ms": 0.0,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_count": 10416,
+        "kernel_busy_ms": 27.78888775,
+        "gpu_envelope_ms": 28.2999655
+      },
+      "prefill": {
+        "kernel_count": 2309,
+        "kernel_busy_ms": 36.125626499999996,
+        "gpu_envelope_ms": 37.141059999999996
+      }
+    },
+    "graph_launch_calls": 10,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "graph_ae_first": {
+    "kernel_count": 63690,
+    "matched_launches": 63690,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 57.61068725,
+    "mean_overlap_ms": 19.652434749999998,
+    "overlap_fraction": 0.34112481013668167,
+    "modules": {
+      "ae": {
+        "kernel_count": 10416,
+        "kernel_busy_ms": 35.19174625,
+        "gpu_envelope_ms": 57.8795195
+      },
+      "prefill": {
+        "kernel_count": 2309,
+        "kernel_busy_ms": 42.07137575,
+        "gpu_envelope_ms": 43.58169025
+      }
+    },
+    "graph_launch_calls": 10,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "graph_prefill_first": {
+    "kernel_count": 63690,
+    "matched_launches": 63690,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 62.63384475,
+    "mean_overlap_ms": 5.655582,
+    "overlap_fraction": 0.09029594179590898,
+    "modules": {
+      "ae": {
+        "kernel_count": 10416,
+        "kernel_busy_ms": 30.539012,
+        "gpu_envelope_ms": 45.6535025
+      },
+      "prefill": {
+        "kernel_count": 2309,
+        "kernel_busy_ms": 37.750414750000004,
+        "gpu_envelope_ms": 39.03312175
+      }
+    },
+    "graph_launch_calls": 10,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "graph_ae_first_high": {
+    "kernel_count": 63690,
+    "matched_launches": 63690,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 54.90971775,
+    "mean_overlap_ms": 32.3877215,
+    "overlap_fraction": 0.5898358765466427,
+    "modules": {
+      "ae": {
+        "kernel_count": 10416,
+        "kernel_busy_ms": 43.8434985,
+        "gpu_envelope_ms": 48.260211999999996
+      },
+      "prefill": {
+        "kernel_count": 2309,
+        "kernel_busy_ms": 43.45394075,
+        "gpu_envelope_ms": 44.96656025
+      }
+    },
+    "graph_launch_calls": 10,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  },
+  "graph_prefill_first_high": {
+    "kernel_count": 63690,
+    "matched_launches": 63690,
+    "unassigned_input_kernels": 65,
+    "samples": 4,
+    "mean_kernel_union_ms": 58.63656949999999,
+    "mean_overlap_ms": 22.23787675,
+    "overlap_fraction": 0.3792492797519474,
+    "modules": {
+      "ae": {
+        "kernel_count": 10416,
+        "kernel_busy_ms": 41.05505725,
+        "gpu_envelope_ms": 45.37300625
+      },
+      "prefill": {
+        "kernel_count": 2309,
+        "kernel_busy_ms": 39.819389,
+        "gpu_envelope_ms": 41.16296625
+      }
+    },
+    "graph_launch_calls": 10,
+    "capture_api_calls": 0,
+    "device_sync_calls": 0
+  }
+}

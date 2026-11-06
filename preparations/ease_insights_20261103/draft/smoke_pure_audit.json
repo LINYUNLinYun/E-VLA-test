@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "source_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_smoke/draft_spatial",
+  "paired_flash_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_smoke/flash_spatial",
+  "cases": [
+    {
+      "case": "libero_spatial_t00_i20",
+      "requests": 7,
+      "actions": 78,
+      "success": true,
+      "checks": {
+        "init_vector_hash_match": true,
+        "first_policy_obs_hash_match": true,
+        "input_matches_flash": true,
+        "noise_matches_flash": true,
+        "environment_matches_flash": true,
+        "no_full_or_verify": true,
+        "raw_and_decoded_finite": true,
+        "noise_not_used": true,
+        "executed_actions_match": true,
+        "action_count_match": true,
+        "request_count_match": true
+      }
+    },
+    {
+      "case": "libero_object_t00_i20",
+      "requests": 24,
+      "actions": 280,
+      "success": false,
+      "checks": {
+        "init_vector_hash_match": true,
+        "first_policy_obs_hash_match": true,
+        "input_matches_flash": true,
+        "noise_matches_flash": true,
+        "environment_matches_flash": true,
+        "no_full_or_verify": true,
+        "raw_and_decoded_finite": true,
+        "noise_not_used": true,
+        "executed_actions_match": true,
+        "action_count_match": true,
+        "request_count_match": true
+      }
+    },
+    {
+      "case": "libero_goal_t00_i20",
+      "requests": 25,
+      "actions": 300,
+      "success": false,
+      "checks": {
+        "init_vector_hash_match": true,
+        "first_policy_obs_hash_match": true,
+        "input_matches_flash": true,
+        "noise_matches_flash": true,
+        "environment_matches_flash": true,
+        "no_full_or_verify": true,
+        "raw_and_decoded_finite": true,
+        "noise_not_used": true,
+        "executed_actions_match": true,
+        "action_count_match": true,
+        "request_count_match": true
+      }
+    },
+    {
+      "case": "libero_10_t00_i20",
+      "requests": 44,
+      "actions": 520,
+      "success": false,
+      "checks": {
+        "init_vector_hash_match": true,
+        "first_policy_obs_hash_match": true,
+        "input_matches_flash": true,
+        "noise_matches_flash": true,
+        "environment_matches_flash": true,
+        "no_full_or_verify": true,
+        "raw_and_decoded_finite": true,
+        "noise_not_used": true,
+        "executed_actions_match": true,
+        "action_count_match": true,
+        "request_count_match": true
+      }
+    }
+  ],
+  "requests": 100,
+  "actions": 1178,
+  "runtime_file_hash_match": {
+    "common.py": true,
+    "server.py": true,
+    "client.py": true,
+    "run.py": true
+  }
+}

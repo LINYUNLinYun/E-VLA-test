@@ -1,0 +1,701 @@
+{
+  "model_id": "pi0",
+  "H": 50,
+  "R": 5,
+  "D": 10,
+  "depth": 18,
+  "CFG": null,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "attention": "native Triton",
+  "backend": "scripts.experiment10.backend.Backend / Triton Pi0Inference",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+  "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+  "provenance": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json",
+  "provenance_sha256": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+  "source_manifest": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/candidate_manifest.json",
+  "source_manifest_sha256": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+  "mask_variant": [
+    3,
+    4,
+    9,
+    11
+  ],
+  "cameras": [
+    "agentview",
+    "wrist"
+  ],
+  "state_used": true,
+  "image_rotation": 180,
+  "skip_semantics": "hidden-update bypass with original-index KV shells; action expert full18",
+  "checkpoint_assets": {
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json",
+      "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/manifest.json": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/manifest.json",
+      "sha256": "97ac3dd4adb606b34fb6f94614107394d74c4de6b92257b8be412fafa2a04d05"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/b56225b1437ccc55d2b077537cf504170e3b0a62.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/b56225b1437ccc55d2b077537cf504170e3b0a62.pt",
+      "sha256": "2c3881784c26c820b0bf168143f1b2360d4c91f61d89daf1a80c09e4da1de70e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/514ab96b41eade9f6bd220e01cd25cd12cde1866.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/514ab96b41eade9f6bd220e01cd25cd12cde1866.pt",
+      "sha256": "5af5f340046a7703d834bb4286411e48a7b47d304eecda39ef8dec08c77ffe89"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/e358b41e120fa654e37490f1896f7873969df670.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/e358b41e120fa654e37490f1896f7873969df670.pt",
+      "sha256": "9549192bc3437b055f530caa7510e0a49f0ebeea51a21e1e4be8631b691cee26"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/501409575145fc63dbf67ad43903ff51a4a7368e.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/501409575145fc63dbf67ad43903ff51a4a7368e.pt",
+      "sha256": "4398f72e430fe380deb14c36aa7615df5135842ce4331689324c5caebe08460c"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/66b50848fa167ad124a8dbc15021962b44e51bec.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/66b50848fa167ad124a8dbc15021962b44e51bec.pt",
+      "sha256": "fd467c3ffadbb2f50a55808132d3b6cd76bbfde306a3007ce7a38056ea97123d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/7d67776313da0763962cce5cafab95ceea3ba2c3.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/7d67776313da0763962cce5cafab95ceea3ba2c3.pt",
+      "sha256": "d97126f04df6eb58e520239068856130b2063d7b0a395fa4f90fc182aeeb90da"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/934ba39c9be3663db50e44e42a3efaf6fe2936b2.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/934ba39c9be3663db50e44e42a3efaf6fe2936b2.pt",
+      "sha256": "a70f261555e654699a084978ff706f75fdb4ca753031d16ae8a04909da01ac4c"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/dfbd02b8ad32ca69c037a99aaf1aa3cc0bae3489.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/dfbd02b8ad32ca69c037a99aaf1aa3cc0bae3489.pt",
+      "sha256": "67577cbe9c601de8f208aee3604140fed8a366b70415c558e5afb3c0feb55233"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/ac77216ac37f1eec7d2a42ed5327367b22a55fe3.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/ac77216ac37f1eec7d2a42ed5327367b22a55fe3.pt",
+      "sha256": "a4d763d2acada970ed26bbd4b3085f1d0db8b4e6c9d45a16adf04083b310335f"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/f1bf2aaec9562970890ac6195cf56d3c443500d9.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/f1bf2aaec9562970890ac6195cf56d3c443500d9.pt",
+      "sha256": "d28b3ad42c80d7966578bf8991e502b61c5341d69658f701a39f535d356a6a3d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/af606bb87ae314fc75faff8325b2ecf58dc19a30.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/af606bb87ae314fc75faff8325b2ecf58dc19a30.pt",
+      "sha256": "d380b5bf1d243c32459f06e73630285a2d5d09dd9d0677374b47444bfc54cd03"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/33b6ea03c59aa68dd86521250f875eea1e2183d4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/33b6ea03c59aa68dd86521250f875eea1e2183d4.pt",
+      "sha256": "140661acc542303ac421c1258d28c468381e28c763ccbc1d04a6fd760f14671a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/3e4f9914c76cf95d05f9dda3153833ec83fa2e2a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/3e4f9914c76cf95d05f9dda3153833ec83fa2e2a.pt",
+      "sha256": "05a9e119a18686152c2faa9efcaca6514bfff57485e8abecfa585c6918b8cdf8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/12d9f18010cfdb88b26aa7ab8943091a07f43aee.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/12d9f18010cfdb88b26aa7ab8943091a07f43aee.pt",
+      "sha256": "20aff29b8a0c13651b821b4548fbe6c28f92c539c3061ce83abb3caddeb13d2a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/f89d5c588073a540607a8280b55556231ce41822.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/f89d5c588073a540607a8280b55556231ce41822.pt",
+      "sha256": "8378e2e60c79d6b6aa2d1b7df5aa13617adb898a261d90db7bd098c5ed84ac50"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/73aca67c2e7965a91574593aa4637c7c8ea8eb63.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/73aca67c2e7965a91574593aa4637c7c8ea8eb63.pt",
+      "sha256": "e42158d528a44299f9f1bc3c072bd3cc47ff79fe1b9e302c180a1b0e66641600"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/5ce179ca522c5ce373edc8739d2628f5ae403704.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/5ce179ca522c5ce373edc8739d2628f5ae403704.pt",
+      "sha256": "c568f27d7242bfc335584b33f5b8cafc403bc5dc0a73f5248abfce13749fefee"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/c5ee53ff0098ca1fc90b9753ce10afd1cbeecfc2.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/c5ee53ff0098ca1fc90b9753ce10afd1cbeecfc2.pt",
+      "sha256": "f139eb19c608c8bdfbbf15a001eb2a4f310cc12cde8d215af27b752cc2252d5a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/78a2cd7ae5b3d2555e124172b10d81780ae3fff0.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/78a2cd7ae5b3d2555e124172b10d81780ae3fff0.pt",
+      "sha256": "2234ff6d691eb2a0ef8fef560f67adfd416bde71dd2be9de7bba7c733ca5084f"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/9afd8259f30a113cd2b54fcc517d362d582d9718.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/language_embeds/9afd8259f30a113cd2b54fcc517d362d582d9718.pt",
+      "sha256": "2fd8e94884d5ac07061860c09087327e9f9465df86902fd3379e2a974e08894b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/manifest.json": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/manifest.json",
+      "sha256": "392a5fb958108ebf5f02d6b007479508872a7274ac6c0d7e5acecb3daa416029"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/72c7bd65b07b7c0d00eb85c55064689265453b85.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/72c7bd65b07b7c0d00eb85c55064689265453b85.pt",
+      "sha256": "98bb8079d0cd11d7de07fde7eaf8a7dec6cf757c3dd8183e4f52266173aa3bee"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/8f6124aa4ba24585ea8d5bdc98c6d95ebd43b7fd.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/8f6124aa4ba24585ea8d5bdc98c6d95ebd43b7fd.pt",
+      "sha256": "61fd64571a29240c648d2a099b2ccd8d26859ff0da2561d935c45dd65629c205"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/0a5c36e9c62da9bda05182b8685906d061dcd2dd.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/0a5c36e9c62da9bda05182b8685906d061dcd2dd.pt",
+      "sha256": "5af340603e41551681b708769899886f5ba58eec3b43e58fadfbdedc8dd2008a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/807a35ef4df84f21d5f72cb4432393818d85da76.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/807a35ef4df84f21d5f72cb4432393818d85da76.pt",
+      "sha256": "f9c5bebb07fb6278ce275efa9a710631cf239864dc4129f0d29d0515030c86a1"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/2426992bc77a51bcd88adffed6d914dfa125c9ff.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/2426992bc77a51bcd88adffed6d914dfa125c9ff.pt",
+      "sha256": "be931b09938c962bcd0366fb7d887931422e064ed348be5110545dc6f6a873b4"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/9632663e4e9bd7c282cae9648c74131f8cd59357.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/9632663e4e9bd7c282cae9648c74131f8cd59357.pt",
+      "sha256": "a5471b5972817ac98bed392c6724d52d04eff1a4a92b95c7f2294ed97911e445"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/99570eeb13ba15610198ddfc0fb67d4afdd14d54.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/99570eeb13ba15610198ddfc0fb67d4afdd14d54.pt",
+      "sha256": "d712f04bc7ae0c7ef7c485991a7e2ed72b82a8d57ab84d760695693149f95d1b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/464884404760c32b2d6f3ab7231121d03fa7fe01.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/464884404760c32b2d6f3ab7231121d03fa7fe01.pt",
+      "sha256": "12a5fe2dd1058b987eae87ea72cd749699d17ad3fbeb1ca291a8047012d494e1"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/4d79be3914329489fc7c8e53670591709651eb9d.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/4d79be3914329489fc7c8e53670591709651eb9d.pt",
+      "sha256": "4ada87318d0a2e4493ee507ab22bc0241f233bd81b689eb127208c2824fc600c"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/94faa7a7bbb3941e4bf77fb798ccd2df9f88b185.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/94faa7a7bbb3941e4bf77fb798ccd2df9f88b185.pt",
+      "sha256": "2aab5c67a92907169fae57bf2ca99c4871255ac333f57305a0ae0b084183a3b0"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/d614a5c21db082d27a794b785b1162caf4bff520.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/d614a5c21db082d27a794b785b1162caf4bff520.pt",
+      "sha256": "f68f61deec7b0cc918562eac59df59d0dc3b656e2488b5c63048a09cb915e9a5"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/dd0a55400bff6f6874bca5638082a8c33a089290.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/dd0a55400bff6f6874bca5638082a8c33a089290.pt",
+      "sha256": "40163d62aebfd5d0addc47fe6504c2b3e2b3fb7545034ee2e1e73ffeaad894ef"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/cf4fd61fec9d824ccb94fe70f2f9d3755c063eee.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/cf4fd61fec9d824ccb94fe70f2f9d3755c063eee.pt",
+      "sha256": "35aedb50b621c7ee88d9019eb508cc4d292d6d29b26a1be022d3b69f1d18f8f2"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/3965ec05889901ffcad8a596d62f20286f80d282.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/3965ec05889901ffcad8a596d62f20286f80d282.pt",
+      "sha256": "9f779d908e3c1a20808c86d9b4099a32b4956d48aa1fcea020a0a0e94bf6e2e9"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/ac9590b2024817d78b85545edb7a6931141850ab.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/ac9590b2024817d78b85545edb7a6931141850ab.pt",
+      "sha256": "d5c1ca52ca66f86f7007273db510f4737b4a24476f7361b1a7f5c938667f30c3"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/5aea10e5b7bdc435caa3c5efe05a4dcc7a6b3836.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/5aea10e5b7bdc435caa3c5efe05a4dcc7a6b3836.pt",
+      "sha256": "d5a76cbdd4ec0331ec5a4ff511840292af53b39f3e88b1eb6ac674ad15f87521"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/f12936851f150e77524e08601a49afbdc93a731b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/f12936851f150e77524e08601a49afbdc93a731b.pt",
+      "sha256": "9e7d29cda523bdf2a708f40be83a59bd7da68f1c1e484c6442bbaa148f3af306"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/af38f366d645a892a33bba59b19d339b3ebb0f10.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/af38f366d645a892a33bba59b19d339b3ebb0f10.pt",
+      "sha256": "82226dd8cbf8fc5eb55adf468d96449146ca5d8a0c6ea364a7292f137525d4be"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/678d142f125b477512485cf00eb11c2db8453620.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/678d142f125b477512485cf00eb11c2db8453620.pt",
+      "sha256": "3211ecc4679c611e75d59870a5cbd0d8e1b478e1cb734e0f7eca2692cb6860ca"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/9294d3030b5bd8daf2cd139198851b4f9b2478a0.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/language_embeds/9294d3030b5bd8daf2cd139198851b4f9b2478a0.pt",
+      "sha256": "2957e1afe2835b2943ebf4b8d2cdc188254572148178ef15bf9591694d17747a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/manifest.json": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/manifest.json",
+      "sha256": "2e2a75ce9bb135c5bb858fb6b55d7cc5b99cc7d472942b24a891c43d29849371"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/630a2bbd99e1c95ef5a3b1777a0865ca9f1c50ec.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/630a2bbd99e1c95ef5a3b1777a0865ca9f1c50ec.pt",
+      "sha256": "407c20fef82fb4b1f6ee8908f3237ecf55c6af37bc2cbdbf3d5b588d0f901a09"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7288b5fe0726fdf1f7cdab8b3f570a1ad183cd73.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7288b5fe0726fdf1f7cdab8b3f570a1ad183cd73.pt",
+      "sha256": "3647ce9a0650faa5dbb9f71e1b38ec6f75df1a2a1548c9ff8edeeb645bf15998"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0d7f4d19f515d39d41ba1495216c3acca0f97bd2.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0d7f4d19f515d39d41ba1495216c3acca0f97bd2.pt",
+      "sha256": "76d30e2a355eff61272b0d622030844794890949e00f5797c785b8fb968726be"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0e9670b4b6b8779a5a5704140e8770a84fcdae31.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0e9670b4b6b8779a5a5704140e8770a84fcdae31.pt",
+      "sha256": "11890e7ef8924ed39d955b3aa87425db2e0ef3a5d658bcd9d52a91ec1abd072b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6ec631d8f30230742548c1eca265ba6b410c8ca7.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6ec631d8f30230742548c1eca265ba6b410c8ca7.pt",
+      "sha256": "47bc059986b0429ec7b9b6f20421e9d9b2091a2281c1345b899170fd38862c00"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7f41de21417b9faa19d3cfa68b765464903a3677.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7f41de21417b9faa19d3cfa68b765464903a3677.pt",
+      "sha256": "513abc6afa3d24f7ddc17436dc1052e03268cdc915a454703bf54da92fb515df"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b3c4e86e35c1a80a53ef679e21934a40283bdec4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b3c4e86e35c1a80a53ef679e21934a40283bdec4.pt",
+      "sha256": "41e41f248b03269a9e5f8e88ff8cd9cdd10f1dfbfa0f7c0a78d23f9565418778"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/26db03e0595d32bc15ca8bb9fc4ffb24e395f146.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/26db03e0595d32bc15ca8bb9fc4ffb24e395f146.pt",
+      "sha256": "97298eceafd981188ca42effbaefd8b354aa6a3dcda4ebca685e0608dba04f19"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/19c214e03ac11549aa355ec5859243a7391dacd6.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/19c214e03ac11549aa355ec5859243a7391dacd6.pt",
+      "sha256": "9c2e8e6288206c6a43479b5a3db37de2b88e9cca35d7317c969ddecdda3f90a9"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/60a81f4a0b23ee3be93d668fb35c89592ac49911.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/60a81f4a0b23ee3be93d668fb35c89592ac49911.pt",
+      "sha256": "cca142d1475431ba896998fabc72ad10de76fa307ef72d8f57fd4e42111b1933"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/77fd2de2fd3e280ccad6cb47875bd90ff55c0c23.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/77fd2de2fd3e280ccad6cb47875bd90ff55c0c23.pt",
+      "sha256": "1f482d73ca30cd6d47b225927c8ed2a55e2f3ebcc67219c019715af1fa10c18e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a7d4de06a819522a3a6e9089a6448800beb533a4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a7d4de06a819522a3a6e9089a6448800beb533a4.pt",
+      "sha256": "72b055fcb9a4498236d8eecae61c7245053c174d5c3ed70bea5b68cc12e6460c"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3e4f9914c76cf95d05f9dda3153833ec83fa2e2a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3e4f9914c76cf95d05f9dda3153833ec83fa2e2a.pt",
+      "sha256": "05a9e119a18686152c2faa9efcaca6514bfff57485e8abecfa585c6918b8cdf8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/33b6ea03c59aa68dd86521250f875eea1e2183d4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/33b6ea03c59aa68dd86521250f875eea1e2183d4.pt",
+      "sha256": "140661acc542303ac421c1258d28c468381e28c763ccbc1d04a6fd760f14671a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/12d9f18010cfdb88b26aa7ab8943091a07f43aee.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/12d9f18010cfdb88b26aa7ab8943091a07f43aee.pt",
+      "sha256": "20aff29b8a0c13651b821b4548fbe6c28f92c539c3061ce83abb3caddeb13d2a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f89d5c588073a540607a8280b55556231ce41822.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f89d5c588073a540607a8280b55556231ce41822.pt",
+      "sha256": "8378e2e60c79d6b6aa2d1b7df5aa13617adb898a261d90db7bd098c5ed84ac50"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/73aca67c2e7965a91574593aa4637c7c8ea8eb63.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/73aca67c2e7965a91574593aa4637c7c8ea8eb63.pt",
+      "sha256": "e42158d528a44299f9f1bc3c072bd3cc47ff79fe1b9e302c180a1b0e66641600"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f26127fb901893a40277735a1dfdd6f6d7c83678.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f26127fb901893a40277735a1dfdd6f6d7c83678.pt",
+      "sha256": "7191404110846ceefecaf3e55f492df795a590249cf0afc8b9ddbde62d98d841"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d2bc0f79ec666326f980e5cb97f717ffed8bf63e.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d2bc0f79ec666326f980e5cb97f717ffed8bf63e.pt",
+      "sha256": "8d3207cad94b48330e2405ea14ac5087d67b4fbb6ded94a5d269a9ad2750b362"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f2c8b2b387d4a403aabfc45a383fbd064324cfc6.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f2c8b2b387d4a403aabfc45a383fbd064324cfc6.pt",
+      "sha256": "ce14788f962e68629ba88fef476a2967bc7ca685f737c14ee3e5bafe6daee9df"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a3fc1d84e6a16c470f7e9d59029b1601f8a36c6b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a3fc1d84e6a16c470f7e9d59029b1601f8a36c6b.pt",
+      "sha256": "8871e9e059bb72f8812eca74ede6f9e061d1fae1c0e0b5ae061862996e02acdc"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/cb9ae5e58ff7507ead1ee0b396c40d6a4d917435.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/cb9ae5e58ff7507ead1ee0b396c40d6a4d917435.pt",
+      "sha256": "a4835070f49c9ee3623fc702a54140a9006dca2982f909d99ca061084debaeab"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2dc4ee500a011f55d8321c0367b9236c6a45b270.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2dc4ee500a011f55d8321c0367b9236c6a45b270.pt",
+      "sha256": "44c1f588b8e52e215f542d450b97c7ee1074ed823855855423a83be3e1535415"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d5d3c630ec09d67ad21f09ef388c3440107b4875.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d5d3c630ec09d67ad21f09ef388c3440107b4875.pt",
+      "sha256": "35a9063de949de24841be0c7fc7b03a8c38fbd775fce85444dfffc9aeafb0726"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/10d60e89f3a442f7f0de7b5cffb9e0982dc7a391.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/10d60e89f3a442f7f0de7b5cffb9e0982dc7a391.pt",
+      "sha256": "3b29c522e740d4eed096d9cae108defe8ff41b9776e13eee178ec678a2fcf497"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/1915c97c25676d30456e0cf5d217b83295caeacb.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/1915c97c25676d30456e0cf5d217b83295caeacb.pt",
+      "sha256": "877f5dcfd62606c9b5833f2bc8c69eb38b5badc890a1be85935986755737c678"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4bea37c5db7034162ea18f17e7736e42125aa675.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4bea37c5db7034162ea18f17e7736e42125aa675.pt",
+      "sha256": "5c828e02117d30d928a4bf6978c859b16b2ee542a22474cad48566dc3d99584f"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6caf1166ae52d9aa026402237fd18af2e62ee63b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6caf1166ae52d9aa026402237fd18af2e62ee63b.pt",
+      "sha256": "d5ed0b0c8a29ffa1c45983ca56a768d876c1d9ab8882232db38cc02da2a7331b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/dd1cb0a8c2e3dac767dbf447273476e56f61509b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/dd1cb0a8c2e3dac767dbf447273476e56f61509b.pt",
+      "sha256": "bddaef2e7ac052766dfbc8ebd19ba429ebf6f568957034e92af1f1d94a7098d7"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ef35a21117059fe0b8d3ba5ee77030bc6af391bd.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ef35a21117059fe0b8d3ba5ee77030bc6af391bd.pt",
+      "sha256": "d5404a41a414730d04b8e5c4a394005e3bc0153eb1d67ef95f35d1839cd17e90"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8687a7a2708a259195b59495100f33c5b12697aa.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8687a7a2708a259195b59495100f33c5b12697aa.pt",
+      "sha256": "c9cdafb185d8eb0ddecc87823373e2beb43643b53a0a80e2eccb04e936171a5a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f921e842057d0cdc24f55f791bab53d16a2e4390.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f921e842057d0cdc24f55f791bab53d16a2e4390.pt",
+      "sha256": "fdba6970d56c427fff9071e3dc543c830f362d36273e4b720e118a7342e09dff"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c1a9630cbff05c4704fcbad0f693ab584b083374.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c1a9630cbff05c4704fcbad0f693ab584b083374.pt",
+      "sha256": "e8bef1903f4f5b251ef21318cc6dcb7419cf1c551dc27bfe5a4f3c9023eec259"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7d0b03f78338ae10830b9850e30b9b5e47e78cdd.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7d0b03f78338ae10830b9850e30b9b5e47e78cdd.pt",
+      "sha256": "629572ea7bef8ccfb78141860cd538ec40af57f9dc06c7d37cb8e089530004f8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/db8d66917218226a4249b5dd76e511efc8a94175.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/db8d66917218226a4249b5dd76e511efc8a94175.pt",
+      "sha256": "c3b92833d13002e51abff065574a8266cf35030018ef0493f079fcecd974dc12"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a963733b9b144f63891928e7be8c8593586774c4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a963733b9b144f63891928e7be8c8593586774c4.pt",
+      "sha256": "76988ca22a2404a22864d54e5ddef8850f09f9e8bb1c3479f5f033152fec1c06"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9acd2bdf87c1539cc7ae6cbe042caef6fe2bb586.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9acd2bdf87c1539cc7ae6cbe042caef6fe2bb586.pt",
+      "sha256": "9885a79ae3e8c4d0dd34755bd19be101daa94e1c94e723cea7e8ce3cc354aca0"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a543154253b278bade4d38a186db9e92f4e40c3f.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a543154253b278bade4d38a186db9e92f4e40c3f.pt",
+      "sha256": "e993050768220172747239d3b0e08cf9deb8d1c5ecf4ab5e1a2dfe3e2a4e1b49"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e8e690c5707c17f075e61be826716fa8885dc02c.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e8e690c5707c17f075e61be826716fa8885dc02c.pt",
+      "sha256": "151a35d12e40cd36cdf39b4336519e2e701bcede367335784a0451afc70e5c91"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/109da81376328a3f6d7a167f76b6fd8cb040c538.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/109da81376328a3f6d7a167f76b6fd8cb040c538.pt",
+      "sha256": "37259e85b8544db7920b55c3dcf8032373a83fd430fc1570b456306466752ef8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5788bf7a6dd60df2e0676d715093575da7ef69a6.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5788bf7a6dd60df2e0676d715093575da7ef69a6.pt",
+      "sha256": "b194eb1726aea5ced3dab4bf6ed2e6ca68433a6ab0f9dc6176bea20d6c5eb17a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f4728286ba3187bf4fdaeb922b476c4334a84eec.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f4728286ba3187bf4fdaeb922b476c4334a84eec.pt",
+      "sha256": "c696297ab4cdae812cb828d6e51cc2671072bacd2de9b222c4d4ea46ad2fd399"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c3033d9d19788361a4da8faa521472eb19bbf40d.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c3033d9d19788361a4da8faa521472eb19bbf40d.pt",
+      "sha256": "91b9495906fe0b806359fee314ef899dd6194d15ba6cd06094f071c45b6e205d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5a0bb977a30e2fdcfa3c66f660591bebd8843165.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5a0bb977a30e2fdcfa3c66f660591bebd8843165.pt",
+      "sha256": "8f932a7e4130a651b37d98ffe912130d77ec7c847b921f0f8417e1ab96ae3249"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/76e56422d36f7e94f2bb560cfc1e07f88685cb18.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/76e56422d36f7e94f2bb560cfc1e07f88685cb18.pt",
+      "sha256": "20c77a7c481663a3ccc300de08d2d6e4fb12e17021d34ee53c3dcd8a781d85ee"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d7a8a5d2d9102f9125c4f6de96636f83fc0c6739.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/d7a8a5d2d9102f9125c4f6de96636f83fc0c6739.pt",
+      "sha256": "95945441a3a0ded2e5506ac494d80fabf5ec98be14f448e05f3896010658cbed"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7194984f5e0162eb7e489adc791de2ce209993ae.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7194984f5e0162eb7e489adc791de2ce209993ae.pt",
+      "sha256": "8eb6a5c8ebe2a3b70e14d8ebf54772e8354ecdca74c4c7e08eefc2bbcfeab886"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/743d15bc2a1f87261fc1959703567370b563fa3a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/743d15bc2a1f87261fc1959703567370b563fa3a.pt",
+      "sha256": "52809ff911affd1cbcf6df9baf640e946faeba2f277be4fdad5ea15853bb9c6c"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b27ae7814eafaf94b021cd598100873443d21d77.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b27ae7814eafaf94b021cd598100873443d21d77.pt",
+      "sha256": "b01bb997cd547f8e7c50635c3c020ee78ee467015c9191d6ad605afa86f3aa7b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7aab4bfea74e49b14385cbbae467d83a9296b5a3.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7aab4bfea74e49b14385cbbae467d83a9296b5a3.pt",
+      "sha256": "7cc437fed71a1468118cb5b7e46fe412b6c92fc92171c78ce76564564d97420d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a71feb18d8b7b793a08dcd0b6d76c65ca898aa9a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a71feb18d8b7b793a08dcd0b6d76c65ca898aa9a.pt",
+      "sha256": "26f6c5ae2324905d9598b4feef816c6e35f507a4966fcf8f5336d23553d9d5f4"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9053eb0ef08efa255cf8e4c5eabf6747b01f3843.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9053eb0ef08efa255cf8e4c5eabf6747b01f3843.pt",
+      "sha256": "0779a9c27f32638ee7e8a12522fd7433dee0c4a35e881a5742ab467cadb6e7fd"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3c9a23b153587f4785bab108f6ca601290ba8767.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3c9a23b153587f4785bab108f6ca601290ba8767.pt",
+      "sha256": "a861684921c9811b478a70cb6419aa4854b18f5c7100f3dc104d4298bbc99676"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3f8b19bd8e0b10bdb91768957f6f746891ab399e.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3f8b19bd8e0b10bdb91768957f6f746891ab399e.pt",
+      "sha256": "a8be90396c6d08f078f188f0f91ead7df41de8aa57b9b0eb647afb757533b1e2"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/be51893e0e815ea7df9f1e63e7bdfa00453286a5.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/be51893e0e815ea7df9f1e63e7bdfa00453286a5.pt",
+      "sha256": "a11300dadb942cd7e08584e4ac77f4246a5b55aa16830c9a99382629c86e2c0e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/48e87cde8d1afe8b22cb19415565a6fed62f0059.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/48e87cde8d1afe8b22cb19415565a6fed62f0059.pt",
+      "sha256": "ba32ae21b777e4acb3433c1544659727da6ca85eb509380ef1253aa58edc95fe"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5308c7db78ba87f58c453da546178a0aa26d2734.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5308c7db78ba87f58c453da546178a0aa26d2734.pt",
+      "sha256": "3f5fa4df4bce9f04e6d43db6043db6021b228ad635d0a02b6689df515c738350"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b72c9759a749bdb5220c842859f52301a4e3dc3b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b72c9759a749bdb5220c842859f52301a4e3dc3b.pt",
+      "sha256": "843a43599057b7b7e3c0f4ee160605d6b2ef19ba1cf726cebd4c40f86e736e80"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6d4872500b3b406c47f3e834060ff151a944eed1.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6d4872500b3b406c47f3e834060ff151a944eed1.pt",
+      "sha256": "253c4d3ac1eeb776f4a4c75da9004eb7975f914e53bfed156dd16ff3dbfe32fd"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/bee797adc401d4924f656f506634e67a5b26baed.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/bee797adc401d4924f656f506634e67a5b26baed.pt",
+      "sha256": "a3cb264f1c10d05147e0bbce4e7c9b2e010c747b7c60ffe38fc634c19c3ceb70"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5f56acd97adb581ef0b5db9479cc92e5b425704a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5f56acd97adb581ef0b5db9479cc92e5b425704a.pt",
+      "sha256": "09237cab5f5b8c2de2a21d9d5bb75931ef52586e83b988af21c06f777ecb62c5"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0b236eda6dc606ad1c64d4a26e014af35d55defe.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0b236eda6dc606ad1c64d4a26e014af35d55defe.pt",
+      "sha256": "fd7c05d22c63fb80008991609c2d75fd52c01e8eb1867abdf96c96110f754dfa"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f83a05b095804a847ce60d1943b8a08e512f84b7.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f83a05b095804a847ce60d1943b8a08e512f84b7.pt",
+      "sha256": "61c52d82914433c9073be7400c8811ab62cfb385193ba511e64a686182801ffb"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4c0809e86d89565cd73a47b18534eff87a56265a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4c0809e86d89565cd73a47b18534eff87a56265a.pt",
+      "sha256": "0da4495359b31e8b2f54041d43f629b2bd3199c05f75c83b5c03df2a68184847"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/271d5475fd0a73dfb4822de84c8289eac5a634c4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/271d5475fd0a73dfb4822de84c8289eac5a634c4.pt",
+      "sha256": "a5d0549fa631811a810883adbc0f73208e69d3df45d01a0e8757bfaa5740038e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ae37495110a3421e90cf62cccc859c9151533fbf.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ae37495110a3421e90cf62cccc859c9151533fbf.pt",
+      "sha256": "5e46ae671fcd6059fd904c4604dd50e5239b525536307b3e7aa41d4d269ebe1d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/1b30ad95d9331d99159cfa32aba007d18d12a8ee.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/1b30ad95d9331d99159cfa32aba007d18d12a8ee.pt",
+      "sha256": "59ad72e4c2f729293120f833dc54248fb2cffac43050c4eafce2990a0d0150da"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8286bc856e98f7ff1e154fc7bfce2fde0b7877d6.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8286bc856e98f7ff1e154fc7bfce2fde0b7877d6.pt",
+      "sha256": "8d3705754f4095f2d8d3b266b50b9984f60d9d9937bda2848e8b3a199b4cddea"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f060fe1153843bd50db899d387fc63c0dd9ec2b4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/f060fe1153843bd50db899d387fc63c0dd9ec2b4.pt",
+      "sha256": "a21d03978db925b77c2653fcf28547e9e2278031debc86f5816e4f9a64732f5e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/25c9cedfe84a1e395fef4a6055fc31a68bc2b07d.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/25c9cedfe84a1e395fef4a6055fc31a68bc2b07d.pt",
+      "sha256": "b42ea0d7f5fdc4df38f10b840fb8fca448e2b8822ee7a57241c1a1541642868b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/31d4935314e67879519e044d88c78822106a92b6.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/31d4935314e67879519e044d88c78822106a92b6.pt",
+      "sha256": "0941f8dc1723f54214d6aece9378b2a1042bd69abe658f701450b4e7d2c70df8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8b673414726378b511a907d3eb41b91c266d9ce1.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/8b673414726378b511a907d3eb41b91c266d9ce1.pt",
+      "sha256": "3b1492e42d369aea1e50f1e37c5c7985e318d73f3afc0b5c571ff3b5f8fe90f7"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4f0ab55fb2a46d10f57754e0a024c54a8cb8f136.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/4f0ab55fb2a46d10f57754e0a024c54a8cb8f136.pt",
+      "sha256": "a5c221792ec405029e8de02427537d053a6ef74d2755b195b5a35d746ff4d1fd"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/78001cfc9f32f7591ec3513ab16fba5a079c843b.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/78001cfc9f32f7591ec3513ab16fba5a079c843b.pt",
+      "sha256": "676dc311df6d2befb9b17383375b1ab9b2c8fbb178af02006dd5bff1c9fb5d28"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3b10831ae1fc9754fc7b978ef5cd4f9cc0330355.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/3b10831ae1fc9754fc7b978ef5cd4f9cc0330355.pt",
+      "sha256": "94ae088a01be45a08749afb648809c19237ca3055f7fdf301c6c9b45413ef7c3"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5225d825caa554bb4555a45489bf0bdf67e76d6a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/5225d825caa554bb4555a45489bf0bdf67e76d6a.pt",
+      "sha256": "d9133dc7bed87796c2642f434c266136911d5f353874cfabad2cbe810517a3a7"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/92d557dbaba720db8156d5b534027ba140e1053d.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/92d557dbaba720db8156d5b534027ba140e1053d.pt",
+      "sha256": "21b8213c749c4600e3a6ef58850ad05594755d298c90fe86f8d797db0dee5f59"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2ed854ffb1c140d1a8a8c2e574902c4d7909dda4.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2ed854ffb1c140d1a8a8c2e574902c4d7909dda4.pt",
+      "sha256": "5c14f4534eb7c8dc340d7f7ce3c3c76be7ab4f0c4d026137708afa87b39af910"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6b46ea63ff1996dd9d2969e48e06a2620f30b398.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6b46ea63ff1996dd9d2969e48e06a2620f30b398.pt",
+      "sha256": "b9013de3694293044bdbb47a36412628ee9c37fb4c7b2ee6008102a8ec189a00"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a54473427d718b07fb82ebdcb412d7cb76ffc255.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a54473427d718b07fb82ebdcb412d7cb76ffc255.pt",
+      "sha256": "407ad8875ca3700f26e1d9c33c62a2604f1c1b9cb4d813ae121742b16fdd876e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/35ec8a4c94ab9728bf395eccae2db2c4ebbc8da7.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/35ec8a4c94ab9728bf395eccae2db2c4ebbc8da7.pt",
+      "sha256": "e5ef157e44573fc478eb8ae3736bde63db4279a366f67181571fbbe83fb44e75"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/47a4e59fba01e63db837e8b1f344aa96df2f9298.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/47a4e59fba01e63db837e8b1f344aa96df2f9298.pt",
+      "sha256": "e80a48deca9a1bf76f24b8bfb585a424308fd410f81dcc44c48117340e9f29c0"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9ca311229b46e8c9e96beeaee15a3246a3c666a1.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9ca311229b46e8c9e96beeaee15a3246a3c666a1.pt",
+      "sha256": "36f7a5ae4bf948f7c2e4b4530a2ad5d08d4772ab8c6f5cd9e259e9cb665ee4a2"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6be32a11f72a4c410b4c8af9b6ab6c78186bac3e.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6be32a11f72a4c410b4c8af9b6ab6c78186bac3e.pt",
+      "sha256": "c3145e93e125d76fc9db3e252b3b59f6b54bdc3049f6d7bfbaf80f716e6bec76"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/aa4b0746b858b69e067a1e0e77e137c09972d036.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/aa4b0746b858b69e067a1e0e77e137c09972d036.pt",
+      "sha256": "9a0d11c88f0a07ce19acc6847e47dd82d44b427577dd21261a3d1279be7afd29"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/59590cf583474dd8e87459a3a878a6b633773806.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/59590cf583474dd8e87459a3a878a6b633773806.pt",
+      "sha256": "c82d025b66777b04c91deff5df2161c1f0ead8894bc47d47abe54f1b54522119"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9dbcefe5e513ea4bb2285abaffae5b4899116491.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9dbcefe5e513ea4bb2285abaffae5b4899116491.pt",
+      "sha256": "0048f14a6c2c3e8fee6a5e932b2c58b9f54c9bf66a2d6cddb1747b8c8a709c05"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ad7e47307687fb99535f7abd844d56cdf0fe3ba9.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ad7e47307687fb99535f7abd844d56cdf0fe3ba9.pt",
+      "sha256": "6af593fe3427517e31617639ac9685de6a45e0a56ea963265690cf03d92abcc1"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/878712f7e511bb841d7f53f41a859a3d69a99f65.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/878712f7e511bb841d7f53f41a859a3d69a99f65.pt",
+      "sha256": "3c00b35ba29de6c62b7c8e429e4131222a9c68172798c04e4397e994a9c0a34e"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/bae5d2b08e5abfe11aa6098862c9087fe5145fb3.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/bae5d2b08e5abfe11aa6098862c9087fe5145fb3.pt",
+      "sha256": "5ae09f31b146aa03bafeec992081f81851d60821a78f85507ca0c6f3a7ed65ab"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2d59290a7ae37100c4bec32d76755b1963fd2fac.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2d59290a7ae37100c4bec32d76755b1963fd2fac.pt",
+      "sha256": "06f70db92024bc0b10aa52f0c0d60a2296ea55a5ebcd42fcb2fdb9430e034a8b"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b5a3c29fdb3a2c966ffd22ce132106680e62174a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b5a3c29fdb3a2c966ffd22ce132106680e62174a.pt",
+      "sha256": "d54fe3744ae874ebe7b4984f7b3636c15a908d509f1b0fdcaa1a96b69d925037"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b20362f70a6db9067972b6df195b1ae8bffdab57.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b20362f70a6db9067972b6df195b1ae8bffdab57.pt",
+      "sha256": "603443a7bdd52d16c70f99d7f8f27a3c2b00a7b4b4cb3db2786a8be5b0d7f8e7"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b192f51c73ee8ed02b258bdf85af594c16ce0fbc.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b192f51c73ee8ed02b258bdf85af594c16ce0fbc.pt",
+      "sha256": "4e215a48f8f5f47f0c4459b400ac68299b8b2aae546be68a6c47e9c665c2523d"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/12e33b3835f9719c132862ee66ecee131b4f421d.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/12e33b3835f9719c132862ee66ecee131b4f421d.pt",
+      "sha256": "4886eff279f147aa9e1c7dbfbe6e1348d20c13514c3df6e660daa6e3a3c50c65"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/cdf6f05509571d49439ac3c853e34396ac21d24e.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/cdf6f05509571d49439ac3c853e34396ac21d24e.pt",
+      "sha256": "f479dfefe1921cb300d0e03ef13bc0c958a716f977c7fa14cad1abc05f96bd00"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7a04808afe7183a81c3dcf7fe2af3d56b0e3ca7f.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7a04808afe7183a81c3dcf7fe2af3d56b0e3ca7f.pt",
+      "sha256": "c674c9df45a15a5fac88b47c20bbaaa1f19daea457b6f33e58e154c465ddbd5a"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c4ef21c1cd8845237bad192e889a501829b41da7.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/c4ef21c1cd8845237bad192e889a501829b41da7.pt",
+      "sha256": "ae9444d8863b20b6dbe91cb561333766c9970b47478bd413821929c2fc91c8bb"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a25f31fb969321781aea9258e2cb26a27d935b37.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/a25f31fb969321781aea9258e2cb26a27d935b37.pt",
+      "sha256": "0893442f43b0598afac9dfe565d4f24a925bc1ae8a0965fa0119c9d0e2fd3e92"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/72a25ea1ad9e1758251ffc0a836cb6eaa0b734b1.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/72a25ea1ad9e1758251ffc0a836cb6eaa0b734b1.pt",
+      "sha256": "ef6e4f0f173c2d7e0a7ef6198679dd52a4dbfa053f25850a4d35292bdbf25036"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/310b2e9bf3e07fad01179053a8ee096d9730bbb5.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/310b2e9bf3e07fad01179053a8ee096d9730bbb5.pt",
+      "sha256": "68e1f5c40ce69d8b758d0d277282fbea99d5c3321e7f0ba7388995c7d9700bfd"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e01c8c5f8de2592b1d3d343aec194eb2659f436a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e01c8c5f8de2592b1d3d343aec194eb2659f436a.pt",
+      "sha256": "103f5a39dc73cb139d93d0e54b07c8fefc0b9be6d3d1292d800574aab016d204"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9c9e53f6d609c0d59332fed4c50aa744e3c6e960.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/9c9e53f6d609c0d59332fed4c50aa744e3c6e960.pt",
+      "sha256": "25204fd0bee696b7b2b009a65d927742735608956476d545d2895350c14ba9a8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ce1170badd4a07e1f92c58148af82a05b301592a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/ce1170badd4a07e1f92c58148af82a05b301592a.pt",
+      "sha256": "bbac9b4bbe416f009d59645b1c10064e43b6251e4cf69daac3ea2083a3825041"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2fcbbb80d65e1407e3dae4d3919a3c25eafc3a66.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/2fcbbb80d65e1407e3dae4d3919a3c25eafc3a66.pt",
+      "sha256": "f8f1782e618ece5340882e68aa3e56b12cab8f47ad79c7efc7f2191aa95b2690"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/70d3b88c2eccadfce9ffd0d927d1f44dd98cde75.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/70d3b88c2eccadfce9ffd0d927d1f44dd98cde75.pt",
+      "sha256": "88671366286f0a3add5e51116cfcb3c94986054996ffb50bfe71a5657377c0a9"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e519fb16aa577e955d0dc91d7dcb89b9300efc68.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/e519fb16aa577e955d0dc91d7dcb89b9300efc68.pt",
+      "sha256": "a9b034da3ccd10b6e36619d1639c69dac30bf9dda77b9b0c343ee0e47294d5bb"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/manifest.json": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/manifest.json",
+      "sha256": "2ca07efc5f8d1a34ddeaba7209735e8e97dbcf1becc3be49b8b594c602172760"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/a25f31fb969321781aea9258e2cb26a27d935b37.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/a25f31fb969321781aea9258e2cb26a27d935b37.pt",
+      "sha256": "0893442f43b0598afac9dfe565d4f24a925bc1ae8a0965fa0119c9d0e2fd3e92"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/72a25ea1ad9e1758251ffc0a836cb6eaa0b734b1.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/72a25ea1ad9e1758251ffc0a836cb6eaa0b734b1.pt",
+      "sha256": "ef6e4f0f173c2d7e0a7ef6198679dd52a4dbfa053f25850a4d35292bdbf25036"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/310b2e9bf3e07fad01179053a8ee096d9730bbb5.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/310b2e9bf3e07fad01179053a8ee096d9730bbb5.pt",
+      "sha256": "68e1f5c40ce69d8b758d0d277282fbea99d5c3321e7f0ba7388995c7d9700bfd"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/e01c8c5f8de2592b1d3d343aec194eb2659f436a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/e01c8c5f8de2592b1d3d343aec194eb2659f436a.pt",
+      "sha256": "103f5a39dc73cb139d93d0e54b07c8fefc0b9be6d3d1292d800574aab016d204"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/9c9e53f6d609c0d59332fed4c50aa744e3c6e960.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/9c9e53f6d609c0d59332fed4c50aa744e3c6e960.pt",
+      "sha256": "25204fd0bee696b7b2b009a65d927742735608956476d545d2895350c14ba9a8"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/b5a3c29fdb3a2c966ffd22ce132106680e62174a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/b5a3c29fdb3a2c966ffd22ce132106680e62174a.pt",
+      "sha256": "d54fe3744ae874ebe7b4984f7b3636c15a908d509f1b0fdcaa1a96b69d925037"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/ce1170badd4a07e1f92c58148af82a05b301592a.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/ce1170badd4a07e1f92c58148af82a05b301592a.pt",
+      "sha256": "bbac9b4bbe416f009d59645b1c10064e43b6251e4cf69daac3ea2083a3825041"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/2fcbbb80d65e1407e3dae4d3919a3c25eafc3a66.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/2fcbbb80d65e1407e3dae4d3919a3c25eafc3a66.pt",
+      "sha256": "f8f1782e618ece5340882e68aa3e56b12cab8f47ad79c7efc7f2191aa95b2690"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/70d3b88c2eccadfce9ffd0d927d1f44dd98cde75.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/70d3b88c2eccadfce9ffd0d927d1f44dd98cde75.pt",
+      "sha256": "88671366286f0a3add5e51116cfcb3c94986054996ffb50bfe71a5657377c0a9"
+    },
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/e519fb16aa577e955d0dc91d7dcb89b9300efc68.pt": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/language_embeds/e519fb16aa577e955d0dc91d7dcb89b9300efc68.pt",
+      "sha256": "a9b034da3ccd10b6e36619d1639c69dac30bf9dda77b9b0c343ee0e47294d5bb"
+    }
+  },
+  "execution_mode": "eager Triton kernel dispatch; no historical CUDA graph replay",
+  "native_reference_execution_mode": "single eager historical Backend.record; numerical reference only",
+  "startup_accounting": "constructor full graph capture disabled; explicit calls only",
+  "experiment": "E2_cycle3_full10_jacobian",
+  "schedule": [
+    "Full-D10",
+    "Fast-D2",
+    "Fast-D2"
+  ],
+  "period": 3,
+  "jacobian_model_steps": 10,
+  "jacobian_full_layers": 18,
+  "jacobian_output_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "jacobian_projection": "one VJP; temporal exponential; seven +1 weights"
+}

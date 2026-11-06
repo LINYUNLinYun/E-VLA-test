@@ -1,0 +1,2561 @@
+{
+  "status": "complete",
+  "pairs": [
+    {
+      "target_suite": "libero_object",
+      "foreign_source_suite": "libero_spatial",
+      "conditions": [
+        {
+          "role": "matching_pure",
+          "mode": "draft",
+          "source_suite": "libero_object",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "foreign_pure",
+          "mode": "draft",
+          "source_suite": "libero_spatial",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "matching_FLASH",
+          "mode": "flash",
+          "source_suite": "libero_object",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "foreign_FLASH",
+          "mode": "flash",
+          "source_suite": "libero_spatial",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "Full",
+          "mode": "full",
+          "source_suite": null,
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        }
+      ],
+      "complete": true,
+      "primary": {
+        "n_paired": 40,
+        "n_tasks": 10,
+        "case_mean_difference": 1.0,
+        "task_mean_difference": 1.0,
+        "paired_case_bootstrap_ci95": [
+          1.0,
+          1.0
+        ],
+        "task_cluster_bootstrap_ci95": [
+          1.0,
+          1.0
+        ],
+        "task_differences": [
+          {
+            "task_id": 0,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 1,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 2,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 3,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 4,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 5,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 6,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 7,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 8,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 9,
+            "n_paired": 4,
+            "difference": 1.0
+          }
+        ],
+        "bootstrap_replicates": 20000,
+        "interval": "paired percentile95%",
+        "seed_label": "libero_object|libero_spatial|draft|all4_init21_24|success",
+        "metric": "success",
+        "mode": "draft",
+        "subset": "all4_init21_24",
+        "expected_pairs": 40,
+        "undefined_pairs": [],
+        "difference_direction": "matching minus foreign",
+        "favorable_direction": "positive",
+        "matching_context": {
+          "n": 40,
+          "successes": 40,
+          "executed_actions": 5304,
+          "requests": 460,
+          "episode_wall_seconds": 251.36936639249325,
+          "mean_episode_wall_seconds": 6.284234159812331,
+          "pooled_policy_ms_per_executed_action": 4.131903614129641,
+          "pooled_client_rpc_ms_per_executed_action": 4.407485649214431
+        },
+        "foreign_context": {
+          "n": 40,
+          "successes": 0,
+          "executed_actions": 11200,
+          "requests": 960,
+          "episode_wall_seconds": 381.62887973338366,
+          "mean_episode_wall_seconds": 9.540721993334591,
+          "pooled_policy_ms_per_executed_action": 1.9781882073065,
+          "pooled_client_rpc_ms_per_executed_action": 2.237212993869824
+        },
+        "confirmatory_p_value": 9.094947017729282e-13,
+        "statistical_unit": "paired episode; no request-level independent samples",
+        "warm_state_claim": false,
+        "matching_only_successes": 40,
+        "foreign_only_successes": 0,
+        "both_successes": 0,
+        "both_failures": 0,
+        "exact_mcnemar_one_sided_p": 9.094947017729282e-13,
+        "primary_direction": "matching > foreign",
+        "scope": "Case-level fixed-task confirmation; task-cluster CI is robustness information, not unseen-task generalization",
+        "holm_adjusted_one_sided_p": 1.8189894035458565e-12,
+        "holm_family_size": 2
+      },
+      "secondary": [
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 0.025,
+          "task_mean_difference": 0.025,
+          "paired_case_bootstrap_ci95": [
+            0.0,
+            0.075
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.0,
+            0.075
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 0.25
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.0
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|all4_init21_24|success",
+          "metric": "success",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "positive",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5352,
+            "requests": 557,
+            "episode_wall_seconds": 265.02623342722654,
+            "mean_episode_wall_seconds": 6.625655835680663,
+            "pooled_policy_ms_per_executed_action": 7.1850996534096465,
+            "pooled_client_rpc_ms_per_executed_action": 7.5115169842570175
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 5717,
+            "requests": 946,
+            "episode_wall_seconds": 299.0327787324786,
+            "mean_episode_wall_seconds": 7.475819468311966,
+            "pooled_policy_ms_per_executed_action": 9.48611127813108,
+            "pooled_client_rpc_ms_per_executed_action": 9.954017829244446
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 0.7387119708994708,
+          "task_mean_difference": 0.7387119708994709,
+          "paired_case_bootstrap_ci95": [
+            0.6980950727513228,
+            0.7777410300925927
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.689745453042328,
+            0.783411044973545
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 0.569212962962963
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.7395833333333334
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.863095238095238
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.8251488095238095
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 0.7569444444444444
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 0.7293320105820106
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.6719907407407407
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.7611607142857143
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 0.7083333333333333
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.7623181216931217
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|all4_init21_24|acceptance_rate",
+          "metric": "acceptance_rate",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "positive",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5352,
+            "requests": 557,
+            "episode_wall_seconds": 265.02623342722654,
+            "mean_episode_wall_seconds": 6.625655835680663,
+            "pooled_policy_ms_per_executed_action": 7.1850996534096465,
+            "pooled_client_rpc_ms_per_executed_action": 7.5115169842570175
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 5717,
+            "requests": 946,
+            "episode_wall_seconds": 299.0327787324786,
+            "mean_episode_wall_seconds": 7.475819468311966,
+            "pooled_policy_ms_per_executed_action": 9.48611127813108,
+            "pooled_client_rpc_ms_per_executed_action": 9.954017829244446
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -0.35216712854797705,
+          "task_mean_difference": -0.3521671285479771,
+          "paired_case_bootstrap_ci95": [
+            -0.3707308039617682,
+            -0.3344695920436955
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -0.3752011236356188,
+            -0.32991613198183456
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": -0.29354739505769256
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -0.3450185292290555
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -0.412437343358396
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": -0.3759251226356489
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -0.3405598872296375
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -0.3316328786156372
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -0.31909016867616613
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -0.3810723506089639
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -0.31952495128486175
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -0.40286265878371136
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|all4_init21_24|rejection_full_fraction",
+          "metric": "rejection_full_fraction",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5352,
+            "requests": 557,
+            "episode_wall_seconds": 265.02623342722654,
+            "mean_episode_wall_seconds": 6.625655835680663,
+            "pooled_policy_ms_per_executed_action": 7.1850996534096465,
+            "pooled_client_rpc_ms_per_executed_action": 7.5115169842570175
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 5717,
+            "requests": 946,
+            "episode_wall_seconds": 299.0327787324786,
+            "mean_episode_wall_seconds": 7.475819468311966,
+            "pooled_policy_ms_per_executed_action": 9.48611127813108,
+            "pooled_client_rpc_ms_per_executed_action": 9.954017829244446
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 2.068847808909651,
+          "task_mean_difference": 2.068847808909651,
+          "paired_case_bootstrap_ci95": [
+            0.46137207126048857,
+            4.308236534551418
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.6949067550928462,
+            3.9215576183239693
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 9.138612988676606
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.03191666943583649
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.020765226401918663
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.8450054183399187
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 1.8592932118452903
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 3.2756956769890495
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 2.3763761148459808
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.07762828895672078
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 3.0007640387728065
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.06242045483238473
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|draft|all4_init21_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5304,
+            "requests": 460,
+            "episode_wall_seconds": 251.36936639249325,
+            "mean_episode_wall_seconds": 6.284234159812331,
+            "pooled_policy_ms_per_executed_action": 4.131903614129641,
+            "pooled_client_rpc_ms_per_executed_action": 4.407485649214431
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 0,
+            "executed_actions": 11200,
+            "requests": 960,
+            "episode_wall_seconds": 381.62887973338366,
+            "mean_episode_wall_seconds": 9.540721993334591,
+            "pooled_policy_ms_per_executed_action": 1.9781882073065,
+            "pooled_client_rpc_ms_per_executed_action": 2.237212993869824
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 2.0860169427311037,
+          "task_mean_difference": 2.0860169427311037,
+          "paired_case_bootstrap_ci95": [
+            0.4659126755237832,
+            4.366238684213068
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.7087998179939394,
+            3.900267142762352
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 9.139103957349835
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.04969234725403682
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.02658677709229021
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.8415516879465822
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 1.8549335008215222
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 3.28533601876209
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 2.4004896860326768
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.12882195138999436
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 3.0316918506662316
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.10196164999577748
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|draft|all4_init21_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5304,
+            "requests": 460,
+            "episode_wall_seconds": 251.36936639249325,
+            "mean_episode_wall_seconds": 6.284234159812331,
+            "pooled_policy_ms_per_executed_action": 4.131903614129641,
+            "pooled_client_rpc_ms_per_executed_action": 4.407485649214431
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 0,
+            "executed_actions": 11200,
+            "requests": 960,
+            "episode_wall_seconds": 381.62887973338366,
+            "mean_episode_wall_seconds": 9.540721993334591,
+            "pooled_policy_ms_per_executed_action": 1.9781882073065,
+            "pooled_client_rpc_ms_per_executed_action": 2.237212993869824
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": 0.01998581175992747,
+          "task_mean_difference": 0.019985811759927467,
+          "paired_case_bootstrap_ci95": [
+            0.005528487326410697,
+            0.0349232578993366
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.006827655397234631,
+            0.033576867650744614
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": 0.010205724184097561
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": -0.0025530988520541253
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": 0.020522833369017574
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": 0.015060305004082028
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -0.015539013782278696
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": 0.04098040989446409
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": 0.03208845998765605
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": 0.06084265970159116
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": 0.002441532404418504
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": 0.03580830568828056
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|draft|repeat_task_init22_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 3981,
+            "requests": 345,
+            "episode_wall_seconds": 172.9157065488398,
+            "mean_episode_wall_seconds": 5.763856884961327,
+            "pooled_policy_ms_per_executed_action": 0.675245415802069,
+            "pooled_client_rpc_ms_per_executed_action": 0.9519369536774508
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 0,
+            "executed_actions": 8400,
+            "requests": 720,
+            "episode_wall_seconds": 274.37069519609213,
+            "mean_episode_wall_seconds": 9.145689839869737,
+            "pooled_policy_ms_per_executed_action": 0.6564452960377648,
+            "pooled_client_rpc_ms_per_executed_action": 0.9159361872644651
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": 0.03776920593479605,
+          "task_mean_difference": 0.03776920593479606,
+          "paired_case_bootstrap_ci95": [
+            0.009108008370594462,
+            0.06576877969136644
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.01864665888637076,
+            0.05852314409279975
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": 0.006068246976875691
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": 0.019895331901228313
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": 0.04488195524710074
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": 0.001443142475432165
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -0.007004811897383926
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": 0.0461525961378156
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": 0.05802552105204358
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": 0.10598645817097734
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": 0.04276188319620907
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": 0.05948173608766202
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|draft|repeat_task_init22_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 3981,
+            "requests": 345,
+            "episode_wall_seconds": 172.9157065488398,
+            "mean_episode_wall_seconds": 5.763856884961327,
+            "pooled_policy_ms_per_executed_action": 0.675245415802069,
+            "pooled_client_rpc_ms_per_executed_action": 0.9519369536774508
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 0,
+            "executed_actions": 8400,
+            "requests": 720,
+            "episode_wall_seconds": 274.37069519609213,
+            "mean_episode_wall_seconds": 9.145689839869737,
+            "pooled_policy_ms_per_executed_action": 0.6564452960377648,
+            "pooled_client_rpc_ms_per_executed_action": 0.9159361872644651
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -2.3983303144635344,
+          "task_mean_difference": -2.3983303144635344,
+          "paired_case_bootstrap_ci95": [
+            -3.1565638629331034,
+            -1.833124533115502
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -3.079776529121634,
+            -1.8253744590470713
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": -1.0802516467323815
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -1.8465795526712707
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -2.164770091516279
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": -2.0985450174304545
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -1.6213023976976797
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -4.702300969344722
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -3.6733071371318724
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -2.0406840060303866
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -2.8709528108748876
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -1.8846095152054096
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|all4_init21_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5352,
+            "requests": 557,
+            "episode_wall_seconds": 265.02623342722654,
+            "mean_episode_wall_seconds": 6.625655835680663,
+            "pooled_policy_ms_per_executed_action": 7.1850996534096465,
+            "pooled_client_rpc_ms_per_executed_action": 7.5115169842570175
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 5717,
+            "requests": 946,
+            "episode_wall_seconds": 299.0327787324786,
+            "mean_episode_wall_seconds": 7.475819468311966,
+            "pooled_policy_ms_per_executed_action": 9.48611127813108,
+            "pooled_client_rpc_ms_per_executed_action": 9.954017829244446
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -2.5428902893585477,
+          "task_mean_difference": -2.542890289358548,
+          "paired_case_bootstrap_ci95": [
+            -3.287770681228723,
+            -1.9693778484545834
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -3.2207796353708655,
+            -1.9696118294805558
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": -1.2190073124235732
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -1.9621988376071462
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -2.374487643393124
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": -2.262679463611151
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -1.6426317618841053
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -4.794365068140264
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -3.8159014957233666
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -2.2590822473017744
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -3.085368809579978
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -2.0131802539209946
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|all4_init21_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 40,
+            "executed_actions": 5352,
+            "requests": 557,
+            "episode_wall_seconds": 265.02623342722654,
+            "mean_episode_wall_seconds": 6.625655835680663,
+            "pooled_policy_ms_per_executed_action": 7.1850996534096465,
+            "pooled_client_rpc_ms_per_executed_action": 7.5115169842570175
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 5717,
+            "requests": 946,
+            "episode_wall_seconds": 299.0327787324786,
+            "mean_episode_wall_seconds": 7.475819468311966,
+            "pooled_policy_ms_per_executed_action": 9.48611127813108,
+            "pooled_client_rpc_ms_per_executed_action": 9.954017829244446
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": -1.9131721854431432,
+          "task_mean_difference": -1.913172185443143,
+          "paired_case_bootstrap_ci95": [
+            -2.0185206574119365,
+            -1.800687222948342
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -2.042060825535577,
+            -1.7838239809481835
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": -1.5336971352890831
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": -1.8331492822456135
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": -2.280838173988863
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -2.130390973920281
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -1.8026489241283397
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -2.0104992885357684
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -1.7174239606818797
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": -2.0798549681046627
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -1.919971152452898
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": -1.8232479950840428
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|repeat_task_init22_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 4060,
+            "requests": 423,
+            "episode_wall_seconds": 178.85332477092743,
+            "mean_episode_wall_seconds": 5.961777492364248,
+            "pooled_policy_ms_per_executed_action": 2.2798951880391596,
+            "pooled_client_rpc_ms_per_executed_action": 2.6121135672618605
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 29,
+            "executed_actions": 4380,
+            "requests": 728,
+            "episode_wall_seconds": 202.72603391483426,
+            "mean_episode_wall_seconds": 6.757534463827809,
+            "pooled_policy_ms_per_executed_action": 4.170774580000742,
+            "pooled_client_rpc_ms_per_executed_action": 4.647254252372539
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": -2.061050998460966,
+          "task_mean_difference": -2.061050998460966,
+          "paired_case_bootstrap_ci95": [
+            -2.188374097279075,
+            -1.930045736872175
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -2.214149135784746,
+            -1.9137111445162411
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": -1.68813172989029
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": -1.9480429587877761
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": -2.4926004045574324
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -2.2809498749903123
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -1.8043427116669306
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -2.1158784198542295
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -1.8512439113228787
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": -2.3157816042953727
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -2.175839899371448
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": -1.9376984698729942
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_object|libero_spatial|flash|repeat_task_init22_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 4060,
+            "requests": 423,
+            "episode_wall_seconds": 178.85332477092743,
+            "mean_episode_wall_seconds": 5.961777492364248,
+            "pooled_policy_ms_per_executed_action": 2.2798951880391596,
+            "pooled_client_rpc_ms_per_executed_action": 2.6121135672618605
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 29,
+            "executed_actions": 4380,
+            "requests": 728,
+            "episode_wall_seconds": 202.72603391483426,
+            "mean_episode_wall_seconds": 6.757534463827809,
+            "pooled_policy_ms_per_executed_action": 4.170774580000742,
+            "pooled_client_rpc_ms_per_executed_action": 4.647254252372539
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        }
+      ],
+      "Full_context": {
+        "all4_init21_24": {
+          "n": 40,
+          "successes": 40,
+          "executed_actions": 5372,
+          "requests": 465,
+          "episode_wall_seconds": 275.79223446920514,
+          "mean_episode_wall_seconds": 6.894805861730129,
+          "pooled_policy_ms_per_executed_action": 8.233703281772021,
+          "pooled_client_rpc_ms_per_executed_action": 8.503515851681835
+        },
+        "repeat_task_init22_24": {
+          "n": 30,
+          "successes": 30,
+          "executed_actions": 4063,
+          "requests": 352,
+          "episode_wall_seconds": 187.34796997904778,
+          "mean_episode_wall_seconds": 6.244932332634926,
+          "pooled_policy_ms_per_executed_action": 3.396612930600056,
+          "pooled_client_rpc_ms_per_executed_action": 3.668597368273628
+        }
+      },
+      "primary_status": "replicated",
+      "task_cluster_interval_excludes_zero": true
+    },
+    {
+      "target_suite": "libero_spatial",
+      "foreign_source_suite": "libero_object",
+      "conditions": [
+        {
+          "role": "matching_pure",
+          "mode": "draft",
+          "source_suite": "libero_spatial",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "foreign_pure",
+          "mode": "draft",
+          "source_suite": "libero_object",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "matching_FLASH",
+          "mode": "flash",
+          "source_suite": "libero_spatial",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "foreign_FLASH",
+          "mode": "flash",
+          "source_suite": "libero_object",
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        },
+        {
+          "role": "Full",
+          "mode": "full",
+          "source_suite": null,
+          "expected_n": 40,
+          "n": 40,
+          "missing": []
+        }
+      ],
+      "complete": true,
+      "primary": {
+        "n_paired": 40,
+        "n_tasks": 10,
+        "case_mean_difference": 0.875,
+        "task_mean_difference": 0.875,
+        "paired_case_bootstrap_ci95": [
+          0.775,
+          0.975
+        ],
+        "task_cluster_bootstrap_ci95": [
+          0.8,
+          0.95
+        ],
+        "task_differences": [
+          {
+            "task_id": 0,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 1,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 2,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 3,
+            "n_paired": 4,
+            "difference": 0.75
+          },
+          {
+            "task_id": 4,
+            "n_paired": 4,
+            "difference": 0.75
+          },
+          {
+            "task_id": 5,
+            "n_paired": 4,
+            "difference": 0.75
+          },
+          {
+            "task_id": 6,
+            "n_paired": 4,
+            "difference": 0.75
+          },
+          {
+            "task_id": 7,
+            "n_paired": 4,
+            "difference": 0.75
+          },
+          {
+            "task_id": 8,
+            "n_paired": 4,
+            "difference": 1.0
+          },
+          {
+            "task_id": 9,
+            "n_paired": 4,
+            "difference": 1.0
+          }
+        ],
+        "bootstrap_replicates": 20000,
+        "interval": "paired percentile95%",
+        "seed_label": "libero_spatial|libero_object|draft|all4_init21_24|success",
+        "metric": "success",
+        "mode": "draft",
+        "subset": "all4_init21_24",
+        "expected_pairs": 40,
+        "undefined_pairs": [],
+        "difference_direction": "matching minus foreign",
+        "favorable_direction": "positive",
+        "matching_context": {
+          "n": 40,
+          "successes": 35,
+          "executed_actions": 4777,
+          "requests": 418,
+          "episode_wall_seconds": 298.46836917102337,
+          "mean_episode_wall_seconds": 7.461709229275584,
+          "pooled_policy_ms_per_executed_action": 5.202450712112196,
+          "pooled_client_rpc_ms_per_executed_action": 5.470304416329985
+        },
+        "foreign_context": {
+          "n": 40,
+          "successes": 0,
+          "executed_actions": 8800,
+          "requests": 760,
+          "episode_wall_seconds": 412.9822255782783,
+          "mean_episode_wall_seconds": 10.324555639456957,
+          "pooled_policy_ms_per_executed_action": 3.061611590568315,
+          "pooled_client_rpc_ms_per_executed_action": 3.3301212562417444
+        },
+        "confirmatory_p_value": 2.9103830456733704e-11,
+        "statistical_unit": "paired episode; no request-level independent samples",
+        "warm_state_claim": false,
+        "matching_only_successes": 35,
+        "foreign_only_successes": 0,
+        "both_successes": 0,
+        "both_failures": 5,
+        "exact_mcnemar_one_sided_p": 2.9103830456733704e-11,
+        "primary_direction": "matching > foreign",
+        "scope": "Case-level fixed-task confirmation; task-cluster CI is robustness information, not unseen-task generalization",
+        "holm_adjusted_one_sided_p": 2.9103830456733704e-11,
+        "holm_family_size": 2
+      },
+      "secondary": [
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 0.0,
+          "task_mean_difference": 0.0,
+          "paired_case_bootstrap_ci95": [
+            -0.075,
+            0.075
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -0.075,
+            0.075
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 0.25
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -0.25
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 0.0
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.0
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|all4_init21_24|success",
+          "metric": "success",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "positive",
+          "matching_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4333,
+            "requests": 509,
+            "episode_wall_seconds": 318.4885015040636,
+            "mean_episode_wall_seconds": 7.96221253760159,
+            "pooled_policy_ms_per_executed_action": 12.492180616007428,
+            "pooled_client_rpc_ms_per_executed_action": 12.90678729413014
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4240,
+            "requests": 706,
+            "episode_wall_seconds": 323.60643031448126,
+            "mean_episode_wall_seconds": 8.090160757862032,
+            "pooled_policy_ms_per_executed_action": 15.608326928198057,
+            "pooled_client_rpc_ms_per_executed_action": 16.100873563544088
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 0.598545199013949,
+          "task_mean_difference": 0.598545199013949,
+          "paired_case_bootstrap_ci95": [
+            0.5532537784842472,
+            0.6444785860840548
+          ],
+          "task_cluster_bootstrap_ci95": [
+            0.5555237644300144,
+            0.6414871708152958
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 0.5499999999999999
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 0.5915178571428572
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 0.6789434523809523
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.7291666666666666
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 0.595959595959596
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 0.4759920634920635
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.5639880952380952
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 0.5364583333333334
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 0.6440476190476191
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.619378306878307
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|all4_init21_24|acceptance_rate",
+          "metric": "acceptance_rate",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "positive",
+          "matching_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4333,
+            "requests": 509,
+            "episode_wall_seconds": 318.4885015040636,
+            "mean_episode_wall_seconds": 7.96221253760159,
+            "pooled_policy_ms_per_executed_action": 12.492180616007428,
+            "pooled_client_rpc_ms_per_executed_action": 12.90678729413014
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4240,
+            "requests": 706,
+            "episode_wall_seconds": 323.60643031448126,
+            "mean_episode_wall_seconds": 8.090160757862032,
+            "pooled_policy_ms_per_executed_action": 15.608326928198057,
+            "pooled_client_rpc_ms_per_executed_action": 16.100873563544088
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -0.34141208580382765,
+          "task_mean_difference": -0.3414120858038276,
+          "paired_case_bootstrap_ci95": [
+            -0.3626837473354333,
+            -0.31990009913477907
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -0.365752439450645,
+            -0.3158157211295757
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": -0.26534576534576537
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -0.3132781820862316
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -0.40773001508295625
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": -0.3643745143745144
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -0.3669804898065768
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -0.29411764705882354
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -0.35003869969040247
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -0.32222581340228396
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -0.3515522875816994
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -0.3784774436090226
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|all4_init21_24|rejection_full_fraction",
+          "metric": "rejection_full_fraction",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4333,
+            "requests": 509,
+            "episode_wall_seconds": 318.4885015040636,
+            "mean_episode_wall_seconds": 7.96221253760159,
+            "pooled_policy_ms_per_executed_action": 12.492180616007428,
+            "pooled_client_rpc_ms_per_executed_action": 12.90678729413014
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4240,
+            "requests": 706,
+            "episode_wall_seconds": 323.60643031448126,
+            "mean_episode_wall_seconds": 8.090160757862032,
+            "pooled_policy_ms_per_executed_action": 15.608326928198057,
+            "pooled_client_rpc_ms_per_executed_action": 16.100873563544088
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 3.0641069159822116,
+          "task_mean_difference": 3.064106915982212,
+          "paired_case_bootstrap_ci95": [
+            1.014771338559628,
+            5.91247214848751
+          ],
+          "task_cluster_bootstrap_ci95": [
+            1.5409018302285684,
+            5.221097514611256
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 11.281547369101073
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 2.409844444350558
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 3.028206021999337
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 3.704745116234963
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 1.5048848590711739
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 3.0812596982492204
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.09106852335467466
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 2.174430693422454
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 3.3348949262824066
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.030187507756258697
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|draft|all4_init21_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 35,
+            "executed_actions": 4777,
+            "requests": 418,
+            "episode_wall_seconds": 298.46836917102337,
+            "mean_episode_wall_seconds": 7.461709229275584,
+            "pooled_policy_ms_per_executed_action": 5.202450712112196,
+            "pooled_client_rpc_ms_per_executed_action": 5.470304416329985
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 0,
+            "executed_actions": 8800,
+            "requests": 760,
+            "episode_wall_seconds": 412.9822255782783,
+            "mean_episode_wall_seconds": 10.324555639456957,
+            "pooled_policy_ms_per_executed_action": 3.061611590568315,
+            "pooled_client_rpc_ms_per_executed_action": 3.3301212562417444
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": 3.063596306524719,
+          "task_mean_difference": 3.0635963065247185,
+          "paired_case_bootstrap_ci95": [
+            1.0166729208691034,
+            5.838920809159473
+          ],
+          "task_cluster_bootstrap_ci95": [
+            1.544086228965448,
+            5.154350127808976
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 11.276568638798325
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": 2.456894403162691
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": 3.0362278476053723
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 3.67941126513376
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": 1.5020304567308211
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": 3.080125960150356
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": 0.05348154067124225
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": 2.1743232774392562
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": 3.3186707906614386
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": 0.058228884893922944
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|draft|all4_init21_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 35,
+            "executed_actions": 4777,
+            "requests": 418,
+            "episode_wall_seconds": 298.46836917102337,
+            "mean_episode_wall_seconds": 7.461709229275584,
+            "pooled_policy_ms_per_executed_action": 5.202450712112196,
+            "pooled_client_rpc_ms_per_executed_action": 5.470304416329985
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 0,
+            "executed_actions": 8800,
+            "requests": 760,
+            "episode_wall_seconds": 412.9822255782783,
+            "mean_episode_wall_seconds": 10.324555639456957,
+            "pooled_policy_ms_per_executed_action": 3.061611590568315,
+            "pooled_client_rpc_ms_per_executed_action": 3.3301212562417444
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": 0.009125937370987292,
+          "task_mean_difference": 0.009125937370987294,
+          "paired_case_bootstrap_ci95": [
+            -0.005441963291592893,
+            0.023970087152045974
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -0.006575329722192541,
+            0.025909501123924605
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": 0.02785504013229038
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": 0.04186501616547378
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": 0.05929349952828419
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -0.019903941272547094
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": 0.00551499842389432
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -0.010712918027630821
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -0.025205053825474704
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": 0.007492936625540884
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -0.013116604843113019
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": 0.018176400803155007
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|draft|repeat_task_init22_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 26,
+            "executed_actions": 3625,
+            "requests": 318,
+            "episode_wall_seconds": 207.52857817336917,
+            "mean_episode_wall_seconds": 6.917619272445639,
+            "pooled_policy_ms_per_executed_action": 0.6789456914211142,
+            "pooled_client_rpc_ms_per_executed_action": 0.9478309534747025
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 0,
+            "executed_actions": 6600,
+            "requests": 570,
+            "episode_wall_seconds": 292.95885363966227,
+            "mean_episode_wall_seconds": 9.765295121322076,
+            "pooled_policy_ms_per_executed_action": 0.672815807276603,
+            "pooled_client_rpc_ms_per_executed_action": 0.9410514761552666
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": 0.010672662954939852,
+          "task_mean_difference": 0.010672662954939849,
+          "paired_case_bootstrap_ci95": [
+            -0.01752337721584307,
+            0.03848677966151636
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -0.02065630195509913,
+            0.04209373826947378
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": 0.037368894312084046
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": 0.09320497158607832
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": 0.08003466637234406
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -0.04525587308003087
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": 0.02094834561591293
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -0.017731371966612935
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -0.07684020412043129
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": 0.01485094579647798
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -0.029526322838443846
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": 0.029672577872020118
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|draft|repeat_task_init22_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "draft",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 26,
+            "executed_actions": 3625,
+            "requests": 318,
+            "episode_wall_seconds": 207.52857817336917,
+            "mean_episode_wall_seconds": 6.917619272445639,
+            "pooled_policy_ms_per_executed_action": 0.6789456914211142,
+            "pooled_client_rpc_ms_per_executed_action": 0.9478309534747025
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 0,
+            "executed_actions": 6600,
+            "requests": 570,
+            "episode_wall_seconds": 292.95885363966227,
+            "mean_episode_wall_seconds": 9.765295121322076,
+            "pooled_policy_ms_per_executed_action": 0.672815807276603,
+            "pooled_client_rpc_ms_per_executed_action": 0.9410514761552666
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -3.2862503878738125,
+          "task_mean_difference": -3.2862503878738125,
+          "paired_case_bootstrap_ci95": [
+            -5.879928300215531,
+            -1.3729797586374428
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -5.536943896911519,
+            -1.4139589232832166
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 1.3559868356009155
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -2.656478608559115
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -2.8992218415123796
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.3532499996294479
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -4.120206823909242
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -11.723203649851142
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -4.373321705077762
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -4.13743127002005
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -2.912553025625264
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -1.7493237894135323
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|all4_init21_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4333,
+            "requests": 509,
+            "episode_wall_seconds": 318.4885015040636,
+            "mean_episode_wall_seconds": 7.96221253760159,
+            "pooled_policy_ms_per_executed_action": 12.492180616007428,
+            "pooled_client_rpc_ms_per_executed_action": 12.90678729413014
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4240,
+            "requests": 706,
+            "episode_wall_seconds": 323.60643031448126,
+            "mean_episode_wall_seconds": 8.090160757862032,
+            "pooled_policy_ms_per_executed_action": 15.608326928198057,
+            "pooled_client_rpc_ms_per_executed_action": 16.100873563544088
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 40,
+          "n_tasks": 10,
+          "case_mean_difference": -3.3601560046043546,
+          "task_mean_difference": -3.3601560046043546,
+          "paired_case_bootstrap_ci95": [
+            -5.935441884153471,
+            -1.482993560314977
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -5.5777729709169765,
+            -1.505843409559398
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 4,
+              "difference": 1.2647420913968836
+            },
+            {
+              "task_id": 1,
+              "n_paired": 4,
+              "difference": -2.801955125152793
+            },
+            {
+              "task_id": 2,
+              "n_paired": 4,
+              "difference": -3.0348078383265813
+            },
+            {
+              "task_id": 3,
+              "n_paired": 4,
+              "difference": 0.20634136420755733
+            },
+            {
+              "task_id": 4,
+              "n_paired": 4,
+              "difference": -4.3120707510290295
+            },
+            {
+              "task_id": 5,
+              "n_paired": 4,
+              "difference": -11.786433045954176
+            },
+            {
+              "task_id": 6,
+              "n_paired": 4,
+              "difference": -4.474953501992798
+            },
+            {
+              "task_id": 7,
+              "n_paired": 4,
+              "difference": -3.784450781487505
+            },
+            {
+              "task_id": 8,
+              "n_paired": 4,
+              "difference": -2.9738844829511315
+            },
+            {
+              "task_id": 9,
+              "n_paired": 4,
+              "difference": -1.904087974753971
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|all4_init21_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "all4_init21_24",
+          "expected_pairs": 40,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4333,
+            "requests": 509,
+            "episode_wall_seconds": 318.4885015040636,
+            "mean_episode_wall_seconds": 7.96221253760159,
+            "pooled_policy_ms_per_executed_action": 12.492180616007428,
+            "pooled_client_rpc_ms_per_executed_action": 12.90678729413014
+          },
+          "foreign_context": {
+            "n": 40,
+            "successes": 39,
+            "executed_actions": 4240,
+            "requests": 706,
+            "episode_wall_seconds": 323.60643031448126,
+            "mean_episode_wall_seconds": 8.090160757862032,
+            "pooled_policy_ms_per_executed_action": 15.608326928198057,
+            "pooled_client_rpc_ms_per_executed_action": 16.100873563544088
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": -1.7200788311307413,
+          "task_mean_difference": -1.7200788311307413,
+          "paired_case_bootstrap_ci95": [
+            -1.8435751429680078,
+            -1.593828699597953
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -1.8300812311992583,
+            -1.599665811512544
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": -1.5088398634600928
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": -1.4429013029835132
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": -1.819321800478982
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -1.9510896736715246
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -1.8817906684539494
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -1.403736242040899
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -1.790615192241252
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": -1.6944968124695017
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -1.87079840982723
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": -1.8371983456804675
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|repeat_task_init22_24|policy_ms_per_executed_action",
+          "metric": "policy_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 3155,
+            "requests": 359,
+            "episode_wall_seconds": 201.8471720777452,
+            "mean_episode_wall_seconds": 6.728239069258174,
+            "pooled_policy_ms_per_executed_action": 2.559537787681147,
+            "pooled_client_rpc_ms_per_executed_action": 2.9505247406649704
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 29,
+            "executed_actions": 3192,
+            "requests": 534,
+            "episode_wall_seconds": 205.7871098779142,
+            "mean_episode_wall_seconds": 6.859570329263806,
+            "pooled_policy_ms_per_executed_action": 4.2746278426999735,
+            "pooled_client_rpc_ms_per_executed_action": 4.7795892924182395
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        },
+        {
+          "n_paired": 30,
+          "n_tasks": 10,
+          "case_mean_difference": -1.826633925098825,
+          "task_mean_difference": -1.8266339250988248,
+          "paired_case_bootstrap_ci95": [
+            -1.9803789174286506,
+            -1.6733809372029744
+          ],
+          "task_cluster_bootstrap_ci95": [
+            -1.9639706768180123,
+            -1.685639049873809
+          ],
+          "task_differences": [
+            {
+              "task_id": 0,
+              "n_paired": 3,
+              "difference": -1.6059210469734442
+            },
+            {
+              "task_id": 1,
+              "n_paired": 3,
+              "difference": -1.5627731229075585
+            },
+            {
+              "task_id": 2,
+              "n_paired": 3,
+              "difference": -1.9577198789974128
+            },
+            {
+              "task_id": 3,
+              "n_paired": 3,
+              "difference": -2.1017245541747838
+            },
+            {
+              "task_id": 4,
+              "n_paired": 3,
+              "difference": -2.1034919019465
+            },
+            {
+              "task_id": 5,
+              "n_paired": 3,
+              "difference": -1.48326710988444
+            },
+            {
+              "task_id": 6,
+              "n_paired": 3,
+              "difference": -1.9179800959205682
+            },
+            {
+              "task_id": 7,
+              "n_paired": 3,
+              "difference": -1.5977640764394463
+            },
+            {
+              "task_id": 8,
+              "n_paired": 3,
+              "difference": -1.935031877427382
+            },
+            {
+              "task_id": 9,
+              "n_paired": 3,
+              "difference": -2.000665586316714
+            }
+          ],
+          "bootstrap_replicates": 20000,
+          "interval": "paired percentile95%",
+          "seed_label": "libero_spatial|libero_object|flash|repeat_task_init22_24|client_rpc_ms_per_executed_action",
+          "metric": "client_rpc_ms_per_executed_action",
+          "mode": "flash",
+          "subset": "repeat_task_init22_24",
+          "expected_pairs": 30,
+          "undefined_pairs": [],
+          "difference_direction": "matching minus foreign",
+          "favorable_direction": "negative",
+          "matching_context": {
+            "n": 30,
+            "successes": 30,
+            "executed_actions": 3155,
+            "requests": 359,
+            "episode_wall_seconds": 201.8471720777452,
+            "mean_episode_wall_seconds": 6.728239069258174,
+            "pooled_policy_ms_per_executed_action": 2.559537787681147,
+            "pooled_client_rpc_ms_per_executed_action": 2.9505247406649704
+          },
+          "foreign_context": {
+            "n": 30,
+            "successes": 29,
+            "executed_actions": 3192,
+            "requests": 534,
+            "episode_wall_seconds": 205.7871098779142,
+            "mean_episode_wall_seconds": 6.859570329263806,
+            "pooled_policy_ms_per_executed_action": 4.2746278426999735,
+            "pooled_client_rpc_ms_per_executed_action": 4.7795892924182395
+          },
+          "confirmatory_p_value": null,
+          "statistical_unit": "paired episode; no request-level independent samples",
+          "warm_state_claim": false
+        }
+      ],
+      "Full_context": {
+        "all4_init21_24": {
+          "n": 40,
+          "successes": 37,
+          "executed_actions": 4445,
+          "requests": 390,
+          "episode_wall_seconds": 300.72644739970565,
+          "mean_episode_wall_seconds": 7.518161184992641,
+          "pooled_policy_ms_per_executed_action": 11.419368549527682,
+          "pooled_client_rpc_ms_per_executed_action": 11.686807560773213
+        },
+        "repeat_task_init22_24": {
+          "n": 30,
+          "successes": 28,
+          "executed_actions": 3331,
+          "requests": 292,
+          "episode_wall_seconds": 197.53155481815338,
+          "mean_episode_wall_seconds": 6.5843851606051125,
+          "pooled_policy_ms_per_executed_action": 3.4411624118717037,
+          "pooled_client_rpc_ms_per_executed_action": 3.713928365476566
+        }
+      },
+      "primary_status": "replicated",
+      "task_cluster_interval_excludes_zero": true
+    }
+  ],
+  "family_size": 2,
+  "expected_conditions": 400,
+  "observed_conditions": 400,
+  "alpha": 0.05,
+  "primary_test": "one-sided exact McNemar, Holm across frozen pairs",
+  "secondary_inference": "descriptive paired effects and bootstrap intervals only",
+  "no_reselection": true,
+  "timing_caution": "Per-action complete policy/RPC costs include zero-action rejection requests. Repeat-task is not guaranteed warm. Mean request latency is not actual acceleration; GPU stages are not end-to-end.",
+  "protocol_path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/heldout_statistics_protocol.json",
+  "protocol_sha256": "9302ba5d09c4e6dc7ff7b8c4620bf4ce60e59eac53fb68b74df34ca67db92895",
+  "selection_path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json",
+  "selection_sha256": "2b13bbe89412527834f07a03ab43069002a6e72e7837e5f1cfeb601b64c98c60",
+  "input_path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_confirmation_analysis/episodes.json",
+  "input_sha256": "eaae8542f04232f8e972efe1f8506a0baa03f4c1a34a911759c139530cc51f06",
+  "producer_sha256": "26e1a6249b9c760f8fd09693a1814049b5fca53b9538e5546ee97a4a0e82c359",
+  "bootstrap_replicates": 20000
+}

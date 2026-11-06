@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "experiment_name": "pi05_vision_ab",
+  "model": {
+    "config_name": "pi05_libero",
+    "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+    "backend": "jax",
+    "dtype": "bfloat16",
+    "compile_mode": "jax_jit",
+    "frozen_weights": true
+  },
+  "policy": {
+    "batch_size": 1,
+    "num_steps": 10,
+    "action_horizon": 10,
+    "action_dim": 32,
+    "replan_steps": 5,
+    "camera_call_pattern": "unchanged"
+  },
+  "compression": {
+    "merge_kind": "tome_deterministic",
+    "layer_scope": "all",
+    "expected_grid": [
+      16,
+      16
+    ],
+    "destination_cell": [
+      2,
+      2
+    ],
+    "anchor": "top_left",
+    "score_dtype": "float32",
+    "accumulation_dtype": "float32",
+    "norm_epsilon": 1e-06,
+    "tie_break": "original_index",
+    "mapping_per_block": true,
+    "reuse_map_for_mlp": true,
+    "restore_after_each_branch": true,
+    "preserve_dense_residual": true
+  },
+  "conditions": [
+    {
+      "id": "C0",
+      "mode": "off",
+      "keep_tokens": 256
+    },
+    {
+      "id": "A128",
+      "mode": "A",
+      "keep_tokens": 128
+    },
+    {
+      "id": "A64",
+      "mode": "A",
+      "keep_tokens": 64
+    },
+    {
+      "id": "B128",
+      "mode": "B",
+      "keep_tokens": 128
+    },
+    {
+      "id": "B64",
+      "mode": "B",
+      "keep_tokens": 64
+    }
+  ],
+  "benchmark": {
+    "real_observations_min": 64,
+    "observations_per_suite_min": 16,
+    "warmup_min": 30,
+    "rounds": 5,
+    "measured_calls_per_round": 200,
+    "input_residency": "gpu",
+    "synchronized_wall_time": true,
+    "cuda_event_time_optional": false,
+    "rotate_condition_order": true
+  },
+  "evaluation": {
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "root_seed": 7,
+    "environment_seed": 7,
+    "repeat_seed": 0,
+    "reset_environment_rng_each_episode": true,
+    "smoke_tasks_per_suite": 1,
+    "smoke_trials_per_task": 1,
+    "screen_init_indices": {
+      "start": 0,
+      "stop_exclusive": 5
+    },
+    "confirm_init_indices": {
+      "start": 5,
+      "stop_exclusive": 50
+    },
+    "paired_action_noise": true,
+    "noise_key_uses_config_id": false,
+    "max_candidates_per_family": 1,
+    "task_macro_average": true,
+    "paired_stratified_bootstrap_samples": 10000
+  },
+  "selection": {
+    "preferred_relative_sr": 0.7,
+    "aggressive_relative_sr_floor": 0.6,
+    "engineering_vision_speedup_target": 1.2
+  },
+  "system_evaluation": {
+    "run_if_existing_harness_available": false,
+    "change_draft_vision_only": true,
+    "preserve_verifier_and_acceptance": true,
+    "note": "No runnable pi0.5 self-speculative draft/verifier harness exists in this workspace (the FLASH harness is pi0/Triton); layer-two is reported as not evaluated rather than filling it with level-one SR."
+  },
+  "paths": {
+    "results_root": "/root/nfs/embodied/benchmark/results/pi05_vision_ab",
+    "observations_root": "/root/nfs/embodied/benchmark/results/pi05_vision_ab/observations",
+    "model_python": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python",
+    "eval_python": "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python"
+  },
+  "resolved": {
+    "run_id": "20261020_vision_ab",
+    "checkpoint": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+      "params_manifest": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/params/manifest.ocdbt",
+      "metadata_bytes": 23493,
+      "norm_stats": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json",
+      "norm_stats_sha256": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+    },
+    "backend": "jax",
+    "dtype": "bfloat16",
+    "compile_mode": "jax_jit",
+    "action_horizon": 10,
+    "action_dim": 32,
+    "num_steps": 10,
+    "replan_steps": 5,
+    "conditions": [
+      {
+        "id": "C0",
+        "mode": "off",
+        "keep_tokens": 256
+      },
+      {
+        "id": "A128",
+        "mode": "A",
+        "keep_tokens": 128
+      },
+      {
+        "id": "A64",
+        "mode": "A",
+        "keep_tokens": 64
+      },
+      {
+        "id": "B128",
+        "mode": "B",
+        "keep_tokens": 128
+      },
+      {
+        "id": "B64",
+        "mode": "B",
+        "keep_tokens": 64
+      }
+    ],
+    "python": {
+      "model": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python",
+      "eval": "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python"
+    },
+    "git": {
+      "commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "branch": "main",
+      "status": "M src/openpi/models/pi0.py\n M src/openpi/models/siglip.py\n?? examples/libero/.libero/\n?? src/openpi/models/vision_compression.py"
+    },
+    "gpu": [
+      "0, GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, NVIDIA GeForce RTX 4090, 24564 MiB, 450.00 W, 3105 MHz",
+      "1, GPU-599477fb-0507-40dc-14df-d491f7a7b202, NVIDIA GeForce RTX 4090, 24564 MiB, 450.00 W, 3105 MHz",
+      "2, GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, NVIDIA GeForce RTX 4090, 24564 MiB, 450.00 W, 3105 MHz",
+      "3, GPU-555cde36-5e41-bc44-0c69-ea47358fd703, NVIDIA GeForce RTX 4090, 24564 MiB, 450.00 W, 3105 MHz"
+    ],
+    "environment": {
+      "model_env": {
+        "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+        "jax": "0.5.3",
+        "jaxlib": "0.5.3",
+        "devices": [
+          {
+            "kind": "NVIDIA GeForce RTX 4090",
+            "platform": "gpu"
+          }
+        ]
+      },
+      "eval_env": {
+        "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+        "numpy": "1.26.4",
+        "robosuite": "1.4.0",
+        "mujoco": "3.3.6",
+        "tasks": {
+          "libero_spatial": 10,
+          "libero_object": 10,
+          "libero_goal": 10,
+          "libero_10": 10
+        }
+      }
+    },
+    "code_sha256": {
+      "siglip.py": "033f80d9f60ddf19bc25526f6d4777ba73254ccddebe528550b3d26541f803dd",
+      "vision_compression.py": "2502a46f175b1bb904d2ffe3bfde9ee7e39813d5685b52c3d06628e667f08817",
+      "experiment": {
+        "policy_adapter.py": "e9aecfdfef3aef049e7bd79eb8be90620636dd7fda40aad43a6cb3d5a7eef896",
+        "compression.py": "8d4077c902afcaf3cdf4ca27b27248d117067d1bcfdbce16af8d8beb41ef6100",
+        "evaluation_adapter.py": "3ba9c9cc0a9e30daebfcf335a4628c412ec869ae5301996d58dda35e08929118",
+        "server.py": "f971e077a58c83de7f02517b49df42b9181a7a7c6e46fc8ee0dab5d790cccf87",
+        "summarize.py": "868d7b1a6160531f6931c6b13396ae866f3c04157528ffa39010a05200468407",
+        "checks.py": "cadd09c2f18885da289bbd585a9817ddc808c832fcf9c72a750de34a64f1e43f",
+        "bench.py": "f7dd7ab6a01daaed1ef6c2bde2f98fd87f56d224e6cb85998fdf83c8380d7f07",
+        "run.py": "569eb5229d0df7260ccdca0dbb8b89624d42b915c2bef6da222c268e8a2ccce4"
+      }
+    },
+    "created_utc": "2026-10-20T14:25:01Z"
+  }
+}

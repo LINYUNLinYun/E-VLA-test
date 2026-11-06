@@ -1,0 +1,101 @@
+{
+  "status": "complete",
+  "success": false,
+  "manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "case_hash": "891253f19408345ea91f177999eb9a356e0b3367b028345d6417fe4373c9fe1f",
+  "case": {
+    "id": 1546,
+    "name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_50",
+    "category": "Sensor Noise",
+    "difficulty_level": 3,
+    "mother_suite": "libero_spatial",
+    "task_index": 1545,
+    "mother_task": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+    "matching_draft": "draft_spatial",
+    "native_max_steps": 600,
+    "trial": 0,
+    "environment": "libero_plus",
+    "seed": 1273370222
+  },
+  "mode": "v14_d10",
+  "environment": "libero_plus",
+  "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+  "pid": 3440700,
+  "steps": 600,
+  "requests": 120,
+  "input_contract": "exact original unflipped native observation; server native_observation once",
+  "source_files": {
+    "preparations/idea1_v3_2_e4_supplement/run_plus.py": "ee2de53b2419f16e0b6bdcf91e56e4b84aea72762d6bc89e2a7448c34b7e5076",
+    "preparations/idea1_v3_2_e4_supplement/libero_plus_env.py": "68c7596ebbcec5bcaaa8133530dd05d978938fc71d859105b16516f040dd9453"
+  },
+  "native_info": {
+    "environment": "libero_plus",
+    "repository": "/policies/LIBERO-plus",
+    "actual_import": "/policies/LIBERO-plus/libero/libero/__init__.py",
+    "isolated_config": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z/config_plus_gpu3",
+    "runtime_task_index": 1545,
+    "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_50",
+    "instruction": "pick the akita black bowl in the top layer of the wooden cabinet and place it on the plate",
+    "benchmark_definition_language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate view 0 0 100 0 0 initstate 0 noise 50",
+    "benchmark_language_differs_from_parsed_bddl": true,
+    "instruction_source": "actual effective BDDL :language (rewritten language-perturbation BDDL kept); filename camera/noise/robot tags never sent as prompt",
+    "native_hz": 20.0,
+    "H": 50,
+    "R": 5,
+    "max_steps": 600,
+    "settle_steps": 5,
+    "category": "Sensor Noise",
+    "difficulty": 3,
+    "matching_draft": "draft_spatial",
+    "binding": {
+      "gpu": 3,
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "pci_bus_id": "00000000:E1:00.0",
+      "preconstructor_compute_pids": [
+        "51385"
+      ],
+      "idle_required": false,
+      "sapien_device": "pci:E1",
+      "verification": "SAPIEN documented exact PCI device selector resolved from assigned NVIDIA UUID; no default selector"
+    },
+    "physical_bddl_requested": "/policies/LIBERO-plus/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_view_0_0_100_0_0_initstate_0_noise_50.bddl",
+    "noise_pipeline": "Official Plus ControlEnv wrapper, including actual image corruption during rendered steps",
+    "controller": {
+      "input_min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "input_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "output_min": [
+        -0.05,
+        -0.05,
+        -0.05,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "initial_vector_sha256": "2e3f91b350eaef1b23c2d4ee14c513b2158a106bff7ed6c249b58e2cf89367f4"
+  },
+  "termination": "step_cap",
+  "wall_s": 468.0784969367087
+}

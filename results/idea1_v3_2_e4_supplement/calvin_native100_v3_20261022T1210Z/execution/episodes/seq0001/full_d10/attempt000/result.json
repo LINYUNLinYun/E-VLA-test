@@ -1,0 +1,75 @@
+{
+  "status": "running",
+  "plan_hash": "6234836a3659c67dcd74e54dbe7cdf8d13d277e2f45397eb998e95d2b63997ee",
+  "manifest_hash": "6b255e5d58cc3dc10cbff4c1075ebf9d951abff6b101fdb4df82bab182cfca7e",
+  "sequence_index": 1,
+  "sequence_hash": "f5891d63e489ecb76c74021afee5f66324c46fe7e90c10dad6e9b0ed6bd26d4f",
+  "sequence": {
+    "index": 1,
+    "initial_condition": {
+      "led": 1,
+      "lightbulb": 1,
+      "slider": "right",
+      "drawer": "open",
+      "red_block": "slider_right",
+      "blue_block": "table",
+      "pink_block": "slider_left",
+      "grasped": 0
+    },
+    "tasks": [
+      "turn_off_led",
+      "push_into_drawer",
+      "lift_blue_block_drawer",
+      "place_in_slider",
+      "close_drawer"
+    ]
+  },
+  "mode": "full_d10",
+  "completed_subtasks": 3,
+  "success": null,
+  "task_results": [
+    {
+      "index": 0,
+      "task": "turn_off_led",
+      "instruction": "press the button to turn off the led light",
+      "steps": 132,
+      "requests": 27,
+      "success": true
+    },
+    {
+      "index": 1,
+      "task": "push_into_drawer",
+      "instruction": "slide the block that it falls into the drawer",
+      "steps": 111,
+      "requests": 23,
+      "success": true
+    },
+    {
+      "index": 2,
+      "task": "lift_blue_block_drawer",
+      "instruction": "Take the blue block from the drawer",
+      "steps": 43,
+      "requests": 9,
+      "success": true
+    },
+    {
+      "index": 3,
+      "task": "place_in_slider",
+      "instruction": "store the grasped block in the sliding cabinet",
+      "steps": 5,
+      "requests": 1,
+      "success": false
+    }
+  ],
+  "native_steps": 291,
+  "requests": 60,
+  "gripper_semantics": "action_sign",
+  "action_contract": "native_exact_no_first6_clipping",
+  "environment": "calvin",
+  "family": "calvin_abc_d_native",
+  "outside_unit_components": 0,
+  "total_decoded_components": 1800,
+  "initial_native_state_sha256": "73153700001b6e21b8ab9778dc142a0d5c1a8be259bba86b2eca0ff939e41e91",
+  "initial_observation_path": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/episodes/seq0001/full_d10/attempt000/initial_native_observation.npz",
+  "initial_match_policy": "Record actual robot/scene floats and RGB; hash inequality alone is not physical initial-state mismatch"
+}

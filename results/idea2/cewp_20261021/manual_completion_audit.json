@@ -1,0 +1,22 @@
+{
+  "completed_unix": 1792583739.417473,
+  "passed": true,
+  "automated_evidence_checks": 56,
+  "report": "docs/experiments/idea2/idea2_cewp_20261021.md",
+  "report_sha256": "b238d22aa9004096ca6997e58b41d303202e19a6c32840674cab095ad31c0498",
+  "manual_review": {
+    "original_scope": "D1/5/10, original eager/dual/Graph baselines, ordered submissions, priorities, preparation and selective overlap, native baseline, numerical/lifecycle correctness, actual kernel overlap and reports",
+    "timing_boundaries": "CPU response vs AE output vs Prefill/both completion separated; incomplete Prefill work hidden from fair both-completion table; profile excluded from latency ranking",
+    "correctness": "All eligible normalized/decoded action max and MAE independently inspected as exactly zero; compile failures retained and excluded",
+    "semantic_bounds": "Complete old KV only, two Slots; no per-layer new-KV dependency; KV-ready tail diagnosed without early publication; native fresh-KV comparison explicitly qualified",
+    "negative_results": "D1 both-branch regression, stale no-wait candidates, compile errors, schedule-only negligible/negative effects retained",
+    "artifacts": "Final latency plot visually inspected; report links and representative nsys paths exist; commands checked against actual CLI and recorded argv",
+    "process_cleanup": "Core/followup/repeat/native queues terminal; final KV-ready diagnostic exit0; ps shows no remaining own CEWP GPU jobs"
+  },
+  "limits": [
+    "No closed-loop success-rate evaluation",
+    "No SM/DRAM hardware-counter attribution",
+    "KV-ready early publication not integrated or benchmarked; isolated tail only",
+    "Native noise generation excluded, PyTorch includes it; source semantics differ"
+  ]
+}

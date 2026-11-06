@@ -1,0 +1,44 @@
+{
+  "schema": "ease-newscience-zero-case-startup-recovery-v1",
+  "time": 1793870857.8965485,
+  "zero_case_startup_failure_verified": true,
+  "scientific_manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+  "failed_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/local_object/runs/discovery_shard00of01_1793870468885002220",
+  "failed_run_files": [
+    "server.log",
+    "identity.json"
+  ],
+  "server_log_sha256": "e40a5a01e1f0e2f7b1e1acfb7b708e712a0a9e5344c7e26f2a96b15b715151e3",
+  "identity_sha256": "6e710635d0526ab507d54d6ad9bb68ab34da6741406ccaa67a7181ac33faab04",
+  "local_object_receipts_at_diagnosis": 0,
+  "local_object_results_at_diagnosis": 0,
+  "failed_borrower_pid": 753851,
+  "failed_borrower_start_ticks": "2624816625",
+  "completed_conditions_preserved": {
+    "full_d10": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/full_d10/discovery_shard00of01_complete.json",
+      "sha256": "42e640e06f02cb2a8152bcdc3fd369c13aa18d00ff12d9245aa37bafdf8a5d76",
+      "cases": 72
+    },
+    "jac_anchor": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/jac_anchor/discovery_shard00of01_complete.json",
+      "sha256": "ee98ba79802ca06fccb4cbde1c02ea6b83abce464fd3b8f8d83c47d249ad1c1a",
+      "cases": 72
+    }
+  },
+  "observed_extra_gpu0_compute_after_own_model_exit": {
+    "index": 0,
+    "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "memory_mib": 18423.0,
+    "compute_process_count": 2,
+    "host_compute_pids": [
+      1975204,
+      2830912
+    ],
+    "state": "busy",
+    "idle": false
+  },
+  "cached_query_finished_at": 1793870855.8983116,
+  "diagnosis": "CUDA OOM during model initialization before health gate/protocol/worker/cases. Extra compute persists after ownmodel exited; foreigncontention is a supported inference, not an identified owner. No valid policyfailure retried.",
+  "recovery": "Wait originalsolekeeper+<=512MiB continuous15s at2spoll, then launch unchanged borrower which validates/skips existingcomplete markers and claims onlyavailableconditions. Original sessions+keepers+leases retained; no signals sent."
+}

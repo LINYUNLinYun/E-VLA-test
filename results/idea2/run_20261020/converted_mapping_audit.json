@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "expected_trained_tensors": 776,
+  "saved_tensors": 777,
+  "missing_trained_keys": [],
+  "shape_mismatches": {},
+  "saved_unmapped_keys": [
+    "paligemma_with_expert.gemma_expert.lm_head.weight",
+    "paligemma_with_expert.paligemma.lm_head.weight"
+  ],
+  "unexpected_keys": [],
+  "saved_aliases": {
+    "paligemma_with_expert.paligemma.model.language_model.embed_tokens.weight": "paligemma_with_expert.paligemma.lm_head.weight"
+  },
+  "official_converter_sha256": "62980fda1a1b1a09167d413232a2a9295db8370e52b58a70cfba52ef5d88c440",
+  "scope": "Metadata proves trained tensor mapping coverage/shapes; does not establish numeric JAX/PyTorch parity"
+}

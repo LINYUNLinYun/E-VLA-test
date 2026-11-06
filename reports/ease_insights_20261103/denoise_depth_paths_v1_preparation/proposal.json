@@ -1,0 +1,97 @@
+{
+  "revision": "denoise-depth-proposal-v0",
+  "status": "CPU_preparation_only_no_GPU_manifest_or_service",
+  "time": 1793902968.1761303,
+  "motivation": "The completed module branch confounded fewer AE layers with fixed D2. A separate branch could trade action-expert depth against Euler time resolution, using actual completed-policy cost matching rather than layer counts.",
+  "proposal_basis": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/module_tradeoff_v1/completed_summary.json",
+    "sha256": "b67e7fb5ef27ee38abfa5b3a5135a89a069aa9aeb35598915ea52fb7636d71b6",
+    "known_result": "AE16D2=74/80, AE14D2=64/80, AE12D2=24/80; no complementary pair. These known outcomes motivate D3/D4 compensation; improvement is not assumed."
+  },
+  "proposed_new_conditions": [
+    {
+      "id": "dense_d2",
+      "D": 2,
+      "ae_skip": [],
+      "AE_layers": 18,
+      "logical_AE_layer_visits_per_Fast": 36
+    },
+    {
+      "id": "ae14_d3",
+      "D": 3,
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ],
+      "AE_layers": 14,
+      "logical_AE_layer_visits_per_Fast": 42
+    },
+    {
+      "id": "ae12_d4",
+      "D": 4,
+      "ae_skip": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "AE_layers": 12,
+      "logical_AE_layer_visits_per_Fast": 48
+    },
+    {
+      "id": "ae16_d3",
+      "D": 3,
+      "ae_skip": [
+        2,
+        8
+      ],
+      "AE_layers": 16,
+      "logical_AE_layer_visits_per_Fast": 48
+    }
+  ],
+  "proposed_references": [
+    "original FullD10",
+    "original AE16D2"
+  ],
+  "fixed": {
+    "VLM_layers": 18,
+    "vision_layers": 27,
+    "cameras": 2,
+    "H": 50,
+    "R": 5,
+    "Full_D": 10,
+    "Full_AE_layers": 18,
+    "fast_rounds_per_refresh": 2,
+    "AE_skip_only_on_Fast": true,
+    "training": false
+  },
+  "numeric_requirements": "Unwrapped original adapter D2/D3/D4/D10 vs scoped AE18 parity on four fixed-bank prompts at unchanged1e-5; actual AE visits, exact exported Euler nodes, restoration, reset and every-request native counters; preserve original sampler and kernel sources.",
+  "reference_requirements": "If old Full/AE16D2 quality records are reused, keep their identities and first-input/noise contracts; first reproduce four known controls per algorithm bitwise in the new runtime. Otherwise do not reuse.",
+  "tentative_discovery": {
+    "new_conditions": 4,
+    "cases_each": 80,
+    "new_cases": 320,
+    "preserved_cells_if_bridge_passes": 160,
+    "analytical_cells": 480
+  },
+  "qualification": "Before GPU outcomes freeze complete-data selection: overall>=.75 and>=Full-.15, native cost ratio>=1.15, pair cost within10%, opposite distinct-suite gaps>=.10, >=2 positive tasks, each task LOO positive. Logical AE visits do not establish equal latency.",
+  "heldout": "Not allocated to this preparation. Camera_v3 has priority on47-49; future use requires a new unused-state audit. If camera consumes them, identify and freeze a different independent initial-state plan before a new quality search.",
+  "launch_gate": "Do not queue or construct a model while camera_v3 is running. Camera discovery/confirmation and its frozen directions take priority. This preparation is not a replacement objective or a reason to stop the active goal.",
+  "implementation": {
+    "CPU_contracts_passed": 6,
+    "sources": {
+      "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+      "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+      "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+      "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e"
+    },
+    "model_constructed": false,
+    "GPU_started": false,
+    "scientific_manifest_created": false
+  },
+  "current_camera_success_outcomes_used": false
+}

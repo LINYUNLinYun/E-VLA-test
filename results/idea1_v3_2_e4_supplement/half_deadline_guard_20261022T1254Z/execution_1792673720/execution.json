@@ -1,0 +1,11 @@
+{
+  "status": "guard_failed_or_cancelled",
+  "guard_pid": 3437927,
+  "plan_hash": "e44dd99098195023d1e72fe1b7fb36c09fe49b3bd269d4909a0a7730d81a2d32",
+  "new_deadline_unix": 1792713600,
+  "events": [],
+  "gpu_scans_before_original_shutdown": 0,
+  "last_readonly_check_unix": 1792684234.738818,
+  "error": "Traceback (most recent call last):\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/resume_half_deadline.py\", line 220, in execute\n    approve()  # lightweight revocation check, at most60s latency\n    ^^^^^^^^^\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/resume_half_deadline.py\", line 211, in <lambda>\n    manifest=json.loads((Path(plan['half_root'])/'manifest.json').read_text());approve=lambda:approval(plan,a.approval)\n                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/resume_half_deadline.py\", line 47, in approval\n    raise RuntimeError('Approval absent/revoked or priority changed; stop without touching replacement processes')\nRuntimeError: Approval absent/revoked or priority changed; stop without touching replacement processes\n",
+  "completed_unix": 1792684534.7790804
+}

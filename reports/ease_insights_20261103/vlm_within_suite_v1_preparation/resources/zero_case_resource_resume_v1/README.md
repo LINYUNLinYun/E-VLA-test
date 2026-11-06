@@ -1,0 +1,18 @@
+# Zero-case resource resume controller
+
+This is an external CPU-only preparation artifact for restarting the frozen original borrower after a narrowly classified zero-case Pi0 initialization OOM. It does not alter the scientific manifest, borrower, server, worker, resource holders, or accepted case artifacts. Import and `--help` are inert; the launch path additionally requires explicit `--approve-launch` and caller-reviewed registry SHA, PID, and start ticks. It was not launched during this preparation task.
+
+The controller is pinned to manifest field hash `6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d` and manifest file SHA `e9dc20f236a74da7e10493488ea644f0050501159f0c2e390e77c8f2ab653ddb`. It permits only the two original GPU UUIDs recorded in `resource_resume.py`, reads the pinned 2-second watcher cache, and requires nine distinct fresh owner-only samples spanning at least 15 seconds with keeper memory at or below 512 MiB. It never issues GPU queries or signals processes.
+
+Before each launch it validates the assigned registry row's exact predecessor PID/start, frozen argv, and dead/process-group state under a global CPU registry RMW lock. A durable exclusive intent precedes `Popen`; child and registry receipts follow. Exit handling updates only the assigned UUID row while preserving peer-row changes. A nonzero exit is retryable only when the new service run is bound to its own controller PID and frozen manifest/argv/runtime phase, has exactly `identity.json` and `server.log`, and the last traceback contains exact CUDA out-of-memory from one Pi0Inference constructor stack containing `pi0_infer.py::__init__`. Only the three recognized PyTorch CUDA warning lines may follow that exception; health/protocol/worker/episode progression or any other suffix forces attention. The borrower's process group must have no remaining children, and three fresh distinct post-exit cached observations must share an unattributed nonkeeper PID. Any ambiguity goes to manual attention; failed run files remain intact.
+
+During availability waits and child execution, byte-identical preexisting completion markers and all preexisting run directories are preserved. Valid new 72-case markers are accepted. New peer service runs are accepted only when their identity binds to the other GPU's registry-pinned borrower PID, frozen manifest/argv, and runtime phase; the own-child OOM classifier then filters its candidate run by its controller PID.
+
+The tests use temporary fake CPU data only. From this directory, the exercised checks were:
+
+```text
+/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python -B -m unittest -v test_resource_resume.py
+/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python -B resource_resume.py --help
+```
+
+Both passed with 23 contracts. The fake journal contracts cross-bind intent, child, exit, registry receipts, classification fields, fixed argv, manifest, predecessor, and embedded receipt SHAs; incomplete or mismatched chains fail closed for manual reconciliation. The two Root-authorized zero-case `identity.json` and `server.log` pairs were read only in the preceding preparation turn to confirm schema and warning-tail text; no additional run artifacts or episode outcomes were inspected for this journal change. These checks do not validate a live GPU launch, watcher operation, or current run state. A future launch requires a separate root review of the current shared registry pin and explicit authorization; an incomplete intent deliberately blocks automatic restart for manual reconciliation.

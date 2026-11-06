@@ -1,0 +1,206 @@
+{
+  "revision": "ease-vlm-local-search-v1",
+  "created_unix": 1793780494.6170871,
+  "status": "prospectively_frozen_before_new_outcomes",
+  "purpose": "One bounded local-search round after original Jac/MSE prespecified suite contrasts failed to reproduce. Preserve all prior negative results. Names denote proposal provenance only.",
+  "previous_evidence": {
+    "pair_interim": "reports/ease_insights_20261103/vlm_pair_interim/interim_analysis.json",
+    "task_semantic_exploration": "reports/ease_insights_20261103/vlm_pair_interim/task_semantic_exploration.json"
+  },
+  "conditions": {
+    "full_d10": [],
+    "jac_anchor": [
+      2,
+      3,
+      5,
+      14,
+      16,
+      17
+    ],
+    "local_spatial": [
+      2,
+      3,
+      5,
+      13,
+      16,
+      17
+    ],
+    "local_object": [
+      2,
+      3,
+      5,
+      14,
+      15,
+      17
+    ],
+    "local_goal": [
+      2,
+      3,
+      11,
+      14,
+      16,
+      17
+    ],
+    "local_long": [
+      2,
+      3,
+      5,
+      12,
+      16,
+      17
+    ]
+  },
+  "candidate_generation": {
+    "source": "results/idea1_v3_4_E2_E4_single/E2_requests.csv",
+    "source_sha256": "807db2d6dd11616fee788c198d3d458c4b34270dac53a6c54a70bc398f6d0e0f",
+    "observations": "gate=0; historical init14; task0,2,4,6,8 across4 suites;20 observations",
+    "anchor": "jac_anchor",
+    "neighborhood": "exactly one retained/skipped layer swap; six skipped from1..17; maximum consecutive skips2; exclude previously tested MSE mask",
+    "score": "Within each observation and action group, zero-based rank of predicted_rms and actual_rms; average ranks, equal weighting of two metrics; per-suite minimum score neighbor; exact deterministic generator receipt required",
+    "outcome_independent": true
+  },
+  "fixed_science": {
+    "target": "same local converted Pi0 LIBERO base",
+    "vlm_layers_total": 18,
+    "candidate_retained_layers": 12,
+    "vision_layers": 27,
+    "horizon": 50,
+    "replan_steps": 5,
+    "denoise_schedule": [
+      10,
+      2,
+      2
+    ],
+    "refresh_cycle": 3,
+    "residual": "same frozen linear residual extrapolation",
+    "noise": "same per suite/task/init/request Gaussian seed protocol",
+    "runtime_selector": false,
+    "layer_indices": "1-based"
+  },
+  "discovery": {
+    "conditions": [
+      "full_d10",
+      "jac_anchor",
+      "local_spatial",
+      "local_object",
+      "local_goal",
+      "local_long"
+    ],
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inits": [
+      36,
+      37,
+      38
+    ],
+    "episodes": 720,
+    "root": "results/ease_insights_20261103/vlm_local_search_v1/discovery"
+  },
+  "selection": {
+    "strict_complete_episodes": 720,
+    "candidate_min_overall_success": 0.75,
+    "max_success_gap_below_full": 0.15,
+    "min_fixed_input_cost_speed_ratio": 1.15,
+    "cost_aggregation": "median across completed gated services of same-input mean native policy Full cost / candidate Full-Fast-Fast cost; excludes RPC/environment; descriptive shared-load limitation",
+    "pairs": "all unordered pairs of qualifying non-Full candidates; A/B names lexical order",
+    "contrasts": "all ordered distinct suiteX,suiteY; A>B inX andB>A inY",
+    "min_each_suite_success_gap": 0.1,
+    "min_positive_tasks_each_direction": 2,
+    "every_leave_one_task_out_gap_strictly_positive": true,
+    "tie_break_order": [
+      "highest minimum of two suite gaps",
+      "highest sum of suite gaps",
+      "highest minimum of pair overall success",
+      "ascending lexical tuple A,B,suiteX,suiteY"
+    ],
+    "no_eligible_pair": "stop bounded search with no_candidate, report full matrix and prior negative results; no automatic further expansion",
+    "exploratory_only": true
+  },
+  "confirmation": {
+    "conditions": "selected two candidates plusFull",
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inits": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "episodes": 600,
+    "root": "results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+    "selection_frozen_before_any_case": true,
+    "primary_family": "two selected opposite suite directions",
+    "primary_test": "one-sided exact task-block sign-flip randomization over10 per-task mean differences (enumerate2^10 assignments, ties included), Holm2",
+    "sensitivity_test": "one-sided paired-case exact McNemar, Holm2; repeated-initial-state independence not assumed for main inference",
+    "alpha": 0.05,
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261104,
+    "intervals": [
+      "paired-case percentile95",
+      "task-cluster percentile95"
+    ],
+    "required_for_complementarity": [
+      "both observed directional gaps strictly positive",
+      "both Holm2 task-block p-values strictly below0.05",
+      "both task-cluster95 lower bounds strictly positive",
+      "all leave-one-task-out directional gaps strictly positive",
+      "both candidates overall success>=0.75 and>=Full minus0.15"
+    ],
+    "timing": "report native policy and full RPC per executed action, episode and preparation cost, and available contention observations; no guarantee of equivalence/noninferiority/exclusive-GPU timing",
+    "if_not_reproduced": "report not_reproduced; no automatic repeated search for significance"
+  },
+  "execution": {
+    "new_scientific_episode_cap": 1320,
+    "discovery720_then_optional_confirmation600": true,
+    "single_existing_gpu_allocator": true,
+    "max_concurrent_gpus": 2,
+    "only_naturally_idle_local_gpu": true,
+    "assigned_gpu_idle_gate_seconds": 60,
+    "unrelated_process_signals": false,
+    "technical_retry": "only missing cases after inspected technical interruption; preserve earliest valid outcomes and prior failed attempt logs",
+    "all_original_sources_and_manifests_unchanged": true,
+    "new_runtime_GPU_gate_required_before_rollout": true
+  },
+  "audit": {
+    "official_init_vectors_hashed_before_launch": true,
+    "no_new_stage_cases_started_before_manifest_freeze": true,
+    "all_receipt_artifact_hashes_checked": true,
+    "paired_initial_observation_and_noise_required": true,
+    "full_discovery_matrix_reported": true,
+    "all_selection_comparisons_reported": true,
+    "retain_primary_and_secondary_nulls": true
+  }
+}

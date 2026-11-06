@@ -1,0 +1,83 @@
+{
+  "scope": "One fixed-noise no-op and one intended-mask action-path equality check; no SR or algorithmic speedup claim",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "device": "cpu",
+  "threads": 32,
+  "noise_seeds": [
+    1137,
+    1138
+  ],
+  "readout_only_noop": {
+    "raw": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "decoded": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "trace": {
+      "request": 0,
+      "mode": "sae_only",
+      "refresh": true,
+      "seen": 1,
+      "sae_router_ms": 27.95204520225525,
+      "mask": [],
+      "reason": "readout_only",
+      "active_concepts": [],
+      "confidence": {
+        "object/bowl": 0.0,
+        "object/stove": 0.0,
+        "spatial/on": 0.0
+      },
+      "policy_call": 1,
+      "policy_ms": 93548.22146892548
+    },
+    "selected_positions_equal": true,
+    "L5_samples_equal": true
+  },
+  "intended_mask_path": {
+    "input": "/root/nfs/embodied/benchmark/results/idea2/control_alignment_20261026/sync_gate/episodes/fresh18/libero_spatial/task00/init00/inputs/replan0000.npz",
+    "expected_mask": [
+      6,
+      15
+    ],
+    "trace": {
+      "request": 2,
+      "mode": "sae_route",
+      "refresh": false,
+      "seen": 1,
+      "sae_router_ms": 17.068784683942795,
+      "mask": [
+        6,
+        15
+      ],
+      "reason": "semantic_prior",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ],
+      "confidence": {
+        "object/bowl": 1.0,
+        "object/stove": 0.11103696955277177,
+        "spatial/on": 1.0
+      },
+      "policy_call": 3,
+      "policy_ms": 89430.04741892219
+    },
+    "raw": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "decoded": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "expected_offline_confidence": {
+      "object/bowl": 1.0,
+      "object/stove": 0.11103696955277177,
+      "spatial/on": 1.0
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-25T05:44:17.716441+00:00",
+  "plan": "docs/experiments/idea2/idea2_fresh_tail_plan_20261025.md",
+  "model": "pi05_libero full Gemma2B+300M B1 H10 D10 R5 BF16",
+  "conditions": [
+    {
+      "ae_sm_min": 16,
+      "lead": 3,
+      "fresh_tail_steps": 0
+    },
+    {
+      "ae_sm_min": 16,
+      "lead": 3,
+      "fresh_tail_steps": 1
+    },
+    {
+      "ae_sm_min": 16,
+      "lead": 3,
+      "fresh_tail_steps": 2
+    },
+    {
+      "ae_sm_min": 32,
+      "lead": 3,
+      "fresh_tail_steps": 0
+    },
+    {
+      "ae_sm_min": 32,
+      "lead": 3,
+      "fresh_tail_steps": 1
+    },
+    {
+      "ae_sm_min": 32,
+      "lead": 3,
+      "fresh_tail_steps": 2
+    }
+  ],
+  "semantics": "approximate mixed-prefix early rounds; final K rounds use all current KV once final-layer KV-ready; no requirement for final VLM FFN completion",
+  "resources": {
+    "GPU0": "excluded after repeated external jobs; failed preflight and loading interference retained; no measured rows",
+    "GPU2": "SM16 formal/repeat then grouped real LIBERO quality56",
+    "GPU3": "matched-input quality then SM32 formal/repeat and profiles",
+    "GPU1": "excluded, foreign process not touched"
+  },
+  "old_runtime_modified": false,
+  "adapter_sha256": "2763c283363869fdd1c358dfd6b1c81a1b8d9fd17b4a418276d9a7200059faf3",
+  "gate": "gate_matrix.execution.json",
+  "formal": [
+    "formal_sm16_matrix.execution.json",
+    "formal_sm32_gpu3_matrix.execution.json (first four passed cases only)",
+    "formal_sm32_gpu3_remaining_matrix.execution.json"
+  ],
+  "tolerance": {
+    "matched_schedule_max_abs": 1e-05,
+    "matched_schedule_mae": 1e-06
+  },
+  "caveats": [
+    "Fresh tail is not mathematically fresh-equivalent because early steps consume mixed KV",
+    "SM families are measured on different physical GPUs; only within-family tail comparison is controlled",
+    "Tail boundary Event span includes waiting and minor event scheduling overhead"
+  ],
+  "gate_status": "passed",
+  "gate_cases": [
+    {
+      "name": "gate_sm16_tail2",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "name": "gate_sm32_tail1",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "name": "gate_sm16_tail0",
+      "exit_code": 0,
+      "status": "passed"
+    }
+  ],
+  "exclusions": [
+    "gpu0_preflight_foreign.json",
+    "formal_sm32_matrix.execution.json (foreign interference, zero measured rows)",
+    "matched_gate12_gpu3 first attempt (missing CPU-JAX environment, zero outputs)",
+    "closedloop_gpu2 first episode: render EGL0 actually GPU3; episode successful but invalid GPU guard, rerun EGL1",
+    "formal_gpu3_sm32_tail1_repeat: own wrong-EGL client G context detected at load, zero measured rows; retry unique output"
+  ],
+  "report": "docs/experiments/idea2/idea2_fresh_tail_report_20261025.md",
+  "matched100": "matched100_gpu3/result.json",
+  "matched100_status": "complete",
+  "quality": "closedloop_gpu2_eglmap/execution.json",
+  "counterfactual": "counterfactual_gpu3/result.json",
+  "egl_mapping": {
+    "0": "GPU3",
+    "1": "GPU2",
+    "2": "GPU1",
+    "3": "GPU0"
+  },
+  "completed_utc": "2026-10-25T06:50:18.198698+00:00",
+  "audit": "final_audit.json",
+  "audit_status": "passed",
+  "report_sha256": "c860cc7e1819b1cfc481610e4105289937c2960e3a4f10e699cc500e4d10f673",
+  "pending": [],
+  "all_owned_gpu_leases_released": true,
+  "counts": {
+    "formal_valid_processes": 12,
+    "formal_measured_outputs": 21600,
+    "formal_oracle": 48,
+    "matched_outputs": 600,
+    "matched_oracle": 48,
+    "counterfactual_ae": 600,
+    "counterfactual_tail0_replays": 200,
+    "quality_valid_cases": 56,
+    "quality_requests": 1782,
+    "quality_bootstrap_comparisons": 48,
+    "nsys_traces": 2,
+    "diagnostic_groups": 20,
+    "independent_audit_checks": 79253
+  },
+  "selection": {
+    "retain_candidate": "SM32/Prefix96 lead3 tail2",
+    "mainline_reference": "SM16/Prefix112 lead3 tail0",
+    "production_default_changed": false,
+    "tail1": "one valid task failure and reproducible slow preparation path retained",
+    "slo": "camera SLO not rerun; first pipeline request tail2 +6.8ms"
+  },
+  "reproduction_index": "reports/idea2_fresh_tail_20261025/reproduction_index.json"
+}

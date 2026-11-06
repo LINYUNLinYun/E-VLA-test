@@ -1,0 +1,77 @@
+{
+  "valid": true,
+  "main_episodes": 568,
+  "optimized_episodes": 40,
+  "paced_episodes": 45,
+  "new_valid_episodes": 653,
+  "prefix_checks": 568,
+  "source_integrity_passed": true,
+  "mechanism_audits": 608,
+  "pacing_equivalence_passed": false,
+  "strict_pacing_equivalence_passed": true,
+  "strict_paced_cases": 8,
+  "strict_excluded_cases": [
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    }
+  ],
+  "diagnostic_replay_passed": true,
+  "operator_checks": [
+    {
+      "worker": "gpu0",
+      "checks": 12,
+      "strict_passes": 12
+    },
+    {
+      "worker": "gpu1",
+      "checks": 12,
+      "strict_passes": 12
+    },
+    {
+      "worker": "gpu0",
+      "checks": 12,
+      "strict_passes": 12
+    },
+    {
+      "worker": "gpu1",
+      "checks": 12,
+      "strict_passes": 12
+    },
+    {
+      "worker": "gpu2",
+      "checks": 12,
+      "strict_passes": 12
+    },
+    {
+      "worker": "gpu3",
+      "checks": 12,
+      "strict_passes": 12
+    }
+  ],
+  "four_direction_hot_latency": {
+    "method": "rms_rope_glu",
+    "n": 40,
+    "mean_ms": 195.70081233978271,
+    "p95_ms": 198.67883548140526,
+    "max_ms": 198.85168224573135,
+    "raw_passes": 8,
+    "serial_passes": 0,
+    "v12_mask_changes": 0,
+    "raw_max_abs": 0.0,
+    "gradient_passes": 0,
+    "layer_score_passes": 0,
+    "v14_mask_changes": 0,
+    "capture_mean_s": 3.437774826772511,
+    "peak_allocated_mib": 10416.4453125,
+    "peak_reserved_mib": 10930.0
+  },
+  "joint_1_5x_and_quality_candidates": [],
+  "report": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_4_selection_async_report.md",
+  "report_sha256": "58e3bc90599092a5d1cbe40fe0fd46058be217b59ac70ec56f9d4d54c9010926",
+  "time": 1793554344.1587803,
+  "resources_released": true,
+  "active_experiment_processes": [],
+  "documentation_reviewed_at": 1793554495.3117828
+}

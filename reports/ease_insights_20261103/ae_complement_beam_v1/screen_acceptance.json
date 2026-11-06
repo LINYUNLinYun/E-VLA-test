@@ -1,0 +1,75 @@
+{
+  "status": "pass",
+  "time": 1793910623.0298595,
+  "manifest_hash": "20376a24410dcd3025199ac2915994a24800513550553188f4ce2bff7b6440ff",
+  "physical_episodes": 0,
+  "replay_snapshots": 110,
+  "repeated_noise_inputs": 330,
+  "joint_mask_samples": 50490,
+  "dense_reference_samples": 330,
+  "proxy_selection_status": "proxy_candidate",
+  "selected": {
+    "mask_indices": [
+      27,
+      93
+    ],
+    "masks": [
+      [
+        2,
+        13
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "directions": [
+      {
+        "suite": "libero_object",
+        "lower_error_mask": [
+          2,
+          13
+        ],
+        "higher_error_mask": [
+          7,
+          14
+        ],
+        "proxy_gap": 0.01876229702889935
+      },
+      {
+        "suite": "libero_spatial",
+        "lower_error_mask": [
+          7,
+          14
+        ],
+        "higher_error_mask": [
+          2,
+          13
+        ],
+        "proxy_gap": 0.030362285960062064
+      }
+    ],
+    "rank": [
+      0.01876229702889935,
+      0.04912458298896141,
+      -0.04287149148182992
+    ],
+    "tie": [
+      2,
+      13,
+      7,
+      14,
+      "libero_object",
+      "libero_spatial"
+    ]
+  },
+  "artifacts": {
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v1/manifest.json": "2a2779e328a1d280a76066320d3412d585ad8cfeb64f8313033740b1bd729211",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v1/analysis/analysis.json": "ccdfcae893d988daa1562850aafee068cbdf9bd3dfee4f2c8ccf68b9766de1ae",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v1/analysis/selection.json": "8bdd13b5c091387ecba67c721df8452543cccc03a9305e08fde5646cceb42c11"
+  },
+  "goal_complete": false,
+  "quality_evidence": false,
+  "confirmation_launched": false,
+  "next": "Freeze a separate closed-loop discovery only for a usable proxy candidate; otherwise preserve the bounded negative screen and continue research"
+}

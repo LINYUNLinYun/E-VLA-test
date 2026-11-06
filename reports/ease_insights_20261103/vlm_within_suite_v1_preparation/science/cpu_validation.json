@@ -1,0 +1,82 @@
+{
+  "revision": "ease-within-suite-science-cpu-validation-v1",
+  "status": "pass",
+  "created_unix": 1793866139.2460048,
+  "owned_source_sha256": {
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/__init__.py": "e9df0afa5b58c4d08a5b8a7aef3aaf4ee8144a0a98c4a65cf39787d5009bb5f2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/common.py": "8568591ae47d9bd938a968d3f693da0b7e468f2c50d6b499a80d65fbf8a5d1ec",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/prepare.py": "96f5759e63bf5216eef1a7071eaa2bf45b8a9378b0cc696910ef657084d81c2d",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/protocol.json": "3002232bbc1ba6b6b14ad9945b391c5abb9542c2340b10f70a7a3dece2ca7d86",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/selection.py": "0e6248ed9d53c1c1bed994eb854469d80857f21a3f51b2a639602addde93403c",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/analyze.py": "84231a95c415c3504ba960c2ded3d2592901fb9936b40fcd218533546c58dcc5",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_science.py": "9e371651ba07f2d9c2ad6d140fbe0d3053137d76deea0e2d099e1fe7e54f2266"
+  },
+  "cpu_tests": {
+    "command": "policies/libero-eval-v21/.venv/bin/python -m unittest preparations.ease_insights_20261103.vlm_within_suite_v1.test_science -v",
+    "tests": 8,
+    "passed": true,
+    "log": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_within_suite_v1_preparation/science/test_science.log",
+      "sha256": "797ccf3f6592e5d9789296c528e1f088f601e50109ccd8bbb7ed7a49b10faded"
+    },
+    "coverage": [
+      "Fixed24task/category/432+360 case identities and shards",
+      "All qualifying pair crossings and deterministic lexical tie break",
+      "Incomplete/cost/usability/task-concentration gates",
+      "Full4096 signflip assignments including ties checked against independent convolution",
+      "12task/60case bootstrap shape and seed20261105, explicit linear quantiles",
+      "Finite actual-output collision versus planned manifest distinction",
+      "Complete synthetic432discovery and360confirmation artifact pipeline",
+      "Frozen pair/directions; rehashed initial-input tamper and artifact tamper rejected",
+      "Explicit old acceptedJac NPZ/manifest/protocol SHA identities"
+    ],
+    "final_stable_source_regression_seconds": 12.622
+  },
+  "cpu_asset_and_prior_use_audit": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_within_suite_v1_preparation/science/cpu_audit.json",
+    "sha256": "4a58670e39fed915388436b8333abde3eff0073eeff137afd4e3da2ead2703f2",
+    "passed": true,
+    "scope_roots": [
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103"
+    ],
+    "inventoried_files": 8248,
+    "parsed_documents": 5608,
+    "case_documents": 3965,
+    "matching_existing_outcomes": 0,
+    "unresolved_potential_outcomes": 0,
+    "official_tasks": 24,
+    "unique_prompts": 20,
+    "reserved_state_vector_hashes": 192,
+    "global_unused_claim": false
+  },
+  "protocol": {
+    "discovery_episodes": 432,
+    "confirmation_episodes": 360,
+    "bounded_cap": 792,
+    "policy_action_limit": 400,
+    "settling_actions": 10,
+    "discovery_inits": [
+      36,
+      37,
+      38
+    ],
+    "confirmation_inits": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "primary_family": "Two frozen opposite metadata-category directions only, family-local Holm2 alpha.05; no whole-research FWER claim"
+  },
+  "commands_after_final_root_review": {
+    "resource_proof_requirement": "Use immutable JSON emitted by HolderGuard.full; contains exact old plan eight source pins, old_reports, two holders. Static broker_stopped false is allowed; live controller still requires quiesced old broker before launch. Set WITHIN_SUITE_RESOURCE_PROOF to its absolute path.",
+    "freeze_discovery": "policies/libero-eval-v21/.venv/bin/python -m preparations.ease_insights_20261103.vlm_within_suite_v1.prepare --stage discovery --output results/ease_insights_20261103/vlm_within_suite_v1/discovery --resource-evidence \"$WITHIN_SUITE_RESOURCE_PROOF\" --freeze-reviewed",
+    "freeze_confirmation_after_selected_pair": "policies/libero-eval-v21/.venv/bin/python -m preparations.ease_insights_20261103.vlm_within_suite_v1.prepare --stage confirm --output results/ease_insights_20261103/vlm_within_suite_v1/confirmation --selection results/ease_insights_20261103/vlm_within_suite_v1/discovery/analysis/selection.json --resource-evidence \"$WITHIN_SUITE_RESOURCE_PROOF\" --freeze-reviewed",
+    "freeze_selection_after_complete_discovery": "policies/libero-eval-v21/.venv/bin/python -m preparations.ease_insights_20261103.vlm_within_suite_v1.selection --root results/ease_insights_20261103/vlm_within_suite_v1/discovery --output results/ease_insights_20261103/vlm_within_suite_v1/discovery/analysis --freeze-selection",
+    "analyze_confirmation": "policies/libero-eval-v21/.venv/bin/python -m preparations.ease_insights_20261103.vlm_within_suite_v1.analyze --root results/ease_insights_20261103/vlm_within_suite_v1/confirmation --output results/ease_insights_20261103/vlm_within_suite_v1/confirmation/analysis"
+  },
+  "runnable_manifest_created": false,
+  "new_gpu_work_launched": false,
+  "original_frozen_sources_manifests_plans_queues_cases_modified": false
+}

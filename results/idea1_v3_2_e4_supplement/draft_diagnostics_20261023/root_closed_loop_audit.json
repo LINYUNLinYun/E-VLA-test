@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": ["original_protocol40:40", "posthoc_object_settle4:4", "restore8:8 valid outcomes including reused case0151 and capture_v2:7"],
+  "completed_episodes_checked": 52,
+  "requests_checked": 3125,
+  "executed_actions_checked": 15540,
+  "checks": [
+    "Every complete result request/step count matches its full infer/telemetry streams",
+    "Every decoded action shape50x7 and raw action shape50x32 is finite",
+    "Every quality request uses exactly one vision encoder and one learned draft head",
+    "Every quality request has zero AE, VLM-prefix, verify and constructor-Full calls",
+    "Every executed raw command exactly matches its chunk prefix at the logged request step",
+    "Every native command exactly equals elementwise [-1,1] clipping of that predicted command",
+    "Executed telemetry step indices are contiguous"
+  ],
+  "new_mp4_count": 0,
+  "excluded_metrics": ["all visual_preencoder RMS/L2: unused-buffer instrumentation"],
+  "exclusions": ["old case0302 zero-step technical failure", "v2 background case0253 texture upload technical failure"],
+  "limitations": "This checks data integrity and actual routes/execution, not a whole-suite causal effect or exhaustive model equivalence on all possible inputs. D2 remains a separate pending requirement."
+}

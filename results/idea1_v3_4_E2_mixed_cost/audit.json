@@ -1,0 +1,905 @@
+{
+  "passed": true,
+  "matrix_complete": true,
+  "target_records": 160,
+  "observed_records": 160,
+  "reused_episodes": 0,
+  "new_episodes": 160,
+  "missing": [],
+  "errors": [],
+  "strict_prefix_exclusions": [],
+  "historical_control_initial_exceptions": [],
+  "gates": [
+    {
+      "worker": "gpu0",
+      "name": "compatibility_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu0",
+      "name": "selector_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu0",
+      "name": "route_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu0",
+      "name": "isolation_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu1",
+      "name": "compatibility_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu1",
+      "name": "selector_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu1",
+      "name": "route_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu1",
+      "name": "isolation_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu3",
+      "name": "compatibility_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu3",
+      "name": "selector_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu3",
+      "name": "route_gate.json",
+      "passed": true
+    },
+    {
+      "worker": "gpu3",
+      "name": "isolation_gate.json",
+      "passed": true
+    }
+  ],
+  "hardware_and_same_input_evidence": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/hardware_probe/summary.json",
+      "sha256": "2c1345cc8d7ab49a59962435b056bf172740a6d5562bb51d8a98479c1675e472"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/hardware_probe/cost_table.json",
+      "sha256": "7def9c79d4ffe15fd6a11a777efcff300f8debe4da7af5a0ef251aba17316ece"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/cost_validation.json",
+      "sha256": "32d528f3cf96eee5e5f13a8842a7cb0850244d12949a51cdc6ba632be2aa1d9b"
+    }
+  ],
+  "all_valid_successes_and_failures_retained": true,
+  "throughput": {
+    "new_episodes": 160,
+    "evaluation_window_s": 1162.0711584091187,
+    "episodes_per_hour": 495.6667204343553,
+    "actions_per_s": 34.70613628791317,
+    "requests_per_s": 6.9797791136164165,
+    "model_preparation_s": [
+      108.05084108561277,
+      107.05148351565003,
+      106.05544739961624
+    ],
+    "extra_technical_attempts": 0
+  },
+  "technical_attempts": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541491.0680847
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541492.377979
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541529.1909359
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541573.8358188
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541583.7485275
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541592.8524694
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541626.9246504
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541668.8083866
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541674.0463305
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541696.066997
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541725.4053056
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541729.451257
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541759.9773643
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541803.953829
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541807.2565584
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541835.0075705
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541871.832695
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541918.221354
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541931.2479048
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541947.8470325
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541976.5088134
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541984.2785323
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task05_init20.json",
+      "attempts": 1,
+      "time": 1793542012.333985
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542040.8423553
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542050.7659056
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542110.5591502
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542118.1270204
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542140.5595708
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542140.6087096
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542201.7712743
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542220.9925597
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542227.3217318
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542284.2623534
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542287.6481047
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_spatial_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542306.7534225
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_object_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542316.999642
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542343.0116425
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542408.8480775
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_goal_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542455.8178701
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-U+/libero_10_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542461.245001
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541491.4348423
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541528.4283843
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541529.2419155
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541556.56736
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541559.5476756
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541575.7415001
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541613.8844757
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541630.73896
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541665.9122348
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541696.0200977
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541728.5331316
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541752.2105765
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541762.0699718
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541802.9754965
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541837.6847594
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541844.1047964
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541872.1691206
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541900.8136604
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541909.2725902
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541944.6736
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541967.2849424
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task05_init20.json",
+      "attempts": 1,
+      "time": 1793542007.6140044
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542021.1355798
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task05_init20.json",
+      "attempts": 1,
+      "time": 1793542052.872891
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542072.4773474
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542080.5556884
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542108.551296
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542153.0210297
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542167.1488278
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542176.317413
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542177.3342927
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542243.002803
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542245.512908
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_spatial_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542273.731403
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542285.1391375
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_object_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542343.9817657
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542355.698681
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542387.290838
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_goal_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542421.6292
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-U+/libero_10_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542490.697032
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541491.4426389
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541538.184487
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541557.104662
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541560.0320406
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541583.5376844
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541591.3725274
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541613.8935087
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541630.7461207
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541667.353636
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541675.3593626
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541697.0867414
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541729.2690046
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541762.0783832
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541802.5455332
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541837.567952
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541872.0960426
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541881.8985817
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541900.976985
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541909.2783053
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541944.6974134
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541946.7267053
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541990.2446527
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542006.0511487
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542049.2844503
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542073.4996295
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542108.6849034
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542111.7721364
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542138.2825348
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542176.3713887
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542192.8656921
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542193.8075063
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542239.4976592
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542245.523408
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542275.5818453
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_object_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542288.1192865
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_spatial_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542306.4911406
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542355.712714
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_10_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542408.9006526
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542423.794025
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B6_M-E-W+/libero_goal_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542456.9454157
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541492.098398
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541492.3838422
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541527.7522304
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541528.8309135
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541556.3431966
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541605.555581
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541626.983633
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541668.575469
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541695.5052478
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task01_init20.json",
+      "attempts": 1,
+      "time": 1793541714.3894124
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541726.392052
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541760.9950426
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task01_init19.json",
+      "attempts": 1,
+      "time": 1793541773.729854
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541802.892467
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541807.271526
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541844.297226
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task03_init20.json",
+      "attempts": 1,
+      "time": 1793541855.6100736
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task03_init19.json",
+      "attempts": 1,
+      "time": 1793541875.877635
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541931.2674117
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task05_init20.json",
+      "attempts": 1,
+      "time": 1793541977.310335
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task05_init19.json",
+      "attempts": 1,
+      "time": 1793541982.3965514
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542006.0133586
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task05_init20.json",
+      "attempts": 1,
+      "time": 1793542014.3947272
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542041.8559613
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542078.7970817
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task05_init19.json",
+      "attempts": 1,
+      "time": 1793542093.1970875
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542118.1332002
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542139.3840911
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542152.4983163
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542167.4321835
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542201.7787702
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_spatial_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542243.0909824
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task07_init20.json",
+      "attempts": 1,
+      "time": 1793542257.151512
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542315.438359
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task07_init19.json",
+      "attempts": 1,
+      "time": 1793542320.271089
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542343.026133
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_object_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542344.6853387
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_goal_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542387.6634185
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task09_init20.json",
+      "attempts": 1,
+      "time": 1793542446.696519
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/technical_attempts/B4_M-E-W+/libero_10_task09_init19.json",
+      "attempts": 1,
+      "time": 1793542505.93873
+    }
+  ],
+  "time": 1793542574.7390137
+}

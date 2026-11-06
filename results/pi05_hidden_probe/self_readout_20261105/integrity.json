@@ -1,0 +1,106 @@
+{
+  "checks": {
+    "native_logits": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "native_normalized": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "self_write": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "all_images_layer0_black": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    },
+    "all_images_layer0_gray": {
+      "max_abs": 0.0,
+      "mse": 0.0,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "cache_parity_cases": [
+    {
+      "control_id": "black",
+      "layer": 0,
+      "selector": "images",
+      "logits_exact": true,
+      "tokens_exact": true,
+      "cached": {
+        "text": "red",
+        "token_ids": [
+          854,
+          1
+        ],
+        "eos": true
+      },
+      "reference": {
+        "text": "red",
+        "token_ids": [
+          854,
+          1
+        ],
+        "eos": true
+      }
+    },
+    {
+      "control_id": "gray",
+      "layer": 3,
+      "selector": "image:base_0_rgb",
+      "logits_exact": true,
+      "tokens_exact": true,
+      "cached": {
+        "text": "red",
+        "token_ids": [
+          854,
+          1
+        ],
+        "eos": true
+      },
+      "reference": {
+        "text": "red",
+        "token_ids": [
+          854,
+          1
+        ],
+        "eos": true
+      }
+    },
+    {
+      "control_id": "black",
+      "layer": 15,
+      "selector": "images",
+      "logits_exact": true,
+      "tokens_exact": true,
+      "cached": {
+        "text": "unanswerable",
+        "token_ids": [
+          549,
+          13072,
+          887,
+          1
+        ],
+        "eos": true
+      },
+      "reference": {
+        "text": "unanswerable",
+        "token_ids": [
+          549,
+          13072,
+          887,
+          1
+        ],
+        "eos": true
+      }
+    }
+  ],
+  "use_cached_generation": true
+}

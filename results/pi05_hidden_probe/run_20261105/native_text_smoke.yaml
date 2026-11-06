@@ -1,0 +1,43 @@
+stage: smoke
+manifest: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data/manifest.jsonl
+output_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/native_text_smoke
+cache_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/source_cache
+model:
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero
+  config_name: pi05_libero
+  openpi_root: /root/nfs/embodied/benchmark/policies/openpi
+seed: 42
+source_layers:
+- 0
+- 9
+- 18
+max_new_tokens: 16
+score_candidates: true
+length_normalize: false
+controls:
+- id: gray
+  kind: constant
+  value: 127
+- id: black
+  kind: constant
+  value: 0
+conditions:
+- real
+- nopatch
+- self
+- shuffle
+- random
+- direct
+- layer0
+integrity:
+  atol: 1.0e-05
+  rtol: 1.0e-05
+probes:
+- id: visual_image
+  task_type: visual_attribute
+  source_selector: image:base_0_rgb
+  target_selector: image:base_0_rgb
+  target_layers:
+  - 6
+  prompt: null
+aliases: {}

@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-10-23 05:41 UTC",
+  "previous_draft_pid": 3715967,
+  "previous_d2_watcher_pid": 3712613,
+  "authoritative_checks": ["Both PIDs absent from ps and module pgrep", "Ports19148 and19163 had no listener", "Both prior exec session handles unknown", "GPU0 1MiB with no compute process"],
+  "cause": "Unproven; no user stop request was received. Stale ready/waiting files are not live-process evidence.",
+  "old_receipts_preserved": true,
+  "old_d2_quality_results": 0,
+  "recovery": {
+    "method": "Existing tmux detached sessions, original frozen Python modules unchanged",
+    "draft_session": "goal_draft_recovery_0543",
+    "draft_receipt": "draft_service_gpu0_recovery_0543.json",
+    "d2_session": "goal_d2_gpu3_recovery_0543",
+    "d2_run": "results/idea1_v3_2_e4_supplement/libero_plus_v14_d2_gpu3_novideo_20261023T0543Z_recovery",
+    "d2_manifest_hash": "f35a09c66577443fcc19d8c7fea0127003ce405267afcd74898dd3c0ad3273c4"
+  },
+  "invariants": ["No completed result overwritten or rerun", "Draft four-head recorded-output bitwise gate rerun before auxiliary model requests", "D2 physical GPU3 only, strict old-D10/native-D2 gates unchanged", "No videos", "No external process stopped"]
+}

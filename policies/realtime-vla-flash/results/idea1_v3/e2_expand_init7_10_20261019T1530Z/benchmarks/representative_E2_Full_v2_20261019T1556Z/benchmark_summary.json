@@ -1,0 +1,30 @@
+{
+  "config": {
+    "experiment": "E2",
+    "mask": "Full"
+  },
+  "physical_gpu": 0,
+  "gpu": {
+    "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "memory_mb": 2.0
+  },
+  "model_load_s": 25.83509297668934,
+  "warmup_requests": 20,
+  "measured_requests": 100,
+  "input_files": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_10/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_goal/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_object/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_spatial/task00/init00/profile_inputs.pkl"
+  ],
+  "repeated_measured_max_abs_action": 0,
+  "repeated_measured_route_exact": true,
+  "repeated_measured_length_exact": true,
+  "input_status": "observations and seeds are saved real data; E1/E3 router history uses virtual acknowledgements",
+  "interpretation": "fixed-sequence microbenchmark only; replay route counts are not closed-loop frequencies",
+  "first_use": "repeat0 is excluded from measured requests; measurements may still include prompt-length/runtime reconstruction and shape setup",
+  "setup_visibility": "Triton runtime construction events flagged; JAX recompilations not independently counted",
+  "pi05_stage_revision": "v2-native-scanned-suffix",
+  "sharing": "shared CPU/NFS loads not controlled; no end-to-end throughput claim",
+  "pi05_stages": "diagnostic split JAX equations and sync boundaries; sums do not replace native total"
+}

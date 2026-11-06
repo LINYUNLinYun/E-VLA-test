@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "time": 1793920422.0126724,
+  "checks": [
+    {
+      "fixture": "positive",
+      "conclusion": "complementarity_reproduced",
+      "independent_audit": "pass",
+      "differences": [],
+      "success_counts": {
+        "full_d10": 240,
+        "vlm_c": 230,
+        "ae14_d3": 230
+      },
+      "task_primary_p": [
+        0.0009765625,
+        0.0009765625
+      ],
+      "reports_written_only_to_temporary_directory": true
+    },
+    {
+      "fixture": "quality_negative",
+      "conclusion": "not_reproduced",
+      "independent_audit": "pass",
+      "differences": [],
+      "success_counts": {
+        "full_d10": 240,
+        "vlm_c": 170,
+        "ae14_d3": 230
+      },
+      "task_primary_p": [
+        0.0009765625,
+        0.0009765625
+      ],
+      "reports_written_only_to_temporary_directory": true
+    },
+    {
+      "fixture": "sparse_task_negative",
+      "conclusion": "not_reproduced",
+      "independent_audit": "pass",
+      "differences": [],
+      "success_counts": {
+        "full_d10": 240,
+        "vlm_c": 228,
+        "ae14_d3": 230
+      },
+      "task_primary_p": [
+        0.25,
+        0.0009765625
+      ],
+      "reports_written_only_to_temporary_directory": true
+    }
+  ],
+  "synthetic_rollout_cells_per_fixture": 720,
+  "real_quality_cases": 0,
+  "source_pins": {
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/analyze_confirmation.py": "7af4555fb2510091668dd77c6b24e380be9e92ffafc2e773e6269e9d0634c8e1",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_statistics_audit.py": "cd72987ca114cf5955fae5a5eb14c2f066756f86898667df44ee6bb4616d013f",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/statistics.py": "a841e3ee13fa3095dae834ceac84b9dced53ee481909d805eb32f204baaeed93"
+  },
+  "real_current_success_values_accessed": false,
+  "current_frozen_sources_changed": false,
+  "GPU_model_or_environment_started": false,
+  "scope": "One complete-output arithmetic/plumbing check against independently implemented statistics using synthetic cells; not a real case,numerical-action or service acceptance."
+}

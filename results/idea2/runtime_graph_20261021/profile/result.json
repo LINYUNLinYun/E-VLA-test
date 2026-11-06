@@ -1,0 +1,3895 @@
+{
+  "args": {
+    "output": "results/idea2/runtime_graph_20261021/profile",
+    "checkpoint": "shared/checkpoints/openpi/pi0_libero_pytorch_idea2",
+    "bank": "policies/realtime-vla-flash/results/idea1_v3_supplement/e1_expand_init7_10_20261020T0431Z/episodes/E1/supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD2/A/libero_spatial/task00/init07/real_predict_inputs_first25.pkl",
+    "warmup": 5,
+    "requests": 5,
+    "modes": [
+      "original",
+      "threaded_prefill_first",
+      "graph_serial",
+      "graph_ae_first",
+      "graph_prefill_first",
+      "graph_ae_first_high",
+      "graph_prefill_first_high"
+    ],
+    "profile": true
+  },
+  "identity": {
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "transformers": "4.53.2",
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "config": "Pi0Config(action_dim=32, action_horizon=50, max_token_len=48, dtype='bfloat16', paligemma_variant='gemma_2b', action_expert_variant='gemma_300m', pi05=False, discrete_state_input=False, pytorch_compile_mode=None)",
+    "attention": "eager",
+    "execution": "eager",
+    "num_steps": 10,
+    "state_path": "suffix"
+  },
+  "gpu_uuid": "83fdf473-8633-29d3-4a42-e482cfdf0c25",
+  "rows": [
+    {
+      "mode": "original",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 438.00173699855804,
+            "cpu_begin_monotonic_s": 24954836.669094376,
+            "cpu_end_monotonic_s": 24954837.107096113,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 437.8678894042969,
+            "stream": 0,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 97.28801250457764,
+              "cpu_begin_monotonic_s": 24954836.57057362,
+              "cpu_end_monotonic_s": 24954836.667861633,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 98.35382080078125,
+              "stream": 94081447678608,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": null
+          }
+        },
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954836.537715778,
+        "source_host_receipt_unix_s": 1792575582.6916487,
+        "current_host_receipt_unix_s": 1792575582.6916487,
+        "prefix_ready_observed_monotonic_s": 24954836.669031408,
+        "prefix_published_monotonic_s": 24954836.669032,
+        "generation_start_monotonic_s": 24954836.66905383,
+        "source_receipt_age_at_generation_ms": 131.33805245161057,
+        "source_receipt_age_at_internal_output_ms": 570.0485147535801,
+        "source_receipt_age_at_response_ms": 570.9299817681313,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 570.0485147535801,
+          "response_host_ms": 570.9316357970238,
+          "ae_gpu_ms": 437.8678894042969,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7184175104,
+        "peak_reserved": 7314866176
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "original",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 457.0683501660824,
+            "cpu_begin_monotonic_s": 24954837.288534403,
+            "cpu_end_monotonic_s": 24954837.745602753,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 456.9118347167969,
+            "stream": 0,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 132.40981847047806,
+            "cpu_begin_monotonic_s": 24954837.15608947,
+            "cpu_end_monotonic_s": 24954837.28849929,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 132.87510681152344,
+            "stream": 94081447678608,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 132.40981847047806,
+              "cpu_begin_monotonic_s": 24954837.15608947,
+              "cpu_end_monotonic_s": 24954837.28849929,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 132.87510681152344,
+              "stream": 94081447678608,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954836.537715778,
+        "source_host_receipt_unix_s": 1792575582.6916487,
+        "current_host_receipt_unix_s": 1792575583.2630596,
+        "prefix_ready_observed_monotonic_s": 24954836.669031408,
+        "prefix_published_monotonic_s": 24954836.669032,
+        "generation_start_monotonic_s": 24954837.155997217,
+        "source_receipt_age_at_generation_ms": 618.2814389467239,
+        "source_receipt_age_at_internal_output_ms": 1208.683766424656,
+        "source_receipt_age_at_response_ms": 1209.9333181977272,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 637.2725442051888,
+          "response_host_ms": 638.5242305696011,
+          "ae_gpu_ms": 456.9118347167969,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7184175104,
+        "peak_reserved": 7314866176
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "original",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 458.339910954237,
+            "cpu_begin_monotonic_s": 24954837.92328929,
+            "cpu_end_monotonic_s": 24954838.381629203,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 458.1648254394531,
+            "stream": 0,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 134.21637937426567,
+            "cpu_begin_monotonic_s": 24954837.789025873,
+            "cpu_end_monotonic_s": 24954837.923242252,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 134.65823364257812,
+            "stream": 94081447678608,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 134.21637937426567,
+              "cpu_begin_monotonic_s": 24954837.789025873,
+              "cpu_end_monotonic_s": 24954837.923242252,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 134.65823364257812,
+              "stream": 94081447678608,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954837.109127,
+        "source_host_receipt_unix_s": 1792575583.2630596,
+        "current_host_receipt_unix_s": 1792575583.9021652,
+        "prefix_ready_observed_monotonic_s": 24954837.746428408,
+        "prefix_published_monotonic_s": 24954837.74643006,
+        "generation_start_monotonic_s": 24954837.788968366,
+        "source_receipt_age_at_generation_ms": 679.8413656651974,
+        "source_receipt_age_at_internal_output_ms": 1273.064162582159,
+        "source_receipt_age_at_response_ms": 1274.3620611727238,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 633.958250284195,
+          "response_host_ms": 635.2597028017044,
+          "ae_gpu_ms": 458.1648254394531,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7184175104,
+        "peak_reserved": 7314866176
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "original",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 434.1552071273327,
+            "cpu_begin_monotonic_s": 24954838.564991254,
+            "cpu_end_monotonic_s": 24954838.99914646,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 434.0086669921875,
+            "stream": 0,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 135.15445590019226,
+            "cpu_begin_monotonic_s": 24954838.4297992,
+            "cpu_end_monotonic_s": 24954838.564953655,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 135.68409729003906,
+            "stream": 94081447678608,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 135.15445590019226,
+              "cpu_begin_monotonic_s": 24954838.4297992,
+              "cpu_end_monotonic_s": 24954838.564953655,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 135.68409729003906,
+              "stream": 94081447678608,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954837.748232912,
+        "source_host_receipt_unix_s": 1792575583.9021652,
+        "current_host_receipt_unix_s": 1792575584.5378718,
+        "prefix_ready_observed_monotonic_s": 24954838.38222232,
+        "prefix_published_monotonic_s": 24954838.382225327,
+        "generation_start_monotonic_s": 24954838.42974542,
+        "source_receipt_age_at_generation_ms": 681.5125085413456,
+        "source_receipt_age_at_internal_output_ms": 1251.6162730753422,
+        "source_receipt_age_at_response_ms": 1252.8169602155685,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 615.9116253256798,
+          "response_host_ms": 617.1155162155628,
+          "ae_gpu_ms": 434.0086669921875,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7184175104,
+        "peak_reserved": 7314866176
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "original",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 352.96662896871567,
+            "cpu_begin_monotonic_s": 24954839.17593812,
+            "cpu_end_monotonic_s": 24954839.528904747,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 352.8207092285156,
+            "stream": 0,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 131.2895193696022,
+            "cpu_begin_monotonic_s": 24954839.044609036,
+            "cpu_end_monotonic_s": 24954839.175898556,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 131.70314025878906,
+            "stream": 94081447678608,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 131.2895193696022,
+              "cpu_begin_monotonic_s": 24954839.044609036,
+              "cpu_end_monotonic_s": 24954839.175898556,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 131.70314025878906,
+              "stream": 94081447678608,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954838.38393756,
+        "source_host_receipt_unix_s": 1792575584.5378718,
+        "current_host_receipt_unix_s": 1792575585.1554925,
+        "prefix_ready_observed_monotonic_s": 24954838.999867912,
+        "prefix_published_monotonic_s": 24954838.999869063,
+        "generation_start_monotonic_s": 24954839.044556063,
+        "source_receipt_age_at_generation_ms": 660.6185026466846,
+        "source_receipt_age_at_internal_output_ms": 1145.4723104834557,
+        "source_receipt_age_at_response_ms": 1146.4058682322502,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 527.8499871492386,
+          "response_host_ms": 528.7850461900234,
+          "ae_gpu_ms": 352.8207092285156,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7184175104,
+        "peak_reserved": 7314866176
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 307.0235513150692,
+            "cpu_begin_monotonic_s": 24954848.79459526,
+            "cpu_end_monotonic_s": 24954849.10161881,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 306.1298828125,
+            "stream": 94081447387040,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 92.2328568994999,
+              "cpu_begin_monotonic_s": 24954848.70064424,
+              "cpu_end_monotonic_s": 24954848.792877097,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 93.72169494628906,
+              "stream": 94081446118208,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": null
+          }
+        },
+        "execution": "eager",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 0,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954848.668551553,
+        "source_host_receipt_unix_s": 1792575594.8224847,
+        "current_host_receipt_unix_s": 1792575594.8224847,
+        "prefix_ready_observed_monotonic_s": 24954848.794455327,
+        "prefix_published_monotonic_s": 24954848.794456,
+        "generation_start_monotonic_s": 24954848.794469368,
+        "source_receipt_age_at_generation_ms": 125.91781467199326,
+        "source_receipt_age_at_internal_output_ms": 433.73021110892296,
+        "source_receipt_age_at_response_ms": 434.4111494719982,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 433.73021110892296,
+          "response_host_ms": 434.41300839185715,
+          "ae_gpu_ms": 306.1298828125,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7217538048,
+        "peak_reserved": 7736393728
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 346.9672165811062,
+            "cpu_begin_monotonic_s": 24954849.137702975,
+            "cpu_end_monotonic_s": 24954849.484670192,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 346.80291748046875,
+            "stream": 94081447387040,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 126.84901803731918,
+            "cpu_begin_monotonic_s": 24954849.13746207,
+            "cpu_end_monotonic_s": 24954849.264311086,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 126.96870422363281,
+            "stream": 94081446118208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 126.84901803731918,
+              "cpu_begin_monotonic_s": 24954849.13746207,
+              "cpu_end_monotonic_s": 24954849.264311086,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 126.96870422363281,
+              "stream": 94081446118208,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "execution": "eager",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 0,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954848.668551553,
+        "source_host_receipt_unix_s": 1792575594.8224847,
+        "current_host_receipt_unix_s": 1792575595.2574294,
+        "prefix_ready_observed_monotonic_s": 24954848.794455327,
+        "prefix_published_monotonic_s": 24954848.794456,
+        "generation_start_monotonic_s": 24954849.137300584,
+        "source_receipt_age_at_generation_ms": 468.7490314245224,
+        "source_receipt_age_at_internal_output_ms": 816.8923333287239,
+        "source_receipt_age_at_response_ms": 817.8622797131538,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 381.94723054766655,
+          "response_host_ms": 382.9190507531166,
+          "ae_gpu_ms": 346.80291748046875,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7217538048,
+        "peak_reserved": 7736393728
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 382.3983818292618,
+            "cpu_begin_monotonic_s": 24954849.517577186,
+            "cpu_end_monotonic_s": 24954849.899975568,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 382.2233581542969,
+            "stream": 94081447387040,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 142.45521277189255,
+            "cpu_begin_monotonic_s": 24954849.517773524,
+            "cpu_end_monotonic_s": 24954849.660228737,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 142.57081604003906,
+            "stream": 94081446118208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 142.45521277189255,
+              "cpu_begin_monotonic_s": 24954849.517773524,
+              "cpu_end_monotonic_s": 24954849.660228737,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 142.57081604003906,
+              "stream": 94081446118208,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "execution": "eager",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 0,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954849.103496656,
+        "source_host_receipt_unix_s": 1792575595.2574294,
+        "current_host_receipt_unix_s": 1792575595.6407814,
+        "prefix_ready_observed_monotonic_s": 24954849.485462245,
+        "prefix_published_monotonic_s": 24954849.485463496,
+        "generation_start_monotonic_s": 24954849.51748794,
+        "source_receipt_age_at_generation_ms": 413.9912836253643,
+        "source_receipt_age_at_internal_output_ms": 797.3577119410038,
+        "source_receipt_age_at_response_ms": 798.8835610449314,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 414.0055701136589,
+          "response_host_ms": 415.5348613858223,
+          "ae_gpu_ms": 382.2233581542969,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7217538048,
+        "peak_reserved": 7736393728
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 388.20740580558777,
+            "cpu_begin_monotonic_s": 24954849.952195607,
+            "cpu_end_monotonic_s": 24954850.340403013,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 387.7203063964844,
+            "stream": 94081447387040,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 180.24715781211853,
+            "cpu_begin_monotonic_s": 24954849.95242025,
+            "cpu_end_monotonic_s": 24954850.132667407,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 180.4322509765625,
+            "stream": 94081446118208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 180.24715781211853,
+              "cpu_begin_monotonic_s": 24954849.95242025,
+              "cpu_end_monotonic_s": 24954850.132667407,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 180.4322509765625,
+              "stream": 94081446118208,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "execution": "eager",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 0,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954849.486848798,
+        "source_host_receipt_unix_s": 1792575595.6407814,
+        "current_host_receipt_unix_s": 1792575596.0573616,
+        "prefix_ready_observed_monotonic_s": 24954849.900879014,
+        "prefix_published_monotonic_s": 24954849.90088082,
+        "generation_start_monotonic_s": 24954849.952041134,
+        "source_receipt_age_at_generation_ms": 465.192336589098,
+        "source_receipt_age_at_internal_output_ms": 854.6595126390457,
+        "source_receipt_age_at_response_ms": 856.7105978727341,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 438.0793944001198,
+          "response_host_ms": 440.1346184313297,
+          "ae_gpu_ms": 387.7203063964844,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7218245632,
+        "peak_reserved": 7736393728
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 360.6761135160923,
+            "cpu_begin_monotonic_s": 24954850.40854746,
+            "cpu_end_monotonic_s": 24954850.769223575,
+            "done_at_submit": true,
+            "done_now": true,
+            "gpu_event_span_ms": 360.0712585449219,
+            "stream": 94081447387040,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 145.91970294713974,
+            "cpu_begin_monotonic_s": 24954850.408758335,
+            "cpu_end_monotonic_s": 24954850.554678038,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 146.0332794189453,
+            "stream": 94081446118208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 145.91970294713974,
+              "cpu_begin_monotonic_s": 24954850.408758335,
+              "cpu_end_monotonic_s": 24954850.554678038,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 146.0332794189453,
+              "stream": 94081446118208,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": true,
+            "prefill": true
+          }
+        },
+        "execution": "eager",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 0,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954849.903428916,
+        "source_host_receipt_unix_s": 1792575596.0573616,
+        "current_host_receipt_unix_s": 1792575596.4983573,
+        "prefix_ready_observed_monotonic_s": 24954850.341544688,
+        "prefix_published_monotonic_s": 24954850.341547202,
+        "generation_start_monotonic_s": 24954850.408409305,
+        "source_receipt_age_at_generation_ms": 504.9803890287876,
+        "source_receipt_age_at_internal_output_ms": 866.8161407113075,
+        "source_receipt_age_at_response_ms": 868.916779756546,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 425.82109197974205,
+          "response_host_ms": 427.92458459734917,
+          "ae_gpu_ms": 360.0712585449219,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7218245632,
+        "peak_reserved": 7736393728
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "graph_serial",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "serial_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.147067934274673,
+            "cpu_begin_monotonic_s": 24954862.0460848,
+            "cpu_end_monotonic_s": 24954862.063231867,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 44.907840728759766,
+            "stream": 94081447726720,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 5.285415798425674,
+              "cpu_begin_monotonic_s": 24954862.00839729,
+              "cpu_end_monotonic_s": 24954862.013682704,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.56467056274414,
+              "stream": 94081447387808,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954861.975997135,
+        "source_host_receipt_unix_s": 1792575608.1299298,
+        "current_host_receipt_unix_s": 1792575608.1299298,
+        "prefix_ready_observed_monotonic_s": 24954862.04606246,
+        "prefix_published_monotonic_s": 24954862.04606316,
+        "generation_start_monotonic_s": 24954862.046074953,
+        "source_receipt_age_at_generation_ms": 70.0778178870678,
+        "source_receipt_age_at_internal_output_ms": 115.49462378025055,
+        "source_receipt_age_at_response_ms": 116.130281239748,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 115.49462378025055,
+          "response_host_ms": 116.13167449831963,
+          "ae_gpu_ms": 44.907840728759766,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7239417344,
+        "peak_reserved": 7944011776
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "graph_serial",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "serial_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.85335859656334,
+            "cpu_begin_monotonic_s": 24954862.12342079,
+            "cpu_end_monotonic_s": 24954862.14027415,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 34.22496032714844,
+            "stream": 94081447726720,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.1229894161224365,
+            "cpu_begin_monotonic_s": 24954862.158261366,
+            "cpu_end_monotonic_s": 24954862.163384356,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 37.56643295288086,
+            "stream": 94081447387808,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 5.1229894161224365,
+              "cpu_begin_monotonic_s": 24954862.158261366,
+              "cpu_end_monotonic_s": 24954862.163384356,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.56643295288086,
+              "stream": 94081447387808,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954861.975997135,
+        "source_host_receipt_unix_s": 1792575608.1299298,
+        "current_host_receipt_unix_s": 1792575608.2465324,
+        "prefix_ready_observed_monotonic_s": 24954862.04606246,
+        "prefix_published_monotonic_s": 24954862.04606316,
+        "generation_start_monotonic_s": 24954862.123413064,
+        "source_receipt_age_at_generation_ms": 147.41592854261398,
+        "source_receipt_age_at_internal_output_ms": 182.2168119251728,
+        "source_receipt_age_at_response_ms": 220.6716686487198,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 65.6147189438343,
+          "response_host_ms": 104.07166182994843,
+          "ae_gpu_ms": 34.22496032714844,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7239417344,
+        "peak_reserved": 7944011776
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "graph_serial",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "serial_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.898173838853836,
+            "cpu_begin_monotonic_s": 24954862.227920547,
+            "cpu_end_monotonic_s": 24954862.24481872,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 45.22332763671875,
+            "stream": 94081447726720,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.116548389196396,
+            "cpu_begin_monotonic_s": 24954862.273696736,
+            "cpu_end_monotonic_s": 24954862.278813284,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 37.72505569458008,
+            "stream": 94081447387808,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 5.116548389196396,
+              "cpu_begin_monotonic_s": 24954862.273696736,
+              "cpu_end_monotonic_s": 24954862.278813284,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.72505569458008,
+              "stream": 94081447387808,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954862.092599228,
+        "source_host_receipt_unix_s": 1792575608.2465324,
+        "current_host_receipt_unix_s": 1792575608.3510559,
+        "prefix_ready_observed_monotonic_s": 24954862.195963684,
+        "prefix_published_monotonic_s": 24954862.195965055,
+        "generation_start_monotonic_s": 24954862.22791295,
+        "source_receipt_age_at_generation_ms": 135.3137232363224,
+        "source_receipt_age_at_internal_output_ms": 181.05660006403923,
+        "source_receipt_age_at_response_ms": 219.64290365576744,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 76.53244584798813,
+          "response_host_ms": 115.12046307325363,
+          "ae_gpu_ms": 45.22332763671875,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7239417344,
+        "peak_reserved": 7944011776
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "graph_serial",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "serial_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 23.496001958847046,
+            "cpu_begin_monotonic_s": 24954862.34409033,
+            "cpu_end_monotonic_s": 24954862.367586333,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 40.72208023071289,
+            "stream": 94081447726720,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 7.914591580629349,
+            "cpu_begin_monotonic_s": 24954862.386494484,
+            "cpu_end_monotonic_s": 24954862.394409075,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 37.5997428894043,
+            "stream": 94081447387808,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 7.914591580629349,
+              "cpu_begin_monotonic_s": 24954862.386494484,
+              "cpu_end_monotonic_s": 24954862.394409075,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.5997428894043,
+              "stream": 94081447387808,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954862.197123382,
+        "source_host_receipt_unix_s": 1792575608.3510559,
+        "current_host_receipt_unix_s": 1792575608.4666317,
+        "prefix_ready_observed_monotonic_s": 24954862.311543874,
+        "prefix_published_monotonic_s": 24954862.311545335,
+        "generation_start_monotonic_s": 24954862.344082035,
+        "source_receipt_age_at_generation_ms": 146.95865288376808,
+        "source_receipt_age_at_internal_output_ms": 189.32300060987473,
+        "source_receipt_age_at_response_ms": 227.8178334236145,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 73.74720647931099,
+          "response_host_ms": 112.2446246445179,
+          "ae_gpu_ms": 40.72208023071289,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7239417344,
+        "peak_reserved": 7944011776
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "graph_serial",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "serial_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.320599406957626,
+            "cpu_begin_monotonic_s": 24954862.45654667,
+            "cpu_end_monotonic_s": 24954862.47386727,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 35.96867370605469,
+            "stream": 94081447726720,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.231618881225586,
+            "cpu_begin_monotonic_s": 24954862.493087634,
+            "cpu_end_monotonic_s": 24954862.498319253,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 37.67049789428711,
+            "stream": 94081447387808,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 5.231618881225586,
+              "cpu_begin_monotonic_s": 24954862.493087634,
+              "cpu_end_monotonic_s": 24954862.498319253,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.67049789428711,
+              "stream": 94081447387808,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954862.312699176,
+        "source_host_receipt_unix_s": 1792575608.4666317,
+        "current_host_receipt_unix_s": 1792575608.579383,
+        "prefix_ready_observed_monotonic_s": 24954862.424226776,
+        "prefix_published_monotonic_s": 24954862.42422794,
+        "generation_start_monotonic_s": 24954862.456538238,
+        "source_receipt_age_at_generation_ms": 143.8390612602234,
+        "source_receipt_age_at_internal_output_ms": 180.3448311984539,
+        "source_receipt_age_at_response_ms": 218.8802771270275,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 67.59387999773026,
+          "response_host_ms": 106.13130778074265,
+          "ae_gpu_ms": 35.96867370605469,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7239417344,
+        "peak_reserved": 7944011776
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "graph_ae_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.973666846752167,
+            "cpu_begin_monotonic_s": 24954874.520494755,
+            "cpu_end_monotonic_s": 24954874.537468422,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 44.75299072265625,
+            "stream": 94083299501392,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 5.440074950456619,
+              "cpu_begin_monotonic_s": 24954874.482767954,
+              "cpu_end_monotonic_s": 24954874.48820803,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.60291290283203,
+              "stream": 94081447881520,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954874.449748427,
+        "source_host_receipt_unix_s": 1792575620.6036813,
+        "current_host_receipt_unix_s": 1792575620.6036813,
+        "prefix_ready_observed_monotonic_s": 24954874.520471886,
+        "prefix_published_monotonic_s": 24954874.520472497,
+        "generation_start_monotonic_s": 24954874.52048513,
+        "source_receipt_age_at_generation_ms": 70.73670253157616,
+        "source_receipt_age_at_internal_output_ms": 116.05897918343544,
+        "source_receipt_age_at_response_ms": 116.7508140206337,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 116.05897918343544,
+          "response_host_ms": 116.75239726901054,
+          "ae_gpu_ms": 44.75299072265625,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7256792576,
+        "peak_reserved": 8036286464
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "graph_ae_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.29452982544899,
+            "cpu_begin_monotonic_s": 24954874.598187495,
+            "cpu_end_monotonic_s": 24954874.615482025,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 63.9686393737793,
+            "stream": 94083299501392,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.29373437166214,
+            "cpu_begin_monotonic_s": 24954874.615536343,
+            "cpu_end_monotonic_s": 24954874.620830078,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 44.10831832885742,
+            "stream": 94081447881520,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 5.29373437166214,
+              "cpu_begin_monotonic_s": 24954874.615536343,
+              "cpu_end_monotonic_s": 24954874.620830078,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 44.10831832885742,
+              "stream": 94081447881520,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954874.449748427,
+        "source_host_receipt_unix_s": 1792575620.6036813,
+        "current_host_receipt_unix_s": 1792575620.7209792,
+        "prefix_ready_observed_monotonic_s": 24954874.520471886,
+        "prefix_published_monotonic_s": 24954874.520472497,
+        "generation_start_monotonic_s": 24954874.59817948,
+        "source_receipt_age_at_generation_ms": 148.43105152249336,
+        "source_receipt_age_at_internal_output_ms": 212.87985518574715,
+        "source_receipt_age_at_response_ms": 213.56047689914703,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 95.58204188942909,
+          "response_host_ms": 96.26402705907822,
+          "ae_gpu_ms": 63.9686393737793,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7256792576,
+        "peak_reserved": 8036286464
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "graph_ae_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.976170241832733,
+            "cpu_begin_monotonic_s": 24954874.695427246,
+            "cpu_end_monotonic_s": 24954874.712403417,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 74.46460723876953,
+            "stream": 94083299501392,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.209974944591522,
+            "cpu_begin_monotonic_s": 24954874.71245821,
+            "cpu_end_monotonic_s": 24954874.717668183,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 44.23606491088867,
+            "stream": 94081447881520,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 5.209974944591522,
+              "cpu_begin_monotonic_s": 24954874.71245821,
+              "cpu_end_monotonic_s": 24954874.717668183,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 44.23606491088867,
+              "stream": 94081447881520,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954874.56704624,
+        "source_host_receipt_unix_s": 1792575620.7209792,
+        "current_host_receipt_unix_s": 1792575620.817677,
+        "prefix_ready_observed_monotonic_s": 24954874.662640836,
+        "prefix_published_monotonic_s": 24954874.662641976,
+        "generation_start_monotonic_s": 24954874.6954194,
+        "source_receipt_age_at_generation_ms": 128.3731609582901,
+        "source_receipt_age_at_internal_output_ms": 203.3144347369671,
+        "source_receipt_age_at_response_ms": 203.98582518100739,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 106.6163070499897,
+          "response_host_ms": 107.28926584124565,
+          "ae_gpu_ms": 74.46460723876953,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7256792576,
+        "peak_reserved": 8036286464
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "graph_ae_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 18.050719052553177,
+            "cpu_begin_monotonic_s": 24954874.801477578,
+            "cpu_end_monotonic_s": 24954874.819528297,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 67.57740783691406,
+            "stream": 94083299501392,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 6.4692385494709015,
+            "cpu_begin_monotonic_s": 24954874.819582596,
+            "cpu_end_monotonic_s": 24954874.826051835,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 45.219905853271484,
+            "stream": 94081447881520,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 6.4692385494709015,
+              "cpu_begin_monotonic_s": 24954874.819582596,
+              "cpu_end_monotonic_s": 24954874.826051835,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 45.219905853271484,
+              "stream": 94081447881520,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954874.663744368,
+        "source_host_receipt_unix_s": 1792575620.817677,
+        "current_host_receipt_unix_s": 1792575620.925398,
+        "prefix_ready_observed_monotonic_s": 24954874.770377655,
+        "prefix_published_monotonic_s": 24954874.770378668,
+        "generation_start_monotonic_s": 24954874.80146994,
+        "source_receipt_age_at_generation_ms": 137.7255730330944,
+        "source_receipt_age_at_internal_output_ms": 205.89926093816757,
+        "source_receipt_age_at_response_ms": 206.70584961771965,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 98.17810729146004,
+          "response_host_ms": 98.98632019758224,
+          "ae_gpu_ms": 67.57740783691406,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7256792576,
+        "peak_reserved": 8036286464
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "graph_ae_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.300888895988464,
+            "cpu_begin_monotonic_s": 24954874.901910435,
+            "cpu_end_monotonic_s": 24954874.919211324,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 65.50489807128906,
+            "stream": 94083299501392,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.310721695423126,
+            "cpu_begin_monotonic_s": 24954874.919268053,
+            "cpu_end_monotonic_s": 24954874.924578775,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 43.86252975463867,
+            "stream": 94081447881520,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 5.310721695423126,
+              "cpu_begin_monotonic_s": 24954874.919268053,
+              "cpu_end_monotonic_s": 24954874.924578775,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 43.86252975463867,
+              "stream": 94081447881520,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954874.77146552,
+        "source_host_receipt_unix_s": 1792575620.925398,
+        "current_host_receipt_unix_s": 1792575621.0249066,
+        "prefix_ready_observed_monotonic_s": 24954874.86966709,
+        "prefix_published_monotonic_s": 24954874.869668365,
+        "generation_start_monotonic_s": 24954874.901902493,
+        "source_receipt_age_at_generation_ms": 130.436971783638,
+        "source_receipt_age_at_internal_output_ms": 196.48830965161324,
+        "source_receipt_age_at_response_ms": 197.20394536852837,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 96.97980806231499,
+          "response_host_ms": 97.69682958722115,
+          "ae_gpu_ms": 65.50489807128906,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7256792576,
+        "peak_reserved": 8036286464
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "graph_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.673388123512268,
+            "cpu_begin_monotonic_s": 24954886.51589985,
+            "cpu_end_monotonic_s": 24954886.533573236,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 45.42313766479492,
+            "stream": 94081448368208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 5.462806671857834,
+              "cpu_begin_monotonic_s": 24954886.478143737,
+              "cpu_end_monotonic_s": 24954886.483606543,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.64006423950195,
+              "stream": 94081448367440,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954886.447303336,
+        "source_host_receipt_unix_s": 1792575632.6012366,
+        "current_host_receipt_unix_s": 1792575632.6012366,
+        "prefix_ready_observed_monotonic_s": 24954886.51588008,
+        "prefix_published_monotonic_s": 24954886.51588064,
+        "generation_start_monotonic_s": 24954886.515891053,
+        "source_receipt_age_at_generation_ms": 68.58771666884422,
+        "source_receipt_age_at_internal_output_ms": 114.51109498739243,
+        "source_receipt_age_at_response_ms": 115.10942503809929,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 114.51109498739243,
+          "response_host_ms": 115.11093750596046,
+          "ae_gpu_ms": 45.42313766479492,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7273496064,
+        "peak_reserved": 8078229504
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "graph_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.275501042604446,
+            "cpu_begin_monotonic_s": 24954886.59827474,
+            "cpu_end_monotonic_s": 24954886.615550242,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 58.444801330566406,
+            "stream": 94081448368208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.455624312162399,
+            "cpu_begin_monotonic_s": 24954886.592794873,
+            "cpu_end_monotonic_s": 24954886.598250497,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 39.819969177246094,
+            "stream": 94081448367440,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 5.455624312162399,
+              "cpu_begin_monotonic_s": 24954886.592794873,
+              "cpu_end_monotonic_s": 24954886.598250497,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 39.819969177246094,
+              "stream": 94081448367440,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954886.447303336,
+        "source_host_receipt_unix_s": 1792575632.6012366,
+        "current_host_receipt_unix_s": 1792575632.7168174,
+        "prefix_ready_observed_monotonic_s": 24954886.51588008,
+        "prefix_published_monotonic_s": 24954886.51588064,
+        "generation_start_monotonic_s": 24954886.592779133,
+        "source_receipt_age_at_generation_ms": 145.47579735517502,
+        "source_receipt_age_at_internal_output_ms": 209.92128923535347,
+        "source_receipt_age_at_response_ms": 210.611030459404,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 94.33997422456741,
+          "response_host_ms": 95.03119811415672,
+          "ae_gpu_ms": 58.444801330566406,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7273496064,
+        "peak_reserved": 8078229504
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "graph_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 20.03305032849312,
+            "cpu_begin_monotonic_s": 24954886.693726692,
+            "cpu_end_monotonic_s": 24954886.713759743,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 59.783809661865234,
+            "stream": 94081448368208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.372580140829086,
+            "cpu_begin_monotonic_s": 24954886.688329607,
+            "cpu_end_monotonic_s": 24954886.693702187,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 38.96089553833008,
+            "stream": 94081448367440,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 5.372580140829086,
+              "cpu_begin_monotonic_s": 24954886.688329607,
+              "cpu_end_monotonic_s": 24954886.693702187,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 38.96089553833008,
+              "stream": 94081448367440,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954886.56288465,
+        "source_host_receipt_unix_s": 1792575632.7168174,
+        "current_host_receipt_unix_s": 1792575632.8122976,
+        "prefix_ready_observed_monotonic_s": 24954886.65724256,
+        "prefix_published_monotonic_s": 24954886.657244403,
+        "generation_start_monotonic_s": 24954886.68831463,
+        "source_receipt_age_at_generation_ms": 125.42998045682907,
+        "source_receipt_age_at_internal_output_ms": 191.0863295197487,
+        "source_receipt_age_at_response_ms": 191.77180156111717,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 95.60633078217506,
+          "response_host_ms": 96.29333391785622,
+          "ae_gpu_ms": 59.783809661865234,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7273496064,
+        "peak_reserved": 8078229504
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "graph_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 18.187295645475388,
+            "cpu_begin_monotonic_s": 24954886.789704632,
+            "cpu_end_monotonic_s": 24954886.807891928,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 58.95478439331055,
+            "stream": 94081448368208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.113042891025543,
+            "cpu_begin_monotonic_s": 24954886.784568023,
+            "cpu_end_monotonic_s": 24954886.789681066,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 39.791839599609375,
+            "stream": 94081448367440,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 5.113042891025543,
+              "cpu_begin_monotonic_s": 24954886.784568023,
+              "cpu_end_monotonic_s": 24954886.789681066,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 39.791839599609375,
+              "stream": 94081448367440,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954886.65836465,
+        "source_host_receipt_unix_s": 1792575632.8122976,
+        "current_host_receipt_unix_s": 1792575632.9090416,
+        "prefix_ready_observed_monotonic_s": 24954886.753993463,
+        "prefix_published_monotonic_s": 24954886.753994886,
+        "generation_start_monotonic_s": 24954886.784552526,
+        "source_receipt_age_at_generation_ms": 126.18787586688995,
+        "source_receipt_age_at_internal_output_ms": 190.75972586870193,
+        "source_receipt_age_at_response_ms": 191.44167006015778,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 94.01527419686317,
+          "response_host_ms": 94.69864889979362,
+          "ae_gpu_ms": 58.95478439331055,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7273496064,
+        "peak_reserved": 8078229504
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "graph_prefill_first",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.818247735500336,
+            "cpu_begin_monotonic_s": 24954886.88578972,
+            "cpu_end_monotonic_s": 24954886.902607966,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 58.73545455932617,
+            "stream": 94081448368208,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.981180816888809,
+            "cpu_begin_monotonic_s": 24954886.879780095,
+            "cpu_end_monotonic_s": 24954886.885761276,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 39.64476776123047,
+            "stream": 94081448367440,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 5.981180816888809,
+              "cpu_begin_monotonic_s": 24954886.879780095,
+              "cpu_end_monotonic_s": 24954886.885761276,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 39.64476776123047,
+              "stream": 94081448367440,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": 0,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954886.7551091,
+        "source_host_receipt_unix_s": 1792575632.9090416,
+        "current_host_receipt_unix_s": 1792575633.0042088,
+        "prefix_ready_observed_monotonic_s": 24954886.84914272,
+        "prefix_published_monotonic_s": 24954886.849143934,
+        "generation_start_monotonic_s": 24954886.87976482,
+        "source_receipt_age_at_generation_ms": 124.65571984648705,
+        "source_receipt_age_at_internal_output_ms": 189.99432399868965,
+        "source_receipt_age_at_response_ms": 191.062793135643,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 94.8270671069622,
+          "response_host_ms": 95.89728340506554,
+          "ae_gpu_ms": 58.73545455932617,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7273496064,
+        "peak_reserved": 8078229504
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.980476677417755,
+            "cpu_begin_monotonic_s": 24954899.43716563,
+            "cpu_end_monotonic_s": 24954899.454146106,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 44.77382278442383,
+            "stream": 94081447686000,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 5.359835922718048,
+              "cpu_begin_monotonic_s": 24954899.399432786,
+              "cpu_end_monotonic_s": 24954899.40479262,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.618080139160156,
+              "stream": 94081448515712,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954899.366233595,
+        "source_host_receipt_unix_s": 1792575645.5201666,
+        "current_host_receipt_unix_s": 1792575645.5201666,
+        "prefix_ready_observed_monotonic_s": 24954899.43714531,
+        "prefix_published_monotonic_s": 24954899.437145986,
+        "generation_start_monotonic_s": 24954899.437156573,
+        "source_receipt_age_at_generation_ms": 70.92297822237015,
+        "source_receipt_age_at_internal_output_ms": 116.18632078170776,
+        "source_receipt_age_at_response_ms": 116.79423600435257,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 116.18632078170776,
+          "response_host_ms": 116.79596081376076,
+          "ae_gpu_ms": 44.77382278442383,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7290871296,
+        "peak_reserved": 8120172544
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 20.202424377202988,
+            "cpu_begin_monotonic_s": 24954899.51338468,
+            "cpu_end_monotonic_s": 24954899.533587106,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 48.13043212890625,
+            "stream": 94081447686000,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.596809089183807,
+            "cpu_begin_monotonic_s": 24954899.53364284,
+            "cpu_end_monotonic_s": 24954899.53923965,
+            "done_at_submit": false,
+            "done_now": false,
+            "gpu_event_span_ms": null,
+            "stream": 94081448515712,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954899.366233595,
+        "source_host_receipt_unix_s": 1792575645.5201666,
+        "current_host_receipt_unix_s": 1792575645.6374109,
+        "prefix_ready_observed_monotonic_s": 24954899.43714531,
+        "prefix_published_monotonic_s": 24954899.437145986,
+        "generation_start_monotonic_s": 24954899.513376575,
+        "source_receipt_age_at_generation_ms": 147.14298024773598,
+        "source_receipt_age_at_internal_output_ms": 195.82899659872055,
+        "source_receipt_age_at_response_ms": 196.46213948726654,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 78.58442887663841,
+          "response_host_ms": 79.21905815601349,
+          "ae_gpu_ms": 48.13043212890625,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 2,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7290871296,
+        "peak_reserved": 8120172544
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.022397369146347,
+            "cpu_begin_monotonic_s": 24954899.5935951,
+            "cpu_end_monotonic_s": 24954899.610617496,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 70.12806701660156,
+            "stream": 94081447686000,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.232818424701691,
+            "cpu_begin_monotonic_s": 24954899.61066393,
+            "cpu_end_monotonic_s": 24954899.61589675,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 46.74652862548828,
+            "stream": 94081448515712,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 5.596809089183807,
+              "cpu_begin_monotonic_s": 24954899.53364284,
+              "cpu_end_monotonic_s": 24954899.53923965,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 43.92204666137695,
+              "stream": 94081448515712,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            },
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 5.232818424701691,
+              "cpu_begin_monotonic_s": 24954899.61066393,
+              "cpu_end_monotonic_s": 24954899.61589675,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 46.74652862548828,
+              "stream": 94081448515712,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954899.483478162,
+        "source_host_receipt_unix_s": 1792575645.6374109,
+        "current_host_receipt_unix_s": 1792575645.7171125,
+        "prefix_ready_observed_monotonic_s": 24954899.593500763,
+        "prefix_published_monotonic_s": 24954899.593502104,
+        "generation_start_monotonic_s": 24954899.593586337,
+        "source_receipt_age_at_generation_ms": 110.10817438364029,
+        "source_receipt_age_at_internal_output_ms": 180.73854222893715,
+        "source_receipt_age_at_response_ms": 181.43099173903465,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 101.03688016533852,
+          "response_host_ms": 101.73098370432854,
+          "ae_gpu_ms": 70.12806701660156,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7290871296,
+        "peak_reserved": 8120172544
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 18.620360642671585,
+            "cpu_begin_monotonic_s": 24954899.694617305,
+            "cpu_end_monotonic_s": 24954899.713237666,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 57.44294357299805,
+            "stream": 94081447686000,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 6.261695176362991,
+            "cpu_begin_monotonic_s": 24954899.713291205,
+            "cpu_end_monotonic_s": 24954899.7195529,
+            "done_at_submit": false,
+            "done_now": false,
+            "gpu_event_span_ms": null,
+            "stream": 94081448515712,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954899.563179825,
+        "source_host_receipt_unix_s": 1792575645.7171125,
+        "current_host_receipt_unix_s": 1792575645.819269,
+        "prefix_ready_observed_monotonic_s": 24954899.66423182,
+        "prefix_published_monotonic_s": 24954899.664232932,
+        "generation_start_monotonic_s": 24954899.694609396,
+        "source_receipt_age_at_generation_ms": 131.42957165837288,
+        "source_receipt_age_at_internal_output_ms": 189.4194446504116,
+        "source_receipt_age_at_response_ms": 190.10630622506142,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 87.26312592625618,
+          "response_host_ms": 87.95203268527985,
+          "ae_gpu_ms": 57.44294357299805,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 2,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7290871296,
+        "peak_reserved": 8120172544
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "ae_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.382901161909103,
+            "cpu_begin_monotonic_s": 24954899.789041366,
+            "cpu_end_monotonic_s": 24954899.806424268,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 56.887264251708984,
+            "stream": 94081447686000,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.400121212005615,
+            "cpu_begin_monotonic_s": 24954899.806470927,
+            "cpu_end_monotonic_s": 24954899.811871048,
+            "done_at_submit": false,
+            "done_now": false,
+            "gpu_event_span_ms": null,
+            "stream": 94081448515712,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 6.261695176362991,
+              "cpu_begin_monotonic_s": 24954899.713291205,
+              "cpu_end_monotonic_s": 24954899.7195529,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 46.464576721191406,
+              "stream": 94081448515712,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954899.665336143,
+        "source_host_receipt_unix_s": 1792575645.819269,
+        "current_host_receipt_unix_s": 1792575645.9077628,
+        "prefix_ready_observed_monotonic_s": 24954899.788946185,
+        "prefix_published_monotonic_s": 24954899.78894809,
+        "generation_start_monotonic_s": 24954899.789031863,
+        "source_receipt_age_at_generation_ms": 123.695719987154,
+        "source_receipt_age_at_internal_output_ms": 181.13595247268677,
+        "source_receipt_age_at_response_ms": 181.75241723656654,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 92.64199435710907,
+          "response_host_ms": 93.25993061065674,
+          "ae_gpu_ms": 56.887264251708984,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 2,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7290871296,
+        "peak_reserved": 8120172544
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1701,
+        "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 0,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.40293577313423,
+            "cpu_begin_monotonic_s": 24954912.26418949,
+            "cpu_end_monotonic_s": 24954912.281592425,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 45.18012619018555,
+            "stream": 94081446117632,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": null,
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 0,
+              "cpu_submit_ms": 5.450218915939331,
+              "cpu_begin_monotonic_s": 24954912.22646199,
+              "cpu_end_monotonic_s": 24954912.23191221,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 37.601375579833984,
+              "stream": 94081448516480,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": null
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 0,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 0,
+        "reference_state_id": 0,
+        "observation_request_age": 0,
+        "source_host_receipt_monotonic_s": 24954912.1957893,
+        "source_host_receipt_unix_s": 1792575658.3497226,
+        "current_host_receipt_unix_s": 1792575658.3497226,
+        "prefix_ready_observed_monotonic_s": 24954912.264164113,
+        "prefix_published_monotonic_s": 24954912.264165,
+        "generation_start_monotonic_s": 24954912.26417903,
+        "source_receipt_age_at_generation_ms": 68.38972866535187,
+        "source_receipt_age_at_internal_output_ms": 114.07990753650665,
+        "source_receipt_age_at_response_ms": 114.69490826129913,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 114.07990753650665,
+          "response_host_ms": 114.6961934864521,
+          "ae_gpu_ms": 45.18012619018555,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 6,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7307910656,
+        "peak_reserved": 8162115584
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.298659563064575
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0104801481436532
+      }
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1702,
+        "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 1,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.924791038036346,
+            "cpu_begin_monotonic_s": 24954912.345442314,
+            "cpu_end_monotonic_s": 24954912.362367105,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 54.161888122558594,
+            "stream": 94081446117632,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.1992349326610565,
+            "cpu_begin_monotonic_s": 24954912.34021985,
+            "cpu_end_monotonic_s": 24954912.345419087,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 41.9268798828125,
+            "stream": 94081448516480,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 3,
+              "epoch": 4,
+              "observation_id": 1,
+              "cpu_submit_ms": 5.1992349326610565,
+              "cpu_begin_monotonic_s": 24954912.34021985,
+              "cpu_end_monotonic_s": 24954912.345419087,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 41.9268798828125,
+              "stream": 94081448516480,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 4
+        },
+        "current_observation_id": 1,
+        "prefix_observation_id": 0,
+        "suffix_state_id": 1,
+        "reference_state_id": 1,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954912.1957893,
+        "source_host_receipt_unix_s": 1792575658.3497226,
+        "current_host_receipt_unix_s": 1792575658.4648712,
+        "prefix_ready_observed_monotonic_s": 24954912.264164113,
+        "prefix_published_monotonic_s": 24954912.264165,
+        "generation_start_monotonic_s": 24954912.340205044,
+        "source_receipt_age_at_generation_ms": 144.4157436490059,
+        "source_receipt_age_at_internal_output_ms": 204.3098360300064,
+        "source_receipt_age_at_response_ms": 205.0122320652008,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 89.16069567203522,
+          "response_host_ms": 89.86445516347885,
+          "ae_gpu_ms": 54.161888122558594,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 7,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7307910656,
+        "peak_reserved": 8162115584
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.2622504234313965
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0097464102972709
+      }
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1703,
+        "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 2,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 16.694243997335434,
+            "cpu_begin_monotonic_s": 24954912.43552805,
+            "cpu_end_monotonic_s": 24954912.452222295,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 56.71836853027344,
+            "stream": 94081446117632,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.190573632717133,
+            "cpu_begin_monotonic_s": 24954912.430313364,
+            "cpu_end_monotonic_s": 24954912.435503937,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 40.80524826049805,
+            "stream": 94081448516480,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 5,
+              "epoch": 4,
+              "observation_id": 2,
+              "cpu_submit_ms": 5.190573632717133,
+              "cpu_begin_monotonic_s": 24954912.430313364,
+              "cpu_end_monotonic_s": 24954912.435503937,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 40.80524826049805,
+              "stream": 94081448516480,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 3
+        },
+        "current_observation_id": 2,
+        "prefix_observation_id": 1,
+        "suffix_state_id": 2,
+        "reference_state_id": 2,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954912.31093844,
+        "source_host_receipt_unix_s": 1792575658.4648712,
+        "current_host_receipt_unix_s": 1792575658.55518,
+        "prefix_ready_observed_monotonic_s": 24954912.40011667,
+        "prefix_published_monotonic_s": 24954912.400118325,
+        "generation_start_monotonic_s": 24954912.43029855,
+        "source_receipt_age_at_generation_ms": 119.36010792851448,
+        "source_receipt_age_at_internal_output_ms": 181.768286973238,
+        "source_receipt_age_at_response_ms": 182.44876712560654,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 91.459259390831,
+          "response_host_ms": 92.1410359442234,
+          "ae_gpu_ms": 56.71836853027344,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 8,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7307910656,
+        "peak_reserved": 8162115584
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.219560146331787
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.0172736801262778
+      }
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1704,
+        "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 3,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 19.703231751918793,
+            "cpu_begin_monotonic_s": 24954912.529709805,
+            "cpu_end_monotonic_s": 24954912.549413037,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 54.80614471435547,
+            "stream": 94081446117632,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 5.230918526649475,
+            "cpu_begin_monotonic_s": 24954912.52445344,
+            "cpu_end_monotonic_s": 24954912.529684357,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 41.51148986816406,
+            "stream": 94081448516480,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 1,
+              "generation": 4,
+              "epoch": 4,
+              "observation_id": 3,
+              "cpu_submit_ms": 5.230918526649475,
+              "cpu_begin_monotonic_s": 24954912.52445344,
+              "cpu_end_monotonic_s": 24954912.529684357,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 41.51148986816406,
+              "stream": 94081448516480,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 0,
+          "generation": 5
+        },
+        "current_observation_id": 3,
+        "prefix_observation_id": 2,
+        "suffix_state_id": 3,
+        "reference_state_id": 3,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954912.401247468,
+        "source_host_receipt_unix_s": 1792575658.55518,
+        "current_host_receipt_unix_s": 1792575658.647768,
+        "prefix_ready_observed_monotonic_s": 24954912.492726482,
+        "prefix_published_monotonic_s": 24954912.492727686,
+        "generation_start_monotonic_s": 24954912.524438493,
+        "source_receipt_age_at_generation_ms": 123.19102510809898,
+        "source_receipt_age_at_internal_output_ms": 183.76507237553596,
+        "source_receipt_age_at_response_ms": 184.46191772818565,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 91.17715060710907,
+          "response_host_ms": 91.87541529536247,
+          "ae_gpu_ms": 54.80614471435547,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 9,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7307910656,
+        "peak_reserved": 8162115584
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 3.0566797256469727
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.004295464260869
+      }
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "response": {
+        "execute_length": 5,
+        "seed": 1705,
+        "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+        "mode": "async_reuse",
+        "interval": 1,
+        "request": 4,
+        "submission_order": "prefill_first",
+        "diagnostics": {
+          "ae": {
+            "cpu_submit_ms": 17.344780266284943,
+            "cpu_begin_monotonic_s": 24954912.621770788,
+            "cpu_end_monotonic_s": 24954912.63911557,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 53.75900650024414,
+            "stream": 94081446117632,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "prefill": {
+            "cpu_submit_ms": 6.156615912914276,
+            "cpu_begin_monotonic_s": 24954912.615583543,
+            "cpu_end_monotonic_s": 24954912.62174016,
+            "done_at_submit": false,
+            "done_now": true,
+            "gpu_event_span_ms": 42.62809753417969,
+            "stream": 94081448516480,
+            "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+          },
+          "completed_prefills": [
+            {
+              "slot": 0,
+              "generation": 6,
+              "epoch": 4,
+              "observation_id": 4,
+              "cpu_submit_ms": 6.156615912914276,
+              "cpu_begin_monotonic_s": 24954912.615583543,
+              "cpu_end_monotonic_s": 24954912.62174016,
+              "done_at_submit": false,
+              "done_now": true,
+              "gpu_event_span_ms": 42.62809753417969,
+              "stream": 94081448516480,
+              "gpu_time_definition": "CUDA event span includes dispatch gaps/resource waits; kernel busy time requires nsys"
+            }
+          ],
+          "done_after_both_submissions": {
+            "ae": false,
+            "prefill": false
+          }
+        },
+        "execution": "cuda_graph",
+        "ae_priority": -1,
+        "graph_setup_ms": 0.0,
+        "graph_kv_buffers": 2,
+        "snapshot": {
+          "epoch": 4,
+          "slot": 1,
+          "generation": 4
+        },
+        "current_observation_id": 4,
+        "prefix_observation_id": 3,
+        "suffix_state_id": 4,
+        "reference_state_id": 4,
+        "observation_request_age": 1,
+        "source_host_receipt_monotonic_s": 24954912.49383539,
+        "source_host_receipt_unix_s": 1792575658.647768,
+        "current_host_receipt_unix_s": 1792575658.7401054,
+        "prefix_ready_observed_monotonic_s": 24954912.585030753,
+        "prefix_published_monotonic_s": 24954912.585032195,
+        "generation_start_monotonic_s": 24954912.615567617,
+        "source_receipt_age_at_generation_ms": 121.73222750425339,
+        "source_receipt_age_at_internal_output_ms": 182.27098509669304,
+        "source_receipt_age_at_response_ms": 182.97142535448074,
+        "receipt_age_definition": "Host observation receipt age, not image capture age",
+        "camera_capture_age_ms": null,
+        "camera_clock": "not recorded; host receipt is not capture",
+        "generated_length": 50,
+        "submitted_length": 5,
+        "timing": {
+          "action_ready_host_ms": 89.9333655834198,
+          "response_host_ms": 90.63528850674629,
+          "ae_gpu_ms": 53.75900650024414,
+          "availability_definition": "action_ready_host_ms is internal; actual controller receives RPC response after response_host_ms plus transport"
+        },
+        "pool": {
+          "live_snapshots": 1,
+          "publications": 10,
+          "pending_replacements": 0,
+          "no_free_slot": 0
+        },
+        "peak_allocated": 7307910656,
+        "peak_reserved": 8162115584
+      },
+      "normalized_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 2.817511558532715
+      },
+      "decoded_error": {
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "reference_abs_max": 1.012103529885441
+      }
+    }
+  ],
+  "cold": {
+    "original": {
+      "response_ms": 1633.2706287503242,
+      "graph_setup_ms": 0
+    },
+    "threaded_prefill_first": {
+      "response_ms": 526.2368731200695,
+      "graph_setup_ms": 0.0
+    },
+    "graph_serial": {
+      "response_ms": 3990.2648590505123,
+      "graph_setup_ms": 3883.52395221591
+    },
+    "graph_ae_first": {
+      "response_ms": 4587.690718472004,
+      "graph_setup_ms": 4479.383911937475
+    },
+    "graph_prefill_first": {
+      "response_ms": 4110.026683658361,
+      "graph_setup_ms": 3993.4639297425747
+    },
+    "graph_ae_first_high": {
+      "response_ms": 4529.426351189613,
+      "graph_setup_ms": 4407.230984419584
+    },
+    "graph_prefill_first_high": {
+      "response_ms": 4200.862351804972,
+      "graph_setup_ms": 4093.8651524484158
+    }
+  },
+  "audits": [
+    {
+      "mode": "original",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "threaded_prefill_first",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_serial",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_ae_first",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_prefill_first",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_ae_first_high",
+      "source": 3,
+      "digest": "e182e691596a33c2dd25e859889ed7c35a68714cc1bfed1cc3812dc91293c93d",
+      "matches_eager": true
+    },
+    {
+      "mode": "graph_prefill_first_high",
+      "source": 4,
+      "digest": "e56851dd7099e00de5b91b2b1afb3a007f0708eb36a0a75745b8603b0a5a6fd4",
+      "matches_eager": true
+    }
+  ],
+  "summary": {
+    "original": {
+      "action_ready_host_ms": {
+        "p50": 624.9349378049374,
+        "p95": 636.7754001170397
+      },
+      "response_host_ms": {
+        "p50": 626.1876095086336,
+        "p95": 638.0345514044166
+      },
+      "ae_gpu_ms": {
+        "p50": 445.4602508544922,
+        "p95": 457.9768768310547
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 445.61177864670753,
+      "prefill_cpu_submit_ms": 133.31309892237186
+    },
+    "threaded_prefill_first": {
+      "action_ready_host_ms": {
+        "p50": 419.9133310467005,
+        "p95": 436.2406490370631
+      },
+      "response_host_ms": {
+        "p50": 421.72972299158573,
+        "p95": 438.30311335623264
+      },
+      "ae_gpu_ms": {
+        "p50": 371.1473083496094,
+        "p95": 386.89576416015626
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 371.53724767267704,
+      "prefill_cpu_submit_ms": 144.18745785951614
+    },
+    "graph_serial": {
+      "action_ready_host_ms": {
+        "p50": 70.67054323852062,
+        "p95": 76.11465994268656
+      },
+      "response_host_ms": {
+        "p50": 109.18796621263027,
+        "p95": 114.68908730894327
+      },
+      "ae_gpu_ms": {
+        "p50": 38.34537696838379,
+        "p95": 44.54814052581787
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 17.10938662290573,
+      "prefill_cpu_submit_ms": 5.177304148674011
+    },
+    "graph_ae_first": {
+      "action_ready_host_ms": {
+        "p50": 97.57895767688751,
+        "p95": 105.35057708621025
+      },
+      "response_host_ms": {
+        "p50": 98.3415748924017,
+        "p95": 106.04382399469614
+      },
+      "ae_gpu_ms": {
+        "p50": 66.54115295410156,
+        "p95": 73.43152732849121
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 17.297709360718727,
+      "prefill_cpu_submit_ms": 5.302228033542633
+    },
+    "graph_prefill_first": {
+      "action_ready_host_ms": {
+        "p50": 94.58352066576481,
+        "p95": 95.48944123089314
+      },
+      "response_host_ms": {
+        "p50": 95.46424075961113,
+        "p95": 96.23392634093761
+      },
+      "ae_gpu_ms": {
+        "p50": 58.84511947631836,
+        "p95": 59.65945587158203
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 17.731398344039917,
+      "prefill_cpu_submit_ms": 5.414102226495743
+    },
+    "graph_ae_first_high": {
+      "action_ready_host_ms": {
+        "p50": 89.95256014168262,
+        "p95": 99.7776472941041
+      },
+      "response_host_ms": {
+        "p50": 90.60598164796829,
+        "p95": 100.46032574027777
+      },
+      "ae_gpu_ms": {
+        "p50": 57.165103912353516,
+        "p95": 68.22529850006103
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 18.001630902290344,
+      "prefill_cpu_submit_ms": 5.498465150594711
+    },
+    "graph_prefill_first_high": {
+      "action_ready_host_ms": {
+        "p50": 90.55525809526443,
+        "p95": 91.4169430732727
+      },
+      "response_host_ms": {
+        "p50": 91.25535190105438,
+        "p95": 92.10119284689426
+      },
+      "ae_gpu_ms": {
+        "p50": 54.48401641845703,
+        "p95": 56.431534957885745
+      },
+      "kv_ages": [
+        1
+      ],
+      "ae_cpu_submit_ms": 17.134785652160645,
+      "prefill_cpu_submit_ms": 5.215076729655266
+    }
+  },
+  "source_sha256": {
+    "__init__.py": "3bbb1f910cf83192bf5fdc30bad5e6911c5efc6e3cd23a2f0310a780d2f95627",
+    "scheduler.py": "4901af9cc22d663d7976999104494a7dfcba5f5aeb3bc4ed580d74c2b4512328",
+    "openpi_backend.py": "58e3afca576a03724658bc41fa2f62150991911a6e450ef54cdfb31868a5677e",
+    "experiments.py": "4e891616d6dfd0634a1e95bb809327767237d2efb6644f0e14fe8fccbe092428",
+    "policy.py": "40ff61b599d661292ef59370c1d0fce65c58c2111340e9cc46be863720dc0527",
+    "server.py": "c830aa0bdc09e46fe267edc67b67241b9a0d77ff868425201d77917d9cbe2560",
+    "libero_runner.py": "af2957d32ef8a8c73144ece0887a1a2cf1b13108c89b0b5cc6c1b783cb9b217b",
+    "test_scheduler.py": "c0703ac5ef75c84b7b1d2dd8d1697cb9a4b78540934bf715dc3282f2cdf235bb",
+    "test_sampling.py": "8e310375c089372e41f9dcdad7acdd2d0df3821b35cd04d3ebb8fc59727cf873",
+    "trace_analysis.py": "394fb05f42eaac391d7e1d4c6493e46e8810e3a2dccc7061cd6f291d73192354",
+    "audit_weights.py": "edfd4f2e6f2640b56a6462acebd2a2dd024c7586f8d6e9f90bcdeedd7b0e379c",
+    "run_micro.py": "6f70c39b85bf63b55587cfdddfa32e6c8b06e4fe51572306df6928bb798284dd",
+    "analyze.py": "07aee78e177aae932eb5de622d4a50ecb4cf8cd1198d6f684b2a6b07e0d2db48",
+    "graph_bench.py": "e81aae34b14591b3aeec9e55eada06628fcd74bb7a6ee73996cf94584cd36b46",
+    "final_audit.py": "b1c0fb6213b2ae31326df486a9e9133f3e280a95da7888db205b6b11e22e29a1",
+    "graph_sampler.py": "f23fcaaa927c50221b39f4080dfdab831329adbb13d792714c52457bb6a5697c",
+    "summary_plots.py": "96614431a0684da99199995b3c84807031add6cc6c9f6825bcafd02cd3c894d2",
+    "test_analysis_stats.py": "8febcfb66f5b7547411d80d572cf090063c920d034fcb8d8b3881af253fccfed",
+    "media_index.py": "3375916f047b07fc835821aa533cd717295ed160bc50cee73bb51e546a4a6c11",
+    "nsys_profile.py": "dc85fcc6be3f643895fd4e48881400f65bd75a7e6a861e98f4959a3e3360a36e",
+    "test_nsys_profile.py": "0c0bc8853ce386d8d8d82e00aea9c1baebded4d03b224b9a2f2c70b975c236a7",
+    "submission.py": "295bc1c394a8d677d61d298b8e9449f84b3d52f05ec530fd8ca12f88bfb6742a",
+    "scheduling_bench.py": "eb2966e9cc2bedab08a25b0abd09fae2e031bb545773a079bc551417c2f8567a",
+    "scheduling_trace.py": "3b890a40edeb01f3218edff1826d5d66fcc6668ce6b9098d7a135e506f9a0015",
+    "test_submission.py": "d3924e83df2e8ccd05b5aafa5abe95b67fe05642bf0a7c13b2ec9ee2f80a914d",
+    "graph_overlap_diagnosis.py": "c3da4fbc31a6fb446575d96b39f03bbb531e1500e22ce3a9c03340741d8ca10e",
+    "graph_overlap_trace.py": "36b3218b40ecf0317b1cfa1612326ec21a74a1d27cab2817a53eced79a84076b",
+    "runtime_graph.py": "05b202db410ecd97ffcf9569042b097b335c70eb0e4d5311f347fa39bf2703d1",
+    "runtime_graph_bench.py": "8e06cfd207e16ede34f4fbe5b5ecfe13bf3a9d7fcfaec1dc9354a184c9324edd",
+    "test_runtime_graph.py": "e8ff274bbdcfdddcaddc82b1557af7cdf737a1781c2e9e9a2238f71bf6b8f578",
+    "runtime_graph_audit.py": "bbb4f303a76202006e95190404e00e19710715b29046a47f58ffcb3b8181adf9"
+  },
+  "bank_sha256": "a4928db19fc13ac936a8738221669b76c6483e684e7f16e843d35bef07a6240b",
+  "scope": "Dynamic real observations; original backend reference follows each actual old KV source; no profiler timings mixed with unprofiled measurements"
+}

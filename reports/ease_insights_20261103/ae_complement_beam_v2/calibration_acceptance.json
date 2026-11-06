@@ -1,0 +1,573 @@
+{
+  "status": "pass",
+  "manifest_hash": "3adfd2414c54ebe490e56746f397be3f0953320dac4b4d5206b87109d590483b",
+  "known_controls": 8,
+  "independent_quality_cases": 0,
+  "GPU_adapter_parity_passed": true,
+  "actual_AE_visits_and_NFE_passed": true,
+  "exact_D2_D10_node_receipts_passed": true,
+  "old_Full_bridge_passed": true,
+  "old_AE16_bridge_passed": true,
+  "all_eight_controls_bitwise_identical": true,
+  "cases": [
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "14a73c0ba01c3a8dcbc5247565aaf6a37c10d7b47dc24acdb58a2b4ca5d8dc4c",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "a3d0ba969d7f69282b0b882f8b2ec4218f34608a1ac3f0b967d02d5c6335f2ff",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "39aa65e6acec29c5010f5dc7728f0f8c9432bb3f49292013369dddc5b0b650da",
+      "success": true,
+      "predictions": 22
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "f80a483d88fd61b9225894b5f846c133c4e538f4e33191852ac003a56b98d0a9",
+      "success": true,
+      "predictions": 57
+    },
+    {
+      "condition": "ae16_d2",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "640d029351f64ee494772a28c3d14729a37019449de26f97fd0ca9a477770ea4",
+      "success": true,
+      "predictions": 16
+    },
+    {
+      "condition": "ae16_d2",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "02d2c56d6d9916d1af7f5c11267efde77692dcedd1b4c7ae6774d3f0b4e125c9",
+      "success": true,
+      "predictions": 50
+    },
+    {
+      "condition": "ae16_d2",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "8d5966974d3575691d5dc59a713fa974dd86ee360ec874a6726da1993ed93975",
+      "success": true,
+      "predictions": 25
+    },
+    {
+      "condition": "ae16_d2",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "9506dbbc78da15c3d9b9d9968d4d1c15ccaef11d4836d7efa3a24260e8cc458a",
+      "success": true,
+      "predictions": 58
+    }
+  ],
+  "services": [
+    {
+      "condition": "ae16_d2",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/runs/calibration_shard00of02_1793911266552771187",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 320,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "0c0c2961cedec77aea8bb14d2f3601163d86f1639eb5bfc9092114de75bf3e39",
+        "identity.json": "aa172920ea4bac930073648cc01342f9b1a58171819560ad02a50f9b8244defb",
+        "protocol.json": "306aa3fbfe5736e72643ff849974d2d63afde0dc40cdc8c24ad400f8556b8229",
+        "gate.json": "677c69e1c6b3e84292a42add95b4a398926bf7be286baf780653af36cf96ebbf",
+        "cross_service.json": "4650b3dd4a8053b9f0e935ae5a6f830cf3ba7a94c0306a3abee2ad23b33cc4b1",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "2f52a3cbb0edae96e12cbdbedacbd5b9f02541716249cb8def58b32566b7e8d8"
+      }
+    },
+    {
+      "condition": "ae16_d2",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/runs/calibration_shard01of02_1793911274760777418",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 320,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "da89c45bdc90a6890afa876586c917161e9a84372098c49bb4362f04934040b3",
+        "identity.json": "9a5cac16125e96bca6f25640ef69b3b5d031ae8257d3323cbeaddc55bc3715e7",
+        "protocol.json": "e04e969fe53e2ab7bea7731c5556c77750b45c60b9bcf2b967b182f0b4330ee3",
+        "gate.json": "677c69e1c6b3e84292a42add95b4a398926bf7be286baf780653af36cf96ebbf",
+        "cross_service.json": "4650b3dd4a8053b9f0e935ae5a6f830cf3ba7a94c0306a3abee2ad23b33cc4b1",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "0e70fc18e880f44bcd3898f7cf355a5f31e76ae2c3ef160f8210b54eeb86f02e"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/runs/calibration_shard00of02_1793911139185742578",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 320,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "6f9ba33fd73269eb678b5812a67a9af30e52bb785c95a017b2c8180ecfc086a5",
+        "identity.json": "fdeb89a88571989f24e8d1ce66579a85491d619515faa64fffa2415f094062bc",
+        "protocol.json": "5e3135e7481bae9825902879db8fd50535a5b2262541adb33c0a72187693854d",
+        "gate.json": "677c69e1c6b3e84292a42add95b4a398926bf7be286baf780653af36cf96ebbf",
+        "cross_service.json": "4650b3dd4a8053b9f0e935ae5a6f830cf3ba7a94c0306a3abee2ad23b33cc4b1",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "1cff162d160bb75f46fe5b763702cc52fe259ac36ed5abfe8de22ac22495698d"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/runs/calibration_shard01of02_1793911139184014574",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 320,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "24ed0c49fab086e0c4ea3c26318744cb7288cc60b9ec3bdc4ada3a07d4734fb2",
+        "identity.json": "ef9f97e5dc138a4377204334691d765de2c23330ebdffbb972909e7df9bd3fa1",
+        "protocol.json": "8424d517ec017097b9e1436462dec286ce96f9bb62c26a3275dd2762b0d48ec5",
+        "gate.json": "677c69e1c6b3e84292a42add95b4a398926bf7be286baf780653af36cf96ebbf",
+        "cross_service.json": "4650b3dd4a8053b9f0e935ae5a6f830cf3ba7a94c0306a3abee2ad23b33cc4b1",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "a47294c237c8ad05655bc54cab16e3f6b9409396f3b5af72df031e2cbc434a3f"
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d",
+        "success": true,
+        "predictions": 17
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "14a73c0ba01c3a8dcbc5247565aaf6a37c10d7b47dc24acdb58a2b4ca5d8dc4c"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0",
+        "success": true,
+        "predictions": 27
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "a3d0ba969d7f69282b0b882f8b2ec4218f34608a1ac3f0b967d02d5c6335f2ff"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b",
+        "success": true,
+        "predictions": 22
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "39aa65e6acec29c5010f5dc7728f0f8c9432bb3f49292013369dddc5b0b650da"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1",
+        "success": true,
+        "predictions": 57
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "f80a483d88fd61b9225894b5f846c133c4e538f4e33191852ac003a56b98d0a9"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae16_d2",
+      "source_condition": "ae_16",
+      "source_manifest_hash": "2d00735fd5f9b8afb06eaadeec47087db7f049eadcffbe2ff92def91ca164e43",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae_16",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery/ae_16/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "20cd8d859a37ddd1ba88cfde8ade6c309b087ad201b50ba69ac26db75beea3e2",
+        "success": true,
+        "predictions": 16
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "640d029351f64ee494772a28c3d14729a37019449de26f97fd0ca9a477770ea4"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae16_d2",
+      "source_condition": "ae_16",
+      "source_manifest_hash": "2d00735fd5f9b8afb06eaadeec47087db7f049eadcffbe2ff92def91ca164e43",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae_16",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery/ae_16/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "cf08b06e4e91d3762e0ca8e79026a21771796190b216eeef301a336afd5e011d",
+        "success": true,
+        "predictions": 50
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "02d2c56d6d9916d1af7f5c11267efde77692dcedd1b4c7ae6774d3f0b4e125c9"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae16_d2",
+      "source_condition": "ae_16",
+      "source_manifest_hash": "2d00735fd5f9b8afb06eaadeec47087db7f049eadcffbe2ff92def91ca164e43",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae_16",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery/ae_16/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "5c410a25c797f07eb33cc1265ac8cf094b2f3c5d9533cf676d310d2d1545bec1",
+        "success": true,
+        "predictions": 25
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "8d5966974d3575691d5dc59a713fa974dd86ee360ec874a6726da1993ed93975"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae16_d2",
+      "source_condition": "ae_16",
+      "source_manifest_hash": "2d00735fd5f9b8afb06eaadeec47087db7f049eadcffbe2ff92def91ca164e43",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae_16",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery/ae_16/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "197b38536c13ccefa7c75b0d2af8e86cf12ee7b7255cddb2d201cfd6f7abcffd",
+        "success": true,
+        "predictions": 58
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9506dbbc78da15c3d9b9d9968d4d1c15ccaef11d4836d7efa3a24260e8cc458a"
+      },
+      "bitwise_actions_and_raw_identical": true
+    }
+  ],
+  "cost_calls_validated": 1152,
+  "cost_records": {
+    "valid_services": 4,
+    "services": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/runs/calibration_shard00of02_1793911266552771187/fixed_input_cost.json",
+        "sha256": "2f52a3cbb0edae96e12cbdbedacbd5b9f02541716249cb8def58b32566b7e8d8",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 330.08405403234065,
+          "ae16_d2": 210.0976041983813,
+          "path_a": 210.09820885956287,
+          "path_b": 203.1283334363252
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "ae16_d2": 1.5710986105327696,
+          "path_a": 1.5710940889219127,
+          "path_b": 1.6250025215503103
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 110.02801801078022,
+            "fast": null
+          },
+          "ae16_d2": {
+            "full": 108.495376072824,
+            "fast": 50.80111406277865
+          },
+          "path_a": {
+            "full": 108.05485607124865,
+            "fast": 51.02167639415711
+          },
+          "path_b": {
+            "full": 104.29200413636863,
+            "fast": 49.41816464997828
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/ae16_d2/runs/calibration_shard01of02_1793911274760777418/fixed_input_cost.json",
+        "sha256": "0e70fc18e880f44bcd3898f7cf355a5f31e76ae2c3ef160f8210b54eeb86f02e",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 322.15524348430336,
+          "ae16_d2": 203.34596559405327,
+          "path_a": 205.3436858113855,
+          "path_b": 204.99486359767616
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "ae16_d2": 1.5842716256659513,
+          "path_a": 1.5688587755272536,
+          "path_b": 1.5715283682256873
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 107.38508116143446,
+            "fast": null
+          },
+          "ae16_d2": {
+            "full": 104.71992893144488,
+            "fast": 49.31301833130419
+          },
+          "path_a": {
+            "full": 105.27257085777819,
+            "fast": 50.03555747680366
+          },
+          "path_b": {
+            "full": 105.12355505488813,
+            "fast": 49.935654271394014
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/runs/calibration_shard00of02_1793911139185742578/fixed_input_cost.json",
+        "sha256": "1cff162d160bb75f46fe5b763702cc52fe259ac36ed5abfe8de22ac22495698d",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 314.8145587183535,
+          "ae16_d2": 202.40500755608082,
+          "path_a": 205.68426721729338,
+          "path_b": 202.84913247451186
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "ae16_d2": 1.5553694175828487,
+          "path_a": 1.5305718953495377,
+          "path_b": 1.5519640378935817
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 104.93818623945117,
+            "fast": null
+          },
+          "ae16_d2": {
+            "full": 103.6621262319386,
+            "fast": 49.37144066207111
+          },
+          "path_a": {
+            "full": 105.8823352213949,
+            "fast": 49.90096599794924
+          },
+          "path_b": {
+            "full": 104.24859565682709,
+            "fast": 49.300268408842385
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v2/calibration/full_d10/runs/calibration_shard01of02_1793911139184014574/fixed_input_cost.json",
+        "sha256": "a47294c237c8ad05655bc54cab16e3f6b9409396f3b5af72df031e2cbc434a3f",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 320.84445911459625,
+          "ae16_d2": 207.03442697413266,
+          "path_a": 207.01082097366452,
+          "path_b": 207.12832338176668
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "ae16_d2": 1.5497154932338053,
+          "path_a": 1.5498922114579383,
+          "path_b": 1.549012968753842
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 106.94815303819875,
+            "fast": null
+          },
+          "ae16_d2": {
+            "full": 106.12156498245895,
+            "fast": 50.456430995836854
+          },
+          "path_a": {
+            "full": 106.12553497776389,
+            "fast": 50.442642997950315
+          },
+          "path_b": {
+            "full": 105.74723151512444,
+            "fast": 50.69054593332112
+          }
+        }
+      }
+    ],
+    "excluded_or_pending": [],
+    "mean_cycle_ms": {
+      "full_d10": 321.97457883739844,
+      "ae16_d2": 205.720751080662,
+      "path_a": 207.03424571547657,
+      "path_b": 204.52516322256997
+    },
+    "full_over_policy_cycle": {
+      "full_d10": 1.0,
+      "ae16_d2": 1.5651050132086768,
+      "path_a": 1.555175462516874,
+      "path_b": 1.5742541101752685
+    },
+    "pooling": "Equal completed-service weight and equally weighted four-suite old-bank inputs; full three-request cycles",
+    "scope": "Actual original-adapter policy cost, ordered AE visits and exact time-node receipts; not closed-loop or exclusive-GPU acceleration"
+  },
+  "auditor_source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v2/calibration_audit.py",
+    "sha256": "667d6acea45b56c916247f8f57eb72e47caae40112566557e89fc5ebed944e12"
+  },
+  "time": 1793911403.0646114,
+  "scope": "Finite original-adapter arithmetic, actual dispatch/cost receipts and repeated-control trajectory bridge only; no independent quality or complementary-path evidence"
+}

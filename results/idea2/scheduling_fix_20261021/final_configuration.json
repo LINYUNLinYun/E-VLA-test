@@ -1,0 +1,35 @@
+{
+  "formal_sources_identical": true,
+  "final_changes_default_only": {
+    "policy.py": "--- \n+++ \n@@ -10,7 +10,7 @@\n \n class PipelinePolicy:\n     def __init__(self, backend, mode=\"async_reuse\", interval=1,\n-                 submission_order=\"ae_first\", diagnostics=False, host_workers=True):\n+                 submission_order=\"prefill_first\", diagnostics=False, host_workers=False):\n         self.backend = backend\n         self.background = torch.cuda.Stream(device=backend.device)\n         self.pool = Pool()\n",
+    "server.py": "--- \n+++ \n@@ -15,8 +15,8 @@\n     parser.add_argument(\"--checkpoint\", required=True)\n     parser.add_argument(\"--port\", type=int, default=9012)\n     parser.add_argument(\"--device\", default=\"cuda:0\")\n-    parser.add_argument(\"--submission-order\", choices=(\"ae_first\", \"prefill_first\"), default=\"ae_first\")\n-    parser.add_argument(\"--host-workers\", action=argparse.BooleanOptionalAction, default=True)\n+    parser.add_argument(\"--submission-order\", choices=(\"ae_first\", \"prefill_first\"), default=\"prefill_first\")\n+    parser.add_argument(\"--host-workers\", action=argparse.BooleanOptionalAction, default=False)\n     parser.add_argument(\"--diagnostics\", action=\"store_true\")\n     args = parser.parse_args()\n     policy = PipelinePolicy(load_backend(args.checkpoint, args.device), submission_order=args.submission_order,\n"
+  },
+  "explicit_benchmark_modes_unaffected": true,
+  "final_source_sha256": {
+    "__init__.py": "3bbb1f910cf83192bf5fdc30bad5e6911c5efc6e3cd23a2f0310a780d2f95627",
+    "scheduler.py": "4901af9cc22d663d7976999104494a7dfcba5f5aeb3bc4ed580d74c2b4512328",
+    "openpi_backend.py": "58e3afca576a03724658bc41fa2f62150991911a6e450ef54cdfb31868a5677e",
+    "experiments.py": "4e891616d6dfd0634a1e95bb809327767237d2efb6644f0e14fe8fccbe092428",
+    "policy.py": "f72d0946da9fed5984e542187e39c08e800edb8b1b205d1d56411a20af301f39",
+    "server.py": "7d08f8d639dda85cf3ce9f23f32ffabea25a3b72cb2a6a9e321a8058d1fc9d94",
+    "libero_runner.py": "af2957d32ef8a8c73144ece0887a1a2cf1b13108c89b0b5cc6c1b783cb9b217b",
+    "test_scheduler.py": "c0703ac5ef75c84b7b1d2dd8d1697cb9a4b78540934bf715dc3282f2cdf235bb",
+    "test_sampling.py": "8e310375c089372e41f9dcdad7acdd2d0df3821b35cd04d3ebb8fc59727cf873",
+    "trace_analysis.py": "394fb05f42eaac391d7e1d4c6493e46e8810e3a2dccc7061cd6f291d73192354",
+    "audit_weights.py": "edfd4f2e6f2640b56a6462acebd2a2dd024c7586f8d6e9f90bcdeedd7b0e379c",
+    "run_micro.py": "6f70c39b85bf63b55587cfdddfa32e6c8b06e4fe51572306df6928bb798284dd",
+    "analyze.py": "07aee78e177aae932eb5de622d4a50ecb4cf8cd1198d6f684b2a6b07e0d2db48",
+    "graph_bench.py": "e81aae34b14591b3aeec9e55eada06628fcd74bb7a6ee73996cf94584cd36b46",
+    "final_audit.py": "b1c0fb6213b2ae31326df486a9e9133f3e280a95da7888db205b6b11e22e29a1",
+    "graph_sampler.py": "f23fcaaa927c50221b39f4080dfdab831329adbb13d792714c52457bb6a5697c",
+    "summary_plots.py": "96614431a0684da99199995b3c84807031add6cc6c9f6825bcafd02cd3c894d2",
+    "test_analysis_stats.py": "8febcfb66f5b7547411d80d572cf090063c920d034fcb8d8b3881af253fccfed",
+    "media_index.py": "3375916f047b07fc835821aa533cd717295ed160bc50cee73bb51e546a4a6c11",
+    "nsys_profile.py": "dc85fcc6be3f643895fd4e48881400f65bd75a7e6a861e98f4959a3e3360a36e",
+    "test_nsys_profile.py": "0c0bc8853ce386d8d8d82e00aea9c1baebded4d03b224b9a2f2c70b975c236a7",
+    "submission.py": "295bc1c394a8d677d61d298b8e9449f84b3d52f05ec530fd8ca12f88bfb6742a",
+    "scheduling_bench.py": "eb2966e9cc2bedab08a25b0abd09fae2e031bb545773a079bc551417c2f8567a",
+    "scheduling_trace.py": "3b890a40edeb01f3218edff1826d5d66fcc6668ce6b9098d7a135e506f9a0015",
+    "test_submission.py": "becdd158e5047010e067780aa94e1692ec91ecb6a554da53e9036b7c21a69a4d"
+  }
+}

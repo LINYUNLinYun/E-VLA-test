@@ -1,0 +1,280 @@
+{
+  "conditions": [
+    {
+      "id": "cosine_online",
+      "model": "pi0",
+      "mode": "baseline",
+      "D": 2,
+      "H": 50,
+      "R": 5,
+      "method": "cosine"
+    },
+    {
+      "id": "random_online_s1",
+      "model": "pi0",
+      "mode": "baseline",
+      "D": 2,
+      "H": 50,
+      "R": 5,
+      "method": "random_online",
+      "random_seed": 341101
+    },
+    {
+      "id": "random_online_s2",
+      "model": "pi0",
+      "mode": "baseline",
+      "D": 2,
+      "H": 50,
+      "R": 5,
+      "method": "random_online",
+      "random_seed": 341102
+    },
+    {
+      "id": "random_online_s3",
+      "model": "pi0",
+      "mode": "baseline",
+      "D": 2,
+      "H": 50,
+      "R": 5,
+      "method": "random_online",
+      "random_seed": 341103
+    },
+    {
+      "id": "random_episode_s1",
+      "model": "pi0",
+      "mode": "baseline",
+      "D": 2,
+      "H": 50,
+      "R": 5,
+      "method": "random_episode",
+      "random_seed": 341101
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_4_E2_selection_baselines/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_selection_baselines/common.py": "7ffa7deec8631800f220c90f1fc769c2db1f886f8c645ab15d1097fa454f06a0",
+    "preparations/idea1_v3_4_E2_selection_baselines/cosine.py": "75814a7f7ad5194992ac8a2e99d5ea87b7745ff1ef275a9c68b4bea742baa7cc",
+    "preparations/idea1_v3_4_E2_selection_baselines/server.py": "e4ce5a2eac37f9ebb29b78b41a5b224758937f4becf4ef0fe59600f06b54b26f",
+    "preparations/idea1_v3_4_E2_selection_baselines/controller.py": "cf9ece3755b2f732549eee4f2457a05e6e26a3261d64138ec6466e3d181e7bdd",
+    "preparations/idea1_v3_4_E2_selection_baselines/evaluate.py": "2248ffd8232454c71fc44c6dff93c705bc06db265b976ac5a9bfe77e46f7ec4e",
+    "preparations/idea1_v3_4_E2_selection_baselines/offline.py": "9d895732afc45f0bee2141af4aa04124a1b16c7a007c6b2677c72eedb39c1588",
+    "preparations/idea1_v3_4_E2_selection_baselines/finish.py": "e39c93365717b513ed488876dcd1e9113b66080a7b77b09c8c14118afef13416",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_E2_online_time_weights/selector.py": "80df545d65ad05c4054a3f3fda4b8b9f1a096630ce3f0838d9c53c35a635601b",
+    "preparations/idea1_v3_4_E2_online_time_weights/server.py": "b3f40140f22effa66330e45664f7b5ed84dda8ba96801b9c57452dcf9632b5cf",
+    "preparations/idea1_v3_4_E2_single_action/common.py": "243f8264b02b905eee060e20b82fad6daaa477366045cd48e49ebe83ccda2c54"
+  },
+  "plan_sha256": "2e648eb27c2a0ae203f9c20b76423d17b79c0cb4838a3fe74b5119eaf61532e8",
+  "reference_manifest_sha256": "1f09aa30ec69166b93a6ebe0c2da9871b98eec96646c2a2b9ef85cb69f35255d",
+  "constraint": {
+    "skip_count": 4,
+    "max_consecutive": 2
+  },
+  "reference_condition": "exponential_fixed",
+  "time": 1793355647.4156005,
+  "manifest_hash": "2e283dfd4f7517557f04563eb2ba8e72294fc629050a51db611f0626d21fe19e"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "scope": "Pure Python fake torch/runtime/resource modules; no GPU, no real graph execution",
+  "adapter_sha256": "2763c283363869fdd1c358dfd6b1c81a1b8d9fd17b4a418276d9a7200059faf3",
+  "cases": [
+    {
+      "sm": 16,
+      "tail": 0,
+      "passed": true
+    },
+    {
+      "sm": 16,
+      "tail": 1,
+      "passed": true
+    },
+    {
+      "sm": 16,
+      "tail": 2,
+      "passed": true
+    },
+    {
+      "sm": 32,
+      "tail": 0,
+      "passed": true
+    },
+    {
+      "sm": 32,
+      "tail": 1,
+      "passed": true
+    },
+    {
+      "sm": 32,
+      "tail": 2,
+      "passed": true
+    }
+  ],
+  "checks": [
+    "20 original snapshots preserved per warmup+capture simulation",
+    "only step8/9 wait before snapshot",
+    "warmup normal wait; capture external wait/mark",
+    "tail0 no wait/hook side effects",
+    "force_old rejected before base runtime",
+    "snapshot hook restored after success and injected failure"
+  ]
+}

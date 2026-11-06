@@ -1,0 +1,1663 @@
+{
+  "time": 1793242856.4676135,
+  "source": "Frozen v3.4 E1 160 same-input/same-generation-noise pairs; cache age5 executed steps",
+  "cases": 40,
+  "requests": 160,
+  "D": [
+    2,
+    10
+  ],
+  "H": 50,
+  "R": 5,
+  "candidates": [
+    "all_old",
+    "old_single_L1",
+    "old_single_L10",
+    "old_single_L11",
+    "old_single_L12",
+    "old_single_L13",
+    "old_single_L14",
+    "old_single_L15",
+    "old_single_L16",
+    "old_single_L17",
+    "old_single_L18",
+    "old_single_L2",
+    "old_single_L3",
+    "old_single_L4",
+    "old_single_L5",
+    "old_single_L6",
+    "old_single_L7",
+    "old_single_L8",
+    "old_single_L9",
+    "old_suffix_L12",
+    "old_suffix_L13",
+    "old_suffix_L14",
+    "old_suffix_L15",
+    "old_suffix_L16",
+    "old_suffix_L17",
+    "old_suffix_L18",
+    "oracle_suffix_L12",
+    "oracle_suffix_L13",
+    "oracle_suffix_L16",
+    "v14"
+  ],
+  "metrics": [
+    "translation_l2",
+    "translation_mm_proxy",
+    "rotation_l2",
+    "gripper_abs",
+    "gripper_sign_mismatch",
+    "raw_rms6"
+  ],
+  "identities": [
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair000",
+      "episode": "libero_spatial/task00/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "c2fa4f99a0406ae714154d84920f74e3395a47c7f8d04a820a93c16f3de210aa"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair001",
+      "episode": "libero_spatial/task00/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "8cbf7c28820dbfbf0e836734f8f2f12e4f17599ee13525e4305d2f2e71779234"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair002",
+      "episode": "libero_spatial/task00/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "cd0d6eea71b5af43273a897f6267c31f6d9798d22668f4a6faef25e7c19ee627"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair003",
+      "episode": "libero_spatial/task00/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "58f256676125a63a8d838a079d429f4caa06b555378b06afeea6878e95f80391"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair004",
+      "episode": "libero_object/task00/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "02deb11aec1d63da9f816cd900718f1a1db4d640bf6dcaa85a608286f811cc99"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair005",
+      "episode": "libero_object/task00/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "d7a9f28eadb7396bfe18ae9c1a1d1f7db742b9a7229ef96ac2f3329a7cba0092"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair006",
+      "episode": "libero_object/task00/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "20be5046f38dd4acfb0b5d366d211d14718dcaa5c7b66eeb3f17725af558a532"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair007",
+      "episode": "libero_object/task00/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "536da5d9357703c01d289495c3d0013d5a5e342901e322d498c8965040c80385"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair008",
+      "episode": "libero_goal/task00/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "3cf15c3a7cad577dfc0c40516c246db79f617560ac7d21e91a36d57f3be3afa4"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair009",
+      "episode": "libero_goal/task00/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "09845f60f99f87fcacf1f918544c1bb343d51d414c07d1223fca89b5162cd69d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair010",
+      "episode": "libero_goal/task00/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "00aee06e2b775571ebe4827d4af75ba6c3ece2c42beb18f9ad933d227cde9b6f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair011",
+      "episode": "libero_goal/task00/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "ea7f6c976c050ffe97956b0e0dfbced828013149ca8773c90b1bde685fb1d4a4"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair012",
+      "episode": "libero_10/task00/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "b3f29bde4926509c385a7715fd4ac4df21e126795ddd31f315f4d42bbb2c4034"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair013",
+      "episode": "libero_10/task00/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "0a867a39b24b2c71b975bb3e99f68af40572f74a3462e0e0daabe895f8ad2e49"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair014",
+      "episode": "libero_10/task00/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "0a74a75b0d74a28aab2055c0ad863a76f9ecdad4a37a351a0b73993b16fee0c4"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair015",
+      "episode": "libero_10/task00/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 14
+      },
+      "actions_sha256": "0573f571a79ea90e4c13a22bc092b587b520b8aeb40b5e1d8dfe89771987ae70"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair016",
+      "episode": "libero_spatial/task03/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "8c00d17ece7f09f0e70d339ac60aec9f2c17279d4688c9f56416e85e32503313"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair017",
+      "episode": "libero_spatial/task03/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "979a283759a630f690bef748d3ecda8c55daae5bec27b8843c04325af659c034"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair018",
+      "episode": "libero_spatial/task03/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "5723aa557e219733a298caaf69332b70ed15ca4d885e57222c211ccb7297be04"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair019",
+      "episode": "libero_spatial/task03/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "aaf07aa13a36c6f51d02b67b31cdc1ae334a47893289696e0c199cb4b22f92bf"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair020",
+      "episode": "libero_object/task03/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "354295e418d5fc65eb4377050ae338a36508e99443b4b6327fcc8027744c688c"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair021",
+      "episode": "libero_object/task03/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "88fd2eee566a4ddd32b46e085b203c21a0bd123d839b0b01700ae108876a1b39"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair022",
+      "episode": "libero_object/task03/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "d7da32afed9ea021c221e19eb7221a7b0b070272700fc0981d19e4451c024c83"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair023",
+      "episode": "libero_object/task03/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "a8baf12cec932e20bb00b257da22c13c296df28b40e09e59df9f3df3a7e9098a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair024",
+      "episode": "libero_goal/task03/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "04223482ac61a9d09441c75cb210efc7f76bebb2a5ebd59f24aa2c8f76d63718"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair025",
+      "episode": "libero_goal/task03/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "5c8cb219a66ec0d5efd7d12df63e4542d2965c43e7d817a9f4400bd4b56df4a5"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair026",
+      "episode": "libero_goal/task03/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "b6c511026c9f6e1d112e6a9c48a5bfc22c5fbd19d95b8464c50769d159831cb3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair027",
+      "episode": "libero_goal/task03/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "112d4207104337cad7ae20dc80a5d6cbe2ed36a6d4b7e435663bc58b09a09e92"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair028",
+      "episode": "libero_10/task03/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "1c6af127bacde1f885e509f960a125e2d626d67ac96204026b58d51eb529c06a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair029",
+      "episode": "libero_10/task03/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "6be0b58ab61a0c5b997b055fca61930f8d1a436251f7e61005a73f0b67c04fc5"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair030",
+      "episode": "libero_10/task03/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "a76a23f2df7fb349308f789d25c919e7fc78ef88e8158167a89ecabeda4b0f9d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair031",
+      "episode": "libero_10/task03/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 14
+      },
+      "actions_sha256": "08de0d2ec19b64a8429550c5e3e5973b90f815dae4448b0b399772e94406741f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair032",
+      "episode": "libero_spatial/task06/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "015178240582eb91cb2fbe4f99366adfa9c4e6e1ea62e13e27fa44c14c3f2b4d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair033",
+      "episode": "libero_spatial/task06/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "8f9a8392c648fb5d6ae0bd08cfcbb2b04a3f3cb6ced17331e1a48071903dac1e"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair034",
+      "episode": "libero_spatial/task06/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "20866fc4b314414b7264a16effaba6a8b74236699a3612b54f818eb8af1ef69c"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair035",
+      "episode": "libero_spatial/task06/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "c43985c19d38cdd0a45c7805d1a99fa36e02493b8e935eb42f55e457910000b4"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair036",
+      "episode": "libero_object/task06/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "5d60d9ad4a559bf2783ad5e63131f077e8a246d4faf31c82d27f00a7b520dc5b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair037",
+      "episode": "libero_object/task06/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "6f6b15cb56083da36f9c614e44ebcbc87703bba9a9619a89c0cd2c08cb57468d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair038",
+      "episode": "libero_object/task06/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "658e9a238d68e58694c16c2b48d5197f7f7399cc45adcbacf6c497cc62796f97"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair039",
+      "episode": "libero_object/task06/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "73ae6dadde8f677fbcf8f64f1c269d3cf6e9dae43f69d79cec9928302191e2b9"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair040",
+      "episode": "libero_goal/task06/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "9b69c0e341af773e07271c3b84ffddb07ae93df41aaf19200034ed7c846091ff"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair041",
+      "episode": "libero_goal/task06/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "5d466e14121958476a472c180e2452ed9ca0fe89cd8cc9acf31158d09f219c53"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair042",
+      "episode": "libero_goal/task06/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "16ebf81c77aaa2c8447e4a9bfdd281a5d203efe6c32f6c85334b407c07e74dbe"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair043",
+      "episode": "libero_goal/task06/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "14728ef34eb4fe8681c4273506658c5a48c93f72330d0cec56ccb571bf764566"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair044",
+      "episode": "libero_10/task06/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "144e5f15e6c86d26e3ff8f0af5dae3253553805ca425295a307d82ed1f935636"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair045",
+      "episode": "libero_10/task06/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "f05ab6a8be5f642e097ab497c663ea1eacfc401a1d4465c9f59c52ea878c1cbd"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair046",
+      "episode": "libero_10/task06/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "f49ac6962942f5128473236b37e734ad6197926320480c20cec98ee516759915"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair047",
+      "episode": "libero_10/task06/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 6,
+        "init": 14
+      },
+      "actions_sha256": "7e4893977a86abdcc5b6d023379bb368d8da4ed4ffc938e0146e89fdeb6cdd74"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair048",
+      "episode": "libero_spatial/task09/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "33eeb5a56fef2b14637464543c201450073e597040f7ec786c3c0d69d51268fb"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair049",
+      "episode": "libero_spatial/task09/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "4bfea6e0e140bd008953777ba9cc9dc0a10b53e258e70fc21ae78ee80101ce6d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair050",
+      "episode": "libero_spatial/task09/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "b222e79b0e7a77bbd6ac1e3147db38336bb2f83bd9220e265f436b24348c4540"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair051",
+      "episode": "libero_spatial/task09/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "ec4f6b2c715d1a08af93fe89287f14eda1f6897a0c4a9865417bbaa647df80db"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair052",
+      "episode": "libero_object/task09/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "3d1ab302658efcfe0510e6a1df529274edaba5e0cb8c01cca611fb255b880690"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair053",
+      "episode": "libero_object/task09/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "adaf59f9c8409e4e5bac35a30245aeeda6b8db00ee163106f8e495ec18202398"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair054",
+      "episode": "libero_object/task09/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "134d861936ca283d489863f750ffde3892f9d38c97b84e90a64e77e1d5863c38"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair055",
+      "episode": "libero_object/task09/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "2e10a834ab2da736507464c2aa2b282b5fcd0935a56e287bf2bbb2f8b0f6dd6d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair056",
+      "episode": "libero_goal/task09/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "ce54de34b84a2745ee53472809bc7ca4c7ae2b38827c524da17f02c00a602385"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair057",
+      "episode": "libero_goal/task09/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "43e5c692f043e464635f976982c77a4773ae701693c0790e9de8259a95aaade0"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair058",
+      "episode": "libero_goal/task09/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "7e69f73650c5ca9b2dd792f3127922d2bc4d6c7cf73dff18cb682dcee428098f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair059",
+      "episode": "libero_goal/task09/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "708aa77399d74f7900f24e3749e6046ac672b0beb41287e1c76be132fee940d6"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair060",
+      "episode": "libero_10/task09/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "03b7f46927ba68de4cc2c9f9640373008771ea10d84eec50fd149992db7e2844"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair061",
+      "episode": "libero_10/task09/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "0d95ddf81f72c2bf174c0b6fbe6d78fdba81fe3d48d4eda8156cb2a92dc7e213"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair062",
+      "episode": "libero_10/task09/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "badef9465022713f950eec3bef8d5d864cccbacbd1296b1809aebfcba4cec4ed"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard0/pair063",
+      "episode": "libero_10/task09/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 14
+      },
+      "actions_sha256": "a37cde7539f3cb1336a9e5ca7cf85934ad4cfba933026db367b34c8d625ab2e6"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair000",
+      "episode": "libero_spatial/task01/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "bf1241d4daaa5d94f5695161ca153224af2cfdb8f8e523bd25625d2cccaca7ba"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair001",
+      "episode": "libero_spatial/task01/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "c4b378422def696a082288752e526cb64cd361cbae715f00c01ee796868b4276"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair002",
+      "episode": "libero_spatial/task01/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "7ec75db85d1c05fb91f2ef7f43ea4f5a8070436d06d977b3dd7c8f1acf3547ea"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair003",
+      "episode": "libero_spatial/task01/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "1215daaf11b07b918d213a65b885ef73a9cafe0499228b5fa4dcf561186be879"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair004",
+      "episode": "libero_object/task01/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "8b5780e0d8bdc1d45466fe3c95094f829b20463820939b32263456fb7cd1eb7d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair005",
+      "episode": "libero_object/task01/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "75ebcd434f62062a3234a5acdf125e0a8adc3b3ea9498e0d6812f5c291a9dd6b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair006",
+      "episode": "libero_object/task01/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "7f81416075f5880f1576dea9864ecd5cbe2046f487f03aaeef2a26596330c11f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair007",
+      "episode": "libero_object/task01/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "e8f81e176dc3471df006ec48f1061b1fb490e0a0ca12af75658cbb7a294091e5"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair008",
+      "episode": "libero_goal/task01/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "db61c2bbcdddbd8ea88fe96220fb415a5e348f2f7636d0bf14f7cd90492ce7d8"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair009",
+      "episode": "libero_goal/task01/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "0af08829f27133fbf872c709d9b3b61c2f4f38bb3577b0b4f68a72610d94e2b8"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair010",
+      "episode": "libero_goal/task01/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "d4ff98a9a7e10cbef868e56baed412bcfdbaa251dc7cdb30c23cc1267483e95e"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair011",
+      "episode": "libero_goal/task01/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "2988ffc25dde228304aa97b254bf389e0e5331c686c38bd8d1aee1ff943562d9"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair012",
+      "episode": "libero_10/task01/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "f1a8baf472455ecf670e6ae4b78a09e6df68ed306b6e8a995758793c3749e2c2"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair013",
+      "episode": "libero_10/task01/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "b99c85532cb5b056de9c8c4600dfdb194224e5e5f4a9e8968c7443dda830a4c9"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair014",
+      "episode": "libero_10/task01/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "e8dfeae329f6064d8d4617f8307f6160727131f943485e3bc9d9f37cedf7b159"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair015",
+      "episode": "libero_10/task01/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 14
+      },
+      "actions_sha256": "3da74acc72c1ded0e7f153dae26729b0607ec7e0edcf966eaf58fe635864ffaa"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair016",
+      "episode": "libero_spatial/task04/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "c00e24cc2da633a60ea0d6ca18bd2fd06995ae35a572e62a12062f908aa32eca"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair017",
+      "episode": "libero_spatial/task04/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "c36561ef5fd21ab702cbca4d388e25248f9fe85d4ce63627b5158c1c3e010e22"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair018",
+      "episode": "libero_spatial/task04/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "45b01ae2156ce071db351ac7a34f4ab156a6da35ef9e7bb534a507e595ca3e7e"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair019",
+      "episode": "libero_spatial/task04/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "0d925cbc4791ba442319c0fe19ddb57dcd9e167e97eb58c640bae8028be20145"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair020",
+      "episode": "libero_object/task04/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "aa600b7b1bebbc2e526fcef909a02730087c71ae38d13b2f427a9d1dee841d16"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair021",
+      "episode": "libero_object/task04/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "39671ce987eae9da78895df4c56181779caaa79b5948cbf5f08730efadd72879"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair022",
+      "episode": "libero_object/task04/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "20998b12c204d7e73c709c0b62f6769a8d4691c1edd2fdc7cdcb706bca3a61bd"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair023",
+      "episode": "libero_object/task04/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "4e0119a10793608653816ad38782840ea3b3215e8a6d4476fee28c1630ed6420"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair024",
+      "episode": "libero_goal/task04/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "f4c51809af8625b697b48fd50ae28368cc1e385d23f9bf82eb7c6a12064e90f4"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair025",
+      "episode": "libero_goal/task04/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "a7d50bacb7fde9939e70d69dbd99094a991c4a3b0295336a25244a97ca42a455"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair026",
+      "episode": "libero_goal/task04/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "6a295181325a400b9d33864b5b21e27eaffc20a2a89e04ecd63342cec32330f7"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair027",
+      "episode": "libero_goal/task04/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "7bd73dcd7ee6096eeef687bb457f214b073bbe4a9e022a943b5f28d63f33ac11"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair028",
+      "episode": "libero_10/task04/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "d22cd7a096aaa3702567cf937b75a97b805519c80e9b17ac4d4f44f420c275a8"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair029",
+      "episode": "libero_10/task04/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "2a90a4f220aca92420d44bc4858cabc24a314288a41069ceb3ece60b55634e45"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair030",
+      "episode": "libero_10/task04/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "d1f2b286f449eecd9aec0716168d5858a9f0f4dfbbc84aa3a9aed8d6d7a2f03f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair031",
+      "episode": "libero_10/task04/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 4,
+        "init": 14
+      },
+      "actions_sha256": "e41c0122d1007990b3dae14a65c7e900f092c0df676ebf37267672b93622a364"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair032",
+      "episode": "libero_spatial/task07/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "474bb71a7ab5adada723045f4210b05a9405a0c6d80fdae93fa8d7d07bd7117e"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair033",
+      "episode": "libero_spatial/task07/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "5db91fe8a9a40a5b0adc9e0343c2aaaef7795bb8c4f8d1d4839e0d704c02a377"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair034",
+      "episode": "libero_spatial/task07/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "7683d480b46055b95e903b7688b0746937d066f555ae0b95dc27b1355b0fba02"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair035",
+      "episode": "libero_spatial/task07/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "241d029c2c3bf28b40aa294819910f59150be733aa23de383c76f2856e5d9367"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair036",
+      "episode": "libero_object/task07/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "b174288df8ae1b39dfd8f61fd10562579f06432840a8bdaa7ea6781112f14f5f"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair037",
+      "episode": "libero_object/task07/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "2ea9649ce86f884cbe1e043de2dd7ca6a03ee025e852c4ec95943c7ea025dc16"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair038",
+      "episode": "libero_object/task07/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "a5df045c474a756d76aaafc9229ead28433abb9ed55b5c3e3f11ab0c4e632293"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair039",
+      "episode": "libero_object/task07/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "e80f930b0fc9062c892f42d31d43d51a079845fdff8aec7a55a36c4a0336acca"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair040",
+      "episode": "libero_goal/task07/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "94a0225ce5e4c862b667dd28d1074c98126f31587590c283950334f1ad6094a3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair041",
+      "episode": "libero_goal/task07/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "cf49e6d7071991f5544df7d415b842768317c66b8988b2e224442cab3cb4c705"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair042",
+      "episode": "libero_goal/task07/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "130f4026c8c6efcae2c1b8c3b893bbdd0cae6b8e6f2f2f35fa3ca308681897b2"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair043",
+      "episode": "libero_goal/task07/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "947444fa7ba9b86b3031ad62b5f995bd59facad7c0d9e09ba17228b7b790a7c6"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair044",
+      "episode": "libero_10/task07/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "db5453035470c7a788d1ca465357c78bfe42f76f82edbeef50cb30bf5788314a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair045",
+      "episode": "libero_10/task07/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "4b6c443c193b19926b44ecb3cedd33038604fc6cbfb30425ab8f04e2c8a6999b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair046",
+      "episode": "libero_10/task07/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "c92778d40c7b09de5714e3ff81befa26df7112ac1bf1798de775e08915b569f5"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard1/pair047",
+      "episode": "libero_10/task07/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 14
+      },
+      "actions_sha256": "10afd6a68e2635c4edde5bf781098128caa97fae6a5e8a0d89288e617f15743d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair000",
+      "episode": "libero_spatial/task02/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "01aa406b99005046a30d48114498e8bb07843974a716f79dd01f99a0ce08c39a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair001",
+      "episode": "libero_spatial/task02/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "50c4159d11eacc43d2ae09f6849b2a3ad1d0e7bb4fdbb1e1c2bad77bbc18c931"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair002",
+      "episode": "libero_spatial/task02/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "cfa4c24d479839c20e198ae58d833e7e91371afb448974c44092ebfe7718a2fe"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair003",
+      "episode": "libero_spatial/task02/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "518dc6b32c8b2e18f0b624fb475926a832791ebc95a03174536e1f0bb47fc56a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair004",
+      "episode": "libero_object/task02/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "e03ec5891f8315078dfee699e55a9546bfee82c457cd931e4045cd02617a9f72"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair005",
+      "episode": "libero_object/task02/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "f330bd6d6e34d8bd455e356d9cac47580f2e172b62c97c0d993062ffbdbae5ff"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair006",
+      "episode": "libero_object/task02/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "b686b4628059ff0c4721ff05ac3b107fb380c6217e3bea302e144e4dddac7588"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair007",
+      "episode": "libero_object/task02/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "4e932daa0e1a5d132826497bc51dcd6b31d1ae324350a4bd3483372a6305e7ad"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair008",
+      "episode": "libero_goal/task02/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "3d0cb6dec1983220e7ee3c974fb52cfd79c47e4d53d353b6c17c8fc254af3fca"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair009",
+      "episode": "libero_goal/task02/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "1fd37ef4a1d0ccc420f04a49e50ec482e035cdd9d1e073162eba315fd802535d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair010",
+      "episode": "libero_goal/task02/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "0006d2d6eadbecb40bb1b3c0ad77338f42aef421c260929593c626b01ac3b222"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair011",
+      "episode": "libero_goal/task02/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "703051983629259a0b1ad6273aa76cebf8da3e594a42e9c360fd921b7a491fbf"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair012",
+      "episode": "libero_10/task02/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "8d4c3e918afdd7cffe238b1283a3eab8b1338fe4a44376f10a034103bdab284a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair013",
+      "episode": "libero_10/task02/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "c71648b89c2d151cae69bf34f8a373339f70271cbaa09392f41c4f338f5586cd"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair014",
+      "episode": "libero_10/task02/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "019506707a7ed5b1c3fdec9c02e6459ce024f556b9b931ae687a3f5bd1d15d61"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair015",
+      "episode": "libero_10/task02/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 14
+      },
+      "actions_sha256": "1bb9040efbeeb958d7ee5b62276e95a3186de5282756e1d863cfaa2aa039ce47"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair016",
+      "episode": "libero_spatial/task05/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "15a1bbc464645c2f32e0b8c79421706c6b68ad1469bad44cf266434ece1caabe"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair017",
+      "episode": "libero_spatial/task05/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "94ca2d8667b3bab5982b2ece5820725fffb16e20bbb7a78bfbe71c377c580a43"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair018",
+      "episode": "libero_spatial/task05/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "bb669028c7c8f0c1edad0870527a6e182122e62014c5d3e8c51f0b522b82444a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair019",
+      "episode": "libero_spatial/task05/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "635d87e09e0d57abd38079033e9c383ae743f12d5898e17fa5d5ef851ec8ba15"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair020",
+      "episode": "libero_object/task05/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "0b5ae1178a5340fe1d54917db16b0db0bf7bfc8b7ec46a6d2adaf833224a2dd3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair021",
+      "episode": "libero_object/task05/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "16059b2ca3cf1993c285d2997240f482a90245f58a19020feb28dfe2409e79db"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair022",
+      "episode": "libero_object/task05/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "d8ec70d013e89c58b2d439209c0c27472cb4daef78a3b4363f562ba1eeb47a73"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair023",
+      "episode": "libero_object/task05/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "ef95d69f1f62abbf380098d306476050376c4c5c915b98ddd35efe34ce14d90b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair024",
+      "episode": "libero_goal/task05/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "3148a2adc0850f0b5564a93d4302c8e29b3cdeb408b26a9036044126a7ad33b1"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair025",
+      "episode": "libero_goal/task05/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "087ab10d3063e9eecf19f274bdc2711538f78b6b4ca9268c466e566d966db2d3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair026",
+      "episode": "libero_goal/task05/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "702a1223cec433726fb92221ac83675e25d05abfea4c4f46563521ffb75b78fd"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair027",
+      "episode": "libero_goal/task05/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "d3e426b74218129337b681a9a2fae6421382fee84942e48ba848a0c3913e294d"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair028",
+      "episode": "libero_10/task05/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "eade3591db21a80ab7bfd3a9158e7d22a44167cc0fefc90e2d30fae83673650a"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair029",
+      "episode": "libero_10/task05/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "1b368e3cf0b8b121a06df2409f33c84378aef288dd41b680c7dab0d8d328ad84"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair030",
+      "episode": "libero_10/task05/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "f3add9efec700f59472626b3a86ae5c59b00ed1d47dee2b6973ee0a95609531c"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair031",
+      "episode": "libero_10/task05/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 14
+      },
+      "actions_sha256": "149c39715fc13cf5bcf1c5d1e89d8473f5df91079dbeb545e2b36f9c478f248b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair032",
+      "episode": "libero_spatial/task08/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "f813d6b2cd3bad24ba3bad830ddbd1a4752e1d839e91b783e487666d1924bf59"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair033",
+      "episode": "libero_spatial/task08/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "9661bf4270f6fcaf254fe57000a4935d95a7eb60c5007e30bdbd0aa02a694356"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair034",
+      "episode": "libero_spatial/task08/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "ffc7cc2209a1b3d4f769c8e8b75b2004434f3b9fdc517033795b3aad734c1fb3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair035",
+      "episode": "libero_spatial/task08/init14",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "37f4f494ed34ca2a941141d413215948c04aeff8edcd9b693dd529bd9dbca4f2"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair036",
+      "episode": "libero_object/task08/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "61b4cd12aac4bda54e269f9f09fe80c5edb219c92d1823caf6eb7b5ad5b7b38c"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair037",
+      "episode": "libero_object/task08/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "ba32fd32eb8f7fedcdd415c64ce4638de040879cb052c6297c55295af1a9b367"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair038",
+      "episode": "libero_object/task08/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "6eac6d5343d7357dcaeb8ad0273170d664856ae29c408224d759079ea0767105"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair039",
+      "episode": "libero_object/task08/init14",
+      "case": {
+        "suite": "libero_object",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "b2107c9d5ae5c1b059f78b65a634ed95a88f5834e5df126c4c18a933304a1ad7"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair040",
+      "episode": "libero_goal/task08/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "677897ffe939dd27a31819b67d911bd100b21d25cbc62babe16aedd52e510f94"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair041",
+      "episode": "libero_goal/task08/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "8b1eae90904c9cc5a47aad782b7247b75a7bfcc2db27105e52e858610df9f78b"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair042",
+      "episode": "libero_goal/task08/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "b6a35608436f38d9c6dadb1eb2a1d3734094a9dc89516d939f93a8e1d6c56864"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair043",
+      "episode": "libero_goal/task08/init14",
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "38bf8dbde9657fce4b6f76c90c3942801b3a0d0d9f12a2ac62b7718083ae7b7c"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair044",
+      "episode": "libero_10/task08/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "243390edcd94b7cad9f7d7f2e90221baee5d6764b85d8acb5ffc746b76f9030e"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair045",
+      "episode": "libero_10/task08/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "e6542ae5a4707729e21c57f10c59ad68665fb4ab74d21f9683a6473ec8dcc4d3"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair046",
+      "episode": "libero_10/task08/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "09ff980ff93a0218dbef87077db93e2d3b442824ddba5917ab9891199219e7f5"
+    },
+    {
+      "path": "results/idea1_v3_4/mechanism/shard2/pair047",
+      "episode": "libero_10/task08/init14",
+      "case": {
+        "suite": "libero_10",
+        "task": 8,
+        "init": 14
+      },
+      "actions_sha256": "aaf843e5eb854ee9d14c2a2128530142453a8ae97864ef48d1696f87e2766d5a"
+    }
+  ],
+  "source_sha256": "45c4590bf865ec7d5c4db5e025436eefa4b7bd155798a6db97cebd75de670503",
+  "legacy_h5_h50_max_abs_difference": 4.4139205073179255e-06,
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 291029,
+    "unit": "task",
+    "stratify": "suite",
+    "pointwise_not_simultaneous": true
+  }
+}

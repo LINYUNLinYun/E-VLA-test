@@ -1,0 +1,1029 @@
+{
+  "cohorts": {
+    "cogact_gpu3_20261021_after_full_confirm": {
+      "audit_path": "results/idea1_v3_1/performance_cohorts/cogact_gpu3_20261021_after_full_confirm/audit.json",
+      "audit_sha256": "215d054fd1f8abce0fb2ab89c016262e7ed53c277b0bf4eaf66a7c2af4914947",
+      "fresh_reaudit_exact": true,
+      "passed": true,
+      "comparison": {
+        "native_full_after_p50_drift_fraction": {
+          "request_roundtrip_ms": 0.04580427052624281,
+          "server_request_ms": 0.0457023449799786,
+          "vision_ms": 0.02619645852482318
+        },
+        "drift_exceeds_threshold_by_metric": {
+          "request_roundtrip_ms": false,
+          "server_request_ms": false,
+          "vision_ms": false
+        },
+        "primary_drift_metrics": [
+          "request_roundtrip_ms",
+          "vision_ms"
+        ],
+        "unstable": false,
+        "drift_threshold": 0.1,
+        "candidates": [
+          {
+            "condition": "db-cogact_reference_skip9",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.2491082296150169,
+              "server_request_ms": 1.2545070611524964,
+              "vision_ms": 0.9848456335189099
+            },
+            "matched_full_p50_speedup": null
+          },
+          {
+            "condition": "db-cogact_skip9_5_seeded_random",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.2458086550503928,
+              "server_request_ms": 1.2495912938836173,
+              "vision_ms": 1.0233281020107132
+            },
+            "matched_full_p50_speedup": null
+          }
+        ],
+        "primary_statistic": "P50",
+        "interpretation": "Standalone vision and whole completed RPC are independent measurements; no additive/subtractive attribution. Drift>10% flags unstable, with no automatic retries or cherry-picking."
+      },
+      "gpu_identity": {
+        "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "name": "NVIDIA GeForce RTX 4090",
+        "pci_bus_id": "00000000:E1:00.0",
+        "assigned_gpu": "3"
+      },
+      "phases": [
+        {
+          "condition": "db-cogact_full",
+          "role": "native_full_before",
+          "samples": 100,
+          "benchmark_sha256": "47c51de793abff97e9a2f74fc7ff77206ec98d402e22ede93a3dbc19f4fcfe60",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 189.65933471918106,
+              "p95": 198.2617074623704,
+              "p99": 201.36019762605432
+            },
+            "server_request_ms": {
+              "p50": 187.53485940396786,
+              "p95": 195.99250201135874,
+              "p99": 198.71668022125962
+            },
+            "vision_ms": {
+              "p50": 12.517120361328125,
+              "p95": 15.577707052230835,
+              "p99": 16.643301181793216
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 68.2685432434082,
+            "action_generation_ms": 68.2685432434082,
+            "decode_ms": 0.20898506045341492,
+            "input_processing_ms": 7.676228880882263,
+            "prefill_total_ms": 76.93294143676758,
+            "request_wall_ms": 187.5220201909542,
+            "server_total_ms": 185.4689158499241,
+            "vision_ms": 12.312864303588867,
+            "vlm_ms": 64.47571229934692
+          }
+        },
+        {
+          "condition": "db-cogact_reference_skip9",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "804045c162b2ea902deca3acffd5d330276ed27d658a748cc830de79035f1768",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 151.83578990399837,
+              "p95": 171.9402890652418,
+              "p99": 177.82599050551653
+            },
+            "server_request_ms": {
+              "p50": 149.48888309299946,
+              "p95": 169.473828189075,
+              "p99": 175.52482053637505
+            },
+            "vision_ms": {
+              "p50": 12.709728240966797,
+              "p95": 15.19604983329773,
+              "p99": 15.942520847320566
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 68.36377716064453,
+            "action_generation_ms": 68.36377716064453,
+            "decode_ms": 0.2125948667526245,
+            "input_processing_ms": 7.7302418649196625,
+            "prefill_total_ms": 58.40644836425781,
+            "request_wall_ms": 149.47249181568623,
+            "server_total_ms": 147.37205766141415,
+            "vision_ms": 12.612639904022217,
+            "vlm_ms": 45.758431911468506
+          }
+        },
+        {
+          "condition": "db-cogact_skip9_5_seeded_random",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "f2e2cb8e6ee19c1d3f5cfae9a0166acd39dae700379c0000934ae73542de253f",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 152.2379331290722,
+              "p95": 172.27814365178347,
+              "p99": 175.2386520802975
+            },
+            "server_request_ms": {
+              "p50": 150.07695741951466,
+              "p95": 170.0925352051854,
+              "p99": 173.37355021387341
+            },
+            "vision_ms": {
+              "p50": 12.231776237487793,
+              "p95": 14.493031692504882,
+              "p99": 15.28106446266175
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 67.2113265991211,
+            "action_generation_ms": 67.2113265991211,
+            "decode_ms": 0.19433535635471344,
+            "input_processing_ms": 7.514435797929764,
+            "prefill_total_ms": 57.73311996459961,
+            "request_wall_ms": 150.06515011191368,
+            "server_total_ms": 147.937323898077,
+            "vision_ms": 12.207215785980225,
+            "vlm_ms": 45.53579330444336
+          }
+        },
+        {
+          "condition": "db-cogact_full",
+          "role": "native_full_after",
+          "samples": 100,
+          "benchmark_sha256": "acd2c8866306eb93157db3470da2846430544a3cdee7b4b72cb78692913751c6",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 180.97212724387646,
+              "p95": 192.0942299067974,
+              "p99": 204.61470492184174
+            },
+            "server_request_ms": {
+              "p50": 178.96407656371593,
+              "p95": 190.66438805311918,
+              "p99": 202.9190666601063
+            },
+            "vision_ms": {
+              "p50": 12.189216136932373,
+              "p95": 14.321884679794312,
+              "p99": 14.774346141815194
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 66.99622344970703,
+            "action_generation_ms": 66.99622344970703,
+            "decode_ms": 0.2073347568511963,
+            "input_processing_ms": 8.114870637655258,
+            "prefill_total_ms": 76.27313613891602,
+            "request_wall_ms": 178.95145528018475,
+            "server_total_ms": 176.90706998109818,
+            "vision_ms": 12.150864124298096,
+            "vlm_ms": 64.1643705368042
+          }
+        }
+      ]
+    },
+    "pi05_gpu3_20261021_after_screen": {
+      "audit_path": "results/idea1_v3_1/performance_cohorts/pi05_gpu3_20261021_after_screen/audit.json",
+      "audit_sha256": "7a1e0b25af9883607838909cfd12e63bcb1b75fedc91f8b08a1cda73cbcb586f",
+      "fresh_reaudit_exact": true,
+      "passed": true,
+      "comparison": {
+        "native_full_after_p50_drift_fraction": {
+          "request_roundtrip_ms": 0.00597720307044923,
+          "server_request_ms": 0.00762375714249355,
+          "vision_ms": 0.006884426330827432
+        },
+        "drift_exceeds_threshold_by_metric": {
+          "request_roundtrip_ms": false,
+          "server_request_ms": false,
+          "vision_ms": false
+        },
+        "primary_drift_metrics": [
+          "request_roundtrip_ms",
+          "vision_ms"
+        ],
+        "unstable": false,
+        "drift_threshold": 0.1,
+        "candidates": [
+          {
+            "condition": "pi05_keep24_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.0063421076614787,
+              "server_request_ms": 1.0081922108486565,
+              "vision_ms": 0.9829331952847014
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0160287878550678,
+              "server_request_ms": 1.0171647491101197,
+              "vision_ms": 1.1286048285725787
+            }
+          },
+          {
+            "condition": "pi05_keep21_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.0290204811980173,
+              "server_request_ms": 1.031438895370446,
+              "vision_ms": 1.122850090216686
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0389254551011577,
+              "server_request_ms": 1.040618320537084,
+              "vision_ms": 1.2892575402488613
+            }
+          },
+          {
+            "condition": "pi05_keep18_5_seeded_random",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.041232599813592,
+              "server_request_ms": 1.0426783364516854,
+              "vision_ms": 1.277010867902811
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0512551230934448,
+              "server_request_ms": 1.0519577884922209,
+              "vision_ms": 1.4662650916345583
+            }
+          },
+          {
+            "condition": "pi05_keep15_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.0306984787588183,
+              "server_request_ms": 1.032731163696748,
+              "vision_ms": 1.4831628621785615
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0406196044513087,
+              "server_request_ms": 1.0419220895741406,
+              "vision_ms": 1.702969007298012
+            }
+          }
+        ],
+        "primary_statistic": "P50",
+        "interpretation": "Standalone vision and whole completed RPC are independent measurements; no additive/subtractive attribution. Drift>10% flags unstable, with no automatic retries or cherry-picking."
+      },
+      "gpu_identity": {
+        "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "name": "NVIDIA GeForce RTX 4090",
+        "pci_bus_id": "00000000:E1:00.0",
+        "assigned_gpu": "3"
+      },
+      "phases": [
+        {
+          "condition": "pi05_full",
+          "role": "native_full_before",
+          "samples": 100,
+          "benchmark_sha256": "f2e2a9e4e3295289d96105cca69b6d58418b06b25c306d35f51df2a2f83b3b23",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 107.2809137403965,
+              "p95": 124.70111660659313,
+              "p99": 127.93141305446625
+            },
+            "server_request_ms": {
+              "p50": 105.60464300215244,
+              "p95": 123.42242356389761,
+              "p99": 125.87996769696474
+            },
+            "vision_ms": {
+              "p50": 12.597508728504181,
+              "p95": 15.323295071721077,
+              "p99": 17.806200683116916
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 105.46060837805271
+          }
+        },
+        {
+          "condition": "pi05_full_vision_scan_reference",
+          "role": "matched_all27_full",
+          "samples": 100,
+          "benchmark_sha256": "84a811b0003790165f99a4e4774e3a20fcf876929a62b498b5611c2166ebd4e0",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 108.31356048583984,
+              "p95": 118.03580354899168,
+              "p99": 121.47445585578681
+            },
+            "server_request_ms": {
+              "p50": 106.5444853156805,
+              "p95": 116.57460108399391,
+              "p99": 119.42793056368829
+            },
+            "vision_ms": {
+              "p50": 14.464471489191055,
+              "p95": 15.202612802386284,
+              "p99": 16.740192770957954
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 106.39843344688416
+          }
+        },
+        {
+          "condition": "pi05_keep24_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "19f5fa2117b44b7b709fb2b71a5dc14e46acf4822180c19e14a97002bdddb92c",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 106.60481452941895,
+              "p95": 114.74369931966066,
+              "p99": 115.86471684277063
+            },
+            "server_request_ms": {
+              "p50": 104.74653728306293,
+              "p95": 112.84526139497757,
+              "p99": 114.02179833501582
+            },
+            "vision_ms": {
+              "p50": 12.816241011023521,
+              "p95": 13.786607049405573,
+              "p99": 15.13556510210038
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 104.5711487531662
+          }
+        },
+        {
+          "condition": "pi05_keep21_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "ccc771c1b4c58a8912f199b875fb5bb4eca8fd4364c5d7bf1565b7792b24d6a1",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 104.25537265837193,
+              "p95": 116.75211396068335,
+              "p99": 121.59997932612897
+            },
+            "server_request_ms": {
+              "p50": 102.3857481777668,
+              "p95": 114.8335250094533,
+              "p99": 119.95957382023336
+            },
+            "vision_ms": {
+              "p50": 11.219225823879242,
+              "p95": 12.205319851636887,
+              "p99": 13.512830398976803
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 102.23634168505669
+          }
+        },
+        {
+          "condition": "pi05_keep18_5_seeded_random",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "5299a402d5590b8c91c095860c576e0154bb7deabfa7f2314dee6b2bf8a2ee7c",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 103.03261131048203,
+              "p95": 115.45257046818733,
+              "p99": 119.28406137973072
+            },
+            "server_request_ms": {
+              "p50": 101.28209181129932,
+              "p95": 113.3058749139309,
+              "p99": 117.72141367197037
+            },
+            "vision_ms": {
+              "p50": 9.864840656518936,
+              "p95": 11.110025085508823,
+              "p99": 12.52489872276784
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 101.13338753581047
+          }
+        },
+        {
+          "condition": "pi05_keep15_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "11c7b6572b269223442ad585a21af6229f11b84bb8130bce29973a22db6cf29c",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 104.08564284443855,
+              "p95": 113.47636654973029,
+              "p99": 121.25270847231153
+            },
+            "server_request_ms": {
+              "p50": 102.2576317191124,
+              "p95": 111.62873376160859,
+              "p99": 119.67505156993867
+            },
+            "vision_ms": {
+              "p50": 8.493678644299507,
+              "p95": 10.260681249201294,
+              "p99": 34.70575470477345
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 102.1044347435236
+          }
+        },
+        {
+          "condition": "pi05_full",
+          "role": "native_full_after",
+          "samples": 100,
+          "benchmark_sha256": "31081b4f9ea6ccd91a48e024cf03f29e46e7e9e87d34c507ddaa8d962b6f8327",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 106.6396739333868,
+              "p95": 119.42376028746364,
+              "p99": 130.5756215378642
+            },
+            "server_request_ms": {
+              "p50": 104.7995388507843,
+              "p95": 117.39145331084725,
+              "p99": 128.82346622645855
+            },
+            "vision_ms": {
+              "p50": 12.684235349297523,
+              "p95": 13.557143881917,
+              "p99": 15.305985510349284
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 104.6445406973362
+          }
+        }
+      ]
+    },
+    "pi0_gpu3_20261021_after_screen": {
+      "audit_path": "results/idea1_v3_1/performance_cohorts/pi0_gpu3_20261021_after_screen/audit.json",
+      "audit_sha256": "ba6a8195c2b05cb2236777b6301ac59b6b039d25a6852a29bb42a54e7554397b",
+      "fresh_reaudit_exact": true,
+      "passed": true,
+      "comparison": {
+        "native_full_after_p50_drift_fraction": {
+          "request_roundtrip_ms": 0.026010453886197816,
+          "server_request_ms": 0.028201870468636377,
+          "vision_ms": 0.03264162297907024
+        },
+        "drift_exceeds_threshold_by_metric": {
+          "request_roundtrip_ms": false,
+          "server_request_ms": false,
+          "vision_ms": false
+        },
+        "primary_drift_metrics": [
+          "request_roundtrip_ms",
+          "vision_ms"
+        ],
+        "unstable": false,
+        "drift_threshold": 0.1,
+        "candidates": [
+          {
+            "condition": "pi0_keep24_5_seeded_random",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 0.9817188294856694,
+              "server_request_ms": 0.9778948927015388,
+              "vision_ms": 0.978803725119142
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0039580414696645,
+              "server_request_ms": 1.002285103814111,
+              "vision_ms": 1.1221199072008328
+            }
+          },
+          {
+            "condition": "pi0_keep21_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 0.9950966495624101,
+              "server_request_ms": 0.9944092093639461,
+              "vision_ms": 1.0954692844940717
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0176389138742556,
+              "server_request_ms": 1.0192113130764102,
+              "vision_ms": 1.2558676068669679
+            }
+          },
+          {
+            "condition": "pi0_keep18_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 0.9958217268914956,
+              "server_request_ms": 0.9936326793108139,
+              "vision_ms": 1.248306393372136
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0183804166277521,
+              "server_request_ms": 1.018415415162711,
+              "vision_ms": 1.4310830847302354
+            }
+          },
+          {
+            "condition": "pi0_keep15_1_uniform",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.0156069448466594,
+              "server_request_ms": 1.0135873755848712,
+              "vision_ms": 1.469205761749741
+            },
+            "matched_full_p50_speedup": {
+              "request_roundtrip_ms": 1.0386138358835724,
+              "server_request_ms": 1.0388678124253345,
+              "vision_ms": 1.6843264800947444
+            }
+          }
+        ],
+        "primary_statistic": "P50",
+        "interpretation": "Standalone vision and whole completed RPC are independent measurements; no additive/subtractive attribution. Drift>10% flags unstable, with no automatic retries or cherry-picking."
+      },
+      "gpu_identity": {
+        "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "name": "NVIDIA GeForce RTX 4090",
+        "pci_bus_id": "00000000:E1:00.0",
+        "assigned_gpu": "3"
+      },
+      "phases": [
+        {
+          "condition": "pi0_full",
+          "role": "native_full_before",
+          "samples": 100,
+          "benchmark_sha256": "e0e91e87415f42f528d7dd2348cedc207b279a5d30c65aad0325579f0a0fd999",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 100.91071017086506,
+              "p95": 109.2473678290844,
+              "p99": 117.86928027868272
+            },
+            "server_request_ms": {
+              "p50": 98.9057756960392,
+              "p95": 107.73125719279051,
+              "p99": 116.1990297958255
+            },
+            "vision_ms": {
+              "p50": 12.253815308213234,
+              "p95": 13.089573010802269,
+              "p99": 14.688534103333977
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 98.73779118061066
+          }
+        },
+        {
+          "condition": "pi0_full_vision_scan_reference",
+          "role": "matched_all27_full",
+          "samples": 100,
+          "benchmark_sha256": "17981f591ef779d42b391f746c1be9d3827730d87b7e0a7c807b027fd1fd7cc9",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 103.19667495787144,
+              "p95": 111.81296426802874,
+              "p99": 118.51688075810671
+            },
+            "server_request_ms": {
+              "p50": 101.37263871729374,
+              "p95": 110.22223588079214,
+              "p99": 116.35735474526882
+            },
+            "vision_ms": {
+              "p50": 14.04801569879055,
+              "p95": 14.598725363612175,
+              "p99": 14.959217235445978
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 101.18154063820839
+          }
+        },
+        {
+          "condition": "pi0_keep24_5_seeded_random",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "ec2869280cba409167c1284407aacf96f8969fd27d59148f1ff6d243faa800c8",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 102.78982855379581,
+              "p95": 115.95439352095127,
+              "p99": 121.76794983446598
+            },
+            "server_request_ms": {
+              "p50": 101.14151984453201,
+              "p95": 113.61156050115824,
+              "p99": 120.15972796827555
+            },
+            "vision_ms": {
+              "p50": 12.519175186753273,
+              "p95": 13.154432363808155,
+              "p99": 23.326789699494892
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 100.95164366066456
+          }
+        },
+        {
+          "condition": "pi0_keep21_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "e72df4027cf3a94f2046a7f988e9f29f40d54e33942ba47f2e7b43d6afd8d656",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 101.40794888138771,
+              "p95": 110.89293025434017,
+              "p99": 116.87151309102777
+            },
+            "server_request_ms": {
+              "p50": 99.46184605360031,
+              "p95": 108.55667442083359,
+              "p99": 114.70593843609097
+            },
+            "vision_ms": {
+              "p50": 11.18590496480465,
+              "p95": 11.638586409389973,
+              "p99": 13.228067196905618
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 99.29519891738892
+          }
+        },
+        {
+          "condition": "pi0_keep18_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "585e6f47617d02958b81e33ca875d34d7f986056b6d4fe253f44b41f42c08840",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 101.33411176502705,
+              "p95": 113.21348007768393,
+              "p99": 118.9389053359628
+            },
+            "server_request_ms": {
+              "p50": 99.53957609832287,
+              "p95": 111.2313186749816,
+              "p99": 116.75102066248658
+            },
+            "vision_ms": {
+              "p50": 9.816352277994156,
+              "p95": 10.578199848532677,
+              "p99": 10.917486511170878
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 99.25466030836105
+          }
+        },
+        {
+          "condition": "pi0_keep15_1_uniform",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "19fa9a943565c3b1d06eb4142894baeed3b6d5857fbdc3aa1419eb7fba667e69",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 99.36000406742096,
+              "p95": 110.81941369920969,
+              "p99": 115.0553783029318
+            },
+            "server_request_ms": {
+              "p50": 97.57992066442966,
+              "p95": 109.17096473276615,
+              "p99": 113.37956972420216
+            },
+            "vision_ms": {
+              "p50": 8.340435102581978,
+              "p95": 10.545668937265873,
+              "p99": 12.02199812978506
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 97.40706905722618
+          }
+        },
+        {
+          "condition": "pi0_full",
+          "role": "native_full_after",
+          "samples": 100,
+          "benchmark_sha256": "ec32be0d458b1b5a1f04d35a305ffb1ea02146d8178bad5b6e112dee3585893b",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 103.53544354438782,
+              "p95": 114.05943669378757,
+              "p99": 117.61559065431358
+            },
+            "server_request_ms": {
+              "p50": 101.6951035708189,
+              "p95": 112.17069309204817,
+              "p99": 115.47631166875364
+            },
+            "vision_ms": {
+              "p50": 12.65379972755909,
+              "p95": 14.658602885901926,
+              "p99": 19.437480568885825
+            }
+          },
+          "stage_medians_ms": {
+            "request_wall_ms": 101.52555257081985
+          }
+        }
+      ]
+    },
+    "xiaomi_gpu0_20261021_after_full_confirm": {
+      "audit_path": "results/idea1_v3_1/performance_cohorts/xiaomi_gpu0_20261021_after_full_confirm/audit.json",
+      "audit_sha256": "0a9394ad7d89827255e2a4f9a3fab622d8aa0e2cfa9b010641d101be6a9303fc",
+      "fresh_reaudit_exact": true,
+      "passed": true,
+      "comparison": {
+        "native_full_after_p50_drift_fraction": {
+          "request_roundtrip_ms": 0.009186631526935848,
+          "server_request_ms": 0.009643833466694108,
+          "vision_ms": 0.01654147945942038
+        },
+        "drift_exceeds_threshold_by_metric": {
+          "request_roundtrip_ms": false,
+          "server_request_ms": false,
+          "vision_ms": false
+        },
+        "primary_drift_metrics": [
+          "request_roundtrip_ms",
+          "vision_ms"
+        ],
+        "unstable": false,
+        "drift_threshold": 0.1,
+        "candidates": [
+          {
+            "condition": "xiaomi-robotic0_skip18_5_seeded_random",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.084784554293897,
+              "server_request_ms": 1.0860981562840093,
+              "vision_ms": 0.9650575379176881
+            },
+            "matched_full_p50_speedup": null
+          }
+        ],
+        "primary_statistic": "P50",
+        "interpretation": "Standalone vision and whole completed RPC are independent measurements; no additive/subtractive attribution. Drift>10% flags unstable, with no automatic retries or cherry-picking."
+      },
+      "gpu_identity": {
+        "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "name": "NVIDIA GeForce RTX 4090",
+        "pci_bus_id": "00000000:81:00.0",
+        "assigned_gpu": "0"
+      },
+      "phases": [
+        {
+          "condition": "xiaomi-robotic0_full",
+          "role": "native_full_before",
+          "samples": 100,
+          "benchmark_sha256": "1eac2bca6c4927cd4a42a10c99c872846b1964fb80eb635848f776748fda52f0",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 148.84666539728642,
+              "p95": 154.47667948901653,
+              "p99": 155.2447860315442
+            },
+            "server_request_ms": {
+              "p50": 146.89288847148418,
+              "p95": 152.48672794550657,
+              "p99": 153.2768850028515
+            },
+            "vision_ms": {
+              "p50": 20.64537525177002,
+              "p95": 22.76525011062622,
+              "p99": 23.954486465454103
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 43.663984298706055,
+            "action_generation_ms": 43.663984298706055,
+            "decode_ms": 0.14912337064743042,
+            "input_processing_ms": 9.820448234677315,
+            "prefill_total_ms": 78.9791374206543,
+            "request_wall_ms": 146.77151292562485,
+            "server_total_ms": 145.93461155891418,
+            "vision_ms": 20.533248901367188,
+            "vlm_ms": 58.19795227050781
+          }
+        },
+        {
+          "condition": "xiaomi-robotic0_skip18_5_seeded_random",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "2e9c514a9b8294d3a0cb08502b2d978fc78aa1ed1305d5dbb2c5ad6e3e03b1ea",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 137.21311278641224,
+              "p95": 147.22874406725168,
+              "p99": 148.82229443639517
+            },
+            "server_request_ms": {
+              "p50": 135.24826243519783,
+              "p95": 145.25782875716686,
+              "p99": 146.73313546925783
+            },
+            "vision_ms": {
+              "p50": 21.392895698547363,
+              "p95": 24.277504253387452,
+              "p99": 24.916859664917
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 44.362239837646484,
+            "action_generation_ms": 44.362239837646484,
+            "decode_ms": 0.15355274081230164,
+            "input_processing_ms": 9.862886741757393,
+            "prefill_total_ms": 64.2134895324707,
+            "request_wall_ms": 135.16077026724815,
+            "server_total_ms": 134.2026386409998,
+            "vision_ms": 21.087743759155273,
+            "vlm_ms": 42.77452850341797
+          }
+        },
+        {
+          "condition": "xiaomi-robotic0_full",
+          "role": "native_full_after",
+          "samples": 100,
+          "benchmark_sha256": "72e922a6f6cda13e3de1afa76cb8ca9ebbf921904942898621518b9af0b9dd11",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 150.2140648663044,
+              "p95": 158.20941030979156,
+              "p99": 161.13274291157722
+            },
+            "server_request_ms": {
+              "p50": 148.30949902534485,
+              "p95": 155.77023271471262,
+              "p99": 158.18201791495085
+            },
+            "vision_ms": {
+              "p50": 20.9868803024292,
+              "p95": 23.053006172180176,
+              "p99": 24.041544132232666
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 44.2741756439209,
+            "action_generation_ms": 44.2741756439209,
+            "decode_ms": 0.15656277537345886,
+            "input_processing_ms": 9.82155092060566,
+            "prefill_total_ms": 80.95124816894531,
+            "request_wall_ms": 148.2098400592804,
+            "server_total_ms": 147.2499668598175,
+            "vision_ms": 20.931535720825195,
+            "vlm_ms": 59.82515239715576
+          }
+        }
+      ]
+    },
+    "xiaomi_skip15_gpu0_20261021_high_quality_reference": {
+      "audit_path": "results/idea1_v3_1/performance_cohorts/xiaomi_skip15_gpu0_20261021_high_quality_reference/audit.json",
+      "audit_sha256": "68b38c3e569f4a80ed9d6209e7a1f3108cc5d503954f9f7267c5bb89343afde7",
+      "fresh_reaudit_exact": true,
+      "passed": true,
+      "comparison": {
+        "native_full_after_p50_drift_fraction": {
+          "request_roundtrip_ms": 0.018206779544156237,
+          "server_request_ms": 0.0181349331999479,
+          "vision_ms": 0.014217868474825833
+        },
+        "drift_exceeds_threshold_by_metric": {
+          "request_roundtrip_ms": false,
+          "server_request_ms": false,
+          "vision_ms": false
+        },
+        "primary_drift_metrics": [
+          "request_roundtrip_ms",
+          "vision_ms"
+        ],
+        "unstable": false,
+        "drift_threshold": 0.1,
+        "candidates": [
+          {
+            "condition": "xiaomi-robotic0_skip15_5_seeded_random",
+            "native_before_p50_speedup": {
+              "request_roundtrip_ms": 1.1194401799317166,
+              "server_request_ms": 1.1189726467840813,
+              "vision_ms": 1.0130954133449936
+            },
+            "matched_full_p50_speedup": null
+          }
+        ],
+        "primary_statistic": "P50",
+        "interpretation": "Standalone vision and whole completed RPC are independent measurements; no additive/subtractive attribution. Drift>10% flags unstable, with no automatic retries or cherry-picking."
+      },
+      "gpu_identity": {
+        "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "name": "NVIDIA GeForce RTX 4090",
+        "pci_bus_id": "00000000:81:00.0",
+        "assigned_gpu": "0"
+      },
+      "phases": [
+        {
+          "condition": "xiaomi-robotic0_full",
+          "role": "native_full_before",
+          "samples": 100,
+          "benchmark_sha256": "31144a18290379151fdc2d353e2e8cf83ee75a2c82a67397e73184ac3b859758",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 152.52831019461155,
+              "p95": 160.2494491264224,
+              "p99": 165.75470574200153
+            },
+            "server_request_ms": {
+              "p50": 150.59934370219707,
+              "p95": 157.79695119708776,
+              "p99": 163.72364576905966
+            },
+            "vision_ms": {
+              "p50": 20.99558448791504,
+              "p95": 23.679346179962156,
+              "p99": 24.576839408874513
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 44.459007263183594,
+            "action_generation_ms": 44.459007263183594,
+            "decode_ms": 0.15136227011680603,
+            "input_processing_ms": 10.02974808216095,
+            "prefill_total_ms": 81.3829116821289,
+            "request_wall_ms": 150.5093090236187,
+            "server_total_ms": 149.67885240912437,
+            "vision_ms": 20.974592208862305,
+            "vlm_ms": 59.87070274353027
+          }
+        },
+        {
+          "condition": "xiaomi-robotic0_skip15_5_seeded_random",
+          "role": "candidate",
+          "samples": 100,
+          "benchmark_sha256": "9c0ba69ecafacb689ca9eb92520cd827aece1ebc14b1d830a9e36f2176552d16",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 136.254096403718,
+              "p95": 143.9669642597437,
+              "p99": 148.17555624991658
+            },
+            "server_request_ms": {
+              "p50": 134.5871537923813,
+              "p95": 142.2607382759452,
+              "p99": 146.31534822285178
+            },
+            "vision_ms": {
+              "p50": 20.72419261932373,
+              "p95": 23.408434867858887,
+              "p99": 24.918988246917728
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 43.960304260253906,
+            "action_generation_ms": 43.960304260253906,
+            "decode_ms": 0.15118904411792755,
+            "input_processing_ms": 9.634874761104584,
+            "prefill_total_ms": 65.4048957824707,
+            "request_wall_ms": 134.47526097297668,
+            "server_total_ms": 133.6020901799202,
+            "vision_ms": 20.678656578063965,
+            "vlm_ms": 44.200448989868164
+          }
+        },
+        {
+          "condition": "xiaomi-robotic0_full",
+          "role": "native_full_after",
+          "samples": 100,
+          "benchmark_sha256": "6f4a0743ef0f6541758a3838f3f29dab90afbe3118488f16b76b57e5f11e094f",
+          "request_summary": {
+            "request_roundtrip_ms": {
+              "p50": 149.75126087665558,
+              "p95": 155.35447355359793,
+              "p99": 159.54762659966954
+            },
+            "server_request_ms": {
+              "p50": 147.86823466420174,
+              "p95": 153.30758467316628,
+              "p99": 157.49713256955155
+            },
+            "vision_ms": {
+              "p50": 20.69707202911377,
+              "p95": 23.35140085220337,
+              "p99": 24.358093223571778
+            }
+          },
+          "stage_medians_ms": {
+            "action_expert_ms": 43.6889591217041,
+            "action_generation_ms": 43.6889591217041,
+            "decode_ms": 0.15068799257278442,
+            "input_processing_ms": 9.542983025312424,
+            "prefill_total_ms": 79.83201599121094,
+            "request_wall_ms": 147.7665062993765,
+            "server_total_ms": 146.9019316136837,
+            "vision_ms": 20.601344108581543,
+            "vlm_ms": 58.72844886779785
+          }
+        }
+      ]
+    }
+  },
+  "stage_caveat": "Standalone vision and RPC independent. CUDA event stage medians are not additive RPC attribution; host guards and dispatch are not isolated. No pure kernel busy time claim."
+}

@@ -1,0 +1,152 @@
+{
+  "updated_at": "2026-11-06T03:05:47.948381+08:00",
+  "goal_status": "blocked",
+  "stages": {
+    "public_asset_inventory": "complete",
+    "public_concept_layer_analysis": "complete",
+    "released_SAE_loading_and_public_activation_check": "complete",
+    "local_observation_selection": "complete",
+    "native_preflight": "complete",
+    "local_64_observation_semantic_check": {
+      "state": "complete",
+      "completed": 64,
+      "expected": 64,
+      "device": "cpu"
+    },
+    "concept_FFN_intervention_matrix": {
+      "state": "complete",
+      "single_modules": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        15
+      ],
+      "actual_combination_masks": [
+        [
+          12,
+          15
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "physical_intervention_cache_entries": 138
+    },
+    "default_rule": {
+      "delta": 0.1,
+      "state": "no_supported_rule_at_default_delta"
+    },
+    "relative_prior": {
+      "state": "frozen_needs_quality_test",
+      "mask": [
+        6,
+        15
+      ],
+      "delta": 1.1613027445120871,
+      "selection_used_test_SR": false
+    },
+    "complete_action_path_CPU": {
+      "state": "passed",
+      "artifact": "runtime_check_cpu/runtime_check.json",
+      "scope": "One fixed-noise no-op and one intended-mask comparison"
+    },
+    "quality_pilot": {
+      "state": "prepared_waiting_for_available_GPU",
+      "expected_episodes": 24,
+      "completed_episodes": 0,
+      "manifest": "quality_pilot_manifest.json",
+      "manifest_hash": "8c4e511e60d7f157fd6e6d37f13692e3d3f72c5d4a1768ab762bde830adda72f"
+    },
+    "GPU_latency": "not_measured",
+    "public_L5_tail_exact_reuse": "not_established; public candidates/statistics/SAE remain reused"
+  },
+  "validation": {
+    "targeted_tests_passed": 12,
+    "syntax": "passed",
+    "quality_manifest_source_and_identity_check": "passed",
+    "native_heldout_instructions_matched": 8,
+    "quality_service_entrypoint": "import_and_help_passed; not yet launched with a model"
+  },
+  "resource_observation": {
+    "source": "results/ease_insights_20261103/gpu_release_watch/status.json",
+    "age_s": 1.782796859741211,
+    "error": null,
+    "devices": [
+      {
+        "index": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "memory_mib": 17235.0,
+        "compute_process_count": 2,
+        "host_compute_pids": [
+          1975204,
+          755285
+        ],
+        "state": "busy",
+        "idle": false
+      },
+      {
+        "index": 1,
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "memory_mib": 17235.0,
+        "compute_process_count": 2,
+        "host_compute_pids": [
+          1975205,
+          759950
+        ],
+        "state": "busy",
+        "idle": false
+      },
+      {
+        "index": 2,
+        "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "memory_mib": 18424.0,
+        "compute_process_count": 1,
+        "host_compute_pids": [
+          882124
+        ],
+        "state": "busy",
+        "idle": false
+      },
+      {
+        "index": 3,
+        "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "memory_mib": 18424.0,
+        "compute_process_count": 1,
+        "host_compute_pids": [
+          882125
+        ],
+        "state": "busy",
+        "idle": false
+      }
+    ],
+    "observer_live": true,
+    "allocation_performed": false
+  },
+  "verified_processes": [],
+  "prior_attempts": [
+    {
+      "attempt": "native_v1",
+      "state": "failed_before_loading_due_to_wrong_runtime",
+      "resolution": "Use existing policies/openpi/.venv with its installed patches"
+    },
+    {
+      "attempt": "native_v2",
+      "state": "failed_on_metadata_serialization_after_forwards",
+      "resolution": "Convert NumPy token positions to Python ints and save captures before tail; v3 rerunning"
+    }
+  ],
+  "remaining": [
+    "Same-device GPU action-path check",
+    "24 frozen complete-policy episodes",
+    "Fixed-input GPU timing if the candidate merits continued acceleration work"
+  ],
+  "GPU_wait_audit": "gpu_blocked_audit.json",
+  "blocked_reason": "All four GPUs occupied in three consecutive goal turns; offline and CPU integration complete; pilot and GPU timing require an available device"
+}

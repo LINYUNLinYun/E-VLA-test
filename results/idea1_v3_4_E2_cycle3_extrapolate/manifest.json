@@ -1,0 +1,320 @@
+{
+  "conditions": [
+    {
+      "id": "v14_cosine_extrapolate",
+      "base_id": "v14_cosine",
+      "budget": 14,
+      "skip_count": 4,
+      "method": "cosine",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate"
+    },
+    {
+      "id": "v14_jacobian_extrapolate",
+      "base_id": "v14_jacobian",
+      "budget": 14,
+      "skip_count": 4,
+      "method": "jacobian",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate"
+    },
+    {
+      "id": "v12_cosine_extrapolate",
+      "base_id": "v12_cosine",
+      "budget": 12,
+      "skip_count": 6,
+      "method": "cosine",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate"
+    },
+    {
+      "id": "v12_jacobian_extrapolate",
+      "base_id": "v12_jacobian",
+      "budget": 12,
+      "skip_count": 6,
+      "method": "jacobian",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate"
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/common.py": "36466ea4e6c223e828edc05c458d72b71769990b31c025ea20abb95f6088810d",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/backend.py": "b810f4e9cb24659b7e4364f42a8f5260ddb39f252a974e2e8d63c9f0652e5e60",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/policy.py": "b7318dfe445b9841af4616cef49057aca54ec8aa8585e4b57dfe737aaad426e1",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/server.py": "20e9fcc6ae74b89a80087257f250091e9eb2b78d28ca5e4047d71638285af88f",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/controller.py": "353b1c15b79bf4cc0d9f55f4c9ae1ce855922ef1113ec9506626b19480855d79",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/evaluate.py": "dd1e407fd78ba23185bb2836f9f896ddd952f8e7be1aa4af8ac1e89a9c5c9149",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/finish.py": "d9cfeb8a70eeb0b1dfd2e8d1f4d3a837fbeff18e54f77ca471a801c3bd2befd6",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4_E2_cycle3/selection.py": "aec9931a82ad4beeb29ee029686529b53a454d00473904263433609db3cc96ec",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/model.py": "3fb1503c7ec493d9ebc05750f7066d2f97bb5d6e86d935deda98614953e000b0",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/server.py": "9d31bd4daf31ff4cc76edef54a1e32b8ccc8b9d825b4be99b1befc0a0bb56c92",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13"
+  },
+  "plan_sha256": "7747da9b591aacc4bfad4c8724b49f78eb0fe68dabc53b145fe3c95158e79de6",
+  "references": {
+    "results/idea1_v3_4_E2_cycle3": {
+      "manifest_sha256": "34a3dae95e351138eb4458dc3a804db5b02677b5adaa84b78036e1693f789575",
+      "summary_sha256": "cbc63f8ddde6e6bf2929e2ca016068f6cfb94ccffd0c99ef4a9c7c7388b02c46"
+    },
+    "results/idea1_v3_4_E2_cycle3_full10_jacobian": {
+      "manifest_sha256": "2eb2982228c273ccac1aec6641dfcfeee39d847514542fbddf24ac128a069caa",
+      "summary_sha256": "919593f408b08d0afc02a5d2cba5b95ffa7643128043750a24b212a854bf4991"
+    }
+  },
+  "schedule": [
+    "full10",
+    "fast2",
+    "fast2"
+  ],
+  "captured_layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "history_count": 2,
+  "time": 1793364267.3449934,
+  "manifest_hash": "7709e3daedb5d7c82fff23701a8d5004d4228f12e276f4c0852da5c2ef842ae9"
+}

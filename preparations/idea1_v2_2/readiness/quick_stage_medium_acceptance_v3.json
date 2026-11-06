@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "accepted": true,
+  "reviewer_model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "scope": "Loop-invariant hash performance-only source and three incremental CPU regressions; not actual final output acceptance",
+  "source_receipt_sha256": "9aa4ab8ece7a6f5e83bea96910cf58afca7c5f92be88938dc72fe080668b34a7",
+  "source_hashes": {
+    "runtime_analysis_quick_v3.py": "4a962229ed5fd5854730571ede1320c8c8489c744c69f89255dacf3a637095e0",
+    "quick_final_adapter_v3.py": "7ef85c342cd29590f64c3cb954025b58a0c1a9045ab523d9f029a161afc3c3a2"
+  },
+  "test_sha256": "db9a316bdf89869221bbcacb4b06944fb4549465e277ef4503bc91e9ced39761",
+  "unchanged_scope_source_sha256": "15b04ff119b563d42896bcbfaf621b2d17a527fea16acccf8da1d47619ff38d4",
+  "base_acceptance_sha256": "f4f496ad560fa0686fd08d754ebf545953e0df6d11540f39d5fb73ff416a3fc4",
+  "independent_incremental_tests": {"passed": 3, "seconds": 0.265, "interpreter": "/usr/bin/python3", "gpu_queries": 0, "model_calls": 0},
+  "review": "Narrow source diff changes immutable SHA scheduling only: receipt SHA once per table, source CSV/latency SHA hoisted, per-path hash snapshot cache with a final drift recheck. Numeric functions, rows, schemas, order, denominators, plot logic, scope_v2 and scientific evidence unchanged. Independent tests verify 200-row identical CSV with receipt hashes 200->1, 1000 cached accesses using one SHA plus final one and rejecting drift, and identical old/new actual saved 12-row summary dictionaries and CSV with summary-source SHA one plus final one. Source receipt and all preserved base/partial-view input hashes verified.",
+  "limits": [
+    "Root authorizes one CPU analysis rerun with quick_final_adapter_v3.py in a fresh view; preserve old signed sources and partial views.",
+    "No model, benchmark, full raw/media, or 6480-fixture rerun is implied.",
+    "Final output numerical/provenance comparison remains; changed code/view source-receipt hashes are legitimate and not expected byte-identical across versions.",
+    "Quick stage only; no original 10800 or old C01-C08 completion claim."
+  ],
+  "independent_C01_C08_all_passed": false
+}

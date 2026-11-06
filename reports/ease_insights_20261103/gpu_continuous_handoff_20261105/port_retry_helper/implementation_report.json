@@ -1,0 +1,26 @@
+{
+  "schema": "ease-port-retry-helper-implementation-report-v1",
+  "date": "2026-11-05",
+  "helper": {
+    "path": "preparations/ease_insights_20261103/retry_resource_session_port.py",
+    "sha256": "98e6fae9353f5766a661014756b33d92727fec8d61a46ce5e645bac6d43bbfd1"
+  },
+  "tests": {
+    "path": "preparations/ease_insights_20261103/test_retry_resource_session_port.py",
+    "sha256": "2aaf2dba7def423181010034b9faa1f5ab1501050224f57fbd42e633509426c8",
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest preparations.ease_insights_20261103.test_retry_resource_session_port -v",
+    "result": "12 passed",
+    "coverage_added": [
+      "rejects any committed episode receipt in the target condition",
+      "confirmation Full and path admissions pass without a Full discovery receipt"
+    ]
+  },
+  "usage": [
+    "python3 preparations/ease_insights_20261103/retry_resource_session_port.py",
+    "python3 preparations/ease_insights_20261103/retry_resource_session_port.py --apply"
+  ],
+  "real_apply_performed": false,
+  "gpu_queries_performed": false,
+  "session_or_science_control_performed": false,
+  "retry_cause_statement": "The evidence supports the exact historical bind error and later bind readiness; it does not establish TIME_WAIT as the cause."
+}

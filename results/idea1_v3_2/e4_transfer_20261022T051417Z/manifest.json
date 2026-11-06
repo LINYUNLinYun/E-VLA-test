@@ -1,0 +1,3996 @@
+{
+  "schema": 1,
+  "experiment": "idea1 v3.2 E4 frozen zero-shot transfer",
+  "created_utc": "2026-10-22T05:14:45.268278+00:00",
+  "modes": [
+    "full_d10",
+    "v14_d10",
+    "draft_goal",
+    "draft_object",
+    "draft_spatial",
+    "draft_10"
+  ],
+  "cases": [
+    {
+      "environment": "calvin",
+      "case": 0,
+      "seed": 0,
+      "max_steps": 360,
+      "task": "lift_red_block_table",
+      "instruction": "lift the red block from the table",
+      "start_frame": 554046,
+      "end_frame": 554110,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 1,
+      "seed": 1,
+      "max_steps": 360,
+      "task": "turn_on_lightbulb",
+      "instruction": "turn on the light bulb",
+      "start_frame": 553636,
+      "end_frame": 553700,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 2,
+      "seed": 2,
+      "max_steps": 360,
+      "task": "lift_blue_block_slider",
+      "instruction": "in the slider pick up the blue block",
+      "start_frame": 553693,
+      "end_frame": 553757,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 3,
+      "seed": 3,
+      "max_steps": 360,
+      "task": "lift_blue_block_slider",
+      "instruction": "in the cabinet grasp the blue block",
+      "start_frame": 553691,
+      "end_frame": 553755,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 4,
+      "seed": 4,
+      "max_steps": 360,
+      "task": "turn_off_lightbulb",
+      "instruction": "slide down the switch",
+      "start_frame": 554474,
+      "end_frame": 554538,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 5,
+      "seed": 5,
+      "max_steps": 360,
+      "task": "place_in_slider",
+      "instruction": "put it in the slider",
+      "start_frame": 554110,
+      "end_frame": 554145,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 6,
+      "seed": 6,
+      "max_steps": 360,
+      "task": "push_pink_block_right",
+      "instruction": "slide right the pink block",
+      "start_frame": 553916,
+      "end_frame": 553961,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "calvin",
+      "case": 7,
+      "seed": 7,
+      "max_steps": 360,
+      "task": "lift_blue_block_slider",
+      "instruction": "in the slider grasp the blue block",
+      "start_frame": 553701,
+      "end_frame": 553765,
+      "native_hz": 30,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "simpler",
+      "case": 0,
+      "seed": 0,
+      "max_steps": 80,
+      "task": "google_robot_pick_coke_can",
+      "instruction": "pick coke can",
+      "native_hz": 3,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "simpler",
+      "case": 1,
+      "seed": 1,
+      "max_steps": 80,
+      "task": "google_robot_pick_coke_can",
+      "instruction": "pick coke can",
+      "native_hz": 3,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "simpler",
+      "case": 2,
+      "seed": 2,
+      "max_steps": 80,
+      "task": "google_robot_pick_coke_can",
+      "instruction": "pick coke can",
+      "native_hz": 3,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "simpler",
+      "case": 3,
+      "seed": 3,
+      "max_steps": 80,
+      "task": "google_robot_pick_coke_can",
+      "instruction": "pick coke can",
+      "native_hz": 3,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "simpler",
+      "case": 4,
+      "seed": 4,
+      "max_steps": 80,
+      "task": "google_robot_pick_coke_can",
+      "instruction": "pick coke can",
+      "native_hz": 3,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "pusht",
+      "case": 0,
+      "seed": 0,
+      "max_steps": 300,
+      "task": "pusht_projection_stress_probe",
+      "instruction": "push the T-shaped block onto the matching target",
+      "native_hz": 10,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "pusht",
+      "case": 1,
+      "seed": 1,
+      "max_steps": 300,
+      "task": "pusht_projection_stress_probe",
+      "instruction": "push the T-shaped block onto the matching target",
+      "native_hz": 10,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "pusht",
+      "case": 2,
+      "seed": 2,
+      "max_steps": 300,
+      "task": "pusht_projection_stress_probe",
+      "instruction": "push the T-shaped block onto the matching target",
+      "native_hz": 10,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "pusht",
+      "case": 3,
+      "seed": 3,
+      "max_steps": 300,
+      "task": "pusht_projection_stress_probe",
+      "instruction": "push the T-shaped block onto the matching target",
+      "native_hz": 10,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    },
+    {
+      "environment": "pusht",
+      "case": 4,
+      "seed": 4,
+      "max_steps": 300,
+      "task": "pusht_projection_stress_probe",
+      "instruction": "push the T-shaped block onto the matching target",
+      "native_hz": 10,
+      "shard": 0,
+      "gpu": 3,
+      "support_status": "supported"
+    }
+  ],
+  "gpus": [
+    3
+  ],
+  "source_files": {
+    "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+    "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60",
+    "preparations/idea1_v3_2/transfer_policy.py": "e61039dccae6bcf99aa6e282d727e0e8c7481295d07663ba5b92f2c719978425",
+    "preparations/idea1_v3_2/transfer_prompts.py": "8162fc00686e434268783c3a89ea3783fbedd065e1e41166cf40c4c1b13fb2e9",
+    "preparations/idea1_v3_2/transfer_protocol.py": "f3548f2829bb1f87760737a3072c55490b1fe67614645944c725f81eca9e820e",
+    "preparations/idea1_v3_2/transfer_report.py": "b0a4be3a87adfe8fcd1e9f26415190478df1bfead1ea3f12ca8869c0b1e294a3",
+    "preparations/idea1_v3_2/transfer_run.py": "cfa2a9df24f2534ad821bb33c07c014bc0485ca5ddb7f22869ae2999f704e7a7",
+    "preparations/idea1_v3_2/transfer_server.py": "709bee6eaf580dfb6b819edb914d71948788a55eff5b3cffc3ff23e605665e66",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "policies/realtime-vla-flash/scripts/experiment10/backend.py": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_spec_infer.py": "b2d98018e8fa37dfeb69b6594ebbee6b141610dfa64395d113cefb5970e861dd",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "receipt_files": {
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/environment_receipt.json": "39cd24457a77f9639a9e3077c5f5f1da0bcb2bd118f096fdc60009d0c9ded80b",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_prompt_preflight/transfer_backend_cpu_v4.json": "4c17081091e690b5af4ccfa399b138a312d45a1a2b94dace2176f9a5bb444514",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/source_reference.json": "c61dffbc6b7918af8b9eb62fc6e0706aa21b5cec389b6b84fce458f111a4137d"
+  },
+  "environment_receipt": {
+    "status": "complete",
+    "environments": {
+      "calvin": {
+        "status": "supported",
+        "success_oracle": "Tasks.get_task_info_for_set(start_info,current_info,{annotated_task})",
+        "metadata": {
+          "environment": "calvin",
+          "renderer": "native PyBullet TinyRenderer CPU",
+          "native_hz": 30.0,
+          "source_semantics": "robot-base-aligned pose with identity TCP offset assumption",
+          "target_robot_base_world_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.34
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.46
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.24
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "oracle": "Tasks.get_task_info_for_set(start_info,current_info,{annotated_task})",
+          "pybullet_base_com_world_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -0.34
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -0.46
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.29
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "base_local_inertial_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.05
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "confounds": [
+            "untrained cross-embodiment state/action mapping",
+            "identity TCP offset assumption",
+            "native30Hz versus source20Hz; R5 retained"
+          ],
+          "native_asset_controller_sha256": {
+            "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/.hydra/merged_config.yaml": "75c1c15067e4bd543d1b69a654769836f6cbbf55c4e44ae30da255c45609523f",
+            "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/lang_annotations/auto_lang_ann.npy": "37552f6a801e6d3e0a0b140d30571074f0de1ab4bd7ea0c16867f6ab12fab07d",
+            "/root/nfs/embodied/benchmark/calvin/calvin_env/data/franka_panda/panda_longer_finger.urdf": "264bbb28f54af13f9392f5a2a3ee8e9be2e9dfc3a9231cf4f9147b6acc8d7ab9",
+            "/root/nfs/embodied/benchmark/calvin/calvin_env/calvin_env/robot/robot.py": "65721aa5f6bbb74a7bfabd53fe05699c0fc281d682363f065600f94622a396a7",
+            "/root/nfs/embodied/benchmark/calvin/calvin_env/calvin_env/envs/tasks.py": "bca84af6249b2fd2404d1bd17318c7f3cf640acc329d3a26306b29149fc00e1a"
+          },
+          "frame_path": "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/episode_0553701.npz",
+          "frame_sha256": "e351259fbae835a5b2c6a448a8b00e15f260bd54cf43689c69b689d35e06510f",
+          "instruction": "in the slider grasp the blue block",
+          "task": "lift_blue_block_slider"
+        },
+        "tested_cases": [
+          {
+            "case": 0,
+            "initial_raw_sha256": "0bd393d75c5c1e762ac4ca6bdebbba5a11fd13ca8b74dc2860ab1844cfdab32d",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.20834790889227114,
+                -0.318236149845161,
+                0.4434274359892541
+              ],
+              "eef_rotation_world": [
+                [
+                  0.1800599502247965,
+                  0.9749331930999242,
+                  0.13070456501985328
+                ],
+                [
+                  0.9835880339311268,
+                  -0.1768931945312747,
+                  -0.0355440182874774
+                ],
+                [
+                  -0.01153229519842991,
+                  0.1349595002973331,
+                  -0.9907840024177569
+                ]
+              ],
+              "actual_gripper_width_m": 0.0799985062528212
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.20834790889227114,
+                  -0.318236149845161,
+                  0.4434274359892541
+                ],
+                [
+                  0.7661163663526954,
+                  0.63910696633304,
+                  0.038888436226984464,
+                  0.055638910116402686
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 1,
+            "initial_raw_sha256": "135b829bee525045c4d158e4cb53d05efe4bbce3e87f7f8afaf472a552055039",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.02616283681873802,
+                -0.1252750118773229,
+                0.49143470983411564
+              ],
+              "eef_rotation_world": [
+                [
+                  0.10452889147695026,
+                  0.9904533281739634,
+                  0.08986609792196165
+                ],
+                [
+                  0.9945033008577997,
+                  -0.10354743787546757,
+                  -0.015527803848810431
+                ],
+                [
+                  -0.006074160809601763,
+                  0.09099523514198879,
+                  -0.9958328031110008
+                ]
+              ],
+              "actual_gripper_width_m": 0.07870089226783702
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.02616283681873802,
+                  -0.1252750118773229,
+                  0.49143470983411564
+                ],
+                [
+                  0.7422784404223624,
+                  0.6685350540096202,
+                  0.028221194550889013,
+                  0.035877048688827184
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 2,
+            "initial_raw_sha256": "0b695d80f424f7601a36c6c8a3c3caac150f2d1a3b56c2fd09c5b2d94a98d2ef",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.28771117169128757,
+                0.04094198325195189,
+                0.5449648108908346
+              ],
+              "eef_rotation_world": [
+                [
+                  0.07186791556429283,
+                  0.9905424483331113,
+                  0.11687882940331486
+                ],
+                [
+                  0.9865092152901613,
+                  -0.08787305068054109,
+                  0.1381227537796917
+                ],
+                [
+                  0.14708694999908709,
+                  0.10537544787255029,
+                  -0.9834945064033788
+                ]
+              ],
+              "actual_gripper_width_m": -5.398733118829334e-06
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.28771117169128757,
+                  0.04094198325195189,
+                  0.5449648108908346
+                ],
+                [
+                  0.7319896639721445,
+                  0.6752320971633652,
+                  0.09015352005450142,
+                  -0.011184347101787619
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 3,
+            "initial_raw_sha256": "c045f389c4d4811cf9c410adc3f98acfd9a3087dbe86df303e7f2f56b76c7589",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.28629035591368956,
+                0.03693711673654989,
+                0.537450275021262
+              ],
+              "eef_rotation_world": [
+                [
+                  0.06743815253569346,
+                  0.9911602348420617,
+                  0.11425184659515344
+                ],
+                [
+                  0.9886816018401111,
+                  -0.08176913632129496,
+                  0.125787513403129
+                ],
+                [
+                  0.13401785614404305,
+                  0.1044758211889211,
+                  -0.9854562481518172
+                ]
+              ],
+              "actual_gripper_width_m": 3.61299554031071e-05
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.28629035591368956,
+                  0.03693711673654989,
+                  0.537450275021262
+                ],
+                [
+                  0.7305243899091948,
+                  0.6775413196430955,
+                  0.08496283839683186,
+                  -0.007293285654999473
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 4,
+            "initial_raw_sha256": "b8e6dd808379314167352480e142b03f4584798845e8b8d95c528efb00bade3c",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.06438282674030751,
+                -0.16641709652559486,
+                0.5595867283967771
+              ],
+              "eef_rotation_world": [
+                [
+                  0.20800490963206053,
+                  0.9779615218752021,
+                  0.018033837653054954
+                ],
+                [
+                  0.9734297965358293,
+                  -0.2087755275033637,
+                  0.09405961052389175
+                ],
+                [
+                  0.09575170382386053,
+                  -0.0020101858696754543,
+                  -0.995403219990571
+                ]
+              ],
+              "actual_gripper_width_m": 0.0799975724416152
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.06438282674030751,
+                  -0.16641709652559486,
+                  0.5595867283967771
+                ],
+                [
+                  0.7765603094940526,
+                  0.6282162810002513,
+                  0.03663126356246865,
+                  -0.03092798950031291
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 5,
+            "initial_raw_sha256": "f29b9049099df783805b35a30258a8b71a22b2ac81b33566537a297a85ccb2b2",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.12074537396393108,
+                -0.09568745225196071,
+                0.5630932604232801
+              ],
+              "eef_rotation_world": [
+                [
+                  -0.2520050118269947,
+                  0.9673308452159902,
+                  -0.027649772291907834
+                ],
+                [
+                  0.9514634347656473,
+                  0.25288496994698334,
+                  0.175403889007257
+                ],
+                [
+                  0.1766658040426417,
+                  0.017894911808428005,
+                  -0.9841082083863215
+                ]
+              ],
+              "actual_gripper_width_m": 0.04064106811375387
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  -0.12074537396393108,
+                  -0.09568745225196071,
+                  0.5630932604232801
+                ],
+                [
+                  0.6081155783673741,
+                  0.7888279581379422,
+                  0.061261393825332355,
+                  -0.06475289517401366
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 6,
+            "initial_raw_sha256": "5a4c924449b495c679e209fa7873a647edb5632701a0c6779021db48a9645b9b",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.024577207299778987,
+                -0.09720492599884392,
+                0.45702879270205715
+              ],
+              "eef_rotation_world": [
+                [
+                  0.1345362088601568,
+                  0.9877551531237103,
+                  0.078992189380289
+                ],
+                [
+                  0.9901186827017128,
+                  -0.13718368036894793,
+                  0.029079752499891483
+                ],
+                [
+                  0.03956011464291888,
+                  0.07429936283700891,
+                  -0.9964510033169988
+                ]
+              ],
+              "actual_gripper_width_m": 0.04056752772639873
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.024577207299778987,
+                  -0.09720492599884392,
+                  0.45702879270205715
+                ],
+                [
+                  0.7530223921879919,
+                  0.6566450932748783,
+                  0.03935882427039811,
+                  0.015012704405019995
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          },
+          {
+            "case": 7,
+            "initial_raw_sha256": "86667045212790e73037ff0aa2810da4f3af6cf2da8dd18288c0a88c3b183954",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                0.27722620831671557,
+                0.037126070322657925,
+                0.5707047116587987
+              ],
+              "eef_rotation_world": [
+                [
+                  -0.010225439066191923,
+                  0.9887690705038571,
+                  0.1491011925198522
+                ],
+                [
+                  0.9910890563440445,
+                  -0.009782327482203458,
+                  0.13284121523120038
+                ],
+                [
+                  0.13280784160197306,
+                  0.1491309199460976,
+                  -0.979858176434251
+                ]
+              ],
+              "actual_gripper_width_m": 0.0387309944605778
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "physical_translation_target_world_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "physical_rotation_vector_target_world_rad": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "native_action": [
+                [
+                  0.27722620831671557,
+                  0.037126070322657925,
+                  0.5707047116587987
+                ],
+                [
+                  0.703458432469585,
+                  0.7036158909551148,
+                  0.10018681314692111,
+                  0.005789149707719769
+                ],
+                1
+              ],
+              "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+              "gripper": "LIBERO positive closes; CALVIN negative closes"
+            }
+          }
+        ],
+        "all_predeclared_cases_tested": true,
+        "upright_images": true,
+        "no_libero_image_flip": true
+      },
+      "pusht": {
+        "status": "supported",
+        "success_oracle": "native coverage > success_threshold (0.95)",
+        "metadata": {
+          "environment": "pusht",
+          "native_hz": 10.0,
+          "renderer": "native pygame CPU",
+          "oracle": "native coverage > success_threshold (0.95)",
+          "projection": "512 pixels correspond to0.6m; center anchored to factual source referenceXY",
+          "confounds": [
+            "2D projection stress probe, no native 7D robot policy meaning",
+            "ignore Z/rotation/gripper actions",
+            "Z/orientation/gripper state fixed from real source reference",
+            "missing wrist is black padding",
+            "native10Hz versus source20Hz; R5 retained"
+          ],
+          "native_asset_controller_sha256": {
+            "/root/nfs/embodied/benchmark/policies/diffusion_policy/diffusion_policy/env/pusht/pusht_env.py": "759107dc0ea6017b8afe3380ce23817713edf26af725fc4f03c0416ced940bd0"
+          },
+          "success_threshold": 0.95
+        },
+        "tested_cases": [
+          {
+            "case": 0,
+            "initial_raw_sha256": "8116ec539b475dd2a4fa8e6131a82609d133b18e718dc49fe2d644bd7d555339",
+            "initial_actual_state": {
+              "agent_xy_pixels": [
+                222.0,
+                97.0
+              ],
+              "block_xy_angle": [
+                217.0,
+                292.0,
+                3.0079994677219553
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                222.0,
+                97.0
+              ],
+              "ignored_channels": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+              "native_reward": 0.44069944411866163,
+              "native_info": {
+                "pos_agent": [
+                  222.0,
+                  97.0
+                ],
+                "vel_agent": [
+                  0.0,
+                  0.0
+                ],
+                "block_pose": [
+                  217.0,
+                  292.0,
+                  3.0079994677219553
+                ],
+                "goal_pose": [
+                  256.0,
+                  256.0,
+                  0.7853981633974483
+                ],
+                "n_contacts": 0
+              }
+            }
+          },
+          {
+            "case": 1,
+            "initial_raw_sha256": "b727cc59bdb8ba7f84c329cc30028d04109a63e511cd0a72e5c3b859ed224a2d",
+            "initial_actual_state": {
+              "agent_xy_pixels": [
+                87.0,
+                285.0
+              ],
+              "block_xy_angle": [
+                172.0,
+                355.0,
+                5.970620860902089
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                87.0,
+                285.0
+              ],
+              "ignored_channels": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+              "native_reward": 0.0,
+              "native_info": {
+                "pos_agent": [
+                  87.0,
+                  285.0
+                ],
+                "vel_agent": [
+                  0.0,
+                  0.0
+                ],
+                "block_pose": [
+                  172.0,
+                  355.0,
+                  -6.595749753457083
+                ],
+                "goal_pose": [
+                  256.0,
+                  256.0,
+                  0.7853981633974483
+                ],
+                "n_contacts": 0
+              }
+            }
+          },
+          {
+            "case": 2,
+            "initial_raw_sha256": "e4465777a6343b7eac17267d01257047e35ebd65d95625e3651b23e378f16c23",
+            "initial_actual_state": {
+              "agent_xy_pixels": [
+                218.0,
+                65.0
+              ],
+              "block_xy_angle": [
+                172.0,
+                122.0,
+                2.999814176542796
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                218.0,
+                65.0
+              ],
+              "ignored_channels": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+              "native_reward": 0.0,
+              "native_info": {
+                "pos_agent": [
+                  218.0,
+                  65.0
+                ],
+                "vel_agent": [
+                  0.0,
+                  0.0
+                ],
+                "block_pose": [
+                  171.82362987601712,
+                  124.73234667671431,
+                  -3.27941317802466
+                ],
+                "goal_pose": [
+                  256.0,
+                  256.0,
+                  0.7853981633974483
+                ],
+                "n_contacts": 2
+              }
+            }
+          },
+          {
+            "case": 3,
+            "initial_raw_sha256": "092cafb620f9c96f1287eb9d9c9421acada84a755636ff51c07c2d2370db8e32",
+            "initial_actual_state": {
+              "agent_xy_pixels": [
+                412.0,
+                202.0
+              ],
+              "block_xy_angle": [
+                349.0,
+                231.0,
+                3.747904127159869
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                412.0,
+                202.0
+              ],
+              "ignored_channels": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+              "native_reward": 0.0,
+              "native_info": {
+                "pos_agent": [
+                  412.0,
+                  202.0
+                ],
+                "vel_agent": [
+                  0.0,
+                  0.0
+                ],
+                "block_pose": [
+                  349.0,
+                  231.0,
+                  -2.5352811800197173
+                ],
+                "goal_pose": [
+                  256.0,
+                  256.0,
+                  0.7853981633974483
+                ],
+                "n_contacts": 0
+              }
+            }
+          },
+          {
+            "case": 4,
+            "initial_raw_sha256": "778616e55747081b333e4da1074480313366f1af9b114a74f6312e6c192fda9b",
+            "initial_actual_state": {
+              "agent_xy_pixels": [
+                172.0,
+                224.0
+              ],
+              "block_xy_angle": [
+                297.0,
+                187.0,
+                6.147102491108365
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                172.0,
+                224.0
+              ],
+              "ignored_channels": [
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+              "native_reward": 0.00029170296307156864,
+              "native_info": {
+                "pos_agent": [
+                  172.0,
+                  224.0
+                ],
+                "vel_agent": [
+                  0.0,
+                  0.0
+                ],
+                "block_pose": [
+                  297.0,
+                  187.0,
+                  6.147102491108365
+                ],
+                "goal_pose": [
+                  256.0,
+                  256.0,
+                  0.7853981633974483
+                ],
+                "n_contacts": 0
+              }
+            }
+          }
+        ],
+        "all_predeclared_cases_tested": true,
+        "upright_images": true,
+        "no_libero_image_flip": true
+      },
+      "simpler": {
+        "status": "supported",
+        "success_oracle": "native task evaluate/info success, not termination or model confidence",
+        "metadata": {
+          "environment": "simpler",
+          "native_hz": 3.0,
+          "renderer_binding": {
+            "gpu": 3,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "pci_bus_id": "00000000:E1:00.0",
+            "preconstructor_compute_pids": [],
+            "idle_required": true,
+            "sapien_device": "pci:E1",
+            "verification": "SAPIEN documented exact PCI device selector resolved from assigned NVIDIA UUID; no default selector"
+          },
+          "controller_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+          "controller_configs": "{'arm': PDEEPoseControllerConfig(joint_names=['joint_torso', 'joint_shoulder', 'joint_bicep', 'joint_elbow', 'joint_forearm', 'joint_wrist', 'joint_gripper', 'joint_head_pan', 'joint_head_tilt'], pos_lower=-1.0, pos_upper=1.0, rot_bound=1.5707963267948966, stiffness=[1700.0, 1737.0471680861954, 979.975871856535, 930.0, 1212.154500274304, 432.96500923932535, 468.0013365498738, 2000, 2000], damping=[1059.9791902443303, 1010.4720585373592, 767.2803161582076, 680.0, 674.9946964336588, 274.613381336198, 340.532560578637, 900, 900], force_limit=[300, 300, 100, 100, 100, 100, 100, 100, 100], friction=0.0, drive_mode='force', ee_link='link_gripper_tcp', frame='ee_align', use_delta=True, use_target=False, delta_target_from_last_drive_target=False, interpolate=True, interpolate_by_planner=True, interpolate_planner_init_no_vel=False, interpolate_planner_exec_set_target_vel=False, interpolate_planner_vlim=1.5, interpolate_planner_alim=2.0, interpolate_planner_jerklim=50.0, normalize_action=False), 'gripper': PDJointPosMimicControllerConfig(joint_names=['joint_finger_right', 'joint_finger_left'], lower=-1.31, upper=1.31, stiffness=200, damping=8, force_limit=60, friction=0.0, drive_mode='force', use_delta=True, use_target=True, delta_target_from_last_drive_target=True, clip_target=True, clip_target_thres=0.01, interpolate=True, interpolate_by_planner=True, interpolate_planner_init_no_vel=False, interpolate_planner_exec_set_target_vel=True, interpolate_planner_vlim=1.0, interpolate_planner_alim=7.0, interpolate_planner_jerklim=50.0, small_action_repeat_last_target=True, normalize_action=True)}",
+          "oracle": "native task evaluate/info success, not termination or model confidence",
+          "confounds": [
+            "untrained robot-base alignment; identity TCP offset assumption",
+            "virtual signed Panda finger coordinates from actual fingertip distance",
+            "black missing wrist padding",
+            "native3Hz versus source20Hz; R5 retained"
+          ],
+          "native_asset_controller_sha256": {
+            "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/assets/descriptions/googlerobot_description/google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1.urdf": "978e820a8be2d769472aa00c674be78e5772225a4a296d18d479af40e2ced847",
+            "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/agents/controllers/pd_ee_pose.py": "b3d62a3f46ae9eb69f017b91671d8d29de818a51e5aa7ac9066628fabdcf3538",
+            "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/agents/controllers/pd_joint_pos.py": "9a61c2097260ae0ddb4b75df1deeeb72b4522778c8e9122559d0c4ac654f4515",
+            "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/envs/custom_scenes/grasp_single_in_scene.py": "c067aa46582a2ad9ced5a360b583221a9be635fab578368a0441685dced1965d"
+          },
+          "model_database_sha256": "e866a36da17cf22a6b7f9589c208309b70e375d7f6720bbf67eae9b8b2c63ae8",
+          "target_robot_base_world_matrix": [
+            [
+              -1.0,
+              0.0,
+              0.0,
+              0.3499999940395355
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0,
+              0.19999998807907104
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0790499895811081
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "instruction": "pick coke can"
+        },
+        "tested_cases": [
+          {
+            "case": 0,
+            "initial_raw_sha256": "e09e8769b6595996aa11c2294103d967a061e1eb68b377bde7f66d3c8b57757d",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_rotation_world": [
+                [
+                  0.21945105554232097,
+                  0.9318108983110599,
+                  -0.2890842161206598
+                ],
+                [
+                  0.9526250723702497,
+                  -0.2686126421903969,
+                  -0.14266295926788372
+                ],
+                [
+                  -0.21058657533883107,
+                  -0.2440813353049123,
+                  -0.9466137522996554
+                ]
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+              "native_space_low": [
+                -1.0,
+                -1.0,
+                -1.0,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.0
+              ],
+              "native_space_high": [
+                1.0,
+                1.0,
+                1.0,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.0
+              ],
+              "native_space_clipped": false,
+              "native_reward": 0.0,
+              "native_terminated": false,
+              "native_truncated": false,
+              "native_success": false
+            }
+          },
+          {
+            "case": 1,
+            "initial_raw_sha256": "5294214eb7126cda3fd7342bbdd78712ed81b77b0986f4120823acf000411f22",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_rotation_world": [
+                [
+                  0.21945105554232097,
+                  0.9318108983110599,
+                  -0.2890842161206598
+                ],
+                [
+                  0.9526250723702497,
+                  -0.2686126421903969,
+                  -0.14266295926788372
+                ],
+                [
+                  -0.21058657533883107,
+                  -0.2440813353049123,
+                  -0.9466137522996554
+                ]
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+              "native_space_low": [
+                -1.0,
+                -1.0,
+                -1.0,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.0
+              ],
+              "native_space_high": [
+                1.0,
+                1.0,
+                1.0,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.0
+              ],
+              "native_space_clipped": false,
+              "native_reward": 0.0,
+              "native_terminated": false,
+              "native_truncated": false,
+              "native_success": false
+            }
+          },
+          {
+            "case": 2,
+            "initial_raw_sha256": "8fdb0ed71c08f00d0d7aeff7a50c8e1cd78439d213e6e119e370261240040c44",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_rotation_world": [
+                [
+                  0.21945105554232097,
+                  0.9318108983110599,
+                  -0.2890842161206598
+                ],
+                [
+                  0.9526250723702497,
+                  -0.2686126421903969,
+                  -0.14266295926788372
+                ],
+                [
+                  -0.21058657533883107,
+                  -0.2440813353049123,
+                  -0.9466137522996554
+                ]
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+              "native_space_low": [
+                -1.0,
+                -1.0,
+                -1.0,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.0
+              ],
+              "native_space_high": [
+                1.0,
+                1.0,
+                1.0,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.0
+              ],
+              "native_space_clipped": false,
+              "native_reward": 0.0,
+              "native_terminated": false,
+              "native_truncated": false,
+              "native_success": false
+            }
+          },
+          {
+            "case": 3,
+            "initial_raw_sha256": "7caacb8bab3b67d964679610055baf795223051ebed7bd7932223d571c43803e",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_rotation_world": [
+                [
+                  0.21945105554232097,
+                  0.9318108983110599,
+                  -0.2890842161206598
+                ],
+                [
+                  0.9526250723702497,
+                  -0.2686126421903969,
+                  -0.14266295926788372
+                ],
+                [
+                  -0.21058657533883107,
+                  -0.2440813353049123,
+                  -0.9466137522996554
+                ]
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+              "native_space_low": [
+                -1.0,
+                -1.0,
+                -1.0,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.0
+              ],
+              "native_space_high": [
+                1.0,
+                1.0,
+                1.0,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.0
+              ],
+              "native_space_clipped": false,
+              "native_reward": 0.0,
+              "native_terminated": false,
+              "native_truncated": false,
+              "native_success": false
+            }
+          },
+          {
+            "case": 4,
+            "initial_raw_sha256": "b42434f107b823036643fd9b194c2aa2a102e7bd145f03c99f6053d05cc94282",
+            "initial_actual_state": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_rotation_world": [
+                [
+                  0.21945105554232097,
+                  0.9318108983110599,
+                  -0.2890842161206598
+                ],
+                [
+                  0.9526250723702497,
+                  -0.2686126421903969,
+                  -0.14266295926788372
+                ],
+                [
+                  -0.21058657533883107,
+                  -0.2440813353049123,
+                  -0.9466137522996554
+                ]
+              ]
+            },
+            "noop_interface_success": false,
+            "noop_native_terminal": false,
+            "noop_audit": {
+              "raw": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "clipped_components": [],
+              "native_action": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+              "native_space_low": [
+                -1.0,
+                -1.0,
+                -1.0,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.5707963705062866,
+                -1.0
+              ],
+              "native_space_high": [
+                1.0,
+                1.0,
+                1.0,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.5707963705062866,
+                1.0
+              ],
+              "native_space_clipped": false,
+              "native_reward": 0.0,
+              "native_terminated": false,
+              "native_truncated": false,
+              "native_success": false
+            }
+          }
+        ],
+        "all_predeclared_cases_tested": true,
+        "upright_images": true,
+        "no_libero_image_flip": true
+      }
+    },
+    "case_lists": {
+      "calvin": [
+        {
+          "case": 0,
+          "seed": 0,
+          "task": "lift_red_block_table",
+          "instruction": "lift the red block from the table",
+          "start_frame": 554046,
+          "end_frame": 554110,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 1,
+          "seed": 1,
+          "task": "turn_on_lightbulb",
+          "instruction": "turn on the light bulb",
+          "start_frame": 553636,
+          "end_frame": 553700,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 2,
+          "seed": 2,
+          "task": "lift_blue_block_slider",
+          "instruction": "in the slider pick up the blue block",
+          "start_frame": 553693,
+          "end_frame": 553757,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 3,
+          "seed": 3,
+          "task": "lift_blue_block_slider",
+          "instruction": "in the cabinet grasp the blue block",
+          "start_frame": 553691,
+          "end_frame": 553755,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 4,
+          "seed": 4,
+          "task": "turn_off_lightbulb",
+          "instruction": "slide down the switch",
+          "start_frame": 554474,
+          "end_frame": 554538,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 5,
+          "seed": 5,
+          "task": "place_in_slider",
+          "instruction": "put it in the slider",
+          "start_frame": 554110,
+          "end_frame": 554145,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 6,
+          "seed": 6,
+          "task": "push_pink_block_right",
+          "instruction": "slide right the pink block",
+          "start_frame": 553916,
+          "end_frame": 553961,
+          "max_steps": 360,
+          "native_hz": 30
+        },
+        {
+          "case": 7,
+          "seed": 7,
+          "task": "lift_blue_block_slider",
+          "instruction": "in the slider grasp the blue block",
+          "start_frame": 553701,
+          "end_frame": 553765,
+          "max_steps": 360,
+          "native_hz": 30
+        }
+      ],
+      "pusht": [
+        {
+          "case": 0,
+          "seed": 0,
+          "task": "pusht_projection_stress_probe",
+          "instruction": "push the T-shaped block onto the matching target",
+          "max_steps": 300,
+          "native_hz": 10
+        },
+        {
+          "case": 1,
+          "seed": 1,
+          "task": "pusht_projection_stress_probe",
+          "instruction": "push the T-shaped block onto the matching target",
+          "max_steps": 300,
+          "native_hz": 10
+        },
+        {
+          "case": 2,
+          "seed": 2,
+          "task": "pusht_projection_stress_probe",
+          "instruction": "push the T-shaped block onto the matching target",
+          "max_steps": 300,
+          "native_hz": 10
+        },
+        {
+          "case": 3,
+          "seed": 3,
+          "task": "pusht_projection_stress_probe",
+          "instruction": "push the T-shaped block onto the matching target",
+          "max_steps": 300,
+          "native_hz": 10
+        },
+        {
+          "case": 4,
+          "seed": 4,
+          "task": "pusht_projection_stress_probe",
+          "instruction": "push the T-shaped block onto the matching target",
+          "max_steps": 300,
+          "native_hz": 10
+        }
+      ],
+      "simpler": [
+        {
+          "case": 0,
+          "seed": 0,
+          "task": "google_robot_pick_coke_can",
+          "instruction": "pick coke can",
+          "max_steps": 80,
+          "native_hz": 3
+        },
+        {
+          "case": 1,
+          "seed": 1,
+          "task": "google_robot_pick_coke_can",
+          "instruction": "pick coke can",
+          "max_steps": 80,
+          "native_hz": 3
+        },
+        {
+          "case": 2,
+          "seed": 2,
+          "task": "google_robot_pick_coke_can",
+          "instruction": "pick coke can",
+          "max_steps": 80,
+          "native_hz": 3
+        },
+        {
+          "case": 3,
+          "seed": 3,
+          "task": "google_robot_pick_coke_can",
+          "instruction": "pick coke can",
+          "max_steps": 80,
+          "native_hz": 3
+        },
+        {
+          "case": 4,
+          "seed": 4,
+          "task": "google_robot_pick_coke_can",
+          "instruction": "pick coke can",
+          "max_steps": 80,
+          "native_hz": 3
+        }
+      ]
+    },
+    "source_files": {
+      "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+      "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60"
+    },
+    "consumed_receipts": {
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/calvin_final/preflight.json": "b28efa53c55a38c27c6ed416f7572dc61e154bbb1c92a55b863ad91ab0add8cb",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/pusht_final/preflight.json": "5271df106732faa783b489b8b4049d52534f16018a9776770d271e931cecf732",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/simpler_bound_gpu3_v3/preflight.json": "e794f4a13cb3ded90dcb9f349e97a33bfa2a952c21088fdbf892b818528bcf92"
+    },
+    "binding_receipts": {
+      "calvin": [
+        {
+          "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/calvin_final/preflight.json",
+          "receipt": {
+            "status": "complete",
+            "environment": "calvin",
+            "case": 0,
+            "gpu_uuid": null,
+            "source_reference_sha256": "c61dffbc6b7918af8b9eb62fc6e0706aa21b5cec389b6b84fce458f111a4137d",
+            "cases": [
+              {
+                "case": 0,
+                "seed": 0,
+                "task": "lift_red_block_table",
+                "instruction": "lift the red block from the table",
+                "start_frame": 554046,
+                "end_frame": 554110,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 1,
+                "seed": 1,
+                "task": "turn_on_lightbulb",
+                "instruction": "turn on the light bulb",
+                "start_frame": 553636,
+                "end_frame": 553700,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 2,
+                "seed": 2,
+                "task": "lift_blue_block_slider",
+                "instruction": "in the slider pick up the blue block",
+                "start_frame": 553693,
+                "end_frame": 553757,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 3,
+                "seed": 3,
+                "task": "lift_blue_block_slider",
+                "instruction": "in the cabinet grasp the blue block",
+                "start_frame": 553691,
+                "end_frame": 553755,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 4,
+                "seed": 4,
+                "task": "turn_off_lightbulb",
+                "instruction": "slide down the switch",
+                "start_frame": 554474,
+                "end_frame": 554538,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 5,
+                "seed": 5,
+                "task": "place_in_slider",
+                "instruction": "put it in the slider",
+                "start_frame": 554110,
+                "end_frame": 554145,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 6,
+                "seed": 6,
+                "task": "push_pink_block_right",
+                "instruction": "slide right the pink block",
+                "start_frame": 553916,
+                "end_frame": 553961,
+                "max_steps": 360,
+                "native_hz": 30
+              },
+              {
+                "case": 7,
+                "seed": 7,
+                "task": "lift_blue_block_slider",
+                "instruction": "in the slider grasp the blue block",
+                "start_frame": 553701,
+                "end_frame": 553765,
+                "max_steps": 360,
+                "native_hz": 30
+              }
+            ],
+            "source_files": {
+              "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+              "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60"
+            },
+            "environments": {
+              "calvin": {
+                "status": "supported",
+                "success_oracle": "Tasks.get_task_info_for_set(start_info,current_info,{annotated_task})",
+                "metadata": {
+                  "environment": "calvin",
+                  "renderer": "native PyBullet TinyRenderer CPU",
+                  "native_hz": 30.0,
+                  "source_semantics": "robot-base-aligned pose with identity TCP offset assumption",
+                  "target_robot_base_world_matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0,
+                      -0.34
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0,
+                      -0.46
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0,
+                      0.24
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ],
+                  "oracle": "Tasks.get_task_info_for_set(start_info,current_info,{annotated_task})",
+                  "pybullet_base_com_world_matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0,
+                      -0.34
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0,
+                      -0.46
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0,
+                      0.29
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ],
+                  "base_local_inertial_matrix": [
+                    [
+                      1.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      1.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0,
+                      0.05
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ],
+                  "confounds": [
+                    "untrained cross-embodiment state/action mapping",
+                    "identity TCP offset assumption",
+                    "native30Hz versus source20Hz; R5 retained"
+                  ],
+                  "native_asset_controller_sha256": {
+                    "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/.hydra/merged_config.yaml": "75c1c15067e4bd543d1b69a654769836f6cbbf55c4e44ae30da255c45609523f",
+                    "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/lang_annotations/auto_lang_ann.npy": "37552f6a801e6d3e0a0b140d30571074f0de1ab4bd7ea0c16867f6ab12fab07d",
+                    "/root/nfs/embodied/benchmark/calvin/calvin_env/data/franka_panda/panda_longer_finger.urdf": "264bbb28f54af13f9392f5a2a3ee8e9be2e9dfc3a9231cf4f9147b6acc8d7ab9",
+                    "/root/nfs/embodied/benchmark/calvin/calvin_env/calvin_env/robot/robot.py": "65721aa5f6bbb74a7bfabd53fe05699c0fc281d682363f065600f94622a396a7",
+                    "/root/nfs/embodied/benchmark/calvin/calvin_env/calvin_env/envs/tasks.py": "bca84af6249b2fd2404d1bd17318c7f3cf640acc329d3a26306b29149fc00e1a"
+                  },
+                  "frame_path": "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/episode_0553701.npz",
+                  "frame_sha256": "e351259fbae835a5b2c6a448a8b00e15f260bd54cf43689c69b689d35e06510f",
+                  "instruction": "in the slider grasp the blue block",
+                  "task": "lift_blue_block_slider"
+                },
+                "tested_cases": [
+                  {
+                    "case": 0,
+                    "initial_raw_sha256": "0bd393d75c5c1e762ac4ca6bdebbba5a11fd13ca8b74dc2860ab1844cfdab32d",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.20834790889227114,
+                        -0.318236149845161,
+                        0.4434274359892541
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.1800599502247965,
+                          0.9749331930999242,
+                          0.13070456501985328
+                        ],
+                        [
+                          0.9835880339311268,
+                          -0.1768931945312747,
+                          -0.0355440182874774
+                        ],
+                        [
+                          -0.01153229519842991,
+                          0.1349595002973331,
+                          -0.9907840024177569
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.0799985062528212
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.20834790889227114,
+                          -0.318236149845161,
+                          0.4434274359892541
+                        ],
+                        [
+                          0.7661163663526954,
+                          0.63910696633304,
+                          0.038888436226984464,
+                          0.055638910116402686
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 1,
+                    "initial_raw_sha256": "135b829bee525045c4d158e4cb53d05efe4bbce3e87f7f8afaf472a552055039",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.02616283681873802,
+                        -0.1252750118773229,
+                        0.49143470983411564
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.10452889147695026,
+                          0.9904533281739634,
+                          0.08986609792196165
+                        ],
+                        [
+                          0.9945033008577997,
+                          -0.10354743787546757,
+                          -0.015527803848810431
+                        ],
+                        [
+                          -0.006074160809601763,
+                          0.09099523514198879,
+                          -0.9958328031110008
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.07870089226783702
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.02616283681873802,
+                          -0.1252750118773229,
+                          0.49143470983411564
+                        ],
+                        [
+                          0.7422784404223624,
+                          0.6685350540096202,
+                          0.028221194550889013,
+                          0.035877048688827184
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 2,
+                    "initial_raw_sha256": "0b695d80f424f7601a36c6c8a3c3caac150f2d1a3b56c2fd09c5b2d94a98d2ef",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.28771117169128757,
+                        0.04094198325195189,
+                        0.5449648108908346
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.07186791556429283,
+                          0.9905424483331113,
+                          0.11687882940331486
+                        ],
+                        [
+                          0.9865092152901613,
+                          -0.08787305068054109,
+                          0.1381227537796917
+                        ],
+                        [
+                          0.14708694999908709,
+                          0.10537544787255029,
+                          -0.9834945064033788
+                        ]
+                      ],
+                      "actual_gripper_width_m": -5.398733118829334e-06
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.28771117169128757,
+                          0.04094198325195189,
+                          0.5449648108908346
+                        ],
+                        [
+                          0.7319896639721445,
+                          0.6752320971633652,
+                          0.09015352005450142,
+                          -0.011184347101787619
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 3,
+                    "initial_raw_sha256": "c045f389c4d4811cf9c410adc3f98acfd9a3087dbe86df303e7f2f56b76c7589",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.28629035591368956,
+                        0.03693711673654989,
+                        0.537450275021262
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.06743815253569346,
+                          0.9911602348420617,
+                          0.11425184659515344
+                        ],
+                        [
+                          0.9886816018401111,
+                          -0.08176913632129496,
+                          0.125787513403129
+                        ],
+                        [
+                          0.13401785614404305,
+                          0.1044758211889211,
+                          -0.9854562481518172
+                        ]
+                      ],
+                      "actual_gripper_width_m": 3.61299554031071e-05
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.28629035591368956,
+                          0.03693711673654989,
+                          0.537450275021262
+                        ],
+                        [
+                          0.7305243899091948,
+                          0.6775413196430955,
+                          0.08496283839683186,
+                          -0.007293285654999473
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 4,
+                    "initial_raw_sha256": "b8e6dd808379314167352480e142b03f4584798845e8b8d95c528efb00bade3c",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.06438282674030751,
+                        -0.16641709652559486,
+                        0.5595867283967771
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.20800490963206053,
+                          0.9779615218752021,
+                          0.018033837653054954
+                        ],
+                        [
+                          0.9734297965358293,
+                          -0.2087755275033637,
+                          0.09405961052389175
+                        ],
+                        [
+                          0.09575170382386053,
+                          -0.0020101858696754543,
+                          -0.995403219990571
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.0799975724416152
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.06438282674030751,
+                          -0.16641709652559486,
+                          0.5595867283967771
+                        ],
+                        [
+                          0.7765603094940526,
+                          0.6282162810002513,
+                          0.03663126356246865,
+                          -0.03092798950031291
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 5,
+                    "initial_raw_sha256": "f29b9049099df783805b35a30258a8b71a22b2ac81b33566537a297a85ccb2b2",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.12074537396393108,
+                        -0.09568745225196071,
+                        0.5630932604232801
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          -0.2520050118269947,
+                          0.9673308452159902,
+                          -0.027649772291907834
+                        ],
+                        [
+                          0.9514634347656473,
+                          0.25288496994698334,
+                          0.175403889007257
+                        ],
+                        [
+                          0.1766658040426417,
+                          0.017894911808428005,
+                          -0.9841082083863215
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.04064106811375387
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          -0.12074537396393108,
+                          -0.09568745225196071,
+                          0.5630932604232801
+                        ],
+                        [
+                          0.6081155783673741,
+                          0.7888279581379422,
+                          0.061261393825332355,
+                          -0.06475289517401366
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 6,
+                    "initial_raw_sha256": "5a4c924449b495c679e209fa7873a647edb5632701a0c6779021db48a9645b9b",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.024577207299778987,
+                        -0.09720492599884392,
+                        0.45702879270205715
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.1345362088601568,
+                          0.9877551531237103,
+                          0.078992189380289
+                        ],
+                        [
+                          0.9901186827017128,
+                          -0.13718368036894793,
+                          0.029079752499891483
+                        ],
+                        [
+                          0.03956011464291888,
+                          0.07429936283700891,
+                          -0.9964510033169988
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.04056752772639873
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.024577207299778987,
+                          -0.09720492599884392,
+                          0.45702879270205715
+                        ],
+                        [
+                          0.7530223921879919,
+                          0.6566450932748783,
+                          0.03935882427039811,
+                          0.015012704405019995
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  },
+                  {
+                    "case": 7,
+                    "initial_raw_sha256": "86667045212790e73037ff0aa2810da4f3af6cf2da8dd18288c0a88c3b183954",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        0.27722620831671557,
+                        0.037126070322657925,
+                        0.5707047116587987
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          -0.010225439066191923,
+                          0.9887690705038571,
+                          0.1491011925198522
+                        ],
+                        [
+                          0.9910890563440445,
+                          -0.009782327482203458,
+                          0.13284121523120038
+                        ],
+                        [
+                          0.13280784160197306,
+                          0.1491309199460976,
+                          -0.979858176434251
+                        ]
+                      ],
+                      "actual_gripper_width_m": 0.0387309944605778
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "physical_translation_target_world_m": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "physical_rotation_vector_target_world_rad": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "native_action": [
+                        [
+                          0.27722620831671557,
+                          0.037126070322657925,
+                          0.5707047116587987
+                        ],
+                        [
+                          0.703458432469585,
+                          0.7036158909551148,
+                          0.10018681314692111,
+                          0.005789149707719769
+                        ],
+                        1
+                      ],
+                      "native_rotation": "xyzw quaternion; left composition matching LIBERO OSC",
+                      "gripper": "LIBERO positive closes; CALVIN negative closes"
+                    }
+                  }
+                ],
+                "all_predeclared_cases_tested": true,
+                "upright_images": true,
+                "no_libero_image_flip": true
+              }
+            }
+          }
+        }
+      ],
+      "pusht": [
+        {
+          "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/pusht_final/preflight.json",
+          "receipt": {
+            "status": "complete",
+            "environment": "pusht",
+            "case": 0,
+            "gpu_uuid": null,
+            "source_reference_sha256": "c61dffbc6b7918af8b9eb62fc6e0706aa21b5cec389b6b84fce458f111a4137d",
+            "cases": [
+              {
+                "case": 0,
+                "seed": 0,
+                "task": "pusht_projection_stress_probe",
+                "instruction": "push the T-shaped block onto the matching target",
+                "max_steps": 300,
+                "native_hz": 10
+              },
+              {
+                "case": 1,
+                "seed": 1,
+                "task": "pusht_projection_stress_probe",
+                "instruction": "push the T-shaped block onto the matching target",
+                "max_steps": 300,
+                "native_hz": 10
+              },
+              {
+                "case": 2,
+                "seed": 2,
+                "task": "pusht_projection_stress_probe",
+                "instruction": "push the T-shaped block onto the matching target",
+                "max_steps": 300,
+                "native_hz": 10
+              },
+              {
+                "case": 3,
+                "seed": 3,
+                "task": "pusht_projection_stress_probe",
+                "instruction": "push the T-shaped block onto the matching target",
+                "max_steps": 300,
+                "native_hz": 10
+              },
+              {
+                "case": 4,
+                "seed": 4,
+                "task": "pusht_projection_stress_probe",
+                "instruction": "push the T-shaped block onto the matching target",
+                "max_steps": 300,
+                "native_hz": 10
+              }
+            ],
+            "source_files": {
+              "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+              "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60"
+            },
+            "environments": {
+              "pusht": {
+                "status": "supported",
+                "success_oracle": "native coverage > success_threshold (0.95)",
+                "metadata": {
+                  "environment": "pusht",
+                  "native_hz": 10.0,
+                  "renderer": "native pygame CPU",
+                  "oracle": "native coverage > success_threshold (0.95)",
+                  "projection": "512 pixels correspond to0.6m; center anchored to factual source referenceXY",
+                  "confounds": [
+                    "2D projection stress probe, no native 7D robot policy meaning",
+                    "ignore Z/rotation/gripper actions",
+                    "Z/orientation/gripper state fixed from real source reference",
+                    "missing wrist is black padding",
+                    "native10Hz versus source20Hz; R5 retained"
+                  ],
+                  "native_asset_controller_sha256": {
+                    "/root/nfs/embodied/benchmark/policies/diffusion_policy/diffusion_policy/env/pusht/pusht_env.py": "759107dc0ea6017b8afe3380ce23817713edf26af725fc4f03c0416ced940bd0"
+                  },
+                  "success_threshold": 0.95
+                },
+                "tested_cases": [
+                  {
+                    "case": 0,
+                    "initial_raw_sha256": "8116ec539b475dd2a4fa8e6131a82609d133b18e718dc49fe2d644bd7d555339",
+                    "initial_actual_state": {
+                      "agent_xy_pixels": [
+                        222.0,
+                        97.0
+                      ],
+                      "block_xy_angle": [
+                        217.0,
+                        292.0,
+                        3.0079994677219553
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        222.0,
+                        97.0
+                      ],
+                      "ignored_channels": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ],
+                      "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+                      "native_reward": 0.44069944411866163,
+                      "native_info": {
+                        "pos_agent": [
+                          222.0,
+                          97.0
+                        ],
+                        "vel_agent": [
+                          0.0,
+                          0.0
+                        ],
+                        "block_pose": [
+                          217.0,
+                          292.0,
+                          3.0079994677219553
+                        ],
+                        "goal_pose": [
+                          256.0,
+                          256.0,
+                          0.7853981633974483
+                        ],
+                        "n_contacts": 0
+                      }
+                    }
+                  },
+                  {
+                    "case": 1,
+                    "initial_raw_sha256": "b727cc59bdb8ba7f84c329cc30028d04109a63e511cd0a72e5c3b859ed224a2d",
+                    "initial_actual_state": {
+                      "agent_xy_pixels": [
+                        87.0,
+                        285.0
+                      ],
+                      "block_xy_angle": [
+                        172.0,
+                        355.0,
+                        5.970620860902089
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        87.0,
+                        285.0
+                      ],
+                      "ignored_channels": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ],
+                      "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+                      "native_reward": 0.0,
+                      "native_info": {
+                        "pos_agent": [
+                          87.0,
+                          285.0
+                        ],
+                        "vel_agent": [
+                          0.0,
+                          0.0
+                        ],
+                        "block_pose": [
+                          172.0,
+                          355.0,
+                          -6.595749753457083
+                        ],
+                        "goal_pose": [
+                          256.0,
+                          256.0,
+                          0.7853981633974483
+                        ],
+                        "n_contacts": 0
+                      }
+                    }
+                  },
+                  {
+                    "case": 2,
+                    "initial_raw_sha256": "e4465777a6343b7eac17267d01257047e35ebd65d95625e3651b23e378f16c23",
+                    "initial_actual_state": {
+                      "agent_xy_pixels": [
+                        218.0,
+                        65.0
+                      ],
+                      "block_xy_angle": [
+                        172.0,
+                        122.0,
+                        2.999814176542796
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        218.0,
+                        65.0
+                      ],
+                      "ignored_channels": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ],
+                      "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+                      "native_reward": 0.0,
+                      "native_info": {
+                        "pos_agent": [
+                          218.0,
+                          65.0
+                        ],
+                        "vel_agent": [
+                          0.0,
+                          0.0
+                        ],
+                        "block_pose": [
+                          171.82362987601712,
+                          124.73234667671431,
+                          -3.27941317802466
+                        ],
+                        "goal_pose": [
+                          256.0,
+                          256.0,
+                          0.7853981633974483
+                        ],
+                        "n_contacts": 2
+                      }
+                    }
+                  },
+                  {
+                    "case": 3,
+                    "initial_raw_sha256": "092cafb620f9c96f1287eb9d9c9421acada84a755636ff51c07c2d2370db8e32",
+                    "initial_actual_state": {
+                      "agent_xy_pixels": [
+                        412.0,
+                        202.0
+                      ],
+                      "block_xy_angle": [
+                        349.0,
+                        231.0,
+                        3.747904127159869
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        412.0,
+                        202.0
+                      ],
+                      "ignored_channels": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ],
+                      "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+                      "native_reward": 0.0,
+                      "native_info": {
+                        "pos_agent": [
+                          412.0,
+                          202.0
+                        ],
+                        "vel_agent": [
+                          0.0,
+                          0.0
+                        ],
+                        "block_pose": [
+                          349.0,
+                          231.0,
+                          -2.5352811800197173
+                        ],
+                        "goal_pose": [
+                          256.0,
+                          256.0,
+                          0.7853981633974483
+                        ],
+                        "n_contacts": 0
+                      }
+                    }
+                  },
+                  {
+                    "case": 4,
+                    "initial_raw_sha256": "778616e55747081b333e4da1074480313366f1af9b114a74f6312e6c192fda9b",
+                    "initial_actual_state": {
+                      "agent_xy_pixels": [
+                        172.0,
+                        224.0
+                      ],
+                      "block_xy_angle": [
+                        297.0,
+                        187.0,
+                        6.147102491108365
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        172.0,
+                        224.0
+                      ],
+                      "ignored_channels": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6
+                      ],
+                      "convention": "a-priori 512px equals0.6m, absolute pixel target from actual XY plus physical source XY delta",
+                      "native_reward": 0.00029170296307156864,
+                      "native_info": {
+                        "pos_agent": [
+                          172.0,
+                          224.0
+                        ],
+                        "vel_agent": [
+                          0.0,
+                          0.0
+                        ],
+                        "block_pose": [
+                          297.0,
+                          187.0,
+                          6.147102491108365
+                        ],
+                        "goal_pose": [
+                          256.0,
+                          256.0,
+                          0.7853981633974483
+                        ],
+                        "n_contacts": 0
+                      }
+                    }
+                  }
+                ],
+                "all_predeclared_cases_tested": true,
+                "upright_images": true,
+                "no_libero_image_flip": true
+              }
+            }
+          }
+        }
+      ],
+      "simpler": [
+        {
+          "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/simpler_bound_gpu3_v3/preflight.json",
+          "receipt": {
+            "status": "complete",
+            "environment": "simpler",
+            "case": 0,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "source_reference_sha256": "c61dffbc6b7918af8b9eb62fc6e0706aa21b5cec389b6b84fce458f111a4137d",
+            "cases": [
+              {
+                "case": 0,
+                "seed": 0,
+                "task": "google_robot_pick_coke_can",
+                "instruction": "pick coke can",
+                "max_steps": 80,
+                "native_hz": 3
+              },
+              {
+                "case": 1,
+                "seed": 1,
+                "task": "google_robot_pick_coke_can",
+                "instruction": "pick coke can",
+                "max_steps": 80,
+                "native_hz": 3
+              },
+              {
+                "case": 2,
+                "seed": 2,
+                "task": "google_robot_pick_coke_can",
+                "instruction": "pick coke can",
+                "max_steps": 80,
+                "native_hz": 3
+              },
+              {
+                "case": 3,
+                "seed": 3,
+                "task": "google_robot_pick_coke_can",
+                "instruction": "pick coke can",
+                "max_steps": 80,
+                "native_hz": 3
+              },
+              {
+                "case": 4,
+                "seed": 4,
+                "task": "google_robot_pick_coke_can",
+                "instruction": "pick coke can",
+                "max_steps": 80,
+                "native_hz": 3
+              }
+            ],
+            "source_files": {
+              "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+              "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60"
+            },
+            "environments": {
+              "simpler": {
+                "status": "supported",
+                "success_oracle": "native task evaluate/info success, not termination or model confidence",
+                "metadata": {
+                  "environment": "simpler",
+                  "native_hz": 3.0,
+                  "renderer_binding": {
+                    "gpu": 3,
+                    "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+                    "pci_bus_id": "00000000:E1:00.0",
+                    "preconstructor_compute_pids": [],
+                    "idle_required": true,
+                    "sapien_device": "pci:E1",
+                    "verification": "SAPIEN documented exact PCI device selector resolved from assigned NVIDIA UUID; no default selector"
+                  },
+                  "controller_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+                  "controller_configs": "{'arm': PDEEPoseControllerConfig(joint_names=['joint_torso', 'joint_shoulder', 'joint_bicep', 'joint_elbow', 'joint_forearm', 'joint_wrist', 'joint_gripper', 'joint_head_pan', 'joint_head_tilt'], pos_lower=-1.0, pos_upper=1.0, rot_bound=1.5707963267948966, stiffness=[1700.0, 1737.0471680861954, 979.975871856535, 930.0, 1212.154500274304, 432.96500923932535, 468.0013365498738, 2000, 2000], damping=[1059.9791902443303, 1010.4720585373592, 767.2803161582076, 680.0, 674.9946964336588, 274.613381336198, 340.532560578637, 900, 900], force_limit=[300, 300, 100, 100, 100, 100, 100, 100, 100], friction=0.0, drive_mode='force', ee_link='link_gripper_tcp', frame='ee_align', use_delta=True, use_target=False, delta_target_from_last_drive_target=False, interpolate=True, interpolate_by_planner=True, interpolate_planner_init_no_vel=False, interpolate_planner_exec_set_target_vel=False, interpolate_planner_vlim=1.5, interpolate_planner_alim=2.0, interpolate_planner_jerklim=50.0, normalize_action=False), 'gripper': PDJointPosMimicControllerConfig(joint_names=['joint_finger_right', 'joint_finger_left'], lower=-1.31, upper=1.31, stiffness=200, damping=8, force_limit=60, friction=0.0, drive_mode='force', use_delta=True, use_target=True, delta_target_from_last_drive_target=True, clip_target=True, clip_target_thres=0.01, interpolate=True, interpolate_by_planner=True, interpolate_planner_init_no_vel=False, interpolate_planner_exec_set_target_vel=True, interpolate_planner_vlim=1.0, interpolate_planner_alim=7.0, interpolate_planner_jerklim=50.0, small_action_repeat_last_target=True, normalize_action=True)}",
+                  "oracle": "native task evaluate/info success, not termination or model confidence",
+                  "confounds": [
+                    "untrained robot-base alignment; identity TCP offset assumption",
+                    "virtual signed Panda finger coordinates from actual fingertip distance",
+                    "black missing wrist padding",
+                    "native3Hz versus source20Hz; R5 retained"
+                  ],
+                  "native_asset_controller_sha256": {
+                    "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/assets/descriptions/googlerobot_description/google_robot_meta_sim_fix_wheel_fix_fingertip_recolor_tabletop_visual_matching_1.urdf": "978e820a8be2d769472aa00c674be78e5772225a4a296d18d479af40e2ced847",
+                    "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/agents/controllers/pd_ee_pose.py": "b3d62a3f46ae9eb69f017b91671d8d29de818a51e5aa7ac9066628fabdcf3538",
+                    "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/agents/controllers/pd_joint_pos.py": "9a61c2097260ae0ddb4b75df1deeeb72b4522778c8e9122559d0c4ac654f4515",
+                    "/root/nfs/embodied/benchmark/SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/envs/custom_scenes/grasp_single_in_scene.py": "c067aa46582a2ad9ced5a360b583221a9be635fab578368a0441685dced1965d"
+                  },
+                  "model_database_sha256": "e866a36da17cf22a6b7f9589c208309b70e375d7f6720bbf67eae9b8b2c63ae8",
+                  "target_robot_base_world_matrix": [
+                    [
+                      -1.0,
+                      0.0,
+                      0.0,
+                      0.3499999940395355
+                    ],
+                    [
+                      0.0,
+                      -1.0,
+                      0.0,
+                      0.19999998807907104
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      1.0,
+                      0.0790499895811081
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ]
+                  ],
+                  "instruction": "pick coke can"
+                },
+                "tested_cases": [
+                  {
+                    "case": 0,
+                    "initial_raw_sha256": "e09e8769b6595996aa11c2294103d967a061e1eb68b377bde7f66d3c8b57757d",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.08938442170619965,
+                        0.41841691732406616,
+                        1.0409188270568848
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.21945105554232097,
+                          0.9318108983110599,
+                          -0.2890842161206598
+                        ],
+                        [
+                          0.9526250723702497,
+                          -0.2686126421903969,
+                          -0.14266295926788372
+                        ],
+                        [
+                          -0.21058657533883107,
+                          -0.2440813353049123,
+                          -0.9466137522996554
+                        ]
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+                      "native_space_low": [
+                        -1.0,
+                        -1.0,
+                        -1.0,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.0
+                      ],
+                      "native_space_high": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.0
+                      ],
+                      "native_space_clipped": false,
+                      "native_reward": 0.0,
+                      "native_terminated": false,
+                      "native_truncated": false,
+                      "native_success": false
+                    }
+                  },
+                  {
+                    "case": 1,
+                    "initial_raw_sha256": "5294214eb7126cda3fd7342bbdd78712ed81b77b0986f4120823acf000411f22",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.08938442170619965,
+                        0.41841691732406616,
+                        1.0409188270568848
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.21945105554232097,
+                          0.9318108983110599,
+                          -0.2890842161206598
+                        ],
+                        [
+                          0.9526250723702497,
+                          -0.2686126421903969,
+                          -0.14266295926788372
+                        ],
+                        [
+                          -0.21058657533883107,
+                          -0.2440813353049123,
+                          -0.9466137522996554
+                        ]
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+                      "native_space_low": [
+                        -1.0,
+                        -1.0,
+                        -1.0,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.0
+                      ],
+                      "native_space_high": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.0
+                      ],
+                      "native_space_clipped": false,
+                      "native_reward": 0.0,
+                      "native_terminated": false,
+                      "native_truncated": false,
+                      "native_success": false
+                    }
+                  },
+                  {
+                    "case": 2,
+                    "initial_raw_sha256": "8fdb0ed71c08f00d0d7aeff7a50c8e1cd78439d213e6e119e370261240040c44",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.08938442170619965,
+                        0.41841691732406616,
+                        1.0409188270568848
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.21945105554232097,
+                          0.9318108983110599,
+                          -0.2890842161206598
+                        ],
+                        [
+                          0.9526250723702497,
+                          -0.2686126421903969,
+                          -0.14266295926788372
+                        ],
+                        [
+                          -0.21058657533883107,
+                          -0.2440813353049123,
+                          -0.9466137522996554
+                        ]
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+                      "native_space_low": [
+                        -1.0,
+                        -1.0,
+                        -1.0,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.0
+                      ],
+                      "native_space_high": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.0
+                      ],
+                      "native_space_clipped": false,
+                      "native_reward": 0.0,
+                      "native_terminated": false,
+                      "native_truncated": false,
+                      "native_success": false
+                    }
+                  },
+                  {
+                    "case": 3,
+                    "initial_raw_sha256": "7caacb8bab3b67d964679610055baf795223051ebed7bd7932223d571c43803e",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.08938442170619965,
+                        0.41841691732406616,
+                        1.0409188270568848
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.21945105554232097,
+                          0.9318108983110599,
+                          -0.2890842161206598
+                        ],
+                        [
+                          0.9526250723702497,
+                          -0.2686126421903969,
+                          -0.14266295926788372
+                        ],
+                        [
+                          -0.21058657533883107,
+                          -0.2440813353049123,
+                          -0.9466137522996554
+                        ]
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+                      "native_space_low": [
+                        -1.0,
+                        -1.0,
+                        -1.0,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.0
+                      ],
+                      "native_space_high": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.0
+                      ],
+                      "native_space_clipped": false,
+                      "native_reward": 0.0,
+                      "native_terminated": false,
+                      "native_truncated": false,
+                      "native_success": false
+                    }
+                  },
+                  {
+                    "case": 4,
+                    "initial_raw_sha256": "b42434f107b823036643fd9b194c2aa2a102e7bd145f03c99f6053d05cc94282",
+                    "initial_actual_state": {
+                      "eef_xyz_world": [
+                        -0.08938442170619965,
+                        0.41841691732406616,
+                        1.0409188270568848
+                      ],
+                      "eef_rotation_world": [
+                        [
+                          0.21945105554232097,
+                          0.9318108983110599,
+                          -0.2890842161206598
+                        ],
+                        [
+                          0.9526250723702497,
+                          -0.2686126421903969,
+                          -0.14266295926788372
+                        ],
+                        [
+                          -0.21058657533883107,
+                          -0.2440813353049123,
+                          -0.9466137522996554
+                        ]
+                      ]
+                    },
+                    "noop_interface_success": false,
+                    "noop_native_terminal": false,
+                    "noop_audit": {
+                      "raw": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "clipped_components": [],
+                      "native_action": [
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "convention": "native ee_align physical meters/radians; gripper closedness delta positive closes; no arbitrary scale",
+                      "native_space_low": [
+                        -1.0,
+                        -1.0,
+                        -1.0,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.5707963705062866,
+                        -1.0
+                      ],
+                      "native_space_high": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.5707963705062866,
+                        1.0
+                      ],
+                      "native_space_clipped": false,
+                      "native_reward": 0.0,
+                      "native_terminated": false,
+                      "native_truncated": false,
+                      "native_success": false
+                    }
+                  }
+                ],
+                "all_predeclared_cases_tested": true,
+                "upright_images": true,
+                "no_libero_image_flip": true
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "policy_receipt": {
+    "status": "complete",
+    "cpu_only": true,
+    "modes": [
+      "full_d10",
+      "v14_d10",
+      "draft_goal",
+      "draft_object",
+      "draft_spatial",
+      "draft_10"
+    ],
+    "H": 50,
+    "R": 5,
+    "D": 10,
+    "checkpoint_metadata": {
+      "shared_base": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+        "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+      },
+      "original_provenance": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json",
+        "sha256": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15"
+      },
+      "draft_heads": {
+        "draft_goal": {
+          "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/draft_triton.pkl",
+          "sha256": "4bbd1b5819def487d4ecdafae6e4eaac2915e12d001f2e39d6ccb8bd76badcef"
+        },
+        "draft_object": {
+          "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/draft_triton.pkl",
+          "sha256": "575627e83d72b8749e05c440640e1edd72421c87429aa0098d51e0df42d2b8e6"
+        },
+        "draft_spatial": {
+          "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/draft_triton.pkl",
+          "sha256": "33569dbb99de8300e93331961a122db0aca5d8f7cdb2f677b4013fefce93e14c"
+        },
+        "draft_10": {
+          "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/draft_triton.pkl",
+          "sha256": "b385338b6c0543e070c11d6acd3f72fd3285132150d1029115e052f19296e064"
+        }
+      }
+    },
+    "prompt_proof": {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/preflight.json",
+      "sha256": "b491dd9cdcce4cb90befedffc7703df6a75b2d527d657837078f0e0e39eb989f",
+      "released_prompts": 10,
+      "bitwise_equal": true,
+      "scope": "Instruction token rows and converted BF16 prompt embeddings only; not native model/policy parity, action semantics or environment compatibility"
+    },
+    "source_sha256": {
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/transfer_policy.py": "e61039dccae6bcf99aa6e282d727e0e8c7481295d07663ba5b92f2c719978425",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/transfer_server.py": "709bee6eaf580dfb6b819edb914d71948788a55eff5b3cffc3ff23e605665e66",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/transfer_prompts.py": "8162fc00686e434268783c3a89ea3783fbedd065e1e41166cf40c4c1b13fb2e9",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/experiment10/backend.py": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_spec_infer.py": "b2d98018e8fa37dfeb69b6594ebbee6b141610dfa64395d113cefb5970e861dd",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+    },
+    "semantics": {
+      "full": "full27 vision, full18 VLM, original18 AE, uniformD10",
+      "v14": "same but VLM skip1based[3,4,9,11]",
+      "learned": "shared full27 vision and native language preencoder plus learned state path; one fixed released draft head, no VLM/AE/verify/fallback",
+      "images": "RGB already oriented by client, no LIBERO flips",
+      "prefix": "fresh each request; no cross-request KV reuse",
+      "graphs": "full constructor capture disabled; draft graph disabled to count actual eager route calls"
+    },
+    "model_constructed": false,
+    "gpu_used": false,
+    "limitations": "CPU prompt and metadata checks do not establish policy or environment/action mapping parity"
+  },
+  "source_reference_path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/source_reference.json",
+  "H": 50,
+  "execute": 5,
+  "seed_rule": "same case seed and replan RNG seed across conditions; no mode in seed",
+  "model_controls": {
+    "full_d10": {
+      "D": 10,
+      "skip": []
+    },
+    "v14_d10": {
+      "D": 10,
+      "skip": [
+        3,
+        4,
+        9,
+        11
+      ]
+    },
+    "drafts": "All four released suite heads, pure draft, no VLM/action-expert/verify"
+  },
+  "selection": "All six conditions retained; no training, head selection or adaptation on target environments",
+  "budget": {
+    "seconds": 5400,
+    "started_utc": "2026-10-22T05:00:00+00:00",
+    "deadline_unix": 1792650600.0,
+    "origin": "self-imposed exploratory cap including preparation; not a user-specified E4 budget"
+  },
+  "metrics": {
+    "success": "Native oracle, separate denominator per environment; technical/unsupported never zero-policy outcomes",
+    "pusht": "Explicit 2D stress projection, not directly comparable to arm task success",
+    "latency": "Same case/condition on same GPU shard; compare only within shard; cold/compile separate"
+  },
+  "videos": "case0 in every environment, every condition; full-stream decode validation; fixed selection independent of outcome",
+  "interpretation": "Full baseline zero/unsupported adapter makes generalization inference inconclusive; no causal model-capacity claims",
+  "canonical_design": {
+    "path": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_v3_2_e4_zero_shot_protocol.md",
+    "sha256": "ed099e25273c943d5f62514b6c81dcbdc905de68449cb46e75ecae9afa318702"
+  },
+  "manifest_hash": "3eeeb50e43b1078a61d9015bbb0fe371ff5f4bd98809e0242699de700369222f"
+}

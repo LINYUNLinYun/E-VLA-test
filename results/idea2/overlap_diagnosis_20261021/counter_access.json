@@ -1,0 +1,7 @@
+{
+  "command": "/usr/local/cuda/bin/ncu --query-metrics --query-metrics-mode suffix --metrics sm__throughput,dram__throughput,sm__warps_active,sm__pipe_tensor_cycles_active",
+  "device_reported": "NVIDIA GeForce RTX 4090 (AD102)",
+  "status": "ERR_NVGPUCTRPERM",
+  "message": "The user does not have permission to access NVIDIA GPU Performance Counters on the target device.",
+  "implication": "No measured DRAM bandwidth, achieved occupancy, or Tensor Core utilization is claimed. No driver permissions/settings were changed."
+}

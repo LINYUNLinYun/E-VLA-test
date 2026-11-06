@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "quick_stage_directory_identity_fix_v2_source_receipt",
+  "files": {
+    "preparations/idea1_v2_2/quick_stage_scope_v2.py": "15b04ff119b563d42896bcbfaf621b2d17a527fea16acccf8da1d47619ff38d4",
+    "preparations/idea1_v2_2/runtime_analysis_quick_v2.py": "c2a6129c1af89968486c61773ff3af204f45f9e2a5dba95cded57c6a571ad7bd",
+    "preparations/idea1_v2_2/quick_final_adapter_v2.py": "94f91b9baeca0b63f338ac34f21b10c3bf966ead9446fff11e7aed137fd363a0",
+    "preparations/idea1_v2_2/test_quick_stage_scope_v2.py": "2dc78dfd647c771bdd9bab3888f53a2e3ea09fbbf2cbfd04b1a16146b29f858c",
+    "preparations/idea1_v2_2/quick_stage_scope.py": "2bd2353a9b604d4d9b5b1084f8bff8962a822e5c89004edf6bd667831acd638b",
+    "preparations/idea1_v2_2/runtime_analysis_quick.py": "0e07272b4c54eecc70335c1d9948f297f6d86d5604d234aa2b9928de38568748",
+    "preparations/idea1_v2_2/quick_final_adapter.py": "a29100c83aa5d32375ba330a6aa711739ab5bcd8fd6c9410786e5b9725eb14a5",
+    "preparations/idea1_v2_2/readiness/quick_stage_source_receipt_v1.json": "078029574ee4d9f88450e04201408eda9447ebc3d4a9ce2c08687404b51dccdf",
+    "preparations/idea1_v2_2/readiness/quick_stage_medium_acceptance_v1.json": "f9ec768942061185c9d031ffb45ac2ae78d0ef3a1aa952026d063a5e036e1290",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/quick_analysis/quick_final_light_repeat_v2_20261019T0903Z/quick_stage_scope.json": "a7a10d7de52a082da6ccc71b28f8a27fdd25cf87ab04cebba5ec8691ad876ef4",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/performance_evidence/quick_scope_drain_20261019T0836Z_episode_ledger.snapshot.json": "39db8b95177f09faecdad3c1abd91cc42ca2236dd1da7c8834fd67a50201b482",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/performance_evidence/quick_scope_drain_20261019T0836Z_receipt.json": "23333df5a1a3f83eec3274b2bb1f333c94686409d605be2e9a9b46083da1ebff"
+  },
+  "source_files": [
+    "quick_stage_scope_v2.py",
+    "runtime_analysis_quick_v2.py",
+    "quick_final_adapter_v2.py"
+  ],
+  "base_sources_preserved": true,
+  "failed_view_preserved": "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/quick_analysis/quick_final_light_repeat_v2_20261019T0903Z",
+  "cause": {
+    "field": "directory",
+    "different_rows": 2856,
+    "other_field_differences": 0,
+    "all_physical_paths_equivalent": true,
+    "description": "v1 build normalized original relative ledger directory to absolute, then load_scope compared it literally against unchanged full ledger; failure precedes routed audit return"
+  },
+  "fix": "Preserve all original row fields byte-value-equivalent including directory; add resolved_directory using repository ROOT, require exact canonical condition/suite/task/init/token physical directory; only display uses existing view alias",
+  "tests": {
+    "command": "/usr/bin/python3 -m unittest test_quick_stage_scope_v2 -v",
+    "incremental_passed": 1,
+    "seconds": 51.474,
+    "fixture": "6480 tiny metadata episodes in temporary local directory, relative+absolute raw directories and unrelated cwd; real build/load/install_analysis_route/audit; no raw/video/model"
+  },
+  "scientific_changes": false,
+  "benchmark_changes": false,
+  "success_denominator_or_sampling_changes": false,
+  "actual_experiment_or_raw_or_media_rerun": false,
+  "actual_final_completed": false
+}

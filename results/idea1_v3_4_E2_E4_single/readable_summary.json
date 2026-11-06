@@ -1,0 +1,151 @@
+{
+  "E4_layer_grid_macro": [
+    {
+      "candidate": "skip",
+      "translation_mm": 4.9311951059173555,
+      "rotation_l2": 0.0460375208766017,
+      "gripper_sign": 0.04338235294117647,
+      "raw_rms6": 0.10685977273832951,
+      "translation_delta": 0.0,
+      "translation_ci": [
+        0.0,
+        0.0
+      ],
+      "translation_better_layers": 0,
+      "all_three_better_layers": 0,
+      "model_ms": 66.13662833457485,
+      "patch_extra_ms": 0.0
+    },
+    {
+      "candidate": "channel",
+      "translation_mm": 4.500538883553864,
+      "rotation_l2": 0.03785990179954645,
+      "gripper_sign": 0.03088235294117648,
+      "raw_rms6": 0.09603360456793442,
+      "translation_delta": -0.4306562223634911,
+      "translation_ci": [
+        -0.5915968235521909,
+        -0.2551673344900269
+      ],
+      "translation_better_layers": 11,
+      "all_three_better_layers": 5,
+      "model_ms": 66.16639223534104,
+      "patch_extra_ms": 0.029763900766184292
+    },
+    {
+      "candidate": "hadamard",
+      "translation_mm": 4.367732885728794,
+      "rotation_l2": 0.03449648274987589,
+      "gripper_sign": 0.026470588235294117,
+      "raw_rms6": 0.09165423075775797,
+      "translation_delta": -0.5634622201885613,
+      "translation_ci": [
+        -0.7096279096932966,
+        -0.43572863154248126
+      ],
+      "translation_better_layers": 9,
+      "all_three_better_layers": 4,
+      "model_ms": 66.48709581178777,
+      "patch_extra_ms": 0.3504674772129164
+    },
+    {
+      "candidate": "reuse",
+      "translation_mm": 2.4934368542958776,
+      "rotation_l2": 0.01438931384735256,
+      "gripper_sign": 0.020343137254901965,
+      "raw_rms6": 0.050194898621959826,
+      "translation_delta": -2.437758251621477,
+      "translation_ci": [
+        -2.6752860656704476,
+        -2.1728456917027836
+      ],
+      "translation_better_layers": 16,
+      "all_three_better_layers": 11,
+      "model_ms": 66.17154717883645,
+      "patch_extra_ms": 0.03491884426159686
+    },
+    {
+      "candidate": "extrapolate",
+      "translation_mm": 2.464937086066736,
+      "rotation_l2": 0.015288458001016218,
+      "gripper_sign": 0.014215686274509805,
+      "raw_rms6": 0.05107808525088545,
+      "translation_delta": -2.466258019850619,
+      "translation_ci": [
+        -2.690819298243464,
+        -2.240222957940811
+      ],
+      "translation_better_layers": 17,
+      "all_three_better_layers": 15,
+      "model_ms": 66.14869204806348,
+      "patch_extra_ms": 0.012063713488629446
+    },
+    {
+      "candidate": "linear_selected",
+      "translation_mm": 3.765360499713935,
+      "rotation_l2": 0.027716201962047146,
+      "gripper_sign": 0.01911764705882353,
+      "raw_rms6": 0.07939174413902447,
+      "translation_delta": -1.1658346062034195,
+      "translation_ci": [
+        -1.3556887850487933,
+        -0.9865345838810683
+      ],
+      "translation_better_layers": 4,
+      "all_three_better_layers": 3,
+      "model_ms": 66.15137827454828,
+      "patch_extra_ms": 0.014749939973427217
+    }
+  ],
+  "matched_input_robustness": [
+    {
+      "domain": "full",
+      "rank": 8,
+      "fit_input": "full",
+      "mse_ratio_to_no_patch": 0.6079929662937559
+    },
+    {
+      "domain": "full",
+      "rank": 8,
+      "fit_input": "shifted",
+      "mse_ratio_to_no_patch": 2.677832289091881
+    },
+    {
+      "domain": "full",
+      "rank": 32,
+      "fit_input": "full",
+      "mse_ratio_to_no_patch": 0.6094482375993168
+    },
+    {
+      "domain": "full",
+      "rank": 32,
+      "fit_input": "shifted",
+      "mse_ratio_to_no_patch": 2.900850451191834
+    },
+    {
+      "domain": "shifted",
+      "rank": 8,
+      "fit_input": "full",
+      "mse_ratio_to_no_patch": 0.8012581856427897
+    },
+    {
+      "domain": "shifted",
+      "rank": 8,
+      "fit_input": "shifted",
+      "mse_ratio_to_no_patch": 0.5331753236644226
+    },
+    {
+      "domain": "shifted",
+      "rank": 32,
+      "fit_input": "full",
+      "mse_ratio_to_no_patch": 0.8014091050163766
+    },
+    {
+      "domain": "shifted",
+      "rank": 32,
+      "fit_input": "shifted",
+      "mse_ratio_to_no_patch": 0.5318152428967309
+    }
+  ],
+  "time": 1793270587.38584
+}

@@ -1,0 +1,40 @@
+{
+  "status": "primary_source_review_only",
+  "accessed_local_date": "2026-11-06",
+  "current_experiment_changed": false,
+  "current_partial_success_rates_read": false,
+  "new_model_or_GPU_started": false,
+  "sources": [
+    {
+      "title": "MoLe-VLA",
+      "url": "https://arxiv.org/html/2503.20384v2",
+      "version": "v2",
+      "source_type": "author_paper",
+      "supported_observation": "STAR选择执行层，CogKD通过训练恢复跳层时损失的信息；论文评测包含训练后的模型。",
+      "boundary_for_EASE": "这不能直接证明冻结Pi0的两条未经额外训练的子路径已经具有可复现的任务偏好。只借鉴层选择问题，不借用其成功率作为本项目证据。"
+    },
+    {
+      "title": "MergeVLA",
+      "url": "https://arxiv.org/html/2511.18810v1",
+      "version": "v1",
+      "source_type": "author_paper",
+      "supported_observation": "研究对象包含分别微调的任务专家；方法改变动作专家结构以限制跨层任务耦合，再选择任务mask和专家头。",
+      "boundary_for_EASE": "微调后的任务专家专门化与原始单个Pi0中的可提取路径是不同命题；不将其结果当作本轮路径互补性证据。"
+    },
+    {
+      "title": "AutoPruner",
+      "url": "https://arxiv.org/html/2610.23880v1",
+      "version": "v1",
+      "source_type": "author_paper",
+      "supported_observation": "删层结构、恢复训练和闭环反馈联合搜索；单层动作干预是候选依据，多层组合最终通过闭环结果判断。",
+      "boundary_for_EASE": "本项目当前不进行恢复训练。只借鉴有界结构搜索及保留失败诊断，不能以该论文的恢复后性能证明我们未训练路径的质量。"
+    }
+  ],
+  "local_evidence": {
+    "negative_proxy_transfer": "reports/ease_insights_20261103/ae_complement_beam_v2/completed_summary.json",
+    "current_fixed_budget_protocol": "reports/ease_insights_20261103/ae_complement_beam_v3/protocol.json",
+    "current_protocol_label_erratum": "reports/ease_insights_20261103/ae_complement_beam_v3/protocol_label_erratum.json"
+  },
+  "working_decision": "继续已冻结的AE14/D3同预算局部层交换，用整批闭环成功率决定候选。离线MSE、层激活频率、训练后专家差异以及单层敏感性，都不替代独立初态上的任务偏好复现。",
+  "possible_future_direction_is_inference_not_paper_result": "若层邻域仍无候选，可以研究固定视觉KV预算下的两种信息保留图形；这属于不同的注意力边选择族，需要另立数值、成本和质量门，不能冒充本轮层组合的阳性结果。"
+}

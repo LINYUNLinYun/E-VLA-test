@@ -1,0 +1,36 @@
+{
+  "scope": "One published episode/time; source GPU vs native CPU may differ numerically",
+  "public_prompt": "put the wine bottle on top of the cabinet",
+  "public_paths": {
+    "5": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/public_activation_samples/baseline_v3/libero_goal/paligemma/layer05/task02_ep01_s123.npz",
+    "16": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/public_activation_samples/baseline_v3/libero_goal/paligemma/layer16/task02_ep01_s123.npz"
+  },
+  "public_shape": [
+    968,
+    2048
+  ],
+  "inferred_trailing_text_padding": 56,
+  "device": "cpu",
+  "results": [
+    {
+      "mask_source": "padding_suffix_inferred_from_public_L5",
+      "valid_text_tokens": 144,
+      "exact_equal": false,
+      "max_abs": 3257.0,
+      "rmse": 82.05884552001953,
+      "relative_rmse": 1.2896530628204346,
+      "elapsed_s": 67.67359142005444
+    },
+    {
+      "mask_source": "native_prompt_token_mask",
+      "valid_text_tokens": 11,
+      "exact_equal": false,
+      "max_abs": 3798.0,
+      "rmse": 93.29145050048828,
+      "relative_rmse": 1.4661868810653687,
+      "elapsed_s": 70.90438048541546
+    }
+  ],
+  "exact_reuse_established": false,
+  "interpretation": "A failed equality check does not by itself distinguish weights, masks, and numerical backend differences"
+}

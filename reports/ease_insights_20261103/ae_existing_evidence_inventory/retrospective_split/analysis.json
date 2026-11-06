@@ -1,0 +1,378 @@
+{
+  "protocol": {
+    "status": "retrospective exploratory check, specified after aggregate/task summaries were available",
+    "input_sha256": "fbb7c043a9e63d5dcdcabb171068d278e8771d5ceea496ada9cc6f0f895a0ac6",
+    "train_trial_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "evaluate_trial_indices": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "tie_choice": "L2",
+    "grouping_modes": [
+      "fixed_metadata_category",
+      "task"
+    ],
+    "baseline": "single fixed path selected only from the training half; tie L2",
+    "no_split_search": true,
+    "bootstrap_draws": 20000,
+    "bootstrap_seed": 20261105,
+    "bootstrap_scope": "heldout task means conditional on this fitted route; not training-selection uncertainty",
+    "limitations": [
+      "Historical aggregate/task summaries were already inspected; this is not independent confirmation.",
+      "Trial labels and seed match, but physical initial state hashes are absent.",
+      "Only the same 40 tasks are evaluated; not unseen-task generalization.",
+      "No paired Full baseline or measured latency; no adaptive speedup claim."
+    ]
+  },
+  "train_pairs": 200,
+  "evaluation_pairs": 200,
+  "training_selected_fixed": "L2",
+  "train_successes": {
+    "L2": 177,
+    "L8": 174
+  },
+  "heldout_successes": {
+    "L2": 179,
+    "L8": 180
+  },
+  "routes": {
+    "fixed_metadata_category": {
+      "choices": [
+        {
+          "group": "multiple_object_placement",
+          "path": "L8"
+        },
+        {
+          "group": "single_object_placement",
+          "path": "L2"
+        },
+        {
+          "group": "state_change_and_object_placement",
+          "path": "L2"
+        },
+        {
+          "group": "state_change_only",
+          "path": "L2"
+        }
+      ],
+      "heldout_successes": 181,
+      "n": 200,
+      "baseline_successes": 179,
+      "difference_pp": 1.0,
+      "route_only": 2,
+      "baseline_only": 0,
+      "conditional_task_cluster_ci95_pp": [
+        0.0,
+        2.5
+      ]
+    },
+    "task": {
+      "choices": [
+        {
+          "group": [
+            "libero_10",
+            0
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            1
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            2
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            3
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            4
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            5
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            6
+          ],
+          "path": "L8"
+        },
+        {
+          "group": [
+            "libero_10",
+            7
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            8
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_10",
+            9
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            0
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            1
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            2
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            3
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            4
+          ],
+          "path": "L8"
+        },
+        {
+          "group": [
+            "libero_goal",
+            5
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            6
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            7
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            8
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_goal",
+            9
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            0
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            1
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            2
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            3
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            4
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            5
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            6
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            7
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            8
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_object",
+            9
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            0
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            1
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            2
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            3
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            4
+          ],
+          "path": "L8"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            5
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            6
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            7
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            8
+          ],
+          "path": "L2"
+        },
+        {
+          "group": [
+            "libero_spatial",
+            9
+          ],
+          "path": "L2"
+        }
+      ],
+      "heldout_successes": 181,
+      "n": 200,
+      "baseline_successes": 179,
+      "difference_pp": 1.0,
+      "route_only": 2,
+      "baseline_only": 0,
+      "conditional_task_cluster_ci95_pp": [
+        0.0,
+        2.5
+      ]
+    }
+  },
+  "task_direction_stability": {
+    "tie_in_at_least_one_half": 35,
+    "same_nonzero_direction": 4,
+    "opposite_nonzero_direction": 1
+  }
+}

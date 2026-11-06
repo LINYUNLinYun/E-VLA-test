@@ -1,0 +1,86 @@
+{
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi0_libero_pytorch_idea2",
+  "weights_sha256": "d755904758c1d5eca6abec9a1d2308d27dbd4e0cc3cf216794619632973c1c0c",
+  "bank": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3_supplement/e1_expand_init7_10_20261020T0431Z/episodes/E1/supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD2/A/libero_spatial/task00/init07/real_predict_inputs_first25.pkl",
+  "bank_sha256": "a4928db19fc13ac936a8738221669b76c6483e684e7f16e843d35bef07a6240b",
+  "backend": {
+    "torch": "2.7.1+cu126",
+    "cuda": "12.6",
+    "transformers": "4.53.2",
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "config": "Pi0Config(action_dim=32, action_horizon=50, max_token_len=48, dtype='bfloat16', paligemma_variant='gemma_2b', action_expert_variant='gemma_300m', pi05=False, discrete_state_input=False, pytorch_compile_mode=None)",
+    "attention": "eager",
+    "execution": "eager",
+    "num_steps": 10,
+    "state_path": "suffix"
+  },
+  "cuda_visible_devices": "2",
+  "implementation_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea2/openpi_backend.py": "58e3afca576a03724658bc41fa2f62150991911a6e450ef54cdfb31868a5677e",
+    "/root/nfs/embodied/benchmark/preparations/idea2/scheduler.py": "4901af9cc22d663d7976999104494a7dfcba5f5aeb3bc4ed580d74c2b4512328",
+    "/root/nfs/embodied/benchmark/preparations/idea2/nsys_profile.py": "0373dda0fa6a25bfda5997035272d1ca7e67f05d2478745fc1b48624774093d6",
+    "/root/nfs/embodied/benchmark/preparations/idea2/experiments.py": "4e891616d6dfd0634a1e95bb809327767237d2efb6644f0e14fe8fccbe092428",
+    "/root/nfs/embodied/benchmark/preparations/idea2/policy.py": "e79b7e052c9f6226cafe861b68643e7ef1ccb3472084eff6e8ad88012276dc5b",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models_pytorch/pi0_pytorch.py": "dcd7b6f508808ce4b7170a1720a4c62c6da04edae3652d16c94a469dca924e16",
+    "/root/nfs/embodied/benchmark/policies/openpi/.venv/lib/python3.11/site-packages/transformers/models/siglip/modeling_siglip.py": "ef2e99500f263fdd78db9d4d9a255e29d844eb92f53c25ad640f8056700ef84b",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models_pytorch/gemma_pytorch.py": "225092e06509da0ae37bb9dca55c00d2804255bb1496f7c8700304b4c52a95eb",
+    "/root/nfs/embodied/benchmark/policies/openpi/.venv/lib/python3.11/site-packages/transformers/models/paligemma/modeling_paligemma.py": "c945d330b829264f927f3ee5339f977238631772de07a28e855e265bb85fd53c",
+    "/root/nfs/embodied/benchmark/policies/openpi/.venv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py": "17eeb54e277939e58cd6f8a92719a275e36baf0c9f463b2754227d42f87aedde"
+  },
+  "args": {
+    "checkpoint": "shared/checkpoints/openpi/pi0_libero_pytorch_idea2",
+    "bank": "policies/realtime-vla-flash/results/idea1_v3_supplement/e1_expand_init7_10_20261020T0431Z/episodes/E1/supp_E1_D2_tau0.1_P2_Gconfirmed_disagreement_rejectD2/A/libero_spatial/task00/init07/real_predict_inputs_first25.pkl",
+    "output": "nsys/idea2_experiment/coarse_metadata_20261021",
+    "device": "cuda:0",
+    "iterations": 3,
+    "runtime_requests": 5,
+    "seed": 1701,
+    "coarse_only": true,
+    "launch": true
+  },
+  "frames": [
+    {
+      "bank_index": 0,
+      "input_hash": "814b605c4e07b25fe59e1f5d9d12408b310b6a480961a53ca84c33162106c2fd",
+      "original_record_seed": 3879649663,
+      "diagnostic_noise_seed": 1701,
+      "suite": "libero_spatial",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "bank_index": 1,
+      "input_hash": "e6bbb8cb95ca1a21e22a1d595522e64905bf76f1c924f1f90aa2037fe584eb37",
+      "original_record_seed": 3882280929,
+      "diagnostic_noise_seed": 1702,
+      "suite": "libero_spatial",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "bank_index": 2,
+      "input_hash": "bd99a9e5bd5dec918a4bc70bd61f013b9ac490caa8f3ac89555c46b35474c548",
+      "original_record_seed": 3823756563,
+      "diagnostic_noise_seed": 1703,
+      "suite": "libero_spatial",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "bank_index": 3,
+      "input_hash": "ea7c943072ce76e1d49c991bfe11a8b0430b79cd35875ed0fc439d23f0d9646d",
+      "original_record_seed": 650331304,
+      "diagnostic_noise_seed": 1704,
+      "suite": "libero_spatial",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "bank_index": 4,
+      "input_hash": "6f8f9f08a2bac0c2624dfe84076869203417e09bd96824ce86b382d2dc770012",
+      "original_record_seed": 2219196692,
+      "diagnostic_noise_seed": 1705,
+      "suite": "libero_spatial",
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    }
+  ],
+  "capture_scope": "Original experiments.pair plus original PipelinePolicy.predict/reset real-bank replay, NOT simulation or quality evaluation",
+  "caveat": "NVTX is host submission scope, not GPU busy time. Original pair/policy waits, scalar setup and stream choices are unchanged. Detailed NVTX can perturb host submission; coarse-only is an optional diagnostic contrast."
+}

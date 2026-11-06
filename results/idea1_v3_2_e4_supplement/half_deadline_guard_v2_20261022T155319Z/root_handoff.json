@@ -1,0 +1,48 @@
+{
+  "kind": "root_verified_guard_only_handoff",
+  "verified_at_utc": "2026-10-22 15:58:36 UTC",
+  "old_guard_pid": 3437927,
+  "old_guard_exited": true,
+  "old_guard_exit_reason": "Root intentionally revoked superseded old approval; this is not a scientific evaluation failure.",
+  "new_guard": {
+    "pid": 3503856,
+    "state": "S",
+    "ppid": 1958185,
+    "start_ticks": "2506385739",
+    "argv": "/policies/LIBERO-plus/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.resume_half_deadline_v2 --plan results/idea1_v3_2_e4_supplement/half_deadline_guard_v2_20261022T155319Z/plan.json --approval results/idea1_v3_2_e4_supplement/half_deadline_guard_v2_20261022T155319Z/root_approval.json --launch ",
+    "cwd": "/root/nfs/embodied/benchmark"
+  },
+  "new_guard_session": 15675,
+  "new_plan_hash": "cc04d900d84509921cfed450d96a0c44b427259b10c4eaa64a77d5e53bac71a9",
+  "execution_receipt": "results/idea1_v3_2_e4_supplement/half_deadline_guard_v2_20261022T155319Z/execution_1792684603/execution.json",
+  "current_status": "waiting_trigger_readonly",
+  "unchanged_model": {
+    "pid": 3371306,
+    "state": "S",
+    "ppid": 1958185,
+    "start_ticks": "2504776691",
+    "argv": "policies/realtime-vla-flash/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.policy_plus --serve --family libero_transfer --protocol results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/manifest.json --port 19143 --output results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/service_resume_20261022T112826Z.json --deadline-unix 1792692000 --launch ",
+    "cwd": "/root/nfs/embodied/benchmark"
+  },
+  "unchanged_worker": {
+    "pid": 3420227,
+    "state": "S",
+    "ppid": 1958185,
+    "start_ticks": "2505080299",
+    "argv": "/policies/LIBERO-plus/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.half_plus --output results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z --gpu 3 --gpu-uuid GPU-555cde36-5e41-bc44-0c69-ea47358fd703 --port 19143 --deadline-unix 1792692000 --launch ",
+    "cwd": "/root/nfs/embodied/benchmark"
+  },
+  "immediate_model_or_worker_restart": false,
+  "renderer_signals_sent": false,
+  "new_guard_gpu_scans_before_trigger": 0,
+  "trigger_unix": 1792690200,
+  "natural_child_cap_s": 1500,
+  "old_deadline_safety_end_unix": 1792691820,
+  "new_execution_deadline_unix": 1792713600,
+  "root_cpu_tests_passed": 25,
+  "pinned_source_receipt_hashes_verified": 36,
+  "revocation_file": "results/idea1_v3_2_e4_supplement/half_deadline_guard_v2_20261022T155319Z/root_approval.json",
+  "cancellation_marker": "results/idea1_v3_2_e4_supplement/half_deadline_guard_v2_20261022T155319Z/root_approval.json.cancel",
+  "monitor_note": "Original read-only monitor session93474 watches original model/worker identities and will exit during the authorized later handoff. Read the v2 guard receipt for actual replacement PIDs before interpreting that expected exit as experiment termination.",
+  "scope": "Same Plus half585 only; no CALVIN/B, new quality scope, newcard, relaxed crossGPU gate, scientific setting change, or completion claim."
+}

@@ -1,0 +1,44 @@
+{
+  "episode": "B4_libero_spatial_task01_init19",
+  "replan": 12,
+  "reference": {
+    "source_identity_hash": "0a13f6403ba7cdc0c179c845bb7380ba72c25e303cd3aaca28751c4ed49c3375",
+    "gate": {
+      "raw_equal": false,
+      "actions_equal": false,
+      "raw_max_abs": 0.015625,
+      "actions_max_abs": 0.00977688655257225,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "passed": false
+    },
+    "receipt": {
+      "request": 3,
+      "invocation": "d1b546720575441997ab2a8f1a0eeba5",
+      "purpose": "complete_vlm_d2_reference",
+      "episode": "B4_libero_spatial_task01_init19",
+      "replan": 12,
+      "seed": 2210128845,
+      "timing": {
+        "input_processing_ms": 3.800332546234131,
+        "vision_ms": 13.191167831420898,
+        "vlm_ms": 20.86809539794922,
+        "ae_ms": 13.298687934875488,
+        "decode_ms": 0.15898793935775757,
+        "nodes": [
+          1.0,
+          0.5,
+          0.0
+        ]
+      },
+      "wall_s": 0.053607791662216187,
+      "status": "complete"
+    },
+    "arrays_sha256": "efef596ea6b7713e31d07d124d41e7ce27ac11173170372971634c814218f53a"
+  },
+  "base_model_requests": 832,
+  "probe_native_requests": 3,
+  "combined_model_requests": 835,
+  "maximum_model_requests": 1000,
+  "error": "Native complete-VLM/D2 reference differs from the saved mechanism reference"
+}

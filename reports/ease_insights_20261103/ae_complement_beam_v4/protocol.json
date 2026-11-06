@@ -1,0 +1,173 @@
+{
+  "revision": "ease-cross-module-v4",
+  "status": "prospective_before_joint_costs_and_fresh_outcomes",
+  "time": 1793918134.088878,
+  "historical_discovery_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/cross_module_completed_audit_v1/audit.json",
+    "sha256": "d5ab19b83c696b7612a07b8a2a5ae30f6b65d0be9a17c1b10d8bca915091f6bd"
+  },
+  "previous_branch": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v3/completed_summary.json",
+    "sha256": "2b15de7b2da7e023dcebb6b1a1b0f7345960fed9ec099dcfb342dbd01fd3fe83"
+  },
+  "post_hoc_cross_branch_discovery": true,
+  "conditions": [
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": []
+    },
+    {
+      "id": "vlm_c",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        17
+      ],
+      "ae_skip": []
+    },
+    {
+      "id": "ae14_d3",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 3,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "reference_origins": {
+    "full_d10": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+      "cohort": "vlm_diversity_v2",
+      "condition": "full_d10",
+      "manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b"
+    },
+    "vlm_c": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+      "cohort": "vlm_diversity_v2",
+      "condition": "spread_c",
+      "manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b"
+    },
+    "ae14_d3": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery",
+      "cohort": "denoise_depth_paths_v1",
+      "condition": "ae14_d3",
+      "manifest_sha256": "df34a6e280492733ee57862368cd41fdbd54cb114ae385feb06d0fc6bb076ddf"
+    }
+  },
+  "preregistered_hypotheses": [
+    {
+      "suite": "libero_spatial",
+      "better": "ae14_d3",
+      "worse": "vlm_c"
+    },
+    {
+      "suite": "libero_10",
+      "better": "vlm_c",
+      "worse": "ae14_d3"
+    }
+  ],
+  "discovery": "Completed known cases only: Full77/80,VLM_c70/80,AE14D3 68/80. Spatial AE14 exceedsVLM_c by3/20;Long VLM_c exceedsAE14 by6/20. All240 source cases were reconstructed and80 initial inputs/noise/physical identities paired. These are not new replications.",
+  "budget_scope": "VLM12/AE18/D2 and VLM18/AE14/D3 have different retained layers/NFE. Matching is based exclusively on new joint native-policy costs,not layer counts or separate historical medians.",
+  "calibration": {
+    "episodes": 12,
+    "independent_quality_cases": 0,
+    "conditions": [
+      "full_d10",
+      "vlm_c",
+      "ae14_d3"
+    ],
+    "tasks": [
+      0
+    ],
+    "inits": [
+      45
+    ],
+    "noise_repeat": 0,
+    "numerical": "Unmodified adapter no-bypassD2/D3/D10 parity1e-5; VLM residuals,actual AE visits/NFE,time nodes,period/reset; all12 source trajectories bitwise identical.",
+    "joint_cost": "All three definitions in each of six completed services; four real bank inputs,6 warmups and12 measured requests each. Median per-service Full/path policy ratios both>=1.15; max/min of the two ratios<=1.10. No gate relaxation after timing."
+  },
+  "fresh_confirmation": {
+    "official_initials": [
+      47,
+      48,
+      49
+    ],
+    "tasks_per_suite": 10,
+    "suites": 4,
+    "conditions": [
+      "full_d10",
+      "vlm_c",
+      "ae14_d3"
+    ],
+    "noise_repeats": [
+      0,
+      1
+    ],
+    "episodes_per_noise_repeat": 360,
+    "total_episodes": 720,
+    "unique_physical_case_states_per_algorithm": 120,
+    "explanation": "The same three new official states are deliberately evaluated under two fixed policy-noise streams. This is240 rollouts per algorithm,not240 independent physical initial states. All six observations within each task remain one primary cluster.",
+    "seed_rule": "repeat0 uses the original condition-independent seed. repeat1 is the first little-endian32 bits of SHA256(ease-cross-module-v4/noise-repeat1/{original_seed}). Order and algorithm ID never affect noise.",
+    "primary": "Exactly two fixed directions. One-sided exact signflip over ten whole-task sums of six paired outcomes,including zero ties;Holm2.",
+    "bootstrap": "20,000 resamples of ten whole-task integer sums divided by60;seed20261111;linear percentile quantiles. Case resampling is a separately labeled sensitivity.",
+    "success": "Both direction differences positive,primary Holm2p<.05,both whole-task bootstrap lower>0,every task LOOpositive. Both algorithms globally>=.75 and>=Full-.15; each joint native-policy speed ratio>=1.15 and pair costs within10%.",
+    "no_reselection": true,
+    "no_more_rollouts_after_significance_inspection": true
+  },
+  "known_power_boundary": "Historical Spatial differences occur in2/10 tasks andLong in5/10. Strong case-level repetition alone will not override a failed task-cluster primary verdict.",
+  "fixed_science": {
+    "H": 50,
+    "R": 5,
+    "Full_D": 10,
+    "period": 2,
+    "vision_layers": 27,
+    "cameras": 2,
+    "fresh_cameras": true,
+    "training": false,
+    "VLM_c": "Skip[4,7,10,13,15,17] with the existing residual extrapolation;AE18/D2.",
+    "AE14": "FullVLM18;skipAE[2,6,7,8] onFastD3;empty VLM mask leaves residual compensation unused."
+  },
+  "physical_contract": {
+    "environment_seed": 7,
+    "settling_actions": 10,
+    "policy_action_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    }
+  },
+  "maximum_new_physical_rollouts": 732,
+  "stop": "If joint calibration/costs fail,do not collect confirmation. If720 fresh rollouts fail either direction or quality/cost gate,preserve not_reproduced. Do not change masks,suites,seed streams,primary tests or thresholds.",
+  "limits": "Post-hoc historical discovery followed by new preregistered validation;no global adaptive-routing-necessity,phase-switching,closed-loop acceleration or study-wide5% error claim. Dense/AE16 alternatives can still be better fixed routes."
+}

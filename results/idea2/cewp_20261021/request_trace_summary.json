@@ -1,0 +1,893 @@
+[
+  {
+    "plan": "profile_d10_full",
+    "mode": "eager_serial",
+    "aggregate": {
+      "cewp/continuous/eager_serial": {
+        "requests": 5,
+        "kernel_union_ms": 397.675023,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 35.4110822,
+            "mean_gpu_envelope_ms": 370.9421284
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 44.123922400000005,
+            "mean_gpu_envelope_ms": 102.1071178
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 397.675023,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 81846,
+    "matched": 81846,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_full",
+    "mode": "eager_dual_prefill_first",
+    "aggregate": {
+      "cewp/continuous/eager_dual_prefill_first": {
+        "requests": 5,
+        "kernel_union_ms": 396.74519799999996,
+        "overlap_ms": 3.1707050000000003,
+        "overlap_fraction": 0.007991791749424024,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 35.7114684,
+            "mean_gpu_envelope_ms": 369.48459060000005
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 44.2717122,
+            "mean_gpu_envelope_ms": 101.55065499999999
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 3.170705,
+      "kernel_union_ms": 396.745198,
+      "overlap_fraction": 0.007991791749424023,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 81846,
+    "matched": 81846,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_full",
+    "mode": "graph_serial",
+    "aggregate": {
+      "cewp/continuous/graph_serial": {
+        "requests": 5,
+        "kernel_union_ms": 363.328696,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 31.744036800000003,
+            "mean_gpu_envelope_ms": 35.5750224
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.9217024,
+            "mean_gpu_envelope_ms": 41.8003494
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 363.328696,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_full",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 311.62610900000004,
+        "overlap_ms": 184.193541,
+        "overlap_fraction": 0.5910722358632665,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 47.7609892,
+            "mean_gpu_envelope_ms": 60.121278800000006
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 51.402940799999996,
+            "mean_gpu_envelope_ms": 52.966335400000006
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 184.193541,
+      "kernel_union_ms": 311.626109,
+      "overlap_fraction": 0.5910722358632665,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_full",
+    "mode": "graph_pre_high",
+    "aggregate": {
+      "cewp/continuous/graph_pre_high": {
+        "requests": 5,
+        "kernel_union_ms": 338.02215,
+        "overlap_ms": 110.454192,
+        "overlap_fraction": 0.3267661364795177,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 42.975585,
+            "mean_gpu_envelope_ms": 54.6497108
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 46.71968340000001,
+            "mean_gpu_envelope_ms": 47.91247499999999
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 110.454192,
+      "kernel_union_ms": 338.02215,
+      "overlap_fraction": 0.3267661364795177,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 361.5641,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 31.690983799999998,
+            "mean_gpu_envelope_ms": 35.8049192
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.621836200000004,
+            "mean_gpu_envelope_ms": 41.481035000000006
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 361.5641,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 336.369193,
+        "overlap_ms": 66.000621,
+        "overlap_fraction": 0.19621482101662027,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 35.772815800000004,
+            "mean_gpu_envelope_ms": 40.0082782
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 44.701147,
+            "mean_gpu_envelope_ms": 60.289718400000005
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 66.000621,
+      "kernel_union_ms": 336.369193,
+      "overlap_fraction": 0.19621482101662027,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_all",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 361.766168,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 31.7005874,
+            "mean_gpu_envelope_ms": 35.2430166
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.6526462,
+            "mean_gpu_envelope_ms": 41.533699999999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 361.766168,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_all",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 311.247968,
+        "overlap_ms": 176.012075,
+        "overlap_fraction": 0.5655043344732776,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 47.102458,
+            "mean_gpu_envelope_ms": 61.0154076
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 50.3495506,
+            "mean_gpu_envelope_ms": 51.8917274
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 176.012075,
+      "kernel_union_ms": 311.247968,
+      "overlap_fraction": 0.5655043344732776,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vlm",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 361.747015,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 31.705505,
+            "mean_gpu_envelope_ms": 35.9013552
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.643898,
+            "mean_gpu_envelope_ms": 41.584744799999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 361.747015,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vlm",
+    "mode": "graph_pre_high",
+    "aggregate": {
+      "cewp/continuous/graph_pre_high": {
+        "requests": 5,
+        "kernel_union_ms": 338.920537,
+        "overlap_ms": 103.851219,
+        "overlap_fraction": 0.30641760431295434,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 42.384043000000005,
+            "mean_gpu_envelope_ms": 54.04889000000001
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 46.1703082,
+            "mean_gpu_envelope_ms": 47.672691400000005
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 103.851219,
+      "kernel_union_ms": 338.920537,
+      "overlap_fraction": 0.30641760431295434,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_full",
+    "mode": "graph_serial",
+    "aggregate": {
+      "cewp/continuous/graph_serial": {
+        "requests": 5,
+        "kernel_union_ms": 220.85224399999998,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 3.2190326,
+            "mean_gpu_envelope_ms": 3.274317
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.9514162,
+            "mean_gpu_envelope_ms": 41.851338399999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 220.852244,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 20718,
+    "matched": 20718,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_full",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 140.02478200000002,
+        "overlap_ms": 9.776069,
+        "overlap_fraction": 0.06981670573141831,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 4.5078754,
+            "mean_gpu_envelope_ms": 5.318721399999999
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 25.452294799999997,
+            "mean_gpu_envelope_ms": 26.0865456
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 16.79097,
+      "kernel_union_ms": 133.009881,
+      "overlap_fraction": 0.12623851606934375,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 16100,
+    "matched": 16100,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_vision",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 219.376964,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 3.2102654,
+            "mean_gpu_envelope_ms": 3.2656784
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.6651274,
+            "mean_gpu_envelope_ms": 41.485427
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 219.376964,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 20718,
+    "matched": 20718,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_vision",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 138.949342,
+        "overlap_ms": 9.730208,
+        "overlap_fraction": 0.07002701747231016,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 4.417853599999999,
+            "mean_gpu_envelope_ms": 5.050487799999999
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 25.3180564,
+            "mean_gpu_envelope_ms": 25.925279999999997
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 15.823715,
+      "kernel_union_ms": 132.855835,
+      "overlap_fraction": 0.11910440365679084,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 16100,
+    "matched": 16100,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_full",
+    "mode": "graph_serial",
+    "aggregate": {
+      "cewp/continuous/graph_serial": {
+        "requests": 5,
+        "kernel_union_ms": 283.691333,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 15.879304199999998,
+            "mean_gpu_envelope_ms": 16.1470554
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.8589624,
+            "mean_gpu_envelope_ms": 41.706217
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 283.691333,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 47478,
+    "matched": 47478,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_full",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 249.46197,
+        "overlap_ms": 105.984632,
+        "overlap_fraction": 0.4248528623421037,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 23.946433,
+            "mean_gpu_envelope_ms": 27.928695599999998
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 47.1428874,
+            "mean_gpu_envelope_ms": 48.63524099999999
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 105.984632,
+      "kernel_union_ms": 249.46197,
+      "overlap_fraction": 0.4248528623421037,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 47478,
+    "matched": 47478,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_vision",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 283.051325,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 15.894105,
+            "mean_gpu_envelope_ms": 16.1615464
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.71616,
+            "mean_gpu_envelope_ms": 41.6593998
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 283.051325,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 47478,
+    "matched": 47478,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_vision",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 222.35727500000002,
+        "overlap_ms": 53.365318,
+        "overlap_fraction": 0.2399980751697915,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 19.2165948,
+            "mean_gpu_envelope_ms": 19.8384528
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 35.9279238,
+            "mean_gpu_envelope_ms": 40.162018599999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 53.365318,
+      "kernel_union_ms": 222.357275,
+      "overlap_fraction": 0.2399980751697915,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 45169,
+    "matched": 45169,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision_wait",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 364.734208,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 32.1026338,
+            "mean_gpu_envelope_ms": 37.4104368
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.84420780000001,
+            "mean_gpu_envelope_ms": 41.68663980000001
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 364.734208,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision_wait",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 337.474543,
+        "overlap_ms": 67.40928100000001,
+        "overlap_fraction": 0.19974626945416743,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 35.89151880000001,
+            "mean_gpu_envelope_ms": 40.098015000000004
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 45.085246,
+            "mean_gpu_envelope_ms": 59.8366324
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 67.409281,
+      "kernel_union_ms": 337.474543,
+      "overlap_fraction": 0.1997462694541674,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 80928,
+    "matched": 80928,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision_wait_modulation",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 332.27749199999994,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 25.7981256,
+            "mean_gpu_envelope_ms": 26.691640200000002
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.657372800000005,
+            "mean_gpu_envelope_ms": 41.5716118
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 332.277492,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 77448,
+    "matched": 77448,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d10_vision_wait_modulation",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 305.800974,
+        "overlap_ms": 62.098309,
+        "overlap_fraction": 0.20306772796609862,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 29.7244728,
+            "mean_gpu_envelope_ms": 30.921827999999998
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 43.855383800000006,
+            "mean_gpu_envelope_ms": 53.740996800000005
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 62.098309,
+      "kernel_union_ms": 305.800974,
+      "overlap_fraction": 0.20306772796609862,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 77448,
+    "matched": 77448,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_vision_wait",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 219.659053,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 3.2129152,
+            "mean_gpu_envelope_ms": 3.2686278
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.718895399999994,
+            "mean_gpu_envelope_ms": 41.538167
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 219.659053,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 20718,
+    "matched": 20718,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d1_vision_wait",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 214.417656,
+        "overlap_ms": 15.389084,
+        "overlap_fraction": 0.07177153359049873,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 4.1583116,
+            "mean_gpu_envelope_ms": 4.3171228
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 41.8030364,
+            "mean_gpu_envelope_ms": 42.827016199999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 15.389084,
+      "kernel_union_ms": 214.417656,
+      "overlap_fraction": 0.07177153359049872,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 20718,
+    "matched": 20718,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_vision_wait",
+    "mode": "graph_serial_high",
+    "aggregate": {
+      "cewp/continuous/graph_serial_high": {
+        "requests": 5,
+        "kernel_union_ms": 282.569225,
+        "overlap_ms": 0.0,
+        "overlap_fraction": 0.0,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 15.874728200000002,
+            "mean_gpu_envelope_ms": 16.141067800000002
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 40.6391168,
+            "mean_gpu_envelope_ms": 41.461937999999996
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 0.0,
+      "kernel_union_ms": 282.569225,
+      "overlap_fraction": 0.0,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 47478,
+    "matched": 47478,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  },
+  {
+    "plan": "profile_d5_vision_wait",
+    "mode": "graph_ae_high",
+    "aggregate": {
+      "cewp/continuous/graph_ae_high": {
+        "requests": 5,
+        "kernel_union_ms": 257.00628800000004,
+        "overlap_ms": 67.046656,
+        "overlap_fraction": 0.26087554713836414,
+        "modules": {
+          "ae": {
+            "mean_kernel_busy_ms": 19.9120028,
+            "mean_gpu_envelope_ms": 20.581767000000003
+          },
+          "prefill": {
+            "mean_kernel_busy_ms": 44.898586,
+            "mean_gpu_envelope_ms": 50.278652400000006
+          }
+        }
+      }
+    },
+    "global_measured_window": {
+      "overlap_ms": 67.046656,
+      "kernel_union_ms": 257.006288,
+      "overlap_fraction": 0.2608755471383642,
+      "scope": "All measured AE/Prefill kernels; includes overlap between different request submissions, unlike per-request aggregate"
+    },
+    "total_kernels": 47478,
+    "matched": 47478,
+    "unassigned_measured": 65,
+    "device_sync": 0,
+    "capture_begin": 0
+  }
+]

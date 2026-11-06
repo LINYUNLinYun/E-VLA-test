@@ -1,0 +1,146 @@
+{
+  "schema": "ease-gpu-resource-session-api-v1",
+  "implementation": "preparations.ease_insights_20261103.gpu_resource_session",
+  "cli": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+    "-m",
+    "preparations.ease_insights_20261103.gpu_resource_session",
+    "--gpu-uuid",
+    "{gpu_uuid}",
+    "--port",
+    "{port}",
+    "--plan",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_continuous_campaign/plan.json",
+    "--output",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_continuous_campaign/sessions/slot_0",
+    "--launch"
+  ],
+  "plan": {
+    "schema": "ease-gpu-resource-campaign-v1",
+    "campaign_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_continuous_campaign",
+    "allowed_outputs": [
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/confirmation"
+    ],
+    "source_hashes": {
+      "preparations/ease_insights_20261103/gpu_resource_session.py": "ACTUAL_SHA256",
+      "preparations/ease_insights_20261103/gpu_owned_keeper.py": "ACTUAL_SHA256",
+      "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "FROZEN_SHA256"
+    },
+    "keeper_max_memory_mib": 512
+  },
+  "task": {
+    "schema": "ease-gpu-resource-task-v1",
+    "id": "discovery_local_spatial_shard00of01",
+    "logical_job_id": "ORIGINAL_LOGICAL_QUEUE_ID",
+    "argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--condition",
+      "local_spatial",
+      "--gpu-uuid",
+      "{gpu_uuid}",
+      "--port",
+      "{port}",
+      "--launch"
+    ],
+    "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery/local_spatial/discovery_shard00of01_complete.json",
+    "manifest_hash": "FROZEN_MANIFEST_HASH",
+    "output": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+    "condition": "local_spatial",
+    "stage": "discovery",
+    "shard_index": 0,
+    "shards": 1,
+    "env": {},
+    "activation_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_continuous_campaign/transactions/TRANSACTION_ID/committed.json"
+  },
+  "activation": {
+    "schema": "ease-gpu-resource-activation-v1",
+    "task_sha256": {
+      "discovery_local_spatial_shard00of01": "SHA256_OF_COMPLETE_TASK_FILE_BYTES"
+    }
+  },
+  "paths": {
+    "tasks": "tasks/<id>.json (append-only; id matches [A-Za-z0-9_.-]{1,200})",
+    "claims": "claims/<sha256(id)>.lock (nonblocking flock)",
+    "outcomes": "outcomes/<sha256(id)>.json (complete or attention; no automatic retry)",
+    "release_campaign": "release (root-created file)",
+    "release_gpu": "releases/<full GPU UUID> (root-created file)",
+    "resume_requests": "resumes/<slotname>/<request_id>.json (root-created append-only control request; request_id matches [A-Za-z0-9_.-]{1,200})",
+    "resume_receipts": "sessions/<slotname>/resume_receipts/<request_id>.json (exclusive append-only decision); changed consumed bytes use changed_<sha256(request_id bytes + NUL + observed request SHA256 ASCII)>.json, a fixed 77-byte rejection filename; receipt body retains the complete original request_id"
+  },
+  "semantics": {
+    "persistent": true,
+    "empty_inbox": "idle_holding; no keeper/context/lease release",
+    "technical_task_failure": "attention_holding; original valid cases unchanged; no automatic retry; keeper/lease retained",
+    "keeper_or_ownership_failure": "fatal_attention; no more tasks; inherited global flock retained until root release; context loss reported honestly",
+    "explicit_release": "at task boundary record release_requested; reap only owned server/worker children, close keeper control writer, wait for keeper process exit; only then write output/complete.json and exit0. Cleanup failure retains global flock/fatal_attention and retries release cleanup.",
+    "parent_death": "control EOF; keeper releases its own allocation/context; writer is never passed to server/worker",
+    "activation": "must be campaign/transactions/<tx>/committed.json, matching schema and exact task byte SHA256",
+    "source_policy": "plan immutable; source pins verified before task; original frozen read_manifest(verify_sources=True) and all scientific gates remain real",
+    "dynamic_outputs": "not implemented; only fixed discovery/confirmation roots; unsupported tasks cause attention hold, never automatic session exit",
+    "pid_namespace": "compute query PID recorded as unresolved namespace; never signalled/equated to local PID; admission is live owned Driver keeper plus sole bounded compute consistency",
+    "science_environment": "only current original empty non-resource env accepted; scientific environment is frozen runner.environment() plus identical assigned GPU/EGL settings",
+    "operator_SIGTERM_SIGINT": "set attention request; finish current science task, then retain keeper/global lease without taking new tasks; only root release file exits",
+    "explicit_resume": "At attention/fatal hold boundaries inspect this slot resume inbox. Only nonfatal attention can be cleared. Revalidate exact request plan/PID/start/UUID/attention/reason, original keeper live, all science children reaped, exact fresh scheduler/session identity and inherited lease path/device/inode/FD set, immutable plan/source pins and assigned sole-small keeper consistency. Re-read exact request bytes before durable receipt. Keep the same keeper/control writer/global lease; original attention outcomes remain byte-identical and old task IDs remain skipped. Scientific retry requires root to publish a new activated descriptor/ID.",
+    "resume_refusal": "Invalid/stale/foreign/source-changed requests get rejected append-only receipts and preserve attention without releasing. Fatal/keeperless/unverified ownership cannot resume. Existing fatal keeper-loss handling remains active. A consumed ID is never replayed; changed bytes create a separate rejected audit and require a new request ID. A receipt-write failure cannot clear attention. Explicit release files retain priority."
+  },
+  "review_notes": [
+    "Resource execution revision is added to original identity/result/marker artifacts; scientific runtime revision and original server/worker command schema preserved.",
+    "Original valid cases are validated via frozen completed/recover_case and skipped.",
+    "No scheduler, gate, keeper or frozen scientific source is modified by this module.",
+    "This session retains a context/allocation, not exclusive whole-device enforcement against external users."
+  ],
+  "validation": {
+    "session_cpu_tests": 29,
+    "keeper_and_session_cpu_tests": 40,
+    "real_frozen_pure_prepare": "Passed actual read_manifest(verify_sources=True), validate_output/planned_config/cases and runner.run(launch=False), yielded original120-case server/worker argv. No keeper/driver/GPU query/result writes.",
+    "resume_cpu_tests": "9 additional CPU fake groups: same keeper/lease and next descriptor, old outcomes immutable/no rerun, strict request/source/binding/children/scan refusals, fatal/keepergone, one-use/changed bytes, scan-time mutation and receipt I/O failure, malformed/symlink requests and append-only receipts, missing session source still records exact rejected request hash, 200-character request ID receives a bounded changed-bytes rejection audit.",
+    "campaign_cpu_tests": 30,
+    "session_and_campaign_cpu_tests": 59,
+    "campaign_recovery_cpu_tests": "Includes fake manifest_reader injection; duplicate logical A omitting B with recomputed legal hashes; condition/stage/output/shard/env/hash/completion-field changes despite unchanged argv; reject queue prepends/reorders/nonjobs metadata changes; allow tail appends and supersede pre-CAS format-only queue changes."
+  },
+  "resource_slot_completion": {
+    "schema": "ease-gpu-resource-slot-release-v1",
+    "complete": true,
+    "scope": "resource_slot_only",
+    "scientific_success": false,
+    "phase": "released or released_after_fatal",
+    "reason": "explicit_root_release_file",
+    "plan_sha256": "PLAN_SHA256",
+    "session_id": "slot_0",
+    "gpu_uuid": "assigned full UUID",
+    "pid": "session PID",
+    "proc_start_ticks": "session startticks",
+    "time": "unix time",
+    "keeper_cleanup": "confirmed process exit and exitcode",
+    "owned_scientific_children_reaped": true
+  },
+  "resume_request": {
+    "schema": "ease-gpu-resource-resume-v1",
+    "action": "resume_after_attention",
+    "plan_sha256": "CURRENT_IMMUTABLE_PLAN_SHA256",
+    "session_pid": "integer exact local session PID",
+    "proc_start_ticks": "exact local session start ticks",
+    "gpu_uuid": "assigned full GPU UUID",
+    "attention_sha256": "sha256(json.dumps(current_attention, sort_keys=True).encode())",
+    "reason": "Nonempty root review reason; no additional request fields accepted"
+  },
+  "resume_receipt": {
+    "schema": "ease-gpu-resource-resume-receipt-v1",
+    "phase": "resumed or rejected",
+    "request_id": "request filename stem",
+    "request_sha256": "SHA256 of exact observed request bytes",
+    "attention_sha256": "attention snapshot hash",
+    "plan_sha256": "current plan hash",
+    "session_pid": "bound local PID",
+    "proc_start_ticks": "bound local start ticks",
+    "gpu_uuid": "assigned full UUID",
+    "time": "unix time",
+    "error": "rejection reason or null",
+    "source_proof": "verified boolean, actual session source SHA256 and plan SHA256; successful proof additionally includes verified source_hashes, fresh inherited scheduler lease binding, original keeper ready identity and sole-small assigned-GPU consistency"
+  }
+}

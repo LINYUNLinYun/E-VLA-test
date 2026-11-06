@@ -1,0 +1,47 @@
+{
+  "schema": "resident-runtime-components-CPU-v3",
+  "status": "CPU25_passed_actual_GPU_gate_pending_not_deployed",
+  "time": 1793878788.0595098,
+  "tests": {
+    "backend_adapter": 7,
+    "memory_floor": 8,
+    "prompt_lifecycle": 10,
+    "total": 25
+  },
+  "exit_code": 0,
+  "command": [
+    "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "preparations.ease_insights_20261103.resident_runtime_v1.test_backend_adapter",
+    "preparations.ease_insights_20261103.resident_runtime_v1.test_memory_floor",
+    "preparations.ease_insights_20261103.resident_runtime_v1.test_prompt_runtime"
+  ],
+  "sources": {
+    "preparations/ease_insights_20261103/resident_runtime_v1/README.md": "5ad3f1b9c4babfa26bcfee6cfd9c64b417461b5a1aa25c26308ef16d11ded3a8",
+    "preparations/ease_insights_20261103/resident_runtime_v1/__init__.py": "3418564301ae069a0338b19c07181f23fad1e57ed14b1e350fda4e3ebc839c2a",
+    "preparations/ease_insights_20261103/resident_runtime_v1/backend_adapter.py": "f60b3396aeebadcb7701a77497364015b82d99fdf8893e2ee8e292f9d6b65f33",
+    "preparations/ease_insights_20261103/resident_runtime_v1/memory_floor.py": "ca05a8dc4720dfebcb32daf190a4f9197e943e6796b006c798e808eb97947ccc",
+    "preparations/ease_insights_20261103/resident_runtime_v1/prompt_runtime.py": "29d63e8db3309c3ff00ea2159ca73b59bf1a596085095e4e0ae0863c5bbd7cc0",
+    "preparations/ease_insights_20261103/resident_runtime_v1/test_backend_adapter.py": "012d3cb11a7668b259be4f0743e3486cd589e1edbed172cfeec61d677634bda8",
+    "preparations/ease_insights_20261103/resident_runtime_v1/test_memory_floor.py": "ff0d50a9586786dd6853ea66a61762daffce024c8982d81db6a2f4d9d49c8904",
+    "preparations/ease_insights_20261103/resident_runtime_v1/test_prompt_runtime.py": "901f30c0be80698c95baae00750a7c686864eb900e06173c738682f9e2efca28"
+  },
+  "scope": {
+    "torch_imported": false,
+    "GPU_model_environment_started": false,
+    "active_frozen_branch_modified": false,
+    "GPU_numeric_parity_validated": false,
+    "physical_memory_floor_validated": false,
+    "multicondition_server_implemented": false
+  },
+  "profile_scope": "Reviewed whole active pipeline peak includes renderer/environment/graph/scratch; observedGPUtotal11.5GiB isnotperprocess/maximum evidence",
+  "remaining_gates": [
+    "Real frozen-versus-resident numeric comparisons on old4inputbank andallavailable20promptinputs",
+    "Full/D2/D2,mask/case/prompt changes,residualreset/noiseidentity,actualNFE",
+    "Actualstorage/data_ptr/PID/context/NVMLfloor throughCPUanalysis",
+    "Separatelyversionedmulticonditionserver/protocol/worker/resource/researchmanifests"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "pending": [],
+  "cpu_only": true,
+  "checked_utc": "2026-10-25T06:48:00.159049+00:00",
+  "checks": 79253,
+  "formal": [
+    {
+      "name": "formal_sm16_tail0",
+      "sm": 16,
+      "tail": 0,
+      "rows": 1804,
+      "lead3_8request_ms": 476.25779543071985
+    },
+    {
+      "name": "formal_sm16_tail1",
+      "sm": 16,
+      "tail": 1,
+      "rows": 1804,
+      "lead3_8request_ms": 477.1864761784673
+    },
+    {
+      "name": "formal_sm16_tail2",
+      "sm": 16,
+      "tail": 2,
+      "rows": 1804,
+      "lead3_8request_ms": 477.05549892038107
+    },
+    {
+      "name": "formal_sm16_tail2_repeat",
+      "sm": 16,
+      "tail": 2,
+      "rows": 1804,
+      "lead3_8request_ms": 477.12672010064125
+    },
+    {
+      "name": "formal_sm16_tail1_repeat",
+      "sm": 16,
+      "tail": 1,
+      "rows": 1804,
+      "lead3_8request_ms": 476.74174949526787
+    },
+    {
+      "name": "formal_sm16_tail0_repeat",
+      "sm": 16,
+      "tail": 0,
+      "rows": 1804,
+      "lead3_8request_ms": 476.8020951375365
+    },
+    {
+      "name": "formal_gpu3_sm32_tail0",
+      "sm": 32,
+      "tail": 0,
+      "rows": 1804,
+      "lead3_8request_ms": 469.75000616163015
+    },
+    {
+      "name": "formal_gpu3_sm32_tail1",
+      "sm": 32,
+      "tail": 1,
+      "rows": 1804,
+      "lead3_8request_ms": 471.4368011429906
+    },
+    {
+      "name": "formal_gpu3_sm32_tail2",
+      "sm": 32,
+      "tail": 2,
+      "rows": 1804,
+      "lead3_8request_ms": 474.4781229272485
+    },
+    {
+      "name": "formal_gpu3_sm32_tail2_repeat",
+      "sm": 32,
+      "tail": 2,
+      "rows": 1804,
+      "lead3_8request_ms": 474.50353000313044
+    },
+    {
+      "name": "formal_gpu3_sm32_tail1_repeat_retry",
+      "sm": 32,
+      "tail": 1,
+      "rows": 1804,
+      "lead3_8request_ms": 653.691901601851
+    },
+    {
+      "name": "formal_gpu3_sm32_tail0_repeat",
+      "sm": 32,
+      "tail": 0,
+      "rows": 1804,
+      "lead3_8request_ms": 470.18557772040367
+    }
+  ],
+  "formal_oracle_checks": 48,
+  "measurement_rows": 21600,
+  "formal_slow_result_retained": {
+    "name": "formal_gpu3_sm32_tail1_repeat_retry",
+    "sm": 32,
+    "tail": 1,
+    "rows": 1804,
+    "lead3_8request_ms": 653.691901601851
+  },
+  "diagnostic20_ms": 654.392509162426,
+  "matched_outputs": 600,
+  "matched_oracle_checks": 48,
+  "counterfactual_outputs": 600,
+  "counter_tail0_replay_checks": 200,
+  "quality": {
+    "sm16_tail0": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1217,
+      "requests": 247,
+      "work_s": 164.41736271232367
+    },
+    "sm16_tail1": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1210,
+      "requests": 247,
+      "work_s": 152.53710301592946
+    },
+    "sm16_tail2": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1219,
+      "requests": 248,
+      "work_s": 162.46106776967645
+    },
+    "sm32_tail0": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1342,
+      "requests": 273,
+      "work_s": 165.51105291768909
+    },
+    "sm32_tail1": {
+      "cases": 8,
+      "successes": 7,
+      "steps": 1381,
+      "requests": 279,
+      "work_s": 162.22520665079355
+    },
+    "sm32_tail2": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1232,
+      "requests": 249,
+      "work_s": 150.55948010087013
+    },
+    "fresh18": {
+      "cases": 8,
+      "successes": 8,
+      "steps": 1181,
+      "requests": 239,
+      "work_s": 155.17596252262592
+    }
+  },
+  "quality_task_failures": [
+    {
+      "label": "sm32_tail1",
+      "suite": "libero_spatial",
+      "task": 5,
+      "steps": 220
+    }
+  ],
+  "quality_bootstrap_checks": 48,
+  "trace_conditions": [
+    "fresh_sm32_tail1",
+    "fresh_sm32_tail2"
+  ],
+  "report": {
+    "path": "docs/experiments/idea2/idea2_fresh_tail_report_20261025.md",
+    "sha256": "c860cc7e1819b1cfc481610e4105289937c2960e3a4f10e699cc500e4d10f673",
+    "links_checked": 26,
+    "missing_links": [],
+    "minor_corrections": [
+      "Explicit all-request averaging including terminal lookahead zero",
+      "First mandatory snapshot 5\u20139us; later fresh snapshot after publication, not also microseconds",
+      "Explicit wrong-EGL technical exclusion and own-renderer SM32 loading interruption",
+      "Reproduction full environment and GPU UUID pin",
+      "Formal fresh18 uses same quota; quality fresh18 unrestricted",
+      "First request rounded53.87ms"
+    ]
+  },
+  "exclusions": [
+    "GPU0 preflight foreign process",
+    "GPU0 SM32 load interference: zero measured rows",
+    "First matched gate missing CPU JAX environment: OOM, zero outputs",
+    "Wrong EGL closedloop_gpu2: first success technically invalid; full run excluded",
+    "SM32 tail1_repeat load interference caused by our wrong-EGL graphics process: zero measured rows",
+    "GPU3 grouped quality planned-only"
+  ],
+  "limitations": [
+    "Only within-family same-GPU formal timing comparisons.",
+    "Slow tail1 formal and diagnostic retained; root cause not proven.",
+    "Matched approximation versus fresh differs from exact implementation oracle.",
+    "Free closed-loop trajectories are not matched latency experiments.",
+    "Tail2 first request costs approximately6.8ms; steady throughput cannot establish latency neutrality.",
+    "No new camera SLO or full LIBERO validation."
+  ]
+}

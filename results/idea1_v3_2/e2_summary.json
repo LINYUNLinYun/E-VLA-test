@@ -1,0 +1,300 @@
+{
+  "quality": {
+    "full": {
+      "successes": 34,
+      "episodes": 40,
+      "rate": 0.85,
+      "suites": {
+        "libero_spatial": {
+          "successes": 9,
+          "episodes": 10
+        },
+        "libero_object": {
+          "successes": 10,
+          "episodes": 10
+        },
+        "libero_goal": {
+          "successes": 9,
+          "episodes": 10
+        },
+        "libero_10": {
+          "successes": 6,
+          "episodes": 10
+        }
+      }
+    },
+    "reuse03": {
+      "successes": 34,
+      "episodes": 40,
+      "rate": 0.85,
+      "suites": {
+        "libero_spatial": {
+          "successes": 9,
+          "episodes": 10
+        },
+        "libero_object": {
+          "successes": 9,
+          "episodes": 10
+        },
+        "libero_goal": {
+          "successes": 10,
+          "episodes": 10
+        },
+        "libero_10": {
+          "successes": 6,
+          "episodes": 10
+        }
+      }
+    },
+    "d2": {
+      "successes": 35,
+      "episodes": 40,
+      "rate": 0.875,
+      "suites": {
+        "libero_spatial": {
+          "successes": 9,
+          "episodes": 10
+        },
+        "libero_object": {
+          "successes": 10,
+          "episodes": 10
+        },
+        "libero_goal": {
+          "successes": 10,
+          "episodes": 10
+        },
+        "libero_10": {
+          "successes": 6,
+          "episodes": 10
+        }
+      }
+    }
+  },
+  "latency": {
+    "reuse03": {
+      "request_p50_ms": 83.1206701695919,
+      "ae_p50_ms": 5.631599575281143,
+      "request_speedup_vs_native": 1.1921164717500723,
+      "ae_speedup_vs_matched_full": 3.9051676863654072
+    },
+    "d2": {
+      "request_p50_ms": 82.3700875043869,
+      "ae_p50_ms": 5.043679848313332,
+      "request_speedup_vs_native": 1.2029794195228702,
+      "ae_speedup_vs_matched_full": 4.36037602412286
+    }
+  },
+  "timing_summary": {
+    "native": {
+      "request_ms": {
+        "p50": 99.08952005207539,
+        "p95": 112.77574859559536,
+        "p99": 114.72790814936161
+      }
+    },
+    "refresh_all": {
+      "request_ms": {
+        "p50": 99.3407815694809,
+        "p95": 109.15001854300498,
+        "p99": 115.78802216798067
+      },
+      "ae_ms": {
+        "p50": 21.992340683937073,
+        "p95": 24.517299607396122,
+        "p99": 24.81468554586172
+      }
+    },
+    "reuse03": {
+      "request_ms": {
+        "p50": 83.1206701695919,
+        "p95": 87.47608698904514,
+        "p99": 89.49913021177053
+      },
+      "ae_ms": {
+        "p50": 5.631599575281143,
+        "p95": 6.5763723105192184,
+        "p99": 7.190634496510029
+      }
+    },
+    "d2": {
+      "request_ms": {
+        "p50": 82.3700875043869,
+        "p95": 86.51522416621447,
+        "p99": 87.7529402077198
+      },
+      "ae_ms": {
+        "p50": 5.043679848313332,
+        "p95": 5.741436220705509,
+        "p99": 6.6156189888715735
+      }
+    }
+  },
+  "paired_outcomes": {
+    "full_vs_reuse03": {
+      "both_success": 31,
+      "left_only": 3,
+      "right_only": 3,
+      "both_failure": 3
+    },
+    "full_vs_d2": {
+      "both_success": 32,
+      "left_only": 2,
+      "right_only": 3,
+      "both_failure": 3
+    },
+    "reuse03_vs_d2": {
+      "both_success": 33,
+      "left_only": 1,
+      "right_only": 2,
+      "both_failure": 4
+    }
+  },
+  "stages": {
+    "reuse03": {
+      "failed_final_phase_counts": {
+        "goal_alignment": 3,
+        "transport": 2,
+        "approach": 1
+      },
+      "failed_furthest_phase_counts": {
+        "release_or_final_action": 3,
+        "goal_alignment": 2,
+        "approach": 1
+      },
+      "full_success_candidate_failure_final_phase_counts": {
+        "goal_alignment": 2,
+        "transport": 1
+      },
+      "full_success_candidate_failure_furthest_phase_counts": {
+        "release_or_final_action": 3
+      },
+      "full_success_candidate_failure_episodes": [
+        {
+          "suite": "libero_10",
+          "task": 4,
+          "init": 0,
+          "final": "goal_alignment",
+          "furthest": "release_or_final_action"
+        },
+        {
+          "suite": "libero_10",
+          "task": 6,
+          "init": 0,
+          "final": "goal_alignment",
+          "furthest": "release_or_final_action"
+        },
+        {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 0,
+          "final": "transport",
+          "furthest": "release_or_final_action"
+        }
+      ],
+      "initial_observation_hash_matches": 40,
+      "measured_eef_post_actions1to5_mean_episode_l2_mm": 2.114210738482313,
+      "measured_eef_initial_through5_mean_episode_l2_mm": 1.7618422820685944,
+      "measured_eef_all_equal_steps_mean_episode_l2_mm": 47.82170558875936,
+      "selected_videos": [
+        "results/idea1_v3_2/e2_quality/even/reuse03/libero_10/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality/even/reuse03/libero_goal/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality/even/reuse03/libero_object/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality/even/reuse03/libero_spatial/task00/init00/video.mp4"
+      ]
+    },
+    "d2": {
+      "failed_final_phase_counts": {
+        "goal_alignment": 2,
+        "transport": 2,
+        "approach": 1
+      },
+      "failed_furthest_phase_counts": {
+        "release_or_final_action": 1,
+        "transport": 1,
+        "grasp_or_manipulate": 1,
+        "goal_alignment": 2
+      },
+      "full_success_candidate_failure_final_phase_counts": {
+        "goal_alignment": 1,
+        "transport": 1
+      },
+      "full_success_candidate_failure_furthest_phase_counts": {
+        "release_or_final_action": 1,
+        "goal_alignment": 1
+      },
+      "full_success_candidate_failure_episodes": [
+        {
+          "suite": "libero_10",
+          "task": 6,
+          "init": 0,
+          "final": "goal_alignment",
+          "furthest": "release_or_final_action"
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 0,
+          "final": "transport",
+          "furthest": "goal_alignment"
+        }
+      ],
+      "initial_observation_hash_matches": 40,
+      "measured_eef_post_actions1to5_mean_episode_l2_mm": 1.844123611448623,
+      "measured_eef_initial_through5_mean_episode_l2_mm": 1.5367696762071856,
+      "measured_eef_all_equal_steps_mean_episode_l2_mm": 40.97461491170056,
+      "selected_videos": [
+        "results/idea1_v3_2/e2_quality_d2/even/d2/libero_10/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality_d2/even/d2/libero_goal/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality_d2/even/d2/libero_object/task00/init00/video.mp4",
+        "results/idea1_v3_2/e2_quality_d2/even/d2/libero_spatial/task00/init00/video.mp4"
+      ]
+    }
+  },
+  "approximation": "Full AE scanned Transformer pre-final-RMSNorm residual cached at updates0/3, FP32 subtraction from BF16 suffix input. At each10Euler step recompute state/action/time suffix, finalRMSNorm and head. Fresh full prefix per request; request-local cache.",
+  "native_gate": {
+    "inputs": 24,
+    "passed": true,
+    "runtime_audit": {
+      "euler_updates": 10.0,
+      "final_time": -7.450580596923828e-08,
+      "transformer_refreshes": 2.0
+    },
+    "request_cache_isolation": {
+      "shape": [
+        1,
+        50,
+        32
+      ],
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "passed": true
+    },
+    "full_refresh_raw_max_abs": 0.0,
+    "full_refresh_decoded_max_abs": 0.0,
+    "canonical_policy_infer_decoded_max_abs": 0.0,
+    "d2_refresh_raw_max_abs": 0.0,
+    "d2_refresh_decoded_max_abs": 0.0
+  },
+  "timing_scope": "AE only uses prefilled device KV; completed local request includes transforms/fresh prefix/device synchronization/decode, excludes RPC",
+  "timing_inputs_by_suite": {
+    "libero_spatial": 21,
+    "libero_object": 1,
+    "libero_goal": 1,
+    "libero_10": 1
+  },
+  "early_eef_scope": "Only executed global episode steps1..5 after reset, not a repeated horizon-offset or late-stage check",
+  "warmup": 3,
+  "timing_samples": 24,
+  "gpu_preflight": {
+    "assigned": "2",
+    "device": "2, GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, NVIDIA GeForce RTX 4090, 1 MiB, 0 %",
+    "preexisting_compute_processes": ""
+  },
+  "source_sha256": {
+    "results/idea1_v3_2/e2_probe_gpu2.json": "e595066c99a88633999de613fad032fdb99f998b64c891e483ce2b339dd97dd8",
+    "results/idea1_v3_2/e2_quality_analysis.json": "057398252f872ff3961cdfb750314651cee77d00850eca5716f7ce9f10f202f1",
+    "results/idea1_v3_2/e2_d2_quality_analysis.json": "edd54c9a532deb92400f03d5a184a0b1abea1449cef53bf20b350dcfa253e642",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/residual_summary.py": "2cc0f654e6f20f7ef04bce5895a0d7e108e8cf40d895597389b366e254410202"
+  },
+  "limitations": "Single init0 per task,40pairs screening only; no uncertainty claim. Latency24inputs/3warmups, initialcompiles excluded. No same-time live rollout speedup inferred from reused quality controls. Equal-step closed-loop EEF divergence includes route, pacing and accumulation differences, not same-observation action error or Full-driven shadow comparison. Commands use separate native units; heuristic phases are not failure causes."
+}

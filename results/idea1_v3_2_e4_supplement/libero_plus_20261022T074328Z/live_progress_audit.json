@@ -1,0 +1,140 @@
+{
+  "status": "audit_complete",
+  "audited_unix": 1792670863.1586642,
+  "manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "identity_errors": [],
+  "groups": {
+    "perturbed350": {
+      "target": 1050,
+      "completed": 49,
+      "remaining": 1001,
+      "technical_attempts": 0,
+      "running_attempts": 1,
+      "by_mode": {
+        "full_d10": {
+          "completed": 17,
+          "success": 17,
+          "native_steps": 2951
+        },
+        "v14_d10": {
+          "completed": 16,
+          "success": 14,
+          "native_steps": 3593
+        },
+        "matching_draft": {
+          "completed": 16,
+          "success": 8,
+          "native_steps": 5720
+        }
+      },
+      "by_stratum": [
+        {
+          "category": "Objects Layout",
+          "difficulty": "1",
+          "mode": "full_d10",
+          "completed": 10,
+          "success": 10
+        },
+        {
+          "category": "Objects Layout",
+          "difficulty": "1",
+          "mode": "matching_draft",
+          "completed": 10,
+          "success": 4
+        },
+        {
+          "category": "Objects Layout",
+          "difficulty": "1",
+          "mode": "v14_d10",
+          "completed": 10,
+          "success": 8
+        },
+        {
+          "category": "Objects Layout",
+          "difficulty": "2",
+          "mode": "full_d10",
+          "completed": 7,
+          "success": 7
+        },
+        {
+          "category": "Objects Layout",
+          "difficulty": "2",
+          "mode": "matching_draft",
+          "completed": 6,
+          "success": 4
+        },
+        {
+          "category": "Objects Layout",
+          "difficulty": "2",
+          "mode": "v14_d10",
+          "completed": 6,
+          "success": 6
+        }
+      ],
+      "technical_failures": [],
+      "running": [
+        {
+          "index": 16,
+          "mode": "v14_d10",
+          "status": "running",
+          "success": null,
+          "steps": 455,
+          "wall_s": null,
+          "path": "results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0016/v14_d10/attempt000/result.json",
+          "category": "Objects Layout",
+          "difficulty": 2
+        }
+      ]
+    },
+    "original40": {
+      "target": 120,
+      "completed": 12,
+      "remaining": 108,
+      "technical_attempts": 0,
+      "running_attempts": 0,
+      "by_mode": {
+        "full_d10": {
+          "completed": 4,
+          "success": 4,
+          "native_steps": 678
+        },
+        "v14_d10": {
+          "completed": 4,
+          "success": 3,
+          "native_steps": 1179
+        },
+        "matching_draft": {
+          "completed": 4,
+          "success": 3,
+          "native_steps": 957
+        }
+      },
+      "by_stratum": [
+        {
+          "category": "Original unperturbed sanity",
+          "difficulty": "None",
+          "mode": "full_d10",
+          "completed": 4,
+          "success": 4
+        },
+        {
+          "category": "Original unperturbed sanity",
+          "difficulty": "None",
+          "mode": "matching_draft",
+          "completed": 4,
+          "success": 3
+        },
+        {
+          "category": "Original unperturbed sanity",
+          "difficulty": "None",
+          "mode": "v14_d10",
+          "completed": 4,
+          "success": 3
+        }
+      ],
+      "technical_failures": [],
+      "running": []
+    }
+  },
+  "limitations": "Partial fixed-matrix progress only. Technical attempts excluded from oracle success denominator; no causal capacity/robustness conclusion from incomplete counts."
+}

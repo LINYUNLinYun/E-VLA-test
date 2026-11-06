@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "updated_unix": 1793782539.611048,
+  "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/README_zh.md",
+  "before_sha256": "c359a83c4955ec729992f587c4b9292bf26050c9f907724495c210c2f35e5ccb",
+  "after_sha256": "11efe9216715cceefc23cb6e5b3f78ac9a8ce6fe52d65692996d3494adcd245c",
+  "draft_section_unchanged": true,
+  "draft_section_sha256": "ffeda5f6d13abbfcbd352e927f3045667500afdc7f1b1ff8e329fdca62f96174",
+  "full_successes": 182,
+  "local_supervisor_status_path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/supervisor/status.json",
+  "local_supervisor_status": {
+    "time": 1793782532.998779,
+    "phase": "waiting_discovery",
+    "terminal": false,
+    "scheduler": {
+      "status": "live",
+      "process": {
+        "pid": 335208,
+        "status": "live",
+        "state": "S",
+        "start_ticks": "2615895606",
+        "argv": [
+          "/usr/bin/python3",
+          "-u",
+          "-m",
+          "preparations.ease_insights_20261103.scheduler",
+          "--queue",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+          "--max-gpus",
+          "2",
+          "--scan-seconds",
+          "30",
+          "--idle-seconds",
+          "0"
+        ]
+      },
+      "processes": [
+        {
+          "pid": 335208,
+          "status": "live",
+          "state": "S",
+          "start_ticks": "2615895606",
+          "argv": [
+            "/usr/bin/python3",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.scheduler",
+            "--queue",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+            "--max-gpus",
+            "2",
+            "--scan-seconds",
+            "30",
+            "--idle-seconds",
+            "0"
+          ]
+        }
+      ]
+    },
+    "goal_complete_claim": false
+  },
+  "whole_goal_complete_claim": false
+}

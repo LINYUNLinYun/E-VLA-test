@@ -1,0 +1,27 @@
+{
+  "approved": true,
+  "revoked": true,
+  "revocation_reason": "Superseded by independently accepted long-natural-drain guard v2; this revokes only the old waiting guard, never the running Plus evaluation.",
+  "superseded_by_plan_hash": "cc04d900d84509921cfed450d96a0c44b427259b10c4eaa64a77d5e53bac71a9",
+  "issued_by": "root",
+  "priority": "plus_half585_only",
+  "plan_hash": "e44dd99098195023d1e72fe1b7fb36c09fe49b3bd269d4909a0a7730d81a2d32",
+  "half_manifest_hash": "bd68b9a703729efb8ad649eab0a7f155fcffa98f9ecd44fac2bd359c347d1b6c",
+  "parent_manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "trigger_unix": 1792691700,
+  "new_deadline_unix": 1792713600,
+  "basis": "User prioritizes completing the reduced Plus evaluation. Extend only the existing same-model/same-device experiment if its prior operational deadline would leave work unfinished.",
+  "acceptance": "Root independently reviewed complete guard implementation and passed all 13 CPU tests; all 35 pinned source/receipt hashes and exact original worker/model identities verified.",
+  "boundaries": [
+    "No immediate interruption. Before the trigger only read-only five-minute checks and lightweight revocation checks are authorized.",
+    "At the trigger, if all 585 conditions are already complete, do not restart anything.",
+    "Otherwise stop only the exact original parent from dispatching, let its actual renderer child finish naturally, and abort safely if it does not finish within 180 seconds. Never signal a renderer child.",
+    "Only close the exact owned original model after its child and worker have finished, using its validated localhost endpoint identity.",
+    "Preserve completed and unfinished attempts. Archive only incomplete claims belonging to the terminated exact owner; do not delete or overwrite data.",
+    "Resume only on physical GPU3 UUID GPU-555cde36-5e41-bc44-0c69-ea47358fd703 after actual idle checks and the final pre-CUDA guard. Never take a foreign process or another GPU.",
+    "Keep weights, modes, H50/R5/D10, observations, language, actions, seeds and both scientific manifests unchanged; pass the same native six-route startup gate.",
+    "Do not resume CALVIN or B, start new model experiments, relax the failed cross-GPU gate, download assets or perform new profiling.",
+    "All 585 unique selected conditions and the final audit are required for Plus-half completion; queue exit or an execution deadline alone is not completion.",
+    "If ownership or priority changes, fail safe and do not touch replacement processes. Root must revoke this file or create its .cancel marker when the user changes this execution priority."
+  ]
+}

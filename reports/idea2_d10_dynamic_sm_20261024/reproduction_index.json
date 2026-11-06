@@ -1,0 +1,310 @@
+[
+  {
+    "case": "d10_async_serial_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m results.idea2.d10_dynamic_sm_20261024.async_serial_control --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_formal --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective vision_only --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --pairs graph_async_serial:graph_vision_overlap --continuous graph_async_serial graph_vision_overlap",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_async_serial_gate",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_gate/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m results.idea2.d10_dynamic_sm_20261024.async_serial_control --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_gate --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective vision_only --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --pairs graph_async_serial:graph_vision_overlap --continuous graph_async_serial graph_vision_overlap",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_async_serial_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_async_serial_profile_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m results.idea2.d10_dynamic_sm_20261024.async_serial_control --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_profile --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective vision_only --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --pairs --continuous graph_async_serial --profile",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_async_serial_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m results.idea2.d10_dynamic_sm_20261024.async_serial_control --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_async_serial_repeat --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective vision_only --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --pairs graph_async_serial:graph_vision_overlap --continuous graph_vision_overlap graph_async_serial --reverse-order",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_combined_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_combined_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_combined_profile_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_combined_profile --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --modes combined --profile-mode combined",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_crossframe_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_formal --num-steps 10 --ae-layout whole --warmup 20 --pairs 100 --pair-length 16 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --modes fresh_serial lookahead_serial encoder_overlap combined",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_crossframe_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_repeat --num-steps 10 --ae-layout whole --warmup 20 --pairs 100 --pair-length 16 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --modes combined encoder_overlap lookahead_serial fresh_serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_crossframe_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_crossframe_screen --num-steps 10 --ae-layout whole --warmup 20 --pairs 20 --pair-length 16 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_dynamic16_gate",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_gate/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_gate --num-steps 10 --boundary kv_ready --group-size 1 --ae-layout per_step --tail-policy full --ae-sm-min 16 --warmup 3 --count 2 --continuous-count 4 --reset-every 2 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_dynamic16_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_profile/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_profile --num-steps 10 --boundary kv_ready --group-size 1 --ae-layout per_step --tail-policy full --ae-sm-min 16 --warmup 10 --count 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --profile-mode overlap",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_dynamic16_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_screen --num-steps 10 --ae-layout per_step --tail-policy full --ae-sm-min 16 --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_dynamic8_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic8_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_dynamic8_screen --num-steps 10 --ae-layout per_step --tail-policy full --ae-sm-min 8 --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_encoder64_vlmfull_profile_resumed",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_profile_resumed/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_encoder64_vlmfull_profile_20261024_v2 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_profile_resumed --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --ae-sm-min 64 --vlm-full --modes encoder_overlap --profile-mode encoder_overlap",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_encoder64_vlmfull_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_screen --num-steps 10 --ae-sm-min 64 --vlm-full --ae-layout whole --tail-policy native --modes fresh_serial lookahead_serial encoder_overlap --warmup 20 --pairs 20 --pair-length 16 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_fixed16_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed16_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_fixed16_profile_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed16_profile --num-steps 10 --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --ae-layout per_step --tail-policy wait_prefix --ae-sm-min 16 --profile-mode overlap",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_fixed16_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed16_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed16_screen --num-steps 10 --ae-layout per_step --tail-policy wait_prefix --ae-sm-min 16 --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_fixed8_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed8_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_fixed8_screen --num-steps 10 --ae-layout per_step --tail-policy wait_prefix --ae-sm-min 8 --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_full_overlap_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_full_overlap_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_full_overlap_profile_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_full_overlap_profile --num-steps 10 --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --ae-layout whole --profile-mode overlap",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_full_serial_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_full_serial_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_full_serial_profile_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_full_serial_profile --num-steps 10 --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --hoist-modulation --profile --ae-layout whole --profile-mode serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_encoder_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_encoder_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_encoder_screen --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --selective vision_only --pairs graph_serial:graph_ae_first --continuous graph_serial graph_ae_first",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_formal --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --pairs graph_serial:graph_encoder_overlap graph_encoder_overlap:graph_ae_first --continuous graph_serial graph_encoder_overlap graph_ae_first",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_full_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_full_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_full_screen --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --selective all --pairs graph_serial:graph_ae_first graph_serial:graph_prefill_first --continuous graph_serial graph_ae_first graph_prefill_first",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_graph_ae_first_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_ae_first_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_oldkv_graph_ae_first_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_ae_first_profile --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --pairs --continuous graph_ae_first --profile",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_graph_encoder_overlap_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_encoder_overlap_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_oldkv_graph_encoder_overlap_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_encoder_overlap_profile --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --pairs --continuous graph_encoder_overlap --profile",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_graph_serial_profile",
+    "kind": "profile / \u4e0d\u4f5c\u6b63\u5f0f\u8ba1\u65f6",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_serial_profile/result.json",
+    "command": "nsys profile --trace=cuda,nvtx --cuda-graph-trace=node:nvtx-precapture --sample=none --cpuctxsw=none --capture-range=cudaProfilerApi --capture-range-end=stop --force-overwrite=false -o nsys/idea2_experiment/d10_oldkv_graph_serial_20261024_v1 /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_graph_serial_profile --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --warmup 20 --count 0 --continuous-count 8 --reset-every 0 --pairs --continuous graph_serial --profile",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_mixed_gate",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_mixed_gate/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_mixed_gate --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --pairs graph_serial:graph_encoder_overlap graph_encoder_overlap:graph_ae_first --continuous graph_serial graph_encoder_overlap graph_ae_first --warmup 20 --count 20 --continuous-count 20 --reset-every 10",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_oldkv_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.cewp_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_oldkv_repeat --steps 10 --noise-period 13 --await-previous-prefix --hoist-modulation --selective all --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --reverse-order --pairs graph_encoder_overlap:graph_ae_first graph_serial:graph_encoder_overlap --continuous graph_ae_first graph_encoder_overlap graph_serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_33ms_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_formal --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 33 --modes fresh_serial lookahead_serial encoder_overlap combined",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_33ms_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_repeat --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 33 --modes combined encoder_overlap lookahead_serial fresh_serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_62ms_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_formal --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 62 --modes fresh_serial lookahead_serial encoder_overlap combined",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_62ms_repeat_resumed",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_repeat_resumed/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_repeat_resumed --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 62 --modes combined encoder_overlap lookahead_serial fresh_serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_71ms_formal",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_formal/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_formal --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 71 --modes fresh_serial lookahead_serial encoder_overlap combined",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_slo_71ms_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_crossframe_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_repeat --num-steps 10 --ae-layout whole --warmup 20 --pairs 0 --continuous-count 100 --reset-every 50 --hoist-modulation --arrival-period-ms 71 --modes combined encoder_overlap lookahead_serial fresh_serial",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_split_full_formal_stable",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_split_full_formal_stable/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_split_full_formal_stable --num-steps 10 --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --ae-layout per_step --tail-policy wait_prefix",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_split_full_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_split_full_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_split_full_repeat --num-steps 10 --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --ae-layout per_step --tail-policy wait_prefix --reverse-order",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_split_full_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_split_full_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/d10_split_full_screen --num-steps 10 --boundary kv_ready --group-size 1 --ae-layout per_step --tail-policy wait_prefix --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_whole_formal_stable",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_whole_formal_stable/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_whole_formal_stable --num-steps 10 --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --ae-layout whole",
+    "source_unchanged_receipt": true
+  },
+  {
+    "case": "d10_whole_repeat",
+    "kind": "\u6b63\u5f0f\u6d4b\u91cf\uff08\u9002\u7528\u8303\u56f4\u89c1\u62a5\u544a\uff09",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_whole_repeat/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_whole_repeat --num-steps 10 --warmup 20 --count 100 --continuous-count 100 --reset-every 50 --hoist-modulation --lifecycle-audit --ae-layout whole --reverse-order",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d10_whole_screen",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d10_whole_screen/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/d10_whole_screen --num-steps 10 --boundary kv_ready --group-size 1 --ae-layout whole --warmup 20 --count 20 --continuous-count 20 --reset-every 10 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "d2_regression",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/d2_regression/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.layer_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/d2_regression --num-steps 2 --boundary kv_ready --group-size 1 --ae-layout per_step --warmup 3 --count 2 --continuous-count 4 --reset-every 2 --hoist-modulation --lifecycle-audit",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "encoder_pair_curves",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/encoder_pair_curves/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.sm_sensitivity_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output /root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/encoder_pair_curves --num-steps 10 --warmup 20 --count 30 --ae-sm-mins 64 32 --hoist-modulation --encoder-pair",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "iteration_audit",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/iteration_audit/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.d10_iteration_audit --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/iteration_audit --hoist-modulation",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "sm_curves",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/sm_curves/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.sm_sensitivity_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/sm_curves --num-steps 10 --warmup 20 --count 30 --hoist-modulation",
+    "source_unchanged_receipt": null
+  },
+  {
+    "case": "sm_curves8",
+    "kind": "\u8bca\u65ad\u6216\u521d\u7b5b",
+    "result": "/root/nfs/embodied/benchmark/results/idea2/d10_dynamic_sm_20261024/sm_curves8/result.json",
+    "command": "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -m preparations.idea2.sm_sensitivity_bench --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --gpu-uuid GPU-599477fb-0507-40dc-14df-d491f7a7b202 --output results/idea2/d10_dynamic_sm_20261024/sm_curves8 --num-steps 10 --warmup 20 --count 30 --ae-sm-mins 8 --hoist-modulation",
+    "source_unchanged_receipt": null
+  }
+]

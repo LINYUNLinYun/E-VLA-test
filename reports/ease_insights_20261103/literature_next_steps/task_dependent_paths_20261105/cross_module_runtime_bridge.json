@@ -1,0 +1,58 @@
+{
+  "schema": "cross-module-native-sampler-source-bridge-v1",
+  "observed_at": 1793883812.468723,
+  "scope": "Source-only feasibility and structural call counts; not a runnable candidate or numerical/GPU evidence",
+  "source_hashes": {
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "checked_facts": {
+    "native_sampler_import": {
+      "module": "scripts.experiment1.run_intermediate_action_probe",
+      "function": "_decoder_layer",
+      "line": 137
+    },
+    "native_AE_loop": {
+      "line": 155,
+      "range_stop": 18,
+      "unconditional_layer_call": true,
+      "layer_pattern_registry_consulted": false
+    },
+    "native_decoder_explicit_step_counts": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "current_D2_sampler_uses_custom_adapter_loop_not_native_decoder_pattern": true
+  },
+  "implementation_consequences": [
+    "Registering an AE mask only in Pi0Inference._ACTION_LAYER_PATTERNS would leave the current eager adapter full18.",
+    "Routing the current D2 requests through the native decoder denoise_steps argument is unsupported by its3/5/7/10 whitelist.",
+    "A future AE mask must be inserted in a separately versioned adapter loop while preserving the current fusedD10 and customD2 arithmetic, noise, prefixKV copy and decoding.",
+    "New receipts should export actual layer visits and NFE. The current upper backend returns requested nodes but discards the adapter actual_NFE field."
+  ],
+  "illustrative_call_accounting_not_FLOPs_or_latency": {
+    "common_cycle": "FullD10 + FastD2 + FastD2; full refresh uses VLM18/AE18",
+    "FullD10_every_request": {
+      "AE_layer_calls": 540,
+      "VLM_hidden_update_calls": 51
+    },
+    "AE12_only_on_fast_calls": {
+      "AE_layer_calls": 228,
+      "VLM_hidden_update_calls": 51
+    },
+    "VLM12_only_on_fast_calls": {
+      "AE_layer_calls": 252,
+      "VLM_hidden_update_calls": 39
+    },
+    "both_fast_candidates_denoiser_evaluations": 14,
+    "KV_projection_layer_positions_per_cycle": 54,
+    "vision_layer_calls_per_cycle": 81,
+    "budget_warning": "These axes have different costs; equal layer counts or call counts do not establish equal FLOPs/latency. Match measured cost on a separate calibration pool."
+  },
+  "current432_study_modified": false,
+  "new_candidate_mask_selected_or_frozen": false,
+  "GPU_or_model_started": false
+}

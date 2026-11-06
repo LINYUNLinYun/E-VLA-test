@@ -1,0 +1,25 @@
+{
+  "schema": "ease-module-tradeoff-dispatch-preparation-v1",
+  "time": 1793891842.8854933,
+  "source_hashes": {
+    "preparations/ease_insights_20261103/module_tradeoff_v1/__init__.py": "21a9c9378f6a077a5773d525dee3c6e6be6384e41e453dda52ae73ccffa3da70",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/ae_dispatch.py": "aed5c435db6449d36b3e3dff1bbf24bb635095fa3887c45722956fa659b7ce00",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/backend.py": "1d3eb826ec81d1225b567a4bd02e22f4838e087d9dc6ef5e38303b8d5eb639b8",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_ae_dispatch.py": "480af4bd71b61336bfbed9b80dcbbbe293315cf94dd6c7b19561edbf802806f5"
+  },
+  "CPU_contract_tests": 10,
+  "real_GPU_used": false,
+  "numerical_GPU_gate_passed": false,
+  "model_or_environment_constructed": false,
+  "scientific_protocol_frozen": false,
+  "scientific_manifest_created": false,
+  "path_pair_selected": false,
+  "current_diversity_sources_changed": false,
+  "scope": "Preparation only: original native D10/D2 sampler called once under scoped AE layer dispatch; observed actualNFE and layer calls retained. GPU parity and a separately frozen design required before science use.",
+  "next_required_gates": [
+    "Full18 no-bypass native D10 and D2 raw/decoded parity on the fixed four-suite bank",
+    "Direct intended-AE-layer execution and stable own-path refresh counters",
+    "Identical physical inputs and explicit noise with unchanged checkpoint/norm",
+    "Actual measured cost calibration before selecting a module budget"
+  ]
+}

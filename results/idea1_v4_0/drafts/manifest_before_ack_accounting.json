@@ -1,0 +1,519 @@
+{
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "conditions": [
+    {
+      "mode": "full",
+      "period": 1,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 2,
+      "scoring": "original",
+      "initial": "gaussian",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "none",
+      "selection": "none",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "full_d10"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 2,
+      "scoring": "original",
+      "initial": "gaussian",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "v12_d2_control"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 1,
+      "scoring": "original",
+      "initial": "gaussian",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "v12_d1_gaussian"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 2,
+      "scoring": "original",
+      "initial": "kalman",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "v12_d2_kalman"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 1,
+      "scoring": "original",
+      "initial": "kalman",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "v12_d1_kalman"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 2,
+      "scoring": "compensation_error",
+      "initial": "gaussian",
+      "dynamic": false,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "v12_d2_error_score"
+    },
+    {
+      "mode": "verified",
+      "period": 3,
+      "budget": 12,
+      "skip_count": 6,
+      "fast_steps": 2,
+      "scoring": "original",
+      "initial": "gaussian",
+      "dynamic": true,
+      "n": 40,
+      "projections": 4,
+      "compensation": "extrapolate",
+      "selection": "jacobian",
+      "selection_stride": 1,
+      "batched": true,
+      "aggregation": "layer_rms_sum",
+      "asynchronous": true,
+      "attention": "original",
+      "cuda_graph": true,
+      "tau": 0.1,
+      "protect_gripper": true,
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "native_inference_graph": false,
+      "verify_graph": false,
+      "gradient_backend": "rms_rope_glu",
+      "id": "dynamic_skip5_8_d2"
+    }
+  ],
+  "experiments": {
+    "E1": [
+      "v12_d2_control",
+      "v12_d1_gaussian",
+      "v12_d2_kalman",
+      "v12_d1_kalman"
+    ],
+    "E2": [
+      "v12_d2_control",
+      "v12_d2_error_score"
+    ],
+    "E3": [
+      "v12_d2_control",
+      "dynamic_skip5_8_d2"
+    ]
+  },
+  "source_files": {
+    "preparations/idea1_v4_0/__init__.py": "343241946e95a7255ddd783b9ecefefabcf810adb45de7dbe2529677aeb06f0e",
+    "preparations/idea1_v4_0/rules.py": "04afe24adf3c2dfb78b8a8a3da1a177f326e5aa5d63d4037444e209fd3c61a0a",
+    "preparations/idea1_v4_0/selection.py": "efd37bda76f5b23186f89c3a3dfd90ad4fd016bfba4bcddbe9e4a839f01140e5",
+    "preparations/idea1_v4_0/sampling.py": "661726649f08cc17feeea1ecd25adfe51cf39dace9acf5e2df3d035bbcb12c44",
+    "preparations/idea1_v4_0/common.py": "bfcff7c3249ce4817e6ee1b965774ac1315a56aac67cffeb95c4b341d6e89166",
+    "preparations/idea1_v4_0/resource_watch.py": "d2ee191a9ec15258130c46d32a1bc5c9ecefdaec008632f826f61b4f4843eb72",
+    "preparations/idea1_v4_0/policy.py": "80050245b707e5cafde3d47dc03bc24adfdbef67bd67a2563fedb361607a2fa9",
+    "preparations/idea1_v4_0/preflight.py": "dcabc74c111a8ac8a29d4973552f51739049e8f093a6fa0029476ad555602693",
+    "preparations/idea1_v4_0/server.py": "b5e75e403781b85d195be22e476e525c42431ff8933c69dca1937e5db1febee6",
+    "preparations/idea1_v4_0/evaluate.py": "dbfbc46111eb426ffc0351e26becc2f21792c994a8f5835dee1efe6c695f1886",
+    "preparations/idea1_v4_0/controller.py": "e90e3f337fdca319dc0e50492af93366db09fa923984c98d6d3ef02bc4cb074f",
+    "preparations/idea1_v4_0/test_rules.py": "c1c6315092ad7329d1a6d79b95f1fe0203da1e36795b187d0af158ec2a405694",
+    "preparations/idea1_v3_4_selection_async/core.py": "a07c62e8956bd3599b83825695b68a055b4215d30c0891d990cd6320fcf868a9",
+    "preparations/idea1_v3_4_selection_async/rollout.py": "bbf7dbe37388c35c806973b8eaa6d11a0d0afd4cb29d2d1808fa406f38c23774",
+    "preparations/idea1_v3_4_selection_async/runtime.py": "49e06f03cd124bac5aeee6ec7683dc6d7dae45872f8ac12519f42641d690f3fd",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3_4_E2_comp_error_cost/model.py": "c8bf10288442f46c8d10fb81380e6e076f8e60d8f92254e82da471a1ba1a21c0",
+    "reports/idea1_v3_4_selection_async_batched_attention.py": "a868c6393d5e56a69b3e55b213a5f4a04abef3389fd5fccddb7dee7527fe8709",
+    "reports/idea1_v3_4_selection_async_rms_backward.py": "db6dee35f5af59a729ed214364bd97554e7b460a0b42109ce09e4c13b4baf0e2",
+    "reports/idea1_v3_4_selection_async_elementwise.py": "ecdb8b4ae3aaf42b38cea0f0c89a18e669b83fa209a8624246a4a80d2f6a0964",
+    "preparations/idea1_v3_3/kalman_frozen.json": "641c0b62056fe442964b0fe1f91497d30e890bb6bd3dd11aad1abb273a03d75d",
+    "policies/realtime-vla-flash/scripts/idea1_v2_1/filter.py": "2ff2c8e606df03551da2bc97a3eee3a462ca5ea6cf2e0d7d4170351115d5f148"
+  },
+  "idea1_sha256": "f810e5a3ada4275cf712d71e873c81c4e3119d5f1855b7bff8ed78299aac3255",
+  "plan_sha256": "da8bf8e2b710d7cf27fde0d6d433f3b9bf41709c711ef0442d8310fd5fba3871",
+  "phase_rule": {
+    "thresholds": {
+      "q25": 1.0498481154095405,
+      "q50": 1.540211879930301,
+      "q85": 3.1288192677251003
+    },
+    "calibration_windows": 323,
+    "calibration_skip_distribution": {
+      "5": 49,
+      "6": 112,
+      "7": 81,
+      "8": 81
+    },
+    "sources": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_spatial/task00/init19/telemetry.jsonl",
+        "sha256": "646fb809220912f03f9b140dc089117414384dbd7203cbf3c5b5eb24a7b0ed6d"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_spatial/task02/init19/telemetry.jsonl",
+        "sha256": "77e04ad8d978ec865e49b1eb809825289dc0206bb410b1b345946ba07933186c"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_object/task00/init19/telemetry.jsonl",
+        "sha256": "ce2cadedff2aa300021b123ef1b9e3deb72714e1689841584718b66cdc452a62"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_object/task02/init19/telemetry.jsonl",
+        "sha256": "87b05e0788b7fcaf3497a7d33c1fc4e9a8fefae8c7bb04d07ba3e297126af624"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_goal/task00/init19/telemetry.jsonl",
+        "sha256": "4b8c41092314e5c2d8f36985cdcddb7cb95cc2ec6ac2aae678a242d747f2bc58"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_goal/task02/init19/telemetry.jsonl",
+        "sha256": "53a672c922e63bc34459e64b95329ab1c98e1431af86b0a2692009ee6a42be2a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_10/task00/init19/telemetry.jsonl",
+        "sha256": "810fe64a57e4681a2c75a4e44453301905614de154a68ee3befe3d67701043c8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_selection_async/closed_loop/full_d10/episodes/libero_10/task02/init19/telemetry.jsonl",
+        "sha256": "07a2e08059be58ab5aba8b1502d25ca23feb9518c2fecf64b41af1c5c6738c60"
+      }
+    ],
+    "recipe": "q25/q50/q85 of past-five-command decision-machine risk on eight prior Full trajectories; gripper change forces skip5",
+    "disclosure": "Historical explored cases; no outcomes used to select thresholds; not a held-out quality benchmark"
+  },
+  "pace_hz": 20,
+  "env_seed": 7,
+  "settling": 10,
+  "target_episodes": 280,
+  "max_gpus": 4,
+  "case_count": 40,
+  "kernel_policy": "Native encoder, AE and verifier stay eager; selector fused four-direction CUDA Graph retained",
+  "kalman_policy": "Direct deterministic Kalman initial state at original native D1/D2 time nodes; xyz filter frozen, rotation/gripper held, unused 25 dimensions zero; no shortened-time or added-noise branch",
+  "timestamp": 1793595069.517583,
+  "manifest_hash": "893876930fd71d9a37d8973b577e77d0d97be6f32f285a19dd163c69f729b257"
+}

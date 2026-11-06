@@ -1,0 +1,54 @@
+{
+  "status": "CPU_preparation_only_not_a_launched_policy",
+  "time": 1793920931.3392835,
+  "CPU_sampling_tests_passed": 9,
+  "parent_preparations": [
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v1/proposal.json",
+      "sha256": "552a6f8ec88c2069efb267c479fa0a7ede09c0c48084b578021aea7fefd6b7e2"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v2/preparation.json",
+      "sha256": "5a542b706864ae67472755ab48bbc6d465e096ca8efbf0a2b09dbf6cd081a0fc"
+    }
+  ],
+  "source_pins": {
+    "reports/ease_insights_20261103/prefix_kv_preparation_v3/sampling.py": "7dddbb299c20a4c76463724cd8df85e2ca0ad9c9e7bd2d145847b68f76084dd4",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v3/backend.py": "af5c37f3b81244192245c2048863d86fdcbe72700f3f60cb25e523d8e60c9d41",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v3/test_sampling.py": "70295ad2a91ce7a7361f49806018a60407acf20597ff3eac6a23b0624e8bc6e7",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v1/layout_contract.py": "0b1163aee0ce45e33ff174d3ba1e35c8945b47deb8371430a66fd1be201ebdc5",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v2/packing.py": "ed1a20a98aee41fdc75ce856afcd5ed7dae812248720c69a903619cc123736bc"
+  },
+  "actual_new_model_or_environment_started": false,
+  "new_CUDA_contexts": 0,
+  "scientific_manifest_created": false,
+  "new_quality_cases": 0,
+  "GPU_numerical_gate_passed": false,
+  "GPU_cost_qualification_passed": false,
+  "connected_to_service_or_queue": false,
+  "changes": [
+    "Optional compact full-prefill K/V before the unchanged native adapter sampler",
+    "Observe each actual AE18 helper call and consumed key length",
+    "Keep original decoder RoPE and restore original helper/buffer ownership on errors",
+    "Expose separate packing wall/CUDA timing and restore wall timing;full policy timing must still include all costs"
+  ],
+  "patterns": [
+    "all",
+    "identity",
+    "center_columns",
+    "checkerboard"
+  ],
+  "pattern_scope": "Two fresh cameras,VLM18+vision27 prefill always complete. FullD10 uses all tokens. FastD2 candidate retains128of256 tokens per camera,all text tokens and AE18.",
+  "CPU_test_scope": "Fake-adapter call wiring,shape/route checks and exception ownership only;not Triton equivalence or robot success.",
+  "mandatory_next_gates": [
+    "Same-input identity packing vs unmodified native raw/decoded actions D2/D10 at unchanged tolerances",
+    "GPU indices,actual prefix lengths,absolute RoPE and scratch ownership checks",
+    "Bitwise knownFull/DenseD2 trajectory bridge",
+    "Packing-inclusive native policy costs vsFull andDenseD2",
+    "Separately frozen all-task discovery and new-state task-category replication"
+  ],
+  "current720_mutated": false,
+  "current_partial_success_values_accessed": false,
+  "cannot_substitute_for_insight2_evidence": true,
+  "automatic_GPU_launch": false
+}

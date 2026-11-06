@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "time": 1793916633.5100842,
+  "manifest_hash": "38beb29182193152cb9f1bb59940a28e6eedcaf206a1174003d942b9696f28bf",
+  "condition": "path_d",
+  "case": {
+    "suite": "libero_spatial",
+    "task": 0,
+    "init": 45
+  },
+  "predictions": 16,
+  "Full_requests": 6,
+  "Fast_requests": 10,
+  "Fast_AE_keep": 14,
+  "Fast_NFE": 3,
+  "Fast_AE_logical_calls": 42,
+  "Fast_skip": [
+    2,
+    6,
+    7,
+    9
+  ],
+  "initial_gate": {
+    "manifest_hash": "38beb29182193152cb9f1bb59940a28e6eedcaf206a1174003d942b9696f28bf",
+    "case": {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 45
+    },
+    "input_hash": "eda970a4cbc4598d657795c572330664f4976c1bdafd1f0c8c764aebc0525155",
+    "seed": 2818365476,
+    "physical_assets": {
+      "init_vector_sha256": "aeed457c3aaa84628169ec809ab31fea7d3baed43d4e0e68970d01485d8b4987",
+      "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+      "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "env_seed": 7,
+      "settling": 10,
+      "policy_action_limit": 220,
+      "control_hz": 20.0
+    },
+    "passed": true,
+    "reference": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v3/discovery/initial_observations/libero_spatial/task00/init45.json"
+  },
+  "receipt": {
+    "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v3/discovery/path_d/episodes/libero_spatial/task00/init45/episode_receipt.json",
+    "sha256": "7bff2593d564f6bbd0fee6df0af9beea0238a384c3560744a2f4ad27693fcc97"
+  },
+  "raw_and_decoded_and_noise_and_physics_reconstructed": true,
+  "no_partial_success_rate_selection": true
+}

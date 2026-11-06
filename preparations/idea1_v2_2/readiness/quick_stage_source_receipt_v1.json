@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "kind": "quick_stage_analysis_source_receipt",
+  "source_files": [
+    "quick_stage_scope.py",
+    "runtime_analysis_quick.py",
+    "quick_final_adapter.py"
+  ],
+  "files": {
+    "preparations/idea1_v2_2/quick_stage_scope.py": "2bd2353a9b604d4d9b5b1084f8bff8962a822e5c89004edf6bd667831acd638b",
+    "preparations/idea1_v2_2/runtime_analysis_quick.py": "0e07272b4c54eecc70335c1d9948f297f6d86d5604d234aa2b9928de38568748",
+    "preparations/idea1_v2_2/quick_final_adapter.py": "a29100c83aa5d32375ba330a6aa711739ab5bcd8fd6c9410786e5b9725eb14a5",
+    "preparations/idea1_v2_2/test_quick_stage_scope.py": "c8aea4c9cddba349426d4b15cae59106d9dbf4a2ae876c65469e3c384e9b3c3d",
+    "preparations/idea1_v2_2/runtime_analysis_light.py": "ab590785d60e8361463b1c2a024235b79db06035633e6ab9fccf95cb96822949",
+    "preparations/idea1_v2_2/benchmark_light_revision.py": "00380092abc27839eeb1e7214881438c56a2846584ceb826cbd638088cbade70",
+    "preparations/idea1_v2_2/benchmark_light_analysis.py": "de5affe34f6b71db8ee9ff5ac3863b4ce593deaa828b074e7c1b62f61ed6f1dd",
+    "preparations/idea1_v2_2/final_provenance_analysis_v6.py": "ec3c6c91993733c43f9efcfb0d2d7a888a9f8dd50274ea44ac67f6ba103305d6",
+    "preparations/idea1_v2_2/retry_history_audit.py": "ba222844a2b5d1c4bf88e77688d3e3e7869ac42656d3f156260cf10156c382ae",
+    "preparations/idea1_v2_2/independent_media_audit.py": "c448d033123d9cc16b1d21855f43c47b7bb70c65fef85ff0ba68510134c191c0",
+    "preparations/idea1_v2_2/independent_media_history_audit.py": "a3dac0b424cd0c5e884e5fea71656372fc20639fc991aa1458518f06a55319f3",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/performance_evidence/quick_scope_drain_20261019T0836Z_episode_ledger.snapshot.json": "39db8b95177f09faecdad3c1abd91cc42ca2236dd1da7c8834fd67a50201b482",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/performance_evidence/quick_scope_drain_20261019T0836Z_receipt.json": "23333df5a1a3f83eec3274b2bb1f333c94686409d605be2e9a9b46083da1ebff",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/light_repeat_v2/revision_manifest.json": "128073599f18015ac528ebc191a669bb9bed680760ce7eb0839cc262b0a3c335",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/light_repeat_v2/source_medium_acceptance.json": "e52c81fe49b0fa1ad1f92211a69aa29ebf89e8cfe240be0c778b117b9d8f97ae"
+  },
+  "tests": {
+    "command": "/usr/bin/python3 -m unittest test_quick_stage_scope -v",
+    "passed": 5,
+    "independent_medium_passed": 5,
+    "independent_seconds": 6.017
+  },
+  "main_scope": {
+    "conditions": 54,
+    "suites": 4,
+    "tasks_per_suite": 10,
+    "inits": [
+      6,
+      7,
+      8
+    ],
+    "episodes": 6480,
+    "per_condition": 120,
+    "per_condition_suite": 30
+  },
+  "preserved_extra_valid": 2833,
+  "original_plan": 10800,
+  "original_full_complete": false,
+  "actual_saved_snapshot_select_passed": true,
+  "actual_protocol_receipts_small_check_passed": true,
+  "actual_build_or_raw_samples_performed": false,
+  "raw_sampling_limit": 6,
+  "verification_policy": "All canonical/history plus top-level validated/result metadata; representative original raw at most 6; existing decode receipt identity/main coverage reused without video or all raw rehash/decode",
+  "benchmark": {
+    "total_calls": 22528,
+    "db_measurements_per_condition": 640,
+    "pi0_and_x_measurements_per_condition": 160
+  },
+  "offline_expected": 1728,
+  "independent_C01_C08_all_passed": false,
+  "gpu_actions_performed": false,
+  "phase_authority": false
+}

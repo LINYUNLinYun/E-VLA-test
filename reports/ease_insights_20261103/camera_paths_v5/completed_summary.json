@@ -1,0 +1,57 @@
+{
+  "status": "numerical_calibration_rejected_no_episodes",
+  "time": 1793929096.7728667,
+  "manifest_hash": "db55aea415f1263a8840c138248609ee9b781037f9ef9ea40f37bbdd1d1c7ebf",
+  "manifest_file_sha256": "f695914594f0694b0385eb502addce2707aced41e4d57b474a3cebb19762e39d",
+  "source_files": 295,
+  "valid_quality_episodes": 0,
+  "known_control_episodes": 0,
+  "discovery_launched": false,
+  "no_tolerance_relaxation": true,
+  "native_and_identity_checks_passed_before_rejection": true,
+  "runs": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v5/calibration/full_d10/runs/calibration_shard00of02_1793928757166693202/gate.json",
+      "sha256": "2742905b36a110f8db6104ecff260794c44b745a87d53580bcba0dadec4d9b8d",
+      "passed_checks": 28,
+      "failed": [
+        {
+          "name": "libero_spatial/center128_d2/full_storage_masked_reference",
+          "passed": false,
+          "decoded_max_abs": 0.00799927394837141,
+          "raw_max_abs": 0.012177705764770508,
+          "atol": 0.0009765625,
+          "rtol": 0.0078125
+        }
+      ],
+      "server_log": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v5/calibration/full_d10/runs/calibration_shard00of02_1793928757166693202/server.log",
+        "sha256": "9e680899550930c94e3ec8b5f3b4d1a3e68e953d4fc5663bcaad008b11c71245"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v5/calibration/full_d10/runs/calibration_shard01of02_1793928757108429025/gate.json",
+      "sha256": "2742905b36a110f8db6104ecff260794c44b745a87d53580bcba0dadec4d9b8d",
+      "passed_checks": 28,
+      "failed": [
+        {
+          "name": "libero_spatial/center128_d2/full_storage_masked_reference",
+          "passed": false,
+          "decoded_max_abs": 0.00799927394837141,
+          "raw_max_abs": 0.012177705764770508,
+          "atol": 0.0009765625,
+          "rtol": 0.0078125
+        }
+      ],
+      "server_log": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v5/calibration/full_d10/runs/calibration_shard01of02_1793928757108429025/server.log",
+        "sha256": "9e680899550930c94e3ec8b5f3b4d1a3e68e953d4fc5663bcaad008b11c71245"
+      }
+    }
+  ],
+  "bounded_diagnosis": "BothGPUservicesreproduciblypassnativeD2/D10,identitypacking,exactK/VgatherandoriginalRoPE.Thencompactvsindependentfull-storagemaskedreferencefailsidentically:rawmax0.0121777058,decodedmax0.007999274.Causewithinchangedattentionlayout/arithmeticnotyetlocalized;notcalledarandomfailure.",
+  "next_method": "KeeporiginalfullattentionstorageandQK/Vkernelshapes;maskimageedgesinsoftmaxwithseparatefusedimplementationversusfull-storageindex-maskoracle.Thisdoesnotclaimprefixcomputeorspeedsavings;FastD2providesthesamplingreduction.Usesnewcohortandunchangednativecontrolcontract.",
+  "original_leases_preserved": true,
+  "idle_reservation_GiB": 16,
+  "goal_complete": false
+}

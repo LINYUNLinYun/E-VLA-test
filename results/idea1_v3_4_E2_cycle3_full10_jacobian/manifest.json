@@ -1,0 +1,273 @@
+{
+  "conditions": [
+    {
+      "id": "v14_jacobian",
+      "budget": 14,
+      "skip_count": 4,
+      "method": "jacobian",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "random_seed": 341101,
+      "jacobian_model_steps": 10
+    },
+    {
+      "id": "v12_jacobian",
+      "budget": 12,
+      "skip_count": 6,
+      "method": "jacobian",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "random_seed": 341101,
+      "jacobian_model_steps": 10
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/model.py": "3fb1503c7ec493d9ebc05750f7066d2f97bb5d6e86d935deda98614953e000b0",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/policy.py": "9ee1ab8c56e6c11aa161a2e1d040af7fe5a5813cb5750d53770db042b79af113",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/common.py": "9d0dbeef62754504d6bef321aa21ce831ca8e837d569ceed424b3ad3d4fb56f9",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/server.py": "9d31bd4daf31ff4cc76edef54a1e32b8ccc8b9d825b4be99b1befc0a0bb56c92",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/input_probe.py": "dddc51e6e8bebce0a3ab0d1351f026ff814730f5a1f9f63a1252a02635b3f652",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/controller.py": "e980d7a0c5ba24f68331c6894e05a17a29453e5680335422b2a705b024b2669d",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/evaluate.py": "dd1e407fd78ba23185bb2836f9f896ddd952f8e7be1aa4af8ac1e89a9c5c9149",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/finish.py": "f1d20fef38de3c8fd040b48e7d3a6fb80c95f8d5db2fc106d049b74d681e676f",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4_E2_cycle3/policy.py": "8ab6b8e1dbd149662a460f17bae524e83fb0ef0be9d4be30747ceb73d05131c7",
+    "preparations/idea1_v3_4_E2_cycle3/selection.py": "aec9931a82ad4beeb29ee029686529b53a454d00473904263433609db3cc96ec",
+    "preparations/idea1_v3_4_E2_cycle3/common.py": "7b18d6794f01a1048c2c27ac44625609b6227dc52709bcbef4c347844f04ec57",
+    "preparations/idea1_v3_4_E2_online_time_weights/selector.py": "80df545d65ad05c4054a3f3fda4b8b9f1a096630ce3f0838d9c53c35a635601b",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09"
+  },
+  "plan_sha256": "cd8606f352ff48a159f425dfed1827c22bd294418d6a2a8fc760cd7f6e8d3080",
+  "reference_manifest_sha256": "34a3dae95e351138eb4458dc3a804db5b02677b5adaa84b78036e1693f789575",
+  "reference_summary_sha256": "cbc63f8ddde6e6bf2929e2ca016068f6cfb94ccffd0c99ef4a9c7c7388b02c46",
+  "schedule": [
+    "full10",
+    "fast2",
+    "fast2"
+  ],
+  "jacobian_model_steps": 10,
+  "output_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "projection": "five temporal exponential weights times seven +1 weights; one VJP",
+  "time": 1793361104.6878605,
+  "manifest_hash": "0c374d82e81d46216933c3ef241cb2d67b6dd0fce171ce08c020124e1342e809"
+}

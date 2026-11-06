@@ -1,0 +1,906 @@
+{
+  "status": "frozen_scientific_design",
+  "conditions": [
+    {
+      "id": "parent",
+      "experiment": "baseline",
+      "kind": "parent",
+      "model": "pi0",
+      "tau": 0.1
+    },
+    {
+      "id": "alternate",
+      "experiment": "E2",
+      "kind": "alternate",
+      "alternate": true,
+      "model": "pi0",
+      "tau": 0.1
+    },
+    {
+      "id": "old_c5",
+      "experiment": "E2",
+      "kind": "abc",
+      "angle": 30.0,
+      "change": 0.1,
+      "pose": 5.0,
+      "model": "pi0",
+      "tau": 0.1
+    },
+    {
+      "id": "relaxed_abc",
+      "experiment": "E2",
+      "kind": "abc",
+      "angle": 45.0,
+      "change": 0.15,
+      "pose": 10.0,
+      "model": "pi0",
+      "tau": 0.1
+    },
+    {
+      "id": "error_abs",
+      "experiment": "E2",
+      "kind": "metric",
+      "metric": "forecast_error_rms_max5",
+      "threshold": 0.15,
+      "pose": 5.0,
+      "model": "pi0",
+      "tau": 0.1
+    },
+    {
+      "id": "error_relative",
+      "experiment": "E2",
+      "kind": "metric",
+      "metric": "forecast_error_relative_max5",
+      "threshold": 0.5,
+      "pose": 5.0,
+      "model": "pi0",
+      "tau": 0.1
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 8
+    }
+  ],
+  "schedule": [
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 2,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 2,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 2,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 2,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 4,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 4,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 4,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 4,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 6,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 6,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 6,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 6,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 8,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 8,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 8
+      },
+      "condition_order": [
+        "error_abs",
+        "error_relative",
+        "relaxed_abc",
+        "parent",
+        "old_c5",
+        "alternate"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 8,
+        "init": 8
+      },
+      "condition_order": [
+        "error_relative",
+        "parent",
+        "error_abs",
+        "alternate",
+        "relaxed_abc",
+        "old_c5"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 8
+      },
+      "condition_order": [
+        "parent",
+        "alternate",
+        "error_relative",
+        "old_c5",
+        "error_abs",
+        "relaxed_abc"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 8
+      },
+      "condition_order": [
+        "alternate",
+        "old_c5",
+        "parent",
+        "relaxed_abc",
+        "error_relative",
+        "error_abs"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 8
+      },
+      "condition_order": [
+        "old_c5",
+        "relaxed_abc",
+        "alternate",
+        "error_abs",
+        "parent",
+        "error_relative"
+      ]
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 8
+      },
+      "condition_order": [
+        "relaxed_abc",
+        "error_abs",
+        "old_c5",
+        "error_relative",
+        "alternate",
+        "parent"
+      ]
+    }
+  ],
+  "profile_case_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "budget_valid": 240,
+  "technical_attempt_limit_per_episode": 2,
+  "counterbalance": "Six-arm Williams base[0,1,5,2,4,3], rotate by case index mod6.40 not divisible6: each condition occupies each position6 or7 times. Every case all6 arms share one physical GPU/service.",
+  "costs": "Primary server predict wall+entire acknowledge wall /actual executed actions, same-case same physicalGPU. Original predict-only retained separately; RPC/env/reset/IO and common warmup/load outside primary policy wall.",
+  "metric": "Before each frozen Kalman.observe: prior=H F_forecast x; z=clip(actual sent command XYZ,-1,1), error=||z-prior||/sqrt3. Original observe unchanged. Max last5 errors; relative denominator=max(.02,RMS of last5 actually sent XYZ commands). No future/labels.",
+  "common_constraints": "History>=5, no recent gripper sign changes, adjacent rotation command L2<=.05; c strict< for main/new gates. Original alternate keeps its original bypass. All arms no consecutive actualKF, verify tau.1, P2, strict gripper.",
+  "warmup": "Before EVERY arm fixed initial-observation Full10,V14D2,dual verifier and FP32 command-encode verifier preparation, then3 canonical Full10 repetitions; last2 must match bitwise. This diagnostic prep never enters the environment and is timed separately. Actual startup Full must match canonical output; initial input/full signatures must match all arms in each case.",
+  "environment": "Fresh offscreen environment each condition, official init8, seed7,10 settling,20Hz, native limits; one B1 worker/service per authorized GPU. Avoid inherited unrecorded solver/controller state between conditions. No GPU launch until explicit resource assignment.",
+  "seed": "Unchanged v3.3 seed(suite,task,init,replan), independent of condition/order/GPU; all new40 fixed before observation.",
+  "hashed_inputs": [
+    {
+      "path": "/root/nfs/embodied/benchmark/docs/experiments/idea1/idea1_e2_tuning_20261025_plan.md",
+      "sha256": "a7db3a4cf47ed6b4ab2ceda8349de62e13efbe33bf16fdb662f22732f8fb1fcf"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_e2_tuning_20261025/historical_analysis.json",
+      "sha256": "0602b6845b4da8e44171c40630a01be7378f078acbf162b43df26748689012ef"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_e2_tuning_20261025/historical_features.jsonl",
+      "sha256": "c2dc57b27bfb1d168084ad280da568c27726573fd16b7a0684fe6879dbe28a85"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_3/kalman_frozen.json",
+      "sha256": "641c0b62056fe442964b0fe1f91497d30e890bb6bd3dd11aad1abb273a03d75d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/idea1_v2_1/filter.py",
+      "sha256": "2ff2c8e606df03551da2bc97a3eee3a462ca5ea6cf2e0d7d4170351115d5f148"
+    }
+  ],
+  "manifest_hash": "5deca02fb5a045ca600fbeeb3ca0abde4557450cb76798c0cf00c557e33272ff"
+}

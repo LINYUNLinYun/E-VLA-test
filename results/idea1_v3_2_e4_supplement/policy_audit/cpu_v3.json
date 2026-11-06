@@ -1,0 +1,764 @@
+{
+  "status": "complete",
+  "cpu_only": true,
+  "gpu_used": false,
+  "model_constructed": false,
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_cpu_adapters/source_reference.json": "c61dffbc6b7918af8b9eb62fc6e0706aa21b5cec389b6b84fce458f111a4137d",
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_audit.py": "e597f75dee409889901745230362df98deff086ad1b433f6751343ebedda386c",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native.py": "a206ab8cfbdfefc53940716c4c2759a7e2934f3672a49ef480f977c721054c95",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case00/full_d10/attempt000/initial_raw.npz": "5afc39015cecc3c332847f46dcaa5805c524115b56fceeee8481d75be1527f02",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case00/full_d10/attempt000/infer.jsonl": "5eab82cff4293ea74a02aeffd179a6a500c2fe0653f4eca92c7bca901f644565",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case00/full_d10/attempt000/telemetry.jsonl": "a4dc3ed8c1f0fd565eb18c57dd0cc234ff909d4afb03a41ac759b9d38f88141d",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case01/full_d10/attempt000/initial_raw.npz": "5f8c851f69060ff24514d4f8eb6b8f64eedda5bed8c6a400f4f0af3b851e2e67",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case01/full_d10/attempt000/infer.jsonl": "2480b0df6c9ed4b97d4c18ef6e15a6b68f958bf21dc3317feefaa561b79871bb",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case01/full_d10/attempt000/telemetry.jsonl": "fbf2722cbe44bc4b377186dd8d8f13edef68a416d1dd4be88341d01d17f47feb",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case02/full_d10/attempt000/initial_raw.npz": "035c751a1162f3f85125cef96abc2aecb02ff875d415d337666ba32176ac1c92",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case02/full_d10/attempt000/infer.jsonl": "a8e471cdfb93a2e6f04622ea6b2785c46688205e83ce430b27a88009904d5e54",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case02/full_d10/attempt000/telemetry.jsonl": "d7a29ad3edf1c07ea047357fff6b8ee7186cf554e5889431b767eaca11ee8edc",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case03/full_d10/attempt000/initial_raw.npz": "25235643a7b16113b2df3c4e2848987b09b3054722aa92f8db8066974d6e95b3",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case03/full_d10/attempt000/infer.jsonl": "179bd22ae882eda64c4bc4fc78946616b03d1ba2f945321f9266da4ff40f76b2",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case03/full_d10/attempt000/telemetry.jsonl": "81e6cf1a3aff0fd2f13ce1c76d0d36f118a23654064db46b77824a0af3d574cc",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case04/full_d10/attempt000/initial_raw.npz": "6f88c0e4e42125d846c68f5854c2b6e511eb78486d40b2535acdade0e8172d0e",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case04/full_d10/attempt000/infer.jsonl": "862b4223e13efc20c08bca15cde9009c1fb5020654c8f4549e30695055884efb",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case04/full_d10/attempt000/telemetry.jsonl": "8ca7eaebc428e8d882f79f53f9566630f813a719526bf83c920e7d1830b2d115",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case05/full_d10/attempt000/initial_raw.npz": "3d8743655c24eac72994b5ecea876465703893668f528a2ac466c3d8c837a0ce",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case05/full_d10/attempt000/infer.jsonl": "741114c17da356e11f6bba82aa15542620820fdb6f78731eabe1254c3795a796",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case05/full_d10/attempt000/telemetry.jsonl": "2b3bafb8c406c7e4e56564bcc72725cb5c70755d302dbf0034e1ad837f24c79b",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case06/full_d10/attempt000/initial_raw.npz": "008d1598fd31b74e76f9c7e447ac84769d7492c7ddc2a615f2dc7fd1073e34dc",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case06/full_d10/attempt000/infer.jsonl": "0f101d4bead59dd1df325230001a86c0503f5ad1c325b5726ab5514126578e39",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case06/full_d10/attempt000/telemetry.jsonl": "d1a39f7c41ac761cdf698530f059bb52fa8dc73d1a41be3475f9711a4ed56dd8",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case07/full_d10/attempt000/initial_raw.npz": "5ef68ec00f052072ed60b578c5183da8addbd0f30d0bc85f1b98134bbceff5cd",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case07/full_d10/attempt000/infer.jsonl": "4c14eecfb297c2e5e051347213ef1c6f1c02f511d814f70235e086d6e8b52812",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case07/full_d10/attempt000/telemetry.jsonl": "250f179371f50aa6c513eca8c3b0a16dc033d511cd146b9acc9d11ed0234d230",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case00/full_d10/attempt001/initial_raw.npz": "49bb51967e8d41a1bd418758a95c00ee89e2bb70011e562c1d5249220398a659",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case00/full_d10/attempt001/infer.jsonl": "7d2025d8b8e84f7c1a68380fd483b26d1894ec6422862ea53640b5b1f6745452",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case00/full_d10/attempt001/telemetry.jsonl": "8c9200fd896c0af78eeb8241ab9f46a8a5a06b2b805be4f606f8f1da5dae55a9",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case01/full_d10/attempt001/initial_raw.npz": "b8bc498c384a5b0f3aad0884011aada58164b6f414c1abd89c08769bb5e7f171",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case01/full_d10/attempt001/infer.jsonl": "38cbb2686dcabb26c71c9a1d81fb361bada0202897c6e76e5524d3b3dc880ec7",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case01/full_d10/attempt001/telemetry.jsonl": "f8a96fdb8d30c9d42d7bdc2142cebbdadfa0c5e51ba7cd2ee05c0a031d8ca946",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case02/full_d10/attempt001/initial_raw.npz": "edd8d2dc55229b83c4b838712a7099ed772741252c2de40e1c254d4e7da6d0a3",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case02/full_d10/attempt001/infer.jsonl": "b800c70133ccbbafd1ceb6e5c33e0724ecfc6435ee6ccce663474697438442c9",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case02/full_d10/attempt001/telemetry.jsonl": "852bb21e8e07fdadc6bdae945b64768b304cc45091685ed55f95867794188478",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case03/full_d10/attempt001/initial_raw.npz": "7100b3538aafec8beedf60f15e5716dd39bdce1e0bd07dff6e9bab394eb55807",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case03/full_d10/attempt001/infer.jsonl": "fcaf6e0f0155c8f5174dc380df2b27935becf0d531a1a5c88cbdab125c6e4b8b",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case03/full_d10/attempt001/telemetry.jsonl": "c40dee9c2d4cf7683efea1acfd49103e51c58db08a9593890f69676721ab3b87",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case04/full_d10/attempt001/initial_raw.npz": "2ee8d7710a359de9e342554b364ecfc571ced6b39acd029855095630869ca104",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case04/full_d10/attempt001/infer.jsonl": "150ce0a79a74fe4f5286141002439b7f4324c52ba7512ef643f69d004ba8a0e0",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case04/full_d10/attempt001/telemetry.jsonl": "c106cc84257c32683c7a7fa3dc47d27495c597ef92200776de6f2ac5a56f6b1e",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case00/full_d10/attempt000/initial_raw.npz": "0fcacf2d363fad8c1dc7640221855bf5decd78a3bfd6a0f60d40b96346127d74",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case00/full_d10/attempt000/infer.jsonl": "a2baf7d4eaf1fa9c284784c92c5387fd0128efe44e39249ff253b3a066775b88",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case00/full_d10/attempt000/telemetry.jsonl": "4928fd8184787e1cfa0d8c60997aa65e9273cdadadcd8dc52077a3a9450dd945",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case01/full_d10/attempt000/initial_raw.npz": "2d4b0828804357502219b70221cd2b75a70f1ac1bd0d71b708f1fa840b5ebe45",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case01/full_d10/attempt000/infer.jsonl": "4b2d5306ecb52f34b22f6e7117a1f3faafbd57451210c638bf9d9d2be04d3a37",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case01/full_d10/attempt000/telemetry.jsonl": "2581df975d0d3066872361d9dd1e85703856e518ec7eb59edbe3d7f9d9f46df7",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case02/full_d10/attempt000/initial_raw.npz": "96af1fbf1c30b8896587477b7e9a75ef0d91e186254caa39074b49dcf0e9a6df",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case02/full_d10/attempt000/infer.jsonl": "caa1d59b38eba952cb0846305c8f8912c175e039adfc6314df8c6544a096c9ab",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case02/full_d10/attempt000/telemetry.jsonl": "8707517194d800d59617b34c6de2b155a994eaa3983591e165f239f68a9e27bd",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case03/full_d10/attempt000/initial_raw.npz": "57faef461fc8569a00ab55c1700a62d648618815646208cb5ba3f8daef13ba61",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case03/full_d10/attempt000/infer.jsonl": "d60f47390813fa6287d30b719def1d38fc8e70c347b232cecda1444251ed4430",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case03/full_d10/attempt000/telemetry.jsonl": "51a198a31889f230849deb7caa9015d37a5be3d37dfb84c81b7eebb5c07fdc6f",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case04/full_d10/attempt000/initial_raw.npz": "52f793502fde5da5e42f43965915ae9c0c82ba50e19138c40806494caed5111c",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case04/full_d10/attempt000/infer.jsonl": "f76810e7d6be38e4739cd46ef8c80f94f4f839926e62dd69a34c11f31e84e724",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case04/full_d10/attempt000/telemetry.jsonl": "3b45c7d38f45f356b45d2601813fa0c53607bfe5b1afb0b5e3182a883d340fbd"
+  },
+  "source_branch": {
+    "original_quaternion_xyzw": [
+      0.9996096147738871,
+      -0.0009063364830718679,
+      -0.027923584546988157,
+      -0.00026463527139470797
+    ],
+    "old_state8": [
+      -0.21124162683394807,
+      -0.011090601889321502,
+      1.1742495176982402,
+      -3.139837268246076,
+      0.002846860439376467,
+      0.08770975201502633,
+      0.03872336505859045,
+      -0.0387222020954563
+    ],
+    "native_state8": [
+      -0.21124162683394807,
+      -0.011090601889321502,
+      1.1742495176982402,
+      3.140895396142254,
+      -0.002847819833825949,
+      -0.08773931027790592,
+      0.03872336505859045,
+      -0.0387222020954563
+    ],
+    "same_SO3_max_matrix_abs": 1.5766467992284205e-15,
+    "state_rotation_difference": [
+      6.28073266438833,
+      -0.005694680273202416,
+      -0.17544906229293225
+    ],
+    "decoded_extraDelta_shift_first6": [
+      0.0,
+      0.0,
+      0.0,
+      6.28073266438833,
+      -0.005694680273202416,
+      -0.17544906229293225
+    ],
+    "native_q_negq_state_difference": [
+      6.280732664388329,
+      -0.005694680273202415,
+      -0.17544906229293222
+    ]
+  },
+  "initial_inputs": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case00/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.11165209114551544,
+        0.1417638510465622,
+        1.1154274940490723,
+        2.325131416320801,
+        1.9396631717681885,
+        0.1180247962474823,
+        0.039999254047870636,
+        -0.039999254047870636
+      ],
+      "state_z_max_abs": 2.3817955396787873,
+      "zero_model_output_counterfactual": [
+        -0.044928453862667084,
+        0.2057737484574318,
+        0.3104768991470337,
+        -0.6465198993682861,
+        2.167023226618767,
+        0.2372690513730049,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.06636190380749e-08,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.08333333333333333,
+        0.0,
+        0.027777777777777776,
+        0.04722222222222222
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case01/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.29383715987205505,
+        0.3347249925136566,
+        1.1634347438812256,
+        2.2801315784454346,
+        2.0536065101623535,
+        0.08668988943099976,
+        0.039350446313619614,
+        -0.039350446313619614
+      ],
+      "state_z_max_abs": 2.507431120577993,
+      "zero_model_output_counterfactual": [
+        -0.2271135225892067,
+        0.3987348899245262,
+        0.358484148979187,
+        -0.6915197372436523,
+        2.280966565012932,
+        0.20593414455652237,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.06636190380749e-08,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.1388888888888889,
+        0.041666666666666664,
+        0.05555555555555555,
+        0.2222222222222222
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case02/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.03228882700204849,
+        0.5009419918060303,
+        1.216964840888977,
+        -2.2833821773529053,
+        -2.1063315868377686,
+        -0.28122657537460327,
+        -2.6993666324415244e-06,
+        2.6993666324415244e-06
+      ],
+      "state_z_max_abs": 15.281566927355811,
+      "zero_model_output_counterfactual": [
+        0.034434810280799866,
+        0.5649518892168999,
+        0.4120142459869385,
+        -5.255033493041992,
+        -1.8789715319871902,
+        -0.16198232024908066,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1403191058079187e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.027777777777777776,
+        0.013888888888888888,
+        0.0,
+        0.09166666666666666
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case03/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.03370964527130127,
+        0.4969371259212494,
+        1.2094502449035645,
+        -2.284414768218994,
+        -2.11873197555542,
+        -0.26568636298179626,
+        1.7392912923241965e-05,
+        -1.7392912923241965e-05
+      ],
+      "state_z_max_abs": 15.284569329358582,
+      "zero_model_output_counterfactual": [
+        0.03301399201154709,
+        0.560947023332119,
+        0.4044996500015259,
+        -5.256066083908081,
+        -1.8913719207048416,
+        -0.14644210785627365,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1238145791736542e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.025,
+        0.3194444444444444,
+        0.013888888888888888,
+        0.008333333333333333,
+        0.15555555555555556
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case04/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.2556171715259552,
+        0.2935829162597656,
+        1.2315866947174072,
+        -2.3927383422851562,
+        -1.935660481452942,
+        -0.1128682792186737,
+        0.03999878466129303,
+        -0.03999878466129303
+      ],
+      "state_z_max_abs": 15.599535233478491,
+      "zero_model_output_counterfactual": [
+        -0.18889353424310684,
+        0.3575928136706352,
+        0.42663609981536865,
+        -5.364389657974243,
+        -1.7083004266023636,
+        0.0063759759068489075,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1403191058079187e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.4027777777777778,
+        0.07777777777777778,
+        0.375,
+        0.12222222222222222
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case05/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.44074538350105286,
+        0.3643125593662262,
+        1.2350932359695435,
+        -1.8354939222335815,
+        -2.380943536758423,
+        -0.18490713834762573,
+        0.020320534706115723,
+        -0.020320534706115723
+      ],
+      "state_z_max_abs": 13.979269339462494,
+      "zero_model_output_counterfactual": [
+        -0.3740217462182045,
+        0.4283224567770958,
+        0.4301426410675049,
+        -4.8071452379226685,
+        -2.1535834819078445,
+        -0.06566288322210312,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.0780680170796586e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.1388888888888889,
+        0.05,
+        0.041666666666666664,
+        0.16944444444444445
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case06/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.2954227924346924,
+        0.3627950847148895,
+        1.1290287971496582,
+        2.3433430194854736,
+        2.0434248447418213,
+        0.12248139083385468,
+        0.020283762365579605,
+        -0.020283762365579605
+      ],
+      "state_z_max_abs": 2.496204668310947,
+      "zero_model_output_counterfactual": [
+        -0.22869915515184402,
+        0.4268049821257591,
+        0.32407820224761963,
+        -0.6283082962036133,
+        2.2707848995923996,
+        0.2417256459593773,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.6199683533789653e-08,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        0.09722222222222222,
+        0.058333333333333334,
+        0.041666666666666664,
+        0.20277777777777778
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/calvin/case07/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.042773790657520294,
+        0.4971260726451874,
+        1.2427047491073608,
+        2.201871871948242,
+        2.202364683151245,
+        0.3135914206504822,
+        0.019365496933460236,
+        -0.019365496933460236
+      ],
+      "state_z_max_abs": 3.0488725171624482,
+      "zero_model_output_counterfactual": [
+        0.023949846625328064,
+        0.561135970056057,
+        0.43775415420532227,
+        -0.7697794437408447,
+        2.4297247380018234,
+        0.4328356757760048,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.06636190380749e-08,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.002777777777777778,
+        0.2388888888888889,
+        0.16944444444444445,
+        0.1527777777777778,
+        0.21666666666666667
+      ],
+      "executed_steps": 360
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case00/full_d10/attempt001/initial_raw.npz",
+      "state8": [
+        -0.2510853707790375,
+        -0.1974187195301056,
+        1.174249529838562,
+        -3.1398372650146484,
+        0.0028468603268265724,
+        0.08770975470542908,
+        0.03872336447238922,
+        -0.0387222021818161
+      ],
+      "state_z_max_abs": 17.771829581159267,
+      "zero_model_output_counterfactual": [
+        -0.18436173349618912,
+        -0.133408822119236,
+        0.36929893493652344,
+        -6.111488580703735,
+        0.23020691517740488,
+        0.2069540098309517,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.0510816511887242e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2866666666666667
+      ],
+      "executed_steps": 300
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case01/full_d10/attempt001/initial_raw.npz",
+      "state8": [
+        -0.4092884957790375,
+        0.022893773391842842,
+        1.174249529838562,
+        -3.1398372650146484,
+        0.0028468603268265724,
+        0.08770975470542908,
+        0.03872336447238922,
+        -0.0387222021818161
+      ],
+      "state_z_max_abs": 17.771829581159267,
+      "zero_model_output_counterfactual": [
+        -0.3425648584961891,
+        0.08690367080271244,
+        0.36929893493652344,
+        -6.111488580703735,
+        0.23020691517740488,
+        0.2069540098309517,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.0345771289953518e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.14666666666666667
+      ],
+      "executed_steps": 300
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case02/full_d10/attempt001/initial_raw.npz",
+      "state8": [
+        -0.2557728886604309,
+        -0.2349187284708023,
+        1.174249529838562,
+        -3.1398372650146484,
+        0.0028468603268265724,
+        0.08770975470542908,
+        0.03872336447238922,
+        -0.0387222021818161
+      ],
+      "state_z_max_abs": 17.771829581159267,
+      "zero_model_output_counterfactual": [
+        -0.18904925137758255,
+        -0.1709088310599327,
+        0.36929893493652344,
+        -6.111488580703735,
+        0.23020691517740488,
+        0.2069540098309517,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.0510816511887242e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2633333333333333
+      ],
+      "executed_steps": 300
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case03/full_d10/attempt001/initial_raw.npz",
+      "state8": [
+        -0.028429126366972923,
+        -0.07437185198068619,
+        1.174249529838562,
+        -3.1398372650146484,
+        0.0028468603268265724,
+        0.08770975470542908,
+        0.03872336447238922,
+        -0.0387222021818161
+      ],
+      "state_z_max_abs": 17.771829581159267,
+      "zero_model_output_counterfactual": [
+        0.038294510915875435,
+        -0.01036195456981659,
+        0.36929893493652344,
+        -6.111488580703735,
+        0.23020691517740488,
+        0.2069540098309517,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.0510816511887242e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2966666666666667
+      ],
+      "executed_steps": 300
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/pusht/case04/full_d10/attempt001/initial_raw.npz",
+      "state8": [
+        -0.3096791207790375,
+        -0.04859060049057007,
+        1.174249529838562,
+        -3.1398372650146484,
+        0.0028468603268265724,
+        0.08770975470542908,
+        0.03872336447238922,
+        -0.0387222021818161
+      ],
+      "state_z_max_abs": 17.771829581159267,
+      "zero_model_output_counterfactual": [
+        -0.24295548349618912,
+        0.01541929692029953,
+        0.36929893493652344,
+        -6.111488580703735,
+        0.23020691517740488,
+        0.2069540098309517,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 2.0510816511887242e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.34
+      ],
+      "executed_steps": 300
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case00/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.22061558067798615,
+        -0.21841692924499512,
+        1.8738688230514526,
+        -1.7251064777374268,
+        2.2288248538970947,
+        -0.0928434282541275,
+        0.07932833582162857,
+        -0.07932833582162857
+      ],
+      "state_z_max_abs": 13.658302444131088,
+      "zero_model_output_counterfactual": [
+        -0.1538919433951378,
+        -0.15440703183412552,
+        1.068918228149414,
+        -4.696757793426514,
+        2.456184908747673,
+        0.02640082687139511,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1568236324421832e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.4875,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "executed_steps": 80
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case01/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.22061558067798615,
+        -0.21841692924499512,
+        1.8738688230514526,
+        -1.7251064777374268,
+        2.2288248538970947,
+        -0.0928434282541275,
+        0.07932833582162857,
+        -0.07932833582162857
+      ],
+      "state_z_max_abs": 13.658302444131088,
+      "zero_model_output_counterfactual": [
+        -0.1538919433951378,
+        -0.15440703183412552,
+        1.068918228149414,
+        -4.696757793426514,
+        2.456184908747673,
+        0.02640082687139511,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1568236324421832e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.2,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "executed_steps": 80
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case02/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.22061558067798615,
+        -0.21841692924499512,
+        1.8738688230514526,
+        -1.7251064777374268,
+        2.2288248538970947,
+        -0.0928434282541275,
+        0.07932833582162857,
+        -0.07932833582162857
+      ],
+      "state_z_max_abs": 13.658302444131088,
+      "zero_model_output_counterfactual": [
+        -0.1538919433951378,
+        -0.15440703183412552,
+        1.068918228149414,
+        -4.696757793426514,
+        2.456184908747673,
+        0.02640082687139511,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1568236324421832e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.425,
+        1.0,
+        1.0,
+        0.0,
+        0.0875
+      ],
+      "executed_steps": 80
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case03/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.22061558067798615,
+        -0.21841692924499512,
+        1.8738688230514526,
+        -1.7251064777374268,
+        2.2288248538970947,
+        -0.0928434282541275,
+        0.07932833582162857,
+        -0.07932833582162857
+      ],
+      "state_z_max_abs": 13.658302444131088,
+      "zero_model_output_counterfactual": [
+        -0.1538919433951378,
+        -0.15440703183412552,
+        1.068918228149414,
+        -4.696757793426514,
+        2.456184908747673,
+        0.02640082687139511,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1733281590764477e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.1375,
+        1.0,
+        1.0,
+        0.0,
+        0.05
+      ],
+      "executed_steps": 80
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2/e4_transfer_20261022T051417Z/episodes/simpler/case04/full_d10/attempt000/initial_raw.npz",
+      "state8": [
+        -0.22061558067798615,
+        -0.21841692924499512,
+        1.8738688230514526,
+        -1.7251064777374268,
+        2.2288248538970947,
+        -0.0928434282541275,
+        0.07932833582162857,
+        -0.07932833582162857
+      ],
+      "state_z_max_abs": 13.658302444131088,
+      "zero_model_output_counterfactual": [
+        -0.1538919433951378,
+        -0.15440703183412552,
+        1.068918228149414,
+        -4.696757793426514,
+        2.456184908747673,
+        0.02640082687139511,
+        -0.034920889884233475
+      ],
+      "independent_decode_max_abs": 1.1733281590764477e-07,
+      "decode_passed": true,
+      "executed_command_clip_fraction_by_axis": [
+        0.0,
+        0.0,
+        0.3,
+        0.9375,
+        0.7125,
+        0.0,
+        0.075
+      ],
+      "executed_steps": 80
+    }
+  ],
+  "all_independent_decode_passed": true,
+  "action_contract": {
+    "legacy_LIBERO": "Keep released extraDelta/AbsoluteActions; original first6 state is added after unnormalization",
+    "CALVIN": "Official RLinf evaluator uses robot_obs[:7]: XYZ+EulerXYZ+opening width, despite norm seventh quantiles near +/-1; preserve discrepancy. Own stats, H5, no extraDelta; relative controller Euler addition",
+    "PushT": "Native target checkpoint state2/action2 H50/R50/D10, not LIBERO7-to2 projection",
+    "timing_seconds": {
+      "source_LIBERO_R5_20Hz": 0.25,
+      "old_CALVIN_R5_30Hz": 0.16666666666666666,
+      "old_Google_R5_3Hz": 1.6666666666666667,
+      "old_PushT_R5_10Hz": 0.5
+    }
+  },
+  "limitations": [
+    "Branch discrepancy is a proven representation bug, not a measured causal success-rate attribution.",
+    "Zero model output is a counterfactual decoder diagnostic, not observed policy prediction.",
+    "Command clipping is not measured EEF XYZ; TCP orientation calibration remains separate.",
+    "Target-trained Full/V14 are distinct positive controls, not matched controls for LIBERO-trained drafts.",
+    "CPU decoder/state parity does not establish model-policy parity or cross-environment performance."
+  ]
+}

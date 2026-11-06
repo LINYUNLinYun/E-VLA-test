@@ -1,0 +1,71 @@
+{
+  "schema": "within-suite-Full-baseline-diagnosis-v1",
+  "time": 1793888048.9091842,
+  "status": "source_checks_done_cause_not_identified",
+  "current_scientific_result": {
+    "cases": 432,
+    "selection": "no_candidate",
+    "Full_successes": 7,
+    "n_each": 72,
+    "fast_successes": {
+      "jac_anchor": 6,
+      "local_spatial": 8,
+      "local_object": 5,
+      "local_goal": 7,
+      "local_long": 7
+    },
+    "all_five_absolute_usability_gates_failed": true,
+    "confirmation360_launched": false,
+    "selection_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_within_suite_v1/discovery/analysis/selection.json",
+    "selection_sha256": "c3c7a7b72e374793175a0eb49ad578919c99e34e2a608fd0aff0ebf51799f22c"
+  },
+  "prompt_embedding_check": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/within_suite_baseline_diagnosis/prompt_embedding_parity.json",
+    "sha256": "77034a22ee59602a4d59a2360b419a6064b41505a4329ca7c6e4563622a3d667",
+    "cache_entries": 157,
+    "all_exact": true,
+    "all20_current_instructions_exact": true,
+    "weights_or_cache_modified": false,
+    "GPU_context_or_model_forward_started": false
+  },
+  "training_coverage_clue": {
+    "local_config": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/training/config.py",
+    "local_config_sha256": "c88d32dcecb5587b7a7825ca17f2aeb68c69c9f86656a2eebd99aa99951ef986",
+    "config_name": "pi0_libero",
+    "dataset_repo": "physical-intelligence/libero",
+    "official_dataset_card": "https://huggingface.co/datasets/physical-intelligence/libero",
+    "dataset_card_statement": "Combines Spatial/Object/Goal/10, total40tasks; LIBERO90 not listed.",
+    "causal_status": "Hypothesis only: localconvertedcheckpoint precise original trainingrun is not fully bound by these config/dataset documents."
+  },
+  "prior_healthy_reference": {
+    "manifest_scope": "vlm_local_search_v1 confirmation across four common suites",
+    "Full_successes": 190,
+    "n": 200,
+    "report_sha256": "48400436855e9b78cd5ebfa61ae409b765699dcc96280522db16145a861f946b",
+    "comparison_limit": "Different task pool; not an intervention comparison or causal estimate."
+  },
+  "interpretation": [
+    "A poorFullbaseline prevents this pool from testing usable complementaryfastpaths; this is not evidence that no suchpaths exist.",
+    "No numerical/action contract or resourceaudit failures were found in the432batch. Finite old-bank parity is not complete validation for everynewprompt/image.",
+    "Do notlowerusabilitythresholds, recyclethisbatchaspositiveevidence, orrunheldout360withoutqualifiedpair.",
+    "Preserveall432outcomes includingfailures; choosefurther bounded experiments onlyafterbaselinecompatibilityreview."
+  ],
+  "resources": {
+    "both_owned_GPUs_current_reservoir_GiB": 16,
+    "released": false,
+    "guardian_PIDs": [
+      839232,
+      839233
+    ],
+    "keeper_PIDs": [
+      859723,
+      859722
+    ]
+  },
+  "next_actions": [
+    "Checkremaining checkpoint/preprocessing provenance only whereevidencecanresolvebaselinecompatibility.",
+    "Prefernewcandidateexperiments on a taskpool withdemonstratedFull usability, withanexplicitbaselinecalibration beforelargesearch.",
+    "KeepGPUcontexts alive; existingreservoir_v1 dispatcher accepts onlythecompleted within_suite_v1 discovery/conditionalconfirmation roots. Newcohort support requiresa separatelyversioned resourcecontroller/controlledhandoff withoutlosing thereservedcards."
+  ],
+  "overall_goal_complete": false
+}

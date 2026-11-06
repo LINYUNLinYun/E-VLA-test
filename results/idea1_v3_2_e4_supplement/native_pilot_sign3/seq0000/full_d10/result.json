@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "environment": "calvin",
+  "family": "calvin_abc_d_native",
+  "mode": "full_d10",
+  "sequence_index": 0,
+  "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+  "success": false,
+  "completed_subtasks": 2,
+  "initial_condition": {
+    "led": 1,
+    "lightbulb": 1,
+    "slider": "left",
+    "drawer": "open",
+    "red_block": "slider_left",
+    "blue_block": "table",
+    "pink_block": "slider_right",
+    "grasped": 0
+  },
+  "tasks": [
+    "rotate_blue_block_right",
+    "move_slider_right",
+    "lift_red_block_slider",
+    "place_in_slider",
+    "turn_off_lightbulb"
+  ],
+  "gripper_semantics": "action_sign",
+  "seed_rule": "family+sequence+subtask+replan; mode excluded",
+  "formal_sequence_unit": true,
+  "pilot": true,
+  "model_used": true,
+  "gpu_renderer_used": false,
+  "initial_native_state_sha256": "ec3ba5bdaac6dcb39a837ad4e9baf68a5eb07adc6d5bbc5944b2b14c1dbed0c3",
+  "native_info": {
+    "native_hz": 30.0,
+    "renderer": "native PyBullet TinyRenderer CPU",
+    "state_contract": "unaltered native robot_obs15 and scene_obs24",
+    "cameras": "unaltered rgb_static200x200 and rgb_gripper84x84; no flip",
+    "tcp_link_id": 15,
+    "tcp_definition": "native getLinkState(tcp_link_id)COM pose, virtual center between finger tips",
+    "relative_position_scale_m": 0.02,
+    "relative_euler_scale_rad": 0.05,
+    "use_target_pose": true,
+    "task_oracle_sha256": "6e905de3ca05118efdd8a51f8a7756ec6e61ffdb2b9b6a2843f0b7e0e9e51dcf"
+  },
+  "video": {
+    "path": "results/idea1_v3_2_e4_supplement/native_pilot_sign3/seq0000/full_d10/video.mp4",
+    "fps": 30,
+    "kind": "native control Hz",
+    "full_stream_decode_passed": true
+  },
+  "failed_task": "lift_red_block_slider",
+  "failure_subtask_index": 2,
+  "native_steps": 803,
+  "task_results": [
+    {
+      "index": 0,
+      "task": "rotate_blue_block_right",
+      "instruction": "take the blue block and rotate it to the right",
+      "success": true,
+      "steps": 341,
+      "predictions": 69
+    },
+    {
+      "index": 1,
+      "task": "move_slider_right",
+      "instruction": "push the sliding door to the right side",
+      "success": true,
+      "steps": 102,
+      "predictions": 21
+    },
+    {
+      "index": 2,
+      "task": "lift_red_block_slider",
+      "instruction": "lift the red block from the sliding cabinet",
+      "success": false,
+      "steps": 360,
+      "predictions": 72
+    }
+  ],
+  "predictions": 162,
+  "wall_s": 115.55289327353239
+}

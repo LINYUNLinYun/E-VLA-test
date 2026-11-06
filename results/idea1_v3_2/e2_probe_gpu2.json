@@ -1,0 +1,3310 @@
+{
+  "status": "complete",
+  "started_unix": 1792643273.5230827,
+  "deadline_unix": 1792647600.0,
+  "assigned_budget_start_unix": 1792642200.0,
+  "preparation_ready_unix": 1792642768.0,
+  "budget_start_interpretation": "Parent assigned 04:10 UTC approximate preparation start; absolute deadline includes all preparation and GPU waiting",
+  "gpu_unavailable_since_first_ready_s": 505.5230836868286,
+  "waiting_interpretation": "GPU unavailable interval after first ready; includes overlapping CPU refinements and tests, not an exclusive idle-time category",
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/residual_experiment.py": "9f6a4ce1917ffee9c25248ecb4b9756a03fd72a9bc5ea70e832bdc58f457251d",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/residual.py": "030de2f01a63cdb4a138809a39c91104e6d33519eb1088dc1bc1c5f687b13480",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/residual_server.py": "2fb19eecbc374934186a5e340ef9dd3bdd89eb1325912d0f32d4c5dfb037839f",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/residual_rollout.py": "fedd3b9482aa869ae31522ab93930d6b19813d0530af5b488f776cbe0db92323",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/siglip.py": "033f80d9f60ddf19bc25526f6d4777ba73254ccddebe528550b3d26541f803dd",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/policies/policy.py": "a2ac5236e23b11d0f5a840d4a8fef148d89dba921d5452ec5dfcd5a6ffa46f20",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_1/models.py": "5b9d9805a540833a1e837a4a88fe97dbce3c601cf8637e508fd7f3568947d328",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v2_1/runtime_models.py": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa"
+  },
+  "failure_code": null,
+  "checks": [
+    {
+      "bank_index": 0,
+      "suite": "libero_spatial",
+      "input_hash": "cdcd08f6c4968b6293e8088b1c99fb1eb7a29f6291c6f5231e61ee183c4c7cec",
+      "noise_hash": "4588359c32d22bbb8bd0079144e149701d76c3929b012f9ccf01811614a6e3c2",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.33074951171875,
+            "rmse": 0.07266192883253098,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.3299391269683838,
+            "rmse": 0.10853379964828491,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.7990111708641052,
+            "rmse": 0.04242732375860214,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7985246181488037,
+            "rmse": 0.0628916472196579,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 25,
+      "suite": "libero_object",
+      "input_hash": "5c839b772b9e44b0ead5690d6f10149ba04e51f797117988a2f1e7caac93fbfe",
+      "noise_hash": "10996b4f061d7e946f68a4739287379815b95dc5c01dd326142e8ac37efbad2d",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.8028564453125,
+            "rmse": 0.05449435114860535,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.802367627620697,
+            "rmse": 0.06675249338150024,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.6829833984375,
+            "rmse": 0.031073596328496933,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.6825675964355469,
+            "rmse": 0.04439832270145416,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 50,
+      "suite": "libero_goal",
+      "input_hash": "31884aa0f2cbd855df508915659181628de809f6c53ddfdb0f9a7a7118e2d581",
+      "noise_hash": "d6000d210912c3a6cb47f7fd472d314137065038be5ea3147b8017add9a40327",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.36474609375,
+            "rmse": 0.05551348626613617,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.11982938647270203,
+            "rmse": 0.04241874814033508,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.27587890625,
+            "rmse": 0.028994131833314896,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.09063401818275452,
+            "rmse": 0.026065224781632423,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 75,
+      "suite": "libero_10",
+      "input_hash": "0b957d05c9152fb845532a5bded0b988a2d7ec33a7dc2b96d80231850cc74658",
+      "noise_hash": "fef1f604cad40cd319dc48871942b8138ea7566d63769c04cb9c52d914c67812",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.17431640625,
+            "rmse": 0.04189938306808472,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.11906808614730835,
+            "rmse": 0.029321501031517982,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.1513671875,
+            "rmse": 0.021499061957001686,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.09331923723220825,
+            "rmse": 0.020788203924894333,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 1,
+      "suite": "libero_spatial",
+      "input_hash": "c541a012cdf87c9535aef4cec381f92679a4b15e9d7620c53d9aeb4eed0d2b87",
+      "noise_hash": "1181a08df87f964c00ce7cd09fb78fc0cf7643913a0bb4301110ceaaa209db02",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.74847412109375,
+            "rmse": 0.07141187787055969,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7480183243751526,
+            "rmse": 0.08341989666223526,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.04278564453125,
+            "rmse": 0.05320395529270172,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.042150616645813,
+            "rmse": 0.07249816507101059,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 2,
+      "suite": "libero_spatial",
+      "input_hash": "230008af8fb7b51ec64555f76da5311af31e2b5a89088ad349d897e14eaf47f0",
+      "noise_hash": "b6f4a4f41c0fdca43f267d3ebb1d1b04ee8eb212ae5ede1d95f1591a1fc6141c",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.7038669586181641,
+            "rmse": 0.06138629838824272,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7034383416175842,
+            "rmse": 0.06800633668899536,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.624847412109375,
+            "rmse": 0.03990926593542099,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.6244668960571289,
+            "rmse": 0.0480259507894516,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 3,
+      "suite": "libero_spatial",
+      "input_hash": "b15276242a7e1df63a75a4b7444ee29eff5a4b39bf047b19156252c05d824cf4",
+      "noise_hash": "2a7db95145996c96818e6cfaf711e91d5aa9b750334baa4eeba47e203b1ddd54",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.3404541015625,
+            "rmse": 0.07945776730775833,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.3396378755569458,
+            "rmse": 0.12073220312595367,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.8975830078125,
+            "rmse": 0.1168629452586174,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.8964275121688843,
+            "rmse": 0.21740855276584625,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 4,
+      "suite": "libero_spatial",
+      "input_hash": "dde1f459273f57042a1068512fae3f2d5f424342f6e281cdf4edbe11ea1a7a53",
+      "noise_hash": "b222fed2aa0a3c7ec3bd6ca4e2d3797a6475be7a44592c49749306c92fa74cab",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.8197021484375,
+            "rmse": 0.057410016655921936,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.8192030191421509,
+            "rmse": 0.07059543579816818,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.63818359375,
+            "rmse": 0.036153197288513184,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.6377949714660645,
+            "rmse": 0.048006050288677216,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 5,
+      "suite": "libero_spatial",
+      "input_hash": "4a0cb3394ced738e96ab3db507cd0277a9d396fe9dff3ff947dc8cbf7fe37000",
+      "noise_hash": "b70c0176d1f7bebba2fec1403b346371efc4ecd6fe555134f4e6ef67a28e0220",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.6434326171875,
+            "rmse": 0.09301107376813889,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.6424319744110107,
+            "rmse": 0.156646728515625,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.9207763671875,
+            "rmse": 0.11555448174476624,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.9196066856384277,
+            "rmse": 0.21230697631835938,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 6,
+      "suite": "libero_spatial",
+      "input_hash": "7a271721991536691a5e08b1eb7b8c1ee8d7c8b5a93f8513aa583239383ac21c",
+      "noise_hash": "6df21c0f13696d71d953068f9828f30d47ba100acf84c660686c49ec0a006b70",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.650390625,
+            "rmse": 0.0758693665266037,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.4118584394454956,
+            "rmse": 0.07271447777748108,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.677734375,
+            "rmse": 0.06586980819702148,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.4057881832122803,
+            "rmse": 0.06370989978313446,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 7,
+      "suite": "libero_spatial",
+      "input_hash": "75d38071427d2d0fc93c2e2d633386e32c88d5eeb38f2ec193bed92a0b3b1fa9",
+      "noise_hash": "81ec78a82621595ae40a1f7cd84ca0edd278caf0ef280153b3823063185544fa",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.7305908203125,
+            "rmse": 0.08033549040555954,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.729537010192871,
+            "rmse": 0.13232797384262085,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.4610595703125,
+            "rmse": 0.05975662171840668,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.4601699113845825,
+            "rmse": 0.10350464284420013,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 8,
+      "suite": "libero_spatial",
+      "input_hash": "8b1e47ee61df8f4637670dae3b46b0c7679298663f7358873ea5586d6a9b3526",
+      "noise_hash": "21f539f721d7ae13d46241b4ec383e665f9c14ba31832ddf7c4843d2834ff260",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.81622314453125,
+            "rmse": 0.06246733292937279,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.8157261610031128,
+            "rmse": 0.0793728306889534,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.751708984375,
+            "rmse": 0.04323047772049904,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7512512803077698,
+            "rmse": 0.06008845567703247,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 9,
+      "suite": "libero_spatial",
+      "input_hash": "628e38fb1c042d825885b5327be952b5298343ce48f24a15efb34e9827f20bef",
+      "noise_hash": "1682daa7e8da6fce63295883822e389aa2cfd4cb02b67befb396e30ece5316e7",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.87432861328125,
+            "rmse": 0.08382337540388107,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.8737961649894714,
+            "rmse": 0.09400992840528488,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.5655517578125,
+            "rmse": 0.09972035884857178,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.5645983219146729,
+            "rmse": 0.1407272219657898,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 10,
+      "suite": "libero_spatial",
+      "input_hash": "9673c014bb109e5f208d7ed8053bbfdc23af96ca3c63a275db3244339627e89b",
+      "noise_hash": "5f0e147c3572d1df91619a696241bb019fb2de75cbc1765c43ead70c24f03462",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.084564208984375,
+            "rmse": 0.06192832812666893,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.0839037895202637,
+            "rmse": 0.08916736394166946,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.00396728515625,
+            "rmse": 0.04436159506440163,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.003355860710144,
+            "rmse": 0.07306914031505585,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 11,
+      "suite": "libero_spatial",
+      "input_hash": "35ffd17a0f28c5e0385e684972c7ac78eec053d11784fca5642f713a97124228",
+      "noise_hash": "ac15238ace9add094378a68bb26c72e9997a2bc45fed6b7460b5a3b1978b2a37",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.25079345703125,
+            "rmse": 0.04503596946597099,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.12251913547515869,
+            "rmse": 0.035766080021858215,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.20068359375,
+            "rmse": 0.02487497217953205,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.10355424880981445,
+            "rmse": 0.026685504242777824,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 12,
+      "suite": "libero_spatial",
+      "input_hash": "488a8330e30b6f7a5c0ca278a9cf82230df61170aa0fbc9c5fdcec8728bcfb41",
+      "noise_hash": "1f0faf5933e50d812c389d7443744490255c694869c2510e36f5291ca46795c2",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.438720703125,
+            "rmse": 0.051650263369083405,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.18410423398017883,
+            "rmse": 0.04009231925010681,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.3623046875,
+            "rmse": 0.02875136211514473,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.152037113904953,
+            "rmse": 0.027130406349897385,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 13,
+      "suite": "libero_spatial",
+      "input_hash": "c981a711d9eece0b0c3bf0f34dc5ea1e6b728d98c2f9dcd68cb42429a290ed9e",
+      "noise_hash": "7bfc14e9917acc103d8eeac2f1f3706c3f222b0f0b63e2197c45e8052110e0b2",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.854248046875,
+            "rmse": 0.07191043347120285,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.5487140417098999,
+            "rmse": 0.0782066360116005,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.663818359375,
+            "rmse": 0.04509599134325981,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.21808305382728577,
+            "rmse": 0.0416923463344574,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 14,
+      "suite": "libero_spatial",
+      "input_hash": "779a7faf8de58c3f3b0ac23a4e0a76e4c91feaf2de6e4bcd775c934ef5e033e8",
+      "noise_hash": "f73d0ebb055d75b7465b76444f32254224eaa7bd156e896b3419642b5fdc8115",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.4580078125,
+            "rmse": 0.07587595283985138,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.4571199417114258,
+            "rmse": 0.111434206366539,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.462890625,
+            "rmse": 0.05660661309957504,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.461999773979187,
+            "rmse": 0.09942663460969925,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 15,
+      "suite": "libero_spatial",
+      "input_hash": "84fad839ea79ae51d0d73c4a5979194d1b0a918d24743dbe1b1790866c62b687",
+      "noise_hash": "01928c2716138a9ad7e35b7e3b834e7d9c29fbeaa85a9092bf9d33b1c11a3e17",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.5048828125,
+            "rmse": 0.07338948547840118,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.5039664506912231,
+            "rmse": 0.11053667217493057,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.21875,
+            "rmse": 0.04774540662765503,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.2180079221725464,
+            "rmse": 0.07550058513879776,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 16,
+      "suite": "libero_spatial",
+      "input_hash": "f8d23bbab4c8a9d425063d2c13d5196e69ead0b8f5a52ade72fbe2360276e647",
+      "noise_hash": "c7653d822f7c50f475dd1c452f6285e59d25bb0ec8d37be31af97eb0ce989ee7",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.4710693359375,
+            "rmse": 0.0529831163585186,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.47078248858451843,
+            "rmse": 0.04987954720854759,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.369140625,
+            "rmse": 0.04038362205028534,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.3565027117729187,
+            "rmse": 0.04160811007022858,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 17,
+      "suite": "libero_spatial",
+      "input_hash": "17acb42a3450c26b35f79e7eefa2521abf4beb4f70dda249915392085b40db6b",
+      "noise_hash": "2bf52d50dab70d09f32e6ff266ec483e98d3db4ce80b91f8c266240e2d37687c",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.7907562255859375,
+            "rmse": 0.06416942179203033,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7902746796607971,
+            "rmse": 0.07664448767900467,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.5690765380859375,
+            "rmse": 0.048935744911432266,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.5687299966812134,
+            "rmse": 0.062811478972435,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 18,
+      "suite": "libero_spatial",
+      "input_hash": "615b7660b07a0dec75ee9cdd2fe9d647f2c14ae77ffcb9f205f45fc4ccaa07ce",
+      "noise_hash": "7de42ebe18a50fb5f9a028044c9004571942d5864300220d93a4a8362547757b",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.353515625,
+            "rmse": 0.08811188489198685,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.352691411972046,
+            "rmse": 0.13684284687042236,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 1.3865966796875,
+            "rmse": 0.07043931633234024,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 1.3857523202896118,
+            "rmse": 0.12708215415477753,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 19,
+      "suite": "libero_spatial",
+      "input_hash": "c233c56c298d9439eeec8e2f8251b1d8390c9c6df3fe6e5060bb5aeda81d779b",
+      "noise_hash": "c9ad700cfc1aaec8df4d229cccf29b88f805a26ce31ebe5c4f0e8bf5fe560415",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.743072509765625,
+            "rmse": 0.0620432123541832,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.7426199913024902,
+            "rmse": 0.06424820423126221,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.475128173828125,
+            "rmse": 0.034280840307474136,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.4748387932777405,
+            "rmse": 0.040948860347270966,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    },
+    {
+      "bank_index": 20,
+      "suite": "libero_spatial",
+      "input_hash": "e80074eb72bb3cb3deef996407536894cb1a22c335de55065c75a342286acdad",
+      "noise_hash": "b168d381289127b443abb38129f9ca312fec6d1710001c59a2ed74d3290217f6",
+      "modes": {
+        "refresh_all": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.0,
+            "rmse": 0.0,
+            "passed": true
+          }
+        },
+        "reuse03": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.406097412109375,
+            "rmse": 0.045584991574287415,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.4058501720428467,
+            "rmse": 0.04283015802502632,
+            "passed": false
+          }
+        },
+        "d2": {
+          "raw": {
+            "shape": [
+              1,
+              50,
+              32
+            ],
+            "max_abs": 0.297607421875,
+            "rmse": 0.028855115175247192,
+            "passed": false
+          },
+          "decoded": {
+            "shape": [
+              50,
+              7
+            ],
+            "max_abs": 0.27378952503204346,
+            "rmse": 0.03137914463877678,
+            "passed": false
+          }
+        }
+      },
+      "canonical_policy_infer_decoded": {
+        "shape": [
+          50,
+          7
+        ],
+        "max_abs": 0.0,
+        "rmse": 0.0,
+        "passed": true
+      },
+      "d2_native_parity": {
+        "raw": {
+          "shape": [
+            1,
+            50,
+            32
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        },
+        "decoded": {
+          "shape": [
+            50,
+            7
+          ],
+          "max_abs": 0.0,
+          "rmse": 0.0,
+          "passed": true
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "mode": "native",
+      "input_hash": "cdcd08f6c4968b6293e8088b1c99fb1eb7a29f6291c6f5231e61ee183c4c7cec",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "request_ms": 99.10570457577705
+    },
+    {
+      "index": 0,
+      "mode": "refresh_all",
+      "input_hash": "cdcd08f6c4968b6293e8088b1c99fb1eb7a29f6291c6f5231e61ee183c4c7cec",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "request_ms": 101.82927548885345,
+      "ae_ms": 22.12744951248169
+    },
+    {
+      "index": 0,
+      "mode": "reuse03",
+      "input_hash": "cdcd08f6c4968b6293e8088b1c99fb1eb7a29f6291c6f5231e61ee183c4c7cec",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "request_ms": 85.94080060720444,
+      "ae_ms": 5.751997232437134
+    },
+    {
+      "index": 0,
+      "mode": "d2",
+      "input_hash": "cdcd08f6c4968b6293e8088b1c99fb1eb7a29f6291c6f5231e61ee183c4c7cec",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "request_ms": 82.12896063923836,
+      "ae_ms": 4.954211413860321
+    },
+    {
+      "index": 1,
+      "mode": "native",
+      "input_hash": "5c839b772b9e44b0ead5690d6f10149ba04e51f797117988a2f1e7caac93fbfe",
+      "noise_hash": "25f632f1cb910e8335bc4aa3baa1614615d84c789d1e7b2f6f750a8e64ff0c94",
+      "request_ms": 113.22356015443802
+    },
+    {
+      "index": 1,
+      "mode": "refresh_all",
+      "input_hash": "5c839b772b9e44b0ead5690d6f10149ba04e51f797117988a2f1e7caac93fbfe",
+      "noise_hash": "25f632f1cb910e8335bc4aa3baa1614615d84c789d1e7b2f6f750a8e64ff0c94",
+      "request_ms": 100.75365751981735,
+      "ae_ms": 21.358422935009003
+    },
+    {
+      "index": 1,
+      "mode": "reuse03",
+      "input_hash": "5c839b772b9e44b0ead5690d6f10149ba04e51f797117988a2f1e7caac93fbfe",
+      "noise_hash": "25f632f1cb910e8335bc4aa3baa1614615d84c789d1e7b2f6f750a8e64ff0c94",
+      "request_ms": 82.401342689991,
+      "ae_ms": 6.603959947824478
+    },
+    {
+      "index": 1,
+      "mode": "d2",
+      "input_hash": "5c839b772b9e44b0ead5690d6f10149ba04e51f797117988a2f1e7caac93fbfe",
+      "noise_hash": "25f632f1cb910e8335bc4aa3baa1614615d84c789d1e7b2f6f750a8e64ff0c94",
+      "request_ms": 82.5846679508686,
+      "ae_ms": 4.873752593994141
+    },
+    {
+      "index": 2,
+      "mode": "native",
+      "input_hash": "31884aa0f2cbd855df508915659181628de809f6c53ddfdb0f9a7a7118e2d581",
+      "noise_hash": "7cf58a91f5da22fc3fb9d36949d5812559ad04e14573630198c40614c2c0cadf",
+      "request_ms": 98.81456196308136
+    },
+    {
+      "index": 2,
+      "mode": "refresh_all",
+      "input_hash": "31884aa0f2cbd855df508915659181628de809f6c53ddfdb0f9a7a7118e2d581",
+      "noise_hash": "7cf58a91f5da22fc3fb9d36949d5812559ad04e14573630198c40614c2c0cadf",
+      "request_ms": 99.01503100991249,
+      "ae_ms": 21.431177854537964
+    },
+    {
+      "index": 2,
+      "mode": "reuse03",
+      "input_hash": "31884aa0f2cbd855df508915659181628de809f6c53ddfdb0f9a7a7118e2d581",
+      "noise_hash": "7cf58a91f5da22fc3fb9d36949d5812559ad04e14573630198c40614c2c0cadf",
+      "request_ms": 81.12216368317604,
+      "ae_ms": 5.606800317764282
+    },
+    {
+      "index": 2,
+      "mode": "d2",
+      "input_hash": "31884aa0f2cbd855df508915659181628de809f6c53ddfdb0f9a7a7118e2d581",
+      "noise_hash": "7cf58a91f5da22fc3fb9d36949d5812559ad04e14573630198c40614c2c0cadf",
+      "request_ms": 81.15585520863533,
+      "ae_ms": 4.947967827320099
+    },
+    {
+      "index": 3,
+      "mode": "native",
+      "input_hash": "0b957d05c9152fb845532a5bded0b988a2d7ec33a7dc2b96d80231850cc74658",
+      "noise_hash": "5ca23fb91c371391d6f89216560ee211da51e54714b519f01775106a6e98cce7",
+      "request_ms": 98.67464751005173
+    },
+    {
+      "index": 3,
+      "mode": "refresh_all",
+      "input_hash": "0b957d05c9152fb845532a5bded0b988a2d7ec33a7dc2b96d80231850cc74658",
+      "noise_hash": "5ca23fb91c371391d6f89216560ee211da51e54714b519f01775106a6e98cce7",
+      "request_ms": 100.19725561141968,
+      "ae_ms": 21.825328469276428
+    },
+    {
+      "index": 3,
+      "mode": "reuse03",
+      "input_hash": "0b957d05c9152fb845532a5bded0b988a2d7ec33a7dc2b96d80231850cc74658",
+      "noise_hash": "5ca23fb91c371391d6f89216560ee211da51e54714b519f01775106a6e98cce7",
+      "request_ms": 85.334412753582,
+      "ae_ms": 5.579356104135513
+    },
+    {
+      "index": 3,
+      "mode": "d2",
+      "input_hash": "0b957d05c9152fb845532a5bded0b988a2d7ec33a7dc2b96d80231850cc74658",
+      "noise_hash": "5ca23fb91c371391d6f89216560ee211da51e54714b519f01775106a6e98cce7",
+      "request_ms": 81.00000396370888,
+      "ae_ms": 5.265265703201294
+    },
+    {
+      "index": 4,
+      "mode": "native",
+      "input_hash": "c541a012cdf87c9535aef4cec381f92679a4b15e9d7620c53d9aeb4eed0d2b87",
+      "noise_hash": "9b11eac6b961c8fcfb77ce901ecdfbeb2029266e66f276295df0600789fd9a4e",
+      "request_ms": 99.07333552837372
+    },
+    {
+      "index": 4,
+      "mode": "refresh_all",
+      "input_hash": "c541a012cdf87c9535aef4cec381f92679a4b15e9d7620c53d9aeb4eed0d2b87",
+      "noise_hash": "9b11eac6b961c8fcfb77ce901ecdfbeb2029266e66f276295df0600789fd9a4e",
+      "request_ms": 97.38636761903763,
+      "ae_ms": 22.56668731570244
+    },
+    {
+      "index": 4,
+      "mode": "reuse03",
+      "input_hash": "c541a012cdf87c9535aef4cec381f92679a4b15e9d7620c53d9aeb4eed0d2b87",
+      "noise_hash": "9b11eac6b961c8fcfb77ce901ecdfbeb2029266e66f276295df0600789fd9a4e",
+      "request_ms": 84.1883197426796,
+      "ae_ms": 5.661021918058395
+    },
+    {
+      "index": 4,
+      "mode": "d2",
+      "input_hash": "c541a012cdf87c9535aef4cec381f92679a4b15e9d7620c53d9aeb4eed0d2b87",
+      "noise_hash": "9b11eac6b961c8fcfb77ce901ecdfbeb2029266e66f276295df0600789fd9a4e",
+      "request_ms": 86.32482588291168,
+      "ae_ms": 4.874240607023239
+    },
+    {
+      "index": 5,
+      "mode": "native",
+      "input_hash": "230008af8fb7b51ec64555f76da5311af31e2b5a89088ad349d897e14eaf47f0",
+      "noise_hash": "d51403eb387e3d31daa3eb4d03ee92104f201330159f6f3b38871ca6d6c78071",
+      "request_ms": 107.92756080627441
+    },
+    {
+      "index": 5,
+      "mode": "refresh_all",
+      "input_hash": "230008af8fb7b51ec64555f76da5311af31e2b5a89088ad349d897e14eaf47f0",
+      "noise_hash": "d51403eb387e3d31daa3eb4d03ee92104f201330159f6f3b38871ca6d6c78071",
+      "request_ms": 98.02668169140816,
+      "ae_ms": 21.373528987169266
+    },
+    {
+      "index": 5,
+      "mode": "reuse03",
+      "input_hash": "230008af8fb7b51ec64555f76da5311af31e2b5a89088ad349d897e14eaf47f0",
+      "noise_hash": "d51403eb387e3d31daa3eb4d03ee92104f201330159f6f3b38871ca6d6c78071",
+      "request_ms": 85.90849116444588,
+      "ae_ms": 5.569715052843094
+    },
+    {
+      "index": 5,
+      "mode": "d2",
+      "input_hash": "230008af8fb7b51ec64555f76da5311af31e2b5a89088ad349d897e14eaf47f0",
+      "noise_hash": "d51403eb387e3d31daa3eb4d03ee92104f201330159f6f3b38871ca6d6c78071",
+      "request_ms": 84.21629667282104,
+      "ae_ms": 5.047488957643509
+    },
+    {
+      "index": 6,
+      "mode": "native",
+      "input_hash": "b15276242a7e1df63a75a4b7444ee29eff5a4b39bf047b19156252c05d824cf4",
+      "noise_hash": "f57357079f81233b8fe3f2e032fb5a0ba7f487ad3d0821323c4577264354e60f",
+      "request_ms": 98.44179451465607
+    },
+    {
+      "index": 6,
+      "mode": "refresh_all",
+      "input_hash": "b15276242a7e1df63a75a4b7444ee29eff5a4b39bf047b19156252c05d824cf4",
+      "noise_hash": "f57357079f81233b8fe3f2e032fb5a0ba7f487ad3d0821323c4577264354e60f",
+      "request_ms": 99.166639149189,
+      "ae_ms": 22.69667014479637
+    },
+    {
+      "index": 6,
+      "mode": "reuse03",
+      "input_hash": "b15276242a7e1df63a75a4b7444ee29eff5a4b39bf047b19156252c05d824cf4",
+      "noise_hash": "f57357079f81233b8fe3f2e032fb5a0ba7f487ad3d0821323c4577264354e60f",
+      "request_ms": 82.50695466995239,
+      "ae_ms": 5.777433514595032
+    },
+    {
+      "index": 6,
+      "mode": "d2",
+      "input_hash": "b15276242a7e1df63a75a4b7444ee29eff5a4b39bf047b19156252c05d824cf4",
+      "noise_hash": "f57357079f81233b8fe3f2e032fb5a0ba7f487ad3d0821323c4577264354e60f",
+      "request_ms": 81.606924533844,
+      "ae_ms": 5.030963569879532
+    },
+    {
+      "index": 7,
+      "mode": "native",
+      "input_hash": "dde1f459273f57042a1068512fae3f2d5f424342f6e281cdf4edbe11ea1a7a53",
+      "noise_hash": "4290c26b72bce2d1b4f57bb3b61e2571c18b2ec172a4d6f9bbe00038ad3fa5e5",
+      "request_ms": 99.07141327857971
+    },
+    {
+      "index": 7,
+      "mode": "refresh_all",
+      "input_hash": "dde1f459273f57042a1068512fae3f2d5f424342f6e281cdf4edbe11ea1a7a53",
+      "noise_hash": "4290c26b72bce2d1b4f57bb3b61e2571c18b2ec172a4d6f9bbe00038ad3fa5e5",
+      "request_ms": 99.25103187561035,
+      "ae_ms": 21.93095162510872
+    },
+    {
+      "index": 7,
+      "mode": "reuse03",
+      "input_hash": "dde1f459273f57042a1068512fae3f2d5f424342f6e281cdf4edbe11ea1a7a53",
+      "noise_hash": "4290c26b72bce2d1b4f57bb3b61e2571c18b2ec172a4d6f9bbe00038ad3fa5e5",
+      "request_ms": 82.28258043527603,
+      "ae_ms": 5.62707707285881
+    },
+    {
+      "index": 7,
+      "mode": "d2",
+      "input_hash": "dde1f459273f57042a1068512fae3f2d5f424342f6e281cdf4edbe11ea1a7a53",
+      "noise_hash": "4290c26b72bce2d1b4f57bb3b61e2571c18b2ec172a4d6f9bbe00038ad3fa5e5",
+      "request_ms": 83.39648693799973,
+      "ae_ms": 5.220804363489151
+    },
+    {
+      "index": 8,
+      "mode": "native",
+      "input_hash": "4a0cb3394ced738e96ab3db507cd0277a9d396fe9dff3ff947dc8cbf7fe37000",
+      "noise_hash": "4627cfc46991b2d905ff18d7d1afc2d4770ccb8e121bce5770237b2de5f01d9e",
+      "request_ms": 100.08404403924942
+    },
+    {
+      "index": 8,
+      "mode": "refresh_all",
+      "input_hash": "4a0cb3394ced738e96ab3db507cd0277a9d396fe9dff3ff947dc8cbf7fe37000",
+      "noise_hash": "4627cfc46991b2d905ff18d7d1afc2d4770ccb8e121bce5770237b2de5f01d9e",
+      "request_ms": 98.98559749126434,
+      "ae_ms": 21.48602530360222
+    },
+    {
+      "index": 8,
+      "mode": "reuse03",
+      "input_hash": "4a0cb3394ced738e96ab3db507cd0277a9d396fe9dff3ff947dc8cbf7fe37000",
+      "noise_hash": "4627cfc46991b2d905ff18d7d1afc2d4770ccb8e121bce5770237b2de5f01d9e",
+      "request_ms": 83.2459032535553,
+      "ae_ms": 6.369706243276596
+    },
+    {
+      "index": 8,
+      "mode": "d2",
+      "input_hash": "4a0cb3394ced738e96ab3db507cd0277a9d396fe9dff3ff947dc8cbf7fe37000",
+      "noise_hash": "4627cfc46991b2d905ff18d7d1afc2d4770ccb8e121bce5770237b2de5f01d9e",
+      "request_ms": 81.66546747088432,
+      "ae_ms": 5.340799689292908
+    },
+    {
+      "index": 9,
+      "mode": "native",
+      "input_hash": "7a271721991536691a5e08b1eb7b8c1ee8d7c8b5a93f8513aa583239383ac21c",
+      "noise_hash": "ed13a0a56a97b6bc084ab68b11d8017454bf0b0ff35e5d481ee8aa8cd9445fe4",
+      "request_ms": 100.83846002817154
+    },
+    {
+      "index": 9,
+      "mode": "refresh_all",
+      "input_hash": "7a271721991536691a5e08b1eb7b8c1ee8d7c8b5a93f8513aa583239383ac21c",
+      "noise_hash": "ed13a0a56a97b6bc084ab68b11d8017454bf0b0ff35e5d481ee8aa8cd9445fe4",
+      "request_ms": 98.12429547309875,
+      "ae_ms": 22.995073348283768
+    },
+    {
+      "index": 9,
+      "mode": "reuse03",
+      "input_hash": "7a271721991536691a5e08b1eb7b8c1ee8d7c8b5a93f8513aa583239383ac21c",
+      "noise_hash": "ed13a0a56a97b6bc084ab68b11d8017454bf0b0ff35e5d481ee8aa8cd9445fe4",
+      "request_ms": 85.35924181342125,
+      "ae_ms": 6.294909864664078
+    },
+    {
+      "index": 9,
+      "mode": "d2",
+      "input_hash": "7a271721991536691a5e08b1eb7b8c1ee8d7c8b5a93f8513aa583239383ac21c",
+      "noise_hash": "ed13a0a56a97b6bc084ab68b11d8017454bf0b0ff35e5d481ee8aa8cd9445fe4",
+      "request_ms": 81.90383389592171,
+      "ae_ms": 6.87669962644577
+    },
+    {
+      "index": 10,
+      "mode": "native",
+      "input_hash": "75d38071427d2d0fc93c2e2d633386e32c88d5eeb38f2ec193bed92a0b3b1fa9",
+      "noise_hash": "19ae79608241a84e2e6f05b7321230ab8a6abdba5b4b8bf8ca79bcb11f887583",
+      "request_ms": 110.23814976215363
+    },
+    {
+      "index": 10,
+      "mode": "refresh_all",
+      "input_hash": "75d38071427d2d0fc93c2e2d633386e32c88d5eeb38f2ec193bed92a0b3b1fa9",
+      "noise_hash": "19ae79608241a84e2e6f05b7321230ab8a6abdba5b4b8bf8ca79bcb11f887583",
+      "request_ms": 117.49393492937088,
+      "ae_ms": 21.4398056268692
+    },
+    {
+      "index": 10,
+      "mode": "reuse03",
+      "input_hash": "75d38071427d2d0fc93c2e2d633386e32c88d5eeb38f2ec193bed92a0b3b1fa9",
+      "noise_hash": "19ae79608241a84e2e6f05b7321230ab8a6abdba5b4b8bf8ca79bcb11f887583",
+      "request_ms": 84.95838940143585,
+      "ae_ms": 5.9275999665260315
+    },
+    {
+      "index": 10,
+      "mode": "d2",
+      "input_hash": "75d38071427d2d0fc93c2e2d633386e32c88d5eeb38f2ec193bed92a0b3b1fa9",
+      "noise_hash": "19ae79608241a84e2e6f05b7321230ab8a6abdba5b4b8bf8ca79bcb11f887583",
+      "request_ms": 80.6046761572361,
+      "ae_ms": 4.991114139556885
+    },
+    {
+      "index": 11,
+      "mode": "native",
+      "input_hash": "8b1e47ee61df8f4637670dae3b46b0c7679298663f7358873ea5586d6a9b3526",
+      "noise_hash": "7e587a4d63a355f467869158c82d1f4efd4d36d9657c534445e9734f880a35cb",
+      "request_ms": 97.60338068008423
+    },
+    {
+      "index": 11,
+      "mode": "refresh_all",
+      "input_hash": "8b1e47ee61df8f4637670dae3b46b0c7679298663f7358873ea5586d6a9b3526",
+      "noise_hash": "7e587a4d63a355f467869158c82d1f4efd4d36d9657c534445e9734f880a35cb",
+      "request_ms": 97.45827317237854,
+      "ae_ms": 21.80565521121025
+    },
+    {
+      "index": 11,
+      "mode": "reuse03",
+      "input_hash": "8b1e47ee61df8f4637670dae3b46b0c7679298663f7358873ea5586d6a9b3526",
+      "noise_hash": "7e587a4d63a355f467869158c82d1f4efd4d36d9657c534445e9734f880a35cb",
+      "request_ms": 82.99543708562851,
+      "ae_ms": 5.788084119558334
+    },
+    {
+      "index": 11,
+      "mode": "d2",
+      "input_hash": "8b1e47ee61df8f4637670dae3b46b0c7679298663f7358873ea5586d6a9b3526",
+      "noise_hash": "7e587a4d63a355f467869158c82d1f4efd4d36d9657c534445e9734f880a35cb",
+      "request_ms": 83.17441865801811,
+      "ae_ms": 5.715824663639069
+    },
+    {
+      "index": 12,
+      "mode": "native",
+      "input_hash": "628e38fb1c042d825885b5327be952b5298343ce48f24a15efb34e9827f20bef",
+      "noise_hash": "cf2d0e190334a6b61d6a64a2cb521d883c54b71841bc6b3d72f36e3336ce2858",
+      "request_ms": 97.77460992336273
+    },
+    {
+      "index": 12,
+      "mode": "refresh_all",
+      "input_hash": "628e38fb1c042d825885b5327be952b5298343ce48f24a15efb34e9827f20bef",
+      "noise_hash": "cf2d0e190334a6b61d6a64a2cb521d883c54b71841bc6b3d72f36e3336ce2858",
+      "request_ms": 99.49985891580582,
+      "ae_ms": 23.296330124139786
+    },
+    {
+      "index": 12,
+      "mode": "reuse03",
+      "input_hash": "628e38fb1c042d825885b5327be952b5298343ce48f24a15efb34e9827f20bef",
+      "noise_hash": "cf2d0e190334a6b61d6a64a2cb521d883c54b71841bc6b3d72f36e3336ce2858",
+      "request_ms": 81.44396170973778,
+      "ae_ms": 5.569055676460266
+    },
+    {
+      "index": 12,
+      "mode": "d2",
+      "input_hash": "628e38fb1c042d825885b5327be952b5298343ce48f24a15efb34e9827f20bef",
+      "noise_hash": "cf2d0e190334a6b61d6a64a2cb521d883c54b71841bc6b3d72f36e3336ce2858",
+      "request_ms": 82.19162747263908,
+      "ae_ms": 5.2908919751644135
+    },
+    {
+      "index": 13,
+      "mode": "native",
+      "input_hash": "9673c014bb109e5f208d7ed8053bbfdc23af96ca3c63a275db3244339627e89b",
+      "noise_hash": "35226a260acf8cf7e2e3f49c4727664ad99535efc2844c06f7ef0428d0714967",
+      "request_ms": 98.00146892666817
+    },
+    {
+      "index": 13,
+      "mode": "refresh_all",
+      "input_hash": "9673c014bb109e5f208d7ed8053bbfdc23af96ca3c63a275db3244339627e89b",
+      "noise_hash": "35226a260acf8cf7e2e3f49c4727664ad99535efc2844c06f7ef0428d0714967",
+      "request_ms": 98.29476848244667,
+      "ae_ms": 24.732764810323715
+    },
+    {
+      "index": 13,
+      "mode": "reuse03",
+      "input_hash": "9673c014bb109e5f208d7ed8053bbfdc23af96ca3c63a275db3244339627e89b",
+      "noise_hash": "35226a260acf8cf7e2e3f49c4727664ad99535efc2844c06f7ef0428d0714967",
+      "request_ms": 90.0624692440033,
+      "ae_ms": 5.636122077703476
+    },
+    {
+      "index": 13,
+      "mode": "d2",
+      "input_hash": "9673c014bb109e5f208d7ed8053bbfdc23af96ca3c63a275db3244339627e89b",
+      "noise_hash": "35226a260acf8cf7e2e3f49c4727664ad99535efc2844c06f7ef0428d0714967",
+      "request_ms": 82.86010846495628,
+      "ae_ms": 4.8796311020851135
+    },
+    {
+      "index": 14,
+      "mode": "native",
+      "input_hash": "35ffd17a0f28c5e0385e684972c7ac78eec053d11784fca5642f713a97124228",
+      "noise_hash": "75e4fe02e7cdd5500da952a90be3d32d3dbc3cbd3ba5e918f111f63bc5b68b57",
+      "request_ms": 97.27548435330391
+    },
+    {
+      "index": 14,
+      "mode": "refresh_all",
+      "input_hash": "35ffd17a0f28c5e0385e684972c7ac78eec053d11784fca5642f713a97124228",
+      "noise_hash": "75e4fe02e7cdd5500da952a90be3d32d3dbc3cbd3ba5e918f111f63bc5b68b57",
+      "request_ms": 99.43053126335144,
+      "ae_ms": 21.999463438987732
+    },
+    {
+      "index": 14,
+      "mode": "reuse03",
+      "input_hash": "35ffd17a0f28c5e0385e684972c7ac78eec053d11784fca5642f713a97124228",
+      "noise_hash": "75e4fe02e7cdd5500da952a90be3d32d3dbc3cbd3ba5e918f111f63bc5b68b57",
+      "request_ms": 82.49987661838531,
+      "ae_ms": 7.365874946117401
+    },
+    {
+      "index": 14,
+      "mode": "d2",
+      "input_hash": "35ffd17a0f28c5e0385e684972c7ac78eec053d11784fca5642f713a97124228",
+      "noise_hash": "75e4fe02e7cdd5500da952a90be3d32d3dbc3cbd3ba5e918f111f63bc5b68b57",
+      "request_ms": 88.11261132359505,
+      "ae_ms": 5.039870738983154
+    },
+    {
+      "index": 15,
+      "mode": "native",
+      "input_hash": "488a8330e30b6f7a5c0ca278a9cf82230df61170aa0fbc9c5fdcec8728bcfb41",
+      "noise_hash": "dd921ea73a48abb7a52a8acd5e39a74be1988484e8242a1ea728519efeefd323",
+      "request_ms": 98.40844199061394
+    },
+    {
+      "index": 15,
+      "mode": "refresh_all",
+      "input_hash": "488a8330e30b6f7a5c0ca278a9cf82230df61170aa0fbc9c5fdcec8728bcfb41",
+      "noise_hash": "dd921ea73a48abb7a52a8acd5e39a74be1988484e8242a1ea728519efeefd323",
+      "request_ms": 103.89756038784981,
+      "ae_ms": 21.489456295967102
+    },
+    {
+      "index": 15,
+      "mode": "reuse03",
+      "input_hash": "488a8330e30b6f7a5c0ca278a9cf82230df61170aa0fbc9c5fdcec8728bcfb41",
+      "noise_hash": "dd921ea73a48abb7a52a8acd5e39a74be1988484e8242a1ea728519efeefd323",
+      "request_ms": 81.25124871730804,
+      "ae_ms": 5.487293004989624
+    },
+    {
+      "index": 15,
+      "mode": "d2",
+      "input_hash": "488a8330e30b6f7a5c0ca278a9cf82230df61170aa0fbc9c5fdcec8728bcfb41",
+      "noise_hash": "dd921ea73a48abb7a52a8acd5e39a74be1988484e8242a1ea728519efeefd323",
+      "request_ms": 81.15934580564499,
+      "ae_ms": 5.288556218147278
+    },
+    {
+      "index": 16,
+      "mode": "native",
+      "input_hash": "c981a711d9eece0b0c3bf0f34dc5ea1e6b728d98c2f9dcd68cb42429a290ed9e",
+      "noise_hash": "654d57a7af12dafa623c0087591e765ebee2cf10af5c4da48e97bb82b5e180c6",
+      "request_ms": 101.03918239474297
+    },
+    {
+      "index": 16,
+      "mode": "refresh_all",
+      "input_hash": "c981a711d9eece0b0c3bf0f34dc5ea1e6b728d98c2f9dcd68cb42429a290ed9e",
+      "noise_hash": "654d57a7af12dafa623c0087591e765ebee2cf10af5c4da48e97bb82b5e180c6",
+      "request_ms": 97.55601361393929,
+      "ae_ms": 24.83915537595749
+    },
+    {
+      "index": 16,
+      "mode": "reuse03",
+      "input_hash": "c981a711d9eece0b0c3bf0f34dc5ea1e6b728d98c2f9dcd68cb42429a290ed9e",
+      "noise_hash": "654d57a7af12dafa623c0087591e765ebee2cf10af5c4da48e97bb82b5e180c6",
+      "request_ms": 85.46961471438408,
+      "ae_ms": 5.52043691277504
+    },
+    {
+      "index": 16,
+      "mode": "d2",
+      "input_hash": "c981a711d9eece0b0c3bf0f34dc5ea1e6b728d98c2f9dcd68cb42429a290ed9e",
+      "noise_hash": "654d57a7af12dafa623c0087591e765ebee2cf10af5c4da48e97bb82b5e180c6",
+      "request_ms": 86.5488238632679,
+      "ae_ms": 4.940871149301529
+    },
+    {
+      "index": 17,
+      "mode": "native",
+      "input_hash": "779a7faf8de58c3f3b0ac23a4e0a76e4c91feaf2de6e4bcd775c934ef5e033e8",
+      "noise_hash": "97a814e1532409356affdd3c550ccb5a58ba0b87a1c0fca779f1db9315975fd0",
+      "request_ms": 99.33264181017876
+    },
+    {
+      "index": 17,
+      "mode": "refresh_all",
+      "input_hash": "779a7faf8de58c3f3b0ac23a4e0a76e4c91feaf2de6e4bcd775c934ef5e033e8",
+      "noise_hash": "97a814e1532409356affdd3c550ccb5a58ba0b87a1c0fca779f1db9315975fd0",
+      "request_ms": 97.22421690821648,
+      "ae_ms": 22.86403998732567
+    },
+    {
+      "index": 17,
+      "mode": "reuse03",
+      "input_hash": "779a7faf8de58c3f3b0ac23a4e0a76e4c91feaf2de6e4bcd775c934ef5e033e8",
+      "noise_hash": "97a814e1532409356affdd3c550ccb5a58ba0b87a1c0fca779f1db9315975fd0",
+      "request_ms": 83.350520581007,
+      "ae_ms": 5.609109997749329
+    },
+    {
+      "index": 17,
+      "mode": "d2",
+      "input_hash": "779a7faf8de58c3f3b0ac23a4e0a76e4c91feaf2de6e4bcd775c934ef5e033e8",
+      "noise_hash": "97a814e1532409356affdd3c550ccb5a58ba0b87a1c0fca779f1db9315975fd0",
+      "request_ms": 82.54854753613472,
+      "ae_ms": 5.74156641960144
+    },
+    {
+      "index": 18,
+      "mode": "native",
+      "input_hash": "84fad839ea79ae51d0d73c4a5979194d1b0a918d24743dbe1b1790866c62b687",
+      "noise_hash": "33ac19e510f0a2f3a593e6661e0909a4a35bd324dfa892dc3679b8fc957eae72",
+      "request_ms": 99.38807040452957
+    },
+    {
+      "index": 18,
+      "mode": "refresh_all",
+      "input_hash": "84fad839ea79ae51d0d73c4a5979194d1b0a918d24743dbe1b1790866c62b687",
+      "noise_hash": "33ac19e510f0a2f3a593e6661e0909a4a35bd324dfa892dc3679b8fc957eae72",
+      "request_ms": 101.11737251281738,
+      "ae_ms": 22.203676402568817
+    },
+    {
+      "index": 18,
+      "mode": "reuse03",
+      "input_hash": "84fad839ea79ae51d0d73c4a5979194d1b0a918d24743dbe1b1790866c62b687",
+      "noise_hash": "33ac19e510f0a2f3a593e6661e0909a4a35bd324dfa892dc3679b8fc957eae72",
+      "request_ms": 82.38165453076363,
+      "ae_ms": 5.489759147167206
+    },
+    {
+      "index": 18,
+      "mode": "d2",
+      "input_hash": "84fad839ea79ae51d0d73c4a5979194d1b0a918d24743dbe1b1790866c62b687",
+      "noise_hash": "33ac19e510f0a2f3a593e6661e0909a4a35bd324dfa892dc3679b8fc957eae72",
+      "request_ms": 81.52198046445847,
+      "ae_ms": 5.279984325170517
+    },
+    {
+      "index": 19,
+      "mode": "native",
+      "input_hash": "f8d23bbab4c8a9d425063d2c13d5196e69ead0b8f5a52ade72fbe2360276e647",
+      "noise_hash": "fdfeb9d424a323f1057e5bea6747c72e2efa4e826a08d36fe5a0905b4e1d27e4",
+      "request_ms": 115.17725884914398
+    },
+    {
+      "index": 19,
+      "mode": "refresh_all",
+      "input_hash": "f8d23bbab4c8a9d425063d2c13d5196e69ead0b8f5a52ade72fbe2360276e647",
+      "noise_hash": "fdfeb9d424a323f1057e5bea6747c72e2efa4e826a08d36fe5a0905b4e1d27e4",
+      "request_ms": 99.92977231740952,
+      "ae_ms": 22.55702018737793
+    },
+    {
+      "index": 19,
+      "mode": "reuse03",
+      "input_hash": "f8d23bbab4c8a9d425063d2c13d5196e69ead0b8f5a52ade72fbe2360276e647",
+      "noise_hash": "fdfeb9d424a323f1057e5bea6747c72e2efa4e826a08d36fe5a0905b4e1d27e4",
+      "request_ms": 86.69928833842278,
+      "ae_ms": 6.4200423657894135
+    },
+    {
+      "index": 19,
+      "mode": "d2",
+      "input_hash": "f8d23bbab4c8a9d425063d2c13d5196e69ead0b8f5a52ade72fbe2360276e647",
+      "noise_hash": "fdfeb9d424a323f1057e5bea6747c72e2efa4e826a08d36fe5a0905b4e1d27e4",
+      "request_ms": 83.1051915884018,
+      "ae_ms": 5.740698426961899
+    },
+    {
+      "index": 20,
+      "mode": "native",
+      "input_hash": "17acb42a3450c26b35f79e7eefa2521abf4beb4f70dda249915392085b40db6b",
+      "noise_hash": "c0f18bd37a6d1305f92e8530afa0b3299c7df66fdd649088c4c201c93e1741a1",
+      "request_ms": 100.1243144273758
+    },
+    {
+      "index": 20,
+      "mode": "refresh_all",
+      "input_hash": "17acb42a3450c26b35f79e7eefa2521abf4beb4f70dda249915392085b40db6b",
+      "noise_hash": "c0f18bd37a6d1305f92e8530afa0b3299c7df66fdd649088c4c201c93e1741a1",
+      "request_ms": 110.07692292332649,
+      "ae_ms": 21.960314363241196
+    },
+    {
+      "index": 20,
+      "mode": "reuse03",
+      "input_hash": "17acb42a3450c26b35f79e7eefa2521abf4beb4f70dda249915392085b40db6b",
+      "noise_hash": "c0f18bd37a6d1305f92e8530afa0b3299c7df66fdd649088c4c201c93e1741a1",
+      "request_ms": 87.61316910386086,
+      "ae_ms": 5.534198135137558
+    },
+    {
+      "index": 20,
+      "mode": "d2",
+      "input_hash": "17acb42a3450c26b35f79e7eefa2521abf4beb4f70dda249915392085b40db6b",
+      "noise_hash": "c0f18bd37a6d1305f92e8530afa0b3299c7df66fdd649088c4c201c93e1741a1",
+      "request_ms": 82.60918036103249,
+      "ae_ms": 4.966989159584045
+    },
+    {
+      "index": 21,
+      "mode": "native",
+      "input_hash": "615b7660b07a0dec75ee9cdd2fe9d647f2c14ae77ffcb9f205f45fc4ccaa07ce",
+      "noise_hash": "e0736f12419a0185cde3c1d5237f3f39447131e9ea9f18f894781597d4aa20ee",
+      "request_ms": 98.95742684602737
+    },
+    {
+      "index": 21,
+      "mode": "refresh_all",
+      "input_hash": "615b7660b07a0dec75ee9cdd2fe9d647f2c14ae77ffcb9f205f45fc4ccaa07ce",
+      "noise_hash": "e0736f12419a0185cde3c1d5237f3f39447131e9ea9f18f894781597d4aa20ee",
+      "request_ms": 99.46516156196594,
+      "ae_ms": 22.99369126558304
+    },
+    {
+      "index": 21,
+      "mode": "reuse03",
+      "input_hash": "615b7660b07a0dec75ee9cdd2fe9d647f2c14ae77ffcb9f205f45fc4ccaa07ce",
+      "noise_hash": "e0736f12419a0185cde3c1d5237f3f39447131e9ea9f18f894781597d4aa20ee",
+      "request_ms": 81.18090033531189,
+      "ae_ms": 5.51861897110939
+    },
+    {
+      "index": 21,
+      "mode": "d2",
+      "input_hash": "615b7660b07a0dec75ee9cdd2fe9d647f2c14ae77ffcb9f205f45fc4ccaa07ce",
+      "noise_hash": "e0736f12419a0185cde3c1d5237f3f39447131e9ea9f18f894781597d4aa20ee",
+      "request_ms": 80.1590047776699,
+      "ae_ms": 5.111377686262131
+    },
+    {
+      "index": 22,
+      "mode": "native",
+      "input_hash": "c233c56c298d9439eeec8e2f8251b1d8390c9c6df3fe6e5060bb5aeda81d779b",
+      "noise_hash": "28b0acbfc05b3233a0b690fc8307178d7f5305c84f867e460155f38a78cb3837",
+      "request_ms": 98.55161234736443
+    },
+    {
+      "index": 22,
+      "mode": "refresh_all",
+      "input_hash": "c233c56c298d9439eeec8e2f8251b1d8390c9c6df3fe6e5060bb5aeda81d779b",
+      "noise_hash": "28b0acbfc05b3233a0b690fc8307178d7f5305c84f867e460155f38a78cb3837",
+      "request_ms": 101.45220905542374,
+      "ae_ms": 21.410059183835983
+    },
+    {
+      "index": 22,
+      "mode": "reuse03",
+      "input_hash": "c233c56c298d9439eeec8e2f8251b1d8390c9c6df3fe6e5060bb5aeda81d779b",
+      "noise_hash": "28b0acbfc05b3233a0b690fc8307178d7f5305c84f867e460155f38a78cb3837",
+      "request_ms": 81.09186217188835,
+      "ae_ms": 5.93993067741394
+    },
+    {
+      "index": 22,
+      "mode": "d2",
+      "input_hash": "c233c56c298d9439eeec8e2f8251b1d8390c9c6df3fe6e5060bb5aeda81d779b",
+      "noise_hash": "28b0acbfc05b3233a0b690fc8307178d7f5305c84f867e460155f38a78cb3837",
+      "request_ms": 83.52573588490486,
+      "ae_ms": 4.962150007486343
+    },
+    {
+      "index": 23,
+      "mode": "native",
+      "input_hash": "e80074eb72bb3cb3deef996407536894cb1a22c335de55065c75a342286acdad",
+      "noise_hash": "8447b9fbbbf435672c14c6e065aae6ffc562f41e340ebca5b0e71cb931aa4cff",
+      "request_ms": 102.62486338615417
+    },
+    {
+      "index": 23,
+      "mode": "refresh_all",
+      "input_hash": "e80074eb72bb3cb3deef996407536894cb1a22c335de55065c75a342286acdad",
+      "noise_hash": "8447b9fbbbf435672c14c6e065aae6ffc562f41e340ebca5b0e71cb931aa4cff",
+      "request_ms": 96.92154452204704,
+      "ae_ms": 21.985217928886414
+    },
+    {
+      "index": 23,
+      "mode": "reuse03",
+      "input_hash": "e80074eb72bb3cb3deef996407536894cb1a22c335de55065c75a342286acdad",
+      "noise_hash": "8447b9fbbbf435672c14c6e065aae6ffc562f41e340ebca5b0e71cb931aa4cff",
+      "request_ms": 81.41187205910683,
+      "ae_ms": 5.530495196580887
+    },
+    {
+      "index": 23,
+      "mode": "d2",
+      "input_hash": "e80074eb72bb3cb3deef996407536894cb1a22c335de55065c75a342286acdad",
+      "noise_hash": "8447b9fbbbf435672c14c6e065aae6ffc562f41e340ebca5b0e71cb931aa4cff",
+      "request_ms": 81.41031861305237,
+      "ae_ms": 4.908166825771332
+    }
+  ],
+  "scope": "pi0 full18 AE, full27 vision, full VLM, H50 R5; no pruning",
+  "boundary": "FP32 residual = output of scanned AE layers before final RMSNorm minus BF16 suffix input cast to FP32",
+  "recomputed": "current x/time/state suffix; current final RMSNorm; action head; fresh full prefix every request",
+  "cache_reset": "each sample invocation allocates fresh zero residual; index0 must refresh",
+  "latency_scope": "AE only uses prefilled device KV; completed local request includes transforms/fresh prefix/device synchronization/decode, excludes RPC",
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "checkpoint": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero",
+    "identity_artifacts": {
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/_METADATA": "65cc6a84efeb1947131d78a313b8c20bbc95b958c2ba7a41be1a1f523dabf10d",
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params/manifest.ocdbt": "a62034cfdc5f7b771819ccde16d124f4d2b5527d19206ea148cfb93c7d03ac11",
+      "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+    },
+    "full_weight_rehash": "Native torch adapter rehashes all verified shards at service startup; JAX identity is original checkpoint manifest and assets"
+  },
+  "checkpoint_manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+  "gpu_preflight": {
+    "assigned": "2",
+    "device": "2, GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, NVIDIA GeForce RTX 4090, 1 MiB, 0 %",
+    "preexisting_compute_processes": ""
+  },
+  "devices": [
+    {
+      "id": 0,
+      "kind": "NVIDIA GeForce RTX 4090",
+      "platform": "gpu"
+    }
+  ],
+  "banks": [
+    {
+      "path": "results/idea1_v3_1/input_bank.pkl",
+      "sha256": "2c2e90a3e1fcac3f02226a433c6db9e19a0f3c169deea77707a9a1fbe8996d55",
+      "observations": 100
+    }
+  ],
+  "parity_passed": true,
+  "runtime_audit": {
+    "euler_updates": 10.0,
+    "final_time": -7.450580596923828e-08,
+    "transformer_refreshes": 2.0
+  },
+  "request_cache_isolation": {
+    "shape": [
+      1,
+      50,
+      32
+    ],
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "passed": true
+  },
+  "audit_output_parity": {
+    "shape": [
+      1,
+      50,
+      32
+    ],
+    "max_abs": 0.0,
+    "rmse": 0.0,
+    "passed": true
+  },
+  "timing_summary": {
+    "native": {
+      "request_ms": {
+        "p50": 99.08952005207539,
+        "p95": 112.77574859559536,
+        "p99": 114.72790814936161
+      }
+    },
+    "refresh_all": {
+      "request_ms": {
+        "p50": 99.3407815694809,
+        "p95": 109.15001854300498,
+        "p99": 115.78802216798067
+      },
+      "ae_ms": {
+        "p50": 21.992340683937073,
+        "p95": 24.517299607396122,
+        "p99": 24.81468554586172
+      }
+    },
+    "reuse03": {
+      "request_ms": {
+        "p50": 83.1206701695919,
+        "p95": 87.47608698904514,
+        "p99": 89.49913021177053
+      },
+      "ae_ms": {
+        "p50": 5.631599575281143,
+        "p95": 6.5763723105192184,
+        "p99": 7.190634496510029
+      }
+    },
+    "d2": {
+      "request_ms": {
+        "p50": 82.3700875043869,
+        "p95": 86.51522416621447,
+        "p99": 87.7529402077198
+      },
+      "ae_ms": {
+        "p50": 5.043679848313332,
+        "p95": 5.741436220705509,
+        "p99": 6.6156189888715735
+      }
+    }
+  },
+  "ae_control_label": "refresh_all: new boundary wrapper parity-checked against original native D10; d2: wrapper parity-checked against original native D2",
+  "completed_unix": 1792643406.1633968,
+  "warmup": 3,
+  "samples": 24
+}

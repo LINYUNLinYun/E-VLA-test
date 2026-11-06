@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "start_utc": "2026-10-26T06:20:30.386044+00:00",
+  "stages": [
+    {
+      "stage": 0,
+      "command": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "results.idea2.control_alignment_20261026.run_async",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/idea2/control_alignment_20261026/async_gate0",
+        "--port",
+        "19631",
+        "--case-keys",
+        "libero_object/0/0",
+        "libero_object/5/0",
+        "libero_spatial/0/0",
+        "libero_spatial/5/0"
+      ],
+      "start_utc": "2026-10-26T06:22:12.472956+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "end_utc": "2026-10-26T06:27:27.948398+00:00",
+      "successes": 7
+    },
+    {
+      "stage": 1,
+      "command": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "results.idea2.control_alignment_20261026.run_async",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/idea2/control_alignment_20261026/async_gate1",
+        "--port",
+        "19632",
+        "--case-keys",
+        "libero_goal/0/0",
+        "libero_goal/5/0",
+        "libero_10/0/0",
+        "libero_10/5/0"
+      ],
+      "start_utc": "2026-10-26T06:27:27.955689+00:00",
+      "status": "passed",
+      "exit_code": 0,
+      "end_utc": "2026-10-26T06:33:39.653399+00:00",
+      "successes": 7
+    }
+  ],
+  "current_stage": 1,
+  "pending": [],
+  "end_utc": "2026-10-26T06:33:40.121464+00:00",
+  "gpu_after": {
+    "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "name": "NVIDIA GeForce RTX 4090",
+    "memory_used_mib": 1.0,
+    "utilization_percent": 0.0,
+    "processes": [],
+    "graphics_processes": [],
+    "host_time": 1792996420.1214454
+  },
+  "gpu_lease_released": true
+}

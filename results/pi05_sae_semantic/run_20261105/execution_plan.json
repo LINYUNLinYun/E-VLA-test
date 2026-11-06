@@ -1,0 +1,41 @@
+{
+  "phase": "local_semantic_pilot_then_initial_module_matrix",
+  "candidate_concepts": [
+    "object/bowl",
+    "object/stove",
+    "spatial/on"
+  ],
+  "semantic_labels": "Static instruction labels; turn on excluded from spatial on",
+  "pilot_observations": 64,
+  "max_selected_features_per_concept_per_layer": 4,
+  "negative_quantile": 0.95,
+  "positive_reference": "Median among triggered discovery positives, not all positives",
+  "feature_trigger_precision_reference": 0.8,
+  "minimum_positive_trigger_episodes": 2,
+  "calibration_threshold_candidates": [
+    0.8,
+    0.6,
+    0.9
+  ],
+  "calibration_precision_reference": 0.8,
+  "calibration_fpr_reference": 0.2,
+  "initial_matrix_observations": 12,
+  "initial_matrix_modules": [
+    6,
+    8,
+    10,
+    12,
+    14,
+    15
+  ],
+  "initial_matrix_sampling": "Frozen L5 trigger only, round-robin concepts, distinct task/episode preference",
+  "matrix_expansion_upper_bound": 128,
+  "combination_masks_upper_bound": 3,
+  "next_conditional_steps": [
+    "Review feature calibration and initial matrix support",
+    "Expand observations if needed; propose and actually test nonadjacent two-FFN masks",
+    "Validate candidate masks on calibration observations",
+    "Construct full strategy and run 24 exploratory episodes only if a usable rule exists"
+  ],
+  "scope": "Selection criteria and next-stage plan; not a completed scientific result"
+}

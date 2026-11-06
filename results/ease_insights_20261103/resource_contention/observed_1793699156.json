@@ -1,0 +1,52 @@
+{
+  "observed_at": 1793699178.7706923,
+  "scheduler_resource_sample": {
+    "time": 1793699156.8891041,
+    "devices": [
+      {
+        "index": 0,
+        "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "memory_mib": 14365.0,
+        "utilization": 47.0,
+        "allowed": true,
+        "idle": false
+      },
+      {
+        "index": 1,
+        "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "memory_mib": 21292.0,
+        "utilization": 100.0,
+        "allowed": true,
+        "idle": false
+      },
+      {
+        "index": 2,
+        "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "memory_mib": 21292.0,
+        "utilization": 0.0,
+        "allowed": true,
+        "idle": false
+      },
+      {
+        "index": 3,
+        "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "memory_mib": 22751.0,
+        "utilization": 90.0,
+        "allowed": true,
+        "idle": false
+      }
+    ],
+    "compute_apps": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 861820\nGPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 862964\nGPU-599477fb-0507-40dc-14df-d491f7a7b202, 733237\nGPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, 734466\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 861820\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 862263\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 864246\n"
+  },
+  "multi_gpu_processes": {
+    "861820": [
+      "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+    ]
+  },
+  "active_jobs": {
+    "vlm_discovery_fixed_v12_jacobian": "running"
+  },
+  "interpretation": "This study pins each model process to one UUID. A process listed on multiple study GPUs is external to these single-GPU jobs. Current wall/RPC timing may include shared hardware contention; no wall pacing means simulator quality remains valid unless a technical failure occurs. No external process was stopped.",
+  "timing_scope": "Do not interpret affected wall-clock timings as exclusive-GPU speed; retain all outcomes and use separately identified fixed-input probes/replication for cost."
+}

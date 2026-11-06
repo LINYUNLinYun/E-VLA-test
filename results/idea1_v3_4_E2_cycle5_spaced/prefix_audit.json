@@ -1,0 +1,48 @@
+{
+  "reference_initial_exceptions": [
+    {
+      "condition": "v12_global_fixed_none",
+      "case": {
+        "suite": "libero_goal",
+        "task": 8,
+        "init": 23
+      },
+      "errors": [
+        "first_input_hash"
+      ]
+    }
+  ],
+  "pair_exceptions": [
+    {
+      "baseline": "v12_global_fixed_none",
+      "candidate": "v12_global_fixed_extrapolate",
+      "case": [
+        "libero_goal",
+        8,
+        23
+      ],
+      "errors": [
+        "first_input_hash",
+        "raw0",
+        "actions0",
+        "first_fast_input"
+      ]
+    },
+    {
+      "baseline": "v12_global_fixed_none",
+      "candidate": "v12_jacobian_none",
+      "case": [
+        "libero_goal",
+        8,
+        23
+      ],
+      "errors": [
+        "first_input_hash",
+        "raw0",
+        "actions0",
+        "first_fast_input"
+      ]
+    }
+  ],
+  "all_valid_outcomes_retained": true
+}

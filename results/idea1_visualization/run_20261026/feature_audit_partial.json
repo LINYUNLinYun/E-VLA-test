@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "checked_subset_passed": true,
+  "status": "partial",
+  "version": "all-headers-lineage-v1",
+  "expected": 2326,
+  "verified": 2117,
+  "pending": 209,
+  "reused": 1844,
+  "bytes_verified_structure": 648448853949,
+  "pooling_counts": {
+    "cpu_v1": 521,
+    "cpu_cached_v2": 1596
+  },
+  "max_raw_abs": 0.0,
+  "max_decoded_abs": 0.0,
+  "scope": "Every NPY header, full component names/shapes/dtypes, mask layout, source/noise origin, final raw/decoded action payloads, service/case identity and byte counts",
+  "excluded_scope": "Large hidden tensor payloads are not re-read/rehashed; inferred phase accuracy and final analysis checked separately",
+  "checker_sha256": "7f9a0fe45ffae888ffecb156b9c97d188789a1e9b7931c68ff116d774bdc34e1",
+  "elapsed_s": 147.0478735268116
+}

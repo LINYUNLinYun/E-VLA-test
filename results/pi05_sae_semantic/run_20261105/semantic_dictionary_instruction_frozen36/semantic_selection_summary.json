@@ -1,0 +1,314 @@
+{
+  "completed_observations": 64,
+  "expected_observations": 64,
+  "partial": false,
+  "candidate_pool": "full_dictionary",
+  "readout_file": "readouts_all_features.npz",
+  "token_pool": "instruction",
+  "source_selection": "/root/nfs/embodied/benchmark/results/pi05_sae_semantic/run_20261105/semantic_dictionary_instruction_partial",
+  "source_selection_sha256": "6499fd2344722ce7c48f93167e786419eaf7fb7ee17a54e27f26b589baee3ce5",
+  "source_discovery_observations": 36,
+  "source_calibration_observations": 11,
+  "refitted_features": false,
+  "refitted_thresholds": false,
+  "original_score_checks": [
+    {
+      "key": "L5_object_bowl_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_object_bowl_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_object_bowl_instruction",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_bowl_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_bowl_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_bowl_instruction",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_object_stove_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_object_stove_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_object_stove_instruction",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_stove_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_stove_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_object_stove_instruction",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_spatial_on_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_spatial_on_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L5_spatial_on_instruction",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_spatial_on_all",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_spatial_on_image",
+      "max_abs": 0.0
+    },
+    {
+      "key": "L16_spatial_on_instruction",
+      "max_abs": 0.0
+    }
+  ],
+  "ready_concepts": [],
+  "concepts": {
+    "object/bowl": {
+      "5": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": true,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 2,
+          "positive_hits": 2,
+          "precision": 1.0,
+          "recall": 0.25,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "reason": "Frozen readout supported on completed pilot",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 2,
+          "positive_hits": 2,
+          "precision": 1.0,
+          "recall": 0.375,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 13,
+          "positive_hits": 13,
+          "precision": 1.0,
+          "recall": 0.5416666666666666,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 6,
+          "positive_episodes": 11
+        }
+      },
+      "16": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 8,
+          "positive_hits": 6,
+          "precision": 0.75,
+          "recall": 0.75,
+          "false_positive_rate": 0.25,
+          "positive_tasks": 2,
+          "positive_episodes": 4
+        },
+        "reason": "Frozen readout still needs evidence",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 4,
+          "positive_hits": 4,
+          "precision": 1.0,
+          "recall": 0.625,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 2,
+          "positive_episodes": 3
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 14,
+          "positive_hits": 12,
+          "precision": 0.8571428571428571,
+          "recall": 0.5,
+          "false_positive_rate": 0.08333333333333333,
+          "positive_tasks": 5,
+          "positive_episodes": 8
+        }
+      }
+    },
+    "object/stove": {
+      "5": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": true,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 2,
+          "positive_hits": 2,
+          "precision": 1.0,
+          "recall": 0.5,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "reason": "Frozen readout supported on completed pilot",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 2,
+          "positive_hits": 2,
+          "precision": 1.0,
+          "recall": 0.75,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 7,
+          "positive_hits": 7,
+          "precision": 1.0,
+          "recall": 0.875,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 2,
+          "positive_episodes": 4
+        }
+      },
+      "16": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "reason": "Frozen readout still needs evidence",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 2,
+          "positive_hits": 2,
+          "precision": 1.0,
+          "recall": 0.25,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        }
+      }
+    },
+    "spatial/on": {
+      "5": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": true,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 4,
+          "positive_hits": 4,
+          "precision": 1.0,
+          "recall": 0.5,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "reason": "Frozen readout supported on completed pilot",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 3,
+          "positive_hits": 3,
+          "precision": 1.0,
+          "recall": 0.5,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 16,
+          "positive_hits": 16,
+          "precision": 1.0,
+          "recall": 0.8,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 5,
+          "positive_episodes": 10
+        }
+      },
+      "16": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 8,
+          "positive_hits": 6,
+          "precision": 0.75,
+          "recall": 0.75,
+          "false_positive_rate": 0.25,
+          "positive_tasks": 2,
+          "positive_episodes": 4
+        },
+        "reason": "Frozen readout still needs evidence",
+        "source_calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 4,
+          "positive_hits": 4,
+          "precision": 1.0,
+          "recall": 0.625,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 2,
+          "positive_episodes": 3
+        },
+        "evaluation_discovery_metrics": {
+          "triggered": 12,
+          "positive_hits": 10,
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "false_positive_rate": 0.07142857142857142,
+          "positive_tasks": 4,
+          "positive_episodes": 7
+        }
+      }
+    }
+  },
+  "scope": "Earlier frozen feature/normalization/threshold snapshot evaluated on completed pilot; no test SR"
+}

@@ -1,0 +1,87 @@
+schema_version: 1
+experiment_name: pi05_vision_ab
+
+model:
+  config_name: pi05_libero
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero
+  backend: jax
+  dtype: bfloat16
+  compile_mode: jax_jit
+  frozen_weights: true
+
+policy:
+  batch_size: 1
+  num_steps: 10
+  action_horizon: 10
+  action_dim: 32
+  replan_steps: 5
+  camera_call_pattern: unchanged
+
+compression:
+  merge_kind: tome_deterministic
+  layer_scope: all
+  expected_grid: [16, 16]
+  destination_cell: [2, 2]
+  anchor: top_left
+  score_dtype: float32
+  accumulation_dtype: float32
+  norm_epsilon: 0.000001
+  tie_break: original_index
+  mapping_per_block: true
+  reuse_map_for_mlp: true
+  restore_after_each_branch: true
+  preserve_dense_residual: true
+
+conditions:
+  - {id: C0, mode: "off", keep_tokens: 256}
+  - {id: A128, mode: A, keep_tokens: 128}
+  - {id: A64, mode: A, keep_tokens: 64}
+  - {id: B128, mode: B, keep_tokens: 128}
+  - {id: B64, mode: B, keep_tokens: 64}
+
+benchmark:
+  real_observations_min: 64
+  observations_per_suite_min: 16
+  warmup_min: 30
+  rounds: 5
+  measured_calls_per_round: 200
+  input_residency: gpu
+  synchronized_wall_time: true
+  cuda_event_time_optional: false
+  rotate_condition_order: true
+
+evaluation:
+  suites: [libero_spatial, libero_object, libero_goal, libero_10]
+  root_seed: 7
+  environment_seed: 7
+  repeat_seed: 0
+  reset_environment_rng_each_episode: true
+  smoke_tasks_per_suite: 1
+  smoke_trials_per_task: 1
+  screen_init_indices: {start: 0, stop_exclusive: 5}
+  confirm_init_indices: {start: 5, stop_exclusive: 50}
+  paired_action_noise: true
+  noise_key_uses_config_id: false
+  max_candidates_per_family: 1
+  task_macro_average: true
+  paired_stratified_bootstrap_samples: 10000
+
+selection:
+  preferred_relative_sr: 0.70
+  aggressive_relative_sr_floor: 0.60
+  engineering_vision_speedup_target: 1.20
+
+system_evaluation:
+  run_if_existing_harness_available: false
+  change_draft_vision_only: true
+  preserve_verifier_and_acceptance: true
+  note: >-
+    No runnable pi0.5 self-speculative draft/verifier harness exists in this
+    workspace (the FLASH harness is pi0/Triton); layer-two is reported as not
+    evaluated rather than filling it with level-one SR.
+
+paths:
+  results_root: /root/nfs/embodied/benchmark/results/pi05_vision_ab
+  observations_root: /root/nfs/embodied/benchmark/results/pi05_vision_ab/observations
+  model_python: /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python
+  eval_python: /root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python

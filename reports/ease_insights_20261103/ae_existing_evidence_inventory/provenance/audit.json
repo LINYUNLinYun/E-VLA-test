@@ -1,0 +1,1082 @@
+{
+  "created_utc": "2026-11-05T03:33:54.462309+00:00",
+  "scope": "Eight exact historical AE single-layer pilot runs, first and last request of first and last episode per run; no outcomes/timing statistics recalculated.",
+  "current_source_hashes_are_not_historical_execution_hashes": true,
+  "current_sources": [
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/launch_ae_pilot_pair.py",
+      "sha256": "f7728f480037de0f4a67ea436c4dcc024a5d55ee53fdb3ef90e6a607779ff9d6"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/run_action_expert_followup.py",
+      "sha256": "a6bbd801efbd1ca21f31089e03be89794918b0827aa4d1bba74f149ddd4feddc"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/launch_ae_pilot_d3.py",
+      "sha256": "204f9722dd833c9cb7b485271078f31be5ef5646061da49c4ec6f9c7747b427c"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/launch_early_ae_full_suite.py",
+      "sha256": "d727d08112de063e20e07272252c5aedefe586d9e5c04389bd7dbbe9c33beb5b"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/serve_action_layer_screen.py",
+      "sha256": "1e11e4ab2734d665ea7e8a3269920ec9aeec99cda2f90cfbab7c07bbf2f67b13"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/screen_action_expert_candidates.py",
+      "sha256": "7c848fca1d690f0ac86cba77aaaf8115fefc26b57365d57cb0625cbf6bfccc04"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/run_standard_vlm_pruning.py",
+      "sha256": "24b9bfdac87d5d21b4960046036639467915f1f74f5e9a316c536a3e70e4d814"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/spec/spec_serve_policy.py",
+      "sha256": "9ee4a3ef3b187c6114b22879146641607c767d470c2f23d74504a355d6be72c8"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/spec/triton/triton_pi0_runtime.py",
+      "sha256": "50f9290961aa24288c5b741e6342e9cbec43acdb5e784fc5f8c905d637bb2fc5"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py",
+      "sha256": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+    },
+    {
+      "path": "policies/realtime-vla-flash/scripts/experiment9/probe_action_expert_layers.py",
+      "sha256": "81ae977ce1b15191ae70092f3a5406740b9a8c104d70c66b72be08bdb250a497"
+    }
+  ],
+  "runs": [
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01",
+      "layer_1based": 2,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/manifest.json",
+        "sha256": "238821695b361270c881c61a7304e2f0a26f7662b704134c672085a80e7b6987",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01",
+          "created_at": "2026-10-05T13:25:56Z",
+          "task_suite_name": "libero_10",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/episode_log.json",
+        "sha256": "11afac3b61c3a569814db2696764a12c5f975f913fdb50a47d8c9fb2a0b53902",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01_server.log",
+        "sha256": "be0ba91857b02e0c9a8b17d9bad09301fbb585998bf38b1f4273cea292dac144",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 2602
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/episodes/task00_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_success/infer.jsonl",
+          "sha256": "b38d86ce35c3dd3b9dfda8eca8844871e3137ea850bc7ce148059968856ecbd3",
+          "file_records_counted_without_decoding": 22,
+          "sampled_line_numbers_1based": [
+            1,
+            22
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/episodes/task09_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/ep009_success/infer.jsonl",
+          "sha256": "f1ec96cdd96084d3a787201f866d290bc8e5fd783c237acd3462b8c111093394",
+          "file_records_counted_without_decoding": 22,
+          "sampled_line_numbers_1based": [
+            1,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01",
+      "layer_1based": 2,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/manifest.json",
+        "sha256": "55526d7b11e3a84ddb68679b827c16f30aac1eda85377c1590053f13f4a228bd",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01",
+          "created_at": "2026-10-05T13:25:56Z",
+          "task_suite_name": "libero_goal",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/episode_log.json",
+        "sha256": "1d93ea75af5e95fe587e9591ab2b00d54cc23c51dcdb6f289c4ec72eca8ac506",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01_server.log",
+        "sha256": "46c208957ea63e466ca6be69a23eb7ba4e30ee2e4201b18318cd7494b7e14321",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 1245
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/episodes/task00_open_the_middle_drawer_of_the_cabinet/ep000_success/infer.jsonl",
+          "sha256": "d7c9fb2f60b13b8513b9f9bb664d77cc42d22ea5a9fbe4c792d689fbba37a219",
+          "file_records_counted_without_decoding": 11,
+          "sampled_line_numbers_1based": [
+            1,
+            11
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/episodes/task09_put_the_wine_bottle_on_the_rack/ep009_failure/infer.jsonl",
+          "sha256": "c4fcd6c65ddca25542018a9d0bc55673bf4152a0c0190731e548c74f18942e9b",
+          "file_records_counted_without_decoding": 25,
+          "sampled_line_numbers_1based": [
+            1,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01",
+      "layer_1based": 2,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/manifest.json",
+        "sha256": "f81ba549b763ee10b3beefbcf91427201496eb5296b6b0826154df14e8afbc19",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01",
+          "created_at": "2026-10-05T13:46:46Z",
+          "task_suite_name": "libero_object",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/episode_log.json",
+        "sha256": "661b8541815b6916cce66bf9c02faae64dd23c2c40355400358a55b347b5f289",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01_server.log",
+        "sha256": "9a0e2cb00852135588b430a87107179007e950315e5cd0fa57afe51a34b647d7",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 1203
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/episodes/task00_pick_up_the_alphabet_soup_and_place_it_in_the_basket/ep000_success/infer.jsonl",
+          "sha256": "0497983696276f6cf6604aeff631686a755fa8021d3c6f76a96a3cdfb01bd7c0",
+          "file_records_counted_without_decoding": 13,
+          "sampled_line_numbers_1based": [
+            1,
+            13
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/episodes/task09_pick_up_the_orange_juice_and_place_it_in_the_basket/ep009_success/infer.jsonl",
+          "sha256": "98a9b17df5ed46d46e637d6188289e91e1f320c4d6d0fe25026945014159edce",
+          "file_records_counted_without_decoding": 11,
+          "sampled_line_numbers_1based": [
+            1,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01",
+      "layer_1based": 2,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/manifest.json",
+        "sha256": "9b81c2ffe9b0cdc37fb94f0af376370fc4274845d9000bde299540e52142b8b0",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01",
+          "created_at": "2026-10-05T13:39:20Z",
+          "task_suite_name": "libero_spatial",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/episode_log.json",
+        "sha256": "c004bb77fdd5a2c1c2bf28fc18c494864822f513bd57bf15e08c968f932e6150",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01_server.log",
+        "sha256": "f5436354ce658bf745d1bab6768219135d029e08a037482707f24fe80ab4d9a9",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 974
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/episodes/task00_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/ep000_success/infer.jsonl",
+          "sha256": "45233cbf095dc093269cced9e88a3abfdfd2dc100c69c4c62a599f9fe1551b97",
+          "file_records_counted_without_decoding": 7,
+          "sampled_line_numbers_1based": [
+            1,
+            7
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/episodes/task09_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate/ep009_success/infer.jsonl",
+          "sha256": "18128b15b1ec63301e9e8bf1b04b76b43c523dcb2878cf1ac3f815d91c5ea6cb",
+          "file_records_counted_without_decoding": 10,
+          "sampled_line_numbers_1based": [
+            1,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01",
+      "layer_1based": 8,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/manifest.json",
+        "sha256": "5adb07210de6176f40c853da9240da3e4c0476c9f70fe2cc5e91965b4b29b634",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01",
+          "created_at": "2026-10-05T13:25:54Z",
+          "task_suite_name": "libero_10",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/episode_log.json",
+        "sha256": "a55cc8cb2825247d85aecb4f24ae433ca7b7257aa0d82c602e6daeaaaf34f804",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01_server.log",
+        "sha256": "a1f7e9b129e65b7ad722e8ba984cff347c11fa3c40d76317cfa55b7fb528cfd5",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 2654
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/episodes/task00_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_success/infer.jsonl",
+          "sha256": "48d76191409115f0503080debef7e8be87ca37a7d3f08fa955a46a7a8e9ac53d",
+          "file_records_counted_without_decoding": 22,
+          "sampled_line_numbers_1based": [
+            1,
+            22
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/episodes/task09_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/ep009_success/infer.jsonl",
+          "sha256": "c21357901ea64c9102eb4857dde77eca122e8fb727c3023c395c47b700ac2338",
+          "file_records_counted_without_decoding": 24,
+          "sampled_line_numbers_1based": [
+            1,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01",
+      "layer_1based": 8,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/manifest.json",
+        "sha256": "906040b344fb430b03b45116e23825c8997e0eda7b32fc6cda91d426de5d8380",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01",
+          "created_at": "2026-10-05T13:25:56Z",
+          "task_suite_name": "libero_goal",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/episode_log.json",
+        "sha256": "17561c42f87a99d86e3f7d8d579a495c268b69ed2b70c0068ded6affc66cae9c",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01_server.log",
+        "sha256": "879ea5d419a7f5be565c8865f023ad468ade4c7131ed0af69944b376aa03f731",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 1241
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/episodes/task00_open_the_middle_drawer_of_the_cabinet/ep000_success/infer.jsonl",
+          "sha256": "4afb6db9f04c93c9b3017f5da5668ba9ddce95f624c6f9123b96fa15bd8e5a67",
+          "file_records_counted_without_decoding": 10,
+          "sampled_line_numbers_1based": [
+            1,
+            10
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/episodes/task09_put_the_wine_bottle_on_the_rack/ep009_failure/infer.jsonl",
+          "sha256": "bb1c26ad15afb32d76d450edc30590479f9dfb39a518f2f330104f45e80ab8d7",
+          "file_records_counted_without_decoding": 25,
+          "sampled_line_numbers_1based": [
+            1,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01",
+      "layer_1based": 8,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/manifest.json",
+        "sha256": "b826f0523f054e724844427e9298695bb1ae14074b95361b9316cdbdd75cfde0",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01",
+          "created_at": "2026-10-05T13:47:12Z",
+          "task_suite_name": "libero_object",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/episode_log.json",
+        "sha256": "1d660b98983cdde26805521c2681ee42e03f0f5d16d82184a9b09ece44c1a718",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01_server.log",
+        "sha256": "8d2c11dd2517ea57e7fb865932ed3a709776c8df53580b2baa82b4cdb605e949",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 1212
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/episodes/task00_pick_up_the_alphabet_soup_and_place_it_in_the_basket/ep000_success/infer.jsonl",
+          "sha256": "82720cac437672aee89da9105d61e5ececca87c9786cb7875578977c3be8158f",
+          "file_records_counted_without_decoding": 12,
+          "sampled_line_numbers_1based": [
+            1,
+            12
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/episodes/task09_pick_up_the_orange_juice_and_place_it_in_the_basket/ep009_success/infer.jsonl",
+          "sha256": "e2a57397abfae6a1605ddfe99f33087ef529b130e2cd443b11d136641a32b211",
+          "file_records_counted_without_decoding": 11,
+          "sampled_line_numbers_1based": [
+            1,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "run": "exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01",
+      "layer_1based": 8,
+      "manifest": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/manifest.json",
+        "sha256": "1c93ad02e4cedfae5ed27ba086451330f6b502858fe6e037ddd6cf71cd3bdf2d",
+        "fields": {
+          "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01",
+          "created_at": "2026-10-05T13:39:20Z",
+          "task_suite_name": "libero_spatial",
+          "task_spec": "0-9",
+          "selected_task_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "num_trials_per_task": 10,
+          "episode_index_start": 0,
+          "episode_index_end": 10,
+          "record_semantic_telemetry": true,
+          "num_steps_wait": 10,
+          "trajectory_length_definition": "Number of policy actions applied to the environment; excludes num_steps_wait warm-up dummy actions; equals executed_action_count and the count of trace.jsonl records with non-null executed_action.",
+          "replan_steps": 12,
+          "resize_size": 224,
+          "video_fps": 10,
+          "seed": 7
+        }
+      },
+      "episode_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/episode_log.json",
+        "sha256": "862be0887475876479efdcd1be5a8ef3dc228088789e50d77389cfa25b64da6f",
+        "episodes": 100
+      },
+      "sampled_request_checks_passed": {
+        "requests": 4,
+        "run_id": 4,
+        "suite": 4,
+        "H50x7": 4,
+        "VLM_full18": 4,
+        "VLM_full_blocks18_no_KV_shell": 4,
+        "AE_skip_exact_layer": 4,
+        "D10_times_dt": 4,
+        "noise_seed_rule": 4,
+        "trace_noise_identity": 4,
+        "reconstructed_reported_noise_sha256": 4,
+        "full_round_prefill": 4,
+        "no_draft_or_verify": 4,
+        "R12": 4
+      },
+      "server_experiment_keys_union": [
+        "ablation_noise_seed",
+        "action_layer_indices_1based",
+        "action_layer_pattern",
+        "denoise_steps",
+        "denoise_times",
+        "flow_dt",
+        "noise_seed_mode",
+        "noise_seed_rule",
+        "noise_sha256",
+        "trace_episode_idx",
+        "trace_infer_id",
+        "vlm_full_block_indices_1based",
+        "vlm_kv_shell_indices_1based",
+        "vlm_layer_indices_1based",
+        "vlm_layer_pattern"
+      ],
+      "server_log": {
+        "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/logs/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01_server.log",
+        "sha256": "241828e500e84323db771af2cf6719ea3ccd596b8b7d943c7d4839b8473e84e9",
+        "selected_direct_evidence": [
+          {
+            "line": 1,
+            "text": "INFO:root:Physical VLM layers = 18; Physical Action Expert layers = 18"
+          },
+          {
+            "line": 2,
+            "text": "INFO:root:Experiment layers: VLM full=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) KV-shell=() prefix-KV=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18) AE=(1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18); denoise times=(1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1) dt=-0.1"
+          },
+          {
+            "line": 3,
+            "text": "INFO:root:Norm stats not found in /root/nfs/embodied/benchmark/policies/realtime-vla-flash/assets/pi0_libero/physical-intelligence/libero, skipping."
+          },
+          {
+            "line": 4,
+            "text": "INFO:root:Loaded norm stats from /root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero"
+          }
+        ],
+        "action_shape_log_counts": {
+          "actions shape=(50, 7)": 1018
+        }
+      },
+      "infer_files": [
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/episodes/task00_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/ep000_success/infer.jsonl",
+          "sha256": "e6cf8dd08c6f8c0d47ab6791e658433d86f58401b243cd9661a9630e1b579742",
+          "file_records_counted_without_decoding": 8,
+          "sampled_line_numbers_1based": [
+            1,
+            8
+          ]
+        },
+        {
+          "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/episodes/task09_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate/ep009_success/infer.jsonl",
+          "sha256": "45cbaa57d83564b28a35f8e55a916c7e78a3ade60beb4ed70fb32ad48d95fabe",
+          "file_records_counted_without_decoding": 10,
+          "sampled_line_numbers_1based": [
+            1,
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "violations": [],
+  "coverage": "32 sampled requests from 16 files in eight runs; all 800 episodes or all requests were NOT decoded for this provenance audit.",
+  "noise_hash_limit": "Recorded noise_sha256 is a CPU reconstruction in current _attach_ablation_metadata, not a saved actual post-conversion GPU input tensor. Equality here verifies the reported deterministic rule.",
+  "checkpoint_and_norm": {
+    "historical_offline_probe_summary": {
+      "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/probe/summary.json",
+      "sha256": "4728575347f12e9311c939db8f51f8d8a29159adc7f6ef7f8505bd7816a8dfda",
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "checkpoint_unchanged": true
+    },
+    "closed_loop_checkpoint_hash": null,
+    "closed_loop_checkpoint_hash_limit": "Offline probe records the base weight digest, but no closed-loop per-run artifact binds its actual model bytes to this digest.",
+    "current_norm": {
+      "path": "shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json",
+      "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1",
+      "historical_run_hash_binding": false
+    },
+    "no_large_checkpoint_hashed_or_loaded": true
+  },
+  "registered_pattern_parity.json": {
+    "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/registered_pattern_parity.json",
+    "sha256": "68e289a3413e4cbe39be86552c5967ff90ac41c94d4345f158e6afc5b28b0df4",
+    "contents": [
+      {
+        "layer": 2,
+        "sample_id": "libero_object_task00_ep000_step0000_initial",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "layer": 2,
+        "sample_id": "libero_object_task00_ep000_step0045_contact",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "layer": 2,
+        "sample_id": "libero_object_task00_ep000_step0130_goal_alignment",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "layer": 8,
+        "sample_id": "libero_object_task00_ep000_step0000_initial",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "layer": 8,
+        "sample_id": "libero_object_task00_ep000_step0045_contact",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      },
+      {
+        "layer": 8,
+        "sample_id": "libero_object_task00_ep000_step0130_goal_alignment",
+        "bitwise_equal": true,
+        "max_abs_error": 0.0
+      }
+    ]
+  },
+  "pattern_parity_failure.json": {
+    "path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/pattern_parity_failure.json",
+    "sha256": "5ab0ef76f68aed1598e311c17e9f6b8eddf8baa11d724c20fee860d59bd19260",
+    "contents": {
+      "layer": 2,
+      "sample_id": "libero_object_task00_ep000_step0000_initial",
+      "graph_vs_saved_skip_max_abs": 0.009632949243366662,
+      "graph_vs_same_runtime_eager_max_abs": 0.0,
+      "fresh_eager_skip_vs_saved_max_abs": 0.009632949243366662,
+      "fresh_full_vs_saved_full_max_abs": 0.005133265199065262
+    }
+  },
+  "sampled_request_records": 32,
+  "historical_complete_argv_record_found": false,
+  "historical_execution_source_hash_record_found": false,
+  "sampled_contract_audit_passed": true
+}

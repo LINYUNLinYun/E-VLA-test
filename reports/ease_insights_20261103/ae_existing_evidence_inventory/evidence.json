@@ -1,0 +1,275 @@
+{
+  "ae_closed_loop_pilot": {
+    "complete": true,
+    "conditions": [
+      "SkipAE_L2",
+      "SkipAE_L8"
+    ],
+    "configuration_exposed_in_rollout_manifest": {
+      "action_horizon_H": null,
+      "denoising_steps_D": null,
+      "exact_low_level_skip_mask": "not present in rollout manifest; layer IDs are from run label and screening summary",
+      "replan_steps_R": 12,
+      "warmup_steps": 10
+    },
+    "full_paired_baseline_in_screening_summary": false,
+    "interpretation": "The weak sign change across suites is a possible discovery signal only. No task-wise result, confidence interval, paired test, or speed evidence in this summary supports stable complementarity. Both masks skip one same-shape AE layer, so nominal layer FLOPs are similar; actual latency matching is unverified.",
+    "measured_latency_or_actual_compute": null,
+    "nominal_mask": "one AE block skipped per condition; L2 versus L8, inferred from run labels and screening summary layers=[2,8]",
+    "per_task_sampling": {
+      "episode_indices": "0-9 per task",
+      "episodes_per_task_each_candidate": 10,
+      "manifest_seed": 7,
+      "per_task_successes": "not exposed in screening_summary.json and not audited from episode logs in this bounded inventory",
+      "task_ids": "0-9 in each suite"
+    },
+    "real_closed_loop": true,
+    "rollout_manifests": [
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/manifest.json",
+      "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/manifest.json"
+    ],
+    "suite_difference_pp_L2_minus_L8": {
+      "libero_10": 0,
+      "libero_goal": -3,
+      "libero_object": 2,
+      "libero_spatial": 3
+    },
+    "suite_results": [
+      {
+        "L2_successes": 81,
+        "L8_successes": 84,
+        "episodes_each": 100,
+        "suite": "libero_goal"
+      },
+      {
+        "L2_successes": 80,
+        "L8_successes": 80,
+        "episodes_each": 100,
+        "suite": "libero_10"
+      },
+      {
+        "L2_successes": 96,
+        "L8_successes": 93,
+        "episodes_each": 100,
+        "suite": "libero_spatial"
+      },
+      {
+        "L2_successes": 99,
+        "L8_successes": 97,
+        "episodes_each": 100,
+        "suite": "libero_object"
+      }
+    ],
+    "summary_source": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/screening_summary.json",
+    "total_reported_episodes": 800
+  },
+  "ae_layer_probe": {
+    "candidate_metrics": {
+      "AE_L2": {
+        "bootstrap95_ci": [
+          0.0003347799,
+          0.0054151745
+        ],
+        "eligible_by_prespecified_numeric_gate": true,
+        "task_mean_gripper_flip_rate": 0.0006944444,
+        "task_mean_nmse": 0.0025897018
+      },
+      "AE_L8": {
+        "bootstrap95_ci": [
+          0.0010378472,
+          0.0085109905
+        ],
+        "eligible_by_prespecified_numeric_gate": true,
+        "task_mean_gripper_flip_rate": 0.0009259259,
+        "task_mean_nmse": 0.0040867457
+      }
+    },
+    "complete": true,
+    "criteria_source": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/probe/prespecified_criteria.json",
+    "fixed_observation_inference_count": 6930,
+    "gate": {
+      "gripper_flip_task_mean_max": 0.01,
+      "maximum_closed_loop_candidates": 2,
+      "minimum_tasks_per_suite_phase": 3,
+      "prefix12_nmse_bootstrap_upper_max": 0.02,
+      "prefix12_nmse_task_mean_max": 0.01,
+      "worst_phase_task_mean_nmse_max": 0.05
+    },
+    "interpretation": "Both candidate layers passed a fixed-observation sensitivity screen. This is a screening gate only, not evidence of closed-loop non-inferiority or task preference.",
+    "mode": "fixed-observation action sensitivity; not closed loop",
+    "noise_seeds": [
+      12345,
+      23456,
+      34567
+    ],
+    "sample_count": 110,
+    "source": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/probe/summary.json",
+    "task_count": 40
+  },
+  "attention_ffn_related_but_not_ae": {
+    "ae_attention_vs_mlp_budget_matched_pair_found": false,
+    "multi_initial_state_attention_only": {
+      "AttnL16_LIBERO10": {
+        "baseline_successes": 17,
+        "candidate_successes": 19,
+        "n_pairs": 20
+      },
+      "AttnL16_LIBERO90": {
+        "baseline_successes": 22,
+        "candidate_successes": 21,
+        "n_pairs": 40
+      },
+      "AttnL17_LIBERO10": {
+        "baseline_successes": 17,
+        "candidate_successes": 17,
+        "n_pairs": 20
+      },
+      "AttnL17_LIBERO90": {
+        "baseline_successes": 22,
+        "candidate_successes": 14,
+        "n_pairs": 40
+      },
+      "latency_claim": "none; eager diagnostic runtime",
+      "source_root": "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/closed_loop_multi_init/"
+    },
+    "scope": "VLM observation-prefix attention/FFN submodule diagnostics, not Action Expert pruning",
+    "scope_source": "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py:922-956; transformer_encoder docstring says VLM prefix encoder and owns skip_attn_layers/skip_ffn_layers",
+    "single_initial_state_results": {
+      "full_D10": "7/12",
+      "skip_attention_L16": "9/12",
+      "skip_ffn_L2": "10/12"
+    },
+    "source": "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/final_report.md"
+  },
+  "bounded_provenance_followup": {
+    "actual_gpu_noise_tensor_captured": false,
+    "audit": "reports/ease_insights_20261103/ae_existing_evidence_inventory/provenance/audit.json",
+    "historical_checkpoint_content_hash_bound": false,
+    "historical_norm_content_hash_bound": false,
+    "historical_request_supported": {
+      "AE_kept": 17,
+      "D": 10,
+      "H": 50,
+      "R": 12,
+      "VLM_kept": 18,
+      "mask_labels_are_one_based": true
+    },
+    "historical_source_snapshot_bound": false,
+    "may_pool_with_current_R5": false,
+    "report": "reports/ease_insights_20261103/ae_existing_evidence_inventory/provenance/README_zh.md",
+    "runs": 8,
+    "sampled_contract_passes": 32,
+    "sampled_requests": 32,
+    "scope": "Historical sampled request contracts and server logs; source semantics supported by current implementation and finite historical parity only."
+  },
+  "date": "2026-11-05",
+  "parity_audit": {
+    "historical_failure": "L2 saved-versus-graph/eager comparison recorded max absolute difference 0.0096329; preserve this caveat and require a fresh parity receipt before future reuse.",
+    "historical_failure_source": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/pattern_parity_failure.json",
+    "passing_source": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/registered_pattern_parity.json",
+    "scope": "6 registered L2/L8 diagnostic samples report bitwise parity"
+  },
+  "recommended_use": "Retain AE_L2 and AE_L8 as the bounded next axis if current VLM confirmation is null. Before running, create a separate manifest, verify H/D and the exact decoder mask, add a Full paired control, use new task/init cases, expose per-task outcomes, and measure real latency. Do not alter current local-search v1.",
+  "retrospective_fixed_split": {
+    "conditional_task_cluster_ci95_pp": [
+      0,
+      2.5
+    ],
+    "evaluation_trials": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "heldout_fixed_L2": 179,
+    "heldout_fixed_L8": 180,
+    "heldout_metadata_route": 181,
+    "heldout_task_route": 181,
+    "interpretation": "Small retrospective gain only2cases versus training-selected fixed path; conditional interval includes0. Not fresh independent confirmation or online/adaptive speed evidence.",
+    "n_evaluation_pairs": 200,
+    "relative_to_training_fixed_pp": 1.0,
+    "report": "reports/ease_insights_20261103/ae_existing_evidence_inventory/retrospective_split/README_zh.md",
+    "training_selected_fixed": "L2",
+    "training_trials": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "scope": {
+    "current_local_search_v1_changed": false,
+    "decision": "AE_L2_vs_AE_L8 is a plausible next independent axis after the frozen VLM search, because both are single-AE-layer skips with similar nominal budget and have closed-loop suite totals. Existing data do not establish task preference complementarity: suite differences are small, no per-task successes or paired uncertainty are in the consolidated summary, and H/D/actual latency are absent from pilot manifests. No matched-cost AE attention-versus-MLP pair was found.",
+    "gpu_started": false,
+    "read_only": true,
+    "unique_result_files_read": 19
+  },
+  "source_paths": [
+    "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/probe/summary.json",
+    "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/probe/prespecified_criteria.json",
+    "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/screening_summary.json",
+    "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/manifest.json",
+    "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/final_report.md",
+    "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/closed_loop_multi_init/AttnL16_T12_Init0to4_seed12345/libero_10/suite_summary.json",
+    "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/closed_loop_multi_init/AttnL16_T12_Init0to4_seed12345/libero_90/suite_summary.json",
+    "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/closed_loop_multi_init/AttnL17_T12_Init0to4_seed12345/libero_10/suite_summary.json",
+    "policies/realtime-vla-flash/results/pi0_attention_ffn_diagnosis/closed_loop_multi_init/AttnL17_T12_Init0to4_seed12345/libero_90/suite_summary.json",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py"
+  ],
+  "taskwise_followup": {
+    "analysis": "reports/ease_insights_20261103/ae_existing_evidence_inventory/taskwise/analysis.json",
+    "case_pairs": 400,
+    "episode_log_records": 800,
+    "independent_audit": {
+      "ci_reconstruction": "Recorded draws/seeds; independent NumPy default_rng + linear quantile reproduced values. Original bootstrap PRNG/quantile not recorded; not a byte-level original-code claim.",
+      "paired_artifact_rows": 400,
+      "path": "reports/ease_insights_20261103/ae_existing_evidence_inventory/taskwise/independent_audit/independent_audit.json",
+      "raw_record_count": 800,
+      "raw_source_files_hashed": 16,
+      "script": "reports/ease_insights_20261103/ae_existing_evidence_inventory/taskwise/independent_audit/rebuild_audit.py",
+      "sha256": "3dd00845bd121bf200e95816077d326dc6da60e87c94c568ef840c0af2f9b3cf",
+      "status": "PASS",
+      "summary_mismatches": 0
+    },
+    "overall": {
+      "L2_minus_L8_pp": 0.5,
+      "L2_rate": 0.89,
+      "L2_successes": 356,
+      "L8_rate": 0.885,
+      "L8_successes": 354,
+      "discordant": {
+        "L2_only": 19,
+        "L8_only": 17
+      },
+      "n_case_pairs": 400,
+      "paired_outcomes": {
+        "L2_only": 19,
+        "L8_only": 17,
+        "both_failure": 27,
+        "both_success": 337
+      },
+      "task_cluster_bootstrap95": {
+        "bootstrap_draws": 30000,
+        "bootstrap_seed": 20261105,
+        "bootstrap_unit": "(suite,task) cluster",
+        "lower95_pp": -2.75,
+        "upper95_pp": 3.75,
+        "warning": "exploratory; task count is the number of rows"
+      }
+    },
+    "paired_cases": "reports/ease_insights_20261103/ae_existing_evidence_inventory/taskwise/paired_case_outcomes.jsonl",
+    "physical_initial_hash_available": false,
+    "report": "reports/ease_insights_20261103/ae_existing_evidence_inventory/taskwise/README_zh.md",
+    "taxonomy_conclusion": "Point estimates cross in direction, but all task-cluster bootstrap intervals include zero; taxonomy classes are strongly confounded with suite composition and the smallest groups contain only 2, 4, and 6 tasks. Exploratory only; no verified general task preference.",
+    "technical_failure_field_available": false
+  },
+  "title": "Existing Action Expert pruning evidence inventory"
+}

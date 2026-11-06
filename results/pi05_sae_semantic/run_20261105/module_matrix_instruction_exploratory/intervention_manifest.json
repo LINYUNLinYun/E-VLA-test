@@ -1,0 +1,589 @@
+{
+  "phase": "single",
+  "split": "discovery",
+  "masks": [
+    [
+      6
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ],
+    [
+      15
+    ]
+  ],
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "device": "cpu",
+  "cases": [
+    {
+      "id": "libero_goal_task08_init00_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task02_init00_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task03_init00_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task01_init00_replan0021",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task05_init00_replan0020",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_goal_task08_init01_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task02_init01_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task03_init01_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task01_init01_replan0000",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task05_init01_replan0019",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task02_init00_replan0025",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    },
+    {
+      "id": "libero_spatial_task03_init00_replan0017",
+      "active_concepts": [
+        "object/bowl",
+        "spatial/on"
+      ]
+    }
+  ],
+  "baseline_source": "Cached native full L16 from collection; no repeated SigLIP/L0-L5/AE/flow matching",
+  "selection_method": "Round-robin frozen L5 concepts, preferring distinct tasks/episodes; no L16/label censoring",
+  "source_pool_observations": 48,
+  "source_active_observations": 15,
+  "feature_selection": "/root/nfs/embodied/benchmark/results/pi05_sae_semantic/run_20261105/semantic_dictionary_instruction_complete",
+  "concepts": [
+    "object/bowl",
+    "spatial/on"
+  ],
+  "max_observations": 12,
+  "token_pool": "instruction",
+  "evidence_level": "l5_calibrated",
+  "feature_selection_sha256": "d3da87ae25d7440001f216becb1b20aabd2c30a764f1fad4680549bd85267847",
+  "selected_concepts_snapshot": {
+    "object/bowl": {
+      "category": "object",
+      "concept": "bowl",
+      "layers": {
+        "5": {
+          "positive_tasks": 6,
+          "negative_tasks": 6,
+          "features": [
+            {
+              "feature_id": 12997,
+              "d": 2.737580283336553,
+              "positive_frequency": 0.8333333333333334,
+              "R": 2.281316902780461,
+              "tau": 1.8160934448242188,
+              "r": 8.46316146850586,
+              "b": 6.647068023681641,
+              "discovery_metrics": {
+                "triggered": 21,
+                "positive_hits": 20,
+                "precision": 0.9523809523809523,
+                "recall": 0.8333333333333334,
+                "false_positive_rate": 0.041666666666666664,
+                "positive_tasks": 5,
+                "positive_episodes": 10
+              },
+              "weight": 1.0
+            }
+          ],
+          "supported": true,
+          "feature_count_options": [
+            {
+              "features": 1,
+              "triggered": 15,
+              "positive_hits": 15,
+              "precision": 1.0,
+              "recall": 0.625,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 5,
+              "positive_episodes": 10
+            },
+            {
+              "features": 2,
+              "triggered": 15,
+              "positive_hits": 15,
+              "precision": 1.0,
+              "recall": 0.625,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 4,
+              "positive_episodes": 8
+            },
+            {
+              "features": 3,
+              "triggered": 13,
+              "positive_hits": 13,
+              "precision": 1.0,
+              "recall": 0.5416666666666666,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 5,
+              "positive_episodes": 10
+            },
+            {
+              "features": 4,
+              "triggered": 10,
+              "positive_hits": 10,
+              "precision": 1.0,
+              "recall": 0.4166666666666667,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 4,
+              "positive_episodes": 8
+            }
+          ],
+          "theta": 0.8,
+          "calibration_metrics": {
+            "theta": 0.8,
+            "triggered": 4,
+            "positive_hits": 4,
+            "precision": 1.0,
+            "recall": 0.5,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 1,
+            "positive_episodes": 2
+          },
+          "threshold_options": [
+            {
+              "theta": 0.8,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "theta": 0.6,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "theta": 0.9,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            }
+          ],
+          "reason": "Semantic calibration supported"
+        },
+        "16": {
+          "positive_tasks": 6,
+          "negative_tasks": 6,
+          "features": [
+            {
+              "feature_id": 15327,
+              "d": 1.2355372436355743,
+              "positive_frequency": 1.0,
+              "R": 1.2355372436355743,
+              "tau": 2.3213603496551514,
+              "r": 2.4603137969970703,
+              "b": 0.13895344734191895,
+              "discovery_metrics": {
+                "triggered": 7,
+                "positive_hits": 6,
+                "precision": 0.8571428571428571,
+                "recall": 0.25,
+                "false_positive_rate": 0.041666666666666664,
+                "positive_tasks": 4,
+                "positive_episodes": 5
+              },
+              "weight": 1.0
+            }
+          ],
+          "supported": false,
+          "feature_count_options": [
+            {
+              "features": 1,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.16666666666666666,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 2,
+              "positive_episodes": 3
+            },
+            {
+              "features": 2,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            },
+            {
+              "features": 3,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            },
+            {
+              "features": 4,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            }
+          ],
+          "theta": 0.8,
+          "calibration_metrics": {
+            "theta": 0.8,
+            "triggered": 0,
+            "positive_hits": 0,
+            "precision": null,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 0,
+            "positive_episodes": 0
+          },
+          "threshold_options": [
+            {
+              "theta": 0.8,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            },
+            {
+              "theta": 0.6,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            },
+            {
+              "theta": 0.9,
+              "triggered": 0,
+              "positive_hits": 0,
+              "precision": null,
+              "recall": 0.0,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 0,
+              "positive_episodes": 0
+            }
+          ],
+          "reason": "Candidate only; semantic calibration not supported"
+        }
+      },
+      "ready_for_intervention": false
+    },
+    "spatial/on": {
+      "category": "spatial",
+      "concept": "on",
+      "layers": {
+        "5": {
+          "positive_tasks": 5,
+          "negative_tasks": 7,
+          "features": [
+            {
+              "feature_id": 12997,
+              "d": 7.1672712053800955,
+              "positive_frequency": 1.0,
+              "R": 7.1672712053800955,
+              "tau": 1.8160934448242188,
+              "r": 8.46316146850586,
+              "b": 6.647068023681641,
+              "discovery_metrics": {
+                "triggered": 21,
+                "positive_hits": 20,
+                "precision": 0.9523809523809523,
+                "recall": 1.0,
+                "false_positive_rate": 0.03571428571428571,
+                "positive_tasks": 5,
+                "positive_episodes": 10
+              },
+              "weight": 1.0
+            }
+          ],
+          "supported": true,
+          "feature_count_options": [
+            {
+              "features": 1,
+              "triggered": 15,
+              "positive_hits": 15,
+              "precision": 1.0,
+              "recall": 0.75,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 5,
+              "positive_episodes": 10
+            },
+            {
+              "features": 2,
+              "triggered": 14,
+              "positive_hits": 14,
+              "precision": 1.0,
+              "recall": 0.7,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 4,
+              "positive_episodes": 8
+            },
+            {
+              "features": 3,
+              "triggered": 14,
+              "positive_hits": 14,
+              "precision": 1.0,
+              "recall": 0.7,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 4,
+              "positive_episodes": 8
+            },
+            {
+              "features": 4,
+              "triggered": 14,
+              "positive_hits": 14,
+              "precision": 1.0,
+              "recall": 0.7,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 4,
+              "positive_episodes": 8
+            }
+          ],
+          "theta": 0.8,
+          "calibration_metrics": {
+            "theta": 0.8,
+            "triggered": 4,
+            "positive_hits": 4,
+            "precision": 1.0,
+            "recall": 0.5,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 1,
+            "positive_episodes": 2
+          },
+          "threshold_options": [
+            {
+              "theta": 0.8,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "theta": 0.6,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "theta": 0.9,
+              "triggered": 4,
+              "positive_hits": 4,
+              "precision": 1.0,
+              "recall": 0.5,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            }
+          ],
+          "reason": "Semantic calibration supported"
+        },
+        "16": {
+          "positive_tasks": 5,
+          "negative_tasks": 7,
+          "features": [
+            {
+              "feature_id": 10311,
+              "d": 1.553170484030951,
+              "positive_frequency": 0.9,
+              "R": 1.397853435627856,
+              "tau": 1.5228087902069092,
+              "r": 2.075857400894165,
+              "b": 0.5530486106872559,
+              "discovery_metrics": {
+                "triggered": 13,
+                "positive_hits": 12,
+                "precision": 0.9230769230769231,
+                "recall": 0.6,
+                "false_positive_rate": 0.03571428571428571,
+                "positive_tasks": 5,
+                "positive_episodes": 8
+              },
+              "weight": 1.0
+            }
+          ],
+          "supported": false,
+          "feature_count_options": [
+            {
+              "features": 1,
+              "triggered": 9,
+              "positive_hits": 8,
+              "precision": 0.8888888888888888,
+              "recall": 0.4,
+              "false_positive_rate": 0.03571428571428571,
+              "positive_tasks": 5,
+              "positive_episodes": 7
+            },
+            {
+              "features": 2,
+              "triggered": 2,
+              "positive_hits": 2,
+              "precision": 1.0,
+              "recall": 0.1,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "features": 3,
+              "triggered": 2,
+              "positive_hits": 2,
+              "precision": 1.0,
+              "recall": 0.1,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 2
+            },
+            {
+              "features": 4,
+              "triggered": 1,
+              "positive_hits": 1,
+              "precision": 1.0,
+              "recall": 0.05,
+              "false_positive_rate": 0.0,
+              "positive_tasks": 1,
+              "positive_episodes": 1
+            }
+          ],
+          "theta": 0.8,
+          "calibration_metrics": {
+            "theta": 0.8,
+            "triggered": 2,
+            "positive_hits": 1,
+            "precision": 0.5,
+            "recall": 0.125,
+            "false_positive_rate": 0.125,
+            "positive_tasks": 1,
+            "positive_episodes": 1
+          },
+          "threshold_options": [
+            {
+              "theta": 0.8,
+              "triggered": 2,
+              "positive_hits": 1,
+              "precision": 0.5,
+              "recall": 0.125,
+              "false_positive_rate": 0.125,
+              "positive_tasks": 1,
+              "positive_episodes": 1
+            },
+            {
+              "theta": 0.6,
+              "triggered": 3,
+              "positive_hits": 2,
+              "precision": 0.6666666666666666,
+              "recall": 0.25,
+              "false_positive_rate": 0.125,
+              "positive_tasks": 1,
+              "positive_episodes": 1
+            },
+            {
+              "theta": 0.9,
+              "triggered": 2,
+              "positive_hits": 1,
+              "precision": 0.5,
+              "recall": 0.125,
+              "false_positive_rate": 0.125,
+              "positive_tasks": 1,
+              "positive_episodes": 1
+            }
+          ],
+          "reason": "Candidate only; semantic calibration not supported"
+        }
+      },
+      "ready_for_intervention": false
+    }
+  }
+}

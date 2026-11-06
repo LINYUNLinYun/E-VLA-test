@@ -1,0 +1,991 @@
+{
+  "passed": true,
+  "checks": [
+    "legacy result without row.group reconstructs first 100 pairs",
+    "real 100-pair complete control eligible",
+    "changed noise seed rejected",
+    "wrong AB/BA order rejected",
+    "steady recapture rejects pair ranking",
+    "compile numeric failures separated",
+    "current incomplete runs not ranked",
+    "rendered comparison.png inspected",
+    "all combined variant tags retained",
+    "await_previous_prefix distinguished and wait mean preserved",
+    "actual GPU3 age 2.09/update 9.1267 Hz candidate rejected by freshness gate",
+    "native supervisor PID/create_time alive and external hold preserved",
+    "lifecycle schema separated from performance rows"
+  ],
+  "generated_unix": 1792583534.6334753,
+  "errors": [],
+  "formal_pair_audit": [
+    {
+      "run": "d10_hoist",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_main",
+      "run_status": "complete",
+      "expected_groups": 6,
+      "observed_groups": 6,
+      "expected_raw_rows": 1200,
+      "observed_raw_rows": 1200,
+      "expected_total_rows": 2100,
+      "observed_total_rows": 2100,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 2,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 3,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 4,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 5,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_modulation",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_modulation_gpu3",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "run_status": "complete",
+      "expected_groups": 2,
+      "observed_groups": 2,
+      "expected_raw_rows": 400,
+      "observed_raw_rows": 400,
+      "expected_total_rows": 700,
+      "observed_total_rows": 700,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_selective_all",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_selective_vision_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_selective_vlm_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_vision_modulation_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_vision_modulation_wait_repeat",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_vision_replica_gpu3",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_vision_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_vision_wait_gpu3",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d10_wait_full",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_hoist",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_main",
+      "run_status": "complete",
+      "expected_groups": 6,
+      "observed_groups": 6,
+      "expected_raw_rows": 1200,
+      "observed_raw_rows": 1200,
+      "expected_total_rows": 2100,
+      "observed_total_rows": 2100,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 2,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 3,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 4,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 5,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_modulation",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "run_status": "complete",
+      "expected_groups": 2,
+      "observed_groups": 2,
+      "expected_raw_rows": 400,
+      "observed_raw_rows": 400,
+      "expected_total_rows": 700,
+      "observed_total_rows": 700,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_selective_all",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_selective_vision_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_selective_vlm_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_vision_modulation_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_vision_modulation_wait_repeat",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_vision_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d1_wait_full",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_hoist",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_main",
+      "run_status": "complete",
+      "expected_groups": 6,
+      "observed_groups": 6,
+      "expected_raw_rows": 1200,
+      "observed_raw_rows": 1200,
+      "expected_total_rows": 2100,
+      "observed_total_rows": 2100,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 2,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 3,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 4,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 5,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_modulation",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "run_status": "complete",
+      "expected_groups": 2,
+      "observed_groups": 2,
+      "expected_raw_rows": 400,
+      "observed_raw_rows": 400,
+      "expected_total_rows": 700,
+      "observed_total_rows": 700,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        },
+        {
+          "group": 1,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_selective_all",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_selective_vision_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_selective_vlm_only",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_vision_modulation_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_vision_modulation_wait_repeat",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_vision_wait",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    },
+    {
+      "run": "d5_wait_full",
+      "run_status": "complete",
+      "expected_groups": 1,
+      "observed_groups": 1,
+      "expected_raw_rows": 200,
+      "observed_raw_rows": 200,
+      "expected_total_rows": 400,
+      "observed_total_rows": 400,
+      "groups": [
+        {
+          "group": 0,
+          "raw_rows": 200,
+          "valid_pairs": 100,
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "preparation_variant_flags": [
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 2,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 3,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d10_preparation_pair_gpu3",
+      "group": 4,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 2,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 3,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d1_preparation_pair_gpu3",
+      "group": 4,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 0,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 1,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 2,
+      "mode": "graph_ae_high__baseline",
+      "variant": "baseline",
+      "hoist_schedule": false,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": false,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 3,
+      "mode": "graph_ae_high__schedule",
+      "variant": "schedule",
+      "hoist_schedule": true,
+      "hoist_modulation": false,
+      "schedule_hoist_effective": true,
+      "passed": true
+    },
+    {
+      "run": "d5_preparation_pair_gpu3",
+      "group": 4,
+      "mode": "graph_ae_high__modulation",
+      "variant": "modulation",
+      "hoist_schedule": false,
+      "hoist_modulation": true,
+      "schedule_hoist_effective": true,
+      "passed": true
+    }
+  ],
+  "full_experiment_complete": true
+}

@@ -1,0 +1,520 @@
+{
+  "profile_sha256": "54846753b2d1224f0f11f0b7fe401e3b58bf0b61c5a9917e431b642f7045e770",
+  "sqlite_sha256": "0afb62485d0bdd671b5d4991b6e664027e48e5b819556afa01a4de4d0812ca79",
+  "all_kernels_correlated": true,
+  "label_counts_match_runner_exactly": true,
+  "actual_nvtx_labels": {
+    "section/E1_fixed_KV_causal_reference": 1,
+    "E1/serial/iteration_01": 1,
+    "action_expert": 21,
+    "action_expert/denoise_step01": 21,
+    "cub::DeviceScan::InclusiveScan": 462,
+    "action_expert/denoise_step02": 21,
+    "action_expert/denoise_step03": 21,
+    "action_expert/denoise_step04": 21,
+    "action_expert/denoise_step05": 21,
+    "action_expert/denoise_step06": 21,
+    "action_expert/denoise_step07": 21,
+    "action_expert/denoise_step08": 21,
+    "action_expert/denoise_step09": 21,
+    "action_expert/denoise_step10": 21,
+    "output_copy_and_decode": 21,
+    "prefill": 21,
+    "encode": 21,
+    "encode/camera_BRANCH01_base_0_rgb": 21,
+    "encode/camera_BRANCH02_left_wrist_0_rgb": 21,
+    "encode/camera_BRANCH03_right_wrist_0_rgb": 21,
+    "vlm": 21,
+    "E1/two_stream/iteration_01": 1,
+    "E1/serial/iteration_02": 1,
+    "E1/two_stream/iteration_02": 1,
+    "E1/serial/iteration_03": 1,
+    "E1/two_stream/iteration_03": 1,
+    "section/runtime_PipelinePolicy_real_observation_replay": 1,
+    "runtime/fresh_serial/configure_reset": 1,
+    "runtime/reset": 6,
+    "runtime/drain_owned_events": 9,
+    "runtime/fresh_serial/request_00": 1,
+    "input_preparation": 15,
+    "noise_preparation": 15,
+    "runtime/fresh_serial/request_01": 1,
+    "runtime/fresh_serial/request_02": 1,
+    "runtime/fresh_serial/request_03": 1,
+    "runtime/fresh_serial/request_04": 1,
+    "runtime/fresh_serial/final_reset_and_owned_drain": 1,
+    "runtime/serial_reuse/configure_reset": 1,
+    "runtime/serial_reuse/request_00": 1,
+    "runtime/serial_reuse/request_01": 1,
+    "runtime/serial_reuse/request_02": 1,
+    "runtime/serial_reuse/request_03": 1,
+    "runtime/serial_reuse/request_04": 1,
+    "runtime/serial_reuse/final_reset_and_owned_drain": 1,
+    "runtime/async_reuse/configure_reset": 1,
+    "runtime/async_reuse/request_00": 1,
+    "runtime/async_reuse/request_01": 1,
+    "runtime/async_reuse/request_02": 1,
+    "runtime/async_reuse/request_03": 1,
+    "runtime/async_reuse/request_04": 1,
+    "runtime/async_reuse/final_reset_and_owned_drain": 1
+  },
+  "depths": {
+    "vision": 27,
+    "vlm": 18,
+    "action_expert": 18,
+    "denoising_steps": 10
+  },
+  "coarse_only": true,
+  "kernel_total": 271053,
+  "capture": {
+    "kernel_union_ms": 1484.105712,
+    "distinct_stream_kernel_overlap_ms": 0.200578,
+    "distinct_stream_overlap_fraction": 0.00013515074996221023,
+    "encode_vlm_vs_ae_kernel_overlap_ms": 0.200578,
+    "kernels": 271053,
+    "streams": [
+      7,
+      29,
+      117,
+      121,
+      125
+    ]
+  },
+  "roots": {
+    "E1/serial/iteration_01": {
+      "host_range_ms": 423.958084,
+      "kernel_union_ms": 70.611527,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12898,
+      "streams": [
+        7
+      ]
+    },
+    "E1/two_stream/iteration_01": {
+      "host_range_ms": 434.408191,
+      "kernel_union_ms": 70.680586,
+      "distinct_stream_kernel_overlap_ms": 0.015936,
+      "distinct_stream_overlap_fraction": 0.0002254650237336742,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.015936,
+      "kernels": 12898,
+      "streams": [
+        7,
+        117
+      ]
+    },
+    "E1/serial/iteration_02": {
+      "host_range_ms": 435.187054,
+      "kernel_union_ms": 70.653201,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12898,
+      "streams": [
+        7
+      ]
+    },
+    "E1/two_stream/iteration_02": {
+      "host_range_ms": 434.685816,
+      "kernel_union_ms": 70.652738,
+      "distinct_stream_kernel_overlap_ms": 0.012224,
+      "distinct_stream_overlap_fraction": 0.0001730152340309869,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.012224,
+      "kernels": 12898,
+      "streams": [
+        7,
+        121
+      ]
+    },
+    "E1/serial/iteration_03": {
+      "host_range_ms": 429.456575,
+      "kernel_union_ms": 70.654346,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12898,
+      "streams": [
+        7
+      ]
+    },
+    "E1/two_stream/iteration_03": {
+      "host_range_ms": 430.205672,
+      "kernel_union_ms": 70.633818,
+      "distinct_stream_kernel_overlap_ms": 0.02288,
+      "distinct_stream_overlap_fraction": 0.00032392415768888496,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.02288,
+      "kernels": 12898,
+      "streams": [
+        7,
+        125
+      ]
+    },
+    "runtime/fresh_serial/request_00": {
+      "host_range_ms": 475.47458,
+      "kernel_union_ms": 70.674175,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/fresh_serial/request_01": {
+      "host_range_ms": 456.117045,
+      "kernel_union_ms": 70.711185,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/fresh_serial/request_02": {
+      "host_range_ms": 470.854782,
+      "kernel_union_ms": 70.670604,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/fresh_serial/request_03": {
+      "host_range_ms": 468.715816,
+      "kernel_union_ms": 70.655911,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/fresh_serial/request_04": {
+      "host_range_ms": 461.367597,
+      "kernel_union_ms": 70.667316,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse/request_00": {
+      "host_range_ms": 472.499413,
+      "kernel_union_ms": 70.631226,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse/request_01": {
+      "host_range_ms": 468.42747,
+      "kernel_union_ms": 70.629289,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse/request_02": {
+      "host_range_ms": 460.92591,
+      "kernel_union_ms": 70.695183,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse/request_03": {
+      "host_range_ms": 453.519892,
+      "kernel_union_ms": 70.738429,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse/request_04": {
+      "host_range_ms": 471.918253,
+      "kernel_union_ms": 70.711994,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse/request_00": {
+      "host_range_ms": 452.18175,
+      "kernel_union_ms": 70.711291,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse/request_01": {
+      "host_range_ms": 467.478586,
+      "kernel_union_ms": 70.729902,
+      "distinct_stream_kernel_overlap_ms": 0.049121,
+      "distinct_stream_overlap_fraction": 0.0006944870360487704,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.049121,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse/request_02": {
+      "host_range_ms": 472.483953,
+      "kernel_union_ms": 70.700423,
+      "distinct_stream_kernel_overlap_ms": 0.018048,
+      "distinct_stream_overlap_fraction": 0.000255274285982702,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.018048,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse/request_03": {
+      "host_range_ms": 468.33745,
+      "kernel_union_ms": 70.661442,
+      "distinct_stream_kernel_overlap_ms": 0.025057,
+      "distinct_stream_overlap_fraction": 0.00035460640613589514,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.025057,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse/request_04": {
+      "host_range_ms": 462.450043,
+      "kernel_union_ms": 70.631126,
+      "distinct_stream_kernel_overlap_ms": 0.057312,
+      "distinct_stream_overlap_fraction": 0.0008114269621016661,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.057312,
+      "kernels": 12911,
+      "streams": [
+        7,
+        29
+      ]
+    }
+  },
+  "aggregate": {
+    "E1/serial": {
+      "kernel_union_ms": 211.919074,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 38694,
+      "streams": [
+        7
+      ]
+    },
+    "E1/two_stream": {
+      "kernel_union_ms": 211.967142,
+      "distinct_stream_kernel_overlap_ms": 0.05104,
+      "distinct_stream_overlap_fraction": 0.00024079203747531775,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.05104,
+      "kernels": 38694,
+      "streams": [
+        7,
+        117,
+        121,
+        125
+      ]
+    },
+    "runtime/fresh_serial": {
+      "kernel_union_ms": 353.379191,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 64555,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/serial_reuse": {
+      "kernel_union_ms": 353.406121,
+      "distinct_stream_kernel_overlap_ms": 0.0,
+      "distinct_stream_overlap_fraction": 0.0,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.0,
+      "kernels": 64555,
+      "streams": [
+        7,
+        29
+      ]
+    },
+    "runtime/async_reuse": {
+      "kernel_union_ms": 353.434184,
+      "distinct_stream_kernel_overlap_ms": 0.149538,
+      "distinct_stream_overlap_fraction": 0.0004230999908033797,
+      "encode_vlm_vs_ae_kernel_overlap_ms": 0.149538,
+      "kernels": 64555,
+      "streams": [
+        7,
+        29
+      ]
+    }
+  },
+  "prefix_submission_diagnostics": [
+    {
+      "root": "E1/serial/iteration_01",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 422.775046
+    },
+    {
+      "root": "E1/two_stream/iteration_01",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2284,
+      "prefix_last_end_minus_first_ae_ms": 0.137762
+    },
+    {
+      "root": "E1/serial/iteration_02",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 432.562037
+    },
+    {
+      "root": "E1/two_stream/iteration_02",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2284,
+      "prefix_last_end_minus_first_ae_ms": 0.137634
+    },
+    {
+      "root": "E1/serial/iteration_03",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 428.960218
+    },
+    {
+      "root": "E1/two_stream/iteration_03",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2284,
+      "prefix_last_end_minus_first_ae_ms": 0.137666
+    },
+    {
+      "root": "runtime/fresh_serial/request_00",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.40983
+    },
+    {
+      "root": "runtime/fresh_serial/request_01",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.793835
+    },
+    {
+      "root": "runtime/fresh_serial/request_02",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.781419
+    },
+    {
+      "root": "runtime/fresh_serial/request_03",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.823628
+    },
+    {
+      "root": "runtime/fresh_serial/request_04",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.788715
+    },
+    {
+      "root": "runtime/serial_reuse/request_00",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.431398
+    },
+    {
+      "root": "runtime/serial_reuse/request_01",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 436.872299
+    },
+    {
+      "root": "runtime/serial_reuse/request_02",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 429.856831
+    },
+    {
+      "root": "runtime/serial_reuse/request_03",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 422.505938
+    },
+    {
+      "root": "runtime/serial_reuse/request_04",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 0,
+      "prefix_last_end_minus_first_ae_ms": 440.464284
+    },
+    {
+      "root": "runtime/async_reuse/request_00",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2295,
+      "prefix_last_end_minus_first_ae_ms": -0.402598
+    },
+    {
+      "root": "runtime/async_reuse/request_01",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2282,
+      "prefix_last_end_minus_first_ae_ms": 0.515527
+    },
+    {
+      "root": "runtime/async_reuse/request_02",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2284,
+      "prefix_last_end_minus_first_ae_ms": 0.137474
+    },
+    {
+      "root": "runtime/async_reuse/request_03",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2284,
+      "prefix_last_end_minus_first_ae_ms": 0.137154
+    },
+    {
+      "root": "runtime/async_reuse/request_04",
+      "prefix_kernels": 2295,
+      "prefix_kernels_completed_before_first_ae": 2282,
+      "prefix_last_end_minus_first_ae_ms": 0.51588
+    }
+  ],
+  "method": "Same as eager_timeline_analysis.json: launch/NVTX globalTid containment, kernel correlationId/globalPid pairing; actual same-device distinct-stream kernel interval overlap, excludes copies/memsets and NVTX-envelope overlap. Diagnostic trace only."
+}

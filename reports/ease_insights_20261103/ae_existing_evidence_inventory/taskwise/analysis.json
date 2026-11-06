@@ -1,0 +1,1430 @@
+{
+  "schema": "ae-layer-pilot-taskwise-paired-analysis-v1",
+  "created_on": "2026-11-05",
+  "status": "exploratory retrospective analysis; not preregistered for AE and not independent confirmation",
+  "conditions": {
+    "L2": "historical run label SkipAE_L2; semantics intentionally left at original label",
+    "L8": "historical run label SkipAE_L8; semantics intentionally left at original label"
+  },
+  "source": {
+    "base": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop",
+    "taxonomy_path": "preparations/ease_insights_20261103/history/semantic_taxonomy/taxonomy.json",
+    "taxonomy_sha256": "628d6b14ae25285d13bd7b4ec3300ce87cd32397165079252c1996b36a5a71fe",
+    "taxonomy_schema": "ease-libero40-semantic-taxonomy-v1",
+    "taxonomy_status": "metadata_only_exploratory_taxonomy",
+    "taxonomy_outcome_independent": true,
+    "run_evidence": [
+      {
+        "condition_label": "L2",
+        "suite": "libero_10",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/manifest.json",
+        "manifest_sha256": "238821695b361270c881c61a7304e2f0a26f7662b704134c672085a80e7b6987",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_10_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "11afac3b61c3a569814db2696764a12c5f975f913fdb50a47d8c9fb2a0b53902",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L2",
+        "suite": "libero_goal",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/manifest.json",
+        "manifest_sha256": "55526d7b11e3a84ddb68679b827c16f30aac1eda85377c1590053f13f4a228bd",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_goal_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "1d93ea75af5e95fe587e9591ab2b00d54cc23c51dcdb6f289c4ec72eca8ac506",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L2",
+        "suite": "libero_object",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/manifest.json",
+        "manifest_sha256": "f81ba549b763ee10b3beefbcf91427201496eb5296b6b0826154df14e8afbc19",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_object_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "661b8541815b6916cce66bf9c02faae64dd23c2c40355400358a55b347b5f289",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L2",
+        "suite": "libero_spatial",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/manifest.json",
+        "manifest_sha256": "9b81c2ffe9b0cdc37fb94f0af376370fc4274845d9000bde299540e52142b8b0",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L2_libero_spatial_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "c004bb77fdd5a2c1c2bf28fc18c494864822f513bd57bf15e08c968f932e6150",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L8",
+        "suite": "libero_10",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/manifest.json",
+        "manifest_sha256": "5adb07210de6176f40c853da9240da3e4c0476c9f70fe2cc5e91965b4b29b634",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_10_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "a55cc8cb2825247d85aecb4f24ae433ca7b7257aa0d82c602e6daeaaaf34f804",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L8",
+        "suite": "libero_goal",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/manifest.json",
+        "manifest_sha256": "906040b344fb430b03b45116e23825c8997e0eda7b32fc6cda91d426de5d8380",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_goal_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "17561c42f87a99d86e3f7d8d579a495c268b69ed2b70c0068ded6affc66cae9c",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L8",
+        "suite": "libero_object",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/manifest.json",
+        "manifest_sha256": "b826f0523f054e724844427e9298695bb1ae14074b95361b9316cdbdd75cfde0",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_object_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "1d660b98983cdde26805521c2681ee42e03f0f5d16d82184a9b09ece44c1a718",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      },
+      {
+        "condition_label": "L8",
+        "suite": "libero_spatial",
+        "run_id": "exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01",
+        "manifest_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/manifest.json",
+        "manifest_sha256": "1c93ad02e4cedfae5ed27ba086451330f6b502858fe6e037ddd6cf71cd3bdf2d",
+        "episode_log_path": "policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/closed_loop/exp9_ae_layer_pilot_SkipAE_L8_libero_spatial_i00_10_a01/episode_log.json",
+        "episode_log_sha256": "862be0887475876479efdcd1be5a8ef3dc228088789e50d77389cfa25b64da6f",
+        "record_count": 100,
+        "seed": 7,
+        "tasks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "trials_per_task": 10,
+        "episode_indices": [
+          0,
+          10
+        ]
+      }
+    ]
+  },
+  "case_identity_audit": {
+    "L2_episode_records": 400,
+    "L8_episode_records": 400,
+    "paired_case_keys": 400,
+    "all_manifest_and_key_checks_passed": true,
+    "identity_issues": [],
+    "metadata_pair_mismatches": [],
+    "instruction_join_mismatches": [],
+    "paired_by": [
+      "suite",
+      "task_id",
+      "task_description",
+      "episode_idx",
+      "run seed"
+    ],
+    "physical_initial_state_hash_present": false,
+    "physical_state_match_claim": "not established; matching task/trial/run-seed identity was verified, but the episode log has no initial-state digest"
+  },
+  "data_completeness": {
+    "all_800_outcomes_boolean": true,
+    "non_success_outcomes_retained": {
+      "L2": 44,
+      "L8": 46
+    },
+    "failure_reason_counts": {
+      "None": 800
+    },
+    "technical_failure_classification": "episode_log has failure_reason=null for all rows and no explicit technical-failure field; false success rows were retained as failures, not reclassified or removed",
+    "structural_trace_infer_mismatches": []
+  },
+  "overall": {
+    "n_case_pairs": 400,
+    "L2_successes": 356,
+    "L2_rate": 0.89,
+    "L8_successes": 354,
+    "L8_rate": 0.885,
+    "L2_minus_L8_pp": 0.5,
+    "discordant": {
+      "L2_only": 19,
+      "L8_only": 17
+    },
+    "paired_outcomes": {
+      "both_success": 337,
+      "L2_only": 19,
+      "L8_only": 17,
+      "both_failure": 27
+    },
+    "task_cluster_bootstrap95": {
+      "lower95_pp": -2.75,
+      "upper95_pp": 3.75,
+      "bootstrap_unit": "(suite,task) cluster",
+      "bootstrap_draws": 30000,
+      "bootstrap_seed": 20261105,
+      "warning": "exploratory; task count is the number of rows"
+    }
+  },
+  "by_suite": {
+    "libero_10": {
+      "n_case_pairs": 100,
+      "L2_successes": 80,
+      "L2_rate": 0.8,
+      "L8_successes": 80,
+      "L8_rate": 0.8,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 7,
+        "L8_only": 7
+      },
+      "paired_outcomes": {
+        "both_success": 73,
+        "L2_only": 7,
+        "L8_only": 7,
+        "both_failure": 13
+      },
+      "task_cluster_bootstrap95": {
+        "lower95_pp": -9.0,
+        "upper95_pp": 9.0,
+        "bootstrap_unit": "(suite,task) cluster",
+        "bootstrap_draws": 30000,
+        "bootstrap_seed": 20261106,
+        "warning": "exploratory; task count is the number of rows"
+      }
+    },
+    "libero_goal": {
+      "n_case_pairs": 100,
+      "L2_successes": 81,
+      "L2_rate": 0.81,
+      "L8_successes": 84,
+      "L8_rate": 0.84,
+      "L2_minus_L8_pp": -3.0,
+      "discordant": {
+        "L2_only": 5,
+        "L8_only": 8
+      },
+      "paired_outcomes": {
+        "both_success": 76,
+        "L2_only": 5,
+        "L8_only": 8,
+        "both_failure": 11
+      },
+      "task_cluster_bootstrap95": {
+        "lower95_pp": -9.0,
+        "upper95_pp": 2.0,
+        "bootstrap_unit": "(suite,task) cluster",
+        "bootstrap_draws": 30000,
+        "bootstrap_seed": 20261107,
+        "warning": "exploratory; task count is the number of rows"
+      }
+    },
+    "libero_object": {
+      "n_case_pairs": 100,
+      "L2_successes": 99,
+      "L2_rate": 0.99,
+      "L8_successes": 97,
+      "L8_rate": 0.97,
+      "L2_minus_L8_pp": 2.0,
+      "discordant": {
+        "L2_only": 2,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 97,
+        "L2_only": 2,
+        "L8_only": 0,
+        "both_failure": 1
+      },
+      "task_cluster_bootstrap95": {
+        "lower95_pp": 0.0,
+        "upper95_pp": 5.0,
+        "bootstrap_unit": "(suite,task) cluster",
+        "bootstrap_draws": 30000,
+        "bootstrap_seed": 20261108,
+        "warning": "exploratory; task count is the number of rows"
+      }
+    },
+    "libero_spatial": {
+      "n_case_pairs": 100,
+      "L2_successes": 96,
+      "L2_rate": 0.96,
+      "L8_successes": 93,
+      "L8_rate": 0.93,
+      "L2_minus_L8_pp": 3.0,
+      "discordant": {
+        "L2_only": 5,
+        "L8_only": 2
+      },
+      "paired_outcomes": {
+        "both_success": 91,
+        "L2_only": 5,
+        "L8_only": 2,
+        "both_failure": 2
+      },
+      "task_cluster_bootstrap95": {
+        "lower95_pp": -2.0,
+        "upper95_pp": 9.0,
+        "bootstrap_unit": "(suite,task) cluster",
+        "bootstrap_draws": 30000,
+        "bootstrap_seed": 20261109,
+        "warning": "exploratory; task count is the number of rows"
+      }
+    }
+  },
+  "by_metadata_taxonomy": {
+    "taxonomy_counts": {
+      "state_change_only": 2,
+      "state_change_and_object_placement": 4,
+      "multiple_object_placement": 6,
+      "single_object_placement": 28,
+      "unknown": 0
+    },
+    "taxonomy_counts_by_suite": {
+      "libero_spatial": {
+        "state_change_only": 0,
+        "state_change_and_object_placement": 0,
+        "multiple_object_placement": 0,
+        "single_object_placement": 10,
+        "unknown": 0
+      },
+      "libero_object": {
+        "state_change_only": 0,
+        "state_change_and_object_placement": 0,
+        "multiple_object_placement": 0,
+        "single_object_placement": 10,
+        "unknown": 0
+      },
+      "libero_goal": {
+        "state_change_only": 2,
+        "state_change_and_object_placement": 1,
+        "multiple_object_placement": 0,
+        "single_object_placement": 7,
+        "unknown": 0
+      },
+      "libero_10": {
+        "state_change_only": 0,
+        "state_change_and_object_placement": 3,
+        "multiple_object_placement": 6,
+        "single_object_placement": 1,
+        "unknown": 0
+      }
+    },
+    "aggregation_validated_by_instruction_join": true,
+    "results": {
+      "state_change_only": {
+        "n_case_pairs": 20,
+        "L2_successes": 19,
+        "L2_rate": 0.95,
+        "L8_successes": 20,
+        "L8_rate": 1.0,
+        "L2_minus_L8_pp": -5.0,
+        "discordant": {
+          "L2_only": 0,
+          "L8_only": 1
+        },
+        "paired_outcomes": {
+          "both_success": 19,
+          "L2_only": 0,
+          "L8_only": 1,
+          "both_failure": 0
+        },
+        "n_tasks": 2,
+        "tasks_by_suite": {
+          "libero_goal": 2
+        },
+        "tasks_L2_better": 0,
+        "tasks_L8_better": 1,
+        "tasks_tied": 1,
+        "task_cluster_bootstrap95": {
+          "lower95_pp": -10.0,
+          "upper95_pp": 0.0,
+          "bootstrap_unit": "(suite,task) cluster",
+          "bootstrap_draws": 30000,
+          "bootstrap_seed": 20261115,
+          "warning": "exploratory; task count is the number of rows"
+        },
+        "small_class_warning": "Very small number of task clusters; interval is highly unstable."
+      },
+      "state_change_and_object_placement": {
+        "n_case_pairs": 40,
+        "L2_successes": 33,
+        "L2_rate": 0.825,
+        "L8_successes": 32,
+        "L8_rate": 0.8,
+        "L2_minus_L8_pp": 2.5,
+        "discordant": {
+          "L2_only": 5,
+          "L8_only": 4
+        },
+        "paired_outcomes": {
+          "both_success": 28,
+          "L2_only": 5,
+          "L8_only": 4,
+          "both_failure": 3
+        },
+        "n_tasks": 4,
+        "tasks_by_suite": {
+          "libero_10": 3,
+          "libero_goal": 1
+        },
+        "tasks_L2_better": 1,
+        "tasks_L8_better": 2,
+        "tasks_tied": 1,
+        "task_cluster_bootstrap95": {
+          "lower95_pp": -10.0,
+          "upper95_pp": 20.0,
+          "bootstrap_unit": "(suite,task) cluster",
+          "bootstrap_draws": 30000,
+          "bootstrap_seed": 20261116,
+          "warning": "exploratory; task count is the number of rows"
+        },
+        "small_class_warning": "Very small number of task clusters; interval is highly unstable."
+      },
+      "multiple_object_placement": {
+        "n_case_pairs": 60,
+        "L2_successes": 47,
+        "L2_rate": 0.7833333333333333,
+        "L8_successes": 50,
+        "L8_rate": 0.8333333333333334,
+        "L2_minus_L8_pp": -5.0,
+        "discordant": {
+          "L2_only": 1,
+          "L8_only": 4
+        },
+        "paired_outcomes": {
+          "both_success": 46,
+          "L2_only": 1,
+          "L8_only": 4,
+          "both_failure": 9
+        },
+        "n_tasks": 6,
+        "tasks_by_suite": {
+          "libero_10": 6
+        },
+        "tasks_L2_better": 1,
+        "tasks_L8_better": 2,
+        "tasks_tied": 3,
+        "task_cluster_bootstrap95": {
+          "lower95_pp": -16.666666666666668,
+          "upper95_pp": 3.3333333333333335,
+          "bootstrap_unit": "(suite,task) cluster",
+          "bootstrap_draws": 30000,
+          "bootstrap_seed": 20261117,
+          "warning": "exploratory; task count is the number of rows"
+        },
+        "small_class_warning": "Very small number of task clusters; interval is highly unstable."
+      },
+      "single_object_placement": {
+        "n_case_pairs": 280,
+        "L2_successes": 257,
+        "L2_rate": 0.9178571428571428,
+        "L8_successes": 252,
+        "L8_rate": 0.9,
+        "L2_minus_L8_pp": 1.7857142857142858,
+        "discordant": {
+          "L2_only": 13,
+          "L8_only": 8
+        },
+        "paired_outcomes": {
+          "both_success": 244,
+          "L2_only": 13,
+          "L8_only": 8,
+          "both_failure": 15
+        },
+        "n_tasks": 28,
+        "tasks_by_suite": {
+          "libero_10": 1,
+          "libero_goal": 7,
+          "libero_object": 10,
+          "libero_spatial": 10
+        },
+        "tasks_L2_better": 9,
+        "tasks_L8_better": 4,
+        "tasks_tied": 15,
+        "task_cluster_bootstrap95": {
+          "lower95_pp": -1.0714285714285714,
+          "upper95_pp": 4.642857142857143,
+          "bootstrap_unit": "(suite,task) cluster",
+          "bootstrap_draws": 30000,
+          "bootstrap_seed": 20261118,
+          "warning": "exploratory; task count is the number of rows"
+        },
+        "small_class_warning": null
+      },
+      "unknown": {
+        "n_tasks": 0,
+        "n_case_pairs": 0
+      }
+    },
+    "classification_warning": "These categories are strongly uneven across suites; category effects are confounded with suite and task composition. Taxonomy labels are metadata-only, not difficulty or path preference.",
+    "interpretation": "Point estimates cross in direction, but all task-cluster bootstrap intervals include zero; taxonomy classes are strongly confounded with suite composition and the smallest groups contain only 2, 4, and 6 tasks. Exploratory only; no verified general task preference."
+  },
+  "taskwise": [
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "task_name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "task_name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "task_name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "category": "state_change_and_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 6,
+      "L2_minus_L8_pp": 30.0,
+      "discordant": {
+        "L2_only": 3,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 6,
+        "L2_only": 3,
+        "L8_only": 0,
+        "both_failure": 1
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "task_name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+      "category": "state_change_and_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 8,
+        "L2_only": 1,
+        "L8_only": 1,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "task_name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 8,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 8,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 1
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "task_name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 7,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -30.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 3
+      },
+      "paired_outcomes": {
+        "both_success": 7,
+        "L2_only": 0,
+        "L8_only": 3,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "task_name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "task_name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+      "category": "multiple_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 0,
+      "L8_successes": 1,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 0,
+        "L2_only": 0,
+        "L8_only": 1,
+        "both_failure": 9
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "task_name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "category": "state_change_and_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 6,
+      "L8_successes": 7,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 2
+      },
+      "paired_outcomes": {
+        "both_success": 5,
+        "L2_only": 1,
+        "L8_only": 2,
+        "both_failure": 2
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "task_name": "open_the_middle_drawer_of_the_cabinet",
+      "category": "state_change_only",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 1,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "task_name": "put_the_bowl_on_the_stove",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 8,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 2
+      },
+      "paired_outcomes": {
+        "both_success": 7,
+        "L2_only": 1,
+        "L8_only": 2,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "task_name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "category": "state_change_and_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 1,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "task_name": "put_the_bowl_on_top_of_the_cabinet",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 8,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -20.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 2
+      },
+      "paired_outcomes": {
+        "both_success": 8,
+        "L2_only": 0,
+        "L8_only": 2,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "task_name": "push_the_plate_to_the_front_of_the_stove",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 7,
+      "L8_successes": 6,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 3,
+        "L8_only": 2
+      },
+      "paired_outcomes": {
+        "both_success": 4,
+        "L2_only": 3,
+        "L8_only": 2,
+        "both_failure": 1
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "task_name": "put_the_cream_cheese_in_the_bowl",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "task_name": "turn_on_the_stove",
+      "category": "state_change_only",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "task_name": "put_the_bowl_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "task_name": "put_the_wine_bottle_on_the_rack",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 0,
+      "L8_successes": 0,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 0,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 10
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "task_name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "task_name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "task_name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "task_name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "task_name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "task_name": "pick_up_the_butter_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "task_name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "task_name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 1
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 8,
+      "L2_minus_L8_pp": 20.0,
+      "discordant": {
+        "L2_only": 2,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 8,
+        "L2_only": 2,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 10,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 1,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 10,
+      "L2_minus_L8_pp": -10.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 1
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 1,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 1
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 10,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 10.0,
+      "discordant": {
+        "L2_only": 1,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 1,
+        "L8_only": 0,
+        "both_failure": 0
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "category": "single_object_placement",
+      "n_case_pairs": 10,
+      "L2_successes": 9,
+      "L8_successes": 9,
+      "L2_minus_L8_pp": 0.0,
+      "discordant": {
+        "L2_only": 0,
+        "L8_only": 0
+      },
+      "paired_outcomes": {
+        "both_success": 9,
+        "L2_only": 0,
+        "L8_only": 0,
+        "both_failure": 1
+      }
+    }
+  ],
+  "leave_one_task_out_overall_equal_task_mean": {
+    "full_mean_L2_minus_L8_pp": 0.5,
+    "minimum": {
+      "omitted_suite": "libero_10",
+      "omitted_task_id": 2,
+      "mean_L2_minus_L8_pp": -0.2564102564102564
+    },
+    "maximum": {
+      "omitted_suite": "libero_10",
+      "omitted_task_id": 6,
+      "mean_L2_minus_L8_pp": 1.2820512820512822
+    },
+    "range_pp": [
+      -0.2564102564102564,
+      1.2820512820512822
+    ]
+  },
+  "case_pair_artifact": "paired_case_outcomes.jsonl",
+  "limitations": [
+    "Only one run seed and episode indices 0-9 were used; independence of reset initial states is not proven by the log.",
+    "Screening summary has no paired Full baseline, no latency measurement, and no per-task confidence intervals.",
+    "Task-cluster intervals are exploratory and do not account for any candidate-selection procedure.",
+    "No adaptive or preregistered task preference was evaluated."
+  ],
+  "runtime_provenance_boundary": {
+    "source": "Parent-reported parallel provenance audit; not independently re-read in this bounded outcome extraction.",
+    "nominal_h_r_d": "H50/R12/D10; VLM prefix full18; historical AE L2/L8 labels are one-based single-layer ablations with 17/18 AE layers retained.",
+    "archive_gaps": [
+      "checkpoint and normalization content hashes",
+      "complete launch argv",
+      "historical source snapshot",
+      "noise SHA was reconstructed, not captured from the actual GPU tensor"
+    ],
+    "compatibility": "These historical outcomes cannot be pooled with the current VLM local-search v1 R5/D2 experiment. This taskwise report keeps original L2/L8 labels and makes no exact-runtime reproduction claim."
+  }
+}

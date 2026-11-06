@@ -1,0 +1,519 @@
+{
+  "status": "pass",
+  "time": 1793905590.7241633,
+  "CPU_contracts": 11,
+  "no_CUDA_started": true,
+  "source_pins": 154,
+  "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+  "manifest_file_sha256": "1c2b642d56c47c8c4ed996c965f69213d19bffe72d28221e27446e8c633d0569",
+  "request": {
+    "schema": "ease-resource-pool-request-v4",
+    "cohort": "denoise_depth_paths_v1",
+    "output": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration",
+    "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+    "manifest_file_sha256": "1c2b642d56c47c8c4ed996c965f69213d19bffe72d28221e27446e8c633d0569",
+    "shards": 2
+  },
+  "commands": [
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/manifest.json",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21870",
+        "--gpu-uuid",
+        "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/runs/calibration_shard00of02_1793905590704118041"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21870",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "0",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/runs/calibration_shard00of02_1793905590704118041",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/calibration_shard00of02_complete.json",
+      "identity": {
+        "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+        "condition": "full_d10",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "denoise-depth-observed-AE-v1",
+          "scientific_manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+          "phase": "denoise_depth_calibration_v1",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "FullVLM18/vision27 and two fresh cameras; AE depth versus original-adapter uniform EulerD2/D3/D4; FullD10 AE18. Empty VLM mask means residual compensation is unused. Layer counts are not a cost-equivalence claim.",
+          "revision_hash": "1a7734080518bd09c26ed59a94619ef7b92e44695c99a2ec5f7a493fa2cbe077"
+        },
+        "command_builder": "preparations.ease_insights_20261103.denoise_depth_paths_v1.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all six fixed AE-depth/time configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+      "stage": "calibration",
+      "condition": "full_d10"
+    },
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/manifest.json",
+        "--condition",
+        "ae16_d2",
+        "--port",
+        "21870",
+        "--gpu-uuid",
+        "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/runs/calibration_shard00of02_1793905590709743786"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration",
+        "--condition",
+        "ae16_d2",
+        "--port",
+        "21870",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "0",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/runs/calibration_shard00of02_1793905590709743786",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/calibration_shard00of02_complete.json",
+      "identity": {
+        "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+        "condition": "ae16_d2",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "denoise-depth-observed-AE-v1",
+          "scientific_manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+          "phase": "denoise_depth_calibration_v1",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "FullVLM18/vision27 and two fresh cameras; AE depth versus original-adapter uniform EulerD2/D3/D4; FullD10 AE18. Empty VLM mask means residual compensation is unused. Layer counts are not a cost-equivalence claim.",
+          "revision_hash": "1a7734080518bd09c26ed59a94619ef7b92e44695c99a2ec5f7a493fa2cbe077"
+        },
+        "command_builder": "preparations.ease_insights_20261103.denoise_depth_paths_v1.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all six fixed AE-depth/time configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+      "stage": "calibration",
+      "condition": "ae16_d2"
+    },
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/manifest.json",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21871",
+        "--gpu-uuid",
+        "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/runs/calibration_shard01of02_1793905590717351925"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21871",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "1",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/runs/calibration_shard01of02_1793905590717351925",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/full_d10/calibration_shard01of02_complete.json",
+      "identity": {
+        "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+        "condition": "full_d10",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "denoise-depth-observed-AE-v1",
+          "scientific_manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+          "phase": "denoise_depth_calibration_v1",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "FullVLM18/vision27 and two fresh cameras; AE depth versus original-adapter uniform EulerD2/D3/D4; FullD10 AE18. Empty VLM mask means residual compensation is unused. Layer counts are not a cost-equivalence claim.",
+          "revision_hash": "1a7734080518bd09c26ed59a94619ef7b92e44695c99a2ec5f7a493fa2cbe077"
+        },
+        "command_builder": "preparations.ease_insights_20261103.denoise_depth_paths_v1.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all six fixed AE-depth/time configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+      "stage": "calibration",
+      "condition": "full_d10"
+    },
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/manifest.json",
+        "--condition",
+        "ae16_d2",
+        "--port",
+        "21871",
+        "--gpu-uuid",
+        "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/runs/calibration_shard01of02_1793905590723246719"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.denoise_depth_paths_v1.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration",
+        "--condition",
+        "ae16_d2",
+        "--port",
+        "21871",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "1",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/runs/calibration_shard01of02_1793905590723246719",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/calibration/ae16_d2/calibration_shard01of02_complete.json",
+      "identity": {
+        "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+        "condition": "ae16_d2",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "denoise-depth-observed-AE-v1",
+          "scientific_manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+          "phase": "denoise_depth_calibration_v1",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/denoise_depth_paths_v1/protocol.json",
+            "sha256": "0389d5eef6e34df02a932ebd665bf8cf3b3a15534db05f51c2ffd88928519ea6"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+            "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "FullVLM18/vision27 and two fresh cameras; AE depth versus original-adapter uniform EulerD2/D3/D4; FullD10 AE18. Empty VLM mask means residual compensation is unused. Layer counts are not a cost-equivalence claim.",
+          "revision_hash": "1a7734080518bd09c26ed59a94619ef7b92e44695c99a2ec5f7a493fa2cbe077"
+        },
+        "command_builder": "preparations.ease_insights_20261103.denoise_depth_paths_v1.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all six fixed AE-depth/time configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "0ea641b66f93abc75746b6d3d73b56c5cc84478ede4da511649de741e2053ef9",
+      "stage": "calibration",
+      "condition": "ae16_d2"
+    }
+  ],
+  "known_control_repetitions": 8,
+  "independent_quality_cases": 0,
+  "control_origin_roots": 2,
+  "confirmation_inits_unused": [
+    47,
+    48,
+    49
+  ],
+  "D_options": [
+    2,
+    3,
+    4,
+    10
+  ],
+  "atol": 1e-05,
+  "rtol": 1e-05
+}

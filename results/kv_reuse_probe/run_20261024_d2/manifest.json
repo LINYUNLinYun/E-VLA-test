@@ -1,0 +1,43 @@
+{
+  "status": "failed",
+  "started_unix": 1792853154.9193714,
+  "argv": [
+    "/root/nfs/embodied/benchmark/preparations/kv_reuse_probe/probe.py",
+    "--source",
+    "results/idea2/run_20261020/episodes/fresh_serial_r1",
+    "--output",
+    "results/kv_reuse_probe/run_20261024_d2",
+    "--gpu",
+    "0"
+  ],
+  "python": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+  "selection_sha256": "02a61a0c148bfb91be56643e685be7b7ac36a5d6fba3d54a568faed6578fa101",
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/kv_reuse_probe/probe.py": "e86a40c0cb7939b3adcc29c42f3a7b400b6a10234e49a714b9cd0fd60d2dde2c",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "num_pairs": 64,
+  "denoising": 2,
+  "skip_1based": [
+    3,
+    4,
+    9,
+    11
+  ],
+  "cutoffs": [
+    10,
+    13,
+    16
+  ],
+  "execute": 5,
+  "horizon": 50,
+  "region_contract": "vision tokens [0,512), language [512,T); all unpadded native Triton prefix tokens",
+  "cutoff_contract": "L cutoff is inclusive first previous-Full layer; earlier layers current V14. This exchanges each AE layer prefix KV directly, without recomputing VLM hidden states.",
+  "full_final_layer": "Triton L18 materializes KV only: final prefix hidden output is unused by AE. This does not establish that L18 KV is unimportant.",
+  "action_contract": "Decoded native LIBERO action coordinates: translation/rotation coordinate errors, not Cartesian pose or SO(3) geodesic error; gripper raw and sign error. Clipped translation meanL2*50mm is only a controller delta proxy. All paths use current state and same current noise.",
+  "scope": "Shadow mechanism probe on recorded real Full trajectory; no rollout, no speed measurement or performance claim.",
+  "error": "RuntimeError(\"GPU_NOT_IDLE: {'assigned': '0', 'device': '0, GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, NVIDIA GeForce RTX 4090, 8903 MiB, 0 %', 'preexisting_compute_processes': '3427140, GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 8428 MiB'}\")",
+  "finished_unix": 1792853155.4545307
+}

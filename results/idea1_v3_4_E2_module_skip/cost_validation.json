@@ -1,0 +1,5542 @@
+{
+  "passed": true,
+  "native_requests": 51,
+  "eager_vjps": 2,
+  "maximum_native_requests": 51,
+  "maximum_eager_vjps": 2,
+  "started": 1793533730.6541412,
+  "completed": 1793533736.270186,
+  "input": {
+    "manifest": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_comp_error_cost/manifest.json",
+    "suite": "libero_spatial",
+    "task": 0,
+    "init": 14,
+    "side": "current",
+    "seed": 3377003299
+  },
+  "protocol": {
+    "same_observation": true,
+    "same_noise": true,
+    "native_fast_D": 2,
+    "compensation": "actual current residual; older=last, ratio=0.8",
+    "history_scope": "constant observation for costs and numerical checks, not period-five forecast quality",
+    "timing": "synchronized full request wall and native VLM elapsed time; timed Fast calls include compensation",
+    "pairing": "four hot reversed-order B/F pairs per frozen budget",
+    "profile_scope": "CUDA events around native stages, without inter-stage synchronization; instrumentation cost applies"
+  },
+  "all_keep_matches_old_full": true,
+  "captures_preserve_K_V_raw_actions": true,
+  "selectors": {
+    "ffn": {
+      "gradient": [
+        0.21133458614349365,
+        0.028126776218414307,
+        0.1387931853532791,
+        0.16245409846305847,
+        -0.04831945151090622,
+        -0.14607320725917816,
+        -0.23966099321842194,
+        -0.11242854595184326,
+        -0.01055385172367096,
+        0.1795402616262436,
+        -0.328960657119751,
+        -0.42183712124824524,
+        0.32180941104888916,
+        0.35668832063674927,
+        0.43142473697662354,
+        -0.07957923412322998,
+        0.02728118747472763
+      ],
+      "scores": [
+        0.21133458614349365,
+        0.028126776218414307,
+        0.1387931853532791,
+        0.16245409846305847,
+        0.04831945151090622,
+        0.14607320725917816,
+        0.23966099321842194,
+        0.11242854595184326,
+        0.01055385172367096,
+        0.1795402616262436,
+        0.328960657119751,
+        0.42183712124824524,
+        0.32180941104888916,
+        0.35668832063674927,
+        0.43142473697662354,
+        0.07957923412322998,
+        0.02728118747472763
+      ],
+      "timing": {
+        "selector_total_ms": 845.7155302166939,
+        "selector_hot_ms": 845.7155302166939,
+        "selector_capture_ms": 0.0,
+        "selector_forward_count": 1,
+        "steady_vjp_count": 1
+      }
+    },
+    "block": {
+      "gradient": [
+        0.7294921875,
+        0.0458984375,
+        0.2080078125,
+        0.271484375,
+        -0.06640625,
+        -0.03125,
+        -0.03125,
+        -0.21484375,
+        -0.3466796875,
+        0.0908203125,
+        -0.47265625,
+        -0.4296875,
+        0.30078125,
+        0.41796875,
+        0.388671875,
+        -0.13278579711914062,
+        0.020910263061523438
+      ],
+      "scores": [
+        0.7294921875,
+        0.0458984375,
+        0.2080078125,
+        0.271484375,
+        0.06640625,
+        0.03125,
+        0.03125,
+        0.21484375,
+        0.3466796875,
+        0.0908203125,
+        0.47265625,
+        0.4296875,
+        0.30078125,
+        0.41796875,
+        0.388671875,
+        0.13278579711914062,
+        0.020910263061523438
+      ],
+      "timing": {
+        "selector_total_ms": 875.0454299151897,
+        "selector_hot_ms": 875.0454299151897,
+        "selector_capture_ms": 0.0,
+        "selector_forward_count": 1,
+        "steady_vjp_count": 1
+      }
+    }
+  },
+  "paired_costs": [
+    {
+      "budget": "B4",
+      "budget_hash": "3e402f46d54d2b0d085b3582ec6a08b9947372ae8bcf9fb3529dc77786da0dee",
+      "tau_ms": 0.5,
+      "block_mask": [
+        2,
+        5,
+        7,
+        17
+      ],
+      "block_skip_count": 4,
+      "ffn_mask": [
+        2,
+        5,
+        7,
+        9,
+        17
+      ],
+      "ffn_skip_count": 5,
+      "frozen_ffn_mask_record": {
+        "mask": [
+          2,
+          5,
+          7,
+          9,
+          17
+        ],
+        "saved_ms": 4.531696319580078,
+        "skip_count": 5,
+        "support_layers": [
+          2,
+          5,
+          7,
+          9,
+          17
+        ],
+        "budget_id": "B4",
+        "budget_hash": "3e402f46d54d2b0d085b3582ec6a08b9947372ae8bcf9fb3529dc77786da0dee"
+      },
+      "frozen_budget_nearest_tier": false,
+      "warmup_requests_per_branch": 2,
+      "hot_pairs": 4,
+      "pairs": [
+        {
+          "repeat": 0,
+          "order": [
+            "B",
+            "F"
+          ],
+          "block": {
+            "input_processing_ms": 3.523625433444977,
+            "vision_ms": 13.106176376342773,
+            "vlm_ms": 16.157695770263672,
+            "ae_ms": 13.017984390258789,
+            "decode_ms": 0.17344579100608826,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.10817167162895
+          },
+          "ffn": {
+            "input_processing_ms": 3.6790333688259125,
+            "vision_ms": 13.400064468383789,
+            "vlm_ms": 15.718400001525879,
+            "ae_ms": 13.106176376342773,
+            "decode_ms": 0.16069039702415466,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.29561337828636
+          },
+          "request_ffn_minus_block_ms": 0.18744170665740967,
+          "vlm_ffn_minus_block_ms": -0.43929576873779297
+        },
+        {
+          "repeat": 1,
+          "order": [
+            "F",
+            "B"
+          ],
+          "block": {
+            "input_processing_ms": 4.048477858304977,
+            "vision_ms": 13.409279823303223,
+            "vlm_ms": 15.346688270568848,
+            "ae_ms": 13.2291841506958,
+            "decode_ms": 0.148039311170578,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.713963478803635
+          },
+          "ffn": {
+            "input_processing_ms": 3.687068819999695,
+            "vision_ms": 13.498368263244629,
+            "vlm_ms": 15.717375755310059,
+            "ae_ms": 13.703167915344238,
+            "decode_ms": 0.2268068492412567,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.988889902830124
+          },
+          "request_ffn_minus_block_ms": 0.27492642402648926,
+          "vlm_ffn_minus_block_ms": 0.37068748474121094
+        },
+        {
+          "repeat": 2,
+          "order": [
+            "B",
+            "F"
+          ],
+          "block": {
+            "input_processing_ms": 3.464430570602417,
+            "vision_ms": 14.905311584472656,
+            "vlm_ms": 14.640128135681152,
+            "ae_ms": 13.07852840423584,
+            "decode_ms": 0.1896284520626068,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.43510687351227
+          },
+          "ffn": {
+            "input_processing_ms": 3.8456879556179047,
+            "vision_ms": 15.462400436401367,
+            "vlm_ms": 14.60531234741211,
+            "ae_ms": 13.13167953491211,
+            "decode_ms": 0.16135722398757935,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 49.41869154572487
+          },
+          "request_ffn_minus_block_ms": 0.9835846722126007,
+          "vlm_ffn_minus_block_ms": -0.03481578826904297
+        },
+        {
+          "repeat": 3,
+          "order": [
+            "F",
+            "B"
+          ],
+          "block": {
+            "input_processing_ms": 3.5958141088485718,
+            "vision_ms": 13.386752128601074,
+            "vlm_ms": 14.608320236206055,
+            "ae_ms": 14.644224166870117,
+            "decode_ms": 0.16500428318977356,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 48.582203686237335
+          },
+          "ffn": {
+            "input_processing_ms": 3.6234408617019653,
+            "vision_ms": 13.410240173339844,
+            "vlm_ms": 14.246912002563477,
+            "ae_ms": 13.27609634399414,
+            "decode_ms": 0.14986470341682434,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 46.83639854192734
+          },
+          "request_ffn_minus_block_ms": -1.7458051443099976,
+          "vlm_ffn_minus_block_ms": -0.3614082336425781
+        }
+      ],
+      "block_fast_request_ms": 48.5086552798748,
+      "ffn_fast_request_ms": 48.64225164055824,
+      "block_fast_vlm_ms": 14.993408203125,
+      "ffn_fast_vlm_ms": 15.161344051361084,
+      "paired_request_ffn_minus_block_ms": 0.23118406534194946,
+      "paired_vlm_ffn_minus_block_ms": -0.19811201095581055,
+      "matched_actual_cost": true,
+      "matched_actual_vlm_cost": true,
+      "same_or_lower_request_cost": false,
+      "actual_cost_criterion": "median paired full Fast request wall difference <= frozen tau",
+      "masks_retuned_after_measurement": false
+    },
+    {
+      "budget": "B6",
+      "budget_hash": "10261d2b0e3ee7d3b8e0d9321f61e84563b28db8d6fab13a1be083de0ab5f4a6",
+      "tau_ms": 0.5,
+      "block_mask": [
+        2,
+        5,
+        7,
+        10,
+        13,
+        17
+      ],
+      "block_skip_count": 6,
+      "ffn_mask": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        13,
+        17
+      ],
+      "ffn_skip_count": 7,
+      "frozen_ffn_mask_record": {
+        "mask": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          13,
+          17
+        ],
+        "saved_ms": 6.414319038391113,
+        "skip_count": 7,
+        "support_layers": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          13,
+          17
+        ],
+        "budget_id": "B6",
+        "budget_hash": "10261d2b0e3ee7d3b8e0d9321f61e84563b28db8d6fab13a1be083de0ab5f4a6"
+      },
+      "frozen_budget_nearest_tier": false,
+      "warmup_requests_per_branch": 2,
+      "hot_pairs": 4,
+      "pairs": [
+        {
+          "repeat": 0,
+          "order": [
+            "B",
+            "F"
+          ],
+          "block": {
+            "input_processing_ms": 3.809399902820587,
+            "vision_ms": 13.524991989135742,
+            "vlm_ms": 12.509183883666992,
+            "ae_ms": 13.194239616394043,
+            "decode_ms": 0.15185028314590454,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 45.344386249780655
+          },
+          "ffn": {
+            "input_processing_ms": 3.453180193901062,
+            "vision_ms": 13.206432342529297,
+            "vlm_ms": 12.397567749023438,
+            "ae_ms": 13.264896392822266,
+            "decode_ms": 0.14836713671684265,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 44.57881301641464
+          },
+          "request_ffn_minus_block_ms": -0.7655732333660126,
+          "vlm_ffn_minus_block_ms": -0.11161613464355469
+        },
+        {
+          "repeat": 1,
+          "order": [
+            "F",
+            "B"
+          ],
+          "block": {
+            "input_processing_ms": 3.509417176246643,
+            "vision_ms": 13.064191818237305,
+            "vlm_ms": 12.506112098693848,
+            "ae_ms": 12.911616325378418,
+            "decode_ms": 0.1621842384338379,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 44.29835081100464
+          },
+          "ffn": {
+            "input_processing_ms": 4.99594584107399,
+            "vision_ms": 14.644224166870117,
+            "vlm_ms": 12.435456275939941,
+            "ae_ms": 12.938272476196289,
+            "decode_ms": 0.1768171787261963,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 47.544509172439575
+          },
+          "request_ffn_minus_block_ms": 3.2461583614349365,
+          "vlm_ffn_minus_block_ms": -0.07065582275390625
+        },
+        {
+          "repeat": 2,
+          "order": [
+            "B",
+            "F"
+          ],
+          "block": {
+            "input_processing_ms": 3.5445690155029297,
+            "vision_ms": 13.346816062927246,
+            "vlm_ms": 12.526559829711914,
+            "ae_ms": 14.851072311401367,
+            "decode_ms": 0.2013072371482849,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 46.678535640239716
+          },
+          "ffn": {
+            "input_processing_ms": 3.704603761434555,
+            "vision_ms": 13.156255722045898,
+            "vlm_ms": 12.461055755615234,
+            "ae_ms": 13.130751609802246,
+            "decode_ms": 0.20115450024604797,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 44.85912621021271
+          },
+          "request_ffn_minus_block_ms": -1.819409430027008,
+          "vlm_ffn_minus_block_ms": -0.06550407409667969
+        },
+        {
+          "repeat": 3,
+          "order": [
+            "F",
+            "B"
+          ],
+          "block": {
+            "input_processing_ms": 3.6888383328914642,
+            "vision_ms": 13.386752128601074,
+            "vlm_ms": 12.529696464538574,
+            "ae_ms": 13.336576461791992,
+            "decode_ms": 0.17305463552474976,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 45.29449716210365
+          },
+          "ffn": {
+            "input_processing_ms": 3.722347319126129,
+            "vision_ms": 13.099967956542969,
+            "vlm_ms": 12.44876766204834,
+            "ae_ms": 13.433856010437012,
+            "decode_ms": 0.1833885908126831,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 45.10858654975891
+          },
+          "request_ffn_minus_block_ms": -0.18591061234474182,
+          "vlm_ffn_minus_block_ms": -0.08092880249023438
+        }
+      ],
+      "block_fast_request_ms": 45.319441705942154,
+      "ffn_fast_request_ms": 44.98385637998581,
+      "block_fast_vlm_ms": 12.517871856689453,
+      "ffn_fast_vlm_ms": 12.44211196899414,
+      "paired_request_ffn_minus_block_ms": -0.4757419228553772,
+      "paired_vlm_ffn_minus_block_ms": -0.07579231262207031,
+      "matched_actual_cost": true,
+      "matched_actual_vlm_cost": true,
+      "same_or_lower_request_cost": true,
+      "actual_cost_criterion": "median paired full Fast request wall difference <= frozen tau",
+      "masks_retuned_after_measurement": false
+    }
+  ],
+  "profiles": [
+    {
+      "route": "full",
+      "layer": 8,
+      "warmup_requests": 2,
+      "measured_requests": 4,
+      "median_stage_total_ms": {
+        "attn": 2.043616008013487,
+        "ffn": 15.915632098913193,
+        "projector": 0.09726400300860405,
+        "qkv": 1.0287359841167927
+      },
+      "median_layer8_ms": {
+        "attn": 0.09830400347709656,
+        "ffn": 0.9323520064353943,
+        "qkv": 0.05119999870657921
+      },
+      "observations": [
+        {
+          "repeat": 0,
+          "timing": {
+            "input_processing_ms": 4.299711436033249,
+            "vision_ms": 13.401087760925293,
+            "vlm_ms": 19.223552703857422,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0,
+            "ae_ms": 13.756416320800781,
+            "decode_ms": 0.15424564480781555,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 53.368937224149704
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09625600278377533
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14627200365066528
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4505600035190582
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 1.005568027496338
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9330559968948364
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09843199700117111
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.0984639972448349
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09743999689817429
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9349120259284973
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05129599943757057
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09625600278377533,
+            "qkv": 1.019839983433485,
+            "attn": 2.0269440039992332,
+            "ffn": 15.921344101428986
+          },
+          "layer8_ms": {
+            "qkv": 0.05119999870657921,
+            "attn": 0.09830400347709656,
+            "ffn": 0.9338880181312561
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": true,
+            "patch_attn": false,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 1,
+          "timing": {
+            "input_processing_ms": 3.6940760910511017,
+            "vision_ms": 13.55571174621582,
+            "vlm_ms": 19.376127243041992,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0,
+            "ae_ms": 13.139967918395996,
+            "decode_ms": 0.18073618412017822,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 52.36218869686127
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09523200243711472
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14745600521564484
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.45158401131629944
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9902080297470093
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.051231998950242996
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.050303999334573746
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 1.106943964958191
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09523200243711472,
+            "qkv": 1.0272319875657558,
+            "attn": 2.025472044944763,
+            "ffn": 16.076800048351288
+          },
+          "layer8_ms": {
+            "qkv": 0.050303999334573746,
+            "attn": 0.09830400347709656,
+            "ffn": 0.9318400025367737
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": true,
+            "patch_attn": false,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 2,
+          "timing": {
+            "input_processing_ms": 3.7080571055412292,
+            "vision_ms": 13.328384399414062,
+            "vlm_ms": 19.252159118652344,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0,
+            "ae_ms": 13.301759719848633,
+            "decode_ms": 0.24044141173362732,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 52.29576304554939
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.15462400019168854
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4843519926071167
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9932799935340881
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9309120178222656
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05129599943757057
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328960180282593
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09830400347709656,
+            "qkv": 1.0302399806678295,
+            "attn": 2.0602880120277405,
+            "ffn": 15.900800049304962
+          },
+          "layer8_ms": {
+            "qkv": 0.05222399905323982,
+            "attn": 0.09830400347709656,
+            "ffn": 0.9308159947395325
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": true,
+            "patch_attn": false,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 3,
+          "timing": {
+            "input_processing_ms": 3.880474716424942,
+            "vision_ms": 13.256704330444336,
+            "vlm_ms": 19.301376342773438,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0,
+            "ae_ms": 13.494272232055664,
+            "decode_ms": 0.2499222755432129,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 52.758246660232544
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09827200323343277
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.15667200088500977
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.5150719881057739
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.997376024723053
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05241600051522255
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05132799968123436
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9308480024337769
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05222399905323982
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09827200323343277,
+            "qkv": 1.0345599837601185,
+            "attn": 2.093056008219719,
+            "ffn": 15.9099200963974
+          },
+          "layer8_ms": {
+            "qkv": 0.05119999870657921,
+            "attn": 0.09830400347709656,
+            "ffn": 0.9328640103340149
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": true,
+            "patch_attn": false,
+            "patch_ffn": false
+          }
+        }
+      ]
+    },
+    {
+      "route": "A",
+      "layer": 8,
+      "warmup_requests": 2,
+      "measured_requests": 4,
+      "median_stage_total_ms": {
+        "attn": 1.9113920144736767,
+        "ffn": 15.950912088155746,
+        "kv": 0.02208000048995018,
+        "patch_attn": 0.008191999979317188,
+        "projector": 0.09625600278377533,
+        "qkv": 0.9698079861700535
+      },
+      "median_layer8_ms": {
+        "ffn": 0.9308159947395325,
+        "kv": 0.02208000048995018,
+        "patch_attn": 0.008191999979317188
+      },
+      "observations": [
+        {
+          "repeat": 0,
+          "timing": {
+            "input_processing_ms": 3.495126962661743,
+            "vision_ms": 13.071359634399414,
+            "vlm_ms": 19.191808700561523,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.014016151428223,
+            "decode_ms": 0.14907866716384888,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 51.26434937119484
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09523200243711472
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14131200313568115
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.42188799381256104
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9881600141525269
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05129599943757057
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.052319999784231186
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.021503999829292297
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.051231998950242996
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9329919815063477
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 1.0670080184936523
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09523200243711472,
+            "qkv": 0.9679039865732193,
+            "attn": 1.8995200246572495,
+            "ffn": 16.03596806526184,
+            "kv": 0.021503999829292297,
+            "patch_attn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.021503999829292297,
+            "patch_attn": 0.008191999979317188,
+            "ffn": 0.9308159947395325
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": true,
+            "patch_attn": true,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 1,
+          "timing": {
+            "input_processing_ms": 3.464430570602417,
+            "vision_ms": 15.089664459228516,
+            "vlm_ms": 19.24812889099121,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.157247543334961,
+            "decode_ms": 0.16601011157035828,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 53.45575883984566
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.130048006772995
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.1658879965543747
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.5294079780578613
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9963520169258118
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05132799968123436
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02163200080394745
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09843199700117111
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.051263999193906784
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9329919815063477
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05222399905323982
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.130048006772995,
+            "qkv": 0.992447979748249,
+            "attn": 2.0081919878721237,
+            "ffn": 15.907968044281006,
+            "kv": 0.02163200080394745,
+            "patch_attn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02163200080394745,
+            "patch_attn": 0.008191999979317188,
+            "ffn": 0.9308159947395325
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": true,
+            "patch_attn": true,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 2,
+          "timing": {
+            "input_processing_ms": 3.4936033189296722,
+            "vision_ms": 13.106047630310059,
+            "vlm_ms": 19.153919219970703,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.282303810119629,
+            "decode_ms": 0.3699883818626404,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 51.710281521081924
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09523200243711472
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14336000382900238
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.42291200160980225
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9902080297470093
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09737599641084671
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 1.0240000486373901
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09839999675750732
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.053247999399900436
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05222399905323982
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09523200243711472,
+            "qkv": 0.969727985560894,
+            "attn": 1.9017600044608116,
+            "ffn": 15.993856132030487,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "ffn": 0.9297919869422913
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": true,
+            "patch_attn": true,
+            "patch_ffn": false
+          }
+        },
+        {
+          "repeat": 3,
+          "timing": {
+            "input_processing_ms": 3.48721444606781,
+            "vision_ms": 13.618144035339355,
+            "vlm_ms": 19.086336135864258,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.230079650878906,
+            "decode_ms": 0.14885887503623962,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 51.8791563808918
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.1454080045223236
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4433920085430145
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9932799935340881
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "ffn",
+              "layer": 8,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.051263999193906784
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05129599943757057
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09728000313043594,
+            "qkv": 0.969887986779213,
+            "attn": 1.9210240244865417,
+            "ffn": 15.902720034122467,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "ffn": 0.9308159947395325
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": true,
+            "patch_attn": true,
+            "patch_ffn": false
+          }
+        }
+      ]
+    },
+    {
+      "route": "F",
+      "layer": 8,
+      "warmup_requests": 2,
+      "measured_requests": 4,
+      "median_stage_total_ms": {
+        "attn": 2.044527992606163,
+        "ffn": 14.972016036510468,
+        "patch_ffn": 0.008191999979317188,
+        "projector": 0.09727999940514565,
+        "qkv": 1.0256799794733524
+      },
+      "median_layer8_ms": {
+        "attn": 0.09983999654650688,
+        "patch_ffn": 0.008191999979317188,
+        "qkv": 0.0506879985332489
+      },
+      "observations": [
+        {
+          "repeat": 0,
+          "timing": {
+            "input_processing_ms": 3.438688814640045,
+            "vision_ms": 13.310848236083984,
+            "vlm_ms": 18.41766357421875,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.331456184387207,
+            "decode_ms": 0.19222497940063477,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 50.99271237850189
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09523200243711472
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14233599603176117
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.41887998580932617
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9891840219497681
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.05132799968123436
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.053247999399900436
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 1.0926079750061035
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09523200243711472,
+            "qkv": 1.0190079770982265,
+            "attn": 1.9937920272350311,
+            "ffn": 15.135744094848633,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "qkv": 0.05132799968123436,
+            "attn": 0.09932799637317657,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": false,
+            "patch_attn": false,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 1,
+          "timing": {
+            "input_processing_ms": 3.5979822278022766,
+            "vision_ms": 13.239295959472656,
+            "vlm_ms": 18.371583938598633,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.494367599487305,
+            "decode_ms": 0.2490803599357605,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 51.42752081155777
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.15769599378108978
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.5058559775352478
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.997376024723053
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09836799651384354
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.051231998950242996
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.051231998950242996
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09734400361776352
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9309120178222656
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09932799637317657,
+            "qkv": 1.0322559736669064,
+            "attn": 2.082943983376026,
+            "ffn": 14.972000062465668,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "qkv": 0.05119999870657921,
+            "attn": 0.09932799637317657,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": false,
+            "patch_attn": false,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 2,
+          "timing": {
+            "input_processing_ms": 3.859434276819229,
+            "vision_ms": 19.264511108398438,
+            "vlm_ms": 18.544511795043945,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.202431678771973,
+            "decode_ms": 0.27488917112350464,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 57.92449787259102
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.10239999741315842
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.17203199863433838
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.609279990196228
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 1.0004479885101318
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9308800101280212
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.10035199671983719
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09839999675750732
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9319040179252625
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.10239999741315842,
+            "qkv": 1.0465279780328274,
+            "attn": 2.1863359957933426,
+            "ffn": 14.972032010555267,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "qkv": 0.050175998359918594,
+            "attn": 0.10035199671983719,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": false,
+            "patch_attn": false,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 3,
+          "timing": {
+            "input_processing_ms": 3.9761215448379517,
+            "vision_ms": 14.149760246276855,
+            "vlm_ms": 18.256895065307617,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.008191999979317188,
+            "ae_ms": 13.187071800231934,
+            "decode_ms": 0.1616254448890686,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 52.68368497490883
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09523200243711472
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14336000382900238
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.42905598878860474
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9881600141525269
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09737599641084671
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 8,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 8,
+              "ms": 0.10035199671983719
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.052352000027894974
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9329919815063477
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05129599943757057
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09523200243711472,
+            "qkv": 1.0191039852797985,
+            "attn": 2.0061120018363,
+            "ffn": 14.965888023376465,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "qkv": 0.050175998359918594,
+            "attn": 0.10035199671983719,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "qkv",
+            "attn": true,
+            "ffn": false,
+            "patch_attn": false,
+            "patch_ffn": true
+          }
+        }
+      ]
+    },
+    {
+      "route": "AF",
+      "layer": 8,
+      "warmup_requests": 2,
+      "measured_requests": 4,
+      "median_stage_total_ms": {
+        "attn": 1.8969920091331005,
+        "ffn": 14.969888061285019,
+        "kv": 0.02252800017595291,
+        "patch_attn": 0.008191999979317188,
+        "patch_ffn": 0.008191999979317188,
+        "projector": 0.09569600224494934,
+        "qkv": 0.9658399857580662
+      },
+      "median_layer8_ms": {
+        "kv": 0.02252800017595291,
+        "patch_attn": 0.008191999979317188,
+        "patch_ffn": 0.008191999979317188
+      },
+      "observations": [
+        {
+          "repeat": 0,
+          "timing": {
+            "input_processing_ms": 4.620611667633057,
+            "vision_ms": 14.748671531677246,
+            "vlm_ms": 18.158592224121094,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.016383999958634377,
+            "ae_ms": 12.903424263000488,
+            "decode_ms": 0.15044957399368286,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 52.91382595896721
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.0963200032711029
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14336000382900238
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4352000057697296
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9912319779396057
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.0974079966545105
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.051263999193906784
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.051263999193906784
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318720102310181
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.051263999193906784
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.0963200032711029,
+            "qkv": 0.9678719863295555,
+            "attn": 1.9109120294451714,
+            "ffn": 14.971936047077179,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": false,
+            "patch_attn": true,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 1,
+          "timing": {
+            "input_processing_ms": 3.4607239067554474,
+            "vision_ms": 12.91267204284668,
+            "vlm_ms": 18.123775482177734,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.016384000424295664,
+            "ae_ms": 12.990464210510254,
+            "decode_ms": 0.14668330550193787,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 49.91991072893143
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09516800194978714
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14131200313568115
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4208639860153198
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9871360063552856
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09833600372076035
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05027199909090996
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05225599929690361
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.009216000325977802
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.0071680000983178616
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9298880100250244
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05129599943757057
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05222399905323982
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09516800194978714,
+            "qkv": 0.9638079851865768,
+            "attn": 1.8964800015091896,
+            "ffn": 14.9617600440979,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.009216000325977802,
+            "patch_ffn": 0.0071680000983178616
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.009216000325977802,
+            "patch_ffn": 0.0071680000983178616
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": false,
+            "patch_attn": true,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 2,
+          "timing": {
+            "input_processing_ms": 3.46214696764946,
+            "vision_ms": 13.125632286071777,
+            "vlm_ms": 18.136032104492188,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.016383999958634377,
+            "ae_ms": 13.604864120483398,
+            "decode_ms": 0.1501329243183136,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 50.797369331121445
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.09622400254011154
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14131200313568115
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.41574400663375854
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9891840219497681
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.053247999399900436
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9349120259284973
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9338880181312561
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9349120259284973
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.93094402551651
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.051231998950242996
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05222399905323982
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.09622400254011154,
+            "qkv": 0.9687359854578972,
+            "attn": 1.896448016166687,
+            "ffn": 14.973056137561798,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": false,
+            "patch_attn": true,
+            "patch_ffn": true
+          }
+        },
+        {
+          "repeat": 3,
+          "timing": {
+            "input_processing_ms": 3.4534595906734467,
+            "vision_ms": 12.851200103759766,
+            "vlm_ms": 18.128896713256836,
+            "residual_capture_ms": 0,
+            "residual_patch_ms": 0.016383999958634377,
+            "ae_ms": 12.953568458557129,
+            "decode_ms": 0.18410012125968933,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ],
+            "request_wall_ms": 49.98448118567467
+          },
+          "events": [
+            {
+              "stage": "projector",
+              "layer": null,
+              "ms": 0.0942080020904541
+            },
+            {
+              "stage": "qkv",
+              "layer": 1,
+              "ms": 0.14233599603176117
+            },
+            {
+              "stage": "attn",
+              "layer": 1,
+              "ms": 0.4208639860153198
+            },
+            {
+              "stage": "ffn",
+              "layer": 1,
+              "ms": 0.9891840219497681
+            },
+            {
+              "stage": "qkv",
+              "layer": 2,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 2,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 2,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 3,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 3,
+              "ms": 0.09833600372076035
+            },
+            {
+              "stage": "ffn",
+              "layer": 3,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 4,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 4,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 4,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 5,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 5,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 5,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 6,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 6,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 6,
+              "ms": 0.9297919869422913
+            },
+            {
+              "stage": "qkv",
+              "layer": 7,
+              "ms": 0.050175998359918594
+            },
+            {
+              "stage": "attn",
+              "layer": 7,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 7,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "kv",
+              "layer": 8,
+              "ms": 0.02252800017595291
+            },
+            {
+              "stage": "patch_attn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "patch_ffn",
+              "layer": 8,
+              "ms": 0.008191999979317188
+            },
+            {
+              "stage": "qkv",
+              "layer": 9,
+              "ms": 0.050303999334573746
+            },
+            {
+              "stage": "attn",
+              "layer": 9,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 9,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 10,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 10,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 10,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 11,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 11,
+              "ms": 0.09728000313043594
+            },
+            {
+              "stage": "ffn",
+              "layer": 11,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 12,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 12,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 12,
+              "ms": 0.9328960180282593
+            },
+            {
+              "stage": "qkv",
+              "layer": 13,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 13,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 13,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 14,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 14,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 14,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 15,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 15,
+              "ms": 0.09830400347709656
+            },
+            {
+              "stage": "ffn",
+              "layer": 15,
+              "ms": 0.9318400025367737
+            },
+            {
+              "stage": "qkv",
+              "layer": 16,
+              "ms": 0.05119999870657921
+            },
+            {
+              "stage": "attn",
+              "layer": 16,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 16,
+              "ms": 0.9328640103340149
+            },
+            {
+              "stage": "qkv",
+              "layer": 17,
+              "ms": 0.05222399905323982
+            },
+            {
+              "stage": "attn",
+              "layer": 17,
+              "ms": 0.09932799637317657
+            },
+            {
+              "stage": "ffn",
+              "layer": 17,
+              "ms": 0.9308159947395325
+            },
+            {
+              "stage": "qkv",
+              "layer": 18,
+              "ms": 0.05119999870657921
+            }
+          ],
+          "stage_total_ms": {
+            "projector": 0.0942080020904541,
+            "qkv": 0.9637119770050049,
+            "attn": 1.8975040167570114,
+            "ffn": 14.967840075492859,
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_ms": {
+            "kv": 0.02252800017595291,
+            "patch_attn": 0.008191999979317188,
+            "patch_ffn": 0.008191999979317188
+          },
+          "layer8_route": {
+            "layer": 8,
+            "projection": "kv",
+            "attn": false,
+            "ffn": false,
+            "patch_attn": true,
+            "patch_ffn": true
+          }
+        }
+      ]
+    }
+  ],
+  "current_residual_restoration": [
+    {
+      "route": "full",
+      "passed": true,
+      "raw_actions_K_V": true,
+      "measured_requests": 4,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "route": "A",
+      "passed": true,
+      "raw_actions_K_V": true,
+      "measured_requests": 4,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "route": "F",
+      "passed": true,
+      "raw_actions_K_V": true,
+      "measured_requests": 4,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    {
+      "route": "AF",
+      "passed": true,
+      "raw_actions_K_V": true,
+      "measured_requests": 4,
+      "atol": 1e-05,
+      "rtol": 1e-05
+    }
+  ],
+  "layer8_costs": {
+    "complete_attention_ms": 0.14950400218367577,
+    "retained_kv_only_ms": 0.02208000048995018,
+    "removable_attention_update_ms": 0.12742400169372559,
+    "ffn_ms": 0.9323520064353943,
+    "attention_to_ffn_ratio": 0.1603514564796889,
+    "original_signed_measurements_preserved": true
+  },
+  "quality_claim": "none; slower-than-anchor candidates are explicitly not accepted as same-budget advantages"
+}

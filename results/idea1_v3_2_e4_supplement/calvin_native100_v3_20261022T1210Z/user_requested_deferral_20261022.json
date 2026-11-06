@@ -1,0 +1,49 @@
+{
+  "status": "user_requested_deferred",
+  "recorded_unix": 1792671307.4044528,
+  "reason": "User explicitly prioritizes Plus with reduced sample count and defers CALVIN. Parent SIGTERM of own supervisor was intentional, not a technical or policy failure.",
+  "raw_supervisor_error_retained": "Historical TimeoutError SUPERVISOR_DEADLINE_OR_TERMINATION is the signal-handler representation; this closeout supersedes its cause classification without modifying raw receipts.",
+  "manifest_hash": "6b255e5d58cc3dc10cbff4c1075ebf9d951abff6b101fdb4df82bab182cfca7e",
+  "own_native_pids_confirmed_absent": [
+    3412026,
+    3413135,
+    3412039
+  ],
+  "b_proxy_pid_confirmed_absent": 3406942,
+  "b_proxy_shutdown_scope": "local CPU endpoint only; never forwarded upstream shutdown",
+  "b_quality_dispatched": false,
+  "b_preflight_gate_passed": true,
+  "b_receipt": "results/idea1_v3_2_e4_supplement/asset_audit/corrected_B_proxy_v2/service_preflight_20261022T1207Z.json",
+  "artifacts": [
+    {
+      "path": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/episodes/seq0000/full_d10/attempt000/result.json",
+      "sha256": "71d76db90c2fc598bd6206680e98e3090907235631c2f4edf476a18142eb1f99",
+      "recorded_status": "complete",
+      "scientific_disposition": "valid_complete_retained",
+      "completed_subtasks": 0,
+      "native_steps": 360,
+      "requests": 72
+    },
+    {
+      "path": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/episodes/seq0000/v14_d10/attempt000/result.json",
+      "sha256": "25a4e5ccf2386c2735a14b23fdd965cd78e9cbd24be68befc430361b656fdf4a",
+      "recorded_status": "complete",
+      "scientific_disposition": "valid_complete_retained",
+      "completed_subtasks": 0,
+      "native_steps": 360,
+      "requests": 72
+    },
+    {
+      "path": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/episodes/seq0001/full_d10/attempt000/result.json",
+      "sha256": "28e6472cee2f4b9d3795d242b3f6ccb12ed2d8f27b25ffe0744e91d4cd4af53e",
+      "recorded_status": "running",
+      "scientific_disposition": "unfinished_user_deferred_not_quality_zero",
+      "completed_subtasks": 3,
+      "native_steps": 291,
+      "requests": 60
+    }
+  ],
+  "all_artifacts_preserved": true,
+  "restart_or_gpu_scan_authorized": false,
+  "plus_upstream_untouched": true
+}

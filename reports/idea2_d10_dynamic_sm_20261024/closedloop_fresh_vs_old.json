@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "summary": {
+    "F0": {
+      "episodes": 8,
+      "successes": 8,
+      "total_steps": 1181
+    },
+    "O0": {
+      "episodes": 8,
+      "successes": 4,
+      "total_steps": 2137
+    },
+    "O1": {
+      "episodes": 8,
+      "successes": 4,
+      "total_steps": 2137
+    }
+  },
+  "cases": [
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 154,
+      "O0_success": false,
+      "O0_steps": 280,
+      "O1_success": false,
+      "O1_steps": 280
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 130,
+      "O1_success": true,
+      "O1_steps": 229,
+      "O0_success": true,
+      "O0_steps": 229
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 110,
+      "O0_success": false,
+      "O0_steps": 220,
+      "O1_success": false,
+      "O1_steps": 220
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 101,
+      "O1_success": false,
+      "O1_steps": 220,
+      "O0_success": false,
+      "O0_steps": 220
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 114,
+      "O0_success": true,
+      "O0_steps": 204,
+      "O1_success": true,
+      "O1_steps": 204
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 129,
+      "O1_success": false,
+      "O1_steps": 300,
+      "O0_success": false,
+      "O0_steps": 300
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 262,
+      "O0_success": true,
+      "O0_steps": 484,
+      "O1_success": true,
+      "O1_steps": 484
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 0,
+      "identical_initial_input": true,
+      "identical_initial_seed": true,
+      "bootstrap_action_max_abs": 0.0,
+      "bootstrap_action_mae": 0.0,
+      "F0_success": true,
+      "F0_steps": 181,
+      "O1_success": true,
+      "O1_steps": 200,
+      "O0_success": true,
+      "O0_steps": 200
+    }
+  ],
+  "scope": "Eight fixed cases only; fresh current KV versus old complete KV. Not a full LIBERO quality estimate.",
+  "limitations": [
+    "Different GPUs: no absolute latency ranking.",
+    "After bootstrap KV semantics differ and trajectories diverge. Do not require same future observations or claim numerical equivalence.",
+    "Common initial inputs, original model seed construction, H10/D10/R5 and protocol are preserved.",
+    "No robot real-time/SLO claim: LIBERO pauses during inference."
+  ],
+  "bootstrap_within_tolerance": true
+}

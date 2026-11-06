@@ -1,0 +1,351 @@
+{
+  "status": "completed",
+  "controller_pid": 3204198,
+  "service_pid": 3196640,
+  "approximate": true,
+  "numerical_parity_passed": false,
+  "purpose": "Explicit exploratory B4 despite failed numerical bank gate; measured B1 after-control provides throughput comparator.",
+  "original_controller_state": "SIGSTOP after first B1 arm; cleanup SIGINT then SIGCONT only after rescue completes",
+  "initial_baseline_wall_unavailable": "Controller was paused before recording elapsed; initial completed eight scenes retained for outcome/input comparison only.",
+  "source_sha256": {
+    "preparations/idea1_v3_2/batch_policy.py": "72691af0909cb2821cf45202d25491c0bff5fcfad665288bf2e7ca5eb94dac90",
+    "preparations/idea1_v3_2/batch_service.py": "0d5e6a8ddfb3b81c5e93188dd611d36dcf846095f6973d062bcb067ea9a55cea",
+    "preparations/idea1_v3_2/batch_e1.py": "e02321f7852512622e799c8c846a706ef2a02b844d35d15728729c11d14f6ed3",
+    "preparations/idea1_v3_2/batch_analyze.py": "f515221f060e78f51c0cf8e7be755ebb48288dfab3426e291074a93dbdce3254",
+    "preparations/idea1_v3_2/batch_diagnose.py": "3cb80cb70d4901201df868a8007617440799fa6497d30007331cfc219fbb54e8",
+    "preparations/idea1_v3_2/batch_rescue.py": "ce14a290774f70607021fb24a3cd2ebb00a88279fdb1c0daccc3f8087095378e"
+  },
+  "arms": [
+    {
+      "arm": "approximate_b4",
+      "maximum": 4,
+      "workers": 4,
+      "pids": [
+        3204358,
+        3204359,
+        3204360,
+        3204361
+      ],
+      "commands": [
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "0",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "approximate_b4",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "1",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "approximate_b4",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "2",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "approximate_b4",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "3",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "approximate_b4",
+          "--launch"
+        ]
+      ],
+      "wall_s": 43.50658788904548,
+      "actual_batch_histogram": {
+        "1": 114,
+        "2": 40,
+        "3": 15
+      },
+      "completed_episodes": 8,
+      "successes": 8,
+      "completed_actions": 1186,
+      "predictions": 239,
+      "episodes_per_hour": 661.9687131854243
+    },
+    {
+      "arm": "rescue_b1_after",
+      "maximum": 1,
+      "workers": 4,
+      "pids": [
+        3205156,
+        3205157,
+        3205158,
+        3205159
+      ],
+      "commands": [
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "0",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "rescue_b1_after",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "1",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "rescue_b1_after",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "2",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "rescue_b1_after",
+          "--launch"
+        ],
+        [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.idea1_v3_2.batch_e1",
+          "--worker",
+          "3",
+          "--output",
+          "results/idea1_v3_2/e1_20261022T0421_batch",
+          "--port",
+          "19332",
+          "--manifest",
+          "results/idea1_v3_1/manifest_v2.json",
+          "--arm",
+          "rescue_b1_after",
+          "--launch"
+        ]
+      ],
+      "wall_s": 38.68216762319207,
+      "actual_batch_histogram": {
+        "1": 247
+      },
+      "completed_episodes": 8,
+      "successes": 8,
+      "completed_actions": 1219,
+      "predictions": 247,
+      "episodes_per_hour": 744.5291143077728
+    }
+  ],
+  "controls": [
+    {
+      "arm": "approximate_b4",
+      "when": "before",
+      "raw": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "decoded": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      }
+    },
+    {
+      "arm": "approximate_b4",
+      "when": "after",
+      "raw": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "decoded": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      }
+    },
+    {
+      "arm": "rescue_b1_after",
+      "when": "before",
+      "raw": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "decoded": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      }
+    },
+    {
+      "arm": "rescue_b1_after",
+      "when": "after",
+      "raw": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      },
+      "decoded": {
+        "passed": true,
+        "strict_1e5_passed": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "atol": 0.002,
+        "rtol": 0.002
+      }
+    }
+  ],
+  "all_actual_sizes_warm_before_timing": [
+    {
+      "prepare_ms": 13.142883777618408,
+      "model_completed_ms": 69.15086880326271,
+      "request_completed_ms": 83.04950222373009,
+      "batch_size": 1
+    },
+    {
+      "prepare_ms": 12.039575725793839,
+      "model_completed_ms": 65.98356366157532,
+      "request_completed_ms": 78.78594100475311,
+      "batch_size": 1
+    },
+    {
+      "prepare_ms": 12.256618589162827,
+      "model_completed_ms": 76.4751248061657,
+      "request_completed_ms": 89.6252878010273,
+      "batch_size": 1
+    },
+    {
+      "prepare_ms": 19.24838498234749,
+      "model_completed_ms": 106.80783912539482,
+      "request_completed_ms": 126.92195177078247,
+      "batch_size": 2
+    },
+    {
+      "prepare_ms": 18.447991460561752,
+      "model_completed_ms": 103.1244657933712,
+      "request_completed_ms": 122.45414033532143,
+      "batch_size": 2
+    },
+    {
+      "prepare_ms": 17.596770077943802,
+      "model_completed_ms": 103.50339114665985,
+      "request_completed_ms": 122.15551361441612,
+      "batch_size": 2
+    },
+    {
+      "prepare_ms": 22.994786500930786,
+      "model_completed_ms": 140.64693450927734,
+      "request_completed_ms": 164.58413749933243,
+      "batch_size": 3
+    },
+    {
+      "prepare_ms": 22.31406420469284,
+      "model_completed_ms": 136.470977216959,
+      "request_completed_ms": 159.8275899887085,
+      "batch_size": 3
+    },
+    {
+      "prepare_ms": 23.106791079044342,
+      "model_completed_ms": 135.52450761198997,
+      "request_completed_ms": 159.54311937093735,
+      "batch_size": 3
+    },
+    {
+      "prepare_ms": 26.680052280426025,
+      "model_completed_ms": 172.13625833392143,
+      "request_completed_ms": 199.69788193702698,
+      "batch_size": 4
+    },
+    {
+      "prepare_ms": 27.01972797513008,
+      "model_completed_ms": 172.24090918898582,
+      "request_completed_ms": 200.39333030581474,
+      "batch_size": 4
+    },
+    {
+      "prepare_ms": 25.946348905563354,
+      "model_completed_ms": 172.1036061644554,
+      "request_completed_ms": 198.92507046461105,
+      "batch_size": 4
+    }
+  ],
+  "episode_throughput_speedup_vs_measured_b1_after": 0.8891105807203937
+}

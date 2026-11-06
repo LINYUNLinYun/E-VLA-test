@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "mode": "explicit_local_weight_verification",
+  "revision": "fc04bbdcc53e498695cfad95d1199091396ef55b",
+  "hub_repo_id": "XiaomiRobotics/Xiaomi-Robotics-0-LIBERO",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/xiaomi-robotic0/fc04bbdcc53e498695cfad95d1199091396ef55b",
+  "hub_metadata": {
+    "path": "/root/nfs/embodied/benchmark/preparations/idea1_v2_1/metadata/xiaomi-robotic0/hub_file_info.json",
+    "bytes": 9137,
+    "sha256": "43a0f4cc7d8deb973539440699c9c62877d713cba55e40b8f3fc71b50ffd1daa"
+  },
+  "weight_index": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/xiaomi-robotic0/fc04bbdcc53e498695cfad95d1199091396ef55b/model.safetensors.index.json",
+    "bytes": 84337,
+    "sha256": "faad665989b5388ae517aa32a197f8810d931eb8be50dffc44590ec8d788a145"
+  },
+  "index_git_blob_sha1": "71423648b051cf0a1db95f4f4702f55de9cac954",
+  "shard_count": 2,
+  "indexed_shard_count": 2,
+  "shards": [
+    {
+      "file": "model-00001-of-00002.safetensors",
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/xiaomi-robotic0/fc04bbdcc53e498695cfad95d1199091396ef55b/model-00001-of-00002.safetensors",
+      "indexed": true,
+      "expected_bytes": 4990499880,
+      "expected_sha256": "fbc700da53008a0cddb52d69519aaa2e213cf9e6de5bf3728e3a37625ac2a472",
+      "ok": true,
+      "actual_sha256": "fbc700da53008a0cddb52d69519aaa2e213cf9e6de5bf3728e3a37625ac2a472"
+    },
+    {
+      "file": "model-00002-of-00002.safetensors",
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/xiaomi-robotic0/fc04bbdcc53e498695cfad95d1199091396ef55b/model-00002-of-00002.safetensors",
+      "indexed": true,
+      "expected_bytes": 4442162272,
+      "expected_sha256": "7ac0f6d444f61776eec54193d837da03756db5593f7f6937d89e602aec9a6089",
+      "ok": true,
+      "actual_sha256": "7ac0f6d444f61776eec54193d837da03756db5593f7f6937d89e602aec9a6089"
+    }
+  ],
+  "ok": true,
+  "model_loaded": false,
+  "note": "Verifies bytes against supplied revision-bound HF API metadata; no inference or architecture parity."
+}

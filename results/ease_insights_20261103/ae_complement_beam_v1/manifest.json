@@ -1,0 +1,2414 @@
+{
+  "revision": "ease-AE16-joint-mask-screen-v1",
+  "mode": "offline_snapshot_replay",
+  "created_at": 1793910093.5383115,
+  "output_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v1",
+  "planned_conditions": [
+    "joint16_d2"
+  ],
+  "conditions": [
+    {
+      "id": "joint16_d2",
+      "AE_keep": 16,
+      "D": 2,
+      "H": 50,
+      "evaluated_prefix": 5,
+      "VLM_keep": 18,
+      "vision_keep": 27,
+      "cameras": [
+        "agentview",
+        "wrist"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task00_ep000_step0000_initial.npz",
+      "sha256": "9ce653a31146e89280db0556a2717492772643131c8f7fcb6e6a3cb62dc2880d",
+      "sample_id": "libero_object_task00_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 0,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task00_pick_up_the_alphabet_soup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "43d1904c3bf9e806cee378015dbeec40eaf5af8d4167c98c8c965c57b5ff9456"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task00_ep000_step0045_contact.npz",
+      "sha256": "653136e285fac374bbd86b1c912934d396c5a4449965b3d30d5b6a485c75eebb",
+      "sample_id": "libero_object_task00_ep000_step0045_contact",
+      "suite": "libero_object",
+      "task": 0,
+      "phase": "contact",
+      "trajectory_step": 45,
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task00_pick_up_the_alphabet_soup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "43d1904c3bf9e806cee378015dbeec40eaf5af8d4167c98c8c965c57b5ff9456"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task00_ep000_step0130_goal_alignment.npz",
+      "sha256": "ecc20355b0f87403029767fb810c4e5bdb521781a08a35fcb056670cc7e9b701",
+      "sample_id": "libero_object_task00_ep000_step0130_goal_alignment",
+      "suite": "libero_object",
+      "task": 0,
+      "phase": "goal_alignment",
+      "trajectory_step": 130,
+      "instruction": "pick up the alphabet soup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task00_pick_up_the_alphabet_soup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "43d1904c3bf9e806cee378015dbeec40eaf5af8d4167c98c8c965c57b5ff9456"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task01_ep000_step0000_initial.npz",
+      "sha256": "372491271a625f80b7ec8777c475f98a8e06f4ab9325cda3ebf12f51b0641c9e",
+      "sample_id": "libero_object_task01_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 1,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task01_pick_up_the_cream_cheese_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0ca8cb42dfc21e253c00f62f3d1c059c615ff222099f7165f167f9673cc0bf3a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task01_ep000_step0044_contact.npz",
+      "sha256": "30e349989440a12f0fe899614f75807d73109e8d78f408d334daee22e6524326",
+      "sample_id": "libero_object_task01_ep000_step0044_contact",
+      "suite": "libero_object",
+      "task": 1,
+      "phase": "contact",
+      "trajectory_step": 44,
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task01_pick_up_the_cream_cheese_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0ca8cb42dfc21e253c00f62f3d1c059c615ff222099f7165f167f9673cc0bf3a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task01_ep000_step0127_goal_alignment.npz",
+      "sha256": "8b8bbbf37120e65ae9a99cee2f87640bd5b44d817a5a23a7117d84c720a5f9ff",
+      "sample_id": "libero_object_task01_ep000_step0127_goal_alignment",
+      "suite": "libero_object",
+      "task": 1,
+      "phase": "goal_alignment",
+      "trajectory_step": 127,
+      "instruction": "pick up the cream cheese and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task01_pick_up_the_cream_cheese_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0ca8cb42dfc21e253c00f62f3d1c059c615ff222099f7165f167f9673cc0bf3a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task02_ep000_step0000_initial.npz",
+      "sha256": "33d9cc6c0aeb774008dfb2e6ffee3356c066553226cdb95e0a9e0bc67e0275e1",
+      "sample_id": "libero_object_task02_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 2,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task02_pick_up_the_salad_dressing_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "4777e237ba68a6ad2220b6987626c17ec1f06f2516d39b69dd123b4bc9f6d38f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task02_ep000_step0049_contact.npz",
+      "sha256": "ce68cd3ad7802cd38770f77958411ab4147d8720fd32ccee53b2388fa0e77f84",
+      "sample_id": "libero_object_task02_ep000_step0049_contact",
+      "suite": "libero_object",
+      "task": 2,
+      "phase": "contact",
+      "trajectory_step": 49,
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task02_pick_up_the_salad_dressing_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "4777e237ba68a6ad2220b6987626c17ec1f06f2516d39b69dd123b4bc9f6d38f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task02_ep000_step0125_goal_alignment.npz",
+      "sha256": "10ee8b376575d69f4a3a9679253f3bb8d6c7cd966ac75f4bebe19cf277947cbf",
+      "sample_id": "libero_object_task02_ep000_step0125_goal_alignment",
+      "suite": "libero_object",
+      "task": 2,
+      "phase": "goal_alignment",
+      "trajectory_step": 125,
+      "instruction": "pick up the salad dressing and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task02_pick_up_the_salad_dressing_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "4777e237ba68a6ad2220b6987626c17ec1f06f2516d39b69dd123b4bc9f6d38f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task03_ep000_step0000_initial.npz",
+      "sha256": "e63f2b8fd5614067d72e21bb0c5bf07748e3e2cd54888b609da77b21b088119c",
+      "sample_id": "libero_object_task03_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 3,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task03_pick_up_the_bbq_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "781ec202855a047654577b47d642eb294427311178320a81fc53a79b9fe190f8"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task03_ep000_step0050_contact.npz",
+      "sha256": "0a134eab77b61a69cf880fdc921ed81bceaf386fbab3f4cd4bbea29960d41a94",
+      "sample_id": "libero_object_task03_ep000_step0050_contact",
+      "suite": "libero_object",
+      "task": 3,
+      "phase": "contact",
+      "trajectory_step": 50,
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task03_pick_up_the_bbq_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "781ec202855a047654577b47d642eb294427311178320a81fc53a79b9fe190f8"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task03_ep000_step0125_goal_alignment.npz",
+      "sha256": "61865fec552f0c228a96bddd4c496134a0ea9dad181c73d08397775ea5be1f0e",
+      "sample_id": "libero_object_task03_ep000_step0125_goal_alignment",
+      "suite": "libero_object",
+      "task": 3,
+      "phase": "goal_alignment",
+      "trajectory_step": 125,
+      "instruction": "pick up the bbq sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task03_pick_up_the_bbq_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "781ec202855a047654577b47d642eb294427311178320a81fc53a79b9fe190f8"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task04_ep000_step0000_initial.npz",
+      "sha256": "982ff0d0f7ca7137229ee14d661ea2e360ead675a9ea2b2f0263071fc18d215f",
+      "sample_id": "libero_object_task04_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 4,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the ketchup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task04_pick_up_the_ketchup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "8f1dcbdd612dc3341760cbe7f21ceb5f10002ea71d0683abf4723bc630823326"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task04_ep000_step0051_contact.npz",
+      "sha256": "3065ccf4e8fd015ff1289b808cb5ff9a82e626420ea893fded38f5e8e1b9fd8c",
+      "sample_id": "libero_object_task04_ep000_step0051_contact",
+      "suite": "libero_object",
+      "task": 4,
+      "phase": "contact",
+      "trajectory_step": 51,
+      "instruction": "pick up the ketchup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task04_pick_up_the_ketchup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "8f1dcbdd612dc3341760cbe7f21ceb5f10002ea71d0683abf4723bc630823326"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task04_ep000_step0181_goal_alignment.npz",
+      "sha256": "038081632c78c79dac25d809df2754472e91cc9ac8edb160fe475fc7b21b6843",
+      "sample_id": "libero_object_task04_ep000_step0181_goal_alignment",
+      "suite": "libero_object",
+      "task": 4,
+      "phase": "goal_alignment",
+      "trajectory_step": 181,
+      "instruction": "pick up the ketchup and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task04_pick_up_the_ketchup_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "8f1dcbdd612dc3341760cbe7f21ceb5f10002ea71d0683abf4723bc630823326"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task05_ep000_step0000_initial.npz",
+      "sha256": "63e2638db6d671235bf498d190ca870a35e8487169b120781a5225862e19e5a3",
+      "sample_id": "libero_object_task05_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 5,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task05_pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0d0ab844b68247fd17ccecddb9d45a88cd3700249463ab845824d33c90b56900"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task05_ep000_step0052_contact.npz",
+      "sha256": "d9e069440e6aead85519f1775c9f03b135d804ffaf21e5984320f05a5354f40c",
+      "sample_id": "libero_object_task05_ep000_step0052_contact",
+      "suite": "libero_object",
+      "task": 5,
+      "phase": "contact",
+      "trajectory_step": 52,
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task05_pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0d0ab844b68247fd17ccecddb9d45a88cd3700249463ab845824d33c90b56900"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task05_ep000_step0152_goal_alignment.npz",
+      "sha256": "e9060a4c3286a5fc8c630d1ce578f23098f42670abb36492dde88fcbd7fd424c",
+      "sample_id": "libero_object_task05_ep000_step0152_goal_alignment",
+      "suite": "libero_object",
+      "task": 5,
+      "phase": "goal_alignment",
+      "trajectory_step": 152,
+      "instruction": "pick up the tomato sauce and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task05_pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0d0ab844b68247fd17ccecddb9d45a88cd3700249463ab845824d33c90b56900"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task06_ep000_step0000_initial.npz",
+      "sha256": "74fb3b630668e2b521e7d2ce547f7a0c5d6d676221b72dd98f85b6cad57bac86",
+      "sample_id": "libero_object_task06_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 6,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the butter and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task06_pick_up_the_butter_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "b0720f496bbd7eca6a52a0e368862270294aa96aa2f7c6aaf94f9fb881d06d17"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task06_ep000_step0049_contact.npz",
+      "sha256": "8070b4c66825c838d1519dc477bb20da5c4a1703e3d4110ce0e44d5b2a939018",
+      "sample_id": "libero_object_task06_ep000_step0049_contact",
+      "suite": "libero_object",
+      "task": 6,
+      "phase": "contact",
+      "trajectory_step": 49,
+      "instruction": "pick up the butter and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task06_pick_up_the_butter_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "b0720f496bbd7eca6a52a0e368862270294aa96aa2f7c6aaf94f9fb881d06d17"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task06_ep000_step0142_goal_alignment.npz",
+      "sha256": "68e89e9d872a4637a2e651aaf92941c4aa1a40c8dfff4b8470c4e6d8611aa05a",
+      "sample_id": "libero_object_task06_ep000_step0142_goal_alignment",
+      "suite": "libero_object",
+      "task": 6,
+      "phase": "goal_alignment",
+      "trajectory_step": 142,
+      "instruction": "pick up the butter and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task06_pick_up_the_butter_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "b0720f496bbd7eca6a52a0e368862270294aa96aa2f7c6aaf94f9fb881d06d17"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task07_ep000_step0000_initial.npz",
+      "sha256": "af792c9d9a516a17656feed794197f73c6a9e76d221a5a93778477a5f7ac861d",
+      "sample_id": "libero_object_task07_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 7,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the milk and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task07_pick_up_the_milk_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "9dde55850526de1b87960baaaf55a58e3ef47e16acc736f8ebfd6013df2cc812"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task07_ep000_step0044_contact.npz",
+      "sha256": "32a161621ccd96f46c19d9f1c18d1ad22212618544343a6c7a817cd59f284253",
+      "sample_id": "libero_object_task07_ep000_step0044_contact",
+      "suite": "libero_object",
+      "task": 7,
+      "phase": "contact",
+      "trajectory_step": 44,
+      "instruction": "pick up the milk and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task07_pick_up_the_milk_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "9dde55850526de1b87960baaaf55a58e3ef47e16acc736f8ebfd6013df2cc812"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task07_ep000_step0125_goal_alignment.npz",
+      "sha256": "879a7969396bff71fec87fae121e9302b4c0d8c82471ae2162c718adb7a38627",
+      "sample_id": "libero_object_task07_ep000_step0125_goal_alignment",
+      "suite": "libero_object",
+      "task": 7,
+      "phase": "goal_alignment",
+      "trajectory_step": 125,
+      "instruction": "pick up the milk and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task07_pick_up_the_milk_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "9dde55850526de1b87960baaaf55a58e3ef47e16acc736f8ebfd6013df2cc812"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task08_ep000_step0000_initial.npz",
+      "sha256": "2815cc9ab0bf3fe23ab53d383c29b3a108cd70da09f8ab94b8545be782519074",
+      "sample_id": "libero_object_task08_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 8,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task08_pick_up_the_chocolate_pudding_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "6917938fcbda4ee82aad22250d1e281917fc93f46e0228361f74ba87e3683f51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task08_ep000_step0041_contact.npz",
+      "sha256": "1b02337da56f4f4cb5531de949525016d718d1a88709794172c9286d3ca37d35",
+      "sample_id": "libero_object_task08_ep000_step0041_contact",
+      "suite": "libero_object",
+      "task": 8,
+      "phase": "contact",
+      "trajectory_step": 41,
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task08_pick_up_the_chocolate_pudding_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "6917938fcbda4ee82aad22250d1e281917fc93f46e0228361f74ba87e3683f51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task08_ep000_step0144_goal_alignment.npz",
+      "sha256": "cfc43e841dd68f4eabd75646d61be7879018f686e51c90f2614693a0ade6487f",
+      "sample_id": "libero_object_task08_ep000_step0144_goal_alignment",
+      "suite": "libero_object",
+      "task": 8,
+      "phase": "goal_alignment",
+      "trajectory_step": 144,
+      "instruction": "pick up the chocolate pudding and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task08_pick_up_the_chocolate_pudding_and_place_it_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "6917938fcbda4ee82aad22250d1e281917fc93f46e0228361f74ba87e3683f51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task09_ep000_step0000_initial.npz",
+      "sha256": "bca30f852001ddf38afabca49e0d565bd47ede684c2a42763cade1645c52e987",
+      "sample_id": "libero_object_task09_ep000_step0000_initial",
+      "suite": "libero_object",
+      "task": 9,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the orange juice and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task09_pick_up_the_orange_juice_and_place_it_in_the_basket/ep000_failure/trace.jsonl",
+        "sha256": "df1296412811f2daefa782dd1e5579ca1f2cc8f1fd92b9b0e77a4f8e18b16673"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_object_task09_ep000_step0048_contact.npz",
+      "sha256": "bf5426ca4d4845a7797da5b5115754fd8c1563cea5b8ed09b2772d37de3d43b8",
+      "sample_id": "libero_object_task09_ep000_step0048_contact",
+      "suite": "libero_object",
+      "task": 9,
+      "phase": "contact",
+      "trajectory_step": 48,
+      "instruction": "pick up the orange juice and place it in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_object_i00_10_a01/episodes/task09_pick_up_the_orange_juice_and_place_it_in_the_basket/ep000_failure/trace.jsonl",
+        "sha256": "df1296412811f2daefa782dd1e5579ca1f2cc8f1fd92b9b0e77a4f8e18b16673"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task00_ep000_step0000_initial.npz",
+      "sha256": "35fddd2d25a412842c80d3cc58e7b13f10e467d376e7c4adc25e425711741f92",
+      "sample_id": "libero_spatial_task00_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 0,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task00_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "4fd9b2446dcbd0de2292ba2f4f3e931a75ca223ed9ec57ba7ee098ad67f0b684"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task00_ep000_step0074_goal_alignment.npz",
+      "sha256": "cab8187f25e024693b810557d539f0cbc5d1f6374672fc04de81bb0c800c70d3",
+      "sample_id": "libero_spatial_task00_ep000_step0074_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 0,
+      "phase": "goal_alignment",
+      "trajectory_step": 74,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task00_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "4fd9b2446dcbd0de2292ba2f4f3e931a75ca223ed9ec57ba7ee098ad67f0b684"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task01_ep000_step0000_initial.npz",
+      "sha256": "4eb18a9c5669ea541cfc1feb966c0aad2c576837237428678b69829ffa12f932",
+      "sample_id": "libero_spatial_task01_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 1,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task01_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "1f69e45ccfe5709120da1f29b105e950960fb5454ac0314e41de0a26189e64fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task01_ep000_step0058_contact.npz",
+      "sha256": "4494d3e17c14df49bc2bfe4a5baaf2473e0e66da09a8cd8213e7210c2ccb07e7",
+      "sample_id": "libero_spatial_task01_ep000_step0058_contact",
+      "suite": "libero_spatial",
+      "task": 1,
+      "phase": "contact",
+      "trajectory_step": 58,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task01_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "1f69e45ccfe5709120da1f29b105e950960fb5454ac0314e41de0a26189e64fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task01_ep000_step0107_goal_alignment.npz",
+      "sha256": "753ce4ad934ea1e0c3745212b0520ef8e7db911d6a8a6b16f7390a9f7f30ae7b",
+      "sample_id": "libero_spatial_task01_ep000_step0107_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 1,
+      "phase": "goal_alignment",
+      "trajectory_step": 107,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task01_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "1f69e45ccfe5709120da1f29b105e950960fb5454ac0314e41de0a26189e64fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task02_ep000_step0000_initial.npz",
+      "sha256": "d16d359d36ac8e93ade3cdade84b2edf3827a797209558aabbc0da07569a5027",
+      "sample_id": "libero_spatial_task02_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 2,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task02_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "c2a0378a0236c5608b2b2d9e58761eaf5ea5be12cbb35b95e365a624af6685ab"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task02_ep000_step0051_contact.npz",
+      "sha256": "21eff39aa65cb6e33f3dcb58aa3532f0d6327c88a90438628c6f4038c666a553",
+      "sample_id": "libero_spatial_task02_ep000_step0051_contact",
+      "suite": "libero_spatial",
+      "task": 2,
+      "phase": "contact",
+      "trajectory_step": 51,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task02_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "c2a0378a0236c5608b2b2d9e58761eaf5ea5be12cbb35b95e365a624af6685ab"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task02_ep000_step0095_goal_alignment.npz",
+      "sha256": "f64bbd750a452a476e706e09d9e71887a2f8eb7fb86fa20f7ce92da1dd085a29",
+      "sample_id": "libero_spatial_task02_ep000_step0095_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 2,
+      "phase": "goal_alignment",
+      "trajectory_step": 95,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task02_pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "c2a0378a0236c5608b2b2d9e58761eaf5ea5be12cbb35b95e365a624af6685ab"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task03_ep000_step0000_initial.npz",
+      "sha256": "f9ad2c85688e465e0a985e3891e9374fa3404e200723202bcf5d779bd4b8544e",
+      "sample_id": "libero_spatial_task03_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 3,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task03_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "f0162d50c6107ad629110129363ec19289cbe177f9d80cc32e7c63302cd5002f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task03_ep000_step0048_contact.npz",
+      "sha256": "622aab49742cef7faa0a66b6a828976c82da7a88d86b3a51efa869cd8caff346",
+      "sample_id": "libero_spatial_task03_ep000_step0048_contact",
+      "suite": "libero_spatial",
+      "task": 3,
+      "phase": "contact",
+      "trajectory_step": 48,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task03_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "f0162d50c6107ad629110129363ec19289cbe177f9d80cc32e7c63302cd5002f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task03_ep000_step0084_goal_alignment.npz",
+      "sha256": "259b7f5842285b7af22939a5592cee081ba438b04354db728684b3366d48ce94",
+      "sample_id": "libero_spatial_task03_ep000_step0084_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 3,
+      "phase": "goal_alignment",
+      "trajectory_step": 84,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task03_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "f0162d50c6107ad629110129363ec19289cbe177f9d80cc32e7c63302cd5002f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task04_ep000_step0000_initial.npz",
+      "sha256": "e17e59341a39c10ddcc232367ddb48d48197f33095e506bb4502c1fecb54fa34",
+      "sample_id": "libero_spatial_task04_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 4,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task04_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "445b39f8f6fb01a463ad051cbb6e7a8729865e056ac29092c5cf1cfcfae95e62"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task04_ep000_step0058_contact.npz",
+      "sha256": "9ba10f265ca08198c15b9d9cebacd4c41f479c74db5be801b2bf6a3bdb7d90ba",
+      "sample_id": "libero_spatial_task04_ep000_step0058_contact",
+      "suite": "libero_spatial",
+      "task": 4,
+      "phase": "contact",
+      "trajectory_step": 58,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task04_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "445b39f8f6fb01a463ad051cbb6e7a8729865e056ac29092c5cf1cfcfae95e62"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task04_ep000_step0131_goal_alignment.npz",
+      "sha256": "6b40469d15f33bc060fa66d4cc44303856aab86f84adbb371a9b4baab1b250a4",
+      "sample_id": "libero_spatial_task04_ep000_step0131_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 4,
+      "phase": "goal_alignment",
+      "trajectory_step": 131,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task04_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "445b39f8f6fb01a463ad051cbb6e7a8729865e056ac29092c5cf1cfcfae95e62"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task05_ep000_step0000_initial.npz",
+      "sha256": "70b60f554513956c9ba1b81dbbedfee688154f91e416c3a58c11dbdb1223f07b",
+      "sample_id": "libero_spatial_task05_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 5,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task05_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "a51e163834e9497e2f3ae4657615d8f1087689a39a80136ec353206d7b4e9477"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task05_ep000_step0032_contact.npz",
+      "sha256": "40a923b8c2b9214c24a57ad183a7caf463841a9fdcbb67335e79e195e8fcaf7c",
+      "sample_id": "libero_spatial_task05_ep000_step0032_contact",
+      "suite": "libero_spatial",
+      "task": 5,
+      "phase": "contact",
+      "trajectory_step": 32,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task05_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "a51e163834e9497e2f3ae4657615d8f1087689a39a80136ec353206d7b4e9477"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task05_ep000_step0084_goal_alignment.npz",
+      "sha256": "28968de476f84565e43b84b478e511925b5dfa65cf8b96220383e7914d6f2c31",
+      "sample_id": "libero_spatial_task05_ep000_step0084_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 5,
+      "phase": "goal_alignment",
+      "trajectory_step": 84,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task05_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "a51e163834e9497e2f3ae4657615d8f1087689a39a80136ec353206d7b4e9477"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task06_ep000_step0000_initial.npz",
+      "sha256": "ca5e856f125c37ddc7a53c58c03d2f52b4068981b2bc10a63a8dc4fd4cd49ca2",
+      "sample_id": "libero_spatial_task06_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 6,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task06_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "32227aaff08ce4eb28f3281a6263a890a4edced5bbf84a5e12216977cee9f418"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task06_ep000_step0057_contact.npz",
+      "sha256": "9571e771c3b8b60a28bc499e3d8c33b443cd41de94c2b4fece4ee4af1c6e439c",
+      "sample_id": "libero_spatial_task06_ep000_step0057_contact",
+      "suite": "libero_spatial",
+      "task": 6,
+      "phase": "contact",
+      "trajectory_step": 57,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task06_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "32227aaff08ce4eb28f3281a6263a890a4edced5bbf84a5e12216977cee9f418"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task06_ep000_step0096_goal_alignment.npz",
+      "sha256": "495ae47d2c225b7373e42a571e9a32bebdae3ac7e6cda385e6d0803783c8fa9f",
+      "sample_id": "libero_spatial_task06_ep000_step0096_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 6,
+      "phase": "goal_alignment",
+      "trajectory_step": 96,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task06_pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "32227aaff08ce4eb28f3281a6263a890a4edced5bbf84a5e12216977cee9f418"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task07_ep000_step0000_initial.npz",
+      "sha256": "611d63c8a837cd40a58feae25a29aba1ee5e0317794cefe7dd3c35ae6a7b5d78",
+      "sample_id": "libero_spatial_task07_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 7,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task07_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "9d4cac9087606d12201bd7d232b170c0dddd747b1e5d9d709952bf2a4992b0bc"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task07_ep000_step0026_contact.npz",
+      "sha256": "aa6b76782b219f0f24d4f428fac87886db8d91dddd9edeb2e30a0f8679413948",
+      "sample_id": "libero_spatial_task07_ep000_step0026_contact",
+      "suite": "libero_spatial",
+      "task": 7,
+      "phase": "contact",
+      "trajectory_step": 26,
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task07_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "9d4cac9087606d12201bd7d232b170c0dddd747b1e5d9d709952bf2a4992b0bc"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task07_ep000_step0111_goal_alignment.npz",
+      "sha256": "bbc8659eae0a09568937e8393536c1687eea11f1f273b10a3d780a08ca8f63ed",
+      "sample_id": "libero_spatial_task07_ep000_step0111_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 7,
+      "phase": "goal_alignment",
+      "trajectory_step": 111,
+      "instruction": "pick up the black bowl on the stove and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task07_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "9d4cac9087606d12201bd7d232b170c0dddd747b1e5d9d709952bf2a4992b0bc"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task08_ep000_step0000_initial.npz",
+      "sha256": "8d4d8f665e8feefa2e41e6287c68ff53b350346726091e0960cb76b7654afc58",
+      "sample_id": "libero_spatial_task08_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 8,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task08_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "37e277d917d522c5f7521b26b71881635e6b2e0b6b538f4252518b53da33967f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task08_ep000_step0056_contact.npz",
+      "sha256": "f460af9f61befd7ab88152582e4abc40a261fe2ce6c99494e63b4200eea54227",
+      "sample_id": "libero_spatial_task08_ep000_step0056_contact",
+      "suite": "libero_spatial",
+      "task": 8,
+      "phase": "contact",
+      "trajectory_step": 56,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task08_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "37e277d917d522c5f7521b26b71881635e6b2e0b6b538f4252518b53da33967f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task08_ep000_step0091_goal_alignment.npz",
+      "sha256": "90563b31d5ed11434ce6b4c35d34837fc1a2b14f7d746b5376ec4762e49a4994",
+      "sample_id": "libero_spatial_task08_ep000_step0091_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 8,
+      "phase": "goal_alignment",
+      "trajectory_step": 91,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task08_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "37e277d917d522c5f7521b26b71881635e6b2e0b6b538f4252518b53da33967f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task09_ep000_step0000_initial.npz",
+      "sha256": "8835bdaf85b2429de74d1875a7dcfbf6034cfdb689227e12eb68c289526d4b2b",
+      "sample_id": "libero_spatial_task09_ep000_step0000_initial",
+      "suite": "libero_spatial",
+      "task": 9,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task09_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate/ep000_failure/trace.jsonl",
+        "sha256": "ac6e3f58c6bd44c1787ed70e83c86533ebe92d05497d7228d0c9d30fe86ad6ce"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task09_ep000_step0046_contact.npz",
+      "sha256": "f8ab4a5c85d98fbe0ac059e96802ce93c6093b56309e69a27d84e7fad5f052e6",
+      "sample_id": "libero_spatial_task09_ep000_step0046_contact",
+      "suite": "libero_spatial",
+      "task": 9,
+      "phase": "contact",
+      "trajectory_step": 46,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task09_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate/ep000_failure/trace.jsonl",
+        "sha256": "ac6e3f58c6bd44c1787ed70e83c86533ebe92d05497d7228d0c9d30fe86ad6ce"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_spatial_task09_ep000_step0162_goal_alignment.npz",
+      "sha256": "e34575ba568de1059d3312f1117b32d51c0889dfe3584fe1e4ca195408ca6d0d",
+      "sample_id": "libero_spatial_task09_ep000_step0162_goal_alignment",
+      "suite": "libero_spatial",
+      "task": 9,
+      "phase": "goal_alignment",
+      "trajectory_step": 162,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_spatial_i00_10_a01/episodes/task09_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate/ep000_failure/trace.jsonl",
+        "sha256": "ac6e3f58c6bd44c1787ed70e83c86533ebe92d05497d7228d0c9d30fe86ad6ce"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task00_ep000_step0000_initial.npz",
+      "sha256": "9062d24e9d1e8b6eae4ac21889f5698fce2d99251f58a495f6e70e66ed362718",
+      "sample_id": "libero_goal_task00_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 0,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "open the middle drawer of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task00_open_the_middle_drawer_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "cb17b249c5216b99e32263977fe59c1475dbdbc4ba43808fcbab7792c590b258"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task01_ep000_step0000_initial.npz",
+      "sha256": "03d7c3e21bae9e2ad8950d7e56e164b7b696ba8084da622023b27c21377db615",
+      "sample_id": "libero_goal_task01_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 1,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the bowl on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task01_put_the_bowl_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "d3f3c4fb4e815f913967441e8dbf8390eca066d311e43652a0ca763fce40bfe1"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task01_ep000_step0039_contact.npz",
+      "sha256": "5737d9f21a1c25c1979837313a252c59e439db9c4975f20fc8f6743038667b8d",
+      "sample_id": "libero_goal_task01_ep000_step0039_contact",
+      "suite": "libero_goal",
+      "task": 1,
+      "phase": "contact",
+      "trajectory_step": 39,
+      "instruction": "put the bowl on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task01_put_the_bowl_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "d3f3c4fb4e815f913967441e8dbf8390eca066d311e43652a0ca763fce40bfe1"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task01_ep000_step0084_goal_alignment.npz",
+      "sha256": "aecb9d867ad8ba3d47357ca0df72248e622b1cdb8c6a2f67b47c8010f41b8568",
+      "sample_id": "libero_goal_task01_ep000_step0084_goal_alignment",
+      "suite": "libero_goal",
+      "task": 1,
+      "phase": "goal_alignment",
+      "trajectory_step": 84,
+      "instruction": "put the bowl on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task01_put_the_bowl_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "d3f3c4fb4e815f913967441e8dbf8390eca066d311e43652a0ca763fce40bfe1"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task02_ep000_step0000_initial.npz",
+      "sha256": "1cc3f4e8e51af01c8589d5cacd2b5dd92a1dfe160551d8051f0cb315c6fd75bc",
+      "sample_id": "libero_goal_task02_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 2,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the wine bottle on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task02_put_the_wine_bottle_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "a815dabb556d90cdc4441a6479e2743d4010bfa8299cd4a965a2d96299f088fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task02_ep000_step0021_contact.npz",
+      "sha256": "c001f906042c7e350a03cadc0740719b2ed18ed097364055beb75b29bb4b4a25",
+      "sample_id": "libero_goal_task02_ep000_step0021_contact",
+      "suite": "libero_goal",
+      "task": 2,
+      "phase": "contact",
+      "trajectory_step": 21,
+      "instruction": "put the wine bottle on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task02_put_the_wine_bottle_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "a815dabb556d90cdc4441a6479e2743d4010bfa8299cd4a965a2d96299f088fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task02_ep000_step0068_goal_alignment.npz",
+      "sha256": "d7b77e10b075849e88f353559bb05ddb69ff268af8b290ec71684e1f66f74724",
+      "sample_id": "libero_goal_task02_ep000_step0068_goal_alignment",
+      "suite": "libero_goal",
+      "task": 2,
+      "phase": "goal_alignment",
+      "trajectory_step": 68,
+      "instruction": "put the wine bottle on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task02_put_the_wine_bottle_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "a815dabb556d90cdc4441a6479e2743d4010bfa8299cd4a965a2d96299f088fd"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task03_ep000_step0000_initial.npz",
+      "sha256": "52144438ef64963bac21e4dae8fca107438b92c60ea694ce9876a0392658ac5e",
+      "sample_id": "libero_goal_task03_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 3,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "open the top drawer and put the bowl inside",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task03_open_the_top_drawer_and_put_the_bowl_inside/ep000_success/trace.jsonl",
+        "sha256": "777bd63f6fb7e4888116631d0b6f32768bac959dfe14cac803aa9e62b46d2458"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task03_ep000_step0110_contact.npz",
+      "sha256": "596d10fec3ae5091920701802d1f03f44067703b699681e045ad612bf7c1ff02",
+      "sample_id": "libero_goal_task03_ep000_step0110_contact",
+      "suite": "libero_goal",
+      "task": 3,
+      "phase": "contact",
+      "trajectory_step": 110,
+      "instruction": "open the top drawer and put the bowl inside",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task03_open_the_top_drawer_and_put_the_bowl_inside/ep000_success/trace.jsonl",
+        "sha256": "777bd63f6fb7e4888116631d0b6f32768bac959dfe14cac803aa9e62b46d2458"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task03_ep000_step0173_goal_alignment.npz",
+      "sha256": "0183ed6c96e4c9f29b00a7bb3421440d2452db3df752b606533f170a4162f0ee",
+      "sample_id": "libero_goal_task03_ep000_step0173_goal_alignment",
+      "suite": "libero_goal",
+      "task": 3,
+      "phase": "goal_alignment",
+      "trajectory_step": 173,
+      "instruction": "open the top drawer and put the bowl inside",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task03_open_the_top_drawer_and_put_the_bowl_inside/ep000_success/trace.jsonl",
+        "sha256": "777bd63f6fb7e4888116631d0b6f32768bac959dfe14cac803aa9e62b46d2458"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task04_ep000_step0000_initial.npz",
+      "sha256": "ad5b64548c49e3c17d0d843b35cac979b144ba5243578d3486e76d492e520a99",
+      "sample_id": "libero_goal_task04_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 4,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the bowl on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task04_put_the_bowl_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "2aa37d5a64a4de819ca4829436f20ba16c761ae2ab92b2d9c8c8449ab35925fe"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task04_ep000_step0029_contact.npz",
+      "sha256": "6ebf599c94be1543c47e6d8b926a21b030445e68aa8119b885a0970c849cd97f",
+      "sample_id": "libero_goal_task04_ep000_step0029_contact",
+      "suite": "libero_goal",
+      "task": 4,
+      "phase": "contact",
+      "trajectory_step": 29,
+      "instruction": "put the bowl on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task04_put_the_bowl_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "2aa37d5a64a4de819ca4829436f20ba16c761ae2ab92b2d9c8c8449ab35925fe"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task04_ep000_step0115_goal_alignment.npz",
+      "sha256": "a5627918a8e67548d9d8fe67e9434cde8a283f93b44ee3705ac6dc06fae8f67f",
+      "sample_id": "libero_goal_task04_ep000_step0115_goal_alignment",
+      "suite": "libero_goal",
+      "task": 4,
+      "phase": "goal_alignment",
+      "trajectory_step": 115,
+      "instruction": "put the bowl on top of the cabinet",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task04_put_the_bowl_on_top_of_the_cabinet/ep000_success/trace.jsonl",
+        "sha256": "2aa37d5a64a4de819ca4829436f20ba16c761ae2ab92b2d9c8c8449ab35925fe"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task05_ep000_step0000_initial.npz",
+      "sha256": "0e63e25a5c03e35903fe23e0241a9d41ee580c4728e04443124eb7fa47d7e75e",
+      "sample_id": "libero_goal_task05_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 5,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "push the plate to the front of the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task05_push_the_plate_to_the_front_of_the_stove/ep000_success/trace.jsonl",
+        "sha256": "a8a7f3b41776344bc4fe2e88d0e5bc04add5bb8d5d8b113876c23b32551cf255"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task05_ep000_step0045_contact.npz",
+      "sha256": "d9a2c4ac9b44d39bbd3bf22b16f4dfcd76a6f78ee5dc57d62c7577435dee013e",
+      "sample_id": "libero_goal_task05_ep000_step0045_contact",
+      "suite": "libero_goal",
+      "task": 5,
+      "phase": "contact",
+      "trajectory_step": 45,
+      "instruction": "push the plate to the front of the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task05_push_the_plate_to_the_front_of_the_stove/ep000_success/trace.jsonl",
+        "sha256": "a8a7f3b41776344bc4fe2e88d0e5bc04add5bb8d5d8b113876c23b32551cf255"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task06_ep000_step0000_initial.npz",
+      "sha256": "b9b6dbeeaf9e3ed891172e61013f2b3279fa35454da0922cddd1f0f2fbc6330b",
+      "sample_id": "libero_goal_task06_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 6,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the cream cheese in the bowl",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task06_put_the_cream_cheese_in_the_bowl/ep000_success/trace.jsonl",
+        "sha256": "271425982ab21af134c601636abc7a02a14146a9ab9532a4afbb785ea9e4af51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task06_ep000_step0041_contact.npz",
+      "sha256": "d55cb744e0534b49481fa6f2780ecc6b72331ba3cb813261a74c3ec38193a3cc",
+      "sample_id": "libero_goal_task06_ep000_step0041_contact",
+      "suite": "libero_goal",
+      "task": 6,
+      "phase": "contact",
+      "trajectory_step": 41,
+      "instruction": "put the cream cheese in the bowl",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task06_put_the_cream_cheese_in_the_bowl/ep000_success/trace.jsonl",
+        "sha256": "271425982ab21af134c601636abc7a02a14146a9ab9532a4afbb785ea9e4af51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task06_ep000_step0118_goal_alignment.npz",
+      "sha256": "94525c55e25b07b40afc8e84d5294e9e961c09d6b25b8e30f97e89613347eccb",
+      "sample_id": "libero_goal_task06_ep000_step0118_goal_alignment",
+      "suite": "libero_goal",
+      "task": 6,
+      "phase": "goal_alignment",
+      "trajectory_step": 118,
+      "instruction": "put the cream cheese in the bowl",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task06_put_the_cream_cheese_in_the_bowl/ep000_success/trace.jsonl",
+        "sha256": "271425982ab21af134c601636abc7a02a14146a9ab9532a4afbb785ea9e4af51"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task07_ep000_step0000_initial.npz",
+      "sha256": "7dd669dbd63353c9e4fc82ba69349cf9173d2579f795078e1024ff45fa804935",
+      "sample_id": "libero_goal_task07_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 7,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "turn on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task07_turn_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "84edeee7857969aae678fa5e214438e62264ea2d70e507e17d7aae06d2b6d259"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task07_ep000_step0047_contact.npz",
+      "sha256": "4316185380f410ca061339fd56725722b8b409718cd5968698ab710022e259f4",
+      "sample_id": "libero_goal_task07_ep000_step0047_contact",
+      "suite": "libero_goal",
+      "task": 7,
+      "phase": "contact",
+      "trajectory_step": 47,
+      "instruction": "turn on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task07_turn_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "84edeee7857969aae678fa5e214438e62264ea2d70e507e17d7aae06d2b6d259"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task08_ep000_step0000_initial.npz",
+      "sha256": "1d063e09d05c9d777d94e34421eb15f098edd5659a0eedae1374e9d31441b1a2",
+      "sample_id": "libero_goal_task08_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 8,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the bowl on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task08_put_the_bowl_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "2263dfd481c3da923e35d8d299cd99de20824bb47264b1eba0d196cadc26302c"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task08_ep000_step0043_contact.npz",
+      "sha256": "ba0edf2c46cd876d1f501b41389e6fa1b8b4db1368f66e69805dc60ca4436903",
+      "sample_id": "libero_goal_task08_ep000_step0043_contact",
+      "suite": "libero_goal",
+      "task": 8,
+      "phase": "contact",
+      "trajectory_step": 43,
+      "instruction": "put the bowl on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task08_put_the_bowl_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "2263dfd481c3da923e35d8d299cd99de20824bb47264b1eba0d196cadc26302c"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task08_ep000_step0086_goal_alignment.npz",
+      "sha256": "8284ba9c0414464016905b6e3caa291d0cfaf69b878f76b30177ad481b892d0c",
+      "sample_id": "libero_goal_task08_ep000_step0086_goal_alignment",
+      "suite": "libero_goal",
+      "task": 8,
+      "phase": "goal_alignment",
+      "trajectory_step": 86,
+      "instruction": "put the bowl on the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task08_put_the_bowl_on_the_plate/ep000_success/trace.jsonl",
+        "sha256": "2263dfd481c3da923e35d8d299cd99de20824bb47264b1eba0d196cadc26302c"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task09_ep000_step0000_initial.npz",
+      "sha256": "5b2005cfc8faf1b285f8357436d1b81cdb99dbac91c3fe3790c25a74549f8324",
+      "sample_id": "libero_goal_task09_ep000_step0000_initial",
+      "suite": "libero_goal",
+      "task": 9,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the wine bottle on the rack",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task09_put_the_wine_bottle_on_the_rack/ep000_success/trace.jsonl",
+        "sha256": "17f68d050f3625f0166d2da9a6b9bbcd083807a0588ac527c498d5dd8cbfcb0f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_goal_task09_ep000_step0105_goal_alignment.npz",
+      "sha256": "3a068fab0740af82afc1e5eb65463c9096a079343f6f99a04bda7cf50486f435",
+      "sample_id": "libero_goal_task09_ep000_step0105_goal_alignment",
+      "suite": "libero_goal",
+      "task": 9,
+      "phase": "goal_alignment",
+      "trajectory_step": 105,
+      "instruction": "put the wine bottle on the rack",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_goal_i00_10_a01/episodes/task09_put_the_wine_bottle_on_the_rack/ep000_success/trace.jsonl",
+        "sha256": "17f68d050f3625f0166d2da9a6b9bbcd083807a0588ac527c498d5dd8cbfcb0f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task00_ep000_step0000_initial.npz",
+      "sha256": "aa2ba9859353d25e8d0f2044d9b39bd079960b6fd65c5d7346780d5e715a5cea",
+      "sample_id": "libero_10_task00_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 0,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task00_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d3149b23090fa489bb6410a36de964f6ed75ff52ac7175aedf68482269ff1542"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task00_ep000_step0050_contact.npz",
+      "sha256": "8c7d0080e5f718eea937241a570c81206d7e9974735de5d1470ad30234249871",
+      "sample_id": "libero_10_task00_ep000_step0050_contact",
+      "suite": "libero_10",
+      "task": 0,
+      "phase": "contact",
+      "trajectory_step": 50,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task00_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d3149b23090fa489bb6410a36de964f6ed75ff52ac7175aedf68482269ff1542"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task00_ep000_step0127_goal_alignment.npz",
+      "sha256": "09e6c969f0308a081e6058ea757bec353ed4538cb40294b4d1b8de1ffa3b92b9",
+      "sample_id": "libero_10_task00_ep000_step0127_goal_alignment",
+      "suite": "libero_10",
+      "task": 0,
+      "phase": "goal_alignment",
+      "trajectory_step": 127,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task00_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d3149b23090fa489bb6410a36de964f6ed75ff52ac7175aedf68482269ff1542"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task01_ep000_step0000_initial.npz",
+      "sha256": "9b0fbddd2e61cf3d37d5ef261cd2dff9ab91604ec7f45ebfd97b1e931a87cdc5",
+      "sample_id": "libero_10_task01_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 1,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put both the cream cheese box and the butter in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task01_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0597d278eedd76be26c40bae52dc5788e19ae690f7e59187a0ca8415b5804459"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task01_ep000_step0047_contact.npz",
+      "sha256": "548a9535af9381264b8248fd1f01d6360bd361219e3f6f17b5972a5c14d28e9a",
+      "sample_id": "libero_10_task01_ep000_step0047_contact",
+      "suite": "libero_10",
+      "task": 1,
+      "phase": "contact",
+      "trajectory_step": 47,
+      "instruction": "put both the cream cheese box and the butter in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task01_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0597d278eedd76be26c40bae52dc5788e19ae690f7e59187a0ca8415b5804459"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task01_ep000_step0134_goal_alignment.npz",
+      "sha256": "efe01f4310a344db4ccc4843893186a524fac68c76b088c52781e8236454815f",
+      "sample_id": "libero_10_task01_ep000_step0134_goal_alignment",
+      "suite": "libero_10",
+      "task": 1,
+      "phase": "goal_alignment",
+      "trajectory_step": 134,
+      "instruction": "put both the cream cheese box and the butter in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task01_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "0597d278eedd76be26c40bae52dc5788e19ae690f7e59187a0ca8415b5804459"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task02_ep000_step0000_initial.npz",
+      "sha256": "9ab5d06696740ed4a0626efecd6ec6506492da95733b188d8d9b0262079ef59f",
+      "sample_id": "libero_10_task02_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 2,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "turn on the stove and put the moka pot on it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task02_turn_on_the_stove_and_put_the_moka_pot_on_it/ep000_success/trace.jsonl",
+        "sha256": "13cc774ab1753614d66a74947da6be2f40e4040a2daea296c28f8c905fe9fbbb"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task02_ep000_step0046_contact.npz",
+      "sha256": "182d72afa413ce577dcf0ae21eac5e9420f9de2c36f03f03e69c0700ae3ba969",
+      "sample_id": "libero_10_task02_ep000_step0046_contact",
+      "suite": "libero_10",
+      "task": 2,
+      "phase": "contact",
+      "trajectory_step": 46,
+      "instruction": "turn on the stove and put the moka pot on it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task02_turn_on_the_stove_and_put_the_moka_pot_on_it/ep000_success/trace.jsonl",
+        "sha256": "13cc774ab1753614d66a74947da6be2f40e4040a2daea296c28f8c905fe9fbbb"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task02_ep000_step0085_goal_alignment.npz",
+      "sha256": "4ae2c5eddd09412b83595f199b1bcdf7f7e221780c5bd54c790e9aa00ec37eb3",
+      "sample_id": "libero_10_task02_ep000_step0085_goal_alignment",
+      "suite": "libero_10",
+      "task": 2,
+      "phase": "goal_alignment",
+      "trajectory_step": 85,
+      "instruction": "turn on the stove and put the moka pot on it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task02_turn_on_the_stove_and_put_the_moka_pot_on_it/ep000_success/trace.jsonl",
+        "sha256": "13cc774ab1753614d66a74947da6be2f40e4040a2daea296c28f8c905fe9fbbb"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task03_ep000_step0000_initial.npz",
+      "sha256": "84759e9b5810217432db521d2714630e1b2ae00b004fa929bbc8a159b7d8da4a",
+      "sample_id": "libero_10_task03_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 3,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task03_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/ep000_success/trace.jsonl",
+        "sha256": "b18ecad75f5b5d997cca8f0142a2aae338af04bf0369c98540c1afa666cdea9a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task03_ep000_step0071_contact.npz",
+      "sha256": "aeae3a34213e46877076afcc56436206768d9e4468bb44b57f9681b8df375005",
+      "sample_id": "libero_10_task03_ep000_step0071_contact",
+      "suite": "libero_10",
+      "task": 3,
+      "phase": "contact",
+      "trajectory_step": 71,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task03_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/ep000_success/trace.jsonl",
+        "sha256": "b18ecad75f5b5d997cca8f0142a2aae338af04bf0369c98540c1afa666cdea9a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task03_ep000_step0187_goal_alignment.npz",
+      "sha256": "698bb7d7938fd77d9084eee8945455bd03874b8cda896194e123afd50477ac10",
+      "sample_id": "libero_10_task03_ep000_step0187_goal_alignment",
+      "suite": "libero_10",
+      "task": 3,
+      "phase": "goal_alignment",
+      "trajectory_step": 187,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task03_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/ep000_success/trace.jsonl",
+        "sha256": "b18ecad75f5b5d997cca8f0142a2aae338af04bf0369c98540c1afa666cdea9a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task04_ep000_step0000_initial.npz",
+      "sha256": "d3924d2f1e01c6c15b469e511442211d022ecbb6ac6f84d79193cb5d66d2a042",
+      "sample_id": "libero_10_task04_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 4,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task04_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/ep000_success/trace.jsonl",
+        "sha256": "1390f625cf67be5d9d80bf9ea6af0d181f3fb9a085483e777676bc580eac7d61"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task04_ep000_step0081_goal_alignment.npz",
+      "sha256": "bc80cea949aaeebaa9a8e9be05d6cdcfb0fc330c41b160b72fd9e6322e56c96b",
+      "sample_id": "libero_10_task04_ep000_step0081_goal_alignment",
+      "suite": "libero_10",
+      "task": 4,
+      "phase": "goal_alignment",
+      "trajectory_step": 81,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task04_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/ep000_success/trace.jsonl",
+        "sha256": "1390f625cf67be5d9d80bf9ea6af0d181f3fb9a085483e777676bc580eac7d61"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task05_ep000_step0000_initial.npz",
+      "sha256": "bad08b79022923f3eda721229f9b71c4513c424cd6ea3b6bf5bbfe56278ecd51",
+      "sample_id": "libero_10_task05_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 5,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task05_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/ep000_failure/trace.jsonl",
+        "sha256": "4914743aff3e0938c2d1f36b43470584ce9670ae03d0579dbb9ce31fb775620a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task05_ep000_step0073_contact.npz",
+      "sha256": "6906ccb003cdbbf7966628b4c49f8c146071f6f7f8750b06848ef40ce6d36d36",
+      "sample_id": "libero_10_task05_ep000_step0073_contact",
+      "suite": "libero_10",
+      "task": 5,
+      "phase": "contact",
+      "trajectory_step": 73,
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task05_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/ep000_failure/trace.jsonl",
+        "sha256": "4914743aff3e0938c2d1f36b43470584ce9670ae03d0579dbb9ce31fb775620a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task05_ep000_step0152_goal_alignment.npz",
+      "sha256": "a4ce5ca5e3ca263c328f7e71787c2d04ccae90b7684095bde2038ad995f5eb51",
+      "sample_id": "libero_10_task05_ep000_step0152_goal_alignment",
+      "suite": "libero_10",
+      "task": 5,
+      "phase": "goal_alignment",
+      "trajectory_step": 152,
+      "instruction": "pick up the book and place it in the back compartment of the caddy",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task05_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/ep000_failure/trace.jsonl",
+        "sha256": "4914743aff3e0938c2d1f36b43470584ce9670ae03d0579dbb9ce31fb775620a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task06_ep000_step0000_initial.npz",
+      "sha256": "547fea195128855decb443b9bfd47b977a6531546c5b1a1a4fa4be6fc71db1af",
+      "sample_id": "libero_10_task06_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 6,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task06_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/ep000_success/trace.jsonl",
+        "sha256": "2bce1eb28a71289be3eadfb25655eeca085a6c0745b836807015126b59779e6d"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task06_ep000_step0102_goal_alignment.npz",
+      "sha256": "99354824d0dac1ca82aa678b2f898a32814d685bda8f8ecb298f6d0ec676ea2e",
+      "sample_id": "libero_10_task06_ep000_step0102_goal_alignment",
+      "suite": "libero_10",
+      "task": 6,
+      "phase": "goal_alignment",
+      "trajectory_step": 102,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task06_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/ep000_success/trace.jsonl",
+        "sha256": "2bce1eb28a71289be3eadfb25655eeca085a6c0745b836807015126b59779e6d"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task07_ep000_step0000_initial.npz",
+      "sha256": "da4742542583094556fd8a53743289362abe3559a32c9aba0f5a9b052f82c9e3",
+      "sample_id": "libero_10_task07_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 7,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task07_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d85494c22c4835c667f33f3a64494b0c49f205220e93f4e2dc82d1fe0d7d541f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task07_ep000_step0050_contact.npz",
+      "sha256": "42f89f4360d74b3eb3fa80ac448bc4a36a8bae8848a02c39d6846d6133c28060",
+      "sample_id": "libero_10_task07_ep000_step0050_contact",
+      "suite": "libero_10",
+      "task": 7,
+      "phase": "contact",
+      "trajectory_step": 50,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task07_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d85494c22c4835c667f33f3a64494b0c49f205220e93f4e2dc82d1fe0d7d541f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task07_ep000_step0138_goal_alignment.npz",
+      "sha256": "e657d37ae90302dfcede8380cb2e662864d09c12756f321fa3c52869b3eb032e",
+      "sample_id": "libero_10_task07_ep000_step0138_goal_alignment",
+      "suite": "libero_10",
+      "task": 7,
+      "phase": "goal_alignment",
+      "trajectory_step": 138,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task07_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/ep000_success/trace.jsonl",
+        "sha256": "d85494c22c4835c667f33f3a64494b0c49f205220e93f4e2dc82d1fe0d7d541f"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task08_ep000_step0000_initial.npz",
+      "sha256": "d2c62286125b0c114a7a2234a742e90999db5176f3ff5f42930c52db4b351a6c",
+      "sample_id": "libero_10_task08_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 8,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put both moka pots on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task08_put_both_moka_pots_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "e891c7dac558b94abeb88a781fa25003dfacc8706da776f84a185ee16c98bb0a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task08_ep000_step0124_contact.npz",
+      "sha256": "6d3c63503dc096d1d8ad24d768767cf77ac5f952006329ede698fa23ccb09d2f",
+      "sample_id": "libero_10_task08_ep000_step0124_contact",
+      "suite": "libero_10",
+      "task": 8,
+      "phase": "contact",
+      "trajectory_step": 124,
+      "instruction": "put both moka pots on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task08_put_both_moka_pots_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "e891c7dac558b94abeb88a781fa25003dfacc8706da776f84a185ee16c98bb0a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task08_ep000_step0209_goal_alignment.npz",
+      "sha256": "25dd2ec7fa8a78c3eab58a45f5eb9b7f770aab3aa3cf9d814657ab6e31317a5f",
+      "sample_id": "libero_10_task08_ep000_step0209_goal_alignment",
+      "suite": "libero_10",
+      "task": 8,
+      "phase": "goal_alignment",
+      "trajectory_step": 209,
+      "instruction": "put both moka pots on the stove",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task08_put_both_moka_pots_on_the_stove/ep000_success/trace.jsonl",
+        "sha256": "e891c7dac558b94abeb88a781fa25003dfacc8706da776f84a185ee16c98bb0a"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task09_ep000_step0000_initial.npz",
+      "sha256": "c22e2d752b59cdfc6e5e3ea41659426d00548c79177f4677a48b7fb0029be23a",
+      "sample_id": "libero_10_task09_ep000_step0000_initial",
+      "suite": "libero_10",
+      "task": 9,
+      "phase": "initial",
+      "trajectory_step": 0,
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task09_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/ep000_failure/trace.jsonl",
+        "sha256": "8639d86833d4e52acb1f1852a8b720486c2de8e15b30b5fd1a8067f1f52a0350"
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/action_expert_layer_probe/observations/libero_10_task09_ep000_step0073_contact.npz",
+      "sha256": "2ed07cb769beb4762d2340a5900c7b79bc067a75520d15b77b7c0bc449caed62",
+      "sample_id": "libero_10_task09_ep000_step0073_contact",
+      "suite": "libero_10",
+      "task": 9,
+      "phase": "contact",
+      "trajectory_step": 73,
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "source_trace": {
+        "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment9_standard_vlm_pruning_20261004/exp9_pilot_Full18_libero_10_i00_10_a01/episodes/task09_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/ep000_failure/trace.jsonl",
+        "sha256": "8639d86833d4e52acb1f1852a8b720486c2de8e15b30b5fd1a8067f1f52a0350"
+      }
+    }
+  ],
+  "masks": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      1,
+      14
+    ],
+    [
+      1,
+      15
+    ],
+    [
+      1,
+      16
+    ],
+    [
+      1,
+      17
+    ],
+    [
+      1,
+      18
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      2,
+      15
+    ],
+    [
+      2,
+      16
+    ],
+    [
+      2,
+      17
+    ],
+    [
+      2,
+      18
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      3,
+      14
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      16
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      3,
+      18
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      4,
+      16
+    ],
+    [
+      4,
+      17
+    ],
+    [
+      4,
+      18
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      5,
+      12
+    ],
+    [
+      5,
+      13
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      5,
+      15
+    ],
+    [
+      5,
+      16
+    ],
+    [
+      5,
+      17
+    ],
+    [
+      5,
+      18
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      6,
+      13
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      6,
+      15
+    ],
+    [
+      6,
+      16
+    ],
+    [
+      6,
+      17
+    ],
+    [
+      6,
+      18
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      7,
+      12
+    ],
+    [
+      7,
+      13
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      7,
+      15
+    ],
+    [
+      7,
+      16
+    ],
+    [
+      7,
+      17
+    ],
+    [
+      7,
+      18
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      8,
+      15
+    ],
+    [
+      8,
+      16
+    ],
+    [
+      8,
+      17
+    ],
+    [
+      8,
+      18
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      9,
+      13
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      9,
+      16
+    ],
+    [
+      9,
+      17
+    ],
+    [
+      9,
+      18
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      10,
+      15
+    ],
+    [
+      10,
+      16
+    ],
+    [
+      10,
+      17
+    ],
+    [
+      10,
+      18
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      15
+    ],
+    [
+      11,
+      16
+    ],
+    [
+      11,
+      17
+    ],
+    [
+      11,
+      18
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      12,
+      17
+    ],
+    [
+      12,
+      18
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      13,
+      17
+    ],
+    [
+      13,
+      18
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      16
+    ],
+    [
+      14,
+      17
+    ],
+    [
+      14,
+      18
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      15,
+      17
+    ],
+    [
+      15,
+      18
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      16,
+      18
+    ],
+    [
+      17,
+      18
+    ]
+  ],
+  "noise_seeds": [
+    12345,
+    23456,
+    34567
+  ],
+  "source_files": {
+    "policies/realtime-vla-flash/scripts/experiment10/backend.py": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+    "preparations/ease_insights_20261103/fastpath/gpu_binding.py": "cd3ccd178d46a08ad35b9101fca471622422ca70d62cd536abf7de40bee95e16",
+    "preparations/ease_insights_20261103/vlm/__init__.py": "5d571bbf4a033360af4cb4fbaa2b2a55ad9bcbc865639a1c141c51017e6172f8",
+    "preparations/ease_insights_20261103/vlm/backend.py": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+    "preparations/ease_insights_20261103/vlm/benchmark.py": "5797be691721324ee9592a7bbb8fd75c8647982a7289cf2667a0f55a33cf3b5b",
+    "preparations/ease_insights_20261103/vlm/common.py": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+    "preparations/ease_insights_20261103/vlm/gate.py": "a61fa631db3e35080c1a70afb7cce5b5c2fed6f4c55b8435989e9225c611d7d8",
+    "preparations/ease_insights_20261103/vlm/policy.py": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+    "preparations/ease_insights_20261103/vlm/prepare.py": "7ebaabd1feeac6c2ef710c0a702867b800ac84e12406f46c2a16234dac8c5592",
+    "preparations/ease_insights_20261103/vlm/runner.py": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+    "preparations/ease_insights_20261103/vlm/server.py": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+    "preparations/ease_insights_20261103/vlm/test_protocol.py": "8c152c4ac3614f1830aacb615e7eabd70289d6bc4b0a0a1b606c48381ef985bf",
+    "preparations/ease_insights_20261103/vlm/worker.py": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v2_1/runtime_models.py": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+    "preparations/idea1_v2_2/common.py": "34b0647adc7ea50620617193a0190ef9a13ef43856d49d4fd8f81391cdbfc19c",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "preparations/idea1_v2_2/provenance.py": "2b98ca3c8bcb711fd1ce33b635f8bbdcd373a3246e7f3fc438989ae0d587029d",
+    "preparations/idea1_v3/io.py": "574d5bb7c900f90711648e7a5c17de5edfd7f8106251284fd682b02c4ba755d9",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v3_1/benchmark.py": "64940dc54a44de94e14ac1a6f1789c56fb8561e1f7b44704a797bdb43446660a",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3_4_v12_compensation/common.py": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c",
+    "preparations/ease_insights_20261103/vlm/prepare_confirmation.py": "23ec8c823ea6be7821314a7cf8a363095fde99e2b79238586d2c24fb32073819",
+    "preparations/ease_insights_20261103/vlm/confirm_common.py": "3bf73a3ca7944c93b68ab0db44eeb9ba0d43e0e215584d5b50214e4424efa679",
+    "preparations/ease_insights_20261103/vlm/confirm_runner.py": "a7d14b7383d64c39b0283aeeb7fda74d27875203861d6fa8c62456deb019ee04",
+    "preparations/ease_insights_20261103/vlm/confirm_worker.py": "9a5977b5d75e55d4d04296546b663f35fe63822804f262d4780f57c7cb0104be",
+    "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+    "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+    "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3",
+    "preparations/ease_insights_20261103/vlm/analyze.py": "235e976d305b25429cae20187f3c4fcd1a1c2463b30f429810c02003978214c6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/__init__.py": "2fcb99ec58447647b3cc33c6194348a8452e4cb68c808c28966e7a25665bef31",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/common.py": "5b78cbe3b280d4888e46dc1b6cf28a6227273a544a40e2afed9f686af3e0ae66",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/policy.py": "21d33fd349ae223426cbcfbf461547073b7837bd35a312fd4ce2a812e6d69380",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/server.py": "4c7ddfbaa1f6d310fcde9f5f1f1ae54234e99dd651004cca18a331dbd13fc8a6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/worker.py": "4ab8ef4041723012a442d624523115ca077c9c4f5879df77b3bb97a5026d1d2e",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/prepare.py": "6d8b3a2233dc4a50b3cd2be54481bf29679a78139714546cd371cb810de217a1",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/__init__.py": "e9df0afa5b58c4d08a5b8a7aef3aaf4ee8144a0a98c4a65cf39787d5009bb5f2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/common.py": "8568591ae47d9bd938a968d3f693da0b7e468f2c50d6b499a80d65fbf8a5d1ec",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/policy.py": "87830a8ebd6dfb0e7465aebdc31ab8096ff8da4f5f16f0d1a7577731f34301ce",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/rollout.py": "b933e042c0d52d567153dab88ee1b0494fe5e6ce7eb17ce1a227dceb045ec337",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/worker.py": "e22181be3a555c412f96e6d7b289a638ab3951df9958aabd20f3f25b2a98cec4",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/server.py": "05858003c1c14e96606a1b1ad6558009b11ccc02241694afe92a21f996c733b2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/runner.py": "b6ab4057e5f79bef4677f8d8f6154924af2afd355922172345b035fffd553103",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/prepare.py": "2265b73993b53c8fa7ef45e2c9b26c6ff544f8ba6a08085f50d32022fde95eda",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/selection.py": "0e6248ed9d53c1c1bed994eb854469d80857f21a3f51b2a639602addde93403c",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/analyze.py": "84231a95c415c3504ba960c2ded3d2592901fb9936b40fcd218533546c58dcc5",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_science.py": "80410ead70e87e7558b9f22f13d5a1d8507b874b20b5ef0cae8540e385af029d",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/borrowed_controller.py": "10b6a2cbb31e5cb7ebf654d985f0a215ae6d46a1564f865b6a76be87dc697e5b",
+    "preparations/ease_insights_20261103/retry_resource_session_port.py": "98e6fae9353f5766a661014756b33d92727fec8d61a46ce5e645bac6d43bbfd1",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_runtime.py": "ebd1f0b305ea1ec9caac9c4da1df73c0f80d5fe971e3fa7fa7ec96379b66ef1e",
+    "preparations/ease_insights_20261103/await_assigned_gpu.py": "07aa0356850fa6d5199d5f3ba0b35632c4b5f500b163f5da4bb106da506a6e3f",
+    "preparations/ease_insights_20261103/gpu_owned_keeper.py": "c3719a70ed02b2ac42c8cfea261dba5436f59a10657e350c5d2687f5e2ca1566",
+    "preparations/ease_insights_20261103/gpu_resource_campaign.py": "0b498e158efacbd6de050f9b577e688c928991c5bfe538144e3d5f40a5005349",
+    "preparations/ease_insights_20261103/gpu_resource_session.py": "db4dbc38562401b58efa6403d692ab14b2776d2150b84533bb5949c3a3899c89",
+    "preparations/ease_insights_20261103/reassign_waiting_gate.py": "aa57f4fab5447101ce948fcf139a3cbec3930262396e96cbf5c9d11b15fa3583",
+    "preparations/ease_insights_20261103/reassign_waiting_gate_v2.py": "0238d949fd5585fc52dae19fc56c54b5b970cb4542714c4599024418c8169498",
+    "preparations/ease_insights_20261103/scheduler.py": "0786dd02cb35dc7da40ee06dd515dc4481aa0d28e09d4d78baa5df1338345752",
+    "preparations/ease_insights_20261103/vlm/analyze_confirmation.py": "3ca73a5dce5dca8cde2e54340df4a1b82b8aec627481b5780321adef3f240824",
+    "preparations/ease_insights_20261103/pipeline.py": "e0a02e6b31fbea4d06185b1babe635777949a83c330f9f47da69a5a298e40bbd",
+    "policies/realtime-vla-flash/scripts/spec/spec_client_libero.py": "f30ec5eda07f365b9bf60f17dda77caf14cd71d93a75ac693b6f26c086c89e60",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/__init__.py": "7f3f428099f962c1393eaa662bf11a18f98d9f100bdfb59e1c1209b5bb1465e6",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/analyze.py": "f555b0df8c897689a472a8e170ff3d2891ff6757ac4428fd3a7f7694baf7cb64",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/common.py": "59ad86dab9f9713dee568999f7be833372c0a18ae6712a2361c19e5c7efc611b",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/policy.py": "6446c0b07abde1aa4525e48a706b0e99643f869f1eacb7c12ff83df5d5a3eae4",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/prepare.py": "f3a28e6def9bc247d1cdb40c279a5f9e471523803bef79ad723d86729ddc46fb",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/rollout.py": "b118977c6411cb21c36d1f38150cf50325c37ac60750739202fff45cb5760711",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/runner.py": "0fa9283ed97f4ba23d4c6d21c2b50b7e639b147c20b40de3099c07928216eae8",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/server.py": "c06289bf5391ea0eac24df9b3033b24f96bb06a32d886134ef2d1d8f8134bd5f",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/test_calibration.py": "6f2cadf2946ef7d0b9670ef18691f9a0360e446bdac0c199e64d880d2fb3c7ba",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/worker.py": "3bfe6ba1cce8b3ed32cda534a2ffc7a39c827c7ec62f87ef7fb80e470da8bd5f",
+    "preparations/ease_insights_20261103/reservoir_v1/README.md": "412db0c2d7f6c2d3b0730f4c4d4a5795bbb30d1b6ce1f1b39b82d6ff964ed0dd",
+    "preparations/ease_insights_20261103/reservoir_v1/__init__.py": "cc958d1f8b3d38ea959e578e83c39d4afe80cdb69f6b276e51c642f9b5c12967",
+    "preparations/ease_insights_20261103/reservoir_v1/guardian.py": "bd2fd749f0304250d4855eaf594a816fd367da908aabc048dbcf7da2c6051883",
+    "preparations/ease_insights_20261103/reservoir_v1/keeper.py": "ea07ef8644f0881626b516b71046def9d80c53cfc57a698f23a7f6a573ef6bc3",
+    "preparations/ease_insights_20261103/reservoir_v1/test_reservoir.py": "a5147ec5b8e3a78d1cb8d43deb8d79d814dd3dad00216b23e20daabf21e7eaa4",
+    "preparations/ease_insights_20261103/gpu_release_watch.py": "4314b4b5d7eca4f88968b0d66da305a5cd2f6aff4829f363ae76b951b9495680",
+    "preparations/ease_insights_20261103/resource_pool_v2/__init__.py": "f0adb175bff40e2f9c64aab010e6ca5214163635d3c824cd260657de41245408",
+    "preparations/ease_insights_20261103/resource_pool_v2/keeper.py": "ffcbee6ee0256ff3184050fe336c31433e93a5ece0cb60819aa0dcbc94951e8d",
+    "preparations/ease_insights_20261103/resource_pool_v2/guardian.py": "61fc74ff8ad1a460e26728e7586eb57fef97f44e9659e52ed3c9fdd76d57c0c0",
+    "preparations/ease_insights_20261103/resource_pool_v2/test_resource_pool.py": "9610539eb1d0d5377bb006428166b426e916ceaeac39402af6c38029f7636f23",
+    "preparations/ease_insights_20261103/resource_pool_v2/README.md": "475354e6f83d558c901a13f2453774ada0cad361cd915190b4a1b977af4181b8",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/__init__.py": "21a9c9378f6a077a5773d525dee3c6e6be6384e41e453dda52ae73ccffa3da70",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/ae_dispatch.py": "aed5c435db6449d36b3e3dff1bbf24bb635095fa3887c45722956fa659b7ce00",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/backend.py": "1d3eb826ec81d1225b567a4bd02e22f4838e087d9dc6ef5e38303b8d5eb639b8",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/common.py": "768ddb246ef1269468757f057a3f8f919e66796d14ad2bceb51e1fe63357cd2b",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/gate.py": "ea489eaacf3ea589f9dfd132ed196547dbca4f58fa0a7ac321ccbe1b4b263462",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/policy.py": "51d209ad7c1ed75c88e4f9cac0421d5d5565e74ce0c5fac6dc49585a10c6dc4a",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/prepare_calibration.py": "8db0b3c046e470f4c66609112199b1f175c6d1525a0d7778b9d5e9e74c77f94c",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/protocol.py": "cea86dfd32aa3b8dcf3b85369b1f00456e790e177061b7d108d246ba638d6e52",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/runner.py": "2c0b315018494ade028b544db9a0954ab6e30116bf6ea85ddda5a0ddfe6721e7",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/server.py": "34fa530841b03fa2ec6e37b9f68ba8b0a1672470f26eca656db012d79f03e618",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_ae_dispatch.py": "480af4bd71b61336bfbed9b80dcbbbe293315cf94dd6c7b19561edbf802806f5",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_contracts.py": "3f5268a9b3a1ccbb3d8812bad59aa225d7e3bee9b43ce1c50aea6ca414cfccef",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_policy.py": "460257d3fe5af0e8b39d53f00ba56e837e600cdeda34274de79cd2e50f2ac887",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/worker.py": "5560166f10f0b72fe84f454fd5ee77b00fa2e3d8fa11503451bdf1a669c11d75",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/analyze.py": "6601ec7ed826a95478522e822ca1511c5a05a5919f92ec943236100f289dc60d",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/prepare_discovery.py": "9f6ee1bb4c81610396dec3b5f5cf3b72d0848c7df42c434922e350be17616318",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/selection.py": "183cf9bf2d08e1d92abe01c1f5c02011fb81a26a00122cf5cdbd69fb0cb2d20d",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_selection.py": "19d8c07139d00a6f8ddfd162ac36f753bb79720d28970df076929f9a42839002",
+    "reports/ease_insights_20261103/common_case_audit_v1/audit.py": "2fec7afe6e80cca6286e52a467d42be9e525f6125da76d0b63873985b4a6d113",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/calibration_audit.py": "8b41a4fcd5c4cc0ef960a0ef1959a7a66bc62f87b046288002e828ed549fa2da",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/service_audit.py": "24d02f031b4f353d5b317c452a1d9376d20f20fd89e0732bc1b6b92c6f745619",
+    "preparations/ease_insights_20261103/resource_pool_v3/guardian.py": "061ecce3b050dff50371d7a5b0cfb71768dc532234c5b88489f668edaff04728",
+    "preparations/ease_insights_20261103/resource_pool_v3/__init__.py": "da7b660b13ac9ef2f345fa98ca94e53516596007288efa286c03dcc126271470",
+    "preparations/ease_insights_20261103/resource_pool_v3/keeper.py": "413ce989a5c6ff388fce736ba978001e1c2b210e8c38d89448b3d4b48d03198b",
+    "preparations/ease_insights_20261103/resource_pool_v3/test_resource_pool.py": "3180ba2ed713468911334bbf97afd052ad771515e5ea68ef63abdb4858095e4a",
+    "preparations/ease_insights_20261103/resource_pool_v3/README.md": "52f756b3dfc8378bc68a3b97bee5a723d54f11496bccb105d696e83f1fc60ba5",
+    "preparations/ease_insights_20261103/resource_pool_v4/__init__.py": "da7b660b13ac9ef2f345fa98ca94e53516596007288efa286c03dcc126271470",
+    "preparations/ease_insights_20261103/resource_pool_v4/guardian.py": "43a7dabb973a52507ce4908110fd4d5a736d55f7a89ae7876cc8babb8ae3e707",
+    "preparations/ease_insights_20261103/resource_pool_v4/keeper.py": "413ce989a5c6ff388fce736ba978001e1c2b210e8c38d89448b3d4b48d03198b",
+    "preparations/ease_insights_20261103/resource_pool_v4/test_resource_pool.py": "8f5d1ed8b979cf5cd1ad6344bc16f21ef2dedcd9d6586026cb590ee1fb4eaed0",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/analyze.py": "adb7e57209b3c910e3d9c313ddb48ca6454592b444a77011c1e7c31d20d051c7",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_confirmation.py": "b128149fb0f670d3c2dd195c78c6557873639199d7ef4f11149e9e58f7acfe7d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_discovery.py": "dd048957f3e93a3e058ad890f2671616179a8e4f3e943a650c522b440319471c",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/selection.py": "93eac8f71fc4278d7be9d155deab48b220ebdc482526319d3f35664a6152c5b2",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/statistics.py": "ed22a2dd2c08d4eb510ac24a4fd1eb0b3cdd157b5404c6beb38b194f3d8eef0a",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_independent_selection.py": "45d90ed7338d0762a512661cbb69b059eb5e6957d334d5c54c936df84a6a997d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_selection.py": "215204a8fac9daab3299037012d53c41f4b034c4dfb8cd2118ad47c28f1f4f0f",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_statistics.py": "84acf99ad41f7cd79aed17cbaa96e916d5ef65c4889436e9206756ba53f9c6dd",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/confirmation_audit.py": "b9b77c40d61ef2b69d7c17de336d059ebe1e2a437240792863db32391a6e6846",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/confirmation_statistics_audit.py": "b30857a51adaf99b184db0acc31c8aaf0900660f9945462e874d165d177a42f5",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/discovery_audit.py": "8e215fe9469a8f8159b271d3a9bba80d1c03a5f8e5c7089d625d3182851959f5",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/finish_discovery.py": "feb947d9721d2eefa8e8c396084fcb87cd8a9a885ad68f3e305b984ec12f9b02",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/observe_progress.py": "25a4d858b98b577ac9324d5df1e76d5625dfdea4adb83dceb504004c038fd1a1",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/statistics_audit.py": "29b4ad2bc2935662aa91f5eec07499b7c6ecd7275464d7f219ffadb959ac02bb",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/__init__.py": "3d50c75b95ef94635dd83252c598aa7f793c38a394fc66bf2b6f7f1136932368",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/analyze.py": "b4b5eefa4e2767690c0bc416e80fb7f2162bd17f4107c3630d2dbe62b2963348",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/common.py": "8a7a9cf66f338ea77745151036083944eb61a9263b674e0b56d308b784199a8e",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/engine.py": "acb1b57c168f69563d4138e12cad1709210612f250f50afefdb3639345771814",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/finish_screen.py": "72a0b21a50c07d98ec97b87857dce009eb947e00a3f7ea1117dbe4e01aa1be78",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/metrics.py": "ed21f089dc00a439113d72c449d4110bf7c27da2824b7948be2246ed255bc325",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/prepare.py": "e934be13edf86a9f59fc2a74278b8a611592ab1572011f01f5f3ff82d703c43f",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/runner.py": "3d2fee0315a5754960fe65c549a6a760b3c70abc6674df8bc9400f1d6a790c80",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/server.py": "a1a7af91aad70c4abb1a68a969132d03fa40d0441935b645222e7018bc6ac87f",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/test_pipeline.py": "9cc2d98a534b5c7e94ebf419ed698b55bc33d3a02fe5b2a7b6fbb02da0cad613",
+    "preparations/ease_insights_20261103/ae_complement_beam_v1/worker.py": "0d72c762d9324402d79742bd592498a460dbbd7b408c5a60cc5bb06de3b35b89",
+    "reports/ease_insights_20261103/ae_complement_beam_v1_preparation/observation_inventory.json": "94249d6613b21a9ab4b73c48628c44760a99bd09644f2e7a7e036e37cbe49550",
+    "reports/ease_insights_20261103/ae_complement_beam_v1_preparation/proposal.json": "d10f9baa68ee1b34546cde0fdb00299b106b3d6724357cb397183e4628678d5e"
+  },
+  "checkpoints": {
+    "pi0": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+      "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "identity_artifacts": {
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/candidate_manifest.json": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+        "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+      }
+    }
+  },
+  "normalization": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json",
+    "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+  },
+  "input_inventory": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v1_preparation/observation_inventory.json",
+    "sha256": "94249d6613b21a9ab4b73c48628c44760a99bd09644f2e7a7e036e37cbe49550"
+  },
+  "physical_episodes": 0,
+  "new_official_initial_states": 0,
+  "replay_units": 110,
+  "joint_mask_samples": 50490,
+  "dense_reference_samples": 330,
+  "quality_evidence": false,
+  "closed_loop_confirmation_allocated": false,
+  "input_contract": "Archived uint8 agent/wrist images already rotated and resized224x224; direct8D robot_state. Use native adapter preprocessed branch without another rotation or quaternion reconstruction.",
+  "comparison": "Fresh denseAE18/D2 reference and all153 skip-two AE16/D2 variants on identical full VLM18/vision27 prefix and identical generated noise. No additive single-layer approximation.",
+  "error_definition": "Mean squared decoded error over first5 actions and all7 command dimensions, divided by max(mean squared same-input dense reference over those values,1e-4). Average seeds within snapshot, snapshots within task, then40 tasks equally.",
+  "proxy_rule": {
+    "overall_task_mean_NMSE_max": 0.05,
+    "max_suite_mean_NMSE": 0.1,
+    "minimum_opposite_suite_mean_error_gap": 0.003,
+    "minimum_positive_tasks": 6,
+    "every_task_leave_one_out_positive": true
+  },
+  "selection_rule": "Only after all110 complete records and both service gates pass. Rank minimum opposite-suite error gap, then sum, then smaller worst overall error, then lexical masks/suites. Select one pair; no inference or rollout quality claim.",
+  "initial_only_sensitivity": "Separately labeled, cannot replace primary all-phase selected masks.",
+  "future_requirement": "A proxy-selected pair requires an independently frozen closed-loop discovery, measured native cost and fresh initial-state confirmation before supporting task-dependent path preference.",
+  "resource_accounting": "Inherited scheduler service new_episodes/completed_after fields count archived replay units only; physical episodes remain zero. Retain existing two GPU leases and16GiB idle placeholders.",
+  "historical_normalization_or_runtime_recreated": false,
+  "design_proposal": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v1_preparation/proposal.json",
+    "sha256": "d10f9baa68ee1b34546cde0fdb00299b106b3d6724357cb397183e4628678d5e"
+  },
+  "manifest_hash": "20376a24410dcd3025199ac2915994a24800513550553188f4ce2bff7b6440ff"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "experiment": "AttnL17_T12_Init0to4_seed12345",
+  "purpose": "Paired multi-initial-state structural follow-up for the Attention-L17 action-stable but representation-active candidate",
+  "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+  "base_triton_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base",
+  "prompt_manifests": {
+    "libero_90": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/manifest.json",
+    "libero_10": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/manifest.json"
+  },
+  "noise_seed": 12345,
+  "env_seed": 7,
+  "warmup_steps": 10,
+  "replan_steps": 12,
+  "init_indices": [0, 1, 2, 3, 4],
+  "tasks": {
+    "libero_90": [0, 1, 19, 22, 33, 38, 43, 70],
+    "libero_10": [0, 1, 3, 8]
+  },
+  "candidate_skip_attn_layers": [17],
+  "candidate_skip_ffn_layers": [],
+  "runtime": "triton_eager"
+}

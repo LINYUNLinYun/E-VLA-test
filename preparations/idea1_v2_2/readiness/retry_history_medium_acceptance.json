@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "accepted": true,
+  "reviewer_model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "scope": "Independent source/CPU acceptance only; no production ledger phase or worker authorization",
+  "source_receipt_sha256": "3008ef4e5d7235a4570b87d3bb7f33a4ca99471a7cefb42c8eec64e73d78d5c7",
+  "source_hashes": {
+    "retry_history_audit.py": "ba222844a2b5d1c4bf88e77688d3e3e7869ac42656d3f156260cf10156c382ae",
+    "retry_history_transition.py": "55abdb500f36df55aa59afb41e48bf0b8c47958808241452dda1949a589febe4",
+    "independent_media_history_audit.py": "a3dac0b424cd0c5e884e5fea71656372fc20639fc991aa1458518f06a55319f3",
+    "throughput_provenance_audit_v4.py": "9f6522f0687057684913b5d3087b101aaa7913b8cd03c16caf1c058b4d9f2b97",
+    "final_provenance_analysis_v5.py": "dcdbbf4503e967ec3026c5c74a40b4a3bae133137849269ccdbc5e4c23219959"
+  },
+  "independent_tests": {
+    "passed": 38,
+    "seconds": 32.925,
+    "interpreter": "/usr/bin/python3",
+    "groups": {
+      "core_native_temporary_cli": 12,
+      "history_provenance_final": 9,
+      "media_temporary_fixtures": 17
+    },
+    "production_ledger_writes": 0,
+    "gpu_queries": 0,
+    "model_calls": 0
+  },
+  "review": "Reviewed default read-only plan, exact root phase/key/token/attempt/source/targetchain approvals, target shard/key leases and no nested global lock, original native reserve expected failure/status-error-only delta, separate original retry --launch with exact command/interpreter/output evidence, retained failure snapshots and phase-only immutable evidence registration. Full original ledger resolver rejects unauthorized histories, duplicate valid/token/postvalid attempts, excessive retry budget and unresolved final coverage. Media controller composes unchanged signed strict media functions and preserves receipts; final v5 binds actual full history, original scientific/benchmark audit and independent final media proof. Sealed snapshot is re-resolved from original bytes/evidence, not projected data.",
+  "actual_execution_authorized": false,
+  "authorized_keys": [],
+  "authorized_phases": [],
+  "limits": [
+    "Root must separately authorize each exact real key/token/phase with expected target-chain hash before any ledger write; source acceptance alone cannot execute recovery.",
+    "No automatic retry, next phase or worker launch; no valid task rerun, original row/token deletion or fabricated exit root cause.",
+    "Other shards may commit concurrently; compare exact target chain rather than requiring unrelated ledger rows to freeze.",
+    "Current media/helper/v3 and signed all-process guard/v4 sources remain untouched; final unique effective canonical scope remains 10800 with no unresolved history.",
+    "Independent final C acceptance remains required."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "case": {
+    "head": "draft_spatial",
+    "category": "Language Instructions",
+    "source_index": 151,
+    "case": {
+      "id": 1017,
+      "name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_language_37_view_0_0_100_0_0_initstate_0",
+      "category": "Language Instructions",
+      "difficulty_level": 1,
+      "mother_suite": "libero_spatial",
+      "task_index": 1016,
+      "mother_task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "matching_draft": "draft_spatial",
+      "native_max_steps": 600,
+      "trial": 0,
+      "environment": "libero_plus",
+      "seed": 3349643351
+    },
+    "legacy_instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "mother_bddl_instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+    "actual_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+    "arms": [
+      "actual",
+      "mother_bddl",
+      "legacy_filename"
+    ],
+    "readiness": "same_observation_prompt_only"
+  },
+  "steps": 88,
+  "requests": 18,
+  "video": false,
+  "actual_arm_reexecuted": false,
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/draft_diagnostic_restore.py": "a25e9bb089f83aef256614730b1b73ca0d36035b111b3c99afb8a20c6d1c37df",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/draft_diagnostic_inputs.py": "6aafe10c8c9a7f113fc37603b53a961463c92ffb0c69fb80fe325605b149fde3",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/draft_diagnostic_language.py": "49420df5ad2436e6e187964eeba460b9ed85691ab88ecd9395cbf22094fe7517",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/draft_diagnostic_state.py": "6a34c0c91fe8f004e8a4f1c83e77ebac7ee4037b946454b239c8bc3e009536d4"
+  },
+  "actual_reproduction_gate": {
+    "observation_bitwise_equal": {
+      "agentview_image": true,
+      "robot0_eye_in_hand_image": true,
+      "robot0_eef_pos": true,
+      "robot0_eef_quat": true,
+      "robot0_gripper_qpos": true
+    },
+    "init_vector_sha256_equal": true,
+    "instruction_equal": true,
+    "case_equal": true,
+    "old_actual_success": false,
+    "old_actual_steps": 600,
+    "references_sha256": {
+      "/root/nfs/embodied/benchmark/reports/idea1_libero_plus_half_final_20261022T2124Z/audit_ledger.json": "87d6db263497cb0fea169687bbbc6555af35bc1b9f4105d07c268df7043be75c",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z/perturbed350/case0151/draft_spatial/attempt000/result.json": "bfbaf0018dcd2e756102c2d930ab48ca27208aaf08eadf0a2d204f356b3c18e4",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z/perturbed350/case0151/draft_spatial/attempt000/initial_native_observation.npz": "9a5744e9ae32936cf4003f681a726db622672e8d3fdd55fa39f43e14a414a08f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z/perturbed350/case0151/draft_spatial/attempt000/infer.jsonl": "7ecbd3ca16d00dd6efda411267458436309ce60c099624b7eae49994ccca5f77"
+    },
+    "physical_scope": "Old run records complete pre-settle init vector hash plus five observation fields, not a complete post-settle simulator snapshot. New intervention uses one unchanged simulator state.",
+    "passed": true,
+    "comparisons": {
+      "actions": {
+        "passed": true,
+        "bitwise_equal": true,
+        "max_abs": 0.0,
+        "shape": [
+          50,
+          7
+        ],
+        "atol": 1e-05,
+        "rtol": 0
+      },
+      "raw_actions": {
+        "passed": true,
+        "bitwise_equal": true,
+        "max_abs": 0.0,
+        "shape": [
+          50,
+          32
+        ],
+        "atol": 1e-05,
+        "rtol": 0
+      }
+    },
+    "input_hash_equal": true
+  },
+  "language_semantic_scope": "Descriptive dark dish/flat dish/dessert dish correspond broadly to bowl/plate/ramekin but make grounding more ambiguous.",
+  "physical_bitwise_equal": {
+    "qpos": true,
+    "qvel": true,
+    "time": true,
+    "act": true,
+    "ctrl": true,
+    "contacts": true,
+    "model_body_pos": true,
+    "model_body_quat": true,
+    "model_body_mass": true,
+    "model_body_inertia": true,
+    "model_body_ipos": true,
+    "model_body_iquat": true,
+    "model_geom_pos": true,
+    "model_geom_quat": true,
+    "model_geom_size": true,
+    "model_geom_type": true,
+    "model_geom_bodyid": true,
+    "model_geom_friction": true,
+    "model_geom_contype": true,
+    "model_geom_conaffinity": true,
+    "model_geom_solref": true,
+    "model_geom_solimp": true,
+    "model_geom_margin": true,
+    "model_geom_gap": true,
+    "model_jnt_pos": true,
+    "model_jnt_axis": true,
+    "model_jnt_range": true,
+    "model_jnt_type": true,
+    "model_dof_damping": true,
+    "model_dof_frictionloss": true,
+    "model_cam_pos": true,
+    "model_cam_quat": true,
+    "model_cam_fovy": true,
+    "model_actuator_gainprm": true,
+    "model_actuator_biasprm": true
+  },
+  "instruction": "pick the akita black bowl between the plate and the ramekin and place it on the plate",
+  "actual_instruction": "lift the dark colored dish situated between the flat dish used for main courses and the small dish often used for baking desserts then set it atop the flat dish used for main courses",
+  "initial_observation_hashes": {
+    "agentview_image": "8b8877566b1cdd422d88d079f31a7683bf843955b4b59a57962da3dd44922bdc",
+    "robot0_eye_in_hand_image": "c1d30bac5ad5b60a815f1d6896fa8ace9fe42e8c6af9f470069e7836d27a8eed",
+    "robot0_eef_pos": "e48fa8e5d1d6d4e262e2ecbfcc9f18793cac9dadf69e96cf806e7e5e0fb1f092",
+    "robot0_eef_quat": "2fdb4c637cef87f10e639d7bd7d5f26ddf196d1c021e5edb3ec3a57c51263769",
+    "robot0_gripper_qpos": "3d3d9f953c07e62af2ffc198375ba47f98efaf47580a84245efcfa414d9f3bd1"
+  },
+  "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+  "server_pid": 3715967,
+  "manifest_hash": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3",
+  "success": true,
+  "termination": "success",
+  "paired_effect": 1,
+  "claim_scope": "One preregistered case per head/category. Closed-loop restoration compared with old actual after exact observation/action reproduction; no suite-wide causal estimate."
+}

@@ -1,0 +1,12 @@
+# True EEF XYZ
+
+Fixed video keys only; circles=start, crosses=end. Blue=reference, orange=variant. Grey stage boundaries name their policy. Same-time distance combines path and speed differences.
+
+![xyz_E4_libero_10_task0_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_10_task0_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_10_task5_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_10_task5_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_goal_task0_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_goal_task0_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_goal_task5_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_goal_task5_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_object_task0_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_object_task0_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_object_task5_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_object_task5_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_spatial_task0_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_spatial_task0_no_baseline_vs_E4_pure_learned.png)
+![xyz_E4_libero_spatial_task5_no_baseline_vs_E4_pure_learned.png](xyz_E4_libero_spatial_task5_no_baseline_vs_E4_pure_learned.png)

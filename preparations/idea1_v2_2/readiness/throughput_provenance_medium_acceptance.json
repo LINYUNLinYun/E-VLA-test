@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "accepted": true,
+  "reviewer_model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "scope": "Read-only provenance auditor and final-analysis wrapper source/partial evidence, not final C acceptance",
+  "source_receipt_sha256": "cdc0be073b1ad065df2a48e9a639b345ebb8c88dc3d2cff7f728a9c67e865e06",
+  "auditor_source_sha256": "bf88f2441ad3a25560c2cd5a07c3ea864f116b515eebad121680c647ce67db27",
+  "wrapper_source_sha256": "5529e65eef30965ec3a1bf6022fdedb1c2b73ea041ddc2981ef34fefcf100c4c",
+  "partial_snapshot_sha256": "81001a9862befc6a4197e3dc6a674e172b701254756fbccd57920b27876b220e",
+  "independent_checks": {
+    "cpu_tests": "14/14 passed: eight implementation plus six independent acceptance tests",
+    "snapshot_rehash_passed": true,
+    "real_partial_models": 3,
+    "real_partial_sessions": 9,
+    "snapshot_throughput_valid_entries": 514,
+    "historical_receipts_verified_from_preserved_bytes_not_allowlist": true,
+    "undeclared_scientific_changes_and_unknown_signature_rejected": true,
+    "live_append_prefix_allowed_old_prefix_mutation_rejected": true,
+    "final_prefix_append_rejected": true,
+    "incomplete_full_scope_final_sealing_rejected": true,
+    "signed_execution_sources_unchanged": true
+  },
+  "final_C01_C08": "pending; full coverage, complete independent media decoding, statistics/bootstrap and exclusive benchmark audit still required"
+}

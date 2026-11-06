@@ -1,0 +1,35 @@
+{
+  "title": "π0 Action Expert layer × denoising ablation",
+  "task_suite_name": "libero_goal",
+  "task_id": 5,
+  "task_description": "push the plate to the front of the stove",
+  "num_trials_per_task": 50,
+  "seed": 7,
+  "noise_seed": 20260928,
+  "num_steps_wait": 10,
+  "replan_steps": 12,
+  "resize_size": 224,
+  "video_fps": 10,
+  "server_args": {
+    "config": "pi0_libero",
+    "base_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/base",
+    "draft_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/draft",
+    "backend": "triton",
+    "task_suite_name": "libero_goal",
+    "tokenizer_source": "local",
+    "max_exec_steps": 12,
+    "force_full_each_round": true
+  },
+  "client_args": {
+    "task_suite_name": "libero_goal",
+    "task": "5",
+    "num_trials_per_task": 50,
+    "num_steps_wait": 10,
+    "replan_steps": 12,
+    "resize_size": 224,
+    "seed": 7
+  },
+  "layer_patterns": ["first3_last3", "first6", "last6"],
+  "flow_patterns": ["full10", "first3", "last3"],
+  "baseline": {"layer_pattern": "full18", "flow_pattern": "full10"}
+}

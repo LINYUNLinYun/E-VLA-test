@@ -1,0 +1,761 @@
+{
+  "source": "nsys/idea2_experiment/scheduling_final_20261021.2.sqlite",
+  "unassigned_module_kernels": 325,
+  "aggregate": {
+    "runtime/original": {
+      "requests": 5,
+      "kernel_union_ms": 354.74290800000006,
+      "overlap_ms": 0.146144,
+      "overlap_fraction": 0.00041197159042288725,
+      "modules": {
+        "ae": {
+          "mean_kernel_busy_ms": 31.587546599999996,
+          "mean_gpu_envelope_ms": 339.5806486
+        },
+        "prefill": {
+          "mean_kernel_busy_ms": 39.3902638,
+          "mean_gpu_envelope_ms": 100.9427678
+        }
+      }
+    },
+    "runtime/ae_first": {
+      "requests": 5,
+      "kernel_union_ms": 354.880502,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "mean_kernel_busy_ms": 31.5710542,
+          "mean_gpu_envelope_ms": 339.5569818
+        },
+        "prefill": {
+          "mean_kernel_busy_ms": 39.4050462,
+          "mean_gpu_envelope_ms": 101.9810996
+        }
+      }
+    },
+    "runtime/prefill_first": {
+      "requests": 5,
+      "kernel_union_ms": 354.78011,
+      "overlap_ms": 0.099776,
+      "overlap_fraction": 0.00028123335324519745,
+      "modules": {
+        "ae": {
+          "mean_kernel_busy_ms": 31.5870944,
+          "mean_gpu_envelope_ms": 340.81437939999995
+        },
+        "prefill": {
+          "mean_kernel_busy_ms": 39.388882800000005,
+          "mean_gpu_envelope_ms": 103.5011152
+        }
+      }
+    },
+    "runtime/threaded_ae_first": {
+      "requests": 5,
+      "kernel_union_ms": 348.421353,
+      "overlap_ms": 17.579957,
+      "overlap_fraction": 0.050456026442214065,
+      "modules": {
+        "ae": {
+          "mean_kernel_busy_ms": 33.296188199999996,
+          "mean_gpu_envelope_ms": 366.63354999999996
+        },
+        "prefill": {
+          "mean_kernel_busy_ms": 39.904073800000006,
+          "mean_gpu_envelope_ms": 126.11816900000001
+        }
+      }
+    },
+    "runtime/threaded_prefill_first": {
+      "requests": 5,
+      "kernel_union_ms": 349.07220500000005,
+      "overlap_ms": 16.368087000000003,
+      "overlap_fraction": 0.04689026157210082,
+      "modules": {
+        "ae": {
+          "mean_kernel_busy_ms": 33.1397152,
+          "mean_gpu_envelope_ms": 376.8718656
+        },
+        "prefill": {
+          "mean_kernel_busy_ms": 39.9483432,
+          "mean_gpu_envelope_ms": 140.79069940000002
+        }
+      }
+    }
+  },
+  "sections": {
+    "runtime/original/0": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.842836,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.457875,
+          "gpu_envelope_ms": 340.911311,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.384961,
+          "gpu_envelope_ms": 99.682556,
+          "streams": [
+            69
+          ]
+        }
+      }
+    },
+    "runtime/original/1": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.937889,
+      "overlap_ms": 0.057312,
+      "overlap_fraction": 0.0008079180365798593,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.636094,
+          "gpu_envelope_ms": 332.244242,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.359107,
+          "gpu_envelope_ms": 102.897899,
+          "streams": [
+            69
+          ]
+        }
+      }
+    },
+    "runtime/original/2": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.975771,
+      "overlap_ms": 0.023008,
+      "overlap_fraction": 0.00032416696114509274,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.607429,
+          "gpu_envelope_ms": 349.166374,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.39135,
+          "gpu_envelope_ms": 99.818558,
+          "streams": [
+            69
+          ]
+        }
+      }
+    },
+    "runtime/original/3": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.985975,
+      "overlap_ms": 0.040256,
+      "overlap_fraction": 0.0005670979373038125,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.62195,
+          "gpu_envelope_ms": 338.740697,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.404281,
+          "gpu_envelope_ms": 99.735069,
+          "streams": [
+            69
+          ]
+        }
+      }
+    },
+    "runtime/original/4": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.000437,
+      "overlap_ms": 0.025568,
+      "overlap_fraction": 0.0003601104596018191,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.614385,
+          "gpu_envelope_ms": 336.840619,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.41162,
+          "gpu_envelope_ms": 102.579757,
+          "streams": [
+            69
+          ]
+        }
+      }
+    },
+    "runtime/ae_first/0": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.791525,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.416086,
+          "gpu_envelope_ms": 339.099372,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.375439,
+          "gpu_envelope_ms": 100.225067,
+          "streams": [
+            73
+          ]
+        }
+      }
+    },
+    "runtime/ae_first/1": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.017276,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.589436,
+          "gpu_envelope_ms": 336.084992,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.42784,
+          "gpu_envelope_ms": 100.861556,
+          "streams": [
+            73
+          ]
+        }
+      }
+    },
+    "runtime/ae_first/2": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.0028,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.605995,
+          "gpu_envelope_ms": 341.519728,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.396805,
+          "gpu_envelope_ms": 101.886307,
+          "streams": [
+            73
+          ]
+        }
+      }
+    },
+    "runtime/ae_first/3": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.055668,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.619025,
+          "gpu_envelope_ms": 341.229586,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.436643,
+          "gpu_envelope_ms": 104.389482,
+          "streams": [
+            73
+          ]
+        }
+      }
+    },
+    "runtime/ae_first/4": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.013233,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.624729,
+          "gpu_envelope_ms": 339.851231,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.388504,
+          "gpu_envelope_ms": 102.543086,
+          "streams": [
+            73
+          ]
+        }
+      }
+    },
+    "runtime/prefill_first/0": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.802657,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.428103,
+          "gpu_envelope_ms": 342.470724,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.374554,
+          "gpu_envelope_ms": 106.68737,
+          "streams": [
+            81
+          ]
+        }
+      }
+    },
+    "runtime/prefill_first/1": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.987693,
+      "overlap_ms": 0.019488,
+      "overlap_fraction": 0.00027452645911453977,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.636521,
+          "gpu_envelope_ms": 345.985015,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.37066,
+          "gpu_envelope_ms": 103.053686,
+          "streams": [
+            81
+          ]
+        }
+      }
+    },
+    "runtime/prefill_first/2": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.052177,
+      "overlap_ms": 0.021728,
+      "overlap_fraction": 0.00030580343794392114,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.643927,
+          "gpu_envelope_ms": 338.613099,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.429978,
+          "gpu_envelope_ms": 101.732875,
+          "streams": [
+            81
+          ]
+        }
+      }
+    },
+    "runtime/prefill_first/3": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 71.008749,
+      "overlap_ms": 0.021408,
+      "overlap_fraction": 0.0003014839762914285,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.632165,
+          "gpu_envelope_ms": 342.597765,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.397992,
+          "gpu_envelope_ms": 103.369092,
+          "streams": [
+            81
+          ]
+        }
+      }
+    },
+    "runtime/prefill_first/4": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.928834,
+      "overlap_ms": 0.037152,
+      "overlap_fraction": 0.0005237926228986085,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.594756,
+          "gpu_envelope_ms": 334.405294,
+          "streams": [
+            7
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.37123,
+          "gpu_envelope_ms": 102.662553,
+          "streams": [
+            81
+          ]
+        }
+      }
+    },
+    "runtime/threaded_ae_first/0": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.86858,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.510789,
+          "gpu_envelope_ms": 339.477912,
+          "streams": [
+            93
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.357791,
+          "gpu_envelope_ms": 100.397817,
+          "streams": [
+            89
+          ]
+        }
+      }
+    },
+    "runtime/threaded_ae_first/1": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.278211,
+      "overlap_ms": 4.799969,
+      "overlap_fraction": 0.06928540634514942,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.998678,
+          "gpu_envelope_ms": 359.791208,
+          "streams": [
+            93
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.079502,
+          "gpu_envelope_ms": 132.059238,
+          "streams": [
+            89
+          ]
+        }
+      }
+    },
+    "runtime/threaded_ae_first/2": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.392132,
+      "overlap_ms": 4.288537,
+      "overlap_fraction": 0.061801487811327084,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.648391,
+          "gpu_envelope_ms": 379.234826,
+          "streams": [
+            93
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.032278,
+          "gpu_envelope_ms": 139.433559,
+          "streams": [
+            89
+          ]
+        }
+      }
+    },
+    "runtime/threaded_ae_first/3": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.400195,
+      "overlap_ms": 4.259064,
+      "overlap_fraction": 0.06136962583462482,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.634901,
+          "gpu_envelope_ms": 384.032496,
+          "streams": [
+            93
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.024358,
+          "gpu_envelope_ms": 131.962026,
+          "streams": [
+            89
+          ]
+        }
+      }
+    },
+    "runtime/threaded_ae_first/4": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.482235,
+      "overlap_ms": 4.232387,
+      "overlap_fraction": 0.060913224797676704,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.688182,
+          "gpu_envelope_ms": 370.631308,
+          "streams": [
+            93
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.02644,
+          "gpu_envelope_ms": 126.738205,
+          "streams": [
+            89
+          ]
+        }
+      }
+    },
+    "runtime/threaded_prefill_first/0": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 70.86226,
+      "overlap_ms": 0.0,
+      "overlap_fraction": 0.0,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 31.531192,
+          "gpu_envelope_ms": 331.758452,
+          "streams": [
+            101
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 39.331068,
+          "gpu_envelope_ms": 102.99581,
+          "streams": [
+            97
+          ]
+        }
+      }
+    },
+    "runtime/threaded_prefill_first/1": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.635548,
+      "overlap_ms": 4.177896,
+      "overlap_fraction": 0.059996598289138184,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.598832,
+          "gpu_envelope_ms": 396.206649,
+          "streams": [
+            101
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.214612,
+          "gpu_envelope_ms": 170.17533,
+          "streams": [
+            97
+          ]
+        }
+      }
+    },
+    "runtime/threaded_prefill_first/2": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.547682,
+      "overlap_ms": 4.018525,
+      "overlap_fraction": 0.0577808617690522,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.484287,
+          "gpu_envelope_ms": 377.987918,
+          "streams": [
+            101
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.08192,
+          "gpu_envelope_ms": 139.243068,
+          "streams": [
+            97
+          ]
+        }
+      }
+    },
+    "runtime/threaded_prefill_first/3": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.494185,
+      "overlap_ms": 4.253052,
+      "overlap_fraction": 0.06120011336200288,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.678587,
+          "gpu_envelope_ms": 382.438511,
+          "streams": [
+            101
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.06865,
+          "gpu_envelope_ms": 142.605358,
+          "streams": [
+            97
+          ]
+        }
+      }
+    },
+    "runtime/threaded_prefill_first/4": {
+      "kernel_count": 12898,
+      "kernel_union_ms": 69.53253,
+      "overlap_ms": 3.918614,
+      "overlap_fraction": 0.05635655713951441,
+      "modules": {
+        "ae": {
+          "kernel_count": 10590,
+          "kernel_busy_ms": 33.405678,
+          "gpu_envelope_ms": 395.967798,
+          "streams": [
+            101
+          ]
+        },
+        "prefill": {
+          "kernel_count": 2308,
+          "kernel_busy_ms": 40.045466,
+          "gpu_envelope_ms": 148.933931,
+          "streams": [
+            97
+          ]
+        }
+      }
+    }
+  },
+  "cuda_api": [
+    {
+      "name": "cudaLaunchKernel_v7000",
+      "calls": 273325,
+      "total_cpu_ms": 2066.104012
+    },
+    {
+      "name": "cuLaunchKernel",
+      "calls": 49375,
+      "total_cpu_ms": 442.275485
+    },
+    {
+      "name": "cudaMemsetAsync_v3020",
+      "calls": 13750,
+      "total_cpu_ms": 44.351781
+    },
+    {
+      "name": "cuKernelGetFunction",
+      "calls": 49375,
+      "total_cpu_ms": 44.226075
+    },
+    {
+      "name": "cudaMemcpyAsync_v3020",
+      "calls": 625,
+      "total_cpu_ms": 12.871491
+    },
+    {
+      "name": "cudaStreamSynchronize_v3020",
+      "calls": 600,
+      "total_cpu_ms": 5.878568
+    },
+    {
+      "name": "cudaEventSynchronize_v3020",
+      "calls": 36,
+      "total_cpu_ms": 4.429904
+    },
+    {
+      "name": "cudaEventRecord_v3020",
+      "calls": 1090,
+      "total_cpu_ms": 3.449797
+    },
+    {
+      "name": "cudaEventQuery_v3020",
+      "calls": 1173,
+      "total_cpu_ms": 2.146656
+    },
+    {
+      "name": "cudaStreamWaitEvent_v3020",
+      "calls": 35,
+      "total_cpu_ms": 1.936556
+    },
+    {
+      "name": "cudaEventCreateWithFlags_v3020",
+      "calls": 125,
+      "total_cpu_ms": 0.839307
+    },
+    {
+      "name": "cudaLaunchKernelExC_v11060",
+      "calls": 75,
+      "total_cpu_ms": 0.596355
+    },
+    {
+      "name": "cudaStreamIsCapturing_v10000",
+      "calls": 100,
+      "total_cpu_ms": 0.290914
+    },
+    {
+      "name": "cudaEventDestroy_v3020",
+      "calls": 125,
+      "total_cpu_ms": 0.245328
+    }
+  ],
+  "definition": "Same-GPU/context distinct-stream AE/prefill kernel intersection / kernel union; excludes copies/memsets. Event/envelope includes gaps."
+}

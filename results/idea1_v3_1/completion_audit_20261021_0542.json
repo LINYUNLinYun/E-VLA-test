@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "created_unix_s": 1792532534.1779118,
+  "objective": "Complete idea2 exploratory experiments first, then idea1 v3.1 separately",
+  "previous_goal_turn_classification": "No progress toward experiment goal: answered user chapter question. Current continuation revalidated running audits and completed report/data handoff.",
+  "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+  "requirements": [
+    {
+      "id": "idea2",
+      "result": "complete",
+      "raw_audit": "docs/experiments/idea2/artifacts/final_audit_recheck_20261021_0524.json",
+      "validated_episodes": 112,
+      "graph_required": true
+    },
+    {
+      "id": "v31_e2",
+      "result": "complete",
+      "adopted_profiles": 128,
+      "models": 4,
+      "raw_recheck": "results/idea1_v3_1/final_e2_recheck_20261021_0526.json",
+      "old_profiles_excluded": 32
+    },
+    {
+      "id": "v31_e3",
+      "result": "complete",
+      "models": 2,
+      "budgets_per_model": 4,
+      "layouts_per_budget": 5,
+      "all_selected_confirmed": true,
+      "all_four_budgets_timed": true
+    },
+    {
+      "id": "v31_e1",
+      "result": "complete",
+      "models": 2,
+      "budget_layout_checks": [
+        {
+          "model": "xiaomi-robotic0",
+          "skip": 12,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "xiaomi-robotic0",
+          "skip": 15,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "xiaomi-robotic0",
+          "skip": 18,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "xiaomi-robotic0",
+          "skip": 21,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "xiaomi-robotic0",
+          "skip": 24,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "db-cogact",
+          "skip": 9,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "db-cogact",
+          "skip": 12,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "db-cogact",
+          "skip": 15,
+          "layouts": 5,
+          "screen_complete": true
+        },
+        {
+          "model": "db-cogact",
+          "skip": 18,
+          "layouts": 5,
+          "screen_complete": true
+        }
+      ],
+      "xiaomi_highest_confirmed_skip": 18,
+      "xiaomi_quality": 0.695,
+      "xiaomi_paired_full_quality": 0.975,
+      "xiaomi_relative_retention": 0.7128205128205128,
+      "relative_floor": 0.7,
+      "frontier_extension_triggered": false,
+      "cogact_new_best_screen": "19/40 vs paired Full37/40; below near-floor promotion rule",
+      "historical_cogact_reference_not_promoted": true
+    },
+    {
+      "id": "v31_quality_and_identity",
+      "result": "complete",
+      "screen_conditions": 91,
+      "confirmed_conditions": 15,
+      "canonical_episodes": 6040,
+      "promotion_full_json_recomputed_exact": true,
+      "technical_invalid_or_incomplete": []
+    },
+    {
+      "id": "v31_timing",
+      "result": "complete",
+      "fresh_cohorts": 5,
+      "phases": 24,
+      "all_fresh_reaudits_exact": true,
+      "all_stable_under_preregistered_10percent_drift": true
+    },
+    {
+      "id": "media",
+      "result": "complete",
+      "xyz_comparison_pairs": 60,
+      "phase_pngs": 42,
+      "all_episode_inventory_records": 6200,
+      "quality_videos": 364,
+      "adopted_profile_videos": 32,
+      "archived_videos": 8,
+      "archived_not_part_of_new_scientific_video_audit": true,
+      "video_decoding_enabled_for_scientific_and_e2_audits": true
+    },
+    {
+      "id": "tests",
+      "result": "complete",
+      "command": "CUDA_VISIBLE_DEVICES= JAX_PLATFORMS=cpu JAX_PLATFORM_NAME=cpu policies/openpi/.venv/bin/python -m unittest discover -s preparations/idea1_v3_1 -t . -p test_*.py",
+      "tests": 102,
+      "exit_code": 0,
+      "observed_wall_s": 41.119
+    },
+    {
+      "id": "delivery",
+      "result": "complete",
+      "reports": [
+        "docs/experiments/idea1/idea1_v3_1_final_report.md",
+        "docs/experiments/idea2/idea2_exploratory_report.md"
+      ],
+      "report_relative_links_checked": 43,
+      "live_experiment_modules": []
+    }
+  ],
+  "required_work_remaining": [],
+  "untriggered_or_optional": [
+    "v3.1 frontier extensions not triggered by failed highest-budget masks",
+    "Optional sparse intermediate camera candidate CPU-only, no real profile or adoption",
+    "No v3.2 experiments, no full50-init official evaluation, no AE pruning, no new denoising schedule search"
+  ],
+  "evidence_sha256": {
+    "results/idea1_v3_1/final_scientific_audit_20261021_0527.json": "c6cf71836b3b4b4e58b55d1fbfa06b9be5555510e4897d761604abc6f6a9c6ff",
+    "results/idea1_v3_1/dataset_bundle_v3_all_models/index.json": "838faeee9a9e0b562f20b48119963c806506341ee095f14ef61d1edd0a12d779",
+    "results/idea1_v3_1/dataset_bundle_v3_all_models/view/promotion.json": "e9f5aee2159c0b5dd0bb63ee419e1ce52bf0023c558ae280d7420e3826f8598e",
+    "results/idea1_v3_1/final_analysis_20261021_0536/confirmed_quality_and_paired_progress.json": "e8debcdfb6493c6ad53b109272a13258d6f0d8e62a659744d719c0db990deb65",
+    "results/idea1_v3_1/final_analysis_20261021_0536/fresh_cohort_rechecks_and_stage_medians.json": "84ec8f3c9db2071cf9655b8688354a003f92be30b7a018d9a38544919ce45c37",
+    "results/idea1_v3_1/final_e2_recheck_20261021_0526.json": "411a5015038018771cfd71671181ae60476bc0336eae9be455d37559ecb54fea",
+    "docs/experiments/idea2/artifacts/final_audit_recheck_20261021_0524.json": "c8fb8d2259c76bfb3d695eb77ad148e42ab9abb3d73278f8f61372cea7de52e1",
+    "results/idea1_v3_1/final_episode_inventory_20261021_0545/inventory_index.json": "fdb519d6216410b9a96fc534b816a44633de6e38362de67ac93a0573cae1047b",
+    "docs/experiments/idea1/idea1_v3_1_final_report.md": "8387760ca2bf18a99c1aa006cd3bccf30471e11f24207a954e2550290314de74",
+    "docs/experiments/idea2/idea2_exploratory_report.md": "2654d6847a350eb2c3d57096a20b73ded9e8e7e2b68e81520a705ca59c8e1e06"
+  },
+  "limitations": [
+    "Lean camera contents cannot be reconstructed without saved NPZ; hashes and executed commands are audited.",
+    "Initial-state hashes are cross-compared, not independently reconstructed from simulator state.",
+    "Warmup20 is recorded by benchmark header/frozen loop; individual warmup outputs are not persisted.",
+    "Failure phases are evidence-backed progress heuristics, not causal failure diagnoses.",
+    "Frozen checkpoint identity receipts are verified; this audit does not rehash every multi-GB weight shard.",
+    "Frontier extensions outside the original manifest require a separately frozen, independently audited revision.",
+    "Same-process block/NN numerical metrics are generated by the pinned gate source; CPU audit validates identities, coverage and metrics, not GPU recomputation. NFE10 follows original scalar recurrence/source, not intrusive NN call instrumentation."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "assigned_budget_start_utc": "2026-10-22 04:10:00 UTC",
+  "budget_start_precision": "Approximate preparation start assigned by parent; not an independently measured exact spawn timestamp",
+  "deadline_utc": "2026-10-22 05:40:00 UTC",
+  "preparation_first_ready_utc": "2026-10-22 04:19:28 UTC",
+  "waiting_scope": "GPU unavailable after first readiness; CPU refinements and tests overlapped this interval, so preparation and waiting are not exclusive categories",
+  "initial_interruption": {
+    "container_pid": 3206576,
+    "physical_gpu": 3,
+    "exit_code": 143,
+    "classification": "INTERRUPTED_GPU_IDENTITY_UNCERTAIN",
+    "receipt": "e2_probe_gpu_race_blocked.json",
+    "note": "No quality/parity result. NVIDIA host PID and container PID were not yet reconciled; unrelated occupancy was not established. Subsequent E1 confirmed the namespace distinction."
+  },
+  "gate": {
+    "container_pid": 3208554,
+    "physical_gpu": 2,
+    "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+    "preflight": "No compute PIDs before constructor; 1 MiB / 0 percent",
+    "started_unix": 1792643273.5230827,
+    "completed_unix": 1792643406.1633968,
+    "exit_code": 0,
+    "real_inputs": 24,
+    "timing_rows": 96,
+    "receipt": "e2_probe_gpu2.json"
+  },
+  "reuse03": {
+    "server_pid": 3217282,
+    "worker_pids": [3218644, 3218643],
+    "port": 9382,
+    "episodes": 40,
+    "successes": 34,
+    "all_exit_codes": [0, 0, 0],
+    "server_shutdown": "Explicit localhost RPC followed by process reaping",
+    "receipt": "e2_quality_analysis.json"
+  },
+  "canonical_d2_additional_control": {
+    "authorization": "Parent conditional authorization after reuse03 at least 28/40 and all compatible; triggered by 34/40",
+    "server_pid": 3223332,
+    "worker_pids": [3224581, 3224582],
+    "port": 9383,
+    "episodes": 40,
+    "successes": 35,
+    "all_exit_codes": [0, 0, 0],
+    "server_shutdown": "Explicit localhost RPC followed by process reaping",
+    "receipt": "e2_d2_quality_analysis.json"
+  },
+  "gpu_cleanup_verified_utc": "2026-10-22 04:42:04 UTC",
+  "gpu_cleanup": "Assigned GPU2 compute PID query empty after all owned model and render processes exited; parent notified device free",
+  "cpu_artifacts_checked_utc": "2026-10-22 04:46:01 UTC",
+  "elapsed_from_assigned_approximate_start_minutes": 36.02,
+  "remaining_budget_minutes_at_cpu_artifact_check": 53.98,
+  "checks": [
+    "Native D10 and refresh-all raw/decoded bitwise equality on 24 real inputs",
+    "Canonical Policy.infer decoded equivalence and native D2 wrapper raw/decoded equivalence",
+    "Runtime Euler10/Transformer2, final time about zero, request cache isolation exact",
+    "40 residual and 40 additional D2 controls all compatible with existing Full40; all 80 initial observation hashes match",
+    "Eight new fixed videos fully decoded by original rollout ffmpeg check; four existing Full decoded videos indexed",
+    "Report relative links and artifact hashes verified; plots visually inspected"
+  ],
+  "report": "e2_report_zh.html",
+  "summary": "e2_summary.json"
+}

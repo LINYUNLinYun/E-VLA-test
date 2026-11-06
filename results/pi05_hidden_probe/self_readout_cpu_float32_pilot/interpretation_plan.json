@@ -1,0 +1,19 @@
+{
+  "scope": "readout-channel diagnostic, not a hypothesis test of pi0.5 semantics",
+  "primary": "layer 3, robot_instruction source context, base camera visual tokens",
+  "diagnostics": [
+    "same_question source context",
+    "both active camera token blocks"
+  ],
+  "criteria": {
+    "native_reader": "report direct real-image candidate and generation accuracy",
+    "candidate_consistency": "report both control images separately, complete red/blue pair accuracy, and opposite-color donor following",
+    "free_generation": "report separately with exact short-label parser; no substitution by candidate ranking"
+  },
+  "limitations": [
+    "two scene groups/four images, old calibration data",
+    "CPU float32 differs from previous GPU bfloat16",
+    "no claim that same-model success establishes cross-model alignment"
+  ],
+  "threshold_policy": "no best-layer selection or statistical-significance claim; show all predeclared conditions"
+}

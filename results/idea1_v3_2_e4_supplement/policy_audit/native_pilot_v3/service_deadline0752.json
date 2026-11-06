@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "family": "calvin_abc_d_native",
+  "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+  "server_pid": 3324115,
+  "gpu_preflight": {
+    "assigned": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "device": "3, GPU-555cde36-5e41-bc44-0c69-ea47358fd703, NVIDIA GeForce RTX 4090, 1 MiB, 0 %",
+    "preexisting_compute_processes": ""
+  },
+  "started_unix": 1792653748.443485,
+  "deadline_unix": 1792655520.0,
+  "ready_unix": 1792653825.080652,
+  "gate": {
+    "passed": true,
+    "full_max_abs": 0.0,
+    "full_bitwise": true,
+    "v14_observed_calls": {
+      "kv_shell_calls": 4
+    },
+    "v14_is_approximate": true,
+    "scope": "Same pinned loaded native model and real input/noise, canonical Full vs request wrapper; no target success-rate claim"
+  },
+  "protocol": {
+    "family": "calvin_abc_d_native",
+    "H": 5,
+    "R": 5,
+    "D": 10,
+    "state": "XYZ+EulerXYZ+actual robot_obs[-1] stored controller sign; training dataset state.gripper +/-1",
+    "diagnostic_state": "Official standalone evaluator instead used robot_obs[6] opening width; retained only explicit preflight diagnostic",
+    "extra_delta": false,
+    "gripper": "decoded native action threshold >0:+1 else:-1 in environment client",
+    "policy_parity_gpu_verified": true,
+    "server_pid": 3324115,
+    "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+    "legacy_gate_passed": true
+  },
+  "category_counters": {
+    "preflight": {
+      "full_d10": {
+        "requests": 5,
+        "state_gripper_positive": 5,
+        "state_gripper_negative": 0,
+        "output_elements": 25,
+        "output_outside_unit_by_axis": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      },
+      "v14_d10": {
+        "requests": 5,
+        "state_gripper_positive": 5,
+        "state_gripper_negative": 0,
+        "output_elements": 25,
+        "output_outside_unit_by_axis": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      }
+    },
+    "quality": {
+      "full_d10": {
+        "requests": 385,
+        "state_gripper_positive": 246,
+        "state_gripper_negative": 139,
+        "output_elements": 1925,
+        "output_outside_unit_by_axis": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          17,
+          1170
+        ]
+      },
+      "v14_d10": {
+        "requests": 216,
+        "state_gripper_positive": 82,
+        "state_gripper_negative": 134,
+        "output_elements": 1080,
+        "output_outside_unit_by_axis": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          583
+        ]
+      }
+    }
+  },
+  "completed_unix": 1792654378.9933927
+}

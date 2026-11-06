@@ -1,0 +1,264 @@
+{
+  "status": "complete_independently_verified_not_reproduced",
+  "manifest_hash": "80176d9f4b01e68abb022345bd6dc1a7bfe4e5aef5d69d13257801ca1eb6bdc0",
+  "cases": 600,
+  "conclusion": "not_reproduced",
+  "reports": {
+    "results/ease_insights_20261103/vlm_local_search_v1/confirmation/analysis/analysis.json": "48400436855e9b78cd5ebfa61ae409b765699dcc96280522db16145a861f946b",
+    "reports/ease_insights_20261103/vlm_local_confirmation_statistics/audit.json": "096681189368855d25425691f80114f5f5ed15fc76ea3adc32cd9327bc4724da",
+    "reports/ease_insights_20261103/vlm_local_search_runtime_acceptance/full_confirmation/audit.json": "347c6bb41a5c6589336e7b58ac4cc174825d7ab6c1072fed973cc7eb59dcd66e"
+  },
+  "gate_requests": 23232,
+  "action_rows": 115093,
+  "directions": [
+    {
+      "frozen_direction": {
+        "suite": "libero_object",
+        "better": "jac_anchor",
+        "worse": "local_long",
+        "discovery_difference": 0.1
+      },
+      "a_success": 48,
+      "b_success": 49,
+      "n_paired": 50,
+      "success_difference": -0.02,
+      "inference": {
+        "primary_task_block": {
+          "p_one_sided": 0.875,
+          "extreme_assignments": 896,
+          "assignments": 1024,
+          "observed_mean_difference": -0.02,
+          "task_difference_counts": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "task_mean_differences": [
+            0.0,
+            0.0,
+            -0.2,
+            0.0,
+            0.0,
+            0.0,
+            -0.2,
+            0.2,
+            0.0,
+            0.0
+          ],
+          "null": "Task-level paired differences are sign-exchangeable under the null; ten tasks are the inference units",
+          "ties_included": true
+        },
+        "primary_holm2_p": 0.875,
+        "sensitivity_case_mcnemar_p": 0.875,
+        "sensitivity_holm2_p": 0.875,
+        "confidence_intervals": {
+          "case": {
+            "low": -0.1,
+            "high": 0.04,
+            "seed": 20261104,
+            "replicates": 20000,
+            "unit": "paired case",
+            "method": "percentile"
+          },
+          "task_cluster": {
+            "low": -0.08,
+            "high": 0.04,
+            "seed": 20261104,
+            "replicates": 20000,
+            "clusters": 10,
+            "unit": "whole task with its five initial states",
+            "method": "percentile"
+          }
+        },
+        "leave_one_task_out": [
+          {
+            "task": 0,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 1,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 2,
+            "difference": 0.0
+          },
+          {
+            "task": 3,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 4,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 5,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 6,
+            "difference": 0.0
+          },
+          {
+            "task": 7,
+            "difference": -0.044444444444444446
+          },
+          {
+            "task": 8,
+            "difference": -0.022222222222222223
+          },
+          {
+            "task": 9,
+            "difference": -0.022222222222222223
+          }
+        ],
+        "positive_direction": false,
+        "every_leave_one_task_out_positive": false,
+        "task_cluster_lower_bound_positive": false,
+        "direction_reproduced": false,
+        "sensitivity_note": "Case McNemar is descriptive sensitivity; repeated initial states are clustered within task for primary inference"
+      }
+    },
+    {
+      "frozen_direction": {
+        "suite": "libero_10",
+        "better": "local_long",
+        "worse": "jac_anchor",
+        "discovery_difference": 0.16666666666666666
+      },
+      "a_success": 37,
+      "b_success": 35,
+      "n_paired": 50,
+      "success_difference": 0.04,
+      "inference": {
+        "primary_task_block": {
+          "p_one_sided": 0.3125,
+          "extreme_assignments": 320,
+          "assignments": 1024,
+          "observed_mean_difference": 0.04,
+          "task_difference_counts": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "task_mean_differences": [
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.2,
+            -0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.2
+          ],
+          "null": "Task-level paired differences are sign-exchangeable under the null; ten tasks are the inference units",
+          "ties_included": true
+        },
+        "primary_holm2_p": 0.625,
+        "sensitivity_case_mcnemar_p": 0.376953125,
+        "sensitivity_holm2_p": 0.75390625,
+        "confidence_intervals": {
+          "case": {
+            "low": -0.08,
+            "high": 0.16,
+            "seed": 20261104,
+            "replicates": 20000,
+            "unit": "paired case",
+            "method": "percentile"
+          },
+          "task_cluster": {
+            "low": -0.04,
+            "high": 0.12,
+            "seed": 20261104,
+            "replicates": 20000,
+            "clusters": 10,
+            "unit": "whole task with its five initial states",
+            "method": "percentile"
+          }
+        },
+        "leave_one_task_out": [
+          {
+            "task": 0,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 1,
+            "difference": 0.022222222222222223
+          },
+          {
+            "task": 2,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 3,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 4,
+            "difference": 0.022222222222222223
+          },
+          {
+            "task": 5,
+            "difference": 0.06666666666666667
+          },
+          {
+            "task": 6,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 7,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 8,
+            "difference": 0.044444444444444446
+          },
+          {
+            "task": 9,
+            "difference": 0.022222222222222223
+          }
+        ],
+        "positive_direction": true,
+        "every_leave_one_task_out_positive": true,
+        "task_cluster_lower_bound_positive": false,
+        "direction_reproduced": false,
+        "sensitivity_note": "Case McNemar is descriptive sensitivity; repeated initial states are clustered within task for primary inference"
+      }
+    }
+  ],
+  "candidate_usability": {
+    "jac_anchor": {
+      "successes": 168,
+      "n": 200,
+      "success_rate": 0.84,
+      "full_success_rate": 0.95,
+      "usable": true
+    },
+    "local_long": {
+      "successes": 165,
+      "n": 200,
+      "success_rate": 0.825,
+      "full_success_rate": 0.95,
+      "usable": true
+    }
+  },
+  "figure_sources": "../vlm_local_confirmation_figures/exports/sha256.json",
+  "goal_complete": false,
+  "old_results_preserved": true
+}

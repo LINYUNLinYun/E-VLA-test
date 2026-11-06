@@ -1,0 +1,13 @@
+# ACTIVE — fix fragmented NVTX bars
+
+User screenshots show broken-up vlm tags and only CPU preprocess ranges. Root cause: previous files annotated CUDA Graph capture, not replay. Current capture.py registers graph objects as encoder/vlm/AE and wraps each actual replay in one runtime scope; capture labels suppressed. Nsight option node:host-only:nvtx-live, excludeTSL/CCCL. Retains per-node kernels without adding per-stage synchronization.
+
+Synthetic micro_projection.nsys-rep passed an official nvtx_gpu_proj_trace check:9 envelopes, exactly3 each encoder/vlm/AE,81 actual kernels,9 per envelope, exact first/last endpoints. Probe initially failed an env dict duplicate before GPU work; then a name parsing check incorrectly expected encoder instead of :encoder. Both retained. The correct micro GPU sample was reused; probe.json now passed.
+
+Full model run is already active under run.py --pipeline-alignment off, writes execution.json and models.console.log. Unified exec session is recorded in chat. Do not start a second runner. It holds GPU3 lease user-authorized idea2 runtime NVTX ranges and runs native→fresh_prepared→pipeline sequentially. All3 output exact names under nsys/idea2_experiment/runtime_ranges_20261026/.
+
+Native delegates to simple_labels_20261026.capture_native_dynamic with original dynamic dt,10 strict numerical checks; no more literal-dt helper. It remains a split-stage diagnostic, not original whole-JIT timing. Previous original/full native traces and completed100-case study remain untouched. GPU1/2 belong to visualization, GPU0 external; no other processes touched.
+
+After model completion: run official nsys stats nvtx_gpu_proj_trace once per file (SQLite export automatic). Normalize default-domain Name's leading colon. For Torch require8 encoder,8 vlm,8 AE runtime ranges and8 projected envelopes each. Verify each projection's endpoints from actual kernels associated by matching GraphLaunch API correlation, not only label names. Kernel count should remain104936 per Torch file. Native should have8 contiguous CPU scopes per stage, captured kernels and10 numerical checks max/MAE0. GPU CUDA APIs can run on a JAX worker thread, so do not require native GPU projection onto the Python thread.
+
+Write completion.json with hashes and the range proof, mark this file COMPLETED, release own GPU lease and notify resource coordinator if useful. Final download command must use new runtime_ranges_20261026 folder, same three basenames, overwriting user's local old aliases only as requested. Explain: GPU projection whole stage; CPU same-name short range is submission. Do not promise a CPU async submit range equals GPU execution.

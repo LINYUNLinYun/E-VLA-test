@@ -1,0 +1,93 @@
+{
+  "schema": "task-dependent-fastpath-literature-and-local-probe-evidence-v1",
+  "created_at": 1793883385.4172993,
+  "kind": "Future-hypothesis preparation, not a new frozen scientific cohort",
+  "primary_sources": [
+    {
+      "title": "Decoupled Early Exits for Task-Dependent Compute Allocation in Flow-Matching VLAs",
+      "version": "2609.29382v1",
+      "url": "https://arxiv.org/html/2609.29382v1",
+      "sections": [
+        "III",
+        "IV-C"
+      ],
+      "author_reported_facts": [
+        "比较VLM深度、动作专家深度和去噪步数；出口模块经过蒸馏训练，并使用KV合成。",
+        "Meta-World任务在不同计算轴上呈不同敏感性，文中有VLM截浅和AE截浅呈相反偏好的例子。"
+      ],
+      "limits_for_EASE": [
+        "不是同预算、无额外训练的当前Pi0路径对照。",
+        "作者对测试任务取最佳配置的潜力不能直接视为独立验证后的路由收益。"
+      ]
+    },
+    {
+      "title": "AutoPruner: Agentic Depth Pruning for Vision-Language-Action Models",
+      "version": "2610.23880v1",
+      "url": "https://arxiv.org/html/2610.23880v1",
+      "sections": [
+        "III-B",
+        "V-A",
+        "V-B"
+      ],
+      "author_reported_facts": [
+        "用同一校准输入下单层旁路产生的动作偏差做功能筛选，而非只依赖表征相似度。",
+        "多层联合影响并非单层偏差简单相加，部分配置还使用恢复训练。"
+      ],
+      "limits_for_EASE": [
+        "未给出当前Pi0中无需训练、不同类别上独立复现的路径对。",
+        "离线动作偏差只帮助提出候选，不能作为闭环成功率或提速证据。"
+      ]
+    }
+  ],
+  "local_source_feasibility": {
+    "files": {
+      "policies/realtime-vla-flash/scripts/experiment9/serve_action_layer_screen.py": "1e11e4ab2734d665ea7e8a3269920ec9aeec99cda2f90cfbab7c07bbf2f67b13",
+      "policies/realtime-vla-flash/scripts/experiment9/probe_action_expert_layers.py": "81ae977ce1b15191ae70092f3a5406740b9a8c104d70c66b72be08bdb250a497",
+      "policies/realtime-vla-flash/scripts/experiment9/screen_action_expert_candidates.py": "7c848fca1d690f0ac86cba77aaaf8115fefc26b57365d57cb0625cbf6bfccc04",
+      "preparations/ease_insights_20261103/vlm/backend.py": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6"
+    },
+    "findings": [
+      "当前冻结VLM backend的sample保持AE全18层，不能直接用现有VLM mask实现AE层剪裁。",
+      "历史experiment9有AE单层注册器与eager decoder探测，并有330份已保存的全18层单层旁路decoded-actions数据。",
+      "历史注册器要求Full18 VLM、D10和force-full，不能直接混入当前R5/D2/周期补偿合同。",
+      "如转向跨VLM/AE预算，需要单独的新runtime/manifest；固定H/R/D/噪声/精度，以实测成本匹配预算，不按层数直接等价。"
+    ]
+  },
+  "new_local_CPU_evidence": {
+    "analysis": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_existing_evidence_inventory/offline_layer_affinity/analysis.json",
+    "sha256": "01b0fdce85d72ef0d062712e2517465442b25fe32f0f541713e1ecab809a6e3a",
+    "source_inventory_sha256": "d1fe46336f78d32deef8ed1e8b0829cdb8822a62968a18d0afd63e79df7b591f",
+    "observations": 110,
+    "noise_repeats": 3,
+    "tasks": 40,
+    "layer_pairs_reported": 153,
+    "pairs_with_opposite_suite_mean_directions": 30,
+    "pairs_with_opposite_directions_in_all_three_noise_seeds": 4,
+    "suite_rank_correlation_range": [
+      0.9050567595459237,
+      0.9731682146542827
+    ],
+    "inference": [
+      "整体单层重要性排序很相似；少数离线反向点估计不能作为任务互补的成功率证据。",
+      "L2/L8在Goal上的离线优势方向不跨全部噪声种子稳定，不能据此撤销其既有闭环阴性结果。",
+      "四对跨种子反向的组合中，有些全局动作偏差很大，有些反向差极小；未提升任何一对为闭环候选。",
+      "若当前预定研究仍未复现，跨模块预算对照比继续只交换一个VLM层更值得作为一个有界新分支考虑。"
+    ],
+    "selected_fastpath_pair": null,
+    "new_closed_loop_success_evidence": false,
+    "actual_acceleration_evidence": false
+  },
+  "unchanged_current_experiment": {
+    "manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+    "discovery_target": 432,
+    "current_within_suite_outcomes_used_for_this_preparation": false,
+    "masks_or_criteria_or_heldout_cases_changed": false,
+    "priority": "Finish pending144 discovery cases, then full audit and frozen selection. If selected, run360confirmation before any research-branch decision."
+  },
+  "next_candidate_preparation_only": [
+    "After the current bounded branch has been completed, define one fixed no-training VLM-heavy path and one AE-heavy path with the same sampling contract.",
+    "Use a separate calibration pool only to choose usable, actually faster cost-matched configurations.",
+    "Freeze a two-path/category hypothesis before new independent closed-loop cases.",
+    "Keep failures and previous negative branches; if one path dominates all categories, use a fixed path and do not claim adaptive selection."
+  ]
+}

@@ -1,0 +1,1507 @@
+{
+  "passed": true,
+  "native_requests": 48,
+  "maximum_native_requests": 48,
+  "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+  "seed": 3377003299,
+  "input_scope": "first fixed real bank input; current observation and same seed for all routes",
+  "score_scope": "same current E score from the mixed 34-gate Full-D10 replay",
+  "compensation": "same two prior native module residual banks, ratio0.8",
+  "warmup_requests": 16,
+  "measured_requests": 32,
+  "repeats": 4,
+  "routes": [
+    {
+      "budget": "B4",
+      "route": "keep",
+      "attn": [],
+      "ffn": [],
+      "mask_cost": null,
+      "median_wall_ms": 51.24126374721527,
+      "median_vlm_ms": 19.259392738342285,
+      "samples": [
+        {
+          "request": 9,
+          "wall_ms": 57.17066675424576,
+          "vlm_ms": 20.318208694458008,
+          "native_timing": {
+            "input_processing_ms": 3.9070211350917816,
+            "vision_ms": 14.964735984802246,
+            "vlm_ms": 20.318208694458008,
+            "ae_ms": 15.332351684570312,
+            "decode_ms": 0.19751116633415222,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "keep",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 16,
+          "wall_ms": 51.16274952888489,
+          "vlm_ms": 19.214303970336914,
+          "native_timing": {
+            "input_processing_ms": 3.5476461052894592,
+            "vision_ms": 13.205504417419434,
+            "vlm_ms": 19.214303970336914,
+            "ae_ms": 12.792832374572754,
+            "decode_ms": 0.140313059091568,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "keep",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 17,
+          "wall_ms": 51.319777965545654,
+          "vlm_ms": 19.224576950073242,
+          "native_timing": {
+            "input_processing_ms": 3.3615045249462128,
+            "vision_ms": 13.737983703613281,
+            "vlm_ms": 19.224576950073242,
+            "ae_ms": 12.744704246520996,
+            "decode_ms": 0.14670193195343018,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "keep",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 24,
+          "wall_ms": 50.68312957882881,
+          "vlm_ms": 19.294208526611328,
+          "native_timing": {
+            "input_processing_ms": 3.3645182847976685,
+            "vision_ms": 13.07750415802002,
+            "vlm_ms": 19.294208526611328,
+            "ae_ms": 12.701696395874023,
+            "decode_ms": 0.14423206448554993,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "keep",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": []
+        }
+      ]
+    },
+    {
+      "budget": "B4",
+      "route": "U",
+      "attn": [
+        10
+      ],
+      "ffn": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "mask_cost": {
+        "budget_id": "B4",
+        "budget_hash": "ace94861560c6f43d01180c0afe7780f4380d50bb9fffee896dd68fa37db62a2",
+        "selected_attn": [
+          10
+        ],
+        "selected_ffn": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_support": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "support_layers": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_af": [
+          10
+        ],
+        "selected_module_count": 5,
+        "support_count": 4,
+        "attn_count": 1,
+        "ffn_count": 4,
+        "af_count": 1,
+        "saved_ms": 3.78372859954834,
+        "estimated_saved_ms": 3.78372859954834,
+        "candidate_index": 6873,
+        "candidate_key": 78119424,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 48.175375908613205,
+      "median_vlm_ms": 15.44704008102417,
+      "samples": [
+        {
+          "request": 10,
+          "wall_ms": 51.61239206790924,
+          "vlm_ms": 16.087007522583008,
+          "native_timing": {
+            "input_processing_ms": 3.9291679859161377,
+            "vision_ms": 14.726304054260254,
+            "vlm_ms": 16.087007522583008,
+            "ae_ms": 14.280735969543457,
+            "decode_ms": 0.17486140131950378,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "U",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 15,
+          "wall_ms": 49.013327807188034,
+          "vlm_ms": 15.400959968566895,
+          "native_timing": {
+            "input_processing_ms": 4.594933241605759,
+            "vision_ms": 13.20844841003418,
+            "vlm_ms": 15.400959968566895,
+            "ae_ms": 13.231103897094727,
+            "decode_ms": 0.17729029059410095,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "U",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 18,
+          "wall_ms": 47.337424010038376,
+          "vlm_ms": 15.481856346130371,
+          "native_timing": {
+            "input_processing_ms": 3.4318529069423676,
+            "vision_ms": 12.790783882141113,
+            "vlm_ms": 15.481856346130371,
+            "ae_ms": 13.367391586303711,
+            "decode_ms": 0.14467909932136536,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "U",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 23,
+          "wall_ms": 46.55210301280022,
+          "vlm_ms": 15.412223815917969,
+          "native_timing": {
+            "input_processing_ms": 3.390047699213028,
+            "vision_ms": 12.781567573547363,
+            "vlm_ms": 15.412223815917969,
+            "ae_ms": 12.746879577636719,
+            "decode_ms": 0.1405850052833557,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "U",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "budget": "B4",
+      "route": "W",
+      "attn": [
+        10
+      ],
+      "ffn": [
+        3,
+        5,
+        7,
+        10
+      ],
+      "mask_cost": {
+        "budget_id": "B4",
+        "budget_hash": "ace94861560c6f43d01180c0afe7780f4380d50bb9fffee896dd68fa37db62a2",
+        "selected_attn": [
+          10
+        ],
+        "selected_ffn": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_support": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "support_layers": [
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_af": [
+          10
+        ],
+        "selected_module_count": 5,
+        "support_count": 4,
+        "attn_count": 1,
+        "ffn_count": 4,
+        "af_count": 1,
+        "saved_ms": 3.78372859954834,
+        "estimated_saved_ms": 3.78372859954834,
+        "candidate_index": 6873,
+        "candidate_key": 78119424,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 49.343641847372055,
+      "median_vlm_ms": 15.433712005615234,
+      "samples": [
+        {
+          "request": 11,
+          "wall_ms": 50.23448169231415,
+          "vlm_ms": 15.505536079406738,
+          "native_timing": {
+            "input_processing_ms": 3.7528574466705322,
+            "vision_ms": 14.166015625,
+            "vlm_ms": 15.505536079406738,
+            "ae_ms": 14.362624168395996,
+            "decode_ms": 0.16713514924049377,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "W",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 14,
+          "wall_ms": 51.65920779109001,
+          "vlm_ms": 15.420415878295898,
+          "native_timing": {
+            "input_processing_ms": 3.8604028522968292,
+            "vision_ms": 14.403583526611328,
+            "vlm_ms": 15.420415878295898,
+            "ae_ms": 15.318016052246094,
+            "decode_ms": 0.21193921566009521,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "W",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 19,
+          "wall_ms": 47.258906066417694,
+          "vlm_ms": 15.376383781433105,
+          "native_timing": {
+            "input_processing_ms": 3.5281777381896973,
+            "vision_ms": 13.121536254882812,
+            "vlm_ms": 15.376383781433105,
+            "ae_ms": 12.963839530944824,
+            "decode_ms": 0.15234947204589844,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "W",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 22,
+          "wall_ms": 48.45280200242996,
+          "vlm_ms": 15.44700813293457,
+          "native_timing": {
+            "input_processing_ms": 3.605503588914871,
+            "vision_ms": 14.416895866394043,
+            "vlm_ms": 15.44700813293457,
+            "ae_ms": 12.722175598144531,
+            "decode_ms": 0.14657899737358093,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "W",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [
+            10
+          ],
+          "ffn": [
+            3,
+            5,
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "budget": "B4",
+      "route": "F",
+      "attn": [],
+      "ffn": [
+        1,
+        3,
+        5,
+        7,
+        10
+      ],
+      "mask_cost": {
+        "budget_id": "B4",
+        "budget_hash": "ace94861560c6f43d01180c0afe7780f4380d50bb9fffee896dd68fa37db62a2",
+        "selected_attn": [],
+        "selected_ffn": [
+          1,
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_support": [
+          1,
+          3,
+          5,
+          7,
+          10
+        ],
+        "support_layers": [
+          1,
+          3,
+          5,
+          7,
+          10
+        ],
+        "selected_af": [],
+        "selected_module_count": 5,
+        "support_count": 5,
+        "attn_count": 0,
+        "ffn_count": 5,
+        "af_count": 0,
+        "saved_ms": 4.147712707519531,
+        "estimated_saved_ms": 4.147712707519531,
+        "candidate_index": 7236,
+        "candidate_key": 78249984,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 48.45944233238697,
+      "median_vlm_ms": 14.963712215423584,
+      "samples": [
+        {
+          "request": 12,
+          "wall_ms": 49.8606339097023,
+          "vlm_ms": 14.973952293395996,
+          "native_timing": {
+            "input_processing_ms": 3.7525035440921783,
+            "vision_ms": 15.340543746948242,
+            "vlm_ms": 14.973952293395996,
+            "ae_ms": 13.302656173706055,
+            "decode_ms": 0.18170475959777832,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "F",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 13,
+          "wall_ms": 49.624718725681305,
+          "vlm_ms": 14.943231582641602,
+          "native_timing": {
+            "input_processing_ms": 3.68422269821167,
+            "vision_ms": 13.507583618164062,
+            "vlm_ms": 14.943231582641602,
+            "ae_ms": 15.060992240905762,
+            "decode_ms": 0.20613893866539001,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "F",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 20,
+          "wall_ms": 47.294165939092636,
+          "vlm_ms": 14.982144355773926,
+          "native_timing": {
+            "input_processing_ms": 3.6031529307365417,
+            "vision_ms": 13.235199928283691,
+            "vlm_ms": 14.982144355773926,
+            "ae_ms": 13.192319869995117,
+            "decode_ms": 0.1405365765094757,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "F",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "request": 21,
+          "wall_ms": 46.89878597855568,
+          "vlm_ms": 14.953472137451172,
+          "native_timing": {
+            "input_processing_ms": 3.6167651414871216,
+            "vision_ms": 13.091839790344238,
+            "vlm_ms": 14.953472137451172,
+            "ae_ms": 12.857343673706055,
+            "decode_ms": 0.1409761607646942,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B4",
+          "route": "F",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "budget": "B6",
+      "route": "keep",
+      "attn": [],
+      "ffn": [],
+      "mask_cost": null,
+      "median_wall_ms": 51.87760107219219,
+      "median_vlm_ms": 19.2936954498291,
+      "samples": [
+        {
+          "request": 33,
+          "wall_ms": 50.94514414668083,
+          "vlm_ms": 19.26348876953125,
+          "native_timing": {
+            "input_processing_ms": 3.3993422985076904,
+            "vision_ms": 13.114272117614746,
+            "vlm_ms": 19.26348876953125,
+            "ae_ms": 12.918784141540527,
+            "decode_ms": 0.14350563287734985,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "keep",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 40,
+          "wall_ms": 51.85418576002121,
+          "vlm_ms": 19.335168838500977,
+          "native_timing": {
+            "input_processing_ms": 3.6370977759361267,
+            "vision_ms": 13.367263793945312,
+            "vlm_ms": 19.335168838500977,
+            "ae_ms": 13.0447359085083,
+            "decode_ms": 0.18649175763130188,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "keep",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 41,
+          "wall_ms": 51.901016384363174,
+          "vlm_ms": 19.274751663208008,
+          "native_timing": {
+            "input_processing_ms": 3.666762262582779,
+            "vision_ms": 13.224960327148438,
+            "vlm_ms": 19.274751663208008,
+            "ae_ms": 13.404159545898438,
+            "decode_ms": 0.157136470079422,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "keep",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": []
+        },
+        {
+          "request": 48,
+          "wall_ms": 52.018485963344574,
+          "vlm_ms": 19.312639236450195,
+          "native_timing": {
+            "input_processing_ms": 3.6838017404079437,
+            "vision_ms": 13.307904243469238,
+            "vlm_ms": 19.312639236450195,
+            "ae_ms": 13.330304145812988,
+            "decode_ms": 0.17321854829788208,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "keep",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": []
+        }
+      ]
+    },
+    {
+      "budget": "B6",
+      "route": "U",
+      "attn": [],
+      "ffn": [
+        1,
+        3,
+        5,
+        7,
+        10,
+        13,
+        17
+      ],
+      "mask_cost": {
+        "budget_id": "B6",
+        "budget_hash": "fd6e5eb515bb7d73d259ac0853a8e80f0e74827ec8289903cdbbb09b8cee3556",
+        "selected_attn": [],
+        "selected_ffn": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_support": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "support_layers": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_af": [],
+        "selected_module_count": 7,
+        "support_count": 7,
+        "attn_count": 0,
+        "ffn_count": 7,
+        "af_count": 0,
+        "saved_ms": 5.940256118774414,
+        "estimated_saved_ms": 5.940256118774414,
+        "candidate_index": 73610,
+        "candidate_key": 9205055488,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 46.42348922789097,
+      "median_vlm_ms": 13.195727825164795,
+      "samples": [
+        {
+          "request": 34,
+          "wall_ms": 44.605594128370285,
+          "vlm_ms": 13.017087936401367,
+          "native_timing": {
+            "input_processing_ms": 3.4355372190475464,
+            "vision_ms": 13.046784400939941,
+            "vlm_ms": 13.017087936401367,
+            "ae_ms": 12.8788480758667,
+            "decode_ms": 0.1424737274646759,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "U",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 39,
+          "wall_ms": 45.47939822077751,
+          "vlm_ms": 13.109151840209961,
+          "native_timing": {
+            "input_processing_ms": 3.599550575017929,
+            "vision_ms": 13.163519859313965,
+            "vlm_ms": 13.109151840209961,
+            "ae_ms": 13.181952476501465,
+            "decode_ms": 0.1920051872730255,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "U",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 42,
+          "wall_ms": 47.367580235004425,
+          "vlm_ms": 13.444000244140625,
+          "native_timing": {
+            "input_processing_ms": 3.78529354929924,
+            "vision_ms": 14.400511741638184,
+            "vlm_ms": 13.444000244140625,
+            "ae_ms": 13.416447639465332,
+            "decode_ms": 0.16013160347938538,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "U",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 47,
+          "wall_ms": 47.465987503528595,
+          "vlm_ms": 13.282303810119629,
+          "native_timing": {
+            "input_processing_ms": 3.9376765489578247,
+            "vision_ms": 13.966336250305176,
+            "vlm_ms": 13.282303810119629,
+            "ae_ms": 13.67347240447998,
+            "decode_ms": 0.1706629991531372,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "U",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "budget": "B6",
+      "route": "W",
+      "attn": [],
+      "ffn": [
+        1,
+        3,
+        5,
+        7,
+        10,
+        13,
+        17
+      ],
+      "mask_cost": {
+        "budget_id": "B6",
+        "budget_hash": "fd6e5eb515bb7d73d259ac0853a8e80f0e74827ec8289903cdbbb09b8cee3556",
+        "selected_attn": [],
+        "selected_ffn": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_support": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "support_layers": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_af": [],
+        "selected_module_count": 7,
+        "support_count": 7,
+        "attn_count": 0,
+        "ffn_count": 7,
+        "af_count": 0,
+        "saved_ms": 5.940256118774414,
+        "estimated_saved_ms": 5.940256118774414,
+        "candidate_index": 73610,
+        "candidate_key": 9205055488,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 46.51249758899212,
+      "median_vlm_ms": 13.12665605545044,
+      "samples": [
+        {
+          "request": 35,
+          "wall_ms": 46.80720344185829,
+          "vlm_ms": 13.038592338562012,
+          "native_timing": {
+            "input_processing_ms": 3.9886757731437683,
+            "vision_ms": 14.48960018157959,
+            "vlm_ms": 13.038592338562012,
+            "ae_ms": 12.806143760681152,
+            "decode_ms": 0.15269964933395386,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "W",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 38,
+          "wall_ms": 45.037563890218735,
+          "vlm_ms": 13.072383880615234,
+          "native_timing": {
+            "input_processing_ms": 3.514312207698822,
+            "vision_ms": 12.930047988891602,
+            "vlm_ms": 13.072383880615234,
+            "ae_ms": 13.125632286071777,
+            "decode_ms": 0.18371641635894775,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "W",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 43,
+          "wall_ms": 46.217791736125946,
+          "vlm_ms": 13.180928230285645,
+          "native_timing": {
+            "input_processing_ms": 3.7005841732025146,
+            "vision_ms": 13.638655662536621,
+            "vlm_ms": 13.180928230285645,
+            "ae_ms": 13.315072059631348,
+            "decode_ms": 0.1557283103466034,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "W",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 46,
+          "wall_ms": 54.53968048095703,
+          "vlm_ms": 13.219840049743652,
+          "native_timing": {
+            "input_processing_ms": 3.6909393966197968,
+            "vision_ms": 14.78758430480957,
+            "vlm_ms": 13.219840049743652,
+            "ae_ms": 20.182016372680664,
+            "decode_ms": 0.3534555435180664,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "W",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "budget": "B6",
+      "route": "F",
+      "attn": [],
+      "ffn": [
+        1,
+        3,
+        5,
+        7,
+        10,
+        13,
+        17
+      ],
+      "mask_cost": {
+        "budget_id": "B6",
+        "budget_hash": "fd6e5eb515bb7d73d259ac0853a8e80f0e74827ec8289903cdbbb09b8cee3556",
+        "selected_attn": [],
+        "selected_ffn": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_support": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "support_layers": [
+          1,
+          3,
+          5,
+          7,
+          10,
+          13,
+          17
+        ],
+        "selected_af": [],
+        "selected_module_count": 7,
+        "support_count": 7,
+        "attn_count": 0,
+        "ffn_count": 7,
+        "af_count": 0,
+        "saved_ms": 5.940256118774414,
+        "estimated_saved_ms": 5.940256118774414,
+        "candidate_index": 73610,
+        "candidate_key": 9205055488,
+        "saving_basis": "sum of measured A/F/AF state savings; joint AF cost is not A+F"
+      },
+      "median_wall_ms": 45.83740793168545,
+      "median_vlm_ms": 13.076496124267578,
+      "samples": [
+        {
+          "request": 36,
+          "wall_ms": 44.370200484991074,
+          "vlm_ms": 13.025279998779297,
+          "native_timing": {
+            "input_processing_ms": 3.3882446587085724,
+            "vision_ms": 12.901408195495605,
+            "vlm_ms": 13.025279998779297,
+            "ae_ms": 12.797951698303223,
+            "decode_ms": 0.14232471585273743,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "F",
+          "repeat": 0,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 37,
+          "wall_ms": 46.01941630244255,
+          "vlm_ms": 13.022208213806152,
+          "native_timing": {
+            "input_processing_ms": 3.3786147832870483,
+            "vision_ms": 13.184000015258789,
+            "vlm_ms": 13.022208213806152,
+            "ae_ms": 14.134271621704102,
+            "decode_ms": 0.20129606127738953,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "F",
+          "repeat": 1,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 44,
+          "wall_ms": 45.76963186264038,
+          "vlm_ms": 13.195263862609863,
+          "native_timing": {
+            "input_processing_ms": 3.4165792167186737,
+            "vision_ms": 13.339648246765137,
+            "vlm_ms": 13.195263862609863,
+            "ae_ms": 13.47481632232666,
+            "decode_ms": 0.16727298498153687,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "F",
+          "repeat": 2,
+          "order": [
+            "keep",
+            "U",
+            "W",
+            "F"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        },
+        {
+          "request": 45,
+          "wall_ms": 45.905184000730515,
+          "vlm_ms": 13.12771224975586,
+          "native_timing": {
+            "input_processing_ms": 3.643658012151718,
+            "vision_ms": 13.46662425994873,
+            "vlm_ms": 13.12771224975586,
+            "ae_ms": 13.27302360534668,
+            "decode_ms": 0.164814293384552,
+            "nodes": [
+              1.0,
+              0.5,
+              0.0
+            ]
+          },
+          "budget": "B6",
+          "route": "F",
+          "repeat": 3,
+          "order": [
+            "F",
+            "W",
+            "U",
+            "keep"
+          ],
+          "attn": [],
+          "ffn": [
+            1,
+            3,
+            5,
+            7,
+            10,
+            13,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "budget": "B4",
+      "repeat": 0,
+      "W_minus_U_wall_ms": -1.3779103755950928,
+      "W_minus_U_vlm_ms": -0.5814714431762695
+    },
+    {
+      "budget": "B4",
+      "repeat": 1,
+      "W_minus_U_wall_ms": 2.6458799839019775,
+      "W_minus_U_vlm_ms": 0.019455909729003906
+    },
+    {
+      "budget": "B4",
+      "repeat": 2,
+      "W_minus_U_wall_ms": -0.07851794362068176,
+      "W_minus_U_vlm_ms": -0.10547256469726562
+    },
+    {
+      "budget": "B4",
+      "repeat": 3,
+      "W_minus_U_wall_ms": 1.9006989896297455,
+      "W_minus_U_vlm_ms": 0.03478431701660156
+    },
+    {
+      "budget": "B6",
+      "repeat": 0,
+      "W_minus_U_wall_ms": 2.2016093134880066,
+      "W_minus_U_vlm_ms": 0.02150440216064453
+    },
+    {
+      "budget": "B6",
+      "repeat": 1,
+      "W_minus_U_wall_ms": -0.44183433055877686,
+      "W_minus_U_vlm_ms": -0.03676795959472656
+    },
+    {
+      "budget": "B6",
+      "repeat": 2,
+      "W_minus_U_wall_ms": -1.149788498878479,
+      "W_minus_U_vlm_ms": -0.26307201385498047
+    },
+    {
+      "budget": "B6",
+      "repeat": 3,
+      "W_minus_U_wall_ms": 7.073692977428436,
+      "W_minus_U_vlm_ms": -0.06246376037597656
+    }
+  ],
+  "limitations": "one input and four balanced-order repeats; actual wall differences are descriptive, not general matched-budget proof",
+  "time": 1793541434.9013748
+}

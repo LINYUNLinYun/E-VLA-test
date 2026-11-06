@@ -1,0 +1,10 @@
+# This is intentionally not runnable: generate the real frozen file from calibration.
+# python -m experiments.pi05_hidden_probe.run_patch_probe \
+#   --config experiments/pi05_hidden_probe/configs/calibration.yaml \
+#   --calibration-results results/pi05_hidden_probe/calibration/probe_results.jsonl \
+#   --freeze-config results/pi05_hidden_probe/frozen_probe_config.yaml
+stage: evaluation
+manifest: ../data/manifest.jsonl
+output_dir: ../../../results/pi05_hidden_probe/evaluation
+source_layers: all
+probes: []

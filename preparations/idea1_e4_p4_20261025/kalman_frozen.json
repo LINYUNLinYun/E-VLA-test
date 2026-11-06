@@ -1,0 +1,279 @@
+{
+  "status": "frozen",
+  "parameters": {
+    "q_u": 0.0001,
+    "q_w": 100.0,
+    "g": 0.5,
+    "beta": 1.0,
+    "shape": "q_full"
+  },
+  "calibration_score_mm": 8.604762440182776,
+  "old_reference_score_mm": 9.20888859328053,
+  "candidate_count": 208,
+  "candidate_budget_slots": 211,
+  "manifest_sha256": "01f4b1f55820ced459a83b3be6d36713c92fae06a2c105714c848cceee1bda2a",
+  "disclosure": "Previously inspected reused data; not blind evaluation",
+  "shape_q": [
+    [
+      0.866822356642739,
+      -0.00463671562381874,
+      0.47395733156945474
+    ],
+    [
+      -0.00463671562381874,
+      0.763727164994209,
+      0.045752066525260475
+    ],
+    [
+      0.47395733156945474,
+      0.045752066525260475,
+      1.3694504783630517
+    ]
+  ],
+  "shape_r": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "shapes": {
+    "q": {
+      "matrix": [
+        [
+          0.866822356642739,
+          -0.00463671562381874,
+          0.47395733156945474
+        ],
+        [
+          -0.00463671562381874,
+          0.763727164994209,
+          0.045752066525260475
+        ],
+        [
+          0.47395733156945474,
+          0.045752066525260475,
+          1.3694504783630517
+        ]
+      ],
+      "eigenvalues": [
+        0.577564113742049,
+        0.7663149863171345,
+        1.6561208999408157
+      ],
+      "condition": 2.867423478253828,
+      "empirical_weight": 1.0,
+      "identity_shrinkage": 0.0,
+      "sha256": "f0256b015ccd3a46113e7c0c99130c0e72a3c30c15ada11a1d4622519ca80644"
+    },
+    "r": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eigenvalues": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "condition": 1.0,
+      "empirical_weight": 0.0,
+      "identity_shrinkage": 1.0,
+      "sha256": "982ffff09b97e63d96969df8fb6bc47f087f2ee87867b705b4d93a619dbc7b43"
+    },
+    "training_episodes": [
+      [
+        "libero_10",
+        0,
+        0
+      ],
+      [
+        "libero_10",
+        0,
+        1
+      ],
+      [
+        "libero_10",
+        0,
+        2
+      ],
+      [
+        "libero_10",
+        0,
+        3
+      ],
+      [
+        "libero_10",
+        0,
+        4
+      ],
+      [
+        "libero_goal",
+        0,
+        0
+      ],
+      [
+        "libero_goal",
+        0,
+        1
+      ],
+      [
+        "libero_goal",
+        0,
+        2
+      ],
+      [
+        "libero_goal",
+        0,
+        3
+      ],
+      [
+        "libero_goal",
+        0,
+        4
+      ],
+      [
+        "libero_object",
+        0,
+        0
+      ],
+      [
+        "libero_object",
+        0,
+        1
+      ],
+      [
+        "libero_object",
+        0,
+        2
+      ],
+      [
+        "libero_object",
+        0,
+        3
+      ],
+      [
+        "libero_object",
+        0,
+        4
+      ],
+      [
+        "libero_spatial",
+        0,
+        0
+      ],
+      [
+        "libero_spatial",
+        0,
+        1
+      ],
+      [
+        "libero_spatial",
+        0,
+        2
+      ],
+      [
+        "libero_spatial",
+        0,
+        3
+      ],
+      [
+        "libero_spatial",
+        0,
+        4
+      ]
+    ]
+  },
+  "boundary_winner": true,
+  "fold_scores": [
+    {
+      "prefix_equal_mean_mm": 8.146679647819045,
+      "sample_l2_p95_mm": 18.09682975659142,
+      "sample_lateral_p95_mm": 38.82595336374254,
+      "suites": {
+        "libero_10": 6.188516651290968,
+        "libero_goal": 5.9919861258950515,
+        "libero_object": 7.055515934792557,
+        "libero_spatial": 13.350699879297602
+      },
+      "points": 132,
+      "valid_lateral_samples": 643
+    },
+    {
+      "prefix_equal_mean_mm": 8.326723452476875,
+      "sample_l2_p95_mm": 20.12136012767772,
+      "sample_lateral_p95_mm": 39.76693955593454,
+      "suites": {
+        "libero_10": 6.467491257617487,
+        "libero_goal": 8.474493564646624,
+        "libero_object": 6.361574066007421,
+        "libero_spatial": 12.003334921635966
+      },
+      "points": 124,
+      "valid_lateral_samples": 611
+    },
+    {
+      "prefix_equal_mean_mm": 8.607126138171658,
+      "sample_l2_p95_mm": 22.28177652670753,
+      "sample_lateral_p95_mm": 43.81336309017479,
+      "suites": {
+        "libero_10": 6.029636435264635,
+        "libero_goal": 7.270786731275831,
+        "libero_object": 6.822034219165655,
+        "libero_spatial": 14.30604716698051
+      },
+      "points": 122,
+      "valid_lateral_samples": 601
+    },
+    {
+      "prefix_equal_mean_mm": 9.178943166988274,
+      "sample_l2_p95_mm": 21.959864151924904,
+      "sample_lateral_p95_mm": 41.35013312366693,
+      "suites": {
+        "libero_10": 5.233454019542896,
+        "libero_goal": 10.285483998487178,
+        "libero_object": 6.537333374481465,
+        "libero_spatial": 14.659501275441558
+      },
+      "points": 128,
+      "valid_lateral_samples": 629
+    },
+    {
+      "prefix_equal_mean_mm": 8.764339795458028,
+      "sample_l2_p95_mm": 22.774314092873684,
+      "sample_lateral_p95_mm": 46.368760329154014,
+      "suites": {
+        "libero_10": 5.307723346139164,
+        "libero_goal": 7.110960977242054,
+        "libero_object": 7.942329282985088,
+        "libero_spatial": 14.696345575465802
+      },
+      "points": 128,
+      "valid_lateral_samples": 639
+    }
+  ],
+  "sha256": "21172246f17ff192792c1c14178960dc29586ce1bcb66b24354e3b6496f7cb82"
+}

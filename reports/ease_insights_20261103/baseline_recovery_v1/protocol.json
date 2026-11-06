@@ -1,0 +1,59 @@
+{
+  "schema": "ease-full-health-calibration-v1",
+  "frozen_at": 1793890640.2232482,
+  "status": "before_new_outcomes",
+  "suite_order": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "inits": [
+    44
+  ],
+  "condition": {
+    "id": "full_d10",
+    "model": "pi0",
+    "mode": "full",
+    "compensation": null,
+    "period": 2,
+    "H": 50,
+    "R": 5,
+    "D": 10,
+    "refresh_D": 10,
+    "skip": []
+  },
+  "total_episodes": 40,
+  "policy_action_limits": {
+    "libero_spatial": 220,
+    "libero_object": 280,
+    "libero_goal": 300,
+    "libero_10": 520
+  },
+  "settling_actions": 10,
+  "environment_seed": 7,
+  "health_rule": {
+    "minimum_total_successes": 32,
+    "total_cases": 40,
+    "minimum_suite_successes": 6,
+    "cases_per_suite": 10,
+    "role": "Health gate only; no complementary-path inference or task filtering"
+  },
+  "no_task_filtering": true,
+  "no_fast_path_inference": true,
+  "reason": "LIBERO90 Full7/72 makes that pool unsuitable for a usable-path search; prior four-suite Full190/200 motivates a fresh compatibility check.",
+  "inherited_science": "Identical Pi0 checkpoint, normalization, H50/R5, FullD10 arithmetic and seed contract; suite budgets restore the accepted common-suite protocol.",
+  "future_search": "Separate protocol and unused initial states; this calibration alone selects no mask or complement hypothesis."
+}

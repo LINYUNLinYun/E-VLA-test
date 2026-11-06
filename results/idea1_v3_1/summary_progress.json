@@ -1,0 +1,448 @@
+{
+  "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+  "quality": [
+    {
+      "condition": "pi0_full",
+      "model": "pi0",
+      "skip": [],
+      "valid": 18,
+      "successes": 17,
+      "success_rate": 0.9444444444444444,
+      "per_suite": {
+        "libero_spatial": {
+          "successes": 9,
+          "valid": 10
+        },
+        "libero_object": {
+          "successes": 8,
+          "valid": 8
+        },
+        "libero_goal": {
+          "successes": 0,
+          "valid": 0
+        },
+        "libero_10": {
+          "successes": 0,
+          "valid": 0
+        }
+      },
+      "paired_valid": 18,
+      "paired_variant_successes": 17,
+      "paired_full_successes": 17,
+      "relative_retention": 1.0,
+      "passes_70_percent_floor": true,
+      "failure_furthest_phase": {
+        "transport": 1
+      },
+      "phase_caveat": "Heuristic progress evidence, not a causal failure diagnosis",
+      "data_use": "Exploratory screen and candidate selection share observations"
+    },
+    {
+      "condition": "xiaomi-robotic0_full",
+      "model": "xiaomi-robotic0",
+      "skip": [],
+      "valid": 40,
+      "successes": 39,
+      "success_rate": 0.975,
+      "per_suite": {
+        "libero_spatial": {
+          "successes": 10,
+          "valid": 10
+        },
+        "libero_object": {
+          "successes": 10,
+          "valid": 10
+        },
+        "libero_goal": {
+          "successes": 10,
+          "valid": 10
+        },
+        "libero_10": {
+          "successes": 9,
+          "valid": 10
+        }
+      },
+      "paired_valid": 40,
+      "paired_variant_successes": 39,
+      "paired_full_successes": 39,
+      "relative_retention": 1.0,
+      "passes_70_percent_floor": true,
+      "failure_furthest_phase": {
+        "release_or_final_action": 1
+      },
+      "phase_caveat": "Heuristic progress evidence, not a causal failure diagnosis",
+      "data_use": "Exploratory screen and candidate selection share observations"
+    },
+    {
+      "condition": "xiaomi-robotic0_reference_skip12",
+      "model": "xiaomi-robotic0",
+      "skip": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35
+      ],
+      "valid": 19,
+      "successes": 19,
+      "success_rate": 1.0,
+      "per_suite": {
+        "libero_spatial": {
+          "successes": 10,
+          "valid": 10
+        },
+        "libero_object": {
+          "successes": 9,
+          "valid": 9
+        },
+        "libero_goal": {
+          "successes": 0,
+          "valid": 0
+        },
+        "libero_10": {
+          "successes": 0,
+          "valid": 0
+        }
+      },
+      "paired_valid": 19,
+      "paired_variant_successes": 19,
+      "paired_full_successes": 19,
+      "relative_retention": 1.0,
+      "passes_70_percent_floor": true,
+      "failure_furthest_phase": {},
+      "phase_caveat": "Heuristic progress evidence, not a causal failure diagnosis",
+      "data_use": "Exploratory screen and candidate selection share observations"
+    }
+  ],
+  "throughput": [
+    {
+      "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+      "condition": "pi05_full",
+      "wall_s": 118.93809887394309,
+      "newly_completed_episodes": 8,
+      "completed_before": 0,
+      "completed_after": 8,
+      "workers": 1,
+      "variant": "full_io",
+      "scope": "Aggregate rollout wall time; includes simulation, RPC, optional I/O; excludes service startup",
+      "completed_episodes": 8,
+      "episodes_per_hour": 242.14276394752002,
+      "warning": "Aggregate throughput includes environment/RPC/I/O; not a model latency speedup"
+    },
+    {
+      "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+      "condition": "pi05_full",
+      "wall_s": 93.87789860740304,
+      "newly_completed_episodes": 8,
+      "completed_before": 8,
+      "completed_after": 16,
+      "workers": 1,
+      "variant": "lean_io",
+      "scope": "Aggregate rollout wall time; includes simulation, RPC, optional I/O; excludes service startup",
+      "completed_episodes": 8,
+      "episodes_per_hour": 306.7814728197259,
+      "warning": "Aggregate throughput includes environment/RPC/I/O; not a model latency speedup"
+    },
+    {
+      "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+      "condition": "pi05_full",
+      "wall_s": 88.6689916215837,
+      "newly_completed_episodes": 8,
+      "completed_before": 16,
+      "completed_after": 24,
+      "workers": 1,
+      "variant": "reuse_env",
+      "scope": "Aggregate rollout wall time; includes simulation, RPC, optional I/O; excludes service startup",
+      "completed_episodes": 8,
+      "episodes_per_hour": 324.8035133061053,
+      "warning": "Aggregate throughput includes environment/RPC/I/O; not a model latency speedup"
+    },
+    {
+      "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+      "condition": "pi05_full",
+      "wall_s": 57.31482079252601,
+      "newly_completed_episodes": 8,
+      "completed_before": 24,
+      "completed_after": 32,
+      "workers": 2,
+      "variant": "two_workers",
+      "scope": "Aggregate rollout wall time; includes simulation, RPC, optional I/O; excludes service startup",
+      "completed_episodes": 8,
+      "episodes_per_hour": 502.48783127584323,
+      "warning": "Aggregate throughput includes environment/RPC/I/O; not a model latency speedup"
+    },
+    {
+      "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+      "condition": "xiaomi-robotic0_full",
+      "wall_s": 386.6396203637123,
+      "newly_completed_episodes": 40,
+      "completed_before": 0,
+      "completed_after": 40,
+      "workers": 1,
+      "variant": null,
+      "scope": "Aggregate rollout wall time; includes simulation, RPC, optional I/O; excludes service startup",
+      "completed_episodes": 40,
+      "episodes_per_hour": 372.43984427808783,
+      "warning": "Aggregate throughput includes environment/RPC/I/O; not a model latency speedup"
+    }
+  ],
+  "performance": [
+    {
+      "condition": "pi05_full",
+      "model": "pi05",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 108.11774432659149,
+          "p95": 134.04024187475443,
+          "p99": 145.00354100018745
+        },
+        "server_request_ms": {
+          "p50": 106.43572360277176,
+          "p95": 132.2549633681774,
+          "p99": 142.58338965475565
+        },
+        "vision_ms": {
+          "p50": 12.506768107414246,
+          "p95": 13.981903158128262,
+          "p99": 16.34449996054176
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 108.55140909552574,
+        "first_vision_ms": 3256.4818039536476,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      },
+      "matched_full_speedups": {
+        "vision_ms": 1.1315404526310147,
+        "request_roundtrip_ms": 1.0002132128866585
+      }
+    },
+    {
+      "condition": "pi0_full",
+      "model": "pi0",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 101.11689567565918,
+          "p95": 107.94935096055269,
+          "p99": 112.16879114508629
+        },
+        "server_request_ms": {
+          "p50": 99.22769665718079,
+          "p95": 106.1775166541338,
+          "p99": 110.6011451408267
+        },
+        "vision_ms": {
+          "p50": 12.398365885019302,
+          "p95": 12.775342352688313,
+          "p99": 13.00752080976966
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 106.77977278828621,
+        "first_vision_ms": 3206.770360469818,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      },
+      "matched_full_speedups": {
+        "vision_ms": 1.1455218061866599,
+        "request_roundtrip_ms": 1.0282191850972024
+      }
+    },
+    {
+      "condition": "xiaomi-robotic0_full",
+      "model": "xiaomi-robotic0",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 150.41615813970566,
+          "p95": 187.2151842340826,
+          "p99": 245.363743044436
+        },
+        "server_request_ms": {
+          "p50": 148.68936873972416,
+          "p95": 184.97910853475324,
+          "p99": 243.10633890330794
+        },
+        "vision_ms": {
+          "p50": 20.83993625640869,
+          "p95": 31.19354848861694,
+          "p99": 35.39814670562744
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 149.21629056334496,
+        "first_vision_ms": 20.718591690063477,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      },
+      "matched_full_speedups": null
+    },
+    {
+      "condition": "db-cogact_full",
+      "model": "db-cogact",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 178.21447178721428,
+          "p95": 193.69845557957888,
+          "p99": 215.4473439976573
+        },
+        "server_request_ms": {
+          "p50": 176.37423053383827,
+          "p95": 191.43163841217756,
+          "p99": 212.96108309179544
+        },
+        "vision_ms": {
+          "p50": 12.310656070709229,
+          "p95": 14.039876699447632,
+          "p99": 15.3685245418549
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 182.2882667183876,
+        "first_vision_ms": 11.757120132446289,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      },
+      "matched_full_speedups": null
+    },
+    {
+      "condition": "pi0_full_vision_scan_reference",
+      "model": "pi0",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 103.97033207118511,
+          "p95": 109.67898983508348,
+          "p99": 114.55783624202014
+        },
+        "server_request_ms": {
+          "p50": 102.23646648228168,
+          "p95": 107.9190157353878,
+          "p99": 112.74865489453079
+        },
+        "vision_ms": {
+          "p50": 14.202598482370377,
+          "p95": 14.574757777154446,
+          "p99": 14.836654253304014
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 110.53789407014847,
+        "first_vision_ms": 3050.8053079247475,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 0.8729646128072507,
+        "request_roundtrip_ms": 0.9725552824668072
+      },
+      "matched_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      }
+    },
+    {
+      "condition": "pi05_full_vision_scan_reference",
+      "model": "pi05",
+      "summary": {
+        "request_roundtrip_ms": {
+          "p50": 108.14079642295837,
+          "p95": 119.31280512362719,
+          "p99": 130.19784536212683
+        },
+        "server_request_ms": {
+          "p50": 106.3944585621357,
+          "p95": 117.22488198429346,
+          "p99": 128.16587898880243
+        },
+        "vision_ms": {
+          "p50": 14.151914045214653,
+          "p95": 15.487397275865074,
+          "p99": 20.94431180506945
+        }
+      },
+      "cold": {
+        "first_completed_request_ms": 113.62951248884201,
+        "first_vision_ms": 3244.8705285787582,
+        "definition": "Includes any first-trace compilation; excluded from steady-state measured rows"
+      },
+      "native_full_speedups": {
+        "vision_ms": 0.883750994208681,
+        "request_roundtrip_ms": 0.999786832563386
+      },
+      "matched_full_speedups": {
+        "vision_ms": 1.0,
+        "request_roundtrip_ms": 1.0
+      }
+    }
+  ],
+  "frontier": {
+    "xiaomi-robotic0": {
+      "maximum_tested_skip_meeting_relative_floor": 12,
+      "candidates": [
+        {
+          "condition": "xiaomi-robotic0_reference_skip12",
+          "valid": 19,
+          "relative_retention": 1.0
+        }
+      ],
+      "interpretation": "Largest usable tested candidate, not an optimum over all layer masks"
+    },
+    "db-cogact": {
+      "maximum_tested_skip_meeting_relative_floor": null,
+      "candidates": [],
+      "interpretation": "Largest usable tested candidate, not an optimum over all layer masks"
+    }
+  },
+  "evaluation_optimizations": [
+    {
+      "condition": "pi05_full",
+      "variant": "lean_io",
+      "paired_valid_episodes": 8,
+      "same_initial_states_outcomes_inputs_noise_outputs": false,
+      "max_action_abs_error": 2.013270139694214,
+      "aggregate_throughput_speedup": 1.2669446231571682,
+      "eligible_for_adoption": false,
+      "caveat": "Exact scene budgets and steady services; rendering remains enabled; this is throughput, not exclusive model latency"
+    },
+    {
+      "condition": "pi05_full",
+      "variant": "reuse_env",
+      "paired_valid_episodes": 8,
+      "same_initial_states_outcomes_inputs_noise_outputs": false,
+      "max_action_abs_error": 2.0035065412521362,
+      "aggregate_throughput_speedup": 1.3413719576460292,
+      "eligible_for_adoption": false,
+      "caveat": "Exact scene budgets and steady services; rendering remains enabled; this is throughput, not exclusive model latency"
+    },
+    {
+      "condition": "pi05_full",
+      "variant": "two_workers",
+      "paired_valid_episodes": 8,
+      "same_initial_states_outcomes_inputs_noise_outputs": false,
+      "max_action_abs_error": 2.0035065412521362,
+      "aggregate_throughput_speedup": 2.0751717833069265,
+      "eligible_for_adoption": false,
+      "caveat": "Exact scene budgets and steady services; rendering remains enabled; this is throughput, not exclusive model latency"
+    }
+  ],
+  "technical_errors": [],
+  "completion_is_not_implied_by_code": true
+}

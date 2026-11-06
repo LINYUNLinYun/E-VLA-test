@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "kind": "reporting_only_quick_summary_source_receipt",
+  "files": {
+    "preparations/idea1_v2_2/quick_report_figures.py": "de0ed369aef5c1b617a34072251fe45fca8c4670dbcbfe8a075257605fe7b0c0",
+    "preparations/idea1_v2_2/test_quick_report_figures.py": "e4a5f2fae979d93331bb142513c95d24864d2d722d991259ce09fed49553703c",
+    "preparations/idea1_v2_2/runtime_analysis_quick.py": "0e07272b4c54eecc70335c1d9948f297f6d86d5604d234aa2b9928de38568748",
+    "preparations/idea1_v2_2/readiness/quick_stage_source_receipt_v1.json": "078029574ee4d9f88450e04201408eda9447ebc3d4a9ce2c08687404b51dccdf",
+    "preparations/idea1_v2_2/readiness/quick_stage_medium_acceptance_v1.json": "f9ec768942061185c9d031ffb45ac2ae78d0ef3a1aa952026d063a5e036e1290"
+  },
+  "tests": {
+    "command": "/usr/bin/python3 -m unittest test_quick_report_figures -v",
+    "passed": 3
+  },
+  "figures": [
+    "01_success_heatmaps.png",
+    "02_independent_latency_comparison.png",
+    "03_valid_failure_furthest_stage.png"
+  ],
+  "mapping": {
+    "success": "Every main condition/suite n=30 and overall n=120, checked against scope main records; extras excluded",
+    "latency": "Observed means: action_generation_ms/server_total_ms/client_roundtrip_ms; native/D2/u50 core conditions, DB n=640 and pi0/X n=160",
+    "failure": "Per-condition valid failures only, furthest phase descriptive not causal; plotted same core conditions as latency, all54 retained in plotted_data"
+  },
+  "gpu_or_raw_or_video_access": false,
+  "scientific_results_modified": false,
+  "independent_C01_C08_all_passed": false
+}

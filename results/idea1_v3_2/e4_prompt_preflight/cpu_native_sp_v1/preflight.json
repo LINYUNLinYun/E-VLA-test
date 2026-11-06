@@ -1,0 +1,652 @@
+{
+  "status": "complete",
+  "started_unix": 1792644903.071969,
+  "cpu_only": true,
+  "scope": "Instruction token rows and converted BF16 prompt embeddings only; not native model/policy parity, action semantics or environment compatibility",
+  "normalization": "Native pi0 strip, underscores/newlines to spaces; SentencePiece add_bos then separately encode newline; full valid rows only",
+  "no_truncation": true,
+  "no_instruction_substitution": true,
+  "model_constructed": false,
+  "gpu_used": false,
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/transfer_prompts.py": "8162fc00686e434268783c3a89ea3783fbedd065e1e41166cf40c4c1b13fb2e9"
+  },
+  "tokenizer": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/big_vision/paligemma_tokenizer.model",
+    "sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6"
+  },
+  "inputs": {
+    "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/manifest.json": "2e2a75ce9bb135c5bb858fb6b55d7cc5b99cc7d472942b24a891c43d29849371",
+    "/root/nfs/embodied/benchmark/calvin/dataset/calvin_debug_dataset/validation/lang_annotations/auto_lang_ann.npy": "37552f6a801e6d3e0a0b140d30571074f0de1ab4bd7ea0c16867f6ab12fab07d"
+  },
+  "released_checks": [
+    {
+      "instruction": "Open the middle layer of the drawer",
+      "cleaned": "Open the middle layer of the drawer",
+      "token_ids": [
+        2,
+        6047,
+        573,
+        7185,
+        8651,
+        576,
+        573,
+        39635,
+        108
+      ],
+      "rows_sha256": "d5089ae388ac3e63fe9da26f2278182908150e8c5d81b9d16e1c14b5a94655e2",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "30d5390fe43a396f1d9180d43559a1d8b9c6103cd35c7ff738fc321ebd114345",
+      "token_ids_sha256": "64f9548c85ffc77e707a654b8f911ad6c38a857394d0911b3bdc0f9ffa7aac6e",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/630a2bbd99e1c95ef5a3b1777a0865ca9f1c50ec.pt",
+      "released_sha256": "407c20fef82fb4b1f6ee8908f3237ecf55c6af37bc2cbdbf3d5b588d0f901a09",
+      "released_shape": [
+        9,
+        2048
+      ],
+      "manifest_prompt_len": 9,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the bowl on the stove",
+      "cleaned": "Put the bowl on the stove",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        14581,
+        611,
+        573,
+        37932,
+        108
+      ],
+      "rows_sha256": "13bd5f4949b0134db4bddeb19445604e8800797974ab46db8b2f9fa7d322c944",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "5d8246426ec6e6a3eb0afd7bb571de40dd4d1d319a19aaa826db09a1c648370d",
+      "token_ids_sha256": "3a44512af3c648d69c75eedbe6dacf98c4da72f7dd5f1628e8435f9060e76297",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7288b5fe0726fdf1f7cdab8b3f570a1ad183cd73.pt",
+      "released_sha256": "3647ce9a0650faa5dbb9f71e1b38ec6f75df1a2a1548c9ff8edeeb645bf15998",
+      "released_shape": [
+        8,
+        2048
+      ],
+      "manifest_prompt_len": 8,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the wine bottle on the top of the drawer",
+      "cleaned": "Put the wine bottle on the top of the drawer",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        10058,
+        12989,
+        611,
+        573,
+        2267,
+        576,
+        573,
+        39635,
+        108
+      ],
+      "rows_sha256": "46799fd9571667b9dad24d44c878edba38f2e58b83622388e5de50ecb68a452c",
+      "shape": [
+        12,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "d2e38738426518491e0350243254f865be89b126e2dc422f87931687d1d54247",
+      "token_ids_sha256": "cd3a8eda7a76131d1e6228c15d5f847fbbf5bf29a7b7ff7ecee3282d9f147dd9",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0d7f4d19f515d39d41ba1495216c3acca0f97bd2.pt",
+      "released_sha256": "76d30e2a355eff61272b0d622030844794890949e00f5797c785b8fb968726be",
+      "released_shape": [
+        12,
+        2048
+      ],
+      "manifest_prompt_len": 12,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Open the top layer of the drawer and put the bowl inside",
+      "cleaned": "Open the top layer of the drawer and put the bowl inside",
+      "token_ids": [
+        2,
+        6047,
+        573,
+        2267,
+        8651,
+        576,
+        573,
+        39635,
+        578,
+        2507,
+        573,
+        14581,
+        5580,
+        108
+      ],
+      "rows_sha256": "596af2a4b4ac3515070c3794727b71da9af3df76fe505219a38c04ef01cd733b",
+      "shape": [
+        14,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "387a7d8ee20a114b4491ddc8e709d0e9bc463d3e28ac42372fd102f21dac495d",
+      "token_ids_sha256": "23d53e05586630f04b601c958cd34afe24b5b2159a510f624db71768a502777e",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/0e9670b4b6b8779a5a5704140e8770a84fcdae31.pt",
+      "released_sha256": "11890e7ef8924ed39d955b3aa87425db2e0ef3a5d658bcd9d52a91ec1abd072b",
+      "released_shape": [
+        14,
+        2048
+      ],
+      "manifest_prompt_len": 14,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the bowl on the top of the drawer",
+      "cleaned": "Put the bowl on the top of the drawer",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        14581,
+        611,
+        573,
+        2267,
+        576,
+        573,
+        39635,
+        108
+      ],
+      "rows_sha256": "95acd0e7f435ce2d2403a976c65fc4c3d3462c5afae902641d4a1abb72865fdd",
+      "shape": [
+        11,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "3e7d51bdcc683a4bd6ce09329f0403182a21ef3b283eb2e611070bdd5467b03c",
+      "token_ids_sha256": "add084ea603c6d63cf0f337617abed0bdcee6266f5b94e1c9d218069afce3bd2",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/6ec631d8f30230742548c1eca265ba6b410c8ca7.pt",
+      "released_sha256": "47bc059986b0429ec7b9b6f20421e9d9b2091a2281c1345b899170fd38862c00",
+      "released_shape": [
+        11,
+        2048
+      ],
+      "manifest_prompt_len": 11,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Push the plate to the front of the stove",
+      "cleaned": "Push the plate to the front of the stove",
+      "token_ids": [
+        2,
+        21009,
+        573,
+        8811,
+        577,
+        573,
+        4059,
+        576,
+        573,
+        37932,
+        108
+      ],
+      "rows_sha256": "4dc98e4eb33c1ce82121907c605591fc196b1db89feaa5e82c07d48375770e3b",
+      "shape": [
+        11,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "5939053d2a2586e5a12c5cdeb18287acf5b15df0545f4c2045774d8565d66bca",
+      "token_ids_sha256": "ef4f39cdeb982de32fe0474d3684648c800ddd400b44926550ce8d2fdc0e377f",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/7f41de21417b9faa19d3cfa68b765464903a3677.pt",
+      "released_sha256": "513abc6afa3d24f7ddc17436dc1052e03268cdc915a454703bf54da92fb515df",
+      "released_shape": [
+        11,
+        2048
+      ],
+      "manifest_prompt_len": 11,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the cream cheese on the bowl",
+      "cleaned": "Put the cream cheese on the bowl",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        9450,
+        13624,
+        611,
+        573,
+        14581,
+        108
+      ],
+      "rows_sha256": "44e9238bc7cf74c12c2b0b22ee18a014782a7d1be842e703e2305570c62033d9",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "8b15018a4eb510b1c8a954c39ca1fa1934b8a6f7051ef17c0f76d9eae3299dc2",
+      "token_ids_sha256": "2fa809a2c9db906d7251de66ade03e69c0f6140be38ce9e6ca23fa97b6684e1e",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/b3c4e86e35c1a80a53ef679e21934a40283bdec4.pt",
+      "released_sha256": "41e41f248b03269a9e5f8e88ff8cd9cdd10f1dfbfa0f7c0a78d23f9565418778",
+      "released_shape": [
+        9,
+        2048
+      ],
+      "manifest_prompt_len": 9,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Turn on the stove",
+      "cleaned": "Turn on the stove",
+      "token_ids": [
+        2,
+        17208,
+        611,
+        573,
+        37932,
+        108
+      ],
+      "rows_sha256": "4e3e555fb49fc272f3e0ea7000ee220833f2f7e465fa398b5c912d33987316d7",
+      "shape": [
+        6,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "0daecd6d5ead41d2a3cc4e6b9e38f612b768df9c974e3197fdfd54aa810ce928",
+      "token_ids_sha256": "556e65ba133d8529ebf1199fac8e2acc36d2d45a7f583d3ae6e3bdd433d90847",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/26db03e0595d32bc15ca8bb9fc4ffb24e395f146.pt",
+      "released_sha256": "97298eceafd981188ca42effbaefd8b354aa6a3dcda4ebca685e0608dba04f19",
+      "released_shape": [
+        6,
+        2048
+      ],
+      "manifest_prompt_len": 6,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the bowl on the plate",
+      "cleaned": "Put the bowl on the plate",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        14581,
+        611,
+        573,
+        8811,
+        108
+      ],
+      "rows_sha256": "54010bb11284329f03223230ca90c3db0b9b3c246bad1fc60e8135a0eb3fa45b",
+      "shape": [
+        8,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "e33b2b1f9a9ef4dc88baf400c09eaf6f7dc45d7a9d330edf7348b933e2222ea5",
+      "token_ids_sha256": "80f50d67e6eb3994af71d7a5d783d5e1e30f3071c80fad095df61a8280732dda",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/19c214e03ac11549aa355ec5859243a7391dacd6.pt",
+      "released_sha256": "9c2e8e6288206c6a43479b5a3db37de2b88e9cca35d7317c969ddecdda3f90a9",
+      "released_shape": [
+        8,
+        2048
+      ],
+      "manifest_prompt_len": 8,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    },
+    {
+      "instruction": "Put the wine bottle on the rack",
+      "cleaned": "Put the wine bottle on the rack",
+      "token_ids": [
+        2,
+        15360,
+        573,
+        10058,
+        12989,
+        611,
+        573,
+        23409,
+        108
+      ],
+      "rows_sha256": "5f2f33c04c627823013a857bc8c808681864441fed5866f80efe484038c7e41f",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "d64236eafcd189429027e3d57075e4e69d9e1552f38be004eda1574eeb556183",
+      "token_ids_sha256": "1c458f9e46c79b4395105ee8b59d0dce1b111a84562deba61d6d3b214394ed56",
+      "released_path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/language_embeds/60a81f4a0b23ee3be93d668fb35c89592ac49911.pt",
+      "released_sha256": "cca142d1475431ba896998fabc72ad10de76fa307ef72d8f57fd4e42111b1933",
+      "released_shape": [
+        9,
+        2048
+      ],
+      "manifest_prompt_len": 9,
+      "bitwise_equal": true,
+      "max_abs": 0.0
+    }
+  ],
+  "calvin_checks": [
+    {
+      "instruction": "lift the red block from the table",
+      "cleaned": "lift the red block from the table",
+      "token_ids": [
+        2,
+        20252,
+        573,
+        3118,
+        3963,
+        774,
+        573,
+        3037,
+        108
+      ],
+      "rows_sha256": "26c8f88c57602c76cd317ccec853b6a09b31d5b0ae6dab91976978740b1ae44e",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "fce647fe167386299b75e5e7b5cc8392d1dc28a63a7cf4289b13a97261440ac6",
+      "token_ids_sha256": "e33f4d3cdb20d15e2e3dfc0ec3f61fc05ac6be4c3ef396b890e935000dbef4a3",
+      "annotation_index": 0,
+      "task": "lift_red_block_table",
+      "annotation_frame_range": [
+        554046,
+        554110
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_00.pt",
+      "output_sha256": "930b6b89021971d14ad3f31ebf4761e60a4be4a553a33ffabc2dc55d24826b38"
+    },
+    {
+      "instruction": "turn on the light bulb",
+      "cleaned": "turn on the light bulb",
+      "token_ids": [
+        2,
+        15508,
+        611,
+        573,
+        2611,
+        35386,
+        108
+      ],
+      "rows_sha256": "3379792283de04dfde538345ea6c8309845d64262a0800655c4fe170da5dfdde",
+      "shape": [
+        7,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "bbee66fa73e55436a7fca22a574cabf21cfab09df33155d5981fdda32f19fd8f",
+      "token_ids_sha256": "b233dd154dc87749ba3f054ac18b55dd4a23a2a11165fe65c0a4ca309fe48d21",
+      "annotation_index": 1,
+      "task": "turn_on_lightbulb",
+      "annotation_frame_range": [
+        553636,
+        553700
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_01.pt",
+      "output_sha256": "10e5040ef66bf4985b965aa1ad0a340f93359b8bbdd9140062e15d6f42848272"
+    },
+    {
+      "instruction": "in the slider pick up the blue block",
+      "cleaned": "in the slider pick up the blue block",
+      "token_ids": [
+        2,
+        473,
+        573,
+        45631,
+        4788,
+        908,
+        573,
+        3868,
+        3963,
+        108
+      ],
+      "rows_sha256": "edbbce7deca20483427c319043b177b9069573b8ede9d672c0ba249f71f065b5",
+      "shape": [
+        10,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "50e0b8a52894eee5d8a1868b29065c0695c796b3c579d8319d3d3f1cec91689e",
+      "token_ids_sha256": "84fb62b03657980b05b2bda1245c2f9a8fd65ba0fd39b0f89180c478d0158f67",
+      "annotation_index": 2,
+      "task": "lift_blue_block_slider",
+      "annotation_frame_range": [
+        553693,
+        553757
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_02.pt",
+      "output_sha256": "2a2fbb835de4f8c1a3b6f1a4a5d6d6d8910d45e9679bc15132f70fc7e4cebed5"
+    },
+    {
+      "instruction": "in the cabinet grasp the blue block",
+      "cleaned": "in the cabinet grasp the blue block",
+      "token_ids": [
+        2,
+        473,
+        573,
+        22402,
+        30506,
+        573,
+        3868,
+        3963,
+        108
+      ],
+      "rows_sha256": "1822c191774bb3490b3d7729730676d7bb48547643171632a415886057483720",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "ea0b542a87bdb8df14679753763cc2b1242c69a7207fdaf14765a21118c5fb0b",
+      "token_ids_sha256": "c0f8ab6d87338c5d278eb48413ba31937d9d910ee2590b2c5dbf9671ef64d3ed",
+      "annotation_index": 3,
+      "task": "lift_blue_block_slider",
+      "annotation_frame_range": [
+        553691,
+        553755
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_03.pt",
+      "output_sha256": "363381d9a663163c4558a0db24120290fa5b676d31bed9dcf54c5aeda231ed76"
+    },
+    {
+      "instruction": "slide down the switch",
+      "cleaned": "slide down the switch",
+      "token_ids": [
+        2,
+        23865,
+        1706,
+        573,
+        8266,
+        108
+      ],
+      "rows_sha256": "8126341f8545c85149e7f9fbc4bcbd42f5570561ec317204b47d598731ffe450",
+      "shape": [
+        6,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "3059eba40453b0a14cbefb5a58b7d3c99606d1721192555a0b03c1f75a257ed6",
+      "token_ids_sha256": "24878ed331876fd215ec6fe7eaac934e46f3b737613621c9a60c3d7263c7202c",
+      "annotation_index": 4,
+      "task": "turn_off_lightbulb",
+      "annotation_frame_range": [
+        554474,
+        554538
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_04.pt",
+      "output_sha256": "c10bfe380dee030f9ba31944dea215ef9c72d37504a166c7b93695e5176b86ba"
+    },
+    {
+      "instruction": "put it in the slider",
+      "cleaned": "put it in the slider",
+      "token_ids": [
+        2,
+        1065,
+        665,
+        575,
+        573,
+        45631,
+        108
+      ],
+      "rows_sha256": "f4786f7e9e6d686a36e719c8fb0354200c63668754420b1b0d339d044da8b748",
+      "shape": [
+        7,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "1b014e42fd8b823754afb02206abb0b78718fb908c7d0a02540fa85c7d1e20f1",
+      "token_ids_sha256": "7a4eb00a3e2569e741f7dc25554c42127cfd174a372af2cc8a18efeac40a61dc",
+      "annotation_index": 5,
+      "task": "place_in_slider",
+      "annotation_frame_range": [
+        554110,
+        554145
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_05.pt",
+      "output_sha256": "81979a0e12bdea7f0b7849667336e932c8c78238a362025cf6964f5ab40f2f5a"
+    },
+    {
+      "instruction": "slide right the pink block",
+      "cleaned": "slide right the pink block",
+      "token_ids": [
+        2,
+        23865,
+        1833,
+        573,
+        9010,
+        3963,
+        108
+      ],
+      "rows_sha256": "3027b6066c4586b4d3e8e31986d6ba8fdbf6f3269eb0dd062541457005e8ae2a",
+      "shape": [
+        7,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "167fac23c50f3bcd51b1d1a77eb4ceae5dafc0842331e019798182f377cfc357",
+      "token_ids_sha256": "5257078e9719a7aa53b813031dbcdee8d6cb5a9fb0d323edfc650814abbfec9d",
+      "annotation_index": 6,
+      "task": "push_pink_block_right",
+      "annotation_frame_range": [
+        553916,
+        553961
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_06.pt",
+      "output_sha256": "8e624c727dc1025b4cd9ed137e58740a0ad6e7f4154d64314a31cd5b4d43dda2"
+    },
+    {
+      "instruction": "in the slider grasp the blue block",
+      "cleaned": "in the slider grasp the blue block",
+      "token_ids": [
+        2,
+        473,
+        573,
+        45631,
+        30506,
+        573,
+        3868,
+        3963,
+        108
+      ],
+      "rows_sha256": "166841ff5721e640b9659d144ea987b460b09eadac9fe5fdeef57191e359c2a0",
+      "shape": [
+        9,
+        2048
+      ],
+      "dtype": "torch.bfloat16",
+      "device": "cpu",
+      "all_token_rows_finite": true,
+      "embedding_sha256": "6b9e9782d9d669ca64295309d49b86963a157b2cc4242b72618559e4be4b1aac",
+      "token_ids_sha256": "890a521778a823d4bfc2d72d9cb07c24b91bbe3a9a8f70ac3ce22df0f4683b81",
+      "annotation_index": 7,
+      "task": "lift_blue_block_slider",
+      "annotation_frame_range": [
+        553701,
+        553765
+      ],
+      "output_path": "results/idea1_v3_2/e4_prompt_preflight/cpu_native_sp_v1/calvin_07.pt",
+      "output_sha256": "e985f06895b2be9bce54a2f18d2b223c2404c029ecb6ad144ae10bbb2391dd4b"
+    }
+  ],
+  "table_identity": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi0_libero_pytorch_idea2/model.safetensors",
+    "file_size_bytes": 7002873776,
+    "key": "paligemma_with_expert.paligemma.lm_head.weight",
+    "header_sha256": "3e651238acf5812e2f8ab540a8d9681899729eeefe8a72b36bd4a8c62cf4eb73",
+    "table": {
+      "dtype": "BF16",
+      "shape": [
+        257152,
+        2048
+      ],
+      "data_offsets": [
+        1156005952,
+        2209300544
+      ]
+    },
+    "table_payload_sha256": "64bdbd1388a25bc7fb8ead7eba559d3fd503df0a5c5e3eaf4a06ada8d373a62d",
+    "hash_scope": "Exact complete table BF16 payload range, streamed; not a full checkpoint hash"
+  },
+  "passed": true,
+  "completed_unix": 1792644906.3365471,
+  "failure_code": null,
+  "distinct_table_rows_materialized": 49
+}

@@ -1,0 +1,95 @@
+{
+  "status": "pass",
+  "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+  "actual_cost_calls_validated": 960,
+  "costs": {
+    "valid_services": 2,
+    "services": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard00of02_1793902253704538203/fixed_input_cost.json",
+        "sha256": "2ec872b48e3d2e5bfd660ea6f155477909040423ceac7df71c43d7a12114023d",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 529.9506147857755,
+          "both_fresh_d5": 385.8446541707963,
+          "agent_fresh_d5": 393.4620111249387,
+          "wrist_fresh_d5": 391.8856114614755
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "both_fresh_d5": 1.373481812064163,
+          "agent_fresh_d5": 1.3468914400925396,
+          "wrist_fresh_d5": 1.3523094476712438
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 105.99012295715511,
+            "fast": null
+          },
+          "both_fresh_d5": {
+            "full": 103.66297326982021,
+            "fast": 70.54542022524402
+          },
+          "agent_fresh_d5": {
+            "full": 103.97106595337391,
+            "fast": 72.3727362928912
+          },
+          "wrist_fresh_d5": {
+            "full": 105.7743551209569,
+            "fast": 71.52781408512965
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard01of02_1793902253977630048/fixed_input_cost.json",
+        "sha256": "fa3e3da6a4ccdd0f2cc06a96c5ebb002d9d6eb53b1f7644627dc7975c363f6dd",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 537.2291700914502,
+          "both_fresh_d5": 395.3817789442837,
+          "agent_fresh_d5": 391.4199301507324,
+          "wrist_fresh_d5": 392.73960795253515
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "both_fresh_d5": 1.3587605668777045,
+          "agent_fresh_d5": 1.372513581218432,
+          "wrist_fresh_d5": 1.3679016814529628
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 107.44583401829004,
+            "fast": null
+          },
+          "both_fresh_d5": {
+            "full": 106.67125135660172,
+            "fast": 72.1776318969205
+          },
+          "agent_fresh_d5": {
+            "full": 104.37289951369166,
+            "fast": 71.76175765926018
+          },
+          "wrist_fresh_d5": {
+            "full": 104.54825195483863,
+            "fast": 72.04783899942413
+          }
+        }
+      }
+    ],
+    "excluded_or_pending": [],
+    "mean_cycle_ms": {
+      "full_d10": 533.5898924386129,
+      "both_fresh_d5": 390.61321655754,
+      "agent_fresh_d5": 392.44097063783556,
+      "wrist_fresh_d5": 392.3126097070053
+    },
+    "full_over_policy_cycle": {
+      "full_d10": 1.0,
+      "both_fresh_d5": 1.3660313318149373,
+      "agent_fresh_d5": 1.359669179217877,
+      "wrist_fresh_d5": 1.3601140499590851
+    },
+    "pooling": "Equal completed-service weight; four equally weighted old-bank suite inputs; whole five-request cycles",
+    "scope": "Native policy cost including cache copy/dispatch and output transfer; actual AE18/NFE and camera batch checked; RPC/environment excluded; shared GPU timing is descriptive"
+  }
+}

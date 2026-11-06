@@ -1,0 +1,8 @@
+{
+  "previous_run_preserved": "libero_plus_v14_d2_quality_gpu01_20261023_run1: both bytewise gates passed; two episode imports failed before result creation or quality inference",
+  "environment_fix": {"new_only":["sentencepiece==0.2.0","safetensors==0.5.3"],"method":"fixed pip --no-deps in existing dedicated libero-eval-v21 venv, visible to Plus interpreter", "unchanged":{"numpy":"1.26.4","mujoco":"3.3.6","torch":"2.7.1+cpu","robosuite":"1.4.0"}},
+  "actual_interpreter_checks": ["Plus episode dryrun PASS","original episode dryrun PASS","Plus isolated native ControlEnv import PASS","original isolated native ControlEnv import PASS"],
+  "old_GPU3_queue_handoff": "Owned watcher3752472 start_ticks2511353431 verified exact module/stage/cwd; stopped dispatch while verifying no service or episode child, then terminated only this owned waiting process. Reviewer3775288 naturally exited after watcher termination. No unknown/external allocation touched.",
+  "old_quality_complete": 0,
+  "new_scientific_scope": "Same195 cases and585 frozen baseline references; fixed two B1 shards ordinal%2,98/97 cases, no batching or videos"
+}

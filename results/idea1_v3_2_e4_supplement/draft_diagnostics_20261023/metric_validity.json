@@ -1,0 +1,21 @@
+{
+  "status": "excluded_visual_metric",
+  "affected_scope": "Every visual_preencoder RMS/L2 in the first diagnostic service responses, finite and nonfinite alike.",
+  "invalid_fields": [
+    "feature_scales.visual_preencoder.rms",
+    "feature_scales.visual_preencoder.l2"
+  ],
+  "reason": "Draft route calls prepare(encode=False). vision_encoder fills vision_x, and spec._project_vision_prefix fills its separate _vision_prefix_buf. encoder_x[:512] is not populated in that route and can contain uninitialized memory. The first diagnostic service read those unused encoder_x rows.",
+  "prohibited_interpretations": [
+    "No visual feature explosion claim from inf/large values.",
+    "No feature stability or similarity claim from finite equal values."
+  ],
+  "still_valid": [
+    "Normalized state scales: copied from fresh transformed state.",
+    "Raw/decoded action outputs and actual route counters.",
+    "Recorded GPU3 cross-device bitwise equality gate and same-input repeat equality."
+  ],
+  "action_scope": "The invalid metric is calculated only after policy.predict returns; encoder_x visual rows are not consumed by the learned draft prefix path. It does not alter the draft output or any fixed head weights.",
+  "no_model_restart": true,
+  "source_service_sha256": "fefa09fbfe6a84bc9ff87ac4cb9846df28ef2d8c1c384729a8b1910d551e05f3"
+}

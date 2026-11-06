@@ -1,0 +1,521 @@
+{
+  "profile_only": true,
+  "source": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/d2_crossframe_combined_profile_20261023_v1.sqlite",
+  "checks": {
+    "all_graphs_mapped": true,
+    "no_unresolved_unscoped": true,
+    "eight_complete_frames": true,
+    "seven_adjacent_frame_pairs": true,
+    "next_vlm_not_before_current_ae": true,
+    "prefetched_vision_logical_identity": true,
+    "all_signature_calls_equal": true,
+    "no_unmatched_signatures": true
+  },
+  "measured_logical_requests": 8,
+  "adjacent_frame_pair_count": 7,
+  "per_request_same_frame": {
+    "ae1_x_same_vlm_ms": {
+      "mean": 5.70791025,
+      "p50": 5.7053725
+    },
+    "ae2_x_same_vlm_ms": {
+      "mean": 0.1387495,
+      "p50": 0.136045
+    },
+    "all_ae_x_same_vlm_ms": {
+      "mean": 5.88621075,
+      "p50": 5.8785035
+    }
+  },
+  "per_adjacent_pair": {
+    "next_vlm_minus_current_ae_ms": {
+      "mean": 10.030352428571428,
+      "p50": 8.28969
+    },
+    "ae1_x_next_vision_ms": {
+      "mean": 0.0,
+      "p50": 0.0
+    },
+    "ae2_x_next_vision_ms": {
+      "mean": 1.8329472857142857,
+      "p50": 2.470129
+    },
+    "all_ae_x_next_vision_ms": {
+      "mean": 1.835777,
+      "p50": 2.473585
+    }
+  },
+  "vision_identity": [
+    {
+      "frame": 0,
+      "epoch": 4,
+      "slot": 0,
+      "generation": 18,
+      "graph_kernels": 1425,
+      "host_frames": [],
+      "group_assignments": {
+        "matching_submit_identity": 1425
+      },
+      "source_groups": [
+        "unscoped_submit"
+      ]
+    },
+    {
+      "frame": 1,
+      "epoch": 4,
+      "slot": 1,
+      "generation": 15,
+      "graph_kernels": 1425,
+      "host_frames": [
+        0
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 2,
+      "epoch": 4,
+      "slot": 0,
+      "generation": 19,
+      "graph_kernels": 1425,
+      "host_frames": [
+        1
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 3,
+      "epoch": 4,
+      "slot": 1,
+      "generation": 16,
+      "graph_kernels": 1425,
+      "host_frames": [
+        2
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 4,
+      "epoch": 4,
+      "slot": 0,
+      "generation": 20,
+      "graph_kernels": 1425,
+      "host_frames": [
+        3
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 5,
+      "epoch": 4,
+      "slot": 1,
+      "generation": 17,
+      "graph_kernels": 1425,
+      "host_frames": [
+        4
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 6,
+      "epoch": 4,
+      "slot": 0,
+      "generation": 21,
+      "graph_kernels": 1425,
+      "host_frames": [
+        5
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    },
+    {
+      "frame": 7,
+      "epoch": 4,
+      "slot": 1,
+      "generation": 18,
+      "graph_kernels": 1425,
+      "host_frames": [
+        6
+      ],
+      "group_assignments": {
+        "host_section": 1425
+      },
+      "source_groups": [
+        "crossframe/continuous/combined"
+      ]
+    }
+  ],
+  "stage_mean_per_request": [
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "count": 8,
+      "kernel_union_ms": 5.74474275,
+      "kernel_envelope_ms": 32.074687375,
+      "nonkernel_gap_ms": 26.329944625
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "count": 8,
+      "kernel_union_ms": 3.181199625,
+      "kernel_envelope_ms": 4.326206375,
+      "nonkernel_gap_ms": 1.14500675
+    },
+    {
+      "stage": "AE",
+      "iteration": null,
+      "count": 8,
+      "kernel_union_ms": 0.043998999999999996,
+      "kernel_envelope_ms": 36.54118325,
+      "nonkernel_gap_ms": 36.497184250000004
+    },
+    {
+      "stage": "MetadataEmbedding",
+      "iteration": null,
+      "count": 8,
+      "kernel_union_ms": 0.04271925,
+      "kernel_envelope_ms": 11.175143625,
+      "nonkernel_gap_ms": 11.132424375
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "count": 8,
+      "kernel_union_ms": 33.03833,
+      "kernel_envelope_ms": 33.226312625,
+      "nonkernel_gap_ms": 0.18798262500000007
+    },
+    {
+      "stage": "VisionEncoder",
+      "iteration": null,
+      "count": 8,
+      "kernel_union_ms": 10.261752125000001,
+      "kernel_envelope_ms": 11.12024075,
+      "nonkernel_gap_ms": 0.8584886249999999
+    },
+    {
+      "stage": "VisionProjector",
+      "iteration": null,
+      "count": 8,
+      "kernel_union_ms": 0.0333435,
+      "kernel_envelope_ms": 7.104233625,
+      "nonkernel_gap_ms": 7.070890125
+    }
+  ],
+  "matched_signatures": [
+    {
+      "stage": "VisionEncoder",
+      "iteration": null,
+      "operation": "Other",
+      "signature_count": 16,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 10.176755625,
+      "candidate_sum_elapsed_ms_per_request": 10.262388125,
+      "duration_ratio": 1.0084145186496998
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "FFN",
+      "signature_count": 72,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 24.665726000000003,
+      "candidate_sum_elapsed_ms_per_request": 24.161853124999997,
+      "duration_ratio": 0.9795719422570409
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "O",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 1.00831775,
+      "candidate_sum_elapsed_ms_per_request": 1.5968589999999998,
+      "duration_ratio": 1.583686293333624
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "Q",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.9892900000000001,
+      "candidate_sum_elapsed_ms_per_request": 0.9993354999999999,
+      "duration_ratio": 1.0101542520393412
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "FFN",
+      "signature_count": 90,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.6802397500000001,
+      "candidate_sum_elapsed_ms_per_request": 1.7825228750000006,
+      "duration_ratio": 2.6204332737097475
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "Attention_non_projection",
+      "signature_count": 252,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 3.4537181249999986,
+      "candidate_sum_elapsed_ms_per_request": 4.034541500000001,
+      "duration_ratio": 1.1681733580965015
+    },
+    {
+      "stage": "VisionProjector",
+      "iteration": null,
+      "operation": "Other",
+      "signature_count": 1,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.034651625000000005,
+      "candidate_sum_elapsed_ms_per_request": 0.0333435,
+      "duration_ratio": 0.9622492451652698
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "O",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.22450837500000004,
+      "candidate_sum_elapsed_ms_per_request": 0.377421125,
+      "duration_ratio": 1.681100426654462
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "Attention_non_projection",
+      "signature_count": 270,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.7929852499999994,
+      "candidate_sum_elapsed_ms_per_request": 2.0013570000000005,
+      "duration_ratio": 2.5238262628466317
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "FFN",
+      "signature_count": 90,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.6613922500000005,
+      "candidate_sum_elapsed_ms_per_request": 0.7741836250000004,
+      "duration_ratio": 1.1705362816089844
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "Attention_non_projection",
+      "signature_count": 270,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.779117999999999,
+      "candidate_sum_elapsed_ms_per_request": 1.0918693750000008,
+      "duration_ratio": 1.4014172115135348
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "Q",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.14302475,
+      "candidate_sum_elapsed_ms_per_request": 0.291263375,
+      "duration_ratio": 2.0364543549280807
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "Layer_other",
+      "signature_count": 180,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 1.5318278750000005,
+      "candidate_sum_elapsed_ms_per_request": 1.7785201250000002,
+      "duration_ratio": 1.1610443666851276
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "O",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.223148,
+      "candidate_sum_elapsed_ms_per_request": 0.25532837499999994,
+      "duration_ratio": 1.14421090487031
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "V",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.06844337500000001,
+      "candidate_sum_elapsed_ms_per_request": 0.10239025000000004,
+      "duration_ratio": 1.4959848195680008
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "K",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.22095612500000017,
+      "candidate_sum_elapsed_ms_per_request": 0.21946924999999998,
+      "duration_ratio": 0.9932707228640971
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "Q",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.14182112499999996,
+      "candidate_sum_elapsed_ms_per_request": 0.173408375,
+      "duration_ratio": 1.22272598669627
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "V",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.21535174999999995,
+      "candidate_sum_elapsed_ms_per_request": 0.210020375,
+      "duration_ratio": 0.9752434099096017
+    },
+    {
+      "stage": "VLM",
+      "iteration": null,
+      "operation": "Other",
+      "signature_count": 18,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.051399125000000004,
+      "candidate_sum_elapsed_ms_per_request": 0.067215,
+      "duration_ratio": 1.3077070864533198
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "Iteration_other",
+      "signature_count": 22,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.039911375,
+      "candidate_sum_elapsed_ms_per_request": 0.063687125,
+      "duration_ratio": 1.5957136280070532
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "Layer_other",
+      "signature_count": 216,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.6617438750000002,
+      "candidate_sum_elapsed_ms_per_request": 0.9340481250000003,
+      "duration_ratio": 1.4114949307237639
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "Layer_other",
+      "signature_count": 216,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.6677072500000008,
+      "candidate_sum_elapsed_ms_per_request": 0.7585802500000001,
+      "duration_ratio": 1.136097069486664
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "V",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.06899875,
+      "candidate_sum_elapsed_ms_per_request": 0.15431762499999999,
+      "duration_ratio": 2.236527835649196
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "K",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.070282625,
+      "candidate_sum_elapsed_ms_per_request": 0.08889837499999999,
+      "duration_ratio": 1.264869873599627
+    },
+    {
+      "stage": "AE",
+      "iteration": 1,
+      "operation": "K",
+      "signature_count": 36,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.07108699999999997,
+      "candidate_sum_elapsed_ms_per_request": 0.15850137499999997,
+      "duration_ratio": 2.229681587350712
+    },
+    {
+      "stage": "AE",
+      "iteration": 2,
+      "operation": "Iteration_other",
+      "signature_count": 22,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.044515124999999996,
+      "candidate_sum_elapsed_ms_per_request": 0.05685124999999999,
+      "duration_ratio": 1.2771221017575487
+    },
+    {
+      "stage": "AE",
+      "iteration": null,
+      "operation": "Preparation_or_Euler_update",
+      "signature_count": 17,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.026943624999999995,
+      "candidate_sum_elapsed_ms_per_request": 0.043998999999999996,
+      "duration_ratio": 1.6330022407897973
+    },
+    {
+      "stage": "MetadataEmbedding",
+      "iteration": null,
+      "operation": "Other",
+      "signature_count": 14,
+      "calls_equal": true,
+      "serial_sum_elapsed_ms_per_request": 0.03611925,
+      "candidate_sum_elapsed_ms_per_request": 0.04271925,
+      "duration_ratio": 1.1827280466787102
+    }
+  ],
+  "limitations": [
+    "Profiler durations are not steady request latency. Cross-run duration ratios may include GPU frequency/thermal and profiling drift.",
+    "Seven adjacent frame pairs are observable in eight requests; do not divide pair sums by eight when describing per-opportunity overlap.",
+    "Actual kernel interval intersection only. Nonkernel gap does not establish an exclusive Event-wait cause."
+  ]
+}

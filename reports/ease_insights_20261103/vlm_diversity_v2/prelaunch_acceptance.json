@@ -1,0 +1,1255 @@
+{
+  "status": "pass",
+  "time": 1793891212.3411317,
+  "CPU_contract_tests": 8,
+  "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+  "source_files": 105,
+  "prior_use_passed": true,
+  "health_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/analysis.json",
+    "sha256": "7dfdc3dfd1073e029e89eba3b418584b4fd0022f208df0c5d44b9f38ec41d9d0"
+  },
+  "dry_runs": [
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "condition": "full_d10",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59400",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/runs/discovery_shard00of02_1793891212307636352"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59400",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/runs/discovery_shard00of02_1793891212307636352",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/discovery_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "full_d10",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "full_d10"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "condition": "spread_a",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_a",
+          "--port",
+          "59400",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/runs/discovery_shard00of02_1793891212311260527"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_a",
+          "--port",
+          "59400",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/runs/discovery_shard00of02_1793891212311260527",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/discovery_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_a",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_a"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "condition": "spread_b",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_b",
+          "--port",
+          "59400",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/runs/discovery_shard00of02_1793891212314494252"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_b",
+          "--port",
+          "59400",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/runs/discovery_shard00of02_1793891212314494252",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/discovery_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_b",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_b"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "condition": "spread_c",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_c",
+          "--port",
+          "59400",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/runs/discovery_shard00of02_1793891212319006068"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_c",
+          "--port",
+          "59400",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/runs/discovery_shard00of02_1793891212319006068",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/discovery_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_c",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_c"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "condition": "spread_d",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_d",
+          "--port",
+          "59400",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/runs/discovery_shard00of02_1793891212323551477"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_d",
+          "--port",
+          "59400",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/runs/discovery_shard00of02_1793891212323551477",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/discovery_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_d",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_d"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "condition": "full_d10",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59401",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/runs/discovery_shard01of02_1793891212328424016"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59401",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/runs/discovery_shard01of02_1793891212328424016",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/discovery_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "full_d10",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "full_d10"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "condition": "spread_a",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_a",
+          "--port",
+          "59401",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/runs/discovery_shard01of02_1793891212331339328"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_a",
+          "--port",
+          "59401",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/runs/discovery_shard01of02_1793891212331339328",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_a/discovery_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_a",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_a"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "condition": "spread_b",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_b",
+          "--port",
+          "59401",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/runs/discovery_shard01of02_1793891212334510475"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_b",
+          "--port",
+          "59401",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/runs/discovery_shard01of02_1793891212334510475",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_b/discovery_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_b",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_b"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "condition": "spread_c",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_c",
+          "--port",
+          "59401",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/runs/discovery_shard01of02_1793891212337877222"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_c",
+          "--port",
+          "59401",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/runs/discovery_shard01of02_1793891212337877222",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/discovery_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_c",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_c"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "condition": "spread_d",
+      "plan": {
+        "dry_run": true,
+        "episodes": 40,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+          "--condition",
+          "spread_d",
+          "--port",
+          "59401",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/runs/discovery_shard01of02_1793891212341033550"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_diversity_v2.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+          "--condition",
+          "spread_d",
+          "--port",
+          "59401",
+          "--stage",
+          "discovery",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/runs/discovery_shard01of02_1793891212341033550",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_d/discovery_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+          "condition": "spread_d",
+          "stage": "discovery",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "vlm-broad-mask-diversity-v2",
+            "scientific_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+            "phase": "diversity_discovery_v2",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/protocol.json",
+              "sha256": "65e1e2b676d58baae89e5350593957461dedaa9a6751bf3fdf32c02dd33521f1"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+              "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "mechanics_reused": "preparations.ease_insights_20261103.vlm.policy.Policy.predict/reset/acknowledge",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "fixed_mask_budget": 6,
+            "nominal_VLM_retained": 12,
+            "actual_fast_hidden_updates": 11,
+            "scope": "New broad masks, same D10-D2-D2 and own-path residual extrapolation; suite preferences remain hypotheses",
+            "revision_hash": "f3801ec1e98a9af9087a00153671b815a62c94ccc3a8010fdea7a208c9009975"
+          },
+          "command_builder": "preparations.ease_insights_20261103.vlm_diversity_v2.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and all four new masks; does not cover every task or new initial input",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+        "stage": "discovery",
+        "condition": "spread_d"
+      }
+    }
+  ],
+  "new_CUDA_started": false
+}

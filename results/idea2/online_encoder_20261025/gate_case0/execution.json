@@ -1,0 +1,519 @@
+{
+  "status": "passed",
+  "start_utc": "2026-10-25T12:24:56.955945+00:00",
+  "args": {
+    "output": "results/idea2/online_encoder_20261025/gate_case0",
+    "arms": [
+      "sm16_no_encoder",
+      "sm16_encoder",
+      "fresh18_no_encoder",
+      "fresh18_encoder"
+    ],
+    "case_indices": [
+      0
+    ],
+    "port": 19220
+  },
+  "cases": [
+    {
+      "arm": "sm16_no_encoder",
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/sm16_no_encoder/libero_object/task00/init00",
+      "status": "valid",
+      "start_utc": "2026-10-25T12:26:43.467600+00:00",
+      "client_pid": 372787,
+      "render_gpu_verified": {
+        "observed_graphics_host_pid": 1413672,
+        "client_container_pid": 372787,
+        "namespace_caveat": "nvidia-smi reports host PIDs; subprocess.pid is in this container. They need not match.",
+        "attribution": "Exclusive GPU lease; zero G before client, one G while sole client runs, zero G after exit; server C set unchanged.",
+        "snapshot": {
+          "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "name": "NVIDIA GeForce RTX 4090",
+          "memory_used_mib": 7571.0,
+          "utilization_percent": 0.0,
+          "processes": [
+            {
+              "pid": 1404390,
+              "memory_mib": "7556"
+            }
+          ],
+          "graphics_processes": [
+            {
+              "pid": 1413672,
+              "type": "G",
+              "memory_mib": 151.0
+            }
+          ],
+          "host_time": 1792931212.7495692
+        }
+      },
+      "client_exit_code": 0,
+      "end_utc": "2026-10-25T12:27:25.045131+00:00",
+      "gpu_after": {
+        "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "name": "NVIDIA GeForce RTX 4090",
+        "memory_used_mib": 8463.0,
+        "utilization_percent": 0.0,
+        "processes": [
+          {
+            "pid": 1404390,
+            "memory_mib": "8448"
+          }
+        ],
+        "graphics_processes": [],
+        "host_time": 1792931245.6781352
+      },
+      "result": {
+        "status": "valid",
+        "valid": true,
+        "success": false,
+        "model": "pi05",
+        "arm": "sm16_no_encoder",
+        "suite": "libero_object",
+        "task": 0,
+        "init": 0,
+        "actions": 280,
+        "steps": 280,
+        "predictions": 57,
+        "online_requests": 56,
+        "consumed_chunks": 56,
+        "terminal_discarded_predictions": 1,
+        "termination": "action_limit",
+        "D": 10,
+        "H": 10,
+        "R": 5,
+        "control_hz": 20,
+        "video": null,
+        "wall_s": 33.63948107510805,
+        "record_io_s": 10.172055028378963,
+        "diagnostic_drain_wall_s": 0.004137806594371796,
+        "executed_actions_sha256": "84c695901bf2db6be872a83cae342161c92b17695236e281be017b365cb05621",
+        "explicit_nonbootstrap_chunk_lag_control_steps": 5,
+        "nominal_chunk_lag_ms": 250,
+        "actual_wall_clock_pacing": false,
+        "protocol_change": "Causal previous-R5 execution concurrent with the next inference, not the original synchronous rollout",
+        "no_synthetic_future_observations": true,
+        "client_sha256": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+        "source_directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/sm16_no_encoder/libero_object/task00/init00",
+        "all_work_wall_s": 34.69810297340155
+      }
+    },
+    {
+      "arm": "sm16_encoder",
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/sm16_encoder/libero_object/task00/init00",
+      "status": "valid",
+      "start_utc": "2026-10-25T12:27:26.789535+00:00",
+      "client_pid": 372988,
+      "render_gpu_verified": {
+        "observed_graphics_host_pid": 1418018,
+        "client_container_pid": 372988,
+        "namespace_caveat": "nvidia-smi reports host PIDs; subprocess.pid is in this container. They need not match.",
+        "attribution": "Exclusive GPU lease; zero G before client, one G while sole client runs, zero G after exit; server C set unchanged.",
+        "snapshot": {
+          "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "name": "NVIDIA GeForce RTX 4090",
+          "memory_used_mib": 8692.0,
+          "utilization_percent": 73.0,
+          "processes": [
+            {
+              "pid": 1404390,
+              "memory_mib": "8192"
+            }
+          ],
+          "graphics_processes": [
+            {
+              "pid": 1418018,
+              "type": "G",
+              "memory_mib": 475.0
+            }
+          ],
+          "host_time": 1792931257.993232
+        }
+      },
+      "client_exit_code": 0,
+      "end_utc": "2026-10-25T12:28:05.333308+00:00",
+      "gpu_after": {
+        "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "name": "NVIDIA GeForce RTX 4090",
+        "memory_used_mib": 8515.0,
+        "utilization_percent": 0.0,
+        "processes": [
+          {
+            "pid": 1404390,
+            "memory_mib": "8500"
+          }
+        ],
+        "graphics_processes": [],
+        "host_time": 1792931285.725777
+      },
+      "result": {
+        "status": "valid",
+        "valid": true,
+        "success": false,
+        "model": "pi05",
+        "arm": "sm16_encoder",
+        "suite": "libero_object",
+        "task": 0,
+        "init": 0,
+        "actions": 280,
+        "steps": 280,
+        "predictions": 57,
+        "online_requests": 56,
+        "consumed_chunks": 56,
+        "terminal_discarded_predictions": 1,
+        "termination": "action_limit",
+        "D": 10,
+        "H": 10,
+        "R": 5,
+        "control_hz": 20,
+        "video": null,
+        "wall_s": 31.353417869657278,
+        "record_io_s": 9.971723537892103,
+        "diagnostic_drain_wall_s": 0.00412512943148613,
+        "executed_actions_sha256": "bd92a2de0417c2d27feec183b7705a7b726fe37e5214f51bf13a9a09e99e973b",
+        "explicit_nonbootstrap_chunk_lag_control_steps": 5,
+        "nominal_chunk_lag_ms": 250,
+        "actual_wall_clock_pacing": false,
+        "protocol_change": "Causal previous-R5 execution concurrent with the next inference, not the original synchronous rollout",
+        "no_synthetic_future_observations": true,
+        "client_sha256": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+        "source_directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/sm16_encoder/libero_object/task00/init00",
+        "all_work_wall_s": 32.15479528903961
+      }
+    },
+    {
+      "arm": "fresh18_no_encoder",
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/fresh18_no_encoder/libero_object/task00/init00",
+      "status": "valid",
+      "start_utc": "2026-10-25T12:28:06.948580+00:00",
+      "client_pid": 373192,
+      "render_gpu_verified": {
+        "observed_graphics_host_pid": 1421725,
+        "client_container_pid": 373192,
+        "namespace_caveat": "nvidia-smi reports host PIDs; subprocess.pid is in this container. They need not match.",
+        "attribution": "Exclusive GPU lease; zero G before client, one G while sole client runs, zero G after exit; server C set unchanged.",
+        "snapshot": {
+          "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "name": "NVIDIA GeForce RTX 4090",
+          "memory_used_mib": 8504.0,
+          "utilization_percent": 0.0,
+          "processes": [
+            {
+              "pid": 1404390,
+              "memory_mib": "8240"
+            }
+          ],
+          "graphics_processes": [
+            {
+              "pid": 1421725,
+              "type": "G",
+              "memory_mib": 475.0
+            }
+          ],
+          "host_time": 1792931298.029221
+        }
+      },
+      "client_exit_code": 0,
+      "end_utc": "2026-10-25T12:28:45.254319+00:00",
+      "gpu_after": {
+        "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "name": "NVIDIA GeForce RTX 4090",
+        "memory_used_mib": 8573.0,
+        "utilization_percent": 0.0,
+        "processes": [
+          {
+            "pid": 1404390,
+            "memory_mib": "8558"
+          }
+        ],
+        "graphics_processes": [],
+        "host_time": 1792931325.761684
+      },
+      "result": {
+        "status": "valid",
+        "valid": true,
+        "success": false,
+        "model": "pi05",
+        "arm": "fresh18_no_encoder",
+        "suite": "libero_object",
+        "task": 0,
+        "init": 0,
+        "actions": 280,
+        "steps": 280,
+        "predictions": 57,
+        "online_requests": 56,
+        "consumed_chunks": 56,
+        "terminal_discarded_predictions": 1,
+        "termination": "action_limit",
+        "D": 10,
+        "H": 10,
+        "R": 5,
+        "control_hz": 20,
+        "video": null,
+        "wall_s": 30.791845936328173,
+        "record_io_s": 9.205650579184294,
+        "diagnostic_drain_wall_s": 0.005650218576192856,
+        "executed_actions_sha256": "2d11ae708d53e98d76b2e0cd51b5c5288cf2ffdb0861b67c8291d25e764ecc5a",
+        "explicit_nonbootstrap_chunk_lag_control_steps": 5,
+        "nominal_chunk_lag_ms": 250,
+        "actual_wall_clock_pacing": false,
+        "protocol_change": "Causal previous-R5 execution concurrent with the next inference, not the original synchronous rollout",
+        "no_synthetic_future_observations": true,
+        "client_sha256": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+        "source_directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/fresh18_no_encoder/libero_object/task00/init00",
+        "all_work_wall_s": 31.99806771427393
+      }
+    },
+    {
+      "arm": "fresh18_encoder",
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/fresh18_encoder/libero_object/task00/init00",
+      "status": "valid",
+      "start_utc": "2026-10-25T12:28:46.757408+00:00",
+      "client_pid": 373395,
+      "render_gpu_verified": {
+        "observed_graphics_host_pid": 1425576,
+        "client_container_pid": 373395,
+        "namespace_caveat": "nvidia-smi reports host PIDs; subprocess.pid is in this container. They need not match.",
+        "attribution": "Exclusive GPU lease; zero G before client, one G while sole client runs, zero G after exit; server C set unchanged.",
+        "snapshot": {
+          "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "name": "NVIDIA GeForce RTX 4090",
+          "memory_used_mib": 8800.0,
+          "utilization_percent": 0.0,
+          "processes": [
+            {
+              "pid": 1404390,
+              "memory_mib": "8132"
+            }
+          ],
+          "graphics_processes": [
+            {
+              "pid": 1425576,
+              "type": "G",
+              "memory_mib": 475.0
+            }
+          ],
+          "host_time": 1792931337.610206
+        }
+      },
+      "client_exit_code": 0,
+      "end_utc": "2026-10-25T12:29:22.169166+00:00",
+      "gpu_after": {
+        "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+        "name": "NVIDIA GeForce RTX 4090",
+        "memory_used_mib": 8635.0,
+        "utilization_percent": 0.0,
+        "processes": [
+          {
+            "pid": 1404390,
+            "memory_mib": "8620"
+          }
+        ],
+        "graphics_processes": [],
+        "host_time": 1792931362.6887572
+      },
+      "result": {
+        "status": "valid",
+        "valid": true,
+        "success": false,
+        "model": "pi05",
+        "arm": "fresh18_encoder",
+        "suite": "libero_object",
+        "task": 0,
+        "init": 0,
+        "actions": 280,
+        "steps": 280,
+        "predictions": 57,
+        "online_requests": 56,
+        "consumed_chunks": 56,
+        "terminal_discarded_predictions": 1,
+        "termination": "action_limit",
+        "D": 10,
+        "H": 10,
+        "R": 5,
+        "control_hz": 20,
+        "video": null,
+        "wall_s": 30.31163927167654,
+        "record_io_s": 9.29805377498269,
+        "diagnostic_drain_wall_s": 0.003782898187637329,
+        "executed_actions_sha256": "2d11ae708d53e98d76b2e0cd51b5c5288cf2ffdb0861b67c8291d25e764ecc5a",
+        "explicit_nonbootstrap_chunk_lag_control_steps": 5,
+        "nominal_chunk_lag_ms": 250,
+        "actual_wall_clock_pacing": false,
+        "protocol_change": "Causal previous-R5 execution concurrent with the next inference, not the original synchronous rollout",
+        "no_synthetic_future_observations": true,
+        "client_sha256": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+        "source_directory": "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/episodes/fresh18_encoder/libero_object/task00/init00",
+        "all_work_wall_s": 31.153209306299686
+      }
+    }
+  ],
+  "gpu_before": {
+    "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+    "name": "NVIDIA GeForce RTX 4090",
+    "memory_used_mib": 1.0,
+    "utilization_percent": 0.0,
+    "processes": [],
+    "graphics_processes": [],
+    "host_time": 1792931097.3936403
+  },
+  "source_before": {
+    "results/idea2/online_encoder_20261025/run.py": "0075f5d27022a0a87d32d3b98c7bfbac148f53d0e3f85cbca11b17a175dbb4ff",
+    "results/idea2/online_encoder_20261025/client.py": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+    "results/idea2/online_encoder_20261025/policy.py": "c591ec4242f59e1e8cd9e85ea94ca80f501a7bcc8d69cbb85fa5c1f2f1403e39",
+    "results/idea2/online_encoder_20261025/server.py": "c37bad1be262808d14a53742de2cb04b844845d608d57a393037f1a916d62a62",
+    "results/idea2/online_encoder_20261025/wire.py": "ab5b68534a949245ec1a76c6a6a2ef28aaf4bfd13c350451b19377d77299a6f9",
+    "preparations/idea2/progressive_kv_kernels.py": "0f398731f03100cfddc0cfad42da6cae8a3908c20abb0c5ad46e0aaaa5076f44",
+    "preparations/idea2/progressive_kv.py": "f67f9309016294acf4da408277b64ab23a9a6e372b79e0cb5da616b85a1074ec",
+    "preparations/idea2/progressive_kv_pool.py": "b862aaa611f87a77080f651f9501794d28706dcb6c07f30e800fa22fd6036539",
+    "preparations/idea2/progressive_kv_bench.py": "bde237cec08c14501d918da7d98665964e3c658f6c24175532b6c5355b079c50",
+    "preparations/idea2/progressive_kv_policy.py": "a3f6e3240b1bbf9d71ad25a5f7c0406cd5767a71603c8d24beb4ab3124fdfbf2",
+    "results/idea2/fresh_tail_20261025/adapter.py": "2763c283363869fdd1c358dfd6b1c81a1b8d9fd17b4a418276d9a7200059faf3",
+    "results/idea2/progressive_kv_20261025/resource_adapter.py": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd"
+  },
+  "semantics": "One returned R5 chunk executes during next request; actual end-of-chunk observation supplied in-request. Explicit nominal250ms lag; not wall-clock paced.",
+  "hypothesis": "No late observation will be treated as a GPU overlap; no future replay frames in this closed loop.",
+  "server_command": [
+    "/root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python",
+    "-u",
+    "-m",
+    "results.idea2.online_encoder_20261025.server",
+    "--port",
+    "19220",
+    "--arm",
+    "sm16_no_encoder",
+    "--cleanup",
+    "/root/nfs/embodied/benchmark/results/idea2/online_encoder_20261025/gate_case0/cleanup.json"
+  ],
+  "server_environment": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "JAX_PLATFORMS": "cpu",
+    "JAX_PLATFORM_NAME": "cpu",
+    "PYTHONUNBUFFERED": "1",
+    "CUDA_VISIBLE_DEVICES": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "32",
+    "OPENPI_DATA_HOME": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi",
+    "PYTHONPATH": "/root/nfs/embodied/benchmark:/root/nfs/embodied/benchmark/policies/openpi/src",
+    "PROGRESSIVE_EXPECTED_CPUS": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+  },
+  "client_environment": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "JAX_PLATFORMS": "cpu",
+    "JAX_PLATFORM_NAME": "cpu",
+    "PYTHONUNBUFFERED": "1",
+    "CUDA_VISIBLE_DEVICES": "",
+    "MUJOCO_GL": "egl",
+    "MUJOCO_EGL_DEVICE_ID": "1",
+    "LIBERO_CONFIG_PATH": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.libero",
+    "PYTHONPATH": "/root/nfs/embodied/benchmark:/root/nfs/embodied/benchmark/LIBERO:/root/nfs/embodied/benchmark/policies/realtime-vla-flash/packages/openpi-client/src",
+    "PROGRESSIVE_EXPECTED_CPUS": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false"
+  },
+  "server_pid": 372457,
+  "health": {
+    "protocol": {
+      "torch": "2.7.1+cu126",
+      "cuda": "12.6",
+      "transformers": "4.53.2",
+      "device": "cuda:0",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "config": "Pi0Config(action_dim=32, action_horizon=10, max_token_len=200, dtype='bfloat16', paligemma_variant='gemma_2b', action_expert_variant='gemma_300m', pi05=True, discrete_state_input=False, pytorch_compile_mode=None)",
+      "attention": "eager",
+      "execution": "online_progressive_cuda_graph",
+      "num_steps": 10,
+      "state_path": "none",
+      "mode": "lead3",
+      "lead": 3,
+      "H": 10,
+      "R": 5,
+      "cache_slots": 2,
+      "interval": 1,
+      "host_workers": 0,
+      "diagnostics": true,
+      "submission_order": "prefill_then_ae_kv_ready",
+      "next_encoder": false,
+      "lookahead": true,
+      "semantics": "approximate_per_iteration_mixed_old_new_KV",
+      "approximation": true,
+      "first_response": "current full KV with original fresh AE; one bootstrap Prefill",
+      "graph_reuse_across_episodes": true,
+      "full_model": true,
+      "real_time": false,
+      "host_cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "clock": "causal LIBERO stepping overlaps inference; simulation is not wall-clock paced",
+      "preparation_core": "PreparedModulationCore",
+      "arm": "sm16_no_encoder",
+      "observation_lag_control_steps": 5,
+      "nominal_observation_lag_ms": 250,
+      "old_action_execution": "only the first R5 of the previously returned H10 chunk",
+      "observation_exchange": "same environment, after the previous chunk's actual actions",
+      "resource_adapter": {
+        "ae_sm_min": 16,
+        "actual_resources": []
+      }
+    },
+    "ok": true
+  },
+  "owned_gpu_pids": [
+    1404390
+  ],
+  "current_arm": "fresh18_encoder",
+  "server_exit_code": 0,
+  "source_after": {
+    "results/idea2/online_encoder_20261025/run.py": "0075f5d27022a0a87d32d3b98c7bfbac148f53d0e3f85cbca11b17a175dbb4ff",
+    "results/idea2/online_encoder_20261025/client.py": "f19d17e9ba5005ea628346fc89e46a8060d2328a12796e5163934ce8ee0b9f4f",
+    "results/idea2/online_encoder_20261025/policy.py": "c591ec4242f59e1e8cd9e85ea94ca80f501a7bcc8d69cbb85fa5c1f2f1403e39",
+    "results/idea2/online_encoder_20261025/server.py": "c37bad1be262808d14a53742de2cb04b844845d608d57a393037f1a916d62a62",
+    "results/idea2/online_encoder_20261025/wire.py": "ab5b68534a949245ec1a76c6a6a2ef28aaf4bfd13c350451b19377d77299a6f9",
+    "preparations/idea2/progressive_kv_kernels.py": "0f398731f03100cfddc0cfad42da6cae8a3908c20abb0c5ad46e0aaaa5076f44",
+    "preparations/idea2/progressive_kv.py": "f67f9309016294acf4da408277b64ab23a9a6e372b79e0cb5da616b85a1074ec",
+    "preparations/idea2/progressive_kv_pool.py": "b862aaa611f87a77080f651f9501794d28706dcb6c07f30e800fa22fd6036539",
+    "preparations/idea2/progressive_kv_bench.py": "bde237cec08c14501d918da7d98665964e3c658f6c24175532b6c5355b079c50",
+    "preparations/idea2/progressive_kv_policy.py": "a3f6e3240b1bbf9d71ad25a5f7c0406cd5767a71603c8d24beb4ab3124fdfbf2",
+    "results/idea2/fresh_tail_20261025/adapter.py": "2763c283363869fdd1c358dfd6b1c81a1b8d9fd17b4a418276d9a7200059faf3",
+    "results/idea2/progressive_kv_20261025/resource_adapter.py": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd"
+  },
+  "end_utc": "2026-10-25T12:29:26.180114+00:00",
+  "source_unchanged": true,
+  "cleanup": {
+    "passed": true,
+    "contexts_closed": 2,
+    "pairs_created": 2
+  }
+}

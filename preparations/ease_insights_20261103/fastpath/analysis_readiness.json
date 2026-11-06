@@ -1,0 +1,93 @@
+{
+  "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0",
+  "stage": "pilot",
+  "complete": false,
+  "artifact_hashes_verified": true,
+  "conditions": {
+    "pi0_full": {
+      "n": 0,
+      "expected": 40,
+      "successes": 0,
+      "success_rate": null,
+      "actions": 0,
+      "predictions": 0,
+      "mean_model_request_ms": null,
+      "sum_episode_wall_s": 0,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    },
+    "pi0_keep24_2_front_middle": {
+      "n": 0,
+      "expected": 40,
+      "successes": 0,
+      "success_rate": null,
+      "actions": 0,
+      "predictions": 0,
+      "mean_model_request_ms": null,
+      "sum_episode_wall_s": 0,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    },
+    "pi0_keep24_1_uniform": {
+      "n": 0,
+      "expected": 40,
+      "successes": 0,
+      "success_rate": null,
+      "actions": 0,
+      "predictions": 0,
+      "mean_model_request_ms": null,
+      "sum_episode_wall_s": 0,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    }
+  },
+  "paired_suites": {
+    "libero_spatial": {
+      "n": 0,
+      "suite": "libero_spatial",
+      "predeclared": false,
+      "complete": false,
+      "direction": "descriptive A minus B"
+    },
+    "libero_object": {
+      "n": 0,
+      "suite": "libero_object",
+      "predeclared": false,
+      "complete": false,
+      "direction": "descriptive A minus B"
+    },
+    "libero_goal": {
+      "n": 0,
+      "suite": "libero_goal",
+      "predeclared": true,
+      "complete": false,
+      "direction": "predeclared"
+    },
+    "libero_10": {
+      "n": 0,
+      "suite": "libero_10",
+      "predeclared": true,
+      "complete": false,
+      "direction": "predeclared"
+    }
+  },
+  "full_comparisons": {
+    "pi0_keep24_2_front_middle": {
+      "n": 0,
+      "fast_successes": 0,
+      "full_successes": 0,
+      "relative_success_retention": null,
+      "success_difference": null
+    },
+    "pi0_keep24_1_uniform": {
+      "n": 0,
+      "fast_successes": 0,
+      "full_successes": 0,
+      "relative_success_retention": null,
+      "success_difference": null
+    }
+  },
+  "paired_cases": [],
+  "interpretation": "Incomplete matrix: provisional descriptive evidence; no confirmation claim.",
+  "runs": [],
+  "analysis_source_sha256": "491518d247e935fc5dcb9ff8abe12dc7022ea97319fc83a11adf61bacf345d3d",
+  "method_note": "Directions/candidates/cases were frozen before validation. One-sided exact McNemar and two-sided 95% paired percentile intervals report effect and uncertainty; equal-task cluster bootstrap and exact task sign-flip are sensitivity analyses. Strong wording additionally requires complete data and both positive cluster intervals. This wording rule is an analysis convention, not an additional preregistered statistical test.",
+  "throughput_note": "Per-run wall time includes workers and serial model queue; sum of concurrent run walls is resource time, not end-to-end makespan. Failed/incomplete run wall time must be counted separately for total experiment cost."
+}

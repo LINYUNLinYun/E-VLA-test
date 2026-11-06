@@ -1,0 +1,117 @@
+stage: calibration
+manifest: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data_v2/manifest.jsonl
+output_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/external_calibration
+cache_dir: /root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/external_source_cache
+model:
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero
+  config_name: pi05_libero
+  openpi_root: /root/nfs/embodied/benchmark/policies/openpi
+seed: 42
+source_layers:
+- 0
+- 3
+- 6
+- 9
+- 12
+- 15
+- 18
+max_new_tokens: 8
+score_candidates: true
+length_normalize: false
+selection_prediction: prediction
+controls:
+- id: gray
+  kind: constant
+  value: 127
+- id: black
+  kind: constant
+  value: 0
+conditions:
+- real
+- nopatch
+- self
+- shuffle
+- random
+- direct
+- layer0
+integrity:
+  atol: 1.0e-05
+  rtol: 1.0e-05
+aliases: {}
+probes:
+- id: visual_image
+  task_type: visual_attribute
+  source_selector: image:base_0_rgb
+  target_selector: image:base_0_rgb
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: null
+- id: visual_text
+  task_type: visual_attribute
+  source_selector: text:last_task
+  target_selector: text:placeholder
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: 'answer en What color is X?
+
+    '
+- id: spatial_image
+  task_type: spatial_relation
+  source_selector: image:base_0_rgb
+  target_selector: image:base_0_rgb
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: null
+- id: spatial_text
+  task_type: spatial_relation
+  source_selector: text:object
+  target_selector: text:placeholder
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: 'answer en Is X to the left or right of the gripper?
+
+    '
+- id: instruction_image
+  task_type: instruction_conditioned
+  source_selector: images
+  target_selector: images
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: 'answer en Is the task target to the left or right of the gripper?
+
+    '
+  direct_include_instruction: true
+- id: instruction_text
+  task_type: instruction_conditioned
+  source_selector: text:object
+  target_selector: text:placeholder
+  target_layers:
+  - 3
+  - 6
+  - 9
+  - 12
+  prompt: 'answer en Is X to the left or right of the gripper?
+
+    '
+  direct_include_instruction: true
+target_model:
+  backend: hf_paligemma
+  checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224
+  device: cuda:0
+  dtype: bfloat16
+  hf_runtime: /root/nfs/embodied/benchmark/shared/caches/pi05_hidden_probe_hf_runtime

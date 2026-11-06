@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "manifest_hash": "5b7946d1385f66cd7d36803ea05a5162854f19637f9ec3ce9918e041d5d05dcc",
+  "historical_module_manifest_hash": "cf9ac44ea0fede5f6c81249467e6f28ff52d1d28b2d068e15d29d097643cde2d",
+  "main_audit_passed": true,
+  "observed_new_episodes": 160,
+  "main_strict_prefix_exclusions": 0,
+  "historical_initial_exceptions": 0,
+  "primary_comparisons": [
+    {
+      "budget": "B4",
+      "n": 40,
+      "baseline": "B4_M-E-U+",
+      "candidate": "B4_M-E-W+",
+      "unweighted_success": 27,
+      "weighted_success": 26,
+      "recovered": 6,
+      "new_failures": 7,
+      "delta_pp": -2.4999999999999996,
+      "ci_low_pp": -17.5,
+      "ci_high_pp": 10.0,
+      "suite_deltas": {
+        "libero_spatial": 2,
+        "libero_object": -3,
+        "libero_goal": 1,
+        "libero_10": -1
+      },
+      "reported_csv_matches": true
+    },
+    {
+      "budget": "B6",
+      "n": 40,
+      "baseline": "B6_M-E-U+",
+      "candidate": "B6_M-E-W+",
+      "unweighted_success": 25,
+      "weighted_success": 25,
+      "recovered": 6,
+      "new_failures": 6,
+      "delta_pp": 0.0,
+      "ci_low_pp": -15.0,
+      "ci_high_pp": 15.0,
+      "suite_deltas": {
+        "libero_spatial": -1,
+        "libero_object": 0,
+        "libero_goal": 2,
+        "libero_10": -1
+      },
+      "reported_csv_matches": true
+    }
+  ],
+  "historical_ffn_quality_background": [
+    {
+      "scope": "post-hoc quality background; historical cost/candidate set differs; no timing comparison",
+      "baseline": "B4_F-E+",
+      "candidate": "B4_M-E-U+",
+      "n": 40,
+      "excluded": [],
+      "historical_success": 27,
+      "candidate_success": 27,
+      "recovered": 6,
+      "new_failures": 6,
+      "delta_pp": 6.938893903907228e-16,
+      "ci_low_pp": -15.0,
+      "ci_high_pp": 15.000000000000002,
+      "first_full_raw_max_abs": 0.0,
+      "first_full_actions_max_abs": 0.0,
+      "first_fast_input_all_match": true
+    },
+    {
+      "scope": "post-hoc quality background; historical cost/candidate set differs; no timing comparison",
+      "baseline": "B4_F-E+",
+      "candidate": "B4_M-E-W+",
+      "n": 40,
+      "excluded": [],
+      "historical_success": 27,
+      "candidate_success": 26,
+      "recovered": 5,
+      "new_failures": 6,
+      "delta_pp": -2.500000000000001,
+      "ci_low_pp": -15.0,
+      "ci_high_pp": 10.0,
+      "first_full_raw_max_abs": 0.0,
+      "first_full_actions_max_abs": 0.0,
+      "first_fast_input_all_match": true
+    },
+    {
+      "scope": "post-hoc quality background; historical cost/candidate set differs; no timing comparison",
+      "baseline": "B6_F-E+",
+      "candidate": "B6_M-E-U+",
+      "n": 40,
+      "excluded": [],
+      "historical_success": 26,
+      "candidate_success": 25,
+      "recovered": 5,
+      "new_failures": 6,
+      "delta_pp": -2.5,
+      "ci_low_pp": -17.5,
+      "ci_high_pp": 12.5,
+      "first_full_raw_max_abs": 0.0,
+      "first_full_actions_max_abs": 0.0,
+      "first_fast_input_all_match": true
+    },
+    {
+      "scope": "post-hoc quality background; historical cost/candidate set differs; no timing comparison",
+      "baseline": "B6_F-E+",
+      "candidate": "B6_M-E-W+",
+      "n": 40,
+      "excluded": [],
+      "historical_success": 26,
+      "candidate_success": 25,
+      "recovered": 4,
+      "new_failures": 5,
+      "delta_pp": -2.5,
+      "ci_low_pp": -12.5,
+      "ci_high_pp": 10.0,
+      "first_full_raw_max_abs": 0.0,
+      "first_full_actions_max_abs": 0.0,
+      "first_fast_input_all_match": true
+    }
+  ],
+  "condition_quality_and_selection": [
+    {
+      "condition": "B4_M-E-U+",
+      "n": "40",
+      "success": "27",
+      "libero_spatial_success": "6",
+      "libero_object_success": "10",
+      "libero_goal_success": "5",
+      "libero_10_success": "6",
+      "mean_selected_attn": "1.6093366093366093",
+      "mean_selected_ffn": "4.117936117936118",
+      "mean_selected_af": "0.995085995085995"
+    },
+    {
+      "condition": "B4_M-E-W+",
+      "n": "40",
+      "success": "26",
+      "libero_spatial_success": "8",
+      "libero_object_success": "7",
+      "libero_goal_success": "6",
+      "libero_10_success": "5",
+      "mean_selected_attn": "0.4088669950738916",
+      "mean_selected_ffn": "4.657635467980295",
+      "mean_selected_af": "0.25862068965517243"
+    },
+    {
+      "condition": "B6_M-E-U+",
+      "n": "40",
+      "success": "25",
+      "libero_spatial_success": "6",
+      "libero_object_success": "8",
+      "libero_goal_success": "5",
+      "libero_10_success": "6",
+      "mean_selected_attn": "1.672055427251732",
+      "mean_selected_ffn": "6.5796766743648964",
+      "mean_selected_af": "1.3787528868360277"
+    },
+    {
+      "condition": "B6_M-E-W+",
+      "n": "40",
+      "success": "25",
+      "libero_spatial_success": "5",
+      "libero_object_success": "8",
+      "libero_goal_success": "7",
+      "libero_10_success": "5",
+      "mean_selected_attn": "0.09579439252336448",
+      "mean_selected_ffn": "6.978971962616822",
+      "mean_selected_af": "0.07476635514018691"
+    }
+  ],
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 281034,
+    "method": "suite-stratified task clusters; same-task inits kept together",
+    "multiplicity_adjusted": false
+  },
+  "input_hashes": {
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/manifest.json": "0fc8be8788f8d8d850b5c65ac2fe4f1b87935dab50f99a704fdf39b60430871c",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/summary.csv": "93904951c81da2c95f075f6996abdca6e8246e7571cc4309c2f8fa783201adb1",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/paired.csv": "51d4492355e27d4ee158c2d6df184fb66ba0924d4f84ef11e4e5dd4c926f200c",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/episodes.csv": "d8d3607f41eb7f31886d31e555fd0f44baed4b9b55b251761e2d6bdfacd43109",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_mixed_cost/audit.json": "f2bddcb58352ac0d5d5bd1c460a876b25ef184a9300559a0a0c26d6d9e066f2c",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/manifest.json": "e311b73e5395c4432ea5aacc9df4ce2488e55cfb16a5837577907cc0ca4299b1",
+    "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/episodes.csv": "bae131187e51acebd93f780a31d1b0be3d21df38125b6b2167cbef93bcf04830"
+  },
+  "claims": "Exploratory quality evidence; historical comparisons are background and do not isolate the added effect of mixed gating from the changed measured cost candidate set",
+  "created_time": 1793542703.439712,
+  "review_hash": "b714b4a346cb02e61b9e7f020b3008160c012c83c7be35490afa56dbb7e1025b"
+}

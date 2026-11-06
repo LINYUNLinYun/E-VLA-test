@@ -1,0 +1,367 @@
+{
+  "schema": "ease-insights-history-v1",
+  "status": "discovery_only_not_independent_confirmation",
+  "source_manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+  "candidates": {
+    "A": {
+      "condition": "pi0_keep24_2_front_middle",
+      "skip": [
+        8,
+        9,
+        10
+      ],
+      "keep": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_1/run/pi0_keep24_2_front_middle"
+    },
+    "B": {
+      "condition": "pi0_keep24_1_uniform",
+      "skip": [
+        5,
+        14,
+        23
+      ],
+      "keep": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27
+      ],
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_1/run/pi0_keep24_1_uniform"
+    }
+  },
+  "discovery_cases": {
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inits": [
+      0
+    ],
+    "paired_cases": 40
+  },
+  "successes": {
+    "A": {
+      "libero_spatial": {
+        "success": 9,
+        "n": 10
+      },
+      "libero_object": {
+        "success": 9,
+        "n": 10
+      },
+      "libero_goal": {
+        "success": 10,
+        "n": 10
+      },
+      "libero_10": {
+        "success": 7,
+        "n": 10
+      },
+      "all": {
+        "success": 35,
+        "n": 40
+      }
+    },
+    "B": {
+      "libero_spatial": {
+        "success": 9,
+        "n": 10
+      },
+      "libero_object": {
+        "success": 10,
+        "n": 10
+      },
+      "libero_goal": {
+        "success": 8,
+        "n": 10
+      },
+      "libero_10": {
+        "success": 9,
+        "n": 10
+      },
+      "all": {
+        "success": 36,
+        "n": 40
+      }
+    }
+  },
+  "discordant_cases": [
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 0,
+      "A_success": false,
+      "B_success": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 0,
+      "A_success": true,
+      "B_success": false
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 0,
+      "A_success": true,
+      "B_success": false
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 0,
+      "A_success": false,
+      "B_success": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 0,
+      "A_success": false,
+      "B_success": true
+    }
+  ],
+  "frozen_confirmation_directions": {
+    "libero_goal": "A > B",
+    "libero_10": "B > A"
+  },
+  "numeric_protocol": {
+    "model": "pi0",
+    "backend": "native JAX OpenPI",
+    "module": "vision",
+    "vision_depth": 27,
+    "kept_vision_blocks": 24,
+    "D": 10,
+    "H": 50,
+    "R": 5,
+    "vlm_depth": 18,
+    "ae": "complete original scanned AE",
+    "pure_fixed_submodel": true,
+    "full_refresh": false,
+    "compensation": null,
+    "verifier": false,
+    "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero",
+    "env_seed": 7,
+    "control_hz": 20,
+    "settling_steps": 10,
+    "settling_action": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "image_height_width": [
+      256,
+      256
+    ],
+    "limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "initial_sim_times_s": [
+      0.5000000000000003
+    ],
+    "noise_seed_formula": "int(sha256(canonical_json(['idea1-v3.1',1701,suite,task,init,request]))[:8],16)",
+    "environment_reused_values": [
+      false
+    ]
+  },
+  "protocol_comparison": {
+    "all_differences": {
+      "condition_id": {
+        "A": "pi0_keep24_2_front_middle",
+        "B": "pi0_keep24_1_uniform"
+      },
+      "id": {
+        "A": "pi0_keep24_2_front_middle",
+        "B": "pi0_keep24_1_uniform"
+      },
+      "keep": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "layout": {
+        "A": "front_middle",
+        "B": "uniform"
+      },
+      "server_pid": {
+        "A": 2390929,
+        "B": 2378050
+      },
+      "skip": {
+        "A": [
+          8,
+          9,
+          10
+        ],
+        "B": [
+          5,
+          14,
+          23
+        ]
+      }
+    },
+    "unexpected_differences": {},
+    "episode_protocol_failures": [],
+    "frozen_sources_all_match": true
+  },
+  "paired_audit": {
+    "matching_counts_of_40": {
+      "init_vector_sha256": 40,
+      "bddl_sha256": 40,
+      "env_seed": 40,
+      "control_hz": 40,
+      "controller": 40,
+      "first_input_hash": 40,
+      "first_noise_hash": 40,
+      "first_noise_seed": 40,
+      "first_telemetry_sim_time_s": 40
+    },
+    "requests_checked": {
+      "A": 1532,
+      "B": 1406
+    },
+    "request_protocol_failures": [],
+    "first_input_hash_present": 40,
+    "initial_raw_observation_npz_pairs_available": 0
+  },
+  "hash_interpretation": {
+    "input_hash": "Historical infer.jsonl digest over the transmitted ndarray observations and instruction; all 40 A/B pairs match.",
+    "helper_source": "/root/nfs/embodied/benchmark/preparations/idea1_v2_1/runtime_client.py",
+    "limitation": "No initial raw NPZ arrays are saved for these episodes; matching historical digests are verified, but this extraction cannot recompute them from raw arrays.",
+    "telemetry": "Only the initial telemetry line was read; its exact line SHA256 is included per case, not a full telemetry-file integrity claim."
+  },
+  "interpretation": [
+    "A exceeds B by 2/10 on Goal; B exceeds A by 2/10 on Long. Both are usable on the discovery set.",
+    "These paths were chosen after examining historical results; each suite has only 10 discovery cases and no independent replication yet.",
+    "The pair uses the same frozen runner, checkpoint, D/H/R, environment seed, settling, controller, initial transmitted observation digest, and initial noise digest.",
+    "Seed7 is set after environment construction in the historical runner. The matching first-input digests reduce this concern for the recorded A/B pairs; new replication should seed before construction and verify fresh initial inputs.",
+    "No inference speedup is inferred from the historical per-request timings or from keeping 24 vision blocks."
+  ],
+  "artifacts": {
+    "paired_cases": {
+      "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history/paired_discovery_cases.csv",
+      "sha256": "ebb8ebff044b27669b26a1a4d6bdba0d890a3662b2a589c1b8ddc881d86db16b"
+    },
+    "sources": {
+      "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history/source_manifest.json",
+      "sha256": "82a7a72beb083501fc8e935cb12d4f9cb4d3f54a2fd1cf90e4d25072bb5430b9"
+    }
+  },
+  "reproduce": "python3 /root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history/extract_candidate_evidence.py --root /root/nfs/embodied/benchmark --output /root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history"
+}

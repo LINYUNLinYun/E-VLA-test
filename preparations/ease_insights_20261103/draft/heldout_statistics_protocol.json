@@ -1,0 +1,40 @@
+{
+  "revision": "ease-insight1-heldout-statistics-v1",
+  "preregistered_utc": "2026-11-03T09:43:46Z",
+  "preregistered_beijing": "2026-11-03 17:43:46 +08:00",
+  "heldout_results_read_for_this_design": false,
+  "selection": "Use every one or two source-target pairs in the already frozen selection.json. Do not select, discard, reorder for significance, or substitute pairs based on held-out outcomes.",
+  "matrix": "For each selected target: matching pure, foreign pure, matching FLASH, foreign FLASH, and Full, each ten tasks times init21-24 (40 cases). All selected pairs must have the entire planned matrix before primary inference or a replicated label.",
+  "primary": {
+    "outcome": "Pure-draft binary episode success",
+    "direction": "matching source success greater than foreign source success on the same target/task/init",
+    "discordance": "b = matching-only successes; c = foreign-only successes",
+    "test": "One-sided exact conditional McNemar: P[Binomial(b+c,0.5) >= b]; p=1 when b+c=0",
+    "family": "All frozen source-target pairs, one or two tests",
+    "correction": "Holm step-down adjustment across the entire frozen family",
+    "alpha": 0.05,
+    "replicated_rule": "Only after the entire planned held-out matrix is complete: positive paired pure success difference and Holm-adjusted one-sided p <=0.05. Otherwise not_replicated. Incomplete data are incomplete_not_tested, never replicated or a scientific null.",
+    "scope": "Case-level confirmation on four new initial states of the same ten tasks. Cases within a task may be correlated; the exact McNemar model treats discordant cases as conditionally independent. Task-cluster intervals are mandatory robustness information, and case-level significance alone does not establish generalization to unseen tasks."
+  },
+  "effect_intervals": {
+    "point_estimates": "Paired case mean matching-minus-foreign difference and equal-weight mean of the ten task-specific differences",
+    "case_bootstrap": "Resample paired cases with replacement; never unpair outcomes",
+    "task_cluster_bootstrap": "Resample tasks with replacement, keeping all available paired initial states in each sampled task together; estimate the equal-weight average task difference",
+    "replicates": 20000,
+    "interval": "Two-sided percentile95% interval (2.5th and97.5th percentiles)",
+    "seed": "SHA256(ease-heldout-statistics-v1|target|foreign|mode|subset|metric|case-or-task), first8 bytes little-endian",
+    "small_cluster_boundary": "Only ten tasks; cluster bootstrap is a finite-sample sensitivity analysis, not proof of population-wide task generalization."
+  },
+  "secondary": {
+    "FLASH_metrics": ["episode success", "per-case verified action acceptance", "per-case rejection-triggered Full requests divided by all requests"],
+    "service_metrics_modes": ["pure draft", "FLASH"],
+    "service_metrics": ["complete native policy ms per actually executed action", "complete client RPC ms per actually executed action"],
+    "service_subsets": {"all4_init21_24": [21,22,23,24], "repeat_task_init22_24": [22,23,24]},
+    "aggregation": "Pair cases first; requests are never independent statistical samples. Rate/cost differences receive paired-case and task-cluster intervals. Report undefined metrics (for example zero verified rounds) and their reduced paired denominator without treating them as zero.",
+    "orientation": "All differences are matching minus foreign. Positive is favorable for success/acceptance; negative is favorable for rejection fraction and service cost.",
+    "descriptive_context": "Report both success counts, actual episode-wall totals and means, request/action totals, Full baseline, and pooled service costs alongside equal-case effect estimates.",
+    "inference": "Secondary estimates are descriptive; no extra uncorrected confirmatory p-values. A FLASH success decrease is not required: Full may preserve success while acceptance and cost worsen.",
+    "timing_limits": "Zero-action rejection requests still count toward policy/RPC costs. Mean per-request latency is not actual acceleration; GPU-stage time is not end-to-end. Repeat-task init22-24 is a fixed subset, not guaranteed compilation-free or deployment warm-state speedup."
+  },
+  "missing_data": "Report every prespecified pair, each condition's expected40 and missing target/task/init identities. Technical/incomplete cases remain missing. No optional stopping, favorable-case filtering, or outcome-based repeats."
+}

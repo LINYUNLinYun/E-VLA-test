@@ -1,0 +1,36 @@
+{
+  "experiment_id": "experiment9_standard_vlm_pruning",
+  "suites": ["libero_object", "libero_spatial", "libero_goal", "libero_10"],
+  "task_ids": "0-9",
+  "official_init_indices": {"pilot": [0, 10], "full": [0, 50]},
+  "init_chunk_size": 10,
+  "seed": 7,
+  "noise_seed": 12345,
+  "warmup_steps": 10,
+  "replan_steps": 12,
+  "action_layer_pattern": "full18",
+  "denoise_steps": 10,
+  "record_semantic_telemetry": true,
+  "conditions": {
+    "Full18": "vlm_full18",
+    "Skip-L2": "vlm_skip_l2",
+    "Skip-L3": "vlm_skip_l3",
+    "Skip-L4": "vlm_skip_l4",
+    "Skip-L5": "vlm_skip_l5",
+    "Skip-L2-5": "vlm_skip_l2_l5",
+    "V16": "vlm_first8_last8",
+    "V14": "vlm_first7_last7",
+    "V12": "vlm_first6_last6",
+    "V10-Mid": "vlm_first4_middle2_last4",
+    "V13-Custom": "vlm_keep_l1_l2_l5_l6_l8_l9_l10_l11_l13_l14_l16_l17_l18"
+  },
+  "gpu_idle_threshold": {"max_used_memory_mib": 2048, "max_utilization_percent": 10},
+  "gpu_check_interval_seconds": 300,
+  "expansion_priority": ["Full18", "new_candidates", "legacy_variants"],
+  "action_expert_followup": {
+    "enabled": true,
+    "denoise_steps": [7, 5, 3],
+    "expand_if_success_rate_at_least": 0.9,
+    "expand_if_within_baseline_pp": 2.0
+  }
+}

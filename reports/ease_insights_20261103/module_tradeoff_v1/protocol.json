@@ -1,0 +1,220 @@
+{
+  "revision": "ease-module-tradeoff-v1",
+  "status": "prospective_before_new_module_GPU_outcomes",
+  "time": 1793894863.8593762,
+  "conditions": [
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": []
+    },
+    {
+      "id": "vlm_c",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        17
+      ],
+      "ae_skip": []
+    },
+    {
+      "id": "ae_16",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        8
+      ]
+    },
+    {
+      "id": "ae_14",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "ae_12",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "hybrid_15_15",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        17
+      ],
+      "ae_skip": [
+        2,
+        7,
+        8
+      ]
+    }
+  ],
+  "previous_branch": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/completed_summary.json",
+    "sha256": "99a8708ef2fea0cb6c01e07373ad8d20fe01eac658b1b72da0aa45fa55787b5d"
+  },
+  "proposal_basis": {
+    "VLM_c": "The only qualified path in the completed broad-mask discovery,70/80; explicitly selected using known previous outcomes.",
+    "AE_layers": "Nested two/four/six skips from the historical global low first5-command NMSE ranking; single-layer proxy only, not assumed composable or task-specific.",
+    "AE_evidence": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_existing_evidence_inventory/offline_layer_affinity/analysis.json",
+      "sha256": "01b0fdce85d72ef0d062712e2517465442b25fe32f0f541713e1ecab809a6e3a"
+    },
+    "hybrid": "Three VLM skips from the old Jac mask plus three low global-error AE skips; no measured task preference assumed."
+  },
+  "calibration": {
+    "episodes": 4,
+    "inits": [
+      45
+    ],
+    "tasks": [
+      0
+    ],
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "condition": "full_d10",
+    "cases_previously_used": true,
+    "independent_quality_evidence": false,
+    "required": "Actual native no-AE-bypass raw/decoded D10 and D2 parity on four bank inputs; direct AE visits and actualNFE; all four Full trajectories must bridge preserved Full actions/outcomes before any quality-reference reuse.",
+    "profile": "All six fixed configurations measured on the original four-suite input bank,6 warmup and12 measured rounds each; descriptive native policy cost only"
+  },
+  "discovery": {
+    "new_conditions": [
+      "ae_16",
+      "ae_14",
+      "ae_12",
+      "hybrid_15_15"
+    ],
+    "new_episodes": 320,
+    "inits": [
+      45,
+      46
+    ],
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reused_conditions": {
+      "full_d10": "old full_d10",
+      "vlm_c": "old spread_c"
+    },
+    "reused_episodes": 160,
+    "analytical_case_cells": 480,
+    "reference_scope": "Prior original records/manifests remain unchanged and retain source identities. This is exploratory reuse of known discovery controls, never a new160-case replication. Only reuse after a source/numerical/physical-input bridge passes.",
+    "pair_eligibility": "Both overall>=.75 and >=Full-.15; each median completed-service native cost ratio>=1.15; pair measured mean-cycle cost within10%; opposite distinct-suite gaps>=.10, >=2 positive tasks and every task leave-one-out positive.",
+    "ranking": "Maximum minimum directional gap, sum gaps, minimum overall successes, then lexical path/suite ids; freeze one pair only after all320 new and160 preserved cases accepted"
+  },
+  "confirmation": {
+    "episodes": 360,
+    "inits": [
+      47,
+      48,
+      49
+    ],
+    "conditions": "Full and exactly two frozen paths",
+    "primary": "One-sided exact ten-task sign-flip including ties, Holm2 across exactly two frozen directions",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261106,
+    "quantile_method": "linear",
+    "verdict": "Both frozen directions positive; primary Holm2 p<.05; whole-task bootstrap lower>0; every task leave-one-out positive; both paths>=.75 and>=Full-.15; measured pair cost within10% and each ratio>=1.15",
+    "no_reselection": true
+  },
+  "new_episode_cap": 684,
+  "fixed_science": {
+    "H": 50,
+    "R": 5,
+    "Full_D": 10,
+    "Fast_D": 2,
+    "period": 2,
+    "Full_AE_layers": 18,
+    "vision_layers": 27,
+    "Full_refresh": "FullVLM18/AE18 every third request",
+    "VLM_compensation": "Own-path residual extrapolation; empty VLM mask still has periodic timestamps",
+    "policy_action_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "settling_actions": 10,
+    "environment_seed": 7
+  },
+  "cost_warning": "VLM/AE layer counts do not represent equal computation. Pair matching uses measured completed-policy cost, not layer counts or FLOP estimates.",
+  "limits": "Suite-conditioned effects only; no universal semantic-category or same-task phase claim, no exclusive-GPU timing guarantee; many exploratory branches do not provide a study-wide5% error guarantee.",
+  "no_candidate": "Do not launch confirmation or weaken gates; preserve this bounded result and continue the overall goal separately"
+}

@@ -1,0 +1,44 @@
+{
+  "server_pid": 3208521,
+  "manifest_hash": "70f0d281af056a9716a1861e2d4b8f4b2c843ad8f6902089a10adc65564df4ec",
+  "condition_id": "pi0_full",
+  "H": 50,
+  "R": 5,
+  "D": 10,
+  "real_input_parity_passed": true,
+  "native_b1_parity": {
+    "passed": true,
+    "strict_1e5_passed": true,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "load_s": 11.94414922222495,
+  "bank": [
+    {
+      "path": "results/idea1_v3_1/input_bank.pkl",
+      "sha256": "2c2e90a3e1fcac3f02226a433c6db9e19a0f3c169deea77707a9a1fbe8996d55",
+      "observations": 100
+    }
+  ],
+  "backend": "unchanged native JAX pi0 Full",
+  "batch_compiles": {
+    "1": {
+      "lower_s": 1.6511530205607414,
+      "compile_s": 9.75423713773489
+    }
+  },
+  "original_policy_first_completed_s": 20.62994798272848,
+  "native_b1_first_timing": {
+    "prepare_ms": 31.908702105283737,
+    "model_completed_ms": 93.34089979529381,
+    "request_completed_ms": 11532.136116176844,
+    "batch_size": 1
+  },
+  "native_b1_first_raw_shape": [
+    1,
+    50,
+    32
+  ]
+}

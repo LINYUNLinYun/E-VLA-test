@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "kind": "light_repeat_benchmark_source_receipt",
+  "revision": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/light_repeat_v2",
+  "revision_manifest_sha256": "128073599f18015ac528ebc191a669bb9bed680760ce7eb0839cc262b0a3c335",
+  "files": {
+    "preparations/idea1_v2_2/benchmark_light_revision.py": "00380092abc27839eeb1e7214881438c56a2846584ceb826cbd638088cbade70",
+    "preparations/idea1_v2_2/benchmark_light_analysis.py": "de5affe34f6b71db8ee9ff5ac3863b4ce593deaa828b074e7c1b62f61ed6f1dd",
+    "preparations/idea1_v2_2/runtime_analysis_light.py": "ab590785d60e8361463b1c2a024235b79db06035633e6ab9fccf95cb96822949",
+    "preparations/idea1_v2_2/final_provenance_analysis_v6.py": "ec3c6c91993733c43f9efcfb0d2d7a888a9f8dd50274ea44ac67f6ba103305d6",
+    "preparations/idea1_v2_2/test_benchmark_light_revision.py": "d4a7feea5c1924afec12dcbfd38b1f4f8ec2384ddf5ae1a3251d2cf558170fab",
+    "preparations/idea1_v2_2/benchmark_all_process_guard.py": "097daf360d67b94e7ba07c6631d0b7809c04a07c68f11e9ad8aaaa5c6a83d684",
+    "preparations/idea1_v2_2/benchmark_all_process_revision.py": "6b81c6b8a06493a1b6b2c27569a6bc67637f2ebc3b0edb5db879ba388593a03f",
+    "preparations/idea1_v2_2/benchmark_all_process_analysis.py": "318e1c225e68d0e7cbac3f0c4c1d367757c6ecf77b9d2c76d8a8aa6f12941998",
+    "preparations/idea1_v2_2/runtime_analysis.py": "1d60f080e969d2dd9d037d7cad0a7ff46489dd8ec8d29ba48e46b3633d8e0d60",
+    "preparations/idea1_v2_2/final_provenance_analysis_v5.py": "dcdbbf4503e967ec3026c5c74a40b4a3bae133137849269ccdbc5e4c23219959",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/light_repeat_v2/revision_manifest.json": "128073599f18015ac528ebc191a669bb9bed680760ce7eb0839cc262b0a3c335"
+  },
+  "tests": {
+    "command": "/usr/bin/python3 -m unittest test_benchmark_light_revision -v",
+    "passed": 4,
+    "seconds": 0.475
+  },
+  "required_total_calls": 22528,
+  "measurement_total": 18240,
+  "repetition_policy": {
+    "pi0": {
+      "warmup": 1,
+      "measurement": 5
+    },
+    "xiaomi-robotic0": {
+      "warmup": 1,
+      "measurement": 5
+    },
+    "db-cogact": {
+      "warmup": 5,
+      "measurement": 20
+    }
+  },
+  "inherited_db": {
+    "revision": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/all_process_v2",
+    "revision_manifest_sha256": "3773aa2bdf6128574f89ae97834c4bfccdc1c3b7dd7e2d706617e3c096b945ce",
+    "selection_sha256": "eefb68e31dab79570b491a80d7f11fa925afd1550bc7c1a7d52b76e22e635551",
+    "completion_sha256": "1744d6758ae814cf01285b48d59ed4ec98f41eac63c152657a88e53782810dff",
+    "attempt": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/all_process_v2/attempts/db-cogact/f09fbf877aee4155bbc1d22ac036f6f4"
+  },
+  "scope": "benchmark repetitions only; no formal/offline/history/media reduction",
+  "gpu_actions_performed": false,
+  "phase_authority": false,
+  "unused_unsigned_prepare": "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/light_repeat_v1"
+}

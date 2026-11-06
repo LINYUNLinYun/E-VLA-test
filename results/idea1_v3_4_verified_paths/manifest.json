@@ -1,0 +1,2426 @@
+{
+  "conditions": [
+    {
+      "id": "v12_extrapolate_d2_verify_p3",
+      "model": "pi0",
+      "mode": "verified",
+      "budget": 12,
+      "skip_count": 6,
+      "adjacency_rule": "spaced",
+      "period": 3,
+      "selection": "jacobian",
+      "projections": 4,
+      "skip": [],
+      "compensation": "extrapolate",
+      "tau": 0.1,
+      "protect_gripper": true,
+      "kalman": false,
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "n": 200,
+      "phase": "main200"
+    },
+    {
+      "id": "v12_extrapolate_d2_verify_p5",
+      "model": "pi0",
+      "mode": "verified",
+      "budget": 12,
+      "skip_count": 6,
+      "adjacency_rule": "spaced",
+      "period": 5,
+      "selection": "jacobian",
+      "projections": 4,
+      "skip": [],
+      "compensation": "extrapolate",
+      "tau": 0.1,
+      "protect_gripper": true,
+      "kalman": false,
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "n": 200,
+      "phase": "main200"
+    },
+    {
+      "id": "v14_extrapolate_d2_verify_p3",
+      "model": "pi0",
+      "mode": "verified",
+      "budget": 14,
+      "skip_count": 4,
+      "adjacency_rule": "spaced",
+      "period": 3,
+      "selection": "jacobian",
+      "projections": 4,
+      "skip": [],
+      "compensation": "extrapolate",
+      "tau": 0.1,
+      "protect_gripper": true,
+      "kalman": false,
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "n": 200,
+      "phase": "main200"
+    },
+    {
+      "id": "v14_extrapolate_d2_verify_p5",
+      "model": "pi0",
+      "mode": "verified",
+      "budget": 14,
+      "skip_count": 4,
+      "adjacency_rule": "spaced",
+      "period": 5,
+      "selection": "jacobian",
+      "projections": 4,
+      "skip": [],
+      "compensation": "extrapolate",
+      "tau": 0.1,
+      "protect_gripper": true,
+      "kalman": false,
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "n": 200,
+      "phase": "main200"
+    },
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "budget": 18,
+      "period": 1,
+      "selection": "none",
+      "projections": 0,
+      "skip": [],
+      "compensation": "none",
+      "tau": 0.1,
+      "protect_gripper": true,
+      "kalman": false,
+      "H": 50,
+      "R": 5,
+      "full_steps": 10,
+      "fast_steps": null,
+      "n": 200,
+      "phase": "main200"
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 21
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 22
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 23
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 21
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 22
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 23
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 21
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 22
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 23
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 21
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 22
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 23
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "controls": {
+    "libero_spatial_task00_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task00/init20",
+      "identity_sha256": "2e08bc29dff6e7ea9c72b321b689f677ffba7012e5d77f7755bcc606734016c5"
+    },
+    "libero_spatial_task00_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task00/init21",
+      "identity_sha256": "47a05b8c461db0716462851716a24b68950a4bf662444c40bbbd77288934c13e"
+    },
+    "libero_spatial_task00_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task00/init22",
+      "identity_sha256": "b3c1505bb0136ae86c8e5f5e554061f034a5e046b3cfdee05ccb5073e3174409"
+    },
+    "libero_spatial_task00_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task00/init23",
+      "identity_sha256": "9d6ab66a06f2d111eb7175ce344c69213ded9fab83aa1938d7f1e46be266f6b4"
+    },
+    "libero_spatial_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task00/init19",
+      "identity_sha256": "70406227ab4240cea3d03df4562c0a2b3a7fbdd5c137065e48a9e94145264dea"
+    },
+    "libero_object_task00_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task00/init20",
+      "identity_sha256": "fd366e8110856603c770423bc38f92c62ade5850b20149a18982abc37d9f47fc"
+    },
+    "libero_object_task00_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task00/init21",
+      "identity_sha256": "d05d21f2ce85f3e922f356bd4f2016ce3270396dc721874f67d580407e400edd"
+    },
+    "libero_object_task00_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task00/init22",
+      "identity_sha256": "9eef391cb81ad055b860b6f451e74f1d04f66ba0072c6520f3822de72e8d1dbc"
+    },
+    "libero_object_task00_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task00/init23",
+      "identity_sha256": "18e323da13e1aa19b8ae07b964277987a20d6a00379bd22f04b85e0b3440ace7"
+    },
+    "libero_object_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task00/init19",
+      "identity_sha256": "04d60e42b4fef09c1f5caa321789b984adb88530e612c20ca5ae977f47e4dd28"
+    },
+    "libero_goal_task00_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task00/init20",
+      "identity_sha256": "78e108d882d24395885a56e6daa92fb790923164f4a421964ba0e24d27c0bc2b"
+    },
+    "libero_goal_task00_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task00/init21",
+      "identity_sha256": "562901b182adeb15bbefbf9d2ddc356baa7fcf862437afdb39988ac34ed73cea"
+    },
+    "libero_goal_task00_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task00/init22",
+      "identity_sha256": "d586905895c2d357a1b1994708752f57554230f01fff267e87378e7d8d047ed2"
+    },
+    "libero_goal_task00_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task00/init23",
+      "identity_sha256": "d4d88ab391db9f6640f582ceb21262ce8250a978f71744a5e857a7649cdf400f"
+    },
+    "libero_goal_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task00/init19",
+      "identity_sha256": "dd6c7c6000816048d0185e2ff3c8b7c3c0cf6471f7948a742a8f1e15aad17dcd"
+    },
+    "libero_10_task00_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task00/init20",
+      "identity_sha256": "564fd84a2228f7e09b83a882df18d89856cd0eec66ecd09a5890a0f4d0963ed4"
+    },
+    "libero_10_task00_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task00/init21",
+      "identity_sha256": "6fba48597dfed83164b3d5d1226090de90ff49eec70bc4f4e53cbec5e46ebe9a"
+    },
+    "libero_10_task00_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task00/init22",
+      "identity_sha256": "01af7d3574fdae566cd3fae4064c077aeeee21bf757645d794fb35cc23881113"
+    },
+    "libero_10_task00_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task00/init23",
+      "identity_sha256": "c419bd6e672436730e0823ddbc6535b1297672333ff58fd1155569fe2b5d274b"
+    },
+    "libero_10_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task00/init19",
+      "identity_sha256": "361f9ea82ce1c0f447cd0f3c96e0b610e7f0eb1756a20902e1363c308fdd610e"
+    },
+    "libero_spatial_task01_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task01/init20",
+      "identity_sha256": "024e6ec6cbfa5370cdcc281239a2209a96ec8e03005a72fc15bf7e122b6a2e61"
+    },
+    "libero_spatial_task01_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task01/init21",
+      "identity_sha256": "2f1ae0c009dafec120b09f30bce4b53a6114ccf069c416c5b2ac6386806828ea"
+    },
+    "libero_spatial_task01_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task01/init22",
+      "identity_sha256": "bdae3d798744d4f0233a80a40033b2ef6c109d09fce6f85862f7a7ce2729fa27"
+    },
+    "libero_spatial_task01_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task01/init23",
+      "identity_sha256": "d961d959266f40f69abd99cd7058b295f2dd848e8e802718b57af92b12c980b1"
+    },
+    "libero_spatial_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task01/init19",
+      "identity_sha256": "11ae9e8d6d43144f49febe0267fc422233e1f89c7dd0b7f465cbe5274fba248c"
+    },
+    "libero_object_task01_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task01/init20",
+      "identity_sha256": "907cad1c649f628c9a2174ab14fbd38f87902f9aac2cf4389faf0c5209536c0d"
+    },
+    "libero_object_task01_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task01/init21",
+      "identity_sha256": "9bd5e6b0c8a250e31fdf277f7325d7fd9a1cedad86a4f0e7efdd0d41d286843c"
+    },
+    "libero_object_task01_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task01/init22",
+      "identity_sha256": "1bfe9b624d0f96dd45ebda812f5ccdc8c03da9ea9206d1553defd4d640179586"
+    },
+    "libero_object_task01_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task01/init23",
+      "identity_sha256": "4826f92689dec48d83e71a7d83c204c2fc90abe248fd8e19a69f8995c7aa9272"
+    },
+    "libero_object_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task01/init19",
+      "identity_sha256": "e46f91591f4f1e42b157e2d0f8ffe52abb084e068ae2f3f12a505e35907eb4df"
+    },
+    "libero_goal_task01_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task01/init20",
+      "identity_sha256": "ee3b23f24b9dd9e6e31d1d4e4cb6ff8bfcfa9a28c1ee7b20e634f70935b77af1"
+    },
+    "libero_goal_task01_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task01/init21",
+      "identity_sha256": "f71e50dcd6dbd3e27477b734523763d41cbae9088f3b7c17e2d4f0bdd334bf75"
+    },
+    "libero_goal_task01_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task01/init22",
+      "identity_sha256": "cf3923dbeeade645dff89050f792deeeeb1c9e6a9a527bcb9952e9f34238629b"
+    },
+    "libero_goal_task01_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task01/init23",
+      "identity_sha256": "72da5c6507dbadca312f67247e03fd7912c571bd47499143a2d1a9920293287a"
+    },
+    "libero_goal_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task01/init19",
+      "identity_sha256": "509b36e5657b49072d08c584ad09c9859a17ffb586bcda785fe55b452ba24228"
+    },
+    "libero_10_task01_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task01/init20",
+      "identity_sha256": "b402a43150d30393042713494ca839be96c36085b28aaf84441e3e601e81eff1"
+    },
+    "libero_10_task01_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task01/init21",
+      "identity_sha256": "1142eef91f3dff96e8d9143ad9860e93c37c10f307f98e9579614a558bff057e"
+    },
+    "libero_10_task01_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task01/init22",
+      "identity_sha256": "713304f31e3507626ee9379b3593dbd4423d1eef261ab207d75559fed19458f9"
+    },
+    "libero_10_task01_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task01/init23",
+      "identity_sha256": "9d14be93ec2d9cc8c03b33bb2b5a08ebdcee5bb9553c20c4f8b482429d71dee6"
+    },
+    "libero_10_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task01/init19",
+      "identity_sha256": "330a9527e2ba36e8e975ee9bff49e968f435fb2b651c2718801bf0929e54f8b4"
+    },
+    "libero_spatial_task02_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task02/init20",
+      "identity_sha256": "5c897d91ac61d7a1aac9987f3fd129b3ee997bad9e817d859125011c0677b1bd"
+    },
+    "libero_spatial_task02_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task02/init21",
+      "identity_sha256": "271dca865a5fa430c1576dde1a06db618b9102399239ac9081f8d34774c4aa5b"
+    },
+    "libero_spatial_task02_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task02/init22",
+      "identity_sha256": "e679cd28214dbbe12be032c096d291ca931917f4b4265d8f8a28fc04a37db7cb"
+    },
+    "libero_spatial_task02_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task02/init23",
+      "identity_sha256": "f4b4fa7c8c33b2deb9116ec5c3c0434cd53da53ab12161324497e9fb41086c79"
+    },
+    "libero_spatial_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task02/init19",
+      "identity_sha256": "09d095fab4f13b9466830f24a6d9d197981468fb85d81611ccf0f89f622621bc"
+    },
+    "libero_object_task02_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task02/init20",
+      "identity_sha256": "e48d994f746acde32a9a18f4615c02a8947b79bcbc44e86353ca4ccbe7911744"
+    },
+    "libero_object_task02_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task02/init21",
+      "identity_sha256": "f15cd9ce703fcd5b7243c442c2fc90f8a79ea1183e2c2a991b63d126a8be3ce8"
+    },
+    "libero_object_task02_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task02/init22",
+      "identity_sha256": "1b8a602f6401c232883ce96fd356254c2dcd863d0fb7a1e676cef202b9dfd8ab"
+    },
+    "libero_object_task02_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task02/init23",
+      "identity_sha256": "7336f717396bd44c935324250dfc13f2861d3ca3faf9f52c2217ee903b7c55e4"
+    },
+    "libero_object_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task02/init19",
+      "identity_sha256": "5fbd26f10072bf58c1931388c1eadf5dd8e9a535f28054df99ae14fc482e8aba"
+    },
+    "libero_goal_task02_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task02/init20",
+      "identity_sha256": "e4b551701edaaf0b059b0f7a4a56e991c0a4efa6cd5b92fd1bb8631c9d06d12e"
+    },
+    "libero_goal_task02_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task02/init21",
+      "identity_sha256": "1da45203f32a9cee24d476956b2ba073605505461552b69aa96f80a036724514"
+    },
+    "libero_goal_task02_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task02/init22",
+      "identity_sha256": "185ad6e58b9f4500f0ebdfda9171af7f88dde596bc6078f54e972fb5640f9b65"
+    },
+    "libero_goal_task02_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task02/init23",
+      "identity_sha256": "73d3ed75b072eb0ebaa9de5bb28247b4f177f42b5a6db4c87dadd4a5f6361e35"
+    },
+    "libero_goal_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task02/init19",
+      "identity_sha256": "605b0411bb26f6c96483ec12ac1bbdcbdef39377d5b084943d57345204794a67"
+    },
+    "libero_10_task02_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task02/init20",
+      "identity_sha256": "7a4968231912925c9407c4421761c5d5c99d61ed75e8f3dff109c55206410915"
+    },
+    "libero_10_task02_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task02/init21",
+      "identity_sha256": "dcfd439fdfada70d43cf0365be329994ff7d7f37be968e6921ecebab619252a1"
+    },
+    "libero_10_task02_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task02/init22",
+      "identity_sha256": "267c8f19ab5011e17972e066b36de2a524faf9381d86b09983369bccdfaf4341"
+    },
+    "libero_10_task02_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task02/init23",
+      "identity_sha256": "72a282d9d8c16ac5a0e248d2a7047999a0e7783b43d29cfaecf73d1f4273febd"
+    },
+    "libero_10_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task02/init19",
+      "identity_sha256": "f7bfda1e6baccb93954f41f1ec7aa401eb21f6c98ab0926ae4a42a63006e6638"
+    },
+    "libero_spatial_task03_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task03/init20",
+      "identity_sha256": "b0c45e866cc4014bd02395053547f5802adc52b3253e429bc953d7d8ff990ba3"
+    },
+    "libero_spatial_task03_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task03/init21",
+      "identity_sha256": "4110e1a58af9a601b43f416276424faa01d241c965960fc187936179ddad2eaf"
+    },
+    "libero_spatial_task03_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task03/init22",
+      "identity_sha256": "81637baeab970e2973b2af55d7a7f368654fa7f09cdb4c7299bc7a1d3cc9680d"
+    },
+    "libero_spatial_task03_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task03/init23",
+      "identity_sha256": "5a79e4d549c55d34d721d57054515bf585ff66a22a3ef3dbf036c5bde11ca7bf"
+    },
+    "libero_spatial_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task03/init19",
+      "identity_sha256": "08913acb1cd3a4a2a4c9deaa852a4217a540ca534e4fce8b9842e27416d3741a"
+    },
+    "libero_object_task03_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task03/init20",
+      "identity_sha256": "bb36f66f5646c925712af0ea2a0ef3c7c4cac59a9ea66164ea0d914f13155c1d"
+    },
+    "libero_object_task03_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task03/init21",
+      "identity_sha256": "18216d72fa9292b14d88310c5c8b7b2382b9604feb02378ecd2372b40c7bd112"
+    },
+    "libero_object_task03_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task03/init22",
+      "identity_sha256": "a7aefc3ce7e223ff1ba37a465b19dbb258ef8d7284dd752fa9c5e1d520811df3"
+    },
+    "libero_object_task03_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task03/init23",
+      "identity_sha256": "5d89cd6a2b01e11897aa4c9416ca9077b8cf397f3fcdbfd05e20c72e2444d072"
+    },
+    "libero_object_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task03/init19",
+      "identity_sha256": "8c960b41c6fe4fbeb28487226d61d54b7f9201dc0d484ab0d75cae84dbe4dd81"
+    },
+    "libero_goal_task03_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task03/init20",
+      "identity_sha256": "54a75b7e97e7ec1229550be62aced496443e8b186ce7f8e1d42b60853fc3a37d"
+    },
+    "libero_goal_task03_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task03/init21",
+      "identity_sha256": "c366a3907863decdd806c213c5cd35e9d834535bd033b2d8d88be5dd82fe31ff"
+    },
+    "libero_goal_task03_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task03/init22",
+      "identity_sha256": "b383ccc640fc1e610eb5082d065e9ce3fe1c035176e71f8664b765fff63e9f1f"
+    },
+    "libero_goal_task03_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task03/init23",
+      "identity_sha256": "1dc47848bcbbe07a5bc7917530751d5779c83a1745351f348794758ed1a3fe11"
+    },
+    "libero_goal_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task03/init19",
+      "identity_sha256": "6e03b7bbcc1a96684b51da0cdab9a501be38036ca1f0b78cf06549e1361ea1ee"
+    },
+    "libero_10_task03_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task03/init20",
+      "identity_sha256": "53ef5a0ec03a318ade5e75e6e5fd4af09d267248ad4f79e434e1c2aab9be6602"
+    },
+    "libero_10_task03_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task03/init21",
+      "identity_sha256": "6fef4c78488c780b33f1ca1d34364eb28d9550bc5974fe75e5be2feede732c1a"
+    },
+    "libero_10_task03_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task03/init22",
+      "identity_sha256": "5671c7a04922a3ef62db64909278a0a1095afdeb0ef6650ed7a7f125622ab3f4"
+    },
+    "libero_10_task03_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task03/init23",
+      "identity_sha256": "9f4721da774a3e551435bf3cacf41b639e4d69f60816b6a649e56e037b15103b"
+    },
+    "libero_10_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task03/init19",
+      "identity_sha256": "3991387b5260842793d2ae9d3ae78b8b7cae02eb22b058b0a6ada6103f3cd5a2"
+    },
+    "libero_spatial_task04_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task04/init20",
+      "identity_sha256": "9eabbcca1bc98f13d20b80876b15ab192d7130954a3cd646af1ad0827077aad7"
+    },
+    "libero_spatial_task04_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task04/init21",
+      "identity_sha256": "eaa37350f8f115fdf52f48b5ecdfdf6fb3658c69e155ed78135893cc9dd3d049"
+    },
+    "libero_spatial_task04_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task04/init22",
+      "identity_sha256": "d8a58f079de263ebbd44a3f63f65cd2efd2fa5f84af8c3c6d75fa1b8e0272e6e"
+    },
+    "libero_spatial_task04_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task04/init23",
+      "identity_sha256": "9214939004517c3ae43870072d239f83ce8e66b4393fbeefa2254acade8e7fe9"
+    },
+    "libero_spatial_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task04/init19",
+      "identity_sha256": "5352c16b263f81aefd64876bf4de363797caf6eba95f0d9e39311ff87dfaf814"
+    },
+    "libero_object_task04_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task04/init20",
+      "identity_sha256": "4eb6d1e7a2d27f5ec138d8fd096bf1cb64fae7f78c596976199a6bb3157ab46d"
+    },
+    "libero_object_task04_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task04/init21",
+      "identity_sha256": "afe06d5428e62c7927037fbb9c249985bc05100261cb44b70379602e26f8b860"
+    },
+    "libero_object_task04_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task04/init22",
+      "identity_sha256": "eaa38e08aa246064162f28c8572d691bb91e7fc1c86b4988794f46aadab7ecb0"
+    },
+    "libero_object_task04_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task04/init23",
+      "identity_sha256": "a5beaf5ab9a2887991ca5b87c7dffcf72a6351188331f247cccafeae8795292b"
+    },
+    "libero_object_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task04/init19",
+      "identity_sha256": "0f8d72366d0188a67dad7d8c7c66baef8106e89e9b7b7138d0e77e5099257731"
+    },
+    "libero_goal_task04_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task04/init20",
+      "identity_sha256": "e502fb15a0898a5e1799269ace181af44d2f5e4565e0a3a3a2b7c0e6c91f7a0f"
+    },
+    "libero_goal_task04_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task04/init21",
+      "identity_sha256": "a8e4b860c12edda610a10251b38a2310f167815c3de865c65ab0266f5b77d280"
+    },
+    "libero_goal_task04_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task04/init22",
+      "identity_sha256": "790416f5c1b6b9f4156e7421f1ba7d4a574944bceedb32994e2c3745ebd17014"
+    },
+    "libero_goal_task04_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task04/init23",
+      "identity_sha256": "a31ed775dea3396a7a0f0706b4bb504bbe099d2607359cb6d416e611bdf97077"
+    },
+    "libero_goal_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task04/init19",
+      "identity_sha256": "8deecb3ab1abf475284eb6a87bde829883aa4eec2fe37e05146814e660d9872d"
+    },
+    "libero_10_task04_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task04/init20",
+      "identity_sha256": "2cfe9b9b7e44701ec49924f576e25b6f3bcd88d91c0c5571ef73a3ab82fe5a46"
+    },
+    "libero_10_task04_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task04/init21",
+      "identity_sha256": "e2bc38346591b50cab5797eb7d4e9ba7de2a613ec061ce7f4d0f82422eb826a6"
+    },
+    "libero_10_task04_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task04/init22",
+      "identity_sha256": "f568c712ec7f3f825fdf551fd3d34e5945e86737ef2d5fcfb6ad986c323ce198"
+    },
+    "libero_10_task04_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task04/init23",
+      "identity_sha256": "0467f97e4799e209181d12168028204bb3826a760de7f515392112c7c4f3fe3a"
+    },
+    "libero_10_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task04/init19",
+      "identity_sha256": "78cc895a7379b40dd22de9d7d7fff8fcaeb4b02a7712d1c00fb845569c156b99"
+    },
+    "libero_spatial_task05_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task05/init20",
+      "identity_sha256": "4182d46949a91ad4a86fb0b7e649e784fa7db02d0e29e6408afc2f8088835a52"
+    },
+    "libero_spatial_task05_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task05/init21",
+      "identity_sha256": "1870201e170ced8f31eb29940d649e74f028c30327b5b15bb5b031f13c656778"
+    },
+    "libero_spatial_task05_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task05/init22",
+      "identity_sha256": "a4687ef0692c8595fcad6538e0196794dbcfa7435d255305825620a0c55926aa"
+    },
+    "libero_spatial_task05_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task05/init23",
+      "identity_sha256": "793fa8402ab81293465c80336f2aa272e341addd32955f7a0dbfbf34dbeb7b26"
+    },
+    "libero_spatial_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task05/init19",
+      "identity_sha256": "b66c6dfbfcfd536bd7adcbdd184954c46283fc7915b60cac73c340babcce5f5f"
+    },
+    "libero_object_task05_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task05/init20",
+      "identity_sha256": "59e6fbe0f4693f89b00c564a4892798b7aad133961f3172a5e7fc45a1bb78904"
+    },
+    "libero_object_task05_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task05/init21",
+      "identity_sha256": "6490193ebf33b91b0a7fd3dfba5045e1f222fe248b4eb97125309e4398fe7f25"
+    },
+    "libero_object_task05_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task05/init22",
+      "identity_sha256": "031330f76423128bfc9fc965fe23c3498a33930b51ae1a25e622f42717ee8d60"
+    },
+    "libero_object_task05_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task05/init23",
+      "identity_sha256": "27833542411b4b51812f95a14d2086e91795819d5ae3e55d55b2b0aadbf78e4d"
+    },
+    "libero_object_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task05/init19",
+      "identity_sha256": "4b8dfc06c1589234e6e402c93cbc40d2d41e0ce0359c379ba88abf050be04324"
+    },
+    "libero_goal_task05_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task05/init20",
+      "identity_sha256": "db82c51ea3d9b9c84614c61a846119207a38b845642619a58288bfde0b0d93da"
+    },
+    "libero_goal_task05_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task05/init21",
+      "identity_sha256": "39a24db3422dde6ffe441f69d548dcf8b73a7bdb0a6ff9e390dfef6c91189b65"
+    },
+    "libero_goal_task05_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task05/init22",
+      "identity_sha256": "5860a422ea094635cc0aa7f9bfaf603b56068678584cb50c6ad1202df6de4434"
+    },
+    "libero_goal_task05_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task05/init23",
+      "identity_sha256": "7844e0ed5688af60f2a5c95c4369ce663d93ed188f7e8843186e26fc68b7c7b2"
+    },
+    "libero_goal_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task05/init19",
+      "identity_sha256": "17739059f77c5326aaf2a68e701672df922a37e5b019cdfc3dc3e425dbfe7776"
+    },
+    "libero_10_task05_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task05/init20",
+      "identity_sha256": "c014dbe50d342750da31837715abaf39c91a6761919c7c2ce628187aa26ac371"
+    },
+    "libero_10_task05_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task05/init21",
+      "identity_sha256": "d5d264d4ba8d56aea310cb1c3a25931a0106b6a4d4f41c5da945e5dad357a891"
+    },
+    "libero_10_task05_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task05/init22",
+      "identity_sha256": "9ac56f2bc9c90800a7c8970f043c9dff244458017daa618aec169bfe05eef366"
+    },
+    "libero_10_task05_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task05/init23",
+      "identity_sha256": "3f6adefc4ab9c57dfe6c720f0e7ffd0ab06c5e07c96171720bd7bad23978ca4a"
+    },
+    "libero_10_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task05/init19",
+      "identity_sha256": "a430f0346033a0b30638b7629f377c6022f6db4c6927cdcb912101dd19c5b99a"
+    },
+    "libero_spatial_task06_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task06/init20",
+      "identity_sha256": "3b6daf7998465ab75eb08131c7da550588afcc479179a8f7369f4d1c0e2e441a"
+    },
+    "libero_spatial_task06_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task06/init21",
+      "identity_sha256": "7293bdeb5504e5faf2f950cedcc18456a2cf5ad996ab1cd086c33e9506de8941"
+    },
+    "libero_spatial_task06_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task06/init22",
+      "identity_sha256": "dde23e87135f45a1e40c93b3f1aa44e1b3fbc717f1e8e6bea5792f0400caafc6"
+    },
+    "libero_spatial_task06_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task06/init23",
+      "identity_sha256": "0b3a2e39a924069c3ddf04989287e70ad5aa43f85ec7a46f3de3478877da52a8"
+    },
+    "libero_spatial_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task06/init19",
+      "identity_sha256": "b5306386ec72362de41624d62bdd5a37ea6b4b3eeaca0794c3894d63a9a2f5de"
+    },
+    "libero_object_task06_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task06/init20",
+      "identity_sha256": "b46bf8c9bca426e077720599824ce4662e279654b46ba0fffd380d25dbe749bd"
+    },
+    "libero_object_task06_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task06/init21",
+      "identity_sha256": "92d0c26546efd21738323e65ec94def6fe686acbbd702278b6a875d1d74f6a47"
+    },
+    "libero_object_task06_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task06/init22",
+      "identity_sha256": "363ea09130518ec63b3839798b00d5991cba329373ef1c6fe4d7df6e148ccc2f"
+    },
+    "libero_object_task06_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task06/init23",
+      "identity_sha256": "e8077ff896988364e36c54b7702487b66c201ab838146539f44c03abb97c9ef5"
+    },
+    "libero_object_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task06/init19",
+      "identity_sha256": "c8574bba4dc1a7f770f847f1b7528eda1920a7ec960e39b6ad32ebfcf94be0fb"
+    },
+    "libero_goal_task06_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task06/init20",
+      "identity_sha256": "e97be3c2a90fbce70476ad20743bcb7372d786ca287d867a49dda82212def84b"
+    },
+    "libero_goal_task06_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task06/init21",
+      "identity_sha256": "ecdc2f33c27ceeac2b984a45d29571ab717c714ef56e1d972a4dfd41ac920225"
+    },
+    "libero_goal_task06_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task06/init22",
+      "identity_sha256": "78bc2041771755e54252a7c1c3cb16be859b6c3b5097cdcaade3a32ef3ee500e"
+    },
+    "libero_goal_task06_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task06/init23",
+      "identity_sha256": "66b2429f9e9a22ef695d89a176deed98c1d6fc270b1b15b840b214d2d1ef4ff2"
+    },
+    "libero_goal_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task06/init19",
+      "identity_sha256": "c4b9fdeb6872185bd68a7e5810b74b701523e6211fe61794c2718c4e7ed9bfc0"
+    },
+    "libero_10_task06_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task06/init20",
+      "identity_sha256": "e2b528174d1a898480f309f9087a3ea5baad8dc63b328c84c0583354c82638ea"
+    },
+    "libero_10_task06_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task06/init21",
+      "identity_sha256": "f033078e5541c7daacaa77d2884d0a1254b46606c3bf886bd9c511ed47485991"
+    },
+    "libero_10_task06_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task06/init22",
+      "identity_sha256": "561fbdd06fd55839339f2d2bd760d1ae11cd6dcae27f579d627dc3ea05d3600e"
+    },
+    "libero_10_task06_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task06/init23",
+      "identity_sha256": "fd9bab890db02c480483525acb4858e5408cccc23495b79b26392e426dda3ae6"
+    },
+    "libero_10_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task06/init19",
+      "identity_sha256": "e8cc77f634f446ec00d4ee2761fe0a5efdea26fcc381e791af24b1813a676c10"
+    },
+    "libero_spatial_task07_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task07/init20",
+      "identity_sha256": "d4224d755efe7cb93b0ed37301d17dd70fa0b4223172ae5a22cc951cd8b634bc"
+    },
+    "libero_spatial_task07_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task07/init21",
+      "identity_sha256": "4f53adc09c5619bc617872aca87f48372863c68e2cc7546f8b1112c65764f923"
+    },
+    "libero_spatial_task07_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task07/init22",
+      "identity_sha256": "ca68d0b455cb629489b17fe9b049a9c27a6f667a4818ec628a1017f546f73225"
+    },
+    "libero_spatial_task07_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task07/init23",
+      "identity_sha256": "9ed7d6aab6123a4379f85c95b04012d3771539726297e5527c72faedb2451610"
+    },
+    "libero_spatial_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task07/init19",
+      "identity_sha256": "2f4c2184b535ed67c6df675d3b800095c7ba2b7ab03564eea62ccc94861bbea9"
+    },
+    "libero_object_task07_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task07/init20",
+      "identity_sha256": "8ce8cb5dadfd5f7942fd24c65a37e1e476ca7f295af2c6be28a29e12a0a53b8c"
+    },
+    "libero_object_task07_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task07/init21",
+      "identity_sha256": "48858146be0328af77a3e2a0c7578873c2c735420219bbef59aa7c5e8ba6ffca"
+    },
+    "libero_object_task07_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task07/init22",
+      "identity_sha256": "0bc496e7d9c2e0493df16191d02f10ed73afdebd5b45a954e95d39859bb72df3"
+    },
+    "libero_object_task07_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task07/init23",
+      "identity_sha256": "7eed58bd18e155cec1d31a00511a0eb7a4c1ab840be01b02dfc00538cfd1d578"
+    },
+    "libero_object_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task07/init19",
+      "identity_sha256": "be6a134ae820c9e9484d4406cef1c91786619ace2b142410aa4bc0a19e5c725a"
+    },
+    "libero_goal_task07_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task07/init20",
+      "identity_sha256": "aa5dbd84a45eb9dd7f2bd219598d27a91ab4ceb59f358f450df88d0174463a21"
+    },
+    "libero_goal_task07_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task07/init21",
+      "identity_sha256": "ec94930afea138020b73d35d9f01475281691c9b43962f023418cafbde0d6574"
+    },
+    "libero_goal_task07_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task07/init22",
+      "identity_sha256": "5433843bcac98daeb7fff05db99bf5e1f1cb0c17b4758a47ef3b1eb035169c22"
+    },
+    "libero_goal_task07_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task07/init23",
+      "identity_sha256": "121817b29208fecda82a0662e594737967843d0531fe52e9813307081d28c825"
+    },
+    "libero_goal_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task07/init19",
+      "identity_sha256": "8296d55c43bb425a06fc0e6f39fc1c194926ae9cd22cbf1fe98d81cd3375b20f"
+    },
+    "libero_10_task07_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task07/init20",
+      "identity_sha256": "5d5c7d449da09079172aeb4ee2df096dc92465b02a684b6232df500b630086c4"
+    },
+    "libero_10_task07_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task07/init21",
+      "identity_sha256": "e2fa0cc487180882fdab3758ec22f0acf2aea40e59d21bfc118bb2fed639bbba"
+    },
+    "libero_10_task07_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task07/init22",
+      "identity_sha256": "955d6fb3bfde52863e41c18f8dff8ca177d6d44f4bd296b0e72854bef9f3af37"
+    },
+    "libero_10_task07_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task07/init23",
+      "identity_sha256": "9c81890ee360afa500778469b3c86f4f567f327261604047497b7896bb647522"
+    },
+    "libero_10_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task07/init19",
+      "identity_sha256": "e1139eae1a479bafb5d8d2358bf695c946b31528b941775a1c13f924aba797b2"
+    },
+    "libero_spatial_task08_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task08/init20",
+      "identity_sha256": "431b6a5e087dc674397053af299cff53796cc0098e1d77974e37849455ddd3c5"
+    },
+    "libero_spatial_task08_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task08/init21",
+      "identity_sha256": "bfe0dd43339cd97f351e49785655c141ed966af957bad89e5f77c727808e4e5b"
+    },
+    "libero_spatial_task08_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task08/init22",
+      "identity_sha256": "956b0713417d707336add3200227b139def44cf16881774be21f60925587e5d4"
+    },
+    "libero_spatial_task08_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task08/init23",
+      "identity_sha256": "0c26d61a54ad58657bb0adeea26683195f892c4923912596e9bfc2329f0083ff"
+    },
+    "libero_spatial_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task08/init19",
+      "identity_sha256": "050da59d1126d2b3b0fc7e901069649c0daa00fde3f3c5d7e51c93625c7f177e"
+    },
+    "libero_object_task08_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task08/init20",
+      "identity_sha256": "c5e8e3ab07dc6aac572bdd57635a43b668d44a8506cd901a0938c0abfdedbe2f"
+    },
+    "libero_object_task08_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task08/init21",
+      "identity_sha256": "5f2724a526883c8a22181669920a8593eeb6b6295ba54b369a634c6ec83f75ba"
+    },
+    "libero_object_task08_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task08/init22",
+      "identity_sha256": "e2744ca98d92eaea3bb34cb3e47cf83a0d95e2267cdd291f360ff450521926af"
+    },
+    "libero_object_task08_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task08/init23",
+      "identity_sha256": "cb279191663bc3fbf373f244157714245ee6a88a611af1be434d5ce30bd6b074"
+    },
+    "libero_object_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task08/init19",
+      "identity_sha256": "7a95e9db1d287c5e9a8f8e0ba41be63bec4cd54c6f39b78149d7a50afe89bce6"
+    },
+    "libero_goal_task08_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task08/init20",
+      "identity_sha256": "133466d2f161fe5b1c773732c36f9ecd7f154183b7fd38eb3cf3ed49f967094d"
+    },
+    "libero_goal_task08_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task08/init21",
+      "identity_sha256": "d4b4f5f61c6836ccebd3be18f1da3bf8c5dbc5dcc7d9d025b2f0616834bf04e3"
+    },
+    "libero_goal_task08_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task08/init22",
+      "identity_sha256": "d65054650f84c80e82e98e6a22c0c95cf9cae01fd4de58f8c617fb9ac76efa69"
+    },
+    "libero_goal_task08_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task08/init23",
+      "identity_sha256": "7dd0abb68e24a271cdf530ac51aa5f5d61bb1c57b7b7e6e4b016b1ba8b617d48"
+    },
+    "libero_goal_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task08/init19",
+      "identity_sha256": "bb6ba41579dbee971ed4e9af35261dcc0337151e5b6e9baab6e7e8438c1e5904"
+    },
+    "libero_10_task08_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task08/init20",
+      "identity_sha256": "5be5ef3c90e67a6d464e1b2f3b0a09df5a6e75dcd20ace2a3d56e0300ddf758b"
+    },
+    "libero_10_task08_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task08/init21",
+      "identity_sha256": "b83a32f719427354a50200d96d4368f826600698479eeea28fada4c53c49d260"
+    },
+    "libero_10_task08_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task08/init22",
+      "identity_sha256": "18ef36b1d5e3f599b0d9f96fe9247bc7c4c8c49e6f7fff2709b9c97d6361c05c"
+    },
+    "libero_10_task08_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task08/init23",
+      "identity_sha256": "20d0a88e8d874b5040c9dc960c8797f408b0ade2e098fac738ac388508b7f4bb"
+    },
+    "libero_10_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task08/init19",
+      "identity_sha256": "2ddb47d4e88f33b6471e45d1ddc853ca0d567c272b46f1fbf82a69bd86967110"
+    },
+    "libero_spatial_task09_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task09/init20",
+      "identity_sha256": "3923ef263f26673b36c3c9dad47b09614e17201124deffb2d1835468bc1df7d5"
+    },
+    "libero_spatial_task09_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task09/init21",
+      "identity_sha256": "93f722d03942b540d364546be03722ad2b05e5ed9a52d0e8e433b5d068ee3dc0"
+    },
+    "libero_spatial_task09_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task09/init22",
+      "identity_sha256": "8d52fae032d74f88f07f43c6b94e88eaa86378f8417055daecaf5f1a5a419692"
+    },
+    "libero_spatial_task09_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task09/init23",
+      "identity_sha256": "cc7b89af7dd717c4b5961067c0145158e29fb98e4b1de6aed14a2a272a5d50ab"
+    },
+    "libero_spatial_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_spatial/task09/init19",
+      "identity_sha256": "c80fec9899bf785db2b6e15507479e71b539066638bdf31a57f3b4ad075a8721"
+    },
+    "libero_object_task09_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task09/init20",
+      "identity_sha256": "6b6e6345deaac0e37b9b1441963436d3daf162f0b419625dc351bf338a1753f2"
+    },
+    "libero_object_task09_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task09/init21",
+      "identity_sha256": "a9684b99e979a7066c526b4e2d11f39eb8295ce40876b81e377718b7efd8f9ee"
+    },
+    "libero_object_task09_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task09/init22",
+      "identity_sha256": "9d62fb715a526d7ca7477ee9cf355e481c3ed4384a4ea0236b956675c3385f79"
+    },
+    "libero_object_task09_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task09/init23",
+      "identity_sha256": "17c43a724b40415a0a2b3720792c73f7b514155836dcd1d7995622afc7e46a4d"
+    },
+    "libero_object_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_object/task09/init19",
+      "identity_sha256": "2e77b5c234a3d8023bc60bf1bc67a875bb890808d4eeab3d2d1163aa73c69eaa"
+    },
+    "libero_goal_task09_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task09/init20",
+      "identity_sha256": "be4a87f1d336c6dfbb0971cad7971184f413d8f08a2662777ee5eec2605c8355"
+    },
+    "libero_goal_task09_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task09/init21",
+      "identity_sha256": "f3ec2bdf4dc151c1df0ca4431142d6d17353d91a0721235b43ad78a5c0ed75ec"
+    },
+    "libero_goal_task09_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task09/init22",
+      "identity_sha256": "4793d17c95e30bbfff9db579dc733101efafd8b14cb68fcb647ab9eb7cdf96c4"
+    },
+    "libero_goal_task09_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task09/init23",
+      "identity_sha256": "6a4cfa84533e9820ed682f61257499e92e0d4b8f1563f35eb4ff8745d7b07d44"
+    },
+    "libero_goal_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_goal/task09/init19",
+      "identity_sha256": "5fd9a741deda8902f8a8f8e641e8a4c2efa4b1eba1a731c8064a3f3c03de3507"
+    },
+    "libero_10_task09_init20": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task09/init20",
+      "identity_sha256": "4236439899c9fe9d4a8b62ad581553e7adb74a521be5202d1c5fad944205272b"
+    },
+    "libero_10_task09_init21": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task09/init21",
+      "identity_sha256": "064ca55c46e93e3fb4de1431faab56b08be1f62fd567ba1b01f86163b2ccbb7a"
+    },
+    "libero_10_task09_init22": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task09/init22",
+      "identity_sha256": "813f1029e141825fed8e4179b62b294987051e81d361785d2262a2fd4563edb2"
+    },
+    "libero_10_task09_init23": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task09/init23",
+      "identity_sha256": "f59994ffe20a935f44ac63c6f04fd1d357d527b81258abca31ae8804f8077057"
+    },
+    "libero_10_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_spaced/v14_jacobian_none/episodes/libero_10/task09/init19",
+      "identity_sha256": "90989e9076fee424e597d73f118da020170ca6568890cac63ee08cb4fe0b0dc2"
+    }
+  },
+  "baseline_candidates": {
+    "libero_spatial_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task00/init19",
+      "hashes": {
+        "result.json": "b7ca6389912b582e7036347bdec165751a6ffd81ae701900e61950cfd1aae747",
+        "identity.json": "30a6313f6cfcf921192fdebb209c2b7e7f877ddbe877dd377322e7bd8f81d575",
+        "infer.jsonl": "986ed59657a792d0619d653097e684c1fca2634e9842a59f6eae981e6aeade2a",
+        "arrays.npz": "8d5328c34c59a8a6a9563ceeccfa5de19ed349dc3ef86e159e7a3302e72c7c56",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task00/init19",
+      "hashes": {
+        "result.json": "a817f5ef74311ef20c358c28c7625fd292fab8a1050efc51e32fc967e4d02395",
+        "identity.json": "00cc8357616fabf2c8eb25bf1b81ec9122af051e7898bf41eab503f01692caa1",
+        "infer.jsonl": "854ac7da1e90273ae90c33aae3d8c24faafb6b76ca98b6e054aa33c1f4c44e9a",
+        "arrays.npz": "5cab67d208524f21ac49cdaeb32d384e70683003c7c4532ddda840e366073d31",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task00/init19",
+      "hashes": {
+        "result.json": "123bcd86f5c4eea2b620e42f1082e587316ccdc4af20b79d8ee1ba956708ec1f",
+        "identity.json": "a73758063c6c5cedcaf85fb833803dd28df627469aa82a68501f9811a42bddcb",
+        "infer.jsonl": "ac601c4f7826e18ddcb106bb7b421e7119067db3b00aa65c3b26e04f6dc89efb",
+        "arrays.npz": "345c1e45f9333c4e5bfc05ec0363d8b245ab462dd7b5b0456781aaae37782884",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task00_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task00/init19",
+      "hashes": {
+        "result.json": "568d6ac40c9df0eed1b2744f61665b90da3dcdbb0337864b80d3e1836f154649",
+        "identity.json": "645312af9b9b2597091f769799bc87b94f20c29f56c3f500a24162e278130cb6",
+        "infer.jsonl": "61168d531eb2815ddfbdbdf83cd899822dda7ce9ca4c9453190bd3bfa959c4a1",
+        "arrays.npz": "6cc16b250b3b809b5c4cc6194850084a631fb870ead4217e0cbaf14306e9e17f",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task01/init19",
+      "hashes": {
+        "result.json": "3a00af1413615ddc5d79b591ea51add53e858eee19702c27e9e12b0a6cede10f",
+        "identity.json": "bc2fdad5ca214b53a06ff0747306065da1a8080c883c2d186b6649c5a8ae3eb6",
+        "infer.jsonl": "0aaf5cc79c8de4dd80c4a88d583aeea7709777c4d903293941ed90dc2d0ff2e2",
+        "arrays.npz": "348dfbdf8894362be8f216652c4de2cbc144c79af83a9c46e558559ff1fcd4d7",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task01/init19",
+      "hashes": {
+        "result.json": "bfd55161185ce5d90616103e60555873b6eadfb300db07495ccfbefeee05daac",
+        "identity.json": "5e13f87e06522d4fbf1cb34144377b687c051bf3ea800d55c2d3c1156739af3f",
+        "infer.jsonl": "8e058f152e928f1c606ae441589386e0c9323c9cb32de7dae123dd41031b4bd7",
+        "arrays.npz": "51c46d11187f7917a3960af0eb1f6f0768749973b353d021876b10966daa42b2",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task01/init19",
+      "hashes": {
+        "result.json": "8718c76f6a784f4f460f181f2634ea183ca14327e0a9e2765a60791e35037240",
+        "identity.json": "57c29fb5ed1c8a64bb3d2e27fdb8ee0dec5f81013430108a2cd46ff2e2e40ca6",
+        "infer.jsonl": "057c57229220ed1dce0cc272c74c0d018ff7d224ab47b9b9f33d9f2e777b51f2",
+        "arrays.npz": "b0270de5460b158dfea355da1ada798b314f43f11a0f757a2ef23b3539332ba4",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task01_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task01/init19",
+      "hashes": {
+        "result.json": "87f7ccbd849b969f3cda02de1a7d5f1c0a1e4d614a54ca6e05f5db643d5f60b6",
+        "identity.json": "434727cb91d2a3f78d5858b62811a69d76aa689225a6cab5846538cc3893ee62",
+        "infer.jsonl": "4d7fb2fb40fd75099a1449acc3b51e78a1ae4a3b8a1b278c8621e2b727c76a04",
+        "arrays.npz": "a756c9f00c4f7ee97c9cdab03c95fb17dd41b1e3f6bcf52d9c8b5362d7a8fb84",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task02/init19",
+      "hashes": {
+        "result.json": "fa016c5d87e8f02d40df8c6df29a2523467f69d0f68062fcd2bc20311de06cbf",
+        "identity.json": "c3935d7b8eba5c582edd7ccf137ffb9b74f81909f5749eb063befc32fc2cd7a7",
+        "infer.jsonl": "0135efd78d468e6221d0db7d45b204300ea9fec11b6f791865e76c68a6be76e8",
+        "arrays.npz": "dfe418009404959a9e98cb3c2fc389b23fe7680e940be68668577ec6643482a7",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task02/init19",
+      "hashes": {
+        "result.json": "281a292fac6d3ef6a4b334ad68444e422b678710c2754c7eece733d39164bc1c",
+        "identity.json": "b16077a24aa621640e7be21cbf9a1f85aff10e7c531b498e8c6ba26579851d67",
+        "infer.jsonl": "2303d412324f21a32de71a3d978ce5aa3ff70bd70c5d849d72ce87cff8d12b1e",
+        "arrays.npz": "4d1553db8c921c843835c0ac3825a0338553712b2ee43274fdb1da846470fadd",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task02/init19",
+      "hashes": {
+        "result.json": "a81aeb63cb6e548844faeccbe22c7427803b62204b2ea8b7425d4b17540c7cec",
+        "identity.json": "ecaf6cec68f93aec003c7a2f61f97073cc4c213892e6ab71eae88719d3ac587f",
+        "infer.jsonl": "8d8a09bc009e5a1553b860aaed571f4daacff1a437f92dfb1afae95ddeddbc11",
+        "arrays.npz": "f138bcd4ced5fc01f362fae790941a6507efe848eb15f95db5610856d6c435fe",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task02_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task02/init19",
+      "hashes": {
+        "result.json": "21759a912790081f9071df1a02f9196cdeb5ed4b8cf0a2b7f734f700f89e541f",
+        "identity.json": "d3bc342b9bca5e92e2ffb7206e719f18282c1be84af0b33ac30aac9b28fb2ee2",
+        "infer.jsonl": "728c858f374d61e0e19145c7532607ba4e9fee2242f9a0bcfd23fc8b9dbd4d31",
+        "arrays.npz": "13febd87dc2214f531f638724d44fb5bae5a697d3bd89308eddcf161671d6d48",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task03/init19",
+      "hashes": {
+        "result.json": "e01768a8572a659393b299a4e9a25b035d0f524a3ab0c3343262775b3fbb825d",
+        "identity.json": "d3295ba2abac5c906412a4f5ba02e3305b4e4386cd629bea41ef41ef1e9ddede",
+        "infer.jsonl": "21da780dd3f952281ac6e672fefc4023a8f092d11d300421173d704328566e3c",
+        "arrays.npz": "e136eacba6a0b8415aaba6f034e8fd54c21c8be6d05660ec87c36804325f04be",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task03/init19",
+      "hashes": {
+        "result.json": "26d6b2872650d749f2ec70f5d0c27b95ebbfad7753b25be2079705c8f7070c33",
+        "identity.json": "96b7c97ce959f9ae27e7bd0a8082aa5230c37f0735d2a4fb96cfa8ebc444aea4",
+        "infer.jsonl": "f85d6cbfa2bb2d50240636ed995e0b94f6b2d260a81b300581b2db24420a355c",
+        "arrays.npz": "8ec2144f7dd64605addb25470a3f89a568d2880306e8df4f98d1aee2ea1ad6e4",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task03/init19",
+      "hashes": {
+        "result.json": "676ecde24e3d69bfa7f9ac1042988e7b5f25140623a4307dd46109049ee5cbce",
+        "identity.json": "0db21230fc869698d66db6ba482a092ce339c107b14ba4d33c58b1d511ea81a0",
+        "infer.jsonl": "35e14f1cac84d1ad6cac7d87a23927bf850b50a76659a8200b59b64b8926061d",
+        "arrays.npz": "24fc4c291c4040636979f92bfb523ca0df857bd512f6403979621ea004842de0",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task03_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task03/init19",
+      "hashes": {
+        "result.json": "6806847e622c57bd45953bb69420ba1730bd018dd6a2b24b03da6f21fbed02a7",
+        "identity.json": "2d4dc0d4451767da9ac72475694a2111f158ec1e20da65bd726d5c4e5394dd1d",
+        "infer.jsonl": "b3be819275d3f8c061c1d46c1a629384fe66ff32667187880a6aeae23677a03a",
+        "arrays.npz": "3058e5c15a3b53a22daf2930c93cce63e7aaa8b9f4ce99b18ba1facf6c2b3d3d",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task04/init19",
+      "hashes": {
+        "result.json": "e08149e3e2acd9b5f29960eba2a2623b66a2ba103ad1a01206cd257afba1bb30",
+        "identity.json": "3dd21fff322a033e7b17c09ba22b03edb345bce260bf6dc1835fc83dcc32a190",
+        "infer.jsonl": "ac653401aa1dde9d8f559f280a4994e2beb1d7ac15acf88fa5d2d0c81fefb1b8",
+        "arrays.npz": "04bd6dc8aee5af5cf3a5f86955558f9d6c3c1ac0ae4c72feaca2f286d3d024bf",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task04/init19",
+      "hashes": {
+        "result.json": "e588da77bdf69c650bf09096acf32edc7179f20a073ecf37a43ebfc458921d72",
+        "identity.json": "de7bc3e2b1669a3c912134558b44abef9a35d9f90ad0f648af7cf5d13b79853f",
+        "infer.jsonl": "1974dafa2c9efc517df360aa380ebf86a37baaa4d935942deac3e8350ab78904",
+        "arrays.npz": "4f070251fb1060368205b00c539466d9f515d1d99d694f49b01a638acac84a48",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task04/init19",
+      "hashes": {
+        "result.json": "e037c3b93c68746889fe978e6b1f76702971dd578e89d16f692ae19f58098d95",
+        "identity.json": "3773022d33ba87364e6f4fd0b9e58cf3824f240d870ed7e5896e123e82136cf6",
+        "infer.jsonl": "ad5bc999baa1269e3a36104d796e296ebf635c834d8b6b97ce696aeb7e9bf82f",
+        "arrays.npz": "3a3d7cf8efb90f3f5c202cb0695b42446d59cb802d25cf5d6cd9f0fcace9eed6",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task04_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task04/init19",
+      "hashes": {
+        "result.json": "3ac6137f004580334923dd6986dfbd1630b4c2e99d80ea6d2eb53bb34079b5d7",
+        "identity.json": "ea72ce815a91c83491fcae9553637740ce4bfcd3b1e14e1d473eef65041aa4d3",
+        "infer.jsonl": "842dcdf3b63703ca66977f9afe37253ac06c8e8ad7c8a89c94151a33130e3f39",
+        "arrays.npz": "0f4a656bac5db86b34df6bb06d09e7a9f64b25da56ac968200dae5d274185ad5",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task05/init19",
+      "hashes": {
+        "result.json": "2c4cbf0f2c39359117cef2fc88b57842c70eb071199d4a5674a6f0ff81cf7099",
+        "identity.json": "7bf2614b745f57c16a8fbf422031e56ba36b9ecd9b6aef8e968215342a737ce5",
+        "infer.jsonl": "675aabcb37df28c97f5545265c41c4e705ae195e0b81074c493af51e83f5a766",
+        "arrays.npz": "df2796322e1b0a2861e11520dd56cf1bb92461ce7122545b37c9124e50d1944c",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task05/init19",
+      "hashes": {
+        "result.json": "782ea4247faef946a7de7855c647f17f7c8fda2c1fa56befceaf5208878f822b",
+        "identity.json": "8c26cf7f7580814709e488823422eb46f2edd09061daf5fd2f50d8ce3499de24",
+        "infer.jsonl": "2f81b02a8db18b3ad06d487bf1e2371cb5d9418bb8059ef2ae56036cab95f1ea",
+        "arrays.npz": "518a0b8e405d9b8fe60d60fde3b3686c6fca6d7d7ce82440ed6a7f4b471ebfba",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task05/init19",
+      "hashes": {
+        "result.json": "7f13457b436694516628f9de20f0183985a5b33107c9e62bdcc5a22dafac2bc3",
+        "identity.json": "92b8ae547e3f2bb9c1db1effb498c16d50d3115fe556e1807f8b12029b39afe2",
+        "infer.jsonl": "851333207c386aebdfdf1a3b0a4fdb769e9a7eee09ecc51df2901d21e64df0b5",
+        "arrays.npz": "e0177199a16b0426463772d9bf83df9422f5749cde98cd47581d4bf659301dd5",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task05_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task05/init19",
+      "hashes": {
+        "result.json": "23e74ca712f8c15e556e7321d1ae4774e96f7673eba10f687784588b31635484",
+        "identity.json": "e8699fb0cc3b99134933b8d9f6f80f8a2bbee6106a8062f06b76a2fc414a0030",
+        "infer.jsonl": "3a293bd3ff4cf94062abaee864db4cc739fe734200003e6185c97ca2c2179873",
+        "arrays.npz": "4244b94100d92056394dd6bb48ca98ac7dd7771dce7b744dd2687bb8871d0f71",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task06/init19",
+      "hashes": {
+        "result.json": "155aba8de7d88456a3f4af1469d57987d73169e1719a64dd720610b40c3a6959",
+        "identity.json": "e12d0a4956fca67386f0452566e5b52f0c027df235a2dd99bd972f0b8a068900",
+        "infer.jsonl": "fe67582485bba6075d2fd4a011866f112e47a8a7b2a89b7a72a9e10d8121e764",
+        "arrays.npz": "e33794b14f7dd18eb3ec2531fbe314f1ec51b6107c0cf88b52fd014156ddf2dc",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task06/init19",
+      "hashes": {
+        "result.json": "7716fd148f0c2fa53418248ff499eaf13d8c8ea7b4353181e3f66cf0641e4722",
+        "identity.json": "c6546ca7531b01069633375a6967f74154759f232413b6e5fc2ee3375471e39c",
+        "infer.jsonl": "05d886ba43596e50a518d0d9ebfb91c767fb1c53a2e93af0fd69db96559a62fe",
+        "arrays.npz": "9b14ef4310c75fd0f4ea1f7290e9c4efdfd301966642cdbd0785ab72eabae4e4",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task06/init19",
+      "hashes": {
+        "result.json": "da54767373b049cf458fdc6895a3529e951be0c7e8fb2eb25ceed009fabf09a1",
+        "identity.json": "959e8cb46a4979bba65a60e0052973e4788488a317addcdde7251012ec3cfe4a",
+        "infer.jsonl": "3e52882ff1b28c07212dcb972275f7255d4b1c10438ff7ffbd6ee9200f5580ed",
+        "arrays.npz": "c563f977a9ff698512e56b75b83bd9d8df27b6d9623cf64842db188388ba695b",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task06_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task06/init19",
+      "hashes": {
+        "result.json": "ec7c95ff70350b7774353fbefecfb1662f80e44c139a2bd657abb32bb29c1917",
+        "identity.json": "30c89e8267de5c9da1d25b79394ddec629509ae82e0d8bd0da9fc633e1082d5e",
+        "infer.jsonl": "3cde60342708a5dd33d149259b614e485020b497bc255b5bd489acbf4737dabe",
+        "arrays.npz": "e427525be34ac916034b19d51eec565662feff0b08d27d388a1f85b3a307b55a",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task07/init19",
+      "hashes": {
+        "result.json": "d16d370e8b6ec4eba67dec617f95e895ac0dfa7435174c9785fd4e4cbbed71ae",
+        "identity.json": "cb9c2936d92b21fb383bac4904c930fcf0237bf44cf25c06b68f2f01c6aa8a4d",
+        "infer.jsonl": "774a1df0616946c6b6ed5c1fccde7c18a4bd5abb961bb829d37d669dcb92ef2f",
+        "arrays.npz": "2961d90557c057c18c6753c4aeb96cda183b56ebb8bd4ae24a3435d9a3cefc29",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task07/init19",
+      "hashes": {
+        "result.json": "7627b8b9572f514a974ad49464dbeb4621e4886a40a6e069c49ff9398666ac13",
+        "identity.json": "16c196e7cb9416ac6c1321db6aac6c55131cbb4e2f7434e3a166652fb6e4b304",
+        "infer.jsonl": "cfa97775c1d30d757b9a6363e85a8b39212949394967eafd9a7c2c9e37f66bf6",
+        "arrays.npz": "13e14d6155dd90de24fdb9e592896f177c41afd3475b296270382a5156123d44",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task07/init19",
+      "hashes": {
+        "result.json": "08b3f91d53d0fdcd6201fe41ac492c0d9184d857daea50ae0313a86b5c2ce4d5",
+        "identity.json": "0397bda1fb42538462ee850e377fc3a42333436ba32798ba38eedb93b67a3539",
+        "infer.jsonl": "150390c79fba98530f73dd1136a62c5ac3afb8dab2e1893add64278d29995fdd",
+        "arrays.npz": "da891001fe17c5b18127e58b3e32e9a78036d68390aa4718ffb1c35138b6b7bd",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task07_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task07/init19",
+      "hashes": {
+        "result.json": "b785329a8eae50879d3fce4ae937a0097d092ebaedb03a52bcfc0e5388fd286c",
+        "identity.json": "c0a64b623ad55006336a3a51b9362ae31ecf80749365534ff39de356d94c4cd2",
+        "infer.jsonl": "b8ccf85dbd33dad000b842b1f22b22232d7e695e352dc756c182a59879d4e59d",
+        "arrays.npz": "4daac5c1e51f5b037fbf1ade0249471f4452f7273698352740e2f063d2873341",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task08/init19",
+      "hashes": {
+        "result.json": "9d3b0ac12a8a710ab0c5a478c2fa374311e68a1db6d7b78792d9ecb9f7b0aa57",
+        "identity.json": "8233f6fe04436f4fac40413bbf5697164d824029e7c1e9fefaf069e7d93aa7b0",
+        "infer.jsonl": "3b1c53fdc97a62e73642ee0dcad0741a5fc769ccf5cebab8f226daca5113e5a0",
+        "arrays.npz": "7584aea509a5a2dda01e5754549f2f1c6137bff6d70c84ab3a6b367adc467c2c",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task08/init19",
+      "hashes": {
+        "result.json": "c8f7e547199370ed23b7ed2955cf523e1b7ac5fd1cb4c0098b154843808c25f1",
+        "identity.json": "45d5b45abdd28928ac9a9ca0af111382eddcb2f1ed4c47c91985f5ed08599a0a",
+        "infer.jsonl": "bfea0f1580e2cb61b8b992f3ec351fc1cb7a5115594336a56ab77c1338829d59",
+        "arrays.npz": "4691b3d7d9270e2ab365a4caac80cd70f4ffe822e7276ed92b9993dd452b6b02",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task08/init19",
+      "hashes": {
+        "result.json": "29e7f88fbad8c084dd95ca74747faa619bb55eacd47c8583c413435ef369722a",
+        "identity.json": "3483e401b9a93f7b36f922dcbccd84ff332c242960f082175416e715185ad785",
+        "infer.jsonl": "ab4e010e6968c97e1e5df838b1d50f128c4706526ed43742f610d7302052bc12",
+        "arrays.npz": "77ca5f15cac5d7300a407d8f9c2b5b8aa4188ccaa7160d24f464374fe2ec6f14",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task08_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task08/init19",
+      "hashes": {
+        "result.json": "dc4cb58eda25c77288e058a73eb329fc7d072c8cdabc8579f5bbefe89e1e45fd",
+        "identity.json": "eede7c1fbf0af982d33f3cd8a3cbe9a19cc1e93ad72af0110c143fbc3a7928b1",
+        "infer.jsonl": "5a3b7d5539ddba7df330a9f97ea5cca90aa9f47c95aa49a5a4d8f1c8918b9513",
+        "arrays.npz": "58f90e08e9a4d46aef27e271778d3439ea20502610ba4e7e149f780d5f8e6636",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_spatial_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_spatial/task09/init19",
+      "hashes": {
+        "result.json": "9d5bc31e520a57a3252e46da1c9dcda5ee2f93f694a37ab51b8ba34b943ac526",
+        "identity.json": "1ed3075e17e8e31c4411e63eb4c74096577e25ec697d77e4849b703847052f5d",
+        "infer.jsonl": "4ec4c44bcf4f5e649532c8ccb0a7da6861c1b9fdb8710cd894c879af51a8223c",
+        "arrays.npz": "b38c3701ff6d68d884178f9cc47da00c33cae55387f9a806a52604724ca27b57",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_object_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_object/task09/init19",
+      "hashes": {
+        "result.json": "309ed4f193719de5468164fee032053e1cc80e85fbc14e74bc7f454d07091ab8",
+        "identity.json": "41f8a4427b1a9c65680e976e48b4d1de1caef9f7c57630ed46f074c8049acf2a",
+        "infer.jsonl": "441ece0bb2f978c2b072283f0c7c15a2e21bfcf3206a6829878bc564c3a55338",
+        "arrays.npz": "c2e0e787b504c0503e4a1923c8a499187ebbe0f966389dc6db517e6467c53f25",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_goal_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_goal/task09/init19",
+      "hashes": {
+        "result.json": "a4919b710d0b8a42ba31d01cbc481760d9321029c2144ec295e4248c5804f186",
+        "identity.json": "6dec3294b91635b49ff2b58bd1aef4c3f32997c90f7f2ee52f685d1e972e36b3",
+        "infer.jsonl": "c3a46fd807bac450d40c83348c364a3e2d3d8b13888a0cc2bf98c9b7fd8d16df",
+        "arrays.npz": "dd20bb8c38fed88dedd4e827c97ade3694e2b0c12beebb26d4611f1cf98feb8f",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    },
+    "libero_10_task09_init19": {
+      "directory": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E4_closedloop/full10_reference/episodes/libero_10/task09/init19",
+      "hashes": {
+        "result.json": "6e830f75cd263e890603c61ad34bb5cf50b9e521bb757a0da4c20d6b70682bf1",
+        "identity.json": "a21390130cf5f18898c5462688ca2e98efdf4fa18c3a7f210370407a5eaf13c6",
+        "infer.jsonl": "f9251110741f12d7a9ecaa9ddb732284b2bf60efdf77f1a9d8a43c14835ff326",
+        "arrays.npz": "58fc9c7ee2f2f2f6ec4cbcd9f86da21d65b2bbd04137455d96dc4ab7e411c0df",
+        "complete.json": "1a1707906b13a15a13a2a0ae9f5a9edbc565adc5996f668aa16b43c5291c3add"
+      }
+    }
+  },
+  "source_files": {
+    "preparations/idea1_v3_4_E2_adjacency_200/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_adjacency_200/common.py": "60b57a6e956f73a98754abba17d1871fdfee3222cbc92dc52b52b5843df2e7c5",
+    "preparations/idea1_v3_4_E2_adjacency_200/policy.py": "52508bd731e82a64f87bfe46764c8b2dadd876ff42f9608c0498a5ab8299010b",
+    "preparations/idea1_v3_4_E2_adjacency_200/server.py": "24c040a3ef5ba95c26b1ba87c94cd867adcad6ebff96b3c46e3334cb427d9b42",
+    "preparations/idea1_v3_4_E2_adjacency_200/evaluate.py": "cd30362f17b6e594c7e87bef4d86c5721ad61a90c681e9b5e319bf0b481ec6b0",
+    "preparations/idea1_v3_4_E2_adjacency_200/controller.py": "99773fca0d42bcbbe6a99e6f728132de0c92d822936a2094b5fa5e46d3e6f2aa",
+    "preparations/idea1_v3_4_E2_adjacency_200/preflight.py": "a9f46072b0174d9777856acb58668180c36327b55140ecb51e108a2cf29bf223",
+    "preparations/idea1_v3_4_E2_adjacency_200/finish.py": "5e316bf3ad27e60cb9ddf2601451525f71af4614908d0e6431f60d629310b60d",
+    "preparations/idea1_v3_4_E2_selection_200/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_selection_200/policy.py": "d31a007cd87aabe0570624a634d54ea60907c592cecf72f38fddcf8ff76f4312",
+    "preparations/idea1_v3_4_E2_selection_200/common.py": "6cec7bbf8eb509f99bc12ed6abdc10c8de0771720adeffb75d627b3af6e3d9c8",
+    "preparations/idea1_v3_4_E2_selection_200/preflight.py": "8534c181eb231944ab8fced90976136bc66c2e0c6ca842c145e5138224c3f3eb",
+    "preparations/idea1_v3_4_E2_selection_200/server.py": "2189493ae6f77fe1bf58791366d1798c4ae661ce8f2af6c34e213c1da705b85a",
+    "preparations/idea1_v3_4_E2_selection_200/evaluate.py": "266f87eef0249716d81eecdff0a6389f903d6490e8d3dca70c30e2ac3f74b0e5",
+    "preparations/idea1_v3_4_E2_selection_200/controller.py": "ae21fdeaa9db178b5552b63f9688494211f285e1fb372211e1ab67020d870b2e",
+    "preparations/idea1_v3_4_E2_selection_200/finish.py": "113930509f0e1a52b37f903366f469757bb8f6c4f12d82877898517251846dcc",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4/analyze.py": "b1f4a34aea0c3e4193b3c01d115203f3ff078dc013768dd0309056bd8df89712",
+    "preparations/idea1_v3_4_E2_max2_repair/evaluate.py": "ec80c95f9390a52214b3b702a750370a9bd605c602219c7fb543d1cc03390910",
+    "preparations/idea1_v3_4_E2_cycle3/common.py": "7b18d6794f01a1048c2c27ac44625609b6227dc52709bcbef4c347844f04ec57",
+    "preparations/idea1_v3_4_E2_cycle3/policy.py": "8ab6b8e1dbd149662a460f17bae524e83fb0ef0be9d4be30747ceb73d05131c7",
+    "preparations/idea1_v3_4_E2_cycle3/selection.py": "aec9931a82ad4beeb29ee029686529b53a454d00473904263433609db3cc96ec",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/model.py": "3fb1503c7ec493d9ebc05750f7066d2f97bb5d6e86d935deda98614953e000b0",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/policy.py": "9ee1ab8c56e6c11aa161a2e1d040af7fe5a5813cb5750d53770db042b79af113",
+    "preparations/idea1_v3_4_E2_online_time_weights/selector.py": "80df545d65ad05c4054a3f3fda4b8b9f1a096630ce3f0838d9c53c35a635601b",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/backend.py": "b810f4e9cb24659b7e4364f42a8f5260ddb39f252a974e2e8d63c9f0652e5e60",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/policy.py": "b7318dfe445b9841af4616cef49057aca54ec8aa8585e4b57dfe737aaad426e1",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+    "preparations/kv_reuse_probe/probe.py": "e86a40c0cb7939b3adcc29c42f3a7b400b6a10234e49a714b9cd0fd60d2dde2c",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v2_2/common.py": "34b0647adc7ea50620617193a0190ef9a13ef43856d49d4fd8f81391cdbfc19c",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/policy.py": "4662a4cb394990d34cf8ca37ef8f4e0f88518e7538ca76a198c1452c156fb945",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/common.py": "fa866ea1dbcbb85108f863e0869f998c2bc41395f3e9e13b39797a2481e9d39b",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/server.py": "40359847bb205ff5ca20aa79a001a801c920e11244b60051485c4fd14be3e397",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/evaluate.py": "6325d1ecb1593fa84b872f83a26eb0ee549fc34fe0616767621b95903f96ef86",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/controller.py": "7e2a63818cfa38af1769f963390c1812f0ea00fd6eac285e96b92f26649f1895",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/preflight.py": "a3d3cc08fcbf8159079d99f5231cb6faa7c37e41839bc4bf01d3daad20f77281",
+    "preparations/idea1_v3_4_E2_adjacency_extrapolate_200/finish.py": "96e3f6b3fbbf3062c77f63806071ec44bb0426c788e5cf7bef12e57de54ecd3d",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/common.py": "a6d0a872eb91bd60dde321624009286bcdcc59146b95d1bacedcd6674052f3c8",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/policy.py": "38b1a4fbe8cddb5bb3d4b4dea7419f5ad393bbdb0e4055abb7130a5630a72187",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/preflight.py": "9dab91aad91f8f88d870fba4f12f019557a0326a7bfd51e8d5727772d19b8597",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/validate_plan.py": "f74062b9ecbefbd21d4f33fb4f6c578c28737b1beff690e7c065646272880d09",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/controller.py": "a3f4440141a0d037eed2288100753024663c8ad988bf6a8b62f8fb263fe64d60",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/server.py": "65c697ae51baabe974ebe8db24156aa878b7a27d3426cef1e1b83d511b2ba0f3",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/evaluate.py": "bcc7864fd63857893d0563c63de1365a110c40b411f6c0850afd5fd9cfe185c6",
+    "preparations/idea1_v3_4_E2_cycle5_spaced/finish.py": "1e9675c94d05758b2dccd2ec5862cdca681a84e17c8fd32018646620231b45c3",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/model.py": "a80adbe150681b8bf9b2f0319aa6cd3f9b17dbde160c54f747544162c3957452",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/policy.py": "79e7c4ced5411bc2f3edf48fc6ecbd9159f68f96b51c9cd64b3adbd6da09ffac",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/controller.py": "93496aa35284da196ed95b158d1eed782833647516bda1512ee32255d5dd0eae",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/server.py": "89a95dd6ebabd07caa9bbde55c6c97e75a8de94c2229efd3e0c517642ca53cbf",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/evaluate.py": "9a575516924703f4f84bf41211a60fcdb2ba9228fc36e56f03fce102aa6ddf9b",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/preflight.py": "eb58f4238c2ee94add2459b0eb264c11d3063c983dcb222273b2f7fc01b0dbdf",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/common.py": "5751afdd62e4f440422b8773a5ed8cb63b82428983c632d9cc64fd3f57ee6b18",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/validate_plan.py": "35f1e379ad50c2b77f49e03d30cb040699ecff2a2041019b87a6ca1175e1e6bd",
+    "preparations/idea1_v3_4_E2_cycle5_q4_v12/finish.py": "747c5e2f6f126476cbaabdfe64832e2faa1931aeb7055071d8621e7de01ce2ed",
+    "preparations/idea1_v3_4_E2_comp_error_multivjp/model.py": "d519e85d06b1921c784ab41e8bd277965b58865281f0be2253315b3139d38cf1",
+    "preparations/idea1_v3_4_E2_comp_error_cost/model.py": "c8bf10288442f46c8d10fb81380e6e076f8e60d8f92254e82da471a1ba1a21c0",
+    "preparations/idea1_v3_4_E2_comp_error_cost/verify.py": "5b910b191e35dca789d67c608b411034b5e1755a9cb823de2eba90ca3b90423f",
+    "preparations/idea1_v3_4_verified_paths/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_verified_paths/policy.py": "60074ac85f257d2aaaa3d9e7bf7d4585b814de1e2a4c3d45c70aea80c8ce32ba",
+    "preparations/idea1_v3_4_verified_paths/validate_policy.py": "974ac4d05497c187661660270eea995ce0abcda7c8d0ff36a8936cd27253c139",
+    "preparations/idea1_v3_4_verified_paths/common.py": "e69ccfa3b43c4209c16bc9ea2e65343ee2dcc3481a2962530a18fe0d87101681",
+    "preparations/idea1_v3_4_verified_paths/rollout.py": "07af4031c506eadc30c582ae9777895098cbc1ba874bb7c5566f1e66cec1963e",
+    "preparations/idea1_v3_4_verified_paths/preflight.py": "531c9a3d536df4d96dcdd1dbc1eb67b5d54935aa23f648c7ba09a583919c322b",
+    "preparations/idea1_v3_4_verified_paths/profile.py": "f238e0e5538a82a4ef42bdfeeaa8881c3e1aecf87c38a5852db70e6c0b3c0987",
+    "preparations/idea1_v3_4_verified_paths/server.py": "b118c10cabadc06e52a388a667102c2a9216a3f9cf9b15000981400ff595623a",
+    "preparations/idea1_v3_4_verified_paths/evaluate.py": "260389ea16e8e3b3cde490e6310d3c53b1229193fcaa198b04a62f3666e470ab",
+    "preparations/idea1_v3_4_verified_paths/controller.py": "ba6245c57eba6640d0a66ec797beebe86f2625f51c9d1f5a56b6b4268cc46895",
+    "preparations/idea1_v3_4_verified_paths/finish.py": "c4f5eefa26d8b9f0d4972dab46b4b3d97db5505656e42879a545c5d1f2c41029",
+    "preparations/idea1_v3_3/rules.py": "d482eb7c83e36bd082011a6cafc221b3d54cee3892a98b128067c0ea78780837",
+    "preparations/idea1_v3_3/policy.py": "9abe1daa8874476e3dbe6bffb86fa4ce980b0cd9bd646fc5daac05b625433b3f",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_spec_infer.py": "b2d98018e8fa37dfeb69b6594ebbee6b141610dfa64395d113cefb5970e861dd"
+  },
+  "references": {
+    "preparations/idea1_v3_4_verified_paths/selection.json": "9de4f5c86dfcc26771a6f0d0948b4e8d1c64acf23f0a5b0b392333f71a12faaa",
+    "results/idea1_v3_4_E2_cycle5_spaced/manifest.json": "58b9d316f750a85584abc4a4860fd26604022eb285f76bfcfefa3488b858aa44",
+    "results/idea1_v3_4_E2_cycle5_q4_v12/manifest.json": "6ffdc39d58f42b09a92dcc855caf70dc3bf8a78eb0a3dcbb2ce62b2389ee7682",
+    "results/idea1_v3_4_E4_closedloop/audit.json": "1eaf748bc36b149fe4fafdb0425a7420a2f4a867bfe39336fd3d4200b849333d"
+  },
+  "plan_sha256": "bed49763db613185e4b082af8a8cc263c09ab2566551e910a7a0b4b9334b9afc",
+  "dependency": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_q4_v12/complete.json",
+  "dependency_audit": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_cycle5_q4_v12/audit.json",
+  "max_gpus": 3,
+  "max_actors": 2,
+  "target_records": 1000,
+  "planned_new_min": 960,
+  "planned_new_max": 1000,
+  "potential_baseline_reuse": 40,
+  "phases": [
+    "main200"
+  ],
+  "time": 1793528220.2658057,
+  "selection": {
+    "selection": "jacobian",
+    "projections": 4,
+    "adjacency_rule": "spaced",
+    "origin": "Continue the current four-VJP, spaced configuration; assumption stated to user while awaiting optional clarification."
+  },
+  "manifest_hash": "c8070b2a5b2e510e362366ca97597298c63dea47abd54d10371be82a122b4c9d"
+}

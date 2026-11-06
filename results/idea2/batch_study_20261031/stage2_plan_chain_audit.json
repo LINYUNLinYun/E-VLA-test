@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "frozen_stage1_evidence_and_stage2_plan_unchanged": {
+    "docs/experiments/idea2/idea2_batch_pipeline_stage2_plan_20261101.md": true,
+    "results/idea2/batch_study_20261031/stage1_original_b1_full_prepared/result.json": true,
+    "results/idea2/batch_study_20261031/stage1_smoke_b2_paired_prepared/result.json": true,
+    "results/idea2/batch_study_20261031/stage1_original_b4_numeric/result.json": true,
+    "results/idea2/batch_study_20261031/stage1_batch_shape_diagnosis/result.json": true,
+    "results/idea2/batch_study_20261031/stage1_original_b1_sm16_prepared.console.log": true,
+    "results/idea2/batch_study_20261031/stage1_original_b1_sm16_prepared.execution.json": true
+  },
+  "strict_failures_retained": [
+    {
+      "name": "stage1_smoke_b2_paired_prepared",
+      "status": "failed",
+      "normalized_max": 0.007586836814880371,
+      "original_tolerance": {
+        "max_abs": 1e-05,
+        "mae": 1e-06
+      }
+    },
+    {
+      "name": "stage1_original_b4_numeric",
+      "status": "failed",
+      "normalized_max": 0.0074787139892578125,
+      "original_tolerance": {
+        "max_abs": 1e-05,
+        "mae": 1e-06
+      }
+    }
+  ],
+  "aborted_green_exit_code": -6
+}

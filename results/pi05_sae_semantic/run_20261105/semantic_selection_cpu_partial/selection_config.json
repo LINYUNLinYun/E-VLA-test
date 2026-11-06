@@ -1,0 +1,19 @@
+{
+  "targets": [
+    "object/bowl",
+    "object/stove",
+    "spatial/on"
+  ],
+  "max_features": 4,
+  "discovery_feature_precision_reference": 0.8,
+  "minimum_positive_trigger_episodes": 2,
+  "calibration_precision_reference": 0.8,
+  "calibration_false_positive_rate_reference": 0.2,
+  "concept_threshold_candidates": [
+    0.8,
+    0.6,
+    0.9
+  ],
+  "quantile_method": "task/episode-balanced empirical inverse CDF",
+  "scope": "Exploratory semantic criteria, not calibrated deployment probabilities or action guarantees"
+}

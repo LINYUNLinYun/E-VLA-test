@@ -1,0 +1,112 @@
+{
+  "status": "stopped_at_failed_reference_gate",
+  "episode": "B4_libero_spatial_task01_init19",
+  "replan": 12,
+  "step": 60,
+  "prescribed_tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "reference_gate_recomputed_passed": false,
+  "counts": {
+    "base_model_requests": 832,
+    "probe_native_requests": 3,
+    "warmups": 2,
+    "complete_references": 1,
+    "uncompensated_counterfactuals": 0,
+    "combined_model_requests": 835
+  },
+  "differences": {
+    "raw_max_abs": 0.015625,
+    "raw_first5_7_max_abs": 0.0078125,
+    "raw_first5_7_rmse": 0.0025435523275344606,
+    "raw_all50_32_rmse": 0.0027163216567578493,
+    "raw_differing_elements": 1429,
+    "raw_total_elements": 1600,
+    "raw_tolerance_violations": 1428,
+    "actions_max_abs": 0.00977688655257225,
+    "actions_first5_7_rmse": 0.0016778950483843206,
+    "actions_differing_elements": 183,
+    "actions_total_elements": 350,
+    "first5_gripper_sign_flips": 0,
+    "all50_gripper_sign_flips": 0,
+    "raw_values_bf16_grid": true
+  },
+  "input_identity": {
+    "seed": 2210128845,
+    "seed_matches_old_record": true,
+    "input_sha256": "38c4206cdde689b9a069b523a6e2497fce45e0dd9b52874a9313c0bd9783af38",
+    "input_sha_matches_declared": true,
+    "input_digest_matches_declared": true,
+    "prompt_matches_episode": true
+  },
+  "protocol_comparison": {
+    "checkpoint_sha256": {
+      "old": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "new": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "equal": true
+    },
+    "source_manifest_sha256": {
+      "old": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+      "new": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+      "equal": true
+    },
+    "provenance_sha256": {
+      "old": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+      "new": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+      "equal": true
+    },
+    "dtype": {
+      "old": "bfloat16",
+      "new": "bfloat16",
+      "equal": true
+    },
+    "execution_mode": {
+      "old": "eager Triton kernel dispatch; no historical CUDA graph replay",
+      "new": "eager Triton kernel dispatch; no historical CUDA graph replay",
+      "equal": true
+    },
+    "startup_accounting": {
+      "old": "constructor full graph capture disabled; explicit calls only",
+      "new": "constructor full graph capture disabled; explicit calls only",
+      "equal": true
+    }
+  },
+  "native_source_hashes_match_matrix": {
+    "preparations/idea1_v3_4_E2_module_skip/backend.py": true,
+    "preparations/idea1_v3_4_E2_module_skip/offline.py": true,
+    "preparations/idea1_v3/policy.py": true,
+    "preparations/idea1_v3/safe_qk.py": true,
+    "preparations/idea1_v2_2/pi0_adapter.py": true,
+    "preparations/idea1_v2_2/schedules.py": true,
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": true
+  },
+  "gpu": {
+    "original_worker_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "probe_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "same_physical_gpu": true
+  },
+  "qk": {
+    "source_revision_same": true,
+    "both_predeclared_qk_checks_passed": true,
+    "note": "These one-call QK checks cover different first-request prompt shapes; they do not establish whole-model cross-process equality."
+  },
+  "observed_execution_differences": [
+    "Original mechanism references ran inside an already warmed long-lived B1 service after preflight and pilot rollouts; probe used a fresh Backend with two complete-VLM/D2 warmups on this target input.",
+    "Original replan12 reference captured FFN residuals; the probe complete reference used capture=False. Both use the same native module encoder and no skipped modules."
+  ],
+  "cause": {
+    "determined": false,
+    "possible_unverified_factors": [
+      "Different process, prior route/shape/compilation history, and allocator state can select different BF16 numerical execution details.",
+      "Capture adds clone/difference operations and allocations; whether this changed the numerical path here is unverified."
+    ],
+    "excluded_by_checked_evidence": [
+      "changed checkpoint or declared precision",
+      "changed native source files",
+      "different saved input, prompt, seed, or physical GPU"
+    ]
+  },
+  "consequence": "No uncompensated late-Fast counterfactual was dispatched. The paired late-age compensation benefit/harm question remains unresolved; existing compensated-only age trends remain descriptive.",
+  "policy": "No retry, tolerance change, source modification, or GPU follow-up was performed."
+}

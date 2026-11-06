@@ -1,0 +1,1584 @@
+{
+  "passed": true,
+  "scope": "All120 completed rollouts; every recorded request path/control span; every selected payload actual RGB/state/instruction/noise hash and executed prefix",
+  "episodes": 120,
+  "recorded_requests": 3784,
+  "selected_requests": 2326,
+  "successes": 117,
+  "phase_counts": {
+    "initial": 345,
+    "approach": 771,
+    "grasp_or_manipulate": 322,
+    "transport": 574,
+    "goal_alignment": 173,
+    "contact": 91,
+    "release_or_final_action": 13,
+    "unknown": 37
+  },
+  "checks": "Frozen protocol, GPU service ownership, 12+8 request identity, explicit noise, source input hash, EEF timing and action-prefix alignment",
+  "excluded_scope": "Full activation tensors and final analysis are audited separately; no claim that inferred phase labels are ground truth",
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 0,
+      "success": true,
+      "steps": 79,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 1,
+      "success": true,
+      "steps": 111,
+      "requests": 23,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 2,
+      "success": true,
+      "steps": 79,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 0,
+      "success": true,
+      "steps": 107,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 1,
+      "success": true,
+      "steps": 100,
+      "requests": 20,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 2,
+      "success": true,
+      "steps": 106,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 0,
+      "success": true,
+      "steps": 124,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 1,
+      "success": true,
+      "steps": 115,
+      "requests": 23,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 2,
+      "success": true,
+      "steps": 96,
+      "requests": 20,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 0,
+      "success": true,
+      "steps": 86,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 1,
+      "success": true,
+      "steps": 84,
+      "requests": 17,
+      "selected": 17,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 2,
+      "success": true,
+      "steps": 78,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 0,
+      "success": true,
+      "steps": 117,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 1,
+      "success": true,
+      "steps": 129,
+      "requests": 26,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 2,
+      "success": true,
+      "steps": 189,
+      "requests": 38,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 0,
+      "success": true,
+      "steps": 100,
+      "requests": 20,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 1,
+      "success": true,
+      "steps": 87,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 2,
+      "success": true,
+      "steps": 89,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 0,
+      "success": true,
+      "steps": 106,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 1,
+      "success": true,
+      "steps": 106,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 2,
+      "success": true,
+      "steps": 95,
+      "requests": 19,
+      "selected": 19,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 0,
+      "success": true,
+      "steps": 119,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 1,
+      "success": true,
+      "steps": 119,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 2,
+      "success": true,
+      "steps": 127,
+      "requests": 26,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 0,
+      "success": true,
+      "steps": 109,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 1,
+      "success": true,
+      "steps": 180,
+      "requests": 36,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 2,
+      "success": true,
+      "steps": 95,
+      "requests": 19,
+      "selected": 19,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 0,
+      "success": true,
+      "steps": 118,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 1,
+      "success": true,
+      "steps": 122,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 2,
+      "success": true,
+      "steps": 116,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0,
+      "success": true,
+      "steps": 133,
+      "requests": 27,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 1,
+      "success": true,
+      "steps": 146,
+      "requests": 30,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 2,
+      "success": true,
+      "steps": 143,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 0,
+      "success": true,
+      "steps": 130,
+      "requests": 26,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 1,
+      "success": true,
+      "steps": 113,
+      "requests": 23,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 2,
+      "success": true,
+      "steps": 118,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 0,
+      "success": false,
+      "steps": 280,
+      "requests": 56,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 1,
+      "success": true,
+      "steps": 124,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 2,
+      "success": true,
+      "steps": 105,
+      "requests": 21,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 0,
+      "success": true,
+      "steps": 157,
+      "requests": 32,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 1,
+      "success": true,
+      "steps": 143,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 2,
+      "success": true,
+      "steps": 126,
+      "requests": 26,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 0,
+      "success": true,
+      "steps": 143,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 1,
+      "success": true,
+      "steps": 141,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 2,
+      "success": true,
+      "steps": 151,
+      "requests": 31,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 0,
+      "success": true,
+      "steps": 123,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 1,
+      "success": true,
+      "steps": 124,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 2,
+      "success": true,
+      "steps": 119,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 0,
+      "success": true,
+      "steps": 158,
+      "requests": 32,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 1,
+      "success": true,
+      "steps": 147,
+      "requests": 30,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 2,
+      "success": true,
+      "steps": 150,
+      "requests": 30,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 0,
+      "success": true,
+      "steps": 131,
+      "requests": 27,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 1,
+      "success": true,
+      "steps": 130,
+      "requests": 26,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 2,
+      "success": true,
+      "steps": 139,
+      "requests": 28,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 0,
+      "success": true,
+      "steps": 138,
+      "requests": 28,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 1,
+      "success": true,
+      "steps": 165,
+      "requests": 33,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 2,
+      "success": true,
+      "steps": 144,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 0,
+      "success": true,
+      "steps": 125,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 1,
+      "success": true,
+      "steps": 158,
+      "requests": 32,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 2,
+      "success": true,
+      "steps": 120,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 0,
+      "success": true,
+      "steps": 119,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 1,
+      "success": true,
+      "steps": 106,
+      "requests": 22,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 2,
+      "success": true,
+      "steps": 121,
+      "requests": 25,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 0,
+      "success": true,
+      "steps": 85,
+      "requests": 17,
+      "selected": 17,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 1,
+      "success": true,
+      "steps": 86,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 2,
+      "success": true,
+      "steps": 84,
+      "requests": 17,
+      "selected": 17,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 0,
+      "success": true,
+      "steps": 76,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 1,
+      "success": true,
+      "steps": 86,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 2,
+      "success": true,
+      "steps": 95,
+      "requests": 19,
+      "selected": 19,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 0,
+      "success": true,
+      "steps": 197,
+      "requests": 40,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 1,
+      "success": true,
+      "steps": 193,
+      "requests": 39,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 2,
+      "success": true,
+      "steps": 253,
+      "requests": 51,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 0,
+      "success": true,
+      "steps": 85,
+      "requests": 17,
+      "selected": 17,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 1,
+      "success": true,
+      "steps": 87,
+      "requests": 18,
+      "selected": 18,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 2,
+      "success": true,
+      "steps": 80,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 0,
+      "success": true,
+      "steps": 134,
+      "requests": 27,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 1,
+      "success": true,
+      "steps": 149,
+      "requests": 30,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 2,
+      "success": true,
+      "steps": 120,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 0,
+      "success": false,
+      "steps": 300,
+      "requests": 60,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 1,
+      "success": true,
+      "steps": 95,
+      "requests": 19,
+      "selected": 19,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 2,
+      "success": true,
+      "steps": 94,
+      "requests": 19,
+      "selected": 19,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 0,
+      "success": true,
+      "steps": 81,
+      "requests": 17,
+      "selected": 17,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 1,
+      "success": true,
+      "steps": 77,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 2,
+      "success": true,
+      "steps": 78,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 0,
+      "success": true,
+      "steps": 80,
+      "requests": 16,
+      "selected": 16,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 1,
+      "success": true,
+      "steps": 75,
+      "requests": 15,
+      "selected": 15,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 2,
+      "success": true,
+      "steps": 74,
+      "requests": 15,
+      "selected": 15,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 0,
+      "success": true,
+      "steps": 141,
+      "requests": 29,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 1,
+      "success": true,
+      "steps": 117,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 2,
+      "success": true,
+      "steps": 120,
+      "requests": 24,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 0,
+      "success": true,
+      "steps": 275,
+      "requests": 55,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 1,
+      "success": true,
+      "steps": 276,
+      "requests": 56,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 2,
+      "success": true,
+      "steps": 262,
+      "requests": 53,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 0,
+      "success": true,
+      "steps": 261,
+      "requests": 53,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 1,
+      "success": true,
+      "steps": 252,
+      "requests": 51,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 2,
+      "success": true,
+      "steps": 240,
+      "requests": 48,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 0,
+      "success": true,
+      "steps": 212,
+      "requests": 43,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 1,
+      "success": true,
+      "steps": 273,
+      "requests": 55,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 2,
+      "success": true,
+      "steps": 256,
+      "requests": 52,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 0,
+      "success": true,
+      "steps": 219,
+      "requests": 44,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 1,
+      "success": true,
+      "steps": 215,
+      "requests": 43,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 2,
+      "success": true,
+      "steps": 306,
+      "requests": 62,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 0,
+      "success": true,
+      "steps": 234,
+      "requests": 47,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 1,
+      "success": true,
+      "steps": 240,
+      "requests": 48,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 2,
+      "success": true,
+      "steps": 207,
+      "requests": 42,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 0,
+      "success": true,
+      "steps": 164,
+      "requests": 33,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 1,
+      "success": true,
+      "steps": 155,
+      "requests": 31,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 2,
+      "success": true,
+      "steps": 170,
+      "requests": 34,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 0,
+      "success": true,
+      "steps": 198,
+      "requests": 40,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 1,
+      "success": true,
+      "steps": 218,
+      "requests": 44,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 2,
+      "success": true,
+      "steps": 235,
+      "requests": 47,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 0,
+      "success": true,
+      "steps": 245,
+      "requests": 49,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 1,
+      "success": true,
+      "steps": 269,
+      "requests": 54,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 2,
+      "success": true,
+      "steps": 257,
+      "requests": 52,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 0,
+      "success": true,
+      "steps": 434,
+      "requests": 87,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 1,
+      "success": true,
+      "steps": 365,
+      "requests": 73,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 2,
+      "success": false,
+      "steps": 520,
+      "requests": 104,
+      "selected": 20,
+      "service": {
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 0,
+      "success": true,
+      "steps": 258,
+      "requests": 52,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 1,
+      "success": true,
+      "steps": 253,
+      "requests": 51,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 2,
+      "success": true,
+      "steps": 242,
+      "requests": 49,
+      "selected": 20,
+      "service": {
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      }
+    }
+  ],
+  "elapsed_s": 147.64208386838436,
+  "checker_sha256": "9421ac0d065130465592ef76cc68c6ad0fdfa331e6969d3e96e17bb138eb6c71"
+}

@@ -1,0 +1,151 @@
+{
+  "backend": "openpi-jax-pi05",
+  "config": "pi05_libero",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+  "checkpoint_files": [
+    {
+      "path": "params/_METADATA",
+      "size": 23493,
+      "mtime_ns": 1789653754836564281
+    },
+    {
+      "path": "params/_sharding",
+      "size": 17952,
+      "mtime_ns": 1789653754826564283
+    },
+    {
+      "path": "params/array_metadatas/process_0",
+      "size": 9062,
+      "mtime_ns": 1789653754736564302
+    },
+    {
+      "path": "params/d/98a77a52a8eb845ae4830eb7fe983979",
+      "size": 42307,
+      "mtime_ns": 1789653754976564252
+    },
+    {
+      "path": "params/manifest.ocdbt",
+      "size": 120,
+      "mtime_ns": 1789653754716564306
+    },
+    {
+      "path": "params/ocdbt.process_0/d/0eaaecefaa9720d30a32cc56e65fd345",
+      "size": 2449323387,
+      "mtime_ns": 1789655000116306699
+    },
+    {
+      "path": "params/ocdbt.process_0/d/155391c1cbf93a1be16266de052e5b48",
+      "size": 2307885530,
+      "mtime_ns": 1789655208366263623
+    },
+    {
+      "path": "params/ocdbt.process_0/d/2b6985f48e9da86f68627a7608c5bc25",
+      "size": 1077,
+      "mtime_ns": 1789653754726564304
+    },
+    {
+      "path": "params/ocdbt.process_0/d/475fab3ee8821662585a8cde3eb32e22",
+      "size": 2150232827,
+      "mtime_ns": 1789655110466283873
+    },
+    {
+      "path": "params/ocdbt.process_0/d/6c54da5a6f62c20a09c0f3f8c3329e00",
+      "size": 1608436908,
+      "mtime_ns": 1789654740376360425
+    },
+    {
+      "path": "params/ocdbt.process_0/d/896bf93c5cf2e8ddd274a6ea0a2feec0",
+      "size": 2240080987,
+      "mtime_ns": 1789655081856289791
+    },
+    {
+      "path": "params/ocdbt.process_0/d/bc613ff288a162563e622d01bb60622a",
+      "size": 217,
+      "mtime_ns": 1789653754726564304
+    },
+    {
+      "path": "params/ocdbt.process_0/d/bda87d9791f23df771cd2d15293780cc",
+      "size": 2926522,
+      "mtime_ns": 1789653757306563770
+    },
+    {
+      "path": "params/ocdbt.process_0/d/efbb46173882cb35ed41ffe0c2db8a5e",
+      "size": 1680102856,
+      "mtime_ns": 1789654949936317078
+    },
+    {
+      "path": "params/ocdbt.process_0/manifest.ocdbt",
+      "size": 322,
+      "mtime_ns": 1789653754736564302
+    }
+  ],
+  "openpi_root": "/root/nfs/embodied/benchmark/policies/openpi",
+  "git_revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "git_dirty": true,
+  "code_sha256": {
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/models/tokenizer.py": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+    "/root/nfs/embodied/benchmark/policies/openpi/src/openpi/training/config.py": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d"
+  },
+  "depth": 18,
+  "width": 2048,
+  "vocab_size": 257152,
+  "dtype": "bfloat16",
+  "model_configs": [
+    {
+      "width": 2048,
+      "depth": 18,
+      "mlp_dim": 16384,
+      "num_heads": 8,
+      "num_kv_heads": 1,
+      "head_dim": 256,
+      "lora_configs": {}
+    },
+    {
+      "width": 1024,
+      "depth": 18,
+      "mlp_dim": 4096,
+      "num_heads": 8,
+      "num_kv_heads": 1,
+      "head_dim": 256,
+      "lora_configs": {}
+    }
+  ],
+  "head": "checkpoint embedder/input_embedding transpose (tied); no new parameters",
+  "final_norm": "checkpoint final_norm; applied exactly once after layer depth",
+  "layer_convention": "0=scaled embeddings; k=residual after k blocks, before final norm",
+  "tokenizer_sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+  "bos_id": 2,
+  "eos_id": 1,
+  "source_transforms": [
+    "InjectDefaultPrompt",
+    "LiberoInputs",
+    "Normalize",
+    "InjectDefaultPrompt",
+    "ResizeImages",
+    "TokenizePrompt",
+    "PadStatesAndActions"
+  ],
+  "norm_stats_files": [
+    "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json"
+  ],
+  "norm_stats_sha256": {
+    "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84"
+  },
+  "normalization_use_quantiles": [
+    true
+  ],
+  "source_discrete_state_input": false,
+  "proprio_state_enters_prefix": false,
+  "target_text_contract": "BOS + exact supplied prompt; no action template, cleanup, or implicit newline",
+  "generation": "greedy, full recomputation, patch reapplied each step, causal answers after fixed bidirectional prefix",
+  "raw_input_keys": [
+    "observation/image",
+    "observation/wrist_image",
+    "observation/state",
+    "prompt"
+  ],
+  "validation_scope": "real checkpoint CPU initialization and loaded-parameter audit; no semantic accuracy measurement",
+  "load_seconds": 79.1559991799295
+}

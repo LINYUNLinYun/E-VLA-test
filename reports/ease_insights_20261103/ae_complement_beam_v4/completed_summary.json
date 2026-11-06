@@ -1,0 +1,131 @@
+{
+  "status": "complete_not_reproduced",
+  "time": 1793925002.182057,
+  "bundle_hash": "9e2385897734b7aafc8ba5883fd19f866763b327a0e828889ba449776a36a326",
+  "new_quality_cases": 720,
+  "known_control_repeats": 12,
+  "completed_services": 12,
+  "requests": 27318,
+  "independent_statistics_passed": true,
+  "independent_statistics_differences": [],
+  "success_counts": {
+    "full_d10": 224,
+    "vlm_c": 206,
+    "ae14_d3": 195
+  },
+  "suite_success_counts": {
+    "full_d10": {
+      "libero_spatial": 60,
+      "libero_object": 59,
+      "libero_goal": 56,
+      "libero_10": 49
+    },
+    "vlm_c": {
+      "libero_spatial": 56,
+      "libero_object": 54,
+      "libero_goal": 51,
+      "libero_10": 45
+    },
+    "ae14_d3": {
+      "libero_spatial": 57,
+      "libero_object": 53,
+      "libero_goal": 45,
+      "libero_10": 40
+    }
+  },
+  "primary_directions": [
+    {
+      "direction": {
+        "suite": "libero_spatial",
+        "better": "ae14_d3",
+        "worse": "vlm_c"
+      },
+      "difference_pp": 1.6666666666666667,
+      "Holm2_p": 0.5,
+      "task_CI95_pp": {
+        "low": -3.3333333333333335,
+        "high": 6.666666666666667
+      },
+      "task_difference_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "reproduced": false
+    },
+    {
+      "direction": {
+        "suite": "libero_10",
+        "better": "vlm_c",
+        "worse": "ae14_d3"
+      },
+      "difference_pp": 8.333333333333332,
+      "Holm2_p": 0.3125,
+      "task_CI95_pp": {
+        "low": -3.3333333333333335,
+        "high": 20.0
+      },
+      "task_difference_counts": [
+        0,
+        0,
+        1,
+        0,
+        -2,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "reproduced": false
+    }
+  ],
+  "native_cost_ratios": {
+    "full_d10": 1.0,
+    "vlm_c": 1.6047650372056141,
+    "ae14_d3": 1.494402482757033
+  },
+  "pair_cost_factor": 1.073850623056362,
+  "all_global_quality_and_cost_gates_passed": true,
+  "task_category_preference_reproduced": false,
+  "evidence": [
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_pipeline_acceptance.json",
+      "sha256": "a557c81782347025c9a1bc9dcea6c984be08fc7c5291687991dcd2e6053fafe3"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_analysis.json",
+      "sha256": "62bee04d2faf57c2480331e45bc7ede12950eefea25a7a99289fa1decab5f852"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_acceptance.json",
+      "sha256": "9ca300c4a297b5f9b8db28e5279a8647276dd2be13a4a497bc4f7e1839c38b9f"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_independent_statistics.json",
+      "sha256": "008047e51775fb89a7ca1443ce4a35f06924b17af936f37fbec3023b42957ef4"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/prior_configuration_audit.json",
+      "sha256": "ad0fd2103a35597c9385313d91dca9d52901c4c519ba1eae9a31a8cac0f6698c"
+    }
+  ],
+  "figures": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4_figures_v2/provenance.json",
+    "sha256": "a53d818ed825819cf00cfdbecff736442871b70b28de7970b410f73922bdf30d"
+  },
+  "all_valid_failures_retained": true,
+  "additional_significance_rollouts": 0,
+  "current_frozen_sources_modified": false,
+  "interpretation": "Bothpathsremainusableandnativecost-qualified,butthetwofixedcategorycontrastsareweakandtaskintervalsincludezero.Thispairdoesnotestablishinsight2.",
+  "scope": "R5initial47-49holdoutrelativeto45-46selection,twofixednoisestreams;notgloballynovelstates,theirR12historicaluseisdisclosed.",
+  "overall_goal_complete": false,
+  "next": "Continuewithaseparatelyversionedfreshboth-camera27+18vs18+27visionallocationfamilyafterrealnumericandknown-controlgates;donotexecuteinvalidfocused9-initprotocol."
+}

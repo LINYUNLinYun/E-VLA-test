@@ -1,0 +1,375 @@
+{
+  "schema": "ease-explicit-port-retry-helper-report-v1",
+  "mode": "apply",
+  "time": 1793861945.1456037,
+  "self_sha256": "98e6fae9353f5766a661014756b33d92727fec8d61a46ce5e645bac6d43bbfd1",
+  "actions_taken": [
+    "append task descriptors",
+    "publish matching activation",
+    "atomically publish resume requests"
+  ],
+  "phase": "published_wait_ack",
+  "audit_id": "2ff6702a4c393369b9f8a6413b78429a",
+  "plan_sha256": "18f3609856c026342bd79064a59a8a97f9e5ebdb9d8eb06240b2f8ab05fb5e42",
+  "source_hashes": {
+    "preparations/ease_insights_20261103/await_assigned_gpu.py": "07aa0356850fa6d5199d5f3ba0b35632c4b5f500b163f5da4bb106da506a6e3f",
+    "preparations/ease_insights_20261103/gpu_owned_keeper.py": "c3719a70ed02b2ac42c8cfea261dba5436f59a10657e350c5d2687f5e2ca1566",
+    "preparations/ease_insights_20261103/gpu_resource_campaign.py": "0b498e158efacbd6de050f9b577e688c928991c5bfe538144e3d5f40a5005349",
+    "preparations/ease_insights_20261103/gpu_resource_session.py": "db4dbc38562401b58efa6403d692ab14b2776d2150b84533bb5949c3a3899c89",
+    "preparations/ease_insights_20261103/reassign_waiting_gate.py": "aa57f4fab5447101ce948fcf139a3cbec3930262396e96cbf5c9d11b15fa3583",
+    "preparations/ease_insights_20261103/reassign_waiting_gate_v2.py": "0238d949fd5585fc52dae19fc56c54b5b970cb4542714c4599024418c8169498",
+    "preparations/ease_insights_20261103/scheduler.py": "0786dd02cb35dc7da40ee06dd515dc4481aa0d28e09d4d78baa5df1338345752",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b"
+  },
+  "input_tuple": {
+    "schema": "ease-explicit-port-retry-input-v1",
+    "plan_sha256": "18f3609856c026342bd79064a59a8a97f9e5ebdb9d8eb06240b2f8ab05fb5e42",
+    "self_sha256": "98e6fae9353f5766a661014756b33d92727fec8d61a46ce5e645bac6d43bbfd1",
+    "targets": [
+      {
+        "slot": "slot01",
+        "task_id": "task_d9994f2408f21a37fa1102d2",
+        "task_sha256": "abebaaeb81052ec8efcc046e0787a0294398a32012e784efaccea227d5e0dc22",
+        "outcome_sha256": "94b24c680d966d509fa4d97b7633655c8ac11bbb2681b4e0cd30d0f6ef4a453b",
+        "attention_sha256": "9fe6405bf18470e40f6190c7b84949dcc1768847a2b85e2db280a2e86065cdd9",
+        "new_task_id": "task_d9994f2408f21a37fa1102d2__port_retry1",
+        "session": {
+          "pid": 631915,
+          "start_ticks": "2623408624",
+          "ppid": 600088,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-B",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_resource_session",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--port",
+            "44105",
+            "--plan",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/plan.json",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot01",
+            "--launch"
+          ]
+        },
+        "keeper": {
+          "pid": 632160,
+          "start_ticks": "2623410216",
+          "ppid": 631915,
+          "nonce": "55c894da4b734358ad245ced9b042d68",
+          "argv": [
+            "/usr/bin/python3",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_owned_keeper",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--control-fd",
+            "5",
+            "--ready-fd",
+            "9",
+            "--nonce",
+            "55c894da4b734358ad245ced9b042d68",
+            "--parent-pid",
+            "631915",
+            "--parent-start-ticks",
+            "2623408624",
+            "--allocation-mib",
+            "64"
+          ]
+        }
+      }
+    ],
+    "slot_identity": {
+      "slot00": {
+        "phase": "idle_holding",
+        "task_id": null,
+        "task_sha256": null,
+        "logical_job_id": null,
+        "attention_sha256": null,
+        "session": {
+          "pid": 631907,
+          "start_ticks": "2623408608",
+          "ppid": 600088,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-B",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_resource_session",
+            "--gpu-uuid",
+            "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "--port",
+            "47757",
+            "--plan",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/plan.json",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot00",
+            "--launch"
+          ]
+        },
+        "keeper": {
+          "pid": 632159,
+          "start_ticks": "2623410211",
+          "ppid": 631907,
+          "nonce": "9faaecd8f9e440158abee6f9c95d4e62",
+          "argv": [
+            "/usr/bin/python3",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_owned_keeper",
+            "--gpu-uuid",
+            "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "--control-fd",
+            "6",
+            "--ready-fd",
+            "9",
+            "--nonce",
+            "9faaecd8f9e440158abee6f9c95d4e62",
+            "--parent-pid",
+            "631907",
+            "--parent-start-ticks",
+            "2623408608",
+            "--allocation-mib",
+            "64"
+          ]
+        },
+        "children": [
+          {
+            "pid": 632159,
+            "start_ticks": "2623410211",
+            "ppid": 631907,
+            "argv": [
+              "/usr/bin/python3",
+              "-m",
+              "preparations.ease_insights_20261103.gpu_owned_keeper",
+              "--gpu-uuid",
+              "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+              "--control-fd",
+              "6",
+              "--ready-fd",
+              "9",
+              "--nonce",
+              "9faaecd8f9e440158abee6f9c95d4e62",
+              "--parent-pid",
+              "631907",
+              "--parent-start-ticks",
+              "2623408608",
+              "--allocation-mib",
+              "64"
+            ]
+          }
+        ],
+        "science_child_roles": null
+      },
+      "slot01": {
+        "phase": "attention_holding",
+        "task_id": "task_d9994f2408f21a37fa1102d2",
+        "task_sha256": "abebaaeb81052ec8efcc046e0787a0294398a32012e784efaccea227d5e0dc22",
+        "logical_job_id": null,
+        "attention_sha256": "9fe6405bf18470e40f6190c7b84949dcc1768847a2b85e2db280a2e86065cdd9",
+        "session": {
+          "pid": 631915,
+          "start_ticks": "2623408624",
+          "ppid": 600088,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-B",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_resource_session",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--port",
+            "44105",
+            "--plan",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/plan.json",
+            "--output",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot01",
+            "--launch"
+          ]
+        },
+        "keeper": {
+          "pid": 632160,
+          "start_ticks": "2623410216",
+          "ppid": 631915,
+          "nonce": "55c894da4b734358ad245ced9b042d68",
+          "argv": [
+            "/usr/bin/python3",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_owned_keeper",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--control-fd",
+            "5",
+            "--ready-fd",
+            "9",
+            "--nonce",
+            "55c894da4b734358ad245ced9b042d68",
+            "--parent-pid",
+            "631915",
+            "--parent-start-ticks",
+            "2623408624",
+            "--allocation-mib",
+            "64"
+          ]
+        },
+        "children": [
+          {
+            "pid": 632160,
+            "start_ticks": "2623410216",
+            "ppid": 631915,
+            "argv": [
+              "/usr/bin/python3",
+              "-m",
+              "preparations.ease_insights_20261103.gpu_owned_keeper",
+              "--gpu-uuid",
+              "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+              "--control-fd",
+              "5",
+              "--ready-fd",
+              "9",
+              "--nonce",
+              "55c894da4b734358ad245ced9b042d68",
+              "--parent-pid",
+              "631915",
+              "--parent-start-ticks",
+              "2623408624",
+              "--allocation-mib",
+              "64"
+            ]
+          }
+        ],
+        "science_child_roles": null
+      }
+    }
+  },
+  "slots": {
+    "slot00": {
+      "phase": "idle_holding",
+      "status_time": 1793861944.523647,
+      "task_id": null,
+      "port": 47757,
+      "port_bind_ready": true,
+      "children": [
+        {
+          "pid": 632159,
+          "start_ticks": "2623410211",
+          "ppid": 631907,
+          "state": "S",
+          "argv": [
+            "/usr/bin/python3",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_owned_keeper",
+            "--gpu-uuid",
+            "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "--control-fd",
+            "6",
+            "--ready-fd",
+            "9",
+            "--nonce",
+            "9faaecd8f9e440158abee6f9c95d4e62",
+            "--parent-pid",
+            "631907",
+            "--parent-start-ticks",
+            "2623408608",
+            "--allocation-mib",
+            "64"
+          ],
+          "uid": 0
+        }
+      ],
+      "watcher": {
+        "run_id": "060b0172-ba52-4c9b-9c39-03c7fb604d69",
+        "pid": 385842,
+        "proc_start_ticks": "2618445988",
+        "query_finished_at": 1793861943.9072993,
+        "age_seconds": 1.2506449222564697,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "memory_mib": 460.0,
+        "compute_process_count": 1,
+        "host_compute_pids_unmapped": [
+          1975204
+        ],
+        "attribution": "sole_bounded_keeper"
+      }
+    },
+    "slot01": {
+      "phase": "attention_holding",
+      "status_time": 1793861944.469779,
+      "task_id": "task_d9994f2408f21a37fa1102d2",
+      "port": 44105,
+      "port_bind_ready": true,
+      "children": [
+        {
+          "pid": 632160,
+          "start_ticks": "2623410216",
+          "ppid": 631915,
+          "state": "S",
+          "argv": [
+            "/usr/bin/python3",
+            "-m",
+            "preparations.ease_insights_20261103.gpu_owned_keeper",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--control-fd",
+            "5",
+            "--ready-fd",
+            "9",
+            "--nonce",
+            "55c894da4b734358ad245ced9b042d68",
+            "--parent-pid",
+            "631915",
+            "--parent-start-ticks",
+            "2623408624",
+            "--allocation-mib",
+            "64"
+          ],
+          "uid": 0
+        }
+      ],
+      "watcher": {
+        "run_id": "060b0172-ba52-4c9b-9c39-03c7fb604d69",
+        "pid": 385842,
+        "proc_start_ticks": "2618445988",
+        "query_finished_at": 1793861943.9072993,
+        "age_seconds": 1.2539763450622559,
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "memory_mib": 460.0,
+        "compute_process_count": 1,
+        "host_compute_pids_unmapped": [
+          1975205
+        ],
+        "attribution": "sole_bounded_keeper"
+      },
+      "attention": {
+        "task_id": "task_d9994f2408f21a37fa1102d2",
+        "error": "OSError(98, 'Address already in use')"
+      },
+      "attention_sha256": "9fe6405bf18470e40f6190c7b84949dcc1768847a2b85e2db280a2e86065cdd9",
+      "task_sha256": "abebaaeb81052ec8efcc046e0787a0294398a32012e784efaccea227d5e0dc22",
+      "outcome_sha256": "94b24c680d966d509fa4d97b7633655c8ac11bbb2681b4e0cd30d0f6ef4a453b",
+      "new_task_id": "task_d9994f2408f21a37fa1102d2__port_retry1",
+      "target_episode_receipt_count": 0
+    }
+  },
+  "candidate_tasks": [
+    "task_d9994f2408f21a37fa1102d2__port_retry1"
+  ],
+  "resume_request_id": "port_retry_ready_2ff6702a4c393369b9f8a6413b78429a",
+  "request_id": "port_retry_ready_2ff6702a4c393369b9f8a6413b78429a",
+  "transaction_dir": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/transactions/port_retry_helper_2ff6702a4c393369b9f8a6413b78429a",
+  "task_sha256": {
+    "task_d9994f2408f21a37fa1102d2__port_retry1": "818a90b5bba546ba586fc5f543edd3aef63d65d6dea41464e82d693b34da20ac"
+  },
+  "resume_requests": {
+    "slot01": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gpu_resource_campaign_v3/resumes/slot01/port_retry_ready_2ff6702a4c393369b9f8a6413b78429a.json",
+      "request_sha256": "390d980191ad412965d79707c63a93174faeaf76b16aea00c6302045202759b7",
+      "attention_sha256": "9fe6405bf18470e40f6190c7b84949dcc1768847a2b85e2db280a2e86065cdd9",
+      "session_pid": 631915,
+      "proc_start_ticks": "2623408624",
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202"
+    }
+  }
+}

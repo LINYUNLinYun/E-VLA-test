@@ -1,0 +1,70 @@
+{
+  "revision": "ease-cross-module-confirmation-bundle-v4",
+  "time": 1793919270.1962786,
+  "streams": [
+    {
+      "noise_repeat": 0,
+      "output_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/confirmation",
+      "manifest_hash": "06847d952e8078343c77b0b5c7cec4a3793311087198372e307d96ec48ec9bcc",
+      "manifest_file_sha256": "57f2489b79e3022e67c7b613e0118da1a9efe90da2f06ee4023c4c3210f9f5de",
+      "new_rollouts": 360
+    },
+    {
+      "noise_repeat": 1,
+      "output_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4",
+      "manifest_hash": "e710900d688a8261af20b2c64a526bd4b1a3bb3dd269d0bdcdf7aa414f8df386",
+      "manifest_file_sha256": "a3a5006a22ca49b67651b37704f23ad7971426912dc0d8964800dd3b7becc6fd",
+      "new_rollouts": 360
+    }
+  ],
+  "total_new_rollouts": 720,
+  "unique_physical_states_per_algorithm": 120,
+  "rollouts_per_algorithm": 240,
+  "preregistered_hypotheses": [
+    {
+      "suite": "libero_spatial",
+      "better": "ae14_d3",
+      "worse": "vlm_c"
+    },
+    {
+      "suite": "libero_10",
+      "better": "vlm_c",
+      "worse": "ae14_d3"
+    }
+  ],
+  "protocol_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/protocol.json",
+    "sha256": "6ac596b923d33d1ffc71501a7a240b4721c461721b97969c18b54525fee2aa59"
+  },
+  "calibration_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/calibration_acceptance.json",
+    "sha256": "8529ea9bb323f5da22110e90200682a70a0db030781c6f33cbfbd1ce30a0c74f"
+  },
+  "confirmation_initial_state_prior_use_audit": {
+    "passed": true,
+    "roots": [
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103"
+    ],
+    "requested_inits": [
+      47,
+      48,
+      49
+    ],
+    "catalog": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/semantic_pool_feasibility/task_inventory.csv",
+      "sha256": "81ddefc200c9ce40e72f6d88aaf73f94aec5eb43ddc75a332a61bc90ebaa6bb0"
+    },
+    "inventoried_files": 14661,
+    "matching_existing_outcomes": [],
+    "unresolved": [],
+    "inspected_requested_documents": 0,
+    "outcome_success_not_used": true,
+    "time": 1793919268.4898934,
+    "scope": "Known EASE JSON outcomes and complete official physical-task aliases only; plans alone are not outcomes"
+  },
+  "outcomes_inspected_before_freeze": false,
+  "primary": "Ten whole-task clusters with6 paired observations each; exact signflip andHolm2",
+  "source_files_frozen": 231,
+  "GPU_started": false,
+  "bundle_hash": "9e2385897734b7aafc8ba5883fd19f866763b327a0e828889ba449776a36a326"
+}

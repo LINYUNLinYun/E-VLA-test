@@ -1,0 +1,366 @@
+{
+  "schema": "ease-first-real-gate-reassignment-independent-audit-v1",
+  "observed_unix": 1793793749.6917946,
+  "verdict": "queue_migration_and_scheduler_continuation_verified",
+  "actual_model_runner_started": false,
+  "current_execution_kind": "cpu_assigned_gpu_wait_gate",
+  "scientific_job_equivalent_except_id_and_gate_receipt": true,
+  "complete_file_unchanged": true,
+  "queue_changes_exactly_replacement_and_dependency_renames": true,
+  "dependency_changes": [],
+  "unchanged_other_job_count": 35,
+  "queue_job_count": 36,
+  "current_queue_equals_proposal": true,
+  "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+  "manifest_file_sha256": "7906d0fafa676e9072fe1eb2693c1eeac6b246c5f676a9ac79a0fa3b96b61fbf",
+  "source_file_checks": {
+    "policies/realtime-vla-flash/scripts/experiment10/backend.py": true,
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": true,
+    "preparations/ease_insights_20261103/fastpath/gpu_binding.py": true,
+    "preparations/ease_insights_20261103/vlm/__init__.py": true,
+    "preparations/ease_insights_20261103/vlm/backend.py": true,
+    "preparations/ease_insights_20261103/vlm/benchmark.py": true,
+    "preparations/ease_insights_20261103/vlm/common.py": true,
+    "preparations/ease_insights_20261103/vlm/gate.py": true,
+    "preparations/ease_insights_20261103/vlm/policy.py": true,
+    "preparations/ease_insights_20261103/vlm/prepare.py": true,
+    "preparations/ease_insights_20261103/vlm/runner.py": true,
+    "preparations/ease_insights_20261103/vlm/server.py": true,
+    "preparations/ease_insights_20261103/vlm/test_protocol.py": true,
+    "preparations/ease_insights_20261103/vlm/worker.py": true,
+    "preparations/idea1_v2_1/runtime_client.py": true,
+    "preparations/idea1_v2_1/runtime_models.py": true,
+    "preparations/idea1_v2_2/common.py": true,
+    "preparations/idea1_v2_2/pi0_adapter.py": true,
+    "preparations/idea1_v2_2/provenance.py": true,
+    "preparations/idea1_v3/io.py": true,
+    "preparations/idea1_v3/policy.py": true,
+    "preparations/idea1_v3/safe_qk.py": true,
+    "preparations/idea1_v3_1/benchmark.py": true,
+    "preparations/idea1_v3_1/common.py": true,
+    "preparations/idea1_v3_1/rollout.py": true,
+    "preparations/idea1_v3_4/rollout.py": true,
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": true,
+    "preparations/idea1_v3_4_v12_compensation/backend.py": true,
+    "preparations/idea1_v3_4_v12_compensation/common.py": true,
+    "preparations/ease_insights_20261103/vlm/prepare_confirmation.py": true,
+    "preparations/ease_insights_20261103/vlm/confirm_common.py": true,
+    "preparations/ease_insights_20261103/vlm/confirm_runner.py": true,
+    "preparations/ease_insights_20261103/vlm/confirm_worker.py": true,
+    "preparations/ease_insights_20261103/vlm/recovery.py": true,
+    "preparations/ease_insights_20261103/vlm/worker_v2.py": true,
+    "preparations/ease_insights_20261103/vlm/runner_v2.py": true,
+    "preparations/ease_insights_20261103/vlm/analyze.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/__init__.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/common.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/policy.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/server.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/gate.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/benchmark.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/worker.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/prepare.py": true
+  },
+  "analysis_source_checks": {
+    "preparations/ease_insights_20261103/vlm_local_search_v1/selection.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/analyze.py": true,
+    "preparations/ease_insights_20261103/vlm_local_search_v1/supervisor.py": true,
+    "preparations/ease_insights_20261103/vlm/analyze.py": true,
+    "preparations/ease_insights_20261103/vlm/analyze_confirmation.py": true,
+    "preparations/ease_insights_20261103/pipeline.py": true
+  },
+  "full_condition": {
+    "id": "full_d10",
+    "model": "pi0",
+    "mode": "full",
+    "compensation": null,
+    "period": 2,
+    "H": 50,
+    "R": 5,
+    "D": 10,
+    "refresh_D": 10,
+    "skip": []
+  },
+  "old_cpu_gate_independently_observed_before_transaction": true,
+  "old_gate_snapshot": {
+    "pid": 339341,
+    "start_ticks": "2616174838",
+    "state": "S",
+    "ppid": 335208,
+    "argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.await_assigned_gpu",
+      "--gpu-uuid",
+      "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "--status-file",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120.json",
+      "--",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--condition",
+      "full_d10",
+      "--gpu-uuid",
+      "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "--port",
+      "50663",
+      "--launch"
+    ],
+    "uid": 0,
+    "children": [],
+    "sigterm_default": true
+  },
+  "old_process_now": {
+    "pid": 339341,
+    "state": "absent"
+  },
+  "dual_ack_record": {
+    "scheduler_job": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6",
+    "supervisor_tick": 1793793273.7705219,
+    "committed_at": 1793793272.0739155,
+    "acknowledged_at": 1793793274.7875907,
+    "termination_intent_at": 1793793274.793316
+  },
+  "transaction_events": [
+    {
+      "stage": "prepared",
+      "at": 1793793272.0370872
+    },
+    {
+      "stage": "stop_intent",
+      "at": 1793793272.0504074
+    },
+    {
+      "stage": "stopped_verified",
+      "at": 1793793272.0594294
+    },
+    {
+      "stage": "commit_intent",
+      "at": 1793793272.0635436
+    },
+    {
+      "stage": "committed_waiting_ack",
+      "at": 1793793272.0741103
+    },
+    {
+      "stage": "controllers_acknowledged",
+      "at": 1793793274.7875907
+    },
+    {
+      "stage": "terminating_cpu_gate",
+      "at": 1793793274.793316
+    },
+    {
+      "stage": "complete",
+      "at": 1793793274.8585725
+    }
+  ],
+  "original_scheduler_state": {
+    "status": "failed",
+    "pid": 339341,
+    "gpu": 2,
+    "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+    "port": 50663,
+    "started": 1793782494.5367033,
+    "argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.await_assigned_gpu",
+      "--gpu-uuid",
+      "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "--status-file",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120.json",
+      "--",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--condition",
+      "full_d10",
+      "--gpu-uuid",
+      "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "--port",
+      "50663",
+      "--launch"
+    ],
+    "returncode": -15,
+    "finished": 1793793277.6902726,
+    "completion_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery/full_d10/discovery_shard00of01_complete.json",
+    "completion_file_present": false
+  },
+  "new_scheduler_state": {
+    "status": "running",
+    "pid": 361717,
+    "gpu": 3,
+    "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "port": 36563,
+    "started": 1793793278.0951025,
+    "argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.await_assigned_gpu",
+      "--gpu-uuid",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "--status-file",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6.json",
+      "--",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--condition",
+      "full_d10",
+      "--gpu-uuid",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "--port",
+      "36563",
+      "--launch"
+    ]
+  },
+  "new_process_now": {
+    "pid": 361717,
+    "state": "S",
+    "ppid": 335208,
+    "start_ticks": "2617253193",
+    "argv": [
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.await_assigned_gpu",
+      "--gpu-uuid",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "--status-file",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6.json",
+      "--",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+      "-m",
+      "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+      "--output",
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+      "--condition",
+      "full_d10",
+      "--gpu-uuid",
+      "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "--port",
+      "36563",
+      "--launch"
+    ],
+    "children": []
+  },
+  "matching_live_schedulers": [
+    {
+      "pid": 335208,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2615895606",
+      "argv": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.scheduler",
+        "--queue",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+        "--max-gpus",
+        "2",
+        "--scan-seconds",
+        "30",
+        "--idle-seconds",
+        "0"
+      ],
+      "children": [
+        "344836",
+        "361717"
+      ]
+    }
+  ],
+  "controller_identities_now": {
+    "scheduler": {
+      "pid": 335208,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2615895606",
+      "argv": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.scheduler",
+        "--queue",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+        "--max-gpus",
+        "2",
+        "--scan-seconds",
+        "30",
+        "--idle-seconds",
+        "0"
+      ],
+      "children": [
+        "344836",
+        "361717"
+      ]
+    },
+    "supervisor": {
+      "pid": 338645,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2616104350",
+      "argv": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.vlm_local_search_v1.supervisor",
+        "--root",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+        "--confirmation-root",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+        "--scheduler-pid",
+        "335208",
+        "--poll-seconds",
+        "10",
+        "--launch"
+      ],
+      "children": []
+    }
+  },
+  "new_gate_status": {
+    "status": "busy",
+    "pid": 361717,
+    "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "elapsed_seconds": 469.904,
+    "idle_seconds": 0.0,
+    "memory_mib": 18424.0,
+    "compute_process_count": 1
+  },
+  "coordinator_phase": "waiting",
+  "coordinator_pending": null,
+  "source_gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+  "opportunity_gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+  "actual_new_gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+  "gpu_indices": {
+    "old": 2,
+    "new": 3
+  },
+  "qualification": "Queue handoff is verified. A running scheduler job may still be a CPU gate; only actual argv distinguishes runner startup. No throughput or success claim follows.",
+  "evidence_scope": "Dual acknowledgements are recorded in the pinned helper audit and corroborated by unchanged live controller identities and scheduler handoff. Historical jobs_state/status generations are not independently retained.",
+  "observer_helper_calls": false,
+  "observer_gpu_queries": false,
+  "observer_signals": false,
+  "observer_queue_or_runtime_writes": false,
+  "evidence": {
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gate_reassignments/opportunity_1793793271326258_000001/audit.json": "e3f2766014b7c1f2c473b321ab20a49c509f0a93a31e027e4f0db0c47357a7dc",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gate_reassignments/opportunity_1793793271326258_000001/queue.before.json": "2140f4fb1142f1a2b10ef0560264dc7b9d079db569e0d1470f2fbfde03d56f67",
+    "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gate_reassignments/opportunity_1793793271326258_000001/queue.proposed.json": "bc2546024124c3efb8b9888090af6a240b887db0bf1d2253be57e7d6450447cc",
+    "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/gate_opportunity_live_audit/baseline_running_jobs.json": "b74a3c555e58e972b4854aa84adfc02824efb5c3035e694e420ba7520ea3f929"
+  },
+  "auditor": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/gate_opportunity_live_audit/audit_first_transaction.py",
+    "sha256": "60132384a66361af0271c25cd08bcc2b998c0e6cda308411b4471586de82f45a"
+  }
+}

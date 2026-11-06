@@ -1,0 +1,190 @@
+{
+  "passed": true,
+  "source": "nsys/idea2_experiment/d10_dynamic16_profile_20261024_v1.sqlite",
+  "expected": {
+    "early_sms": 16,
+    "tail_sms": 0,
+    "prefix_sms": 112,
+    "num_steps": 10
+  },
+  "contexts": [
+    {
+      "nullStreamId": 7,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 50872,
+      "deviceId": 0,
+      "contextId": 1,
+      "parentContextId": 0,
+      "isGreenContext": 0,
+      "numMultiprocessors": 0,
+      "numTpcs": 0,
+      "tpcMask": null,
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    },
+    {
+      "nullStreamId": 0,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 50872,
+      "deviceId": 0,
+      "contextId": 2,
+      "parentContextId": 1,
+      "isGreenContext": 1,
+      "numMultiprocessors": 16,
+      "numTpcs": 8,
+      "tpcMask": "0x41051440,0x10,0x0,0x0,0x0,0x0,0x0,0x0",
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    },
+    {
+      "nullStreamId": 0,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 50872,
+      "deviceId": 0,
+      "contextId": 3,
+      "parentContextId": 1,
+      "isGreenContext": 1,
+      "numMultiprocessors": 112,
+      "numTpcs": 56,
+      "tpcMask": "0xbefaebbf,0xffffffef,0x0,0x0,0x0,0x0,0x0,0x0",
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    }
+  ],
+  "counts": [
+    {
+      "phase": "VLM",
+      "green_context": 3,
+      "sms": 112,
+      "kernels": 7072
+    },
+    {
+      "phase": "AE1",
+      "green_context": 2,
+      "sms": 16,
+      "kernels": 8432
+    },
+    {
+      "phase": "AE_tail",
+      "green_context": 0,
+      "sms": 0,
+      "kernels": 75888
+    }
+  ],
+  "boundaries": [
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=72",
+      "passed": true,
+      "model_kernel_gap_us": 4.927
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=73",
+      "passed": true,
+      "model_kernel_gap_us": 5.376
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=74",
+      "passed": true,
+      "model_kernel_gap_us": 4.288
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=75",
+      "passed": true,
+      "model_kernel_gap_us": 4.832
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=76",
+      "passed": true,
+      "model_kernel_gap_us": 4.704
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=77",
+      "passed": true,
+      "model_kernel_gap_us": 4.672
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=78",
+      "passed": true,
+      "model_kernel_gap_us": 4.512
+    },
+    {
+      "frame": "282328467243008|layer/continuous/overlap|epoch=5/frame=79",
+      "passed": true,
+      "model_kernel_gap_us": 5.024
+    }
+  ],
+  "errors": [],
+  "graph_mapping": {
+    "tables": [
+      "ANALYSIS_DETAILS",
+      "ANALYSIS_FILE",
+      "CUDA_GRAPH_NODE_EVENTS",
+      "CUPTI_ACTIVITY_KIND_CUDA_EVENT",
+      "CUPTI_ACTIVITY_KIND_KERNEL",
+      "CUPTI_ACTIVITY_KIND_MEMCPY",
+      "CUPTI_ACTIVITY_KIND_MEMSET",
+      "CUPTI_ACTIVITY_KIND_RUNTIME",
+      "CUPTI_ACTIVITY_KIND_SYNCHRONIZATION",
+      "DIAGNOSTIC_EVENT",
+      "ENUM_CUDA_DEV_MEM_EVENT_OPER",
+      "ENUM_CUDA_FUNC_CACHE_CONFIG",
+      "ENUM_CUDA_KERNEL_LAUNCH_TYPE",
+      "ENUM_CUDA_MEMCPY_OPER",
+      "ENUM_CUDA_MEMPOOL_OPER",
+      "ENUM_CUDA_MEMPOOL_TYPE",
+      "ENUM_CUDA_MEM_KIND",
+      "ENUM_CUDA_SHARED_MEM_LIMIT_CONFIG",
+      "ENUM_CUDA_UNIF_MEM_ACCESS_TYPE",
+      "ENUM_CUDA_UNIF_MEM_MIGRATION",
+      "ENUM_CUPTI_OVERHEAD_TYPE",
+      "ENUM_CUPTI_STREAM_TYPE",
+      "ENUM_CUPTI_SYNC_TYPE",
+      "ENUM_DIAGNOSTIC_SEVERITY_LEVEL",
+      "ENUM_DIAGNOSTIC_SOURCE_TYPE",
+      "ENUM_DIAGNOSTIC_TIMESTAMP_SOURCE",
+      "ENUM_NSYS_EVENT_CLASS",
+      "ENUM_NSYS_EVENT_TYPE",
+      "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_FLAGS",
+      "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_PROPERTY",
+      "ENUM_NSYS_GENERIC_EVENT_FIELD_ETW_TYPE",
+      "ENUM_NSYS_GENERIC_EVENT_FIELD_TYPE",
+      "ENUM_NSYS_GENERIC_EVENT_GROUP",
+      "ENUM_NSYS_GENERIC_EVENT_SOURCE",
+      "META_DATA_CAPTURE",
+      "META_DATA_EXPORT",
+      "NVTX_EVENTS",
+      "PROCESSES",
+      "PROFILER_OVERHEAD",
+      "ProcessStreams",
+      "StringIds",
+      "TARGET_INFO_CUDA_CONTEXT_INFO",
+      "TARGET_INFO_CUDA_DEVICE",
+      "TARGET_INFO_CUDA_STREAM",
+      "TARGET_INFO_GPU",
+      "TARGET_INFO_SESSION_START_TIME",
+      "TARGET_INFO_SYSTEM_ENV",
+      "ThreadNames"
+    ],
+    "graph_origin_count": 52758,
+    "graph_clone_link_count": 26237,
+    "graph_link_conflicts": [],
+    "geometry_fields": [
+      "gridX",
+      "gridY",
+      "gridZ",
+      "blockX",
+      "blockY",
+      "blockZ",
+      "registersPerThread",
+      "staticSharedMemory",
+      "dynamicSharedMemory"
+    ]
+  },
+  "scope": "All attributed VLM/AE-iteration model kernels; 0 SM means unrestricted primary context, not zero or measured full occupancy. Boundary checks use model kernels; Event/Euler ordering is separately checked by runtime lifecycle gates."
+}

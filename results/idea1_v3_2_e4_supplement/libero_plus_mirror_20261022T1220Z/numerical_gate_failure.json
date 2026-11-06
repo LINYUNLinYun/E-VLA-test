@@ -1,0 +1,286 @@
+{
+  "status": "numerical_gate_failed",
+  "failure_code": "PLUS_MIRROR_CROSS_GPU_STRICT_PARITY_FAILED",
+  "quality_allowed": false,
+  "quality_requests": 0,
+  "actual_preflight_requests": 12,
+  "receipt_path": "results/idea1_v3_2_e4_supplement/libero_plus_mirror_20261022T1220Z/controller.json",
+  "receipt_sha256": "7f1f48993b82f7e7dc4dff35c603e22b7e523c0c6f6ade103e8466306a407a8f",
+  "source_service_untouched": true,
+  "own_mirror_exit_code": 0,
+  "scientific_manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "checks": [
+    {
+      "mode": "full_d10",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": false,
+          "max_abs": 0.015625,
+          "passed": false
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": false,
+          "max_abs": 0.007807731628417969,
+          "passed": false
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 1,
+        "ae_layer_calls": 180,
+        "learned_head_calls": 0,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 1,
+        "ae_euler_updates": 10
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 1,
+        "ae_layer_calls": 180,
+        "learned_head_calls": 0,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 10
+      }
+    },
+    {
+      "mode": "v14_d10",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": false,
+          "max_abs": 0.015625,
+          "passed": false
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": false,
+          "max_abs": 0.00963294506072998,
+          "passed": false
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 1,
+        "ae_layer_calls": 180,
+        "learned_head_calls": 0,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 10
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 1,
+        "ae_layer_calls": 180,
+        "learned_head_calls": 0,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 10
+      }
+    },
+    {
+      "mode": "draft_goal",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      }
+    },
+    {
+      "mode": "draft_object",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      }
+    },
+    {
+      "mode": "draft_spatial",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      }
+    },
+    {
+      "mode": "draft_10",
+      "comparisons": {
+        "raw_actions": {
+          "shape": [
+            50,
+            32
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        },
+        "actions": {
+          "shape": [
+            50,
+            7
+          ],
+          "bitwise_equal": true,
+          "max_abs": 0.0,
+          "passed": true
+        }
+      },
+      "input_hash": "860d3baaf9f1f7e754504c925e376481bc2879fa2a3a13b957ec6f63b57eb533",
+      "noise_hash": "48a3ac6ed85855a5ae34af4048494269c1ae536f9689da8245e0d5362496440b",
+      "source_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      },
+      "mirror_observed_calls": {
+        "vision_encoder_calls": 1,
+        "vlm_prefix_calls": 0,
+        "ae_layer_calls": 0,
+        "learned_head_calls": 1,
+        "verify_calls": 0,
+        "constructor_full_record_calls": 0,
+        "constructor_graph_capture_suppressed": 0,
+        "ae_euler_updates": 0
+      }
+    }
+  ],
+  "recorded_unix": 1792671789.7922146,
+  "interpretation": "Same-input/noise cross-device Full/V14 mismatch; four draft outputs bitwiseequal. CPU assembly and native six-route startup gates passed. Cause not established; no relaxed threshold or throughput/quality claim."
+}

@@ -1,0 +1,295 @@
+{
+  "status": "pass",
+  "time": 1793902253.0532775,
+  "CPU_contracts": 31,
+  "no_CUDA_started": true,
+  "source_pins": 167,
+  "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+  "manifest_file_sha256": "8c2a93bf5994ca1dfc11b97431071cb970bffa10fa4933114312110711d9853d",
+  "request": {
+    "schema": "ease-resource-pool-request-v4",
+    "cohort": "camera_paths_v3",
+    "output": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration",
+    "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+    "manifest_file_sha256": "8c2a93bf5994ca1dfc11b97431071cb970bffa10fa4933114312110711d9853d",
+    "shards": 2
+  },
+  "commands": [
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.camera_paths_v3.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/manifest.json",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21840",
+        "--gpu-uuid",
+        "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard00of02_1793902253048206610"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.camera_paths_v3.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21840",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "0",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard00of02_1793902253048206610",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/calibration_shard00of02_complete.json",
+      "identity": {
+        "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+        "condition": "full_d10",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "camera-paths-observed-single-view-v3",
+          "scientific_manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+          "phase": "camera_paths_calibration_v3",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v3/protocol.json",
+            "sha256": "feee06ed6875497eac04ed4a0d51019b81752cad15877959e5a3bac3ba694007"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v3/protocol.json",
+            "sha256": "feee06ed6875497eac04ed4a0d51019b81752cad15877959e5a3bac3ba694007"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/camera_paths_v3/__init__.py": "5a66dd62e6186026924f97bc2fffb38bfa3fe72d8693a6d6f200a24093077ffb",
+            "preparations/ease_insights_20261103/camera_paths_v3/arithmetic.py": "ba723366d63513afa8abd3a801d84abde834081f2e594e05b848a2579dfea220",
+            "preparations/ease_insights_20261103/camera_paths_v3/backend.py": "70d149e92b61e967ccccf1dddccc5f21071727aa0b7388a1a8d7242c3c0b9884",
+            "preparations/ease_insights_20261103/camera_paths_v3/benchmark.py": "1fb598a624c331e74da4f8da3b2087e960f3ff614188f530407dee5aaa050a0d",
+            "preparations/ease_insights_20261103/camera_paths_v3/common.py": "2363b0be34e69b153f501c5ccd391aa1cf5b77ea942b9f1f2bbe241969ad2016",
+            "preparations/ease_insights_20261103/camera_paths_v3/cost_records.py": "829b785fc444e63b6a2441f9c8b9afa4ce1545148b48f392f5df6100262cdc2d",
+            "preparations/ease_insights_20261103/camera_paths_v3/gate.py": "f653ee8ef025efad0cdc2094f2e729e115317cde530d37294a08b218c4d3d621",
+            "preparations/ease_insights_20261103/camera_paths_v3/nodes.py": "c8dc22fb554b558b3b4752961112314ecebf45ee68ab6593eb9d47eb4e26fb59",
+            "preparations/ease_insights_20261103/camera_paths_v3/policy.py": "3f0e9ea2b2b5fb383a4a1c42548efb30a583828dba0e0ec4d8d70f98b56d8cc0",
+            "preparations/ease_insights_20261103/camera_paths_v3/prepare_calibration.py": "b2cfb484967b368f9bf66351343f5954081a5ddcedb7ea4c64d6b27f87f2fcee",
+            "preparations/ease_insights_20261103/camera_paths_v3/prepare_discovery.py": "9ae10a9fbc606d5a4242a6fe36e56b036b720f3a324d96652bcdc3ac6e3d022a",
+            "preparations/ease_insights_20261103/camera_paths_v3/protocol.py": "1ac5eaa8c68652b3905ba1e92919ab8ee3a2e9b5e95f350ced8742936d6cd377",
+            "preparations/ease_insights_20261103/camera_paths_v3/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/camera_paths_v3/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/camera_paths_v3/selection.py": "027dab68903e644d03e4472d57db03e01f9db7af55a0f014edbad27b044d8abc",
+            "preparations/ease_insights_20261103/camera_paths_v3/server.py": "ac060d9dc40cd64a43c01af852061d78c7209b29577fdf939e21402a5b7e77a3",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_arithmetic.py": "f50fe8e058cd51de9e788c4b3c5c2fb042b75ead742c6ca74a328e4f7880ef0e",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_backend_scope.py": "854e826c24644fa29322cedf2b26354c3f0c04c3acc0a4a3347c91769adac6cc",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_contracts.py": "87567c2d25d325d7eecf4eb14315427bf6f0d331f484045d7900e0a9469eb8df",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_independent_selection.py": "759c381967744727d4453f68d5325dcc56233fb3985c627f70a76c4cbb8547d0",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_nodes.py": "337cdd60ee8411ed4259f0af51f09437e26d59bbb797f34109bcc02650e225ce",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_policy.py": "4dea1ff501a211330a78c74952383519c9eab62cb4ac8950d49e5bd908640a32",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_selection.py": "9baa8216dcfe4b69cbacf6fe8c3932fa93dc9acb52f35c9093bc3e8ad71ccb9d",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_vision_dispatch.py": "0efb3f403cff9798220531d3c375f5dbabae30998014f5586054e1c7e6d05b4b",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_vision_views.py": "55bcc9a3eab1ae6f9a4af392025e523188e617afdf8dbfef148d9a51edb0bd9c",
+            "preparations/ease_insights_20261103/camera_paths_v3/vision_dispatch.py": "ea8636f6e2980487281bd9fb40ca66e7e4fd9a47993f5848b34517fc37341f98",
+            "preparations/ease_insights_20261103/camera_paths_v3/vision_views.py": "2674f648569ad6f4f515cddb32eb457d2c28bd50a7eb1165b8518c485ab151b5",
+            "preparations/ease_insights_20261103/camera_paths_v3/worker.py": "699ca571f31acaac47db96e960dd8d3598e03ffef3640d7dc390488acb8d2822"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "actual_vision_input_batch_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "VLM18/AE18; FullD10 two fresh views; four FastD5 rounds with one fresh view and one held last-own-Full feature map; both-fresh D5 control",
+          "revision_hash": "f69c39d8c205183af27550c8395615db2c8011b0417bc67083fb010ce469bcd7"
+        },
+        "command_builder": "preparations.ease_insights_20261103.camera_paths_v3.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all four fixed camera configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+      "stage": "calibration",
+      "condition": "full_d10"
+    },
+    {
+      "dry_run": true,
+      "episodes": 2,
+      "preflight_only": false,
+      "server": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.camera_paths_v3.server",
+        "--manifest",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/manifest.json",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21841",
+        "--gpu-uuid",
+        "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard01of02_1793902253052545393"
+      ],
+      "worker": [
+        "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+        "-m",
+        "preparations.ease_insights_20261103.camera_paths_v3.worker",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration",
+        "--condition",
+        "full_d10",
+        "--port",
+        "21841",
+        "--stage",
+        "calibration",
+        "--shard-index",
+        "1",
+        "--shards",
+        "2"
+      ],
+      "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/runs/calibration_shard01of02_1793902253052545393",
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v3/calibration/full_d10/calibration_shard01of02_complete.json",
+      "identity": {
+        "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+        "condition": "full_d10",
+        "stage": "calibration",
+        "stateful_workers_per_server": 1,
+        "technical_runtime_revision": {
+          "name": "camera-paths-observed-single-view-v3",
+          "scientific_manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+          "phase": "camera_paths_calibration_v3",
+          "protocol_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v3/protocol.json",
+            "sha256": "feee06ed6875497eac04ed4a0d51019b81752cad15877959e5a3bac3ba694007"
+          },
+          "design_evidence": {
+            "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v3/protocol.json",
+            "sha256": "feee06ed6875497eac04ed4a0d51019b81752cad15877959e5a3bac3ba694007"
+          },
+          "wrapper_source_files": {
+            "preparations/ease_insights_20261103/camera_paths_v3/__init__.py": "5a66dd62e6186026924f97bc2fffb38bfa3fe72d8693a6d6f200a24093077ffb",
+            "preparations/ease_insights_20261103/camera_paths_v3/arithmetic.py": "ba723366d63513afa8abd3a801d84abde834081f2e594e05b848a2579dfea220",
+            "preparations/ease_insights_20261103/camera_paths_v3/backend.py": "70d149e92b61e967ccccf1dddccc5f21071727aa0b7388a1a8d7242c3c0b9884",
+            "preparations/ease_insights_20261103/camera_paths_v3/benchmark.py": "1fb598a624c331e74da4f8da3b2087e960f3ff614188f530407dee5aaa050a0d",
+            "preparations/ease_insights_20261103/camera_paths_v3/common.py": "2363b0be34e69b153f501c5ccd391aa1cf5b77ea942b9f1f2bbe241969ad2016",
+            "preparations/ease_insights_20261103/camera_paths_v3/cost_records.py": "829b785fc444e63b6a2441f9c8b9afa4ce1545148b48f392f5df6100262cdc2d",
+            "preparations/ease_insights_20261103/camera_paths_v3/gate.py": "f653ee8ef025efad0cdc2094f2e729e115317cde530d37294a08b218c4d3d621",
+            "preparations/ease_insights_20261103/camera_paths_v3/nodes.py": "c8dc22fb554b558b3b4752961112314ecebf45ee68ab6593eb9d47eb4e26fb59",
+            "preparations/ease_insights_20261103/camera_paths_v3/policy.py": "3f0e9ea2b2b5fb383a4a1c42548efb30a583828dba0e0ec4d8d70f98b56d8cc0",
+            "preparations/ease_insights_20261103/camera_paths_v3/prepare_calibration.py": "b2cfb484967b368f9bf66351343f5954081a5ddcedb7ea4c64d6b27f87f2fcee",
+            "preparations/ease_insights_20261103/camera_paths_v3/prepare_discovery.py": "9ae10a9fbc606d5a4242a6fe36e56b036b720f3a324d96652bcdc3ac6e3d022a",
+            "preparations/ease_insights_20261103/camera_paths_v3/protocol.py": "1ac5eaa8c68652b3905ba1e92919ab8ee3a2e9b5e95f350ced8742936d6cd377",
+            "preparations/ease_insights_20261103/camera_paths_v3/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+            "preparations/ease_insights_20261103/camera_paths_v3/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+            "preparations/ease_insights_20261103/camera_paths_v3/selection.py": "027dab68903e644d03e4472d57db03e01f9db7af55a0f014edbad27b044d8abc",
+            "preparations/ease_insights_20261103/camera_paths_v3/server.py": "ac060d9dc40cd64a43c01af852061d78c7209b29577fdf939e21402a5b7e77a3",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_arithmetic.py": "f50fe8e058cd51de9e788c4b3c5c2fb042b75ead742c6ca74a328e4f7880ef0e",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_backend_scope.py": "854e826c24644fa29322cedf2b26354c3f0c04c3acc0a4a3347c91769adac6cc",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_contracts.py": "87567c2d25d325d7eecf4eb14315427bf6f0d331f484045d7900e0a9469eb8df",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_independent_selection.py": "759c381967744727d4453f68d5325dcc56233fb3985c627f70a76c4cbb8547d0",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_nodes.py": "337cdd60ee8411ed4259f0af51f09437e26d59bbb797f34109bcc02650e225ce",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_policy.py": "4dea1ff501a211330a78c74952383519c9eab62cb4ac8950d49e5bd908640a32",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_selection.py": "9baa8216dcfe4b69cbacf6fe8c3932fa93dc9acb52f35c9093bc3e8ad71ccb9d",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_vision_dispatch.py": "0efb3f403cff9798220531d3c375f5dbabae30998014f5586054e1c7e6d05b4b",
+            "preparations/ease_insights_20261103/camera_paths_v3/test_vision_views.py": "55bcc9a3eab1ae6f9a4af392025e523188e617afdf8dbfef148d9a51edb0bd9c",
+            "preparations/ease_insights_20261103/camera_paths_v3/vision_dispatch.py": "ea8636f6e2980487281bd9fb40ca66e7e4fd9a47993f5848b34517fc37341f98",
+            "preparations/ease_insights_20261103/camera_paths_v3/vision_views.py": "2674f648569ad6f4f515cddb32eb457d2c28bd50a7eb1165b8518c485ab151b5",
+            "preparations/ease_insights_20261103/camera_paths_v3/worker.py": "699ca571f31acaac47db96e960dd8d3598e03ffef3640d7dc390488acb8d2822"
+          },
+          "native_sampler_reused": "preparations.idea1_v2_2.pi0_adapter.Pi0Adapter.sample",
+          "original_sampler_sources_changed": false,
+          "actual_NFE_exported": true,
+          "actual_AE_layer_visits_exported": true,
+          "actual_vision_input_batch_exported": true,
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "scope": "VLM18/AE18; FullD10 two fresh views; four FastD5 rounds with one fresh view and one held last-own-Full feature map; both-fresh D5 control",
+          "revision_hash": "f69c39d8c205183af27550c8395615db2c8011b0417bc67083fb010ce469bcd7"
+        },
+        "command_builder": "preparations.ease_insights_20261103.camera_paths_v3.runner.run(launch=False)",
+        "scientific_protocol_is_new": true,
+        "gate_scope": {
+          "gate_bank_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "evaluation_suites": [
+            "libero_spatial",
+            "libero_object",
+            "libero_goal",
+            "libero_10"
+          ],
+          "gate_covers_new_case_universe": false,
+          "gate_covers_all_new_prompts": false,
+          "scope": "Four fixed-bank observations and all four fixed camera configurations; not all closed-loop inputs",
+          "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+        },
+        "policy_action_limits": {
+          "libero_spatial": 220,
+          "libero_object": 280,
+          "libero_goal": 300,
+          "libero_10": 520
+        },
+        "settling_actions": 10,
+        "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+      },
+      "manifest_hash": "73ba3021de6bf8179988c25b6333e52b770bede198a649ed4a2381384a36ee6b",
+      "stage": "calibration",
+      "condition": "full_d10"
+    }
+  ],
+  "unseen_confirmation_inits": [
+    47,
+    48,
+    49
+  ],
+  "scientific_cases_started": 0,
+  "prior_native_D5_D10_cost_calls_revalidated": 960,
+  "prior_versions_preserved": true,
+  "atol": 1e-05,
+  "rtol": 1e-05
+}

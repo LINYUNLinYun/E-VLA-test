@@ -1,0 +1,18 @@
+{
+  "user_request": "Release one GPU for the other CUDA dual-stream experiment session",
+  "released_physical_gpu_index": 1,
+  "released_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+  "reservation": "Do not scan or reacquire GPU1 for this evaluation unless the user explicitly returns it",
+  "verified_owned_service_pid": 3837647,
+  "verified_owned_dispatcher_pid": 3837568,
+  "shutdown": "Validated live RPC protocol PID/UUID/manifest/assigned-index and requested cooperative model shutdown; service exited and dispatcher stopped on interrupted client, no external process signaled",
+  "GPU1_memory_after_release_mib": 4,
+  "GPU1_completed_cases_preserved": 39,
+  "GPU1_pending_cases": 58,
+  "resource_preemption_attempt": {"source_index":154,"steps":250,"status":"technical_failure","success":null,"reason":"User-requested resource release caused client connection reset; not a policy failure; full original record preserved for retry"},
+  "initial_drain_note": "An attempted dispatcher suspension did not remain stopped across observation boundaries. Final release used only verified owned RPC shutdown; no claim is made that every current attempt completed.",
+  "GPU0_continues_unchanged": {"dispatcher_pid":3837565,"service_pid":3837648,"original_shard_cases":98},
+  "continuation_plan": "After GPU0 naturally completes its original98-case shard, a separately registered GPU0-only continuation will evaluate the58 unfinished former-GPU1 keys, preserving all complete results and original scientific settings. New model startup must again pass legacy initialization and full bytewise gates.",
+  "final_scientific_target": 195,
+  "no_videos": true
+}

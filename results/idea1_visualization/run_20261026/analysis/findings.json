@@ -1,0 +1,599 @@
+{
+  "metric": "Balanced accuracy; within-task rows macro-average the ten eligible task-specific probes, one init2 episode per task",
+  "primary": [
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "last_layer": 27,
+      "task_h0": 0.4154970760233918,
+      "task_last": 0.8342105263157895,
+      "phase_h0": 0.3864591067687043,
+      "phase_last": 0.7909836981044412,
+      "uniform_phase_h0": 0.31656719717064546,
+      "uniform_phase_last": 0.7596890657235484
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_object",
+      "last_layer": 27,
+      "task_h0": 0.85,
+      "task_last": 1.0,
+      "phase_h0": 0.31931574231779153,
+      "phase_last": 0.6715646659806495,
+      "uniform_phase_h0": 0.26121637334178954,
+      "uniform_phase_last": 0.6116946778711485
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_goal",
+      "last_layer": 27,
+      "task_h0": 0.29268833849329207,
+      "task_last": 0.5910526315789474,
+      "phase_h0": 0.4300539213174314,
+      "phase_last": 0.8228950597066911,
+      "uniform_phase_h0": 0.4420416792509816,
+      "uniform_phase_last": 0.841503070572838
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_10",
+      "last_layer": 27,
+      "task_h0": 0.7,
+      "task_last": 0.99,
+      "phase_h0": 0.19707577475434618,
+      "phase_last": 0.4423675530818388,
+      "uniform_phase_h0": 0.2703823953823954,
+      "uniform_phase_last": 0.5153735153735154
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "last_layer": 27,
+      "task_h0": 0.2865204678362573,
+      "task_last": 0.7147368421052631,
+      "phase_h0": 0.4542112857902332,
+      "phase_last": 0.8345777098718274,
+      "uniform_phase_h0": 0.45708812260536397,
+      "uniform_phase_last": 0.7859711170055997
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_object",
+      "last_layer": 27,
+      "task_h0": 0.25999999999999995,
+      "task_last": 0.86,
+      "phase_h0": 0.28300311368958914,
+      "phase_last": 0.6551893347999905,
+      "uniform_phase_h0": 0.2844194281486179,
+      "uniform_phase_last": 0.6260920405898208
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_goal",
+      "last_layer": 27,
+      "task_h0": 0.36631578947368426,
+      "task_last": 0.7899909700722395,
+      "phase_h0": 0.565318930797572,
+      "phase_last": 0.8446226411357651,
+      "uniform_phase_h0": 0.5604223296083761,
+      "uniform_phase_last": 0.8772173562871237
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_10",
+      "last_layer": 27,
+      "task_h0": 0.53,
+      "task_last": 0.885,
+      "phase_h0": 0.23555881948739094,
+      "phase_last": 0.5572802858517144,
+      "uniform_phase_h0": 0.27614052614052614,
+      "uniform_phase_last": 0.5873570873570874
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_spatial",
+      "last_layer": 18,
+      "task_h0": 0.8154605263157894,
+      "task_last": 0.9949999999999999,
+      "phase_h0": 0.8276487117973186,
+      "phase_last": 0.8386919169581708,
+      "uniform_phase_h0": 0.7788719422340111,
+      "uniform_phase_last": 0.8402556734453286
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_object",
+      "last_layer": 18,
+      "task_h0": 0.9199999999999999,
+      "task_last": 0.9700000000000001,
+      "phase_h0": 0.614807841293497,
+      "phase_last": 0.6910118456225014,
+      "uniform_phase_h0": 0.6390188150731991,
+      "uniform_phase_last": 0.6790464298927118
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_goal",
+      "last_layer": 18,
+      "task_h0": 0.646266769865841,
+      "task_last": 1.0,
+      "phase_h0": 0.8499432602623544,
+      "phase_last": 0.9056767463869884,
+      "uniform_phase_h0": 0.8489227826437129,
+      "uniform_phase_last": 0.9214210208396255
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_10",
+      "last_layer": 18,
+      "task_h0": 0.96,
+      "task_last": 0.99,
+      "phase_h0": 0.5140095684738543,
+      "phase_last": 0.5671803064660207,
+      "uniform_phase_h0": 0.5524544899544899,
+      "uniform_phase_last": 0.6558094683094683
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_spatial",
+      "last_layer": 18,
+      "task_h0": 1.0,
+      "task_last": 1.0,
+      "phase_h0": 0.20923520923520922,
+      "phase_last": 0.7053090837610961,
+      "uniform_phase_h0": 0.23017241379310346,
+      "uniform_phase_last": 0.6902925139994105
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_object",
+      "last_layer": 18,
+      "task_h0": 1.0,
+      "task_last": 0.9949999999999999,
+      "phase_h0": 0.18110850897736142,
+      "phase_last": 0.5732191647150663,
+      "uniform_phase_h0": 0.17169811320754716,
+      "uniform_phase_last": 0.5582263093916812
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_goal",
+      "last_layer": 18,
+      "task_h0": 1.0,
+      "task_last": 1.0,
+      "phase_h0": 0.42092765510161284,
+      "phase_last": 0.8261563258989919,
+      "uniform_phase_h0": 0.4212096043491393,
+      "uniform_phase_last": 0.7930182220879894
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_10",
+      "last_layer": 18,
+      "task_h0": 1.0,
+      "task_last": 1.0,
+      "phase_h0": 0.2091033635676493,
+      "phase_last": 0.43251262626262627,
+      "uniform_phase_h0": 0.23093573093573094,
+      "uniform_phase_last": 0.5915057165057165
+    }
+  ],
+  "within_task_phase": [
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.3833058608058608,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.7654700854700854,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.6447338217338218,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.27754761904761904,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.6600595238095238,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.612297619047619,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.5746825396825397,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.8471825396825396,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.6933888888888888,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.2419047619047619,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.5457777777777778,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.5557460317460318,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.5212777777777777,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.8018333333333334,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_spatial",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.7113888888888888,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.38832936507936505,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.7199047619047619,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_object",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.5902837301587301,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.5692380952380952,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.882,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_goal",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.8491666666666666,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.40528174603174605,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 12,
+      "tasks": 10,
+      "score": 0.6736190476190476,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "suite": "libero_10",
+      "layer": 27,
+      "tasks": 10,
+      "score": 0.6053650793650793,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_spatial",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.6750555555555555,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_spatial",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.7715555555555556,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_spatial",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.6958583638583639,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_object",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.5883174603174604,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_object",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.7462619047619048,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_object",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.6898412698412699,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_goal",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.8093888888888888,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_goal",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.8481666666666667,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_goal",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.8429444444444444,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_10",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.5386587301587301,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_10",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.6480238095238096,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "suite": "libero_10",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.6836071428571429,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_spatial",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.2,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_spatial",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.6542619047619047,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_spatial",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.6084163614163615,
+      "baseline": 0.2
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_object",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.20833333333333334,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_object",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.5828769841269841,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_object",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.5968769841269841,
+      "baseline": 0.20833333333333334
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_goal",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.25666666666666665,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_goal",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.8367777777777777,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_goal",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.7257222222222222,
+      "baseline": 0.25666666666666665
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_10",
+      "layer": 0,
+      "tasks": 10,
+      "score": 0.1719047619047619,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_10",
+      "layer": 9,
+      "tasks": 10,
+      "score": 0.6181547619047619,
+      "baseline": 0.1719047619047619
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "suite": "libero_10",
+      "layer": 18,
+      "tasks": 10,
+      "score": 0.5485992063492063,
+      "baseline": 0.1719047619047619
+    }
+  ],
+  "vlm_vision_h18_cluster_comparison": [
+    {
+      "suite": "libero_spatial",
+      "task_probe": 0.9949999999999999,
+      "task_ari_min": 0.004833678889163503,
+      "task_ari_max": 0.02607656583250114
+    },
+    {
+      "suite": "libero_object",
+      "task_probe": 0.9700000000000001,
+      "task_ari_min": 0.0018481618642035727,
+      "task_ari_max": 0.009074871958162338
+    },
+    {
+      "suite": "libero_goal",
+      "task_probe": 1.0,
+      "task_ari_min": 0.027138270040138336,
+      "task_ari_max": 0.029238804515275767
+    },
+    {
+      "suite": "libero_10",
+      "task_probe": 0.99,
+      "task_ari_min": -0.0010071202317459458,
+      "task_ari_max": 0.003036706363089324
+    }
+  ],
+  "source_sha256": {
+    "linear_probes.csv": "3504e62cdd1022dcb44b3523d87a1eaad6980c664170e7f2369f8f65487f1919",
+    "conditional_probes.csv": "b115b5b63439fd18e40d921265a5021ad314f982ac134c19f1861ca23748c17b",
+    "backend_control_probes.csv": "ea1b6315cc43cb723e7e0de1918f61da81f608a4faf109d4ec9f23ed11c3b5f6",
+    "clustering.csv": "068382dd59680cfb3508b7ddb66b9b19914e11d22be0afc72e3df5cfe3e9c827"
+  }
+}

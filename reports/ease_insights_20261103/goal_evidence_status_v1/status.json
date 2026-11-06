@@ -1,0 +1,198 @@
+{
+  "status": "insight2_not_achieved_continue_search",
+  "time": 1793931674.8138847,
+  "objective_scope": "TwoEASEinsights:limitedfixed-trained-drafttransferandtwointernalfastpathswithdifferent,reproducibletask-categorypreferences.",
+  "requirements": [
+    {
+      "id": "I1.fixed_target_draft_transfer",
+      "status": "bounded_operational_evidence_available",
+      "evidence": [
+        {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_confirmed_audit/audit.json",
+          "sha256": "b183ec20b8622fc99ebf45a6cd300f6be19188eda34109ebc21b845bcfc4459b"
+        },
+        {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/draft_task_sensitivity/analysis.json",
+          "sha256": "5844e880ba54a5c84cf919199d2c8b5a374663675708b4aab93202d4f8ed705e"
+        }
+      ],
+      "supported": "OnfixedObject/Spatialtargets,releasedmatchedvsforeignpureheadsdivergeonheldout21-24;FullfallbackcanpreserveFLASHsuccesswhileacceptancecollapsesandnativecostrises.",
+      "scope": "These releasedheads and commoninferencecontract only;notall traineddrafts,unseen tasks,training-onlycausality,or measuredretrainingcost.",
+      "material_limits": "Historicaltraining/normprovenanceremainsincomplete;timingincludesactualrequestsandsharedGPU/coldcostlimitations.No universalFLASHspeedclaim."
+    },
+    {
+      "id": "I2.internal_fastpath_ability",
+      "status": "replicated_quality_and_native_cost_gates_passed",
+      "evidence": [
+        {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/calibration_acceptance.json",
+          "sha256": "8529ea9bb323f5da22110e90200682a70a0db030781c6f33cbfbd1ce30a0c74f"
+        },
+        {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/completed_summary.json",
+          "sha256": "30241ebabb2f00fa3a1ec829ede10d1c71532cb0d74888d87290debbe6a7a0fb"
+        }
+      ],
+      "supported": "Completed720rollouts:Full224/240,VLMc206/240,AE14D3195/240;bothcandidatequalitygatespass.NativeFull/pathratios1.6048/1.4944.Thefixedtask-categorydirectionsdidnotreproduce.",
+      "scope": "Paths include periodicFullrefresh;logicaldepthandNFE differ.Costsarematchedbyactualnativepolicyprofiles,notlayercounts."
+    },
+    {
+      "id": "I2.task_category_preference_reproduction",
+      "status": "current_pair_not_reproduced",
+      "evidence": [
+        {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/completed_summary.json",
+          "sha256": "30241ebabb2f00fa3a1ec829ede10d1c71532cb0d74888d87290debbe6a7a0fb"
+        }
+      ],
+      "required": "All720casesand12completedservicesaccepted;thetwofixedSpatial/Longdirectionsbothpositive,ten-taskexactHolm2p<.05,whole-taskCIlower>0,alltaskLOOpositive;globalqualityandnativecostgatespass;independentstatisticsnodifferences.",
+      "current_completed_rollouts": 720,
+      "expected_rollouts": 720,
+      "unique_physical_case_states_per_algorithm": 120,
+      "inference_units": "Tenwhole-taskclusterspercategory;sixinit/noiseobservationsstayinonetaskeach.",
+      "authoritative_pending_artifacts": [
+        "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_acceptance.json",
+        "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_analysis.json",
+        "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_independent_statistics.json",
+        "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_pipeline_acceptance.json"
+      ],
+      "narrower_task_instance_followup_cannot_replace_this_requirement": true
+    },
+    {
+      "id": "scope.runtime_selection",
+      "status": "not_required_at_this_stage",
+      "reason": "Userrequestedcomplementaryfastpathsandindependentreproductionfirst;onlinephaseidentification,routertraining,switchingoverheadandbest-fixedroutingbenefitarelaterquestions."
+    }
+  ],
+  "current_confirmation": {
+    "bundle_hash": "9e2385897734b7aafc8ba5883fd19f866763b327a0e828889ba449776a36a326",
+    "noise_repeats": [
+      0,
+      1
+    ],
+    "primary_tests_and_thresholds_unchanged": true,
+    "partial_success_values_accessed": false
+  },
+  "overall_goal_complete": false,
+  "goal_must_remain_active": true,
+  "known_old_negative_results_must_remain_visible": true,
+  "rule": "Do not replace category-level evidence with easier task-instance evidence,proxyerrors,CPUtests,controlbridges,or merelypoint-estimate crossings.",
+  "historical_prior_use_caveat": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/prior_configuration_audit.json",
+    "sha256": "ad0fd2103a35597c9385313d91dca9d52901c4c519ba1eae9a31a8cac0f6698c",
+    "global_fresh_initial_claim": false,
+    "current_R5_holdout_scope_relative_to_selection": true
+  },
+  "legacy_data_search": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/legacy_path_pool_v1/completed_exploration.json",
+    "sha256": "b1ca8d5a0b248247a746583142ab5597791bba5c907bca39dcddfb6c034785ef",
+    "status": "no_candidate",
+    "new_quality_cases": 0,
+    "not_independent_fastpath_evidence": true
+  },
+  "fresh_camera_allocation_search": {
+    "status": "complete_no_candidate",
+    "calibration": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v4/calibration_acceptance.json",
+      "sha256": "f273ca3e415f712c364aa6fcc5b6d93b5b89bf57cc6773f3fe0a31d4ed472126"
+    },
+    "discovery_manifest": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v4/discovery/manifest.json",
+      "sha256": "a4bde515b1a90c3835d7600edf959baec98fde84cbc623c297dd71021d756932"
+    },
+    "new_planned_cases": 160,
+    "preserved_control_cells": 160,
+    "new_complementarity_evidence_available": false,
+    "holdout": "Within-family10-14;allofficialindiceshistoricallyusedR12",
+    "original_GPU_leases_preserved": true,
+    "idle_reservation_GiB": 16,
+    "completed_summary": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v4/completed_summary.json",
+      "sha256": "fcde2265d0383a167794a71e76e7f905a3156e8d59d21ed6806b09a31018cc3c"
+    },
+    "new_completed_cases": 160,
+    "success_counts": {
+      "full_d10": 77,
+      "dense_d2": 74,
+      "agent_deep_d2": 70,
+      "wrist_deep_d2": 73
+    }
+  },
+  "full_fresh_prefix_search": {
+    "status": "numerical_calibration_rejected_no_episodes",
+    "time": 1793928755.0050108,
+    "manifest_hash": "db55aea415f1263a8840c138248609ee9b781037f9ef9ea40f37bbdd1d1c7ebf",
+    "manifest_file_sha256": "f695914594f0694b0385eb502addce2707aced41e4d57b474a3cebb19762e39d",
+    "source_files": 295,
+    "CPU_tests": 42,
+    "request": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_pool_v4/requests/0017_fullvision_prefix_calibration.json",
+      "sha256": "a808b60cfe623ec55bde15c2a9d13af2fd5532bf3ec9935c76e06ca7aab74ba9"
+    },
+    "observer": {
+      "pid": 1178469,
+      "start_ticks": "2630800832",
+      "source_sha256": "407c41163f5399f77ddea143c9f34e8ca2dbbd142857dd58be5fbd22263fa2fa",
+      "CPU_only": true
+    },
+    "known_control_repeats": 8,
+    "independent_quality_cases": 0,
+    "native_identity_tolerance": {
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    "prospective_partial_reference_tolerance": {
+      "atol": 0.0009765625,
+      "rtol": 0.0078125,
+      "gripper_all50_exact": true
+    },
+    "original_GPU_leases_preserved": true,
+    "idle_reservation_GiB": 16,
+    "serving_reservation_GiB": 8,
+    "valid_quality_episodes": 0,
+    "completed_summary": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v5/completed_summary.json",
+      "sha256": "729ffb7acdc20346ada3601bc4c4819632cf9f34e003bf83d99ed358003b799f"
+    }
+  },
+  "full_storage_image_mask_search": {
+    "status": "complete_no_candidate",
+    "time": 1793929984.1073887,
+    "manifest_hash": "2da5f26a130d26a70a9c2f8e25c2226c78701928c59cce8d6af8230904e5b29f",
+    "manifest_file_sha256": "f6832aa6ed88826882e1de4cfb20ef27dde3bee8633c0115afd9a2e3d27398ef",
+    "CPU_decision_tests": 7,
+    "source_files": 327,
+    "new_episodes": 160,
+    "preserved_control_cells": 160,
+    "calibration_evidence": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/calibration_acceptance.json",
+      "sha256": "cf02ecaab03f3e4e5a332138c555ef76ad97328b24e599f029521a3972157a0b"
+    },
+    "no_partial_quality_values_read": true,
+    "original_GPU_leases_unchanged": true,
+    "no_compaction": true,
+    "prefix_compute_reduction_claimed": false,
+    "request": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_pool_v4/requests/0019_fullstorage_mask_discovery.json",
+      "sha256": "cc80bec5929c70440312b5695af04573837a09227993bf1dce3fa4291675be5a"
+    },
+    "observer": {
+      "pid": 1189810,
+      "start_ticks": "2630923800",
+      "source_sha256": "ebedb5a8afd1f1c9ef41e9541f5d1b546e5df9bf8cb250cf9811b745410c4fb8",
+      "CPU_only": true
+    },
+    "completed_summary": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v6/completed_summary.json",
+      "sha256": "4a52d06c739b103d4c5ef40a1d47971472b79deb60dc9c2584666f1179605c72"
+    },
+    "success_counts": {
+      "full_d10": 77,
+      "dense_d2": 74,
+      "center_mask_d2": 52,
+      "checker_mask_d2": 70
+    },
+    "new_completed_cases": 160,
+    "confirmation_launched": false
+  }
+}

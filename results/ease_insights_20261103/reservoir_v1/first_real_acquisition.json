@@ -1,0 +1,302 @@
+{
+  "time": 1793886255.6794953,
+  "slots": [
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "guardian": {
+        "pid": 839232,
+        "start_ticks": "2626181607",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-B",
+          "-u",
+          "-m",
+          "preparations.ease_insights_20261103.reservoir_v1.guardian",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--amendment",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/resource_amendment.json",
+          "--amendment-sha256",
+          "524357cd305ecde913362f023474465d1067711e9f214970a1729b219d8bca83",
+          "--launch"
+        ],
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "log": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/sessions/GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1/guardian.log",
+        "started_unix": 1793882562.230762,
+        "state": "R",
+        "resource_revision": "resizable_16GiB_idle_8GiB_during_model_v1",
+        "scientific_manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+        "scientific_sources_unchanged": true
+      },
+      "status": {
+        "phase": "running_condition",
+        "condition": "local_long",
+        "time": 1793886021.3306105,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "controller_pid": 839232,
+        "manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+        "idle_reservation_mib": 16384,
+        "running_reservation_mib": 8192
+      },
+      "initial16GiB_ready": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "pid": 859723,
+        "proc_start_ticks": 2626527308,
+        "nonce": "7c7e7260b77d4ec1883a1da828448c2e",
+        "nspid": [
+          859723
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "ready",
+        "sequence": 0,
+        "allocated_bytes": 17179869184,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "context_binding": {
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "host_process_memory_mib": {
+          "1975204": 450.0,
+          "3858444": 16770.0
+        },
+        "original_keeper_host_pid": 1975204,
+        "reservoir_host_pid": 3858444,
+        "retained_allocation_mib": 16384,
+        "attribution": "live_nonce_bound_helper_plus_unique_additional_sized_context_consistency",
+        "pid_namespace_mapping": "unique_additional_context_inference_not_direct_host_PID_mapping",
+        "keeper": {
+          "schema": "ease-resizable-vram-keeper-v1",
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "pid": 859723,
+          "proc_start_ticks": 2626527308,
+          "nonce": "7c7e7260b77d4ec1883a1da828448c2e",
+          "nspid": [
+            859723
+          ],
+          "pid_namespace_inode": 4026536790,
+          "phase": "ready",
+          "sequence": 0,
+          "allocated_bytes": 17179869184,
+          "total_memory_bytes": 25250627584,
+          "driver_version": 13000,
+          "context_created": true,
+          "error": null
+        },
+        "time": 1793886020.8553023,
+        "guardian": {
+          "pid": 839232,
+          "start_ticks": "2626181607",
+          "state": "R",
+          "ppid": 1,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-B",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.reservoir_v1.guardian",
+            "--gpu-uuid",
+            "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "--amendment",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/resource_amendment.json",
+            "--amendment-sha256",
+            "524357cd305ecde913362f023474465d1067711e9f214970a1729b219d8bca83",
+            "--launch"
+          ],
+          "uid": 0,
+          "children": [],
+          "sigterm_default": true
+        }
+      },
+      "latest_ack": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "pid": 859723,
+        "proc_start_ticks": 2626527308,
+        "nonce": "7c7e7260b77d4ec1883a1da828448c2e",
+        "nspid": [
+          859723
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "resized",
+        "sequence": 1,
+        "allocated_bytes": 8589934592,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "children": [
+        {
+          "pid": 859723,
+          "start_ticks": "2626527308",
+          "state": "S",
+          "module": "preparations.ease_insights_20261103.reservoir_v1.keeper"
+        },
+        {
+          "pid": 859888,
+          "start_ticks": "2626527680",
+          "state": "R",
+          "module": "preparations.ease_insights_20261103.vlm_within_suite_v1.server"
+        },
+        {
+          "pid": 860428,
+          "start_ticks": "2626538782",
+          "state": "S",
+          "module": "preparations.ease_insights_20261103.vlm_within_suite_v1.worker"
+        }
+      ]
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "guardian": {
+        "pid": 839233,
+        "start_ticks": "2626181608",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-B",
+          "-u",
+          "-m",
+          "preparations.ease_insights_20261103.reservoir_v1.guardian",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--amendment",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/resource_amendment.json",
+          "--amendment-sha256",
+          "524357cd305ecde913362f023474465d1067711e9f214970a1729b219d8bca83",
+          "--launch"
+        ],
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "log": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/sessions/GPU-599477fb-0507-40dc-14df-d491f7a7b202/guardian.log",
+        "started_unix": 1793882562.2368891,
+        "state": "R",
+        "resource_revision": "resizable_16GiB_idle_8GiB_during_model_v1",
+        "scientific_manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+        "scientific_sources_unchanged": true
+      },
+      "status": {
+        "phase": "running_condition",
+        "condition": "local_goal",
+        "time": 1793886021.3196528,
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "controller_pid": 839233,
+        "manifest_hash": "6db11c5a8f1cdb5eab549f406ece3ba7b14661b2699da407c1ac87073e6c8a7d",
+        "idle_reservation_mib": 16384,
+        "running_reservation_mib": 8192
+      },
+      "initial16GiB_ready": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "pid": 859722,
+        "proc_start_ticks": 2626527307,
+        "nonce": "fa93fb1e370348fc99f551aee6b23010",
+        "nspid": [
+          859722
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "ready",
+        "sequence": 0,
+        "allocated_bytes": 17179869184,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "context_binding": {
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "host_process_memory_mib": {
+          "1975205": 450.0,
+          "3858443": 16770.0
+        },
+        "original_keeper_host_pid": 1975205,
+        "reservoir_host_pid": 3858443,
+        "retained_allocation_mib": 16384,
+        "attribution": "live_nonce_bound_helper_plus_unique_additional_sized_context_consistency",
+        "pid_namespace_mapping": "unique_additional_context_inference_not_direct_host_PID_mapping",
+        "keeper": {
+          "schema": "ease-resizable-vram-keeper-v1",
+          "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "pid": 859722,
+          "proc_start_ticks": 2626527307,
+          "nonce": "fa93fb1e370348fc99f551aee6b23010",
+          "nspid": [
+            859722
+          ],
+          "pid_namespace_inode": 4026536790,
+          "phase": "ready",
+          "sequence": 0,
+          "allocated_bytes": 17179869184,
+          "total_memory_bytes": 25250627584,
+          "driver_version": 13000,
+          "context_created": true,
+          "error": null
+        },
+        "time": 1793886020.889602,
+        "guardian": {
+          "pid": 839233,
+          "start_ticks": "2626181608",
+          "state": "R",
+          "ppid": 1,
+          "argv": [
+            "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+            "-B",
+            "-u",
+            "-m",
+            "preparations.ease_insights_20261103.reservoir_v1.guardian",
+            "--gpu-uuid",
+            "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+            "--amendment",
+            "/root/nfs/embodied/benchmark/results/ease_insights_20261103/reservoir_v1/resource_amendment.json",
+            "--amendment-sha256",
+            "524357cd305ecde913362f023474465d1067711e9f214970a1729b219d8bca83",
+            "--launch"
+          ],
+          "uid": 0,
+          "children": [],
+          "sigterm_default": true
+        }
+      },
+      "latest_ack": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "pid": 859722,
+        "proc_start_ticks": 2626527307,
+        "nonce": "fa93fb1e370348fc99f551aee6b23010",
+        "nspid": [
+          859722
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "resized",
+        "sequence": 1,
+        "allocated_bytes": 8589934592,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "children": [
+        {
+          "pid": 859722,
+          "start_ticks": "2626527307",
+          "state": "S",
+          "module": "preparations.ease_insights_20261103.reservoir_v1.keeper"
+        },
+        {
+          "pid": 859885,
+          "start_ticks": "2626527633",
+          "state": "S",
+          "module": "preparations.ease_insights_20261103.vlm_within_suite_v1.server"
+        },
+        {
+          "pid": 860422,
+          "start_ticks": "2626538611",
+          "state": "R",
+          "module": "preparations.ease_insights_20261103.vlm_within_suite_v1.worker"
+        }
+      ]
+    }
+  ],
+  "nvidia_process_memory": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 1975204, 450\nGPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 3858444, 8578\nGPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 3858663, 10972\nGPU-599477fb-0507-40dc-14df-d491f7a7b202, 1975205, 450\nGPU-599477fb-0507-40dc-14df-d491f7a7b202, 3858443, 8578\nGPU-599477fb-0507-40dc-14df-d491f7a7b202, 3858649, 11010\nGPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, 3858978, 18414\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 3858979, 18414\n"
+}

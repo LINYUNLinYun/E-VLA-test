@@ -1,0 +1,106 @@
+{
+  "analysis_protocol": {
+    "bootstrap_replicates": 10000,
+    "confidence": 0.95,
+    "case_bootstrap": "Paired per-case success differences; sample 50 cases with replacement within each prespecified suite; percentile 2.5/97.5 intervals",
+    "task_cluster_bootstrap": "Sample ten tasks with replacement, retaining each selected task's five paired initial states; percentile 2.5/97.5 intervals",
+    "seed": "SHA256(manifest hash, frozen suite/better/worse, method); independent of observed outcomes",
+    "primary_tests": "One-sided exact conditional McNemar for each frozen better>worse direction; Holm-adjusted across exactly two hypotheses",
+    "stability": "Positive paired difference, both bootstrap lower bounds >0, and positive leave-one-task-out and leave-one-init-out differences",
+    "interpretation": "Support complementarity only when both frozen directions meet stability; otherwise distinguish positive directions with uncertainty from directions not reproduced. No single p threshold determines the conclusion.",
+    "caveats": "Ten task clusters and five initial states limit precision; bootstrap intervals are approximate. Non-significance is not equivalence. Other categories are descriptive; no path or suite reselection."
+  },
+  "analysis_source": {
+    "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/analyze_confirmation.py",
+    "sha256": "3ca73a5dce5dca8cde2e54340df4a1b82b8aec627481b5780321adef3f240824"
+  },
+  "no_reselection": true,
+  "quality_results_modified": false,
+  "status": "incomplete",
+  "complete": false,
+  "valid_episodes": 0,
+  "expected_episodes": 600,
+  "selection_status": null,
+  "selection_hash": null,
+  "reason": "Independent confirmation has not been frozen",
+  "primary_directions": [],
+  "conclusion": "incomplete",
+  "resource_contention": {
+    "directory": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_contention",
+    "all_known_records": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_contention/observed_1793699156.json",
+        "sha256": "85cec1cf0e0aa6232b9086d46b07dc09cfd800fbe56f9621faae917b7e56e7a2",
+        "records": [
+          {
+            "observed_at": 1793699178.7706923,
+            "scheduler_resource_sample": {
+              "time": 1793699156.8891041,
+              "devices": [
+                {
+                  "index": 0,
+                  "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+                  "memory_mib": 14365.0,
+                  "utilization": 47.0,
+                  "allowed": true,
+                  "idle": false
+                },
+                {
+                  "index": 1,
+                  "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+                  "memory_mib": 21292.0,
+                  "utilization": 100.0,
+                  "allowed": true,
+                  "idle": false
+                },
+                {
+                  "index": 2,
+                  "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+                  "memory_mib": 21292.0,
+                  "utilization": 0.0,
+                  "allowed": true,
+                  "idle": false
+                },
+                {
+                  "index": 3,
+                  "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+                  "memory_mib": 22751.0,
+                  "utilization": 90.0,
+                  "allowed": true,
+                  "idle": false
+                }
+              ],
+              "compute_apps": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 861820\nGPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1, 862964\nGPU-599477fb-0507-40dc-14df-d491f7a7b202, 733237\nGPU-83fdf473-8633-29d3-4a42-e482cfdf0c25, 734466\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 861820\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 862263\nGPU-555cde36-5e41-bc44-0c69-ea47358fd703, 864246\n"
+            },
+            "multi_gpu_processes": {
+              "861820": [
+                "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+                "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+              ]
+            },
+            "active_jobs": {
+              "vlm_discovery_fixed_v12_jacobian": "running"
+            },
+            "interpretation": "This study pins each model process to one UUID. A process listed on multiple study GPUs is external to these single-GPU jobs. Current wall/RPC timing may include shared hardware contention; no wall pacing means simulator quality remains valid unless a technical failure occurs. No external process was stopped.",
+            "timing_scope": "Do not interpret affected wall-clock timings as exclusive-GPU speed; retain all outcomes and use separately identified fixed-input probes/replication for cost."
+          }
+        ]
+      }
+    ],
+    "unreadable_records": [],
+    "known_multi_gpu_processes": {
+      "861820": [
+        "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+      ]
+    },
+    "observed_timestamp_range": [
+      1793699178.7706923,
+      1793699178.7706923
+    ],
+    "per_condition_gpu_overlap": {},
+    "model_binding": "Each study model process is pinned to one GPU UUID; a recorded multi-GPU process is external to these jobs",
+    "timing_limit": "These snapshots do not establish exclusive access or complete overlap intervals. Policy/RPC/wall time and even same-service fixed-input ratios can be affected by contention; do not report them as exclusive-GPU speed.",
+    "quality_handling": "All valid scientific outcomes retained unchanged. Contention does not reclassify success/failure or authorize retries; technical failures remain separate."
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "revision": "local-search-discovery-summary-v1",
+  "time": 1793859797.58998,
+  "stage": "discovery_complete_confirmation_running",
+  "interpretation": "Exploratory selected crossing, not independent reproduction, equivalence, quality noninferiority or runtime-adaptive benefit.",
+  "manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+  "selection_file": "results/ease_insights_20261103/vlm_local_search_v1/discovery/analysis/selection.json",
+  "selection_file_sha256": "f6314a52f71ab0a127afb7bae0fd1adb201c934d1634634567217490a4d1e9ed",
+  "selection_hash": "bd13f21c5096df4f6b9da5e3b3687dbcc4aec55089cac8c3682967e92d4808b7",
+  "complete_cases": 720,
+  "selected": {
+    "pair": [
+      "jac_anchor",
+      "local_long"
+    ],
+    "paths": [
+      "jac_anchor",
+      "local_long"
+    ],
+    "directions": [
+      {
+        "suite": "libero_object",
+        "better": "jac_anchor",
+        "worse": "local_long",
+        "discovery_difference": 0.1
+      },
+      {
+        "suite": "libero_10",
+        "better": "local_long",
+        "worse": "jac_anchor",
+        "discovery_difference": 0.16666666666666666
+      }
+    ],
+    "minimum_suite_gap": 0.1,
+    "sum_suite_gaps": 0.26666666666666666,
+    "minimum_overall_success": 0.825,
+    "ranking_counts": [
+      3,
+      8,
+      99
+    ],
+    "lexical_tie_key": [
+      "jac_anchor",
+      "local_long",
+      "libero_object",
+      "libero_10"
+    ],
+    "qualified_paths": true,
+    "directions_eligible": true,
+    "eligible": true
+  },
+  "direction_details": [
+    {
+      "suite": "libero_object",
+      "better": "jac_anchor",
+      "worse": "local_long",
+      "a_success": 30,
+      "b_success": 27,
+      "n_paired": 30,
+      "positive_tasks": 3,
+      "every_leave_one_task_out_positive": true,
+      "success_difference": 0.1
+    },
+    {
+      "suite": "libero_10",
+      "better": "local_long",
+      "worse": "jac_anchor",
+      "a_success": 24,
+      "b_success": 19,
+      "n_paired": 30,
+      "positive_tasks": 3,
+      "every_leave_one_task_out_positive": true,
+      "success_difference": 0.16666666666666666
+    }
+  ],
+  "condition_eligibility": {
+    "jac_anchor": {
+      "successes": 99,
+      "n": 120,
+      "success_rate": 0.825,
+      "full_success_rate": 0.9416666666666667,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.6154329200769662,
+      "cost_pass": true,
+      "qualified": true
+    },
+    "local_goal": {
+      "successes": 105,
+      "n": 120,
+      "success_rate": 0.875,
+      "full_success_rate": 0.9416666666666667,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.6238196979075585,
+      "cost_pass": true,
+      "qualified": true
+    },
+    "local_long": {
+      "successes": 107,
+      "n": 120,
+      "success_rate": 0.8916666666666667,
+      "full_success_rate": 0.9416666666666667,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.6226373367902198,
+      "cost_pass": true,
+      "qualified": true
+    },
+    "local_object": {
+      "successes": 106,
+      "n": 120,
+      "success_rate": 0.8833333333333333,
+      "full_success_rate": 0.9416666666666667,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.6223258836896362,
+      "cost_pass": true,
+      "qualified": true
+    },
+    "local_spatial": {
+      "successes": 97,
+      "n": 120,
+      "success_rate": 0.8083333333333333,
+      "full_success_rate": 0.9416666666666667,
+      "usability_pass": true,
+      "median_fixed_input_speed_ratio": 1.6210410615896538,
+      "cost_pass": true,
+      "qualified": true
+    }
+  },
+  "full_successes": 113,
+  "audit": {
+    "path": "reports/ease_insights_20261103/vlm_local_search_runtime_acceptance/full_discovery/audit.json",
+    "sha256": "c560c53b188229144ea8da0719fead97f40e6c2c07166c6f5231adfec3eab6d6",
+    "status": "pass",
+    "requests": 28396,
+    "action_rows": 140775,
+    "validated_serving_runs": 6,
+    "source_groups": {
+      "analysis_sources": {
+        "count": 6,
+        "passed": true
+      },
+      "local_runtime_sources": {
+        "count": 9,
+        "passed": true
+      },
+      "source_files": {
+        "count": 46,
+        "passed": true
+      }
+    },
+    "valid_policy_failures": {
+      "full_d10": 7,
+      "jac_anchor": 21,
+      "local_goal": 15,
+      "local_long": 13,
+      "local_object": 14,
+      "local_spatial": 23
+    },
+    "actual_internal_nfe_exported": false
+  },
+  "confirmation": {
+    "manifest_hash": "80176d9f4b01e68abb022345bd6dc1a7bfe4e5aef5d69d13257801ca1eb6bdc0",
+    "manifest_file_sha256": "3c4b8bf35ecf768f129c00721ce0fd0e49ef2c209f7b9995ed0a1a128796365a",
+    "planned_conditions": [
+      "full_d10",
+      "jac_anchor",
+      "local_long"
+    ],
+    "inits": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "cases_per_condition": 200,
+    "total_cases": 600,
+    "independent_audit_completed": false,
+    "reproduced": null
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "gpu-first-acquisition-audit-v1",
+  "observed_at_utc": "2026-11-05T05:04:30Z",
+  "verdict": "confirmed_keeper_backed_cuda_holds_for_v3_slots_00_and_01",
+  "scope": "The first live keeper-backed CUDA holds verified in gpu_resource_campaign_v3. This does not mean the first CUDA use by the wider project.",
+  "idle_gate": {
+    "policy": "natural idle 15s, poll 2s, final assigned-UUID check",
+    "slot00": {
+      "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_file": "results/ease_insights_20261103/scheduler/launch_gates/ease_gpu_resource_session_v1_00.json",
+      "status": "launching",
+      "idle_seconds": 15.494,
+      "idle_threshold_seconds": 15.0,
+      "poll_seconds": 2.0,
+      "final_idle_check": {"memory_mib": 1.0, "compute_process_count": 0, "idle": true}
+    },
+    "slot01": {
+      "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_file": "results/ease_insights_20261103/scheduler/launch_gates/ease_gpu_resource_session_v1_01.json",
+      "status": "launching",
+      "idle_seconds": 15.514,
+      "idle_threshold_seconds": 15.0,
+      "poll_seconds": 2.0,
+      "final_idle_check": {"memory_mib": 1.0, "compute_process_count": 0, "idle": true}
+    }
+  },
+  "durable_watcher": {
+    "status_file": "results/ease_insights_20261103/gpu_release_watch/status.json",
+    "events_file": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+    "pid": 385842,
+    "proc_start_ticks": "2618445988",
+    "run_id": "060b0172-ba52-4c9b-9c39-03c7fb604d69",
+    "source_sha256": "4314b4b5d7eca4f88968b0d66da305a5cd2f6aff4829f363ae76b951b9495680",
+    "poll_seconds": 2.0,
+    "events": [
+      {"id": 43, "utc": "2026-11-05T05:00:31.860Z", "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1", "state": "idle", "memory_mib": 1.0, "compute_process_count": 0},
+      {"id": 44, "utc": "2026-11-05T05:00:31.860Z", "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202", "state": "idle", "memory_mib": 1.0, "compute_process_count": 0},
+      {"id": 45, "utc": "2026-11-05T05:00:31.860Z", "uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25", "state": "idle", "memory_mib": 1.0, "compute_process_count": 0},
+      {"id": 46, "utc": "2026-11-05T05:00:31.860Z", "uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703", "state": "idle", "memory_mib": 1.0, "compute_process_count": 0},
+      {"id": 47, "utc": "2026-11-05T05:00:49.898Z", "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1", "state": "busy", "memory_mib": 460.0, "compute_process_count": 1},
+      {"id": 48, "utc": "2026-11-05T05:00:49.898Z", "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202", "state": "busy", "memory_mib": 460.0, "compute_process_count": 1}
+    ],
+    "latest_live_snapshot": {
+      "utc": "2026-11-05T05:04:29.926Z",
+      "latest_event_id": 50,
+      "error": null,
+      "devices": [
+        {"uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1", "memory_mib": 12022.0, "compute_process_count": 2, "state": "busy"},
+        {"uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202", "memory_mib": 12002.0, "compute_process_count": 2, "state": "busy"}
+      ]
+    }
+  },
+  "live_proc_and_receipt_crosscheck": {
+    "scheduler": {"pid": 600088, "start_ticks": "2622761021", "ppid": 1, "module": "preparations.ease_insights_20261103.scheduler"},
+    "slot00": {
+      "session": {"pid": 631907, "start_ticks": "2623408608", "ppid": 600088, "module": "preparations.ease_insights_20261103.gpu_resource_session", "uuid_arg_matches_binding": true},
+      "keeper": {"pid": 632159, "start_ticks": "2623410211", "ppid": 631907, "module": "preparations.ease_insights_20261103.gpu_owned_keeper", "uuid_arg_matches_binding": true, "keeper_receipt_phase": "ready", "context_created": true, "allocated_bytes": 67108864, "driver_version": 13000},
+      "server": {"pid": 632184, "start_ticks": "2623410369", "ppid": 631907, "module": "preparations.ease_insights_20261103.vlm_local_search_v1.server", "uuid_arg_matches_binding": true}
+    },
+    "slot01": {
+      "session": {"pid": 631915, "start_ticks": "2623408624", "ppid": 600088, "module": "preparations.ease_insights_20261103.gpu_resource_session", "uuid_arg_matches_binding": true},
+      "keeper": {"pid": 632160, "start_ticks": "2623410216", "ppid": 631915, "module": "preparations.ease_insights_20261103.gpu_owned_keeper", "uuid_arg_matches_binding": true, "keeper_receipt_phase": "ready", "context_created": true, "allocated_bytes": 67108864, "driver_version": 13000},
+      "server": {"pid": 632182, "start_ticks": "2623410362", "ppid": 631915, "module": "preparations.ease_insights_20261103.vlm_local_search_v1.server", "uuid_arg_matches_binding": true}
+    },
+    "pid_namespace_inode": "4026536790",
+    "binding_receipts": [
+      "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot00/binding.json",
+      "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot01/binding.json"
+    ],
+    "keeper_receipts": [
+      "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot00/keeper.json",
+      "results/ease_insights_20261103/gpu_resource_campaign_v3/sessions/slot01/keeper.json"
+    ]
+  },
+  "limits": [
+    "The watcher reports host compute PID values, but these were deliberately not equated to local/container /proc PIDs; exact per-process host PID attribution remains unresolved.",
+    "The watcher is a live visibility check; the 64 MiB keeper allocation/context does not establish exclusive ownership of the whole GPU.",
+    "Current sessions are in their first recorded task. Keeper survival across a task boundary has not yet been observed.",
+    "No scientific case completion or success is established by this audit."
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "conditions": [
+    {
+      "id": "old_cosine4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "old_jacobian4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        3,
+        15,
+        16,
+        17
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "old_action_mse4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "v14",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        3,
+        4,
+        9,
+        11
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "full_d2",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "new_cosine4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "new_jacobian4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        3,
+        14,
+        16,
+        17
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    },
+    {
+      "id": "new_action_mse4",
+      "model": "pi0",
+      "mode": "pure",
+      "skip": [
+        2,
+        3,
+        5,
+        17
+      ],
+      "D": 2,
+      "H": 50,
+      "R": 5
+    }
+  ],
+  "masks": {
+    "old_cosine4": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "old_jacobian4": [
+      3,
+      15,
+      16,
+      17
+    ],
+    "old_action_mse4": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "v14": [
+      3,
+      4,
+      9,
+      11
+    ],
+    "full_d2": [],
+    "new_cosine4": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "new_jacobian4": [
+      3,
+      14,
+      16,
+      17
+    ],
+    "new_action_mse4": [
+      2,
+      3,
+      5,
+      17
+    ]
+  },
+  "mapping": {
+    "old_cosine4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop",
+      "id": "cosine4"
+    },
+    "old_jacobian4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop",
+      "id": "jacobian4"
+    },
+    "old_action_mse4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop",
+      "id": "action_mse4"
+    },
+    "v14": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop",
+      "id": "v14"
+    },
+    "full_d2": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop",
+      "id": "full_d2"
+    },
+    "new_cosine4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop_max2",
+      "id": "cosine4"
+    },
+    "new_jacobian4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop_max2",
+      "id": "jacobian4"
+    },
+    "new_action_mse4": {
+      "root": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_closedloop_max2",
+      "id": "action_mse4"
+    }
+  },
+  "cases": [
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "original_cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "plan_sha256": "3bbcad3114c105504200587e72bde68b451574d74125f93312ad186682012971",
+  "sources": {
+    "preparations/idea1_v3_4_E2_max2_repair/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preparations/idea1_v3_4_E2_max2_repair/server.py": "d0f183fb0e3dee9139269d332f7da0bd19ec9f7d3cd08be18c7ec31383d3f98c",
+    "preparations/idea1_v3_4_E2_max2_repair/common.py": "4b7503397b59d86d80ddf7fcfcf45b61d04b222cff2e6e1e8c9c4bc422d73f0e",
+    "preparations/idea1_v3_4_E2_max2_repair/evaluate.py": "ec80c95f9390a52214b3b702a750370a9bd605c602219c7fb543d1cc03390910",
+    "preparations/idea1_v3_4_E2_max2_repair/controller.py": "4a863a8093bdbb0911b01beb3ed1f8aaf4c9ada4587a1a08c5fda1f60fe2a634",
+    "preparations/idea1_v3_4_E2_max2_repair/finish.py": "c3edcb7d62c312d975fb8e2e0fdcfbb5a5e4b9b1674b338feaea097c1145c9e9"
+  },
+  "time": 1793330632.209547,
+  "manifest_hash": "cc662eaa4319e0b18e4b10d0327d4114438a0ef88fbb926db2b67472d1e4b80d"
+}

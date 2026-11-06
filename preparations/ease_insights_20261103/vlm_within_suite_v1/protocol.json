@@ -1,0 +1,271 @@
+{
+  "revision": "ease-vlm-within-suite-v1",
+  "status": "prospectively_frozen_before_new_outcomes",
+  "purpose": "One bounded same-suite metadata-category search after prior Jac/MSE and Jac/local_long negative confirmations; all prior null results remain disclosed. Metadata classes do not assert measured difficulty or preference.",
+  "previous_evidence": {
+    "pair_interim": "reports/ease_insights_20261103/vlm_pair_interim/interim_analysis.json",
+    "task_semantic_exploration": "reports/ease_insights_20261103/vlm_pair_interim/task_semantic_exploration.json",
+    "local_search_confirmation": "results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+    "local_search_result": "not_reproduced: Object Jac48 vs local_long49/50; Long local_long37 vs Jac35/50",
+    "independent_acceptance_sha256": "347c6bb41a5c6589336e7b58ac4cc174825d7ab6c1072fed973cc7eb59dcd66e",
+    "independent_stats_sha256": "096681189368855d25425691f80114f5f5ed15fc76ea3adc32cd9327bc4724da"
+  },
+  "conditions": {
+    "full_d10": [],
+    "jac_anchor": [
+      2,
+      3,
+      5,
+      14,
+      16,
+      17
+    ],
+    "local_spatial": [
+      2,
+      3,
+      5,
+      13,
+      16,
+      17
+    ],
+    "local_object": [
+      2,
+      3,
+      5,
+      14,
+      15,
+      17
+    ],
+    "local_goal": [
+      2,
+      3,
+      11,
+      14,
+      16,
+      17
+    ],
+    "local_long": [
+      2,
+      3,
+      5,
+      12,
+      16,
+      17
+    ]
+  },
+  "candidate_generation": {
+    "source": "reports/ease_insights_20261103/semantic_pool_feasibility/within_suite_candidate/candidate.json",
+    "sha256": "478b637d0e688ca8178551ef4c18e548c70492045844b1f5374923aeeada47bc",
+    "fixed_tasks": 24,
+    "class_counts": {
+      "single_object_placement": 12,
+      "state_change_only": 12
+    },
+    "outcome_independent": true,
+    "task_replacement_forbidden": true
+  },
+  "fixed_science": {
+    "target": "same local converted Pi0 LIBERO base",
+    "vlm_layers_total": 18,
+    "candidate_retained_layers": 12,
+    "vision_layers": 27,
+    "horizon": 50,
+    "replan_steps": 5,
+    "denoise_schedule": [
+      10,
+      2,
+      2
+    ],
+    "refresh_cycle": 3,
+    "residual": "same frozen linear residual extrapolation",
+    "noise": "same per suite/task/init/request Gaussian seed protocol",
+    "runtime_selector": false,
+    "layer_indices": "1-based",
+    "policy_action_limit": 400,
+    "settling_actions": 10,
+    "environment_seed": 7,
+    "step_limit_reference": {
+      "path": "policies/realtime-vla-flash/scripts/spec/spec_client_libero.py",
+      "lines": [
+        115,
+        116
+      ]
+    },
+    "train": false
+  },
+  "discovery": {
+    "conditions": [
+      "full_d10",
+      "jac_anchor",
+      "local_spatial",
+      "local_object",
+      "local_goal",
+      "local_long"
+    ],
+    "suites": [
+      "libero_90"
+    ],
+    "tasks": [
+      15,
+      16,
+      27,
+      29,
+      36,
+      51,
+      59,
+      65,
+      67,
+      73,
+      80,
+      83,
+      0,
+      6,
+      7,
+      11,
+      20,
+      22,
+      23,
+      28,
+      33,
+      35,
+      39,
+      44
+    ],
+    "inits": [
+      36,
+      37,
+      38
+    ],
+    "episodes": 432,
+    "root": "results/ease_insights_20261103/vlm_within_suite_v1/discovery",
+    "categories": [
+      "single_object_placement",
+      "state_change_only"
+    ],
+    "tasks_per_category": 12,
+    "cases_per_category_per_path": 36
+  },
+  "selection": {
+    "strict_complete_episodes": 432,
+    "candidate_min_overall_success": 0.75,
+    "max_success_gap_below_full": 0.15,
+    "min_fixed_input_cost_speed_ratio": 1.15,
+    "cost_aggregation": "Median across completed gated services of same-input native policy Full / candidate Full-Fast-Fast cycle cost on the existing four-suite finite bank; excludes RPC/environment; does not cover every new task or prompt and proves no closed-loop speedup",
+    "pairs": "all unordered pairs of qualifying non-Full candidates; A/B names lexical order",
+    "contrasts": "Both ordered metadata-category assignments; A>B in categoryX and B>A in categoryY",
+    "min_positive_tasks_each_direction": 2,
+    "every_leave_one_task_out_gap_strictly_positive": true,
+    "tie_break_order": [
+      "highest minimum of two category gaps",
+      "highest sum of category gaps",
+      "highest minimum of pair overall success",
+      "ascending lexical tuple A,B,categoryX,categoryY"
+    ],
+    "no_eligible_pair": "stop bounded search with no_candidate, report full matrix and prior negative results; no automatic further expansion",
+    "exploratory_only": true,
+    "min_each_category_success_gap": 0.1
+  },
+  "confirmation": {
+    "conditions": "selected two candidates plusFull",
+    "suites": [
+      "libero_90"
+    ],
+    "tasks": [
+      15,
+      16,
+      27,
+      29,
+      36,
+      51,
+      59,
+      65,
+      67,
+      73,
+      80,
+      83,
+      0,
+      6,
+      7,
+      11,
+      20,
+      22,
+      23,
+      28,
+      33,
+      35,
+      39,
+      44
+    ],
+    "inits": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "episodes": 360,
+    "root": "results/ease_insights_20261103/vlm_within_suite_v1/confirmation",
+    "selection_frozen_before_any_case": true,
+    "primary_family": "Exactly two discovery-selected opposite metadata-category directions; family-local alpha .05 only, no research-program-wide FWER claim",
+    "primary_test": "One-sided exact12task block signflip over integer five-init task differences; enumerate all4096 assignments including ties, Holm2",
+    "sensitivity_test": "one-sided paired-case exact McNemar, Holm2; repeated-initial-state independence not assumed for main inference",
+    "alpha": 0.05,
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261105,
+    "intervals": [
+      "paired-case percentile95",
+      "task-cluster percentile95"
+    ],
+    "required_for_complementarity": [
+      "both observed directional gaps strictly positive",
+      "both Holm2 task-block p-values strictly below0.05",
+      "both task-cluster95 lower bounds strictly positive",
+      "all leave-one-task-out directional gaps strictly positive",
+      "both candidates overall success>=0.75 and>=Full minus0.15"
+    ],
+    "timing": "report native policy and full RPC per executed action, episode and preparation cost, and available contention observations; no guarantee of equivalence/noninferiority/exclusive-GPU timing",
+    "if_not_reproduced": "report not_reproduced; no automatic repeated search for significance",
+    "categories": [
+      "single_object_placement",
+      "state_change_only"
+    ],
+    "tasks_per_category": 12,
+    "cases_per_category_per_path": 60,
+    "bootstrap_quantile_method": "linear"
+  },
+  "execution": {
+    "new_scientific_episode_cap": 792,
+    "single_existing_gpu_allocator": true,
+    "max_concurrent_gpus": 2,
+    "only_naturally_idle_local_gpu": true,
+    "assigned_gpu_idle_gate_seconds": 60,
+    "unrelated_process_signals": false,
+    "technical_retry": "only missing cases after inspected technical interruption; preserve earliest valid outcomes and prior failed attempt logs",
+    "all_original_sources_and_manifests_unchanged": true,
+    "new_runtime_GPU_gate_required_before_rollout": true,
+    "discovery432_then_optional_confirmation360": true,
+    "resource_controller": "Separate borrowed-resource controller; source pinned with final runtime before manifest freeze"
+  },
+  "audit": {
+    "official_init_vectors_hashed_before_launch": true,
+    "no_new_stage_cases_started_before_manifest_freeze": true,
+    "all_receipt_artifact_hashes_checked": true,
+    "paired_initial_observation_and_noise_required": true,
+    "full_discovery_matrix_reported": true,
+    "all_selection_comparisons_reported": true,
+    "retain_primary_and_secondary_nulls": true
+  },
+  "limitations": [
+    "Classes describe BDDL metadata, not measured preference or difficulty; shared scenes and20 prompts among24 tasks may induce dependence.",
+    "Task sign-exchangeability is an inference assumption;12 task blocks per category limit precision.",
+    "No equivalence, noninferiority, runtime selection benefit, all-prompt gate coverage, or overall research-program FWER .05 claim.",
+    "No candidate or failed confirmation ends this792episode branch; all valid failures retained."
+  ],
+  "fixed_input_reference": {
+    "source": "old acceptedJac cross_service_reference.npz",
+    "path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/cross_service_reference.npz",
+    "sha256": "1ba90f16ffc16e2df9e74f3fc7a27004bfc182b8f47c1c177ab7e28a6e55621c",
+    "source_manifest_hash": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+    "scope": "Finite old four-suite numerical reference; new24task first observations/prompt/noise are checked independently, without claiming all20prompts numerical coverage."
+  }
+}

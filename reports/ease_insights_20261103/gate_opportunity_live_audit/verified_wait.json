@@ -1,0 +1,108 @@
+{
+  "verdict": "verified_wait_no_transaction_observed",
+  "initial_manual_check_unix": 1793791180.0434492,
+  "first_persisted_sample_unix": 1793791303.087427,
+  "last_persisted_sample_unix": 1793792080.0138702,
+  "observation_window_local": [
+    "2026-11-04T19:19:40.043449+08:00",
+    "2026-11-04T19:34:40.013870+08:00"
+  ],
+  "persisted_sample_count": 53,
+  "persisted_trace_seconds": 776.9264433383942,
+  "coordinator_identity_stable": true,
+  "controller_identities_stable": true,
+  "coordinator_pid": 356386,
+  "start_ticks": "2617020452",
+  "ppid": 1,
+  "coordinator_phase": "waiting",
+  "pending_transactions": 0,
+  "event_count": 1,
+  "cpu_ticks_delta": {
+    "user": 69,
+    "system": 111,
+    "child_user": 60,
+    "child_system": 583
+  },
+  "current_running_processes": [
+    {
+      "job_id": "vlm_local_v1_discovery_full_d10_all120",
+      "process": {
+        "pid": 339341,
+        "state": "S",
+        "ppid": 335208,
+        "start_ticks": "2616174838",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.await_assigned_gpu",
+          "--gpu-uuid",
+          "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "--status-file",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_full_d10_all120.json",
+          "--",
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+          "--condition",
+          "full_d10",
+          "--gpu-uuid",
+          "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+          "--port",
+          "50663",
+          "--launch"
+        ]
+      }
+    },
+    {
+      "job_id": "vlm_local_v1_discovery_local_spatial_all120",
+      "process": {
+        "pid": 344836,
+        "state": "S",
+        "ppid": 335208,
+        "start_ticks": "2616450623",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.await_assigned_gpu",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--status-file",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler/launch_gates/vlm_local_v1_discovery_local_spatial_all120.json",
+          "--",
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_local_search_v1.runner",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+          "--condition",
+          "local_spatial",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--port",
+          "56183",
+          "--launch"
+        ]
+      }
+    }
+  ],
+  "final_process_check_unix": 1793792122.4024875,
+  "migration_executed_during_observation": false,
+  "first_real_migration_validated": false,
+  "limitations": [
+    "No transaction occurred; scientific-plan invariance, dual acknowledgement, gate exit and scheduler resumption cannot yet be validated on a completed real migration.",
+    "Status time is updated on phase transitions only; stable OS identities and increasing process/child CPU ticks corroborate continued activity."
+  ],
+  "observer_gpu_queries": false,
+  "observer_helper_calls": false,
+  "observer_signals": false,
+  "observer_queue_or_scheduler_state_writes": false,
+  "evidence": {
+    "observe.py": "5daf1021391c35305aa050fed5df86cd89584431623f49e6a01658ce687a0924",
+    "observation_start.json": "d1dd76297f5f0c3a4067670718cf020ec7b7960f6a4c08feeba04d40b780640b",
+    "observations.jsonl": "bbdf893ce711c9396aa8e8a022547d7d7a4851dbdc07a18744c3f76defcc41c3",
+    "baseline_running_jobs.json": "b74a3c555e58e972b4854aa84adfc02824efb5c3035e694e420ba7520ea3f929",
+    "observation_result.json": "683b7d98bad135e2790cc7a65bdb4f207822f90ff6f4d4d267d6e693c224d595"
+  }
+}

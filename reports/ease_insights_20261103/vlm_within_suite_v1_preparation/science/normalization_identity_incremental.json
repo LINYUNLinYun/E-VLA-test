@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "time": 1793867100.8004034,
+  "normalization_asset": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json",
+    "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+  },
+  "historical_artifacts_preserved": true,
+  "normalization_direct_artifact_added": true,
+  "actual_asset_sha_compared": true,
+  "read_manifest_verify_sources_direct_artifact_check": true,
+  "cpu_test": {
+    "command": "policies/libero-eval-v21/.venv/bin/python -m unittest preparations.ease_insights_20261103.vlm_within_suite_v1.test_science.ScienceTests.test_normalization_pin_preserved_and_tamper_rejected -v",
+    "tests": 1,
+    "seconds": 0.028,
+    "status": "pass"
+  },
+  "source_sha256": {
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/prepare.py": "2265b73993b53c8fa7ef45e2c9b26c6ff544f8ba6a08085f50d32022fde95eda",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/common.py": "8568591ae47d9bd938a968d3f693da0b7e468f2c50d6b499a80d65fbf8a5d1ec",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_science.py": "80410ead70e87e7558b9f22f13d5a1d8507b874b20b5ef0cae8540e385af029d"
+  },
+  "runnable_manifest_created": false,
+  "gpu_launched": false
+}

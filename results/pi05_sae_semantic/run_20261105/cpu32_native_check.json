@@ -1,0 +1,31 @@
+{
+  "scope": "One real observation, same checkpoint, unchanged BF16/FP32 policy; threading only",
+  "input": "/root/nfs/embodied/benchmark/results/idea1_v3_3/pi0_full_d10/episodes/libero_goal/task00/init06/input0.npz",
+  "input_sha256": "18080e9a924771bfc9948398b255e4595cabcb81b8009c4d98b962a1f32ffbac",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "device": "cpu",
+  "threads": 32,
+  "checks": {
+    "L5_full_sequence": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "L16_sample": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    },
+    "L16_tail": {
+      "exact_equal": true,
+      "max_abs": 0.0
+    }
+  },
+  "passed": true,
+  "full_prefix_s": 85.87033224478364,
+  "tail_s": 49.176104962825775,
+  "reference_8threads_s": {
+    "original": 115.53876699879766,
+    "read_only_capture": 112.7043765746057,
+    "full_tail": 68.24789103865623
+  },
+  "load_s": 82.78426968306303
+}

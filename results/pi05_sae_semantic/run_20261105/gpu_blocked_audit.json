@@ -1,0 +1,63 @@
+{
+  "updated_at": "2026-11-06T03:05:47.948381+08:00",
+  "previous_goal_turn_classification": "progress: completed CPU action-path checks, source integration and frozen pilot configuration",
+  "current_turn_classification": "verified resource wait; direct NVML also confirms every GPU has other compute processes",
+  "observer_pid": 385842,
+  "observer_live": true,
+  "observation_age_s": 1.7436485290527344,
+  "devices": [
+    {
+      "index": 0,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "memory_mib": 17235.0,
+      "compute_process_count": 2,
+      "host_compute_pids": [
+        1975204,
+        755285
+      ],
+      "state": "busy",
+      "idle": false
+    },
+    {
+      "index": 1,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "memory_mib": 17235.0,
+      "compute_process_count": 2,
+      "host_compute_pids": [
+        1975205,
+        759950
+      ],
+      "state": "busy",
+      "idle": false
+    },
+    {
+      "index": 2,
+      "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "host_compute_pids": [
+        882124
+      ],
+      "state": "busy",
+      "idle": false
+    },
+    {
+      "index": 3,
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "memory_mib": 18424.0,
+      "compute_process_count": 1,
+      "host_compute_pids": [
+        882125
+      ],
+      "state": "busy",
+      "idle": false
+    }
+  ],
+  "blocker": "No available GPU for the frozen complete-policy pilot and RTX 4090 timing",
+  "consecutive_goal_turns_observing_same_GPU_blocker": 3,
+  "independent_CPU_preparation_complete": true,
+  "experiment_running": false,
+  "allocation_performed": false,
+  "availability_question_pending": true,
+  "goal_status": "blocked"
+}

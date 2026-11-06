@@ -1,0 +1,72 @@
+{
+  "version": "prospective-supplemental-goal-v1",
+  "registered_unix": 1793712366.2750247,
+  "discovery_inits": [
+    30
+  ],
+  "validation_inits": [
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "classification": "Supplementary analysis registered after discovery and before any independent validation observation; original primary analysis remains unchanged",
+  "confirmation_manifest_sha256": "d219d131daf91e44f9757e5250004196913aa35e9efcea7b95826526b3aa55fc",
+  "confirmation_manifest_hash": "0fa449c833c888abf93ea82e5ccd203350ea0528a60e9a0c8683addfdae3d6da",
+  "selection_sha256": "1b47df987c5db92047a50fdf142bb9b9b9004480e83d5dcfaa98734d298473f9",
+  "original_primary_directions": [
+    {
+      "suite": "libero_spatial",
+      "better": "fixed_v12_jacobian",
+      "worse": "fixed_v12_action_mse",
+      "discovery_difference": 0.1
+    },
+    {
+      "suite": "libero_10",
+      "better": "fixed_v12_action_mse",
+      "worse": "fixed_v12_jacobian",
+      "discovery_difference": 0.1
+    }
+  ],
+  "supplementary_direction": {
+    "suite": "libero_goal",
+    "better": "fixed_v12_jacobian",
+    "worse": "fixed_v12_action_mse",
+    "discovery_successes": [
+      10,
+      7
+    ],
+    "discovery_n": 10,
+    "discovery_difference": 0.3
+  },
+  "family": [
+    {
+      "id": "primary_spatial",
+      "suite": "libero_spatial",
+      "better": "fixed_v12_jacobian",
+      "worse": "fixed_v12_action_mse"
+    },
+    {
+      "id": "primary_long",
+      "suite": "libero_10",
+      "better": "fixed_v12_action_mse",
+      "worse": "fixed_v12_jacobian"
+    },
+    {
+      "id": "supplementary_goal",
+      "suite": "libero_goal",
+      "better": "fixed_v12_jacobian",
+      "worse": "fixed_v12_action_mse"
+    }
+  ],
+  "reporting": "Report all three contrasts, outcomes and uncertainty, including any failure of the original primary pair. Provide exact paired one-sided p and Holm over all three, paired-case and task-cluster intervals, and per-task/per-init effects. Do not select a new direction from heldout results.",
+  "interpretation": "Distinguish original Spatial/Long claim from prospective supplementary Goal/Long claim. Both can be unsupported; no positive claim from discovery alone.",
+  "new_gpu_episodes": 0,
+  "planned_matrix_unchanged": true,
+  "model_or_runtime_changed": false,
+  "original_frozen_selection_changed": false,
+  "heldout_outcomes_read": false,
+  "heldout_evidence_files_at_registration": [],
+  "reason": "The original max-min rule tied at10pp and chose Spatial lexically. Goal showed30pp at discovery; adding it now uses the already planned Goal validation cases without hiding the original primary comparison."
+}

@@ -1,0 +1,64 @@
+{
+  "interpretation": "Counts are observational; changing tasks/init/settle/prompt together cannot establish perturbation causality.",
+  "old": {
+    "init_indices": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "seed": 7,
+    "settle_steps": 10,
+    "settle_action": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1
+    ],
+    "step_caps": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "instruction": "benchmark Task.language derived from filename",
+    "H": 50,
+    "R": 5,
+    "history": "E4 branch calls prepare(encode=False) and learned on current observation only; ack bookkeeping does not enter learned input"
+  },
+  "new": {
+    "init_index": 0,
+    "seed": "case hash seed",
+    "settle_steps": 5,
+    "settle_action": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "step_cap": 600,
+    "instruction": "effective BDDL :language",
+    "H": 50,
+    "R": 5,
+    "history": "TransferPolicy learned branch uses current observation only; no trajectory history input"
+  },
+  "shared": {
+    "head": "explicit mother-suite mapping; same TritonBackend.learned implementation",
+    "image": "native_observation once; 256x256 two views; same released input/output transforms",
+    "weights": "shared released base and suite-specific converted draft artifact paths; startup gate checks exact old route; artifact path identity alone is not a historical tensor checksum proof"
+  },
+  "limits": [
+    "Old200 vs new20 are not paired episodes, even when task indices overlap.",
+    "Step caps are longer in new protocol; this does not explain failures before historical caps without trajectories.",
+    "D2 waits for GPU3. Draft pairs may use GPU0 only after all four heads pass recorded GPU3 real-input raw+decoded bitwise-equality startup checks (strict1e-5 also reported); otherwise wait for GPU3. All new paired arms remain on one device. No inference was run by this CPU audit.",
+    "Robot variants require checking actual class init_qpos and problem _load_model base placement. Whether geometry/base changes is unproven here. Swapping an entire init vector is not a valid robot-only intervention.",
+    "Background intervention must preserve geometry, object poses, qpos/qvel and contacts; a mother-task reload is insufficient."
+  ]
+}

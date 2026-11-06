@@ -1,0 +1,45 @@
+{
+  "model_id": "pi0",
+  "H": 50,
+  "R": 5,
+  "D": 10,
+  "depth": 18,
+  "CFG": null,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "attention": "native Triton",
+  "backend": "scripts.experiment10.backend.Backend / Triton Pi0Inference",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+  "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+  "provenance": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json",
+  "provenance_sha256": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+  "source_manifest": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/candidate_manifest.json",
+  "source_manifest_sha256": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+  "mask_variant": [
+    3,
+    4,
+    9,
+    11
+  ],
+  "cameras": [
+    "agentview",
+    "wrist"
+  ],
+  "state_used": true,
+  "image_rotation": 180,
+  "skip_semantics": "hidden-update bypass with original-index KV shells; action expert full18",
+  "R_by_suite": {
+    "libero_spatial": 5,
+    "libero_object": 5,
+    "libero_goal": 5,
+    "libero_10": 5
+  },
+  "sampling_version": "v2.2",
+  "cache_sharing": "same policy/input/mask only",
+  "action_generation_boundary": "prepared VLM condition and state/noise projection through final output projection; excludes decode",
+  "v22_code_hashes": {
+    "runtime_models.py": "b1913965b248d35a43d6a22efec4b97b6760e56f68e33f79f32ba74d0d23fc2e",
+    "schedules.py": "7831be52f4c493d6ca541b831018a04c216ad063afec91783346ba8847fb1db6",
+    "pi0_adapter.py": "16997e4005fe126dd0e8e405390da6ec0a4c95e73f9c0ca4de31aca440da96d1"
+  }
+}

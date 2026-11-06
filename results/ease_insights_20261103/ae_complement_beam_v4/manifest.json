@@ -1,0 +1,1506 @@
+{
+  "checkpoints": {
+    "pi0": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+      "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "identity_artifacts": {
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15",
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/protocol/candidate_manifest.json": "b4cb86a49cfb5db25d200dba6ccaa169a4430b937969c8a5bb6a4721efaa5ee9",
+        "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1"
+      }
+    }
+  },
+  "bank": {
+    "path": "/root/nfs/embodied/benchmark/results/idea1_v3_1/input_bank.pkl",
+    "sha256": "2c2e90a3e1fcac3f02226a433c6db9e19a0f3c169deea77707a9a1fbe8996d55"
+  },
+  "environment": {
+    "seed": 7,
+    "seed_before_construction": true,
+    "settling_steps": 10,
+    "control_hz": 20,
+    "image_size": 256,
+    "limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    }
+  },
+  "noise": {
+    "function": "preparations.idea1_v2_2.common.seed",
+    "namespace": "idea1-v22",
+    "seed": 1701,
+    "key": [
+      "suite",
+      "task",
+      "init",
+      "request"
+    ],
+    "condition_independent": true,
+    "shape": [
+      50,
+      32
+    ],
+    "dtype": "float32"
+  },
+  "quality_environment_reuse": false,
+  "technical_max_attempts": 3,
+  "official_init_availability": {
+    "passed": true,
+    "cases": [
+      {
+        "suite": "libero_spatial",
+        "task": 0,
+        "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "cbbc73792ce546c9bec181fd328a411d3183074840b282671dee481511381d0a",
+        "available": 50,
+        "init_sha256": {
+          "44": "e5e5740072f7787db30d3b6108e23c17b2ae6e372c2bd441579d8674e4cc2b2a",
+          "45": "aeed457c3aaa84628169ec809ab31fea7d3baed43d4e0e68970d01485d8b4987",
+          "46": "54b3e75ce4b8126c50bc354ae6c534c6e9c2f6180a86a8cc97100a598c8082f1",
+          "47": "4f5e968e3f8a21ea074562fb9ce67e13dc39cfba572b37e5cc18e15d8f939a1f",
+          "48": "14331e45a001f601d1a68e2824d6d749ce477bcb0c29f127b12d5ac08087d57d",
+          "49": "80d1403d4b3f6adeff4ed42fe0f4a5dc70b570e6d59ae52aa7f0afd3d91944be"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 1,
+        "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "9b6927b6ef03460ab055141e1a1154ad85e5e290058d8ed3a8a314aff911f864",
+        "available": 50,
+        "init_sha256": {
+          "44": "5ab6edffd41b7a7e81423febceb8249359fa8f4ab3fcda862d11607b13ed0700",
+          "45": "f79d4d21159c657a528a4fb0c9c10bb1d473e2595f8d5ac0780507a157185eee",
+          "46": "c8b9606909cd34025dae7bcbe3c11df89f26a6617c1934e98b9c49af7a9b559c",
+          "47": "59a712c55409ee2c49087d209aab4ca1474a7879e3071be37b1c762e45b3bffd",
+          "48": "350bf488c06f0918ecef5cc9dc56a163821d4dce5b9e53923f6b8f5f46c48213",
+          "49": "5a5b6913c479b18c86010683d352060eb68f382f2de75e6b68ac1f3dae5e11ea"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 2,
+        "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl from table center and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "27d5b81d739f969e40c72b6c88699e57a91ea61209946b21c593aae5990689cb",
+        "available": 50,
+        "init_sha256": {
+          "44": "1a28afe01b6fcc720bb64f8f8632fb32b1124d71e4c809ce4ec116ef8e513a58",
+          "45": "918a0f7ae544673a763398420d1a7c15c373ea38695ca38f52ba4996c43e7a6d",
+          "46": "3427a168ba24740f56ed0fbbaa0c7f684391154d9759cd326301dd619ff82618",
+          "47": "a6e64088e298a32030c8f152139fb732bd77e932b024716ff6203cc133bb0a0e",
+          "48": "48f0949b13a759c3d62bf38552278515dbcd69a6216b32b340f86271093446f8",
+          "49": "d76e44f29bd43b5fd70783aaff1471066fd8ab774311c1b298916b60a728df1b"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 3,
+        "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl on the cookie box and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "0627f5f5ce3ef23be546571012be8ef603d93bcb4032bc80feb34937ba580140",
+        "available": 50,
+        "init_sha256": {
+          "44": "1aee406422e3a6836f0fa274fcb72b489f2038ee56c0aeb335e88d14fef8d6ed",
+          "45": "c0c1341319bb4ff603051411661c71cdda11b1577d4bf36eedd8015bef231c20",
+          "46": "fddd2fdfc1106380989a912c32bc2822120797428604773abbb3dbb496393ac9",
+          "47": "ff6eb7a3e2f731455339a4e18b95253fbe3d637629b8a420d1ab4ab862b14c2c",
+          "48": "1d510958095b4e025666708756a278fb42c249a651924a66baa2799f069783d4",
+          "49": "ff1ccf054cd500323a4baa963795dd7dea85c785a0231a6541bd33704d237be3"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 4,
+        "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "4371189e11d9fd29bb548ab9a8adcd741bb0ce41bb66c612672d0e8cb29a52a9",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "deef3df529e0bb57658b973bbb3baf02b02922db065c025a73ebfcd11eb54d46",
+        "available": 50,
+        "init_sha256": {
+          "44": "3216aafae2d386eb58eca97b8b51ad5d23c963ba84063ed6c0ba68623987b371",
+          "45": "d12e3368e6ad9301b7d632429171be9b23b9fe1b1ab7b9062159ffe46060f664",
+          "46": "5b09daab114e4d3af5d84965400e51bb5e493a6b9ce78c8d04d12f7bb1bfabff",
+          "47": "eaaf7fd0994b7998df04e31ee01d27dc01a586bc5f6ef0f65480cf20c9afb1c9",
+          "48": "c08b9f27005bfbc13c50875b0b17884fe186bf3cde0d95be7a5e2b801c04a652",
+          "49": "c6a4a780eee1b9319e2bfea84e870963dfcd46d0eb1c1f0c1aa822a7cbf81d62"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 5,
+        "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl on the ramekin and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "2d2c50b7dcbf861fffa94d576f217ed34153e57487010d7a109a220d4d97189b",
+        "available": 50,
+        "init_sha256": {
+          "44": "84677af495fb719d06a2d6d35226638c380f8f3f5eb0a1a234763bc991322087",
+          "45": "c42d0bcb3d42923d97b8f0d3b182fa4c58f251b688e78502491f9abdbecc24a0",
+          "46": "e7a51f3e006d762b755017f9ec395ebb9b272e716d811f5f4e22980251ce9e0f",
+          "47": "29a92c0348dee75c131fa0beb9c77611224fdaf778c2e18af95b88cb0b9ce57f",
+          "48": "351c182d153de42923ed58162f88a7c2e90587a54073fdda3fda66e1cb7d0903",
+          "49": "8cdf5e442c27c558616896aeee60f5b45b8e965e7e732fddc02e6b29ea7faa49"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 6,
+        "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl next to the cookie box and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "ab86fb7b5942dc0fec762eae57e72bf636106b1c10ad8ce57227723d8eb9a81b",
+        "available": 50,
+        "init_sha256": {
+          "44": "7e22fff4325587d5faa4fb37fd03299da778594382f3b45374672645ff0ec3a9",
+          "45": "1a69936d7667002d0f9639fc59707a6dd8a522a9d5d0fc6457165b8e4951e87d",
+          "46": "f5e40a343e382819bf45003eebc2bb909ed5dc124e04a2f01515664a03f871e6",
+          "47": "ff2ce0348bbfc80f7d09be07a05e9f04b11c41ba280d6f2587356b4434f23b95",
+          "48": "124743d27a771973786e97ccb89ce98d8554be780a10c6ad7faeb6150af09d79",
+          "49": "3a892e49c8d9eed6572b7712beddd76effe0a27d65b6fb1572e40afe5e3bd0c0"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 7,
+        "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl on the stove and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "dd11837141a30d874ebbbfaae20e91ecc67ec85ab3872ceb4cff3abfcbef7cb0",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "ea9cba2814bc166f3682f3f5a97329467839bcf584069cd419191b6c17adae25",
+        "available": 50,
+        "init_sha256": {
+          "44": "c45776292c48d3a8dd383cbcf01ceb8139867b6010a0056b47ca42fb1180b760",
+          "45": "6830b4e68d19d9574651c79c44be95819fb61f8bdb0395f912d650c32bded9bb",
+          "46": "652690e243bfc1d53ca4115864adc4a7587623c127abb19242135faffed8a9ce",
+          "47": "62add5097e9d617e5a0012137a6802ed0bfde98849fd6c58003ae5d7998751fc",
+          "48": "2a3816644356e20bf708f08425cf2af1aa93a19eacb147198b68e3753335d788",
+          "49": "1ded5e57130dd32724935dafa2bb36401940812bfffeeca16980851c31ee4fb6"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 8,
+        "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl next to the plate and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "c8fbb9effa27b947d04d26862d75273d93cac1806734e53836cd472a08aec1fe",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "f43df2d80042130ac8770590d83f1a1e6fd4df7479aebc392aa2ed6e3bd0b83e",
+        "available": 50,
+        "init_sha256": {
+          "44": "9f8985d1386b3181771f006bec125c44428502fff1a0c7e2c1b5b39b40fd75db",
+          "45": "24f9cfa1728ed262f64521c6b3b3e71cdc52afa97e4e6ab77bccdebc865d07f2",
+          "46": "ad9245178ee8387348b1ea63f8448ea1ad61eda3014722b5d910f822325ed806",
+          "47": "588a468ca5f3513b762bcbdddd64b04b84d53eb09639895413e1f4e84c219d6d",
+          "48": "7177b22f02f0cee52ce2a47480c5a5d9a486e259bc536e049be2731c5b3b2319",
+          "49": "037f7cfbd5fa5f9191a91bbb76310d3ecf0a5355bd4bc977d0757a561a803b13"
+        }
+      },
+      {
+        "suite": "libero_spatial",
+        "task": 9,
+        "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+        "prompt": "pick up the black bowl on the wooden cabinet and place it on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl",
+        "bddl_sha256": "5293e759381b477e126beaf83d738542bbd4d93f522a3eead1066e612bad4a8c",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init",
+        "init_file_sha256": "08b0ac928dcc524a66d963851a6a4eece9aeb782b38466006e403a70e3287867",
+        "available": 50,
+        "init_sha256": {
+          "44": "5373a9292930daec72357f2b6da25945cf90e28a4e31aef14e10385249dfadb8",
+          "45": "37f936abf77d94b75fac07e590fa2637bcbbcf6881a8d40837cae7f17fcf168d",
+          "46": "511e59296c4beb7b243d57c9e41d762ed8eff497250f796fa65ce2a585b1651a",
+          "47": "d01f488938b9c169d441d381187a804766918fe4394bfd6325e308b20a2061d1",
+          "48": "e383cb9ca532d15d777684d04e48958e6c86c6a82f7440610bfa47acb6c7398f",
+          "49": "e3e487c4499d0d6ac7f71956603b8f9a9fe84b62afe6b7d2ca622cfbffe3d9dd"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 0,
+        "task_name": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+        "prompt": "pick up the alphabet soup and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "b9023e5546b239cacb2aaa3c76df3b73c3de6f97500fea5e27a0db9827002a19",
+        "available": 50,
+        "init_sha256": {
+          "44": "0c5bbdc04d5b66fe08e106e474f7602cce7181aa44677e2c522842c861423ecc",
+          "45": "0187be41e88b763593ef703a1e24fc5666a5a15f3b26507a0e4d92233d4e9ead",
+          "46": "2039c59be5c4ff23c28746c61ba2c37e45043d7d98854486db52077f7186b6ed",
+          "47": "59e08f87d5820496a37062b89079ead91a6b26488d0279d728ed0bee74fbe7c7",
+          "48": "cdc2b138b083474f501309b539267ad2e1c710db9dedfe7e9aa58f3d5c9a60aa",
+          "49": "e922f00520631ae45b0eeb06df096a9c19390e9647f7710305c50b72ddd51598"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 1,
+        "task_name": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+        "prompt": "pick up the cream cheese and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "5ea5483bca8abd80a8f1935e2c60570d60eaaf6a985c283d62805b46fb76aa94",
+        "available": 50,
+        "init_sha256": {
+          "44": "951646ee9a66641544ef62b5c2afa0bad649cfdb152f994a6989d8b32161b09b",
+          "45": "e9254a79b0e8b738ed1f9639deb1e6d4e0b671c4a85f2f98dc0da7b62a84b9c5",
+          "46": "611fc101ee6a38292f23f0e49f34b0eaf103b271f86502dd48c42171a1e6741f",
+          "47": "3eb195d21c4e565e2ed9677ff95cbac26fd6b4c6d33cb397c96c62897aca86dc",
+          "48": "8ef6de94c2a17c1cb90b6d1624c92db79d056a1cd2573a712c96712b87bdc01b",
+          "49": "69dddb1c77e6a25eaff6e8b57b49056b6f02646e7f50092666ada05a8e3f2be9"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 2,
+        "task_name": "pick_up_the_salad_dressing_and_place_it_in_the_basket",
+        "prompt": "pick up the salad dressing and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "6f6793ee550419a4a79dcb6ac83a9ba7bbf5e76e92fef26b82b6a7a10f72b04a",
+        "available": 50,
+        "init_sha256": {
+          "44": "7236b874f00dbbfaccff0e6865ef9713d66719944260906e3de475219b00558a",
+          "45": "14f4174515ac78386df370f7cf94073d045134d83c7d652c809d795b913d1848",
+          "46": "4a70132b4f24ca1f66bd8fe5f01879728ec84e32a5c4f76bb51e635c4a237d08",
+          "47": "61c115624d38fc68f3ca24047abc6634c26503be8aa567dcc190151bb795be46",
+          "48": "29a7709083d8a606197f0706e3e3254f38c80404096aa9d39b20d25e829ca492",
+          "49": "f5a81932698b2d9eb862cc8eb0019b46a7f6ddb362f0fbf537c021d2bac17f2a"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 3,
+        "task_name": "pick_up_the_bbq_sauce_and_place_it_in_the_basket",
+        "prompt": "pick up the bbq sauce and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "c524077b0c23006f28fc06760a5b5ab37eee67287b5329e84a34b0a8bd599b4a",
+        "available": 50,
+        "init_sha256": {
+          "44": "d14f4ce869ee3c236f7c87bbaef8c87aee6658df619d38d4b5cab422a95103dc",
+          "45": "66621dfb7df590e2be66a6a07b37fb2a362450b18d6a9c1e9a08c24ce93d0c95",
+          "46": "d6373f5dc54a45ef2dc2d279c470b8f6e7f6e15cd6a208e0a7be17b30ecccbd4",
+          "47": "2c473e38954ac5325b89eb43e3df730efbb5d0bbc96cbe3dd4a08848eb0d0e98",
+          "48": "622979fb25bb1c4c82ceddb88e2617a4c588a8b2c134b6b9ac51000154c8647e",
+          "49": "2f374c516a9f602fecb028cfded33f8c868003a6d3f0d9fbbe1fb4823d84c59d"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 4,
+        "task_name": "pick_up_the_ketchup_and_place_it_in_the_basket",
+        "prompt": "pick up the ketchup and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "b987f7b11e8f9b47353cd7882e1da38ecdf6ec9715ad8a84346583ea71049fd3",
+        "available": 50,
+        "init_sha256": {
+          "44": "821000a66e199eab536db6ad7f86dd53252424441d2fe227f08b57927013df5e",
+          "45": "1519c8126cc7ee8dd656568bc0d006f82631bf34da95a23354638617d98c0d54",
+          "46": "efbc9e8330fe7be015968434a829ab50342bd8ac5563fe329430515294a3c3f2",
+          "47": "a63b1512b5a85397b2700a8b086887d77e9dc6e95d48f3256240ae6b8e946085",
+          "48": "43a44eb1f902cf3c342bdc1c8ca8c13ead6357b900b06ffe7b13951d81d25270",
+          "49": "460801f202f640d6f6743837489e4f40c3c0b5665813344193c3a1f2c29e47c1"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 5,
+        "task_name": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+        "available": 50,
+        "init_sha256": {
+          "44": "c091bbe3e300080cd695279293c970333b89a982d5100a61e4bebca1303cfc76",
+          "45": "3e3cdb15f816fd0709965134b1354a7382dc20126e3029144eb424f50e5298ed",
+          "46": "41ee312aea54765376d141a95e696c052f5ccae23d29a9aa94ce9c684612b139",
+          "47": "fabc04845ca65181660b63f0440ad600c949f6aa9f49667ac9b210fa228e5d59",
+          "48": "c438274922c41f8b3b1a7738c2cfb79bfd396c0e03d436c74d5451f28096be67",
+          "49": "d75f6eb308fdd11cffd6a85f9bf491e1073f58c63282d1793bfb73cdbd6e40af"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 6,
+        "task_name": "pick_up_the_butter_and_place_it_in_the_basket",
+        "prompt": "pick up the butter and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "f0925a8653c5902c5a4d78a2053365382ad7d05be7f059abe19c2004ffc5dc59",
+        "available": 50,
+        "init_sha256": {
+          "44": "64831fe9a32a113f0e0579e34d5588726053656365d34dd1b354be000927bb86",
+          "45": "8306bdf53441008f8023b5890a97dd85331fc495c6d648ebd3d58be52f856dce",
+          "46": "31f8f3aad8287a71475e1094668ab7c37eb34419652234e3c2179bca6fae3533",
+          "47": "de10653b21ef20d4edda6c902f8fe0954bb127252844f6436a9e82fbc1eb13dd",
+          "48": "2201e58cffa228884ae27c98c5182296bbeea362900f12ba10bc4294d8132efa",
+          "49": "9327da74d7cd742071a18e18aa1b18775baedc82a2f70e1d7a42b8c77523a2a1"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 7,
+        "task_name": "pick_up_the_milk_and_place_it_in_the_basket",
+        "prompt": "pick up the milk and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "4a86269faf4c98baff4c1428997ac828d00c56922a9a131be94e19b6027e1db2",
+        "available": 50,
+        "init_sha256": {
+          "44": "37f3956178ea3abbe73eab1a8a6449b1b5c82422e519b4f38b74f19335c4a82c",
+          "45": "82cf0a9be42dc3255a0f53f241a0d6ddc6849087337643a1c1eb272b6b8d6c64",
+          "46": "606e27114070dc67675dd2ab6bcc967c2f5b98c6fd3a66fff3c149ae9f7ee2e4",
+          "47": "88cd6582e68eab657043c353b9d54ec584279b318094a003ed192a4c7cb040ff",
+          "48": "97e91abc427b7c4038d4f33d8d11f59ddfbad1a93418b9f90f3be7839c71af1a",
+          "49": "d647caa221cedbba734b9857f94f998904b2cb1a513759ad98effa80750e1965"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 8,
+        "task_name": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+        "prompt": "pick up the chocolate pudding and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "1124189363e76609da182dd92217cd02c41be58e88c42e3949d23ba160da75a5",
+        "available": 50,
+        "init_sha256": {
+          "44": "5b5d7ce894d56cb5e59933b50b3eb96f65605e0c694116725d1f6dd3b291f6ea",
+          "45": "b247bde759d5fd77caa173b6a74f71567abaf3890d7cd0e585b38cc488b45d9a",
+          "46": "ce55430b6d704076cf1beb5013ec741cfefff8d845525f62139e5a7fc2bffbc2",
+          "47": "9d158ec8a8d67b00230bdbbaebffe7d14f4f5132cc00ed5ace8311ab2f2419f5",
+          "48": "8a6f9a79355e09f1f44c4516ba2168a074142a84c195d5760a63ff20f2177197",
+          "49": "e3b82d6e23f72507d0fbe97cf27f729a0a86913c1a1f98706322fcd727c84e5d"
+        }
+      },
+      {
+        "suite": "libero_object",
+        "task": 9,
+        "task_name": "pick_up_the_orange_juice_and_place_it_in_the_basket",
+        "prompt": "pick up the orange juice and place it in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl",
+        "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+        "init_file_sha256": "35b19ffab1fe08c6457ebd732c37d04b9bc0d22b7ce7de015986092ddddea151",
+        "available": 50,
+        "init_sha256": {
+          "44": "3687437bbe10a3f6d56ae70b59ab934b0290f263ba832f664c3afb26701934de",
+          "45": "d56e97f983c093ae14892c7bd385d47a50c3ea410d24b1d5ea4785894c7af40a",
+          "46": "5e7f8f2e827f2012b332bab01d4e257b1f9fee4df22b8bcc20e8cdbf50000000",
+          "47": "b38fe4ab297e16968e29d035d0a5c146faf8598aea0edc49ef7c4753b4059c3b",
+          "48": "e5b731f0b34a809fa17418f33366f3165be5784b4a42ea50f92b2ac6defef299",
+          "49": "f898e21a480c1588959e32ef5bbe5439b280cde4328c0488e020d60c6b7464f6"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 0,
+        "task_name": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl",
+        "bddl_sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init",
+        "init_file_sha256": "977efe1216bee72bb4e9fa9ec4be1bcfe37fb00ece815eac117feba019b34b9f",
+        "available": 50,
+        "init_sha256": {
+          "44": "a1f858496e771a5a2d810bac0c9564d4dcc57c5c134c97f15366d70fed814b0d",
+          "45": "1146b3f92ea2bce35d1ee8eab14bb729332ca853ca88b1652bcfeeb69ee174e4",
+          "46": "3989671e17adebee5b0052e593bce22289fedba7383f5a75e3aef00b5e66c8f2",
+          "47": "b64c1f8895f6165cb7f36e78f195daa1a282fe170d7c266d5ae3b8a21a96f1e8",
+          "48": "dcb0001488b75725eced918d06140317f90f6d8b7bc644c1c2b5d6ef42b5d180",
+          "49": "21ed4d39cb2f6113b94a988ce150a0deeffb09ad2efd436eabfe7c2639984ae7"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 1,
+        "task_name": "put_the_bowl_on_the_stove",
+        "prompt": "put the bowl on the stove",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_stove.bddl",
+        "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_bowl_on_the_stove.pruned_init",
+        "init_file_sha256": "7c1819725af8d08988078d6efb98ddb6dbefadb2e6d20df4ed23a2074f4d9ed1",
+        "available": 50,
+        "init_sha256": {
+          "44": "2d1ef0bf38ecb7210e668a056a03fe7ad35e8c1d85ab53d259857aff67ebe1bc",
+          "45": "57db31e5f6a24c97946b28028fe4bd9ec0080dffb23b6e1ca3b9e004df3ef0f3",
+          "46": "2a88537e36076f23b318cb8a97f1309001a53bf2e68e33c5c2b8eb6c7d3cae39",
+          "47": "458febfbff6c57711f8a845aade1e51f587c235b7bbddf259af3e3d72b4073be",
+          "48": "8c2d716064491b7ee2078cef11a76f222f2c915a9dcff36422753ba133a50476",
+          "49": "d2f611e65bef80bea9489d1559bc60cbb4ffe40ead91a5a04f97791af6fa67b3"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 2,
+        "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.bddl",
+        "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+        "init_file_sha256": "b8c659d17c722bf848065bec6b4d088ab8e90f48b5ae991b2f118b0f2b5bbe4b",
+        "available": 50,
+        "init_sha256": {
+          "44": "416cc859ab90e9f8f6aef74490e059da28b1c464739d9c6e8c050b885f1d726b",
+          "45": "889054876b8d4ddcc5284cca7bba102de2d91287674612b0553e5b76cfb523c1",
+          "46": "148b8d9d9adb6230b73b7ec3201fd2fb11227c56dd7b1ca971eea2d014020f6f",
+          "47": "0d844db3cf1100a0e3be659c01e8d01fdf79fe571b2e614f5ab1fc34efb10dba",
+          "48": "9b0719689e92069421b0975d986ad619c6c0c8ddc12747a64e6b2d6274e11233",
+          "49": "bb181c30900dbe61936b75313ce9436a87936e294e9aa3eb7214ebb9d939a6a2"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 3,
+        "task_name": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl",
+        "bddl_sha256": "3056e4dc72ee590432cfb18c610fd077a572c8b8f256e45328031005dd0b6757",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init",
+        "init_file_sha256": "1cd5354ade9ab9f323a518515f961df96123b7daeca017df1f62d3e9ff18794f",
+        "available": 50,
+        "init_sha256": {
+          "44": "841bc0980e549df293c9b97e3ef6b8881454d7a1eaf43b853991e04bdc52bc8a",
+          "45": "02cbbed30912fb1c7c0c48b7cba62a2fd69e16600c7303364f3ced340bea7014",
+          "46": "8c15e913b6ef7c28face8228e0eb0a12bca30c767098b5ee7bf3a10c4ac07953",
+          "47": "8a9d22369e2589ffe0ba07557654c4a63dfb31426fc63e2bc14ccd8191cbbe0d",
+          "48": "db7289cbd4953fd0e07cd4fd23b78b9eadf723c956f96311c1537cfbfbfd45d1",
+          "49": "ad86d3933e1e335b3cad5ceacb293d2fdff610bc3590b6f31fcd24d636b03b0d"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 4,
+        "task_name": "put_the_bowl_on_top_of_the_cabinet",
+        "prompt": "put the bowl on top of the cabinet",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl",
+        "bddl_sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.pruned_init",
+        "init_file_sha256": "c0b7baf82f36f5304488bac91d788800a1c93d0a9fd19a73f448992d5366e145",
+        "available": 50,
+        "init_sha256": {
+          "44": "29a867051b51045666c9a97e09486a69321238b2b98e927910b3da1fbabadd13",
+          "45": "246ce744d38c4ca505e18def85edb20e92ba064329189b9bc3084a317f872467",
+          "46": "d20c50f139d5c60f9bcb8f2ca99ee18b68936780b50b37e876ee7aac7506696f",
+          "47": "479251dedc4ceef4c65f5818cca9f2a0e0b24cb67ae45a9d5cdc11e5a086932c",
+          "48": "ce23cfd88fce5a5e683952cce27f1cd81e1bd90c5c10a61ff25cff05a96608e8",
+          "49": "36a7e6e9f5c4611a9a70bb26b26dcc4479a5bc6baf780e16bc7e5e364f4cc4e3"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 5,
+        "task_name": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/push_the_plate_to_the_front_of_the_stove.bddl",
+        "bddl_sha256": "26f22f8ad39a4b2b344b049115c45661a877fa0b4821fb78246725e7e87d8c0b",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/push_the_plate_to_the_front_of_the_stove.pruned_init",
+        "init_file_sha256": "794beed679b18bbd7d9fb851c81877a974915ad63addff2d5ac5af0607fafac9",
+        "available": 50,
+        "init_sha256": {
+          "44": "d44983c1e478602da5723a2cc71afcfdd2d2880c3a21eb34f6ef52e7a43e2c11",
+          "45": "50d959f473a0625b6aad3ec7d9359f3dde360fc2a1091faf3a95680dded29ac4",
+          "46": "8a0946f4e725160a037129df571b1d8b335f1b743b129b0501f5f2433fb98e8c",
+          "47": "f1a20d5d78fa2a3ca32641b9fed47d38db3ebe05631795ac00399e6b72d388b8",
+          "48": "9ccecda33384f6141b03efb0d2c7a4f7ab516cf38e45b1575ca2b0f0fd983f4a",
+          "49": "9cb1e5f12256e4034ed78fdcd9603bda6554d6de751a952d1bfe93111600c389"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 6,
+        "task_name": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl",
+        "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init",
+        "init_file_sha256": "524de11d240f33b93d5218b1779a1ded1037950fcf865f07d0c0029cc48cf3f5",
+        "available": 50,
+        "init_sha256": {
+          "44": "b8575cb8343a3b89b58fbe8e82c2202725576c0c90b5a5f2015a7f0802e13e24",
+          "45": "8f00b02aee8f3109b314d9803fe32360161c1cbf523120e9b2ce9d3294ea693d",
+          "46": "6f2176975697851bbbc4b1ca8985eda5010c59d4175a4a4588b722f96bd87768",
+          "47": "da86897261c7ea96d0b4685929b75cf843046ce0e9d970ebd05731dca6d0ed3d",
+          "48": "0220ff551e6c5d5dee1f38690d3a57b8e5ba45fa9e9e6f67a2f3f04b65837882",
+          "49": "25d7bc537aa0d06fb07f8eeb4ec1a3f551a9345fa1fdfbe9114a27ffefdf7bc5"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 7,
+        "task_name": "turn_on_the_stove",
+        "prompt": "turn on the stove",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/turn_on_the_stove.bddl",
+        "bddl_sha256": "cbd2a0514d53226c5d09e17af40b22935d4cb6ff8fdaff0d55f555de1adecc13",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/turn_on_the_stove.pruned_init",
+        "init_file_sha256": "ed121db31d749647d70741c4c4ef0bd8e0876663986578795968e962d9b91340",
+        "available": 50,
+        "init_sha256": {
+          "44": "2e54294c2a99201976e1de5bbcf86c989e2502c2e70480173a1980434193cedc",
+          "45": "b39b9ce0ba13d30e8ee3fa32f9132e137fc7b07628d8ca41eecf9c2859d1646f",
+          "46": "c01de3e3b1f2e5c25faeec29cbb655e6e8bad92d0c163e0bb834b5fb79f158b2",
+          "47": "59b88a7869a4fbae8065024f283af458b3310b0b2db9e2f40f575c362d007e4a",
+          "48": "1a64512823121a0cea16e5dde6f4374c8574eef8ddc42dbfce68d5f4b154d114",
+          "49": "b753f83e870757554b7f4fc8885da09486b41ae83626a4ea733ddd84d035d83b"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 8,
+        "task_name": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+        "bddl_sha256": "358b7781437e412c67d6a7648c1c28796b6b1bf117a25e61316cb8dfeb940e5b",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init",
+        "init_file_sha256": "ef3466ffad734754dc40eba1f6f5712e37aa46b9692c595e0da34f16d3a0c668",
+        "available": 50,
+        "init_sha256": {
+          "44": "b622c372267b2255349ef225caedc5293825422b73ce98dfa57e1c9fbafc0c7f",
+          "45": "c3027e409b8887a59c27e4fcf2b6d77eec6260951b620fcf8441b1e48fef7588",
+          "46": "7338f9f458a36affb1f5b7ddd7b94da9c0d9496a47bd30d54e31c6d940355575",
+          "47": "7d401169a9739ea9a1b819c17ced96429e3d6153446d4b8fe8cbee4fbbe081ef",
+          "48": "faef35d875bb1cb24bec2cdd07a60d3f012a9ff0678a843747305c06b663e97e",
+          "49": "7bc3ebed763bde95f99ac7c8c4aece4edecf38d5890f7f453864ce6f8070f2c1"
+        }
+      },
+      {
+        "suite": "libero_goal",
+        "task": 9,
+        "task_name": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl",
+        "bddl_sha256": "3d3ee18139056aa3780572cde17b1c50dc20ae0d299403f65e514e8471ba0e8e",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_goal/put_the_wine_bottle_on_the_rack.pruned_init",
+        "init_file_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+        "available": 50,
+        "init_sha256": {
+          "44": "fbdc6efcd20a77266468cc8191d490f6c530b993ca7d754564d6e8e3227898ac",
+          "45": "929b534ee04f07861ce794e5f241b756216e9d1166dcc67d5bdd5c303649e475",
+          "46": "cb87008d296a97bcd1ef0e073eaf5b714c80ffcb6ce07e9c5d8854a240a2a469",
+          "47": "f1c375fa783adc266295173d8e0d254ea165c401fca6e762a6d62bb856578d69",
+          "48": "fcb21837dc836a43bf79c00f193cb4eaa529f007890b44e68356ee3bc56188f6",
+          "49": "24d972983366ec904ed16ead844a29f4f6dbc6ad1d633127fbf704eb5e9c648f"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 0,
+        "task_name": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+        "prompt": "put both the alphabet soup and the tomato sauce in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+        "bddl_sha256": "2e661058917f683a25bce480015197f0a2c1911bcbc2b9dd9d947199069c9618",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init",
+        "init_file_sha256": "1899fe54c51e24a41d5f9e32254730d6777f4894ab68e0e873f1fa7ae2062030",
+        "available": 50,
+        "init_sha256": {
+          "44": "e3686cf57ad431bac62431b43182245e05a0266e5bd421b5990739b70fa072b6",
+          "45": "8abd1901c4f659508d5b1d8e3d5e3a25f87b5938643c34243bc774944f86a282",
+          "46": "a93a61650625d48ed3d872ae3b7edac69b45f535ded8b086da7f9cf9f41be411",
+          "47": "cc8f8cb4e9756115e3a08d979ca26a841bcb758d4e9eaf1cf85e3f7ca3d22a05",
+          "48": "a853cf265af29a73afb0523773f14c8dda94e42d345497dd8be894776e9cfbb7",
+          "49": "d851284d9a94e54612ae8103ccbfc0c49cc0eb26b411fe9c10f4f93d674a8d0a"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 1,
+        "task_name": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+        "prompt": "put both the cream cheese box and the butter in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.bddl",
+        "bddl_sha256": "3f552805c7ab34c44debcf38a48b8131d6fee3011dd86c039650b84e0f77d058",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.pruned_init",
+        "init_file_sha256": "f8ac06ea8f43bb328d40cba1e6a9767da2f8f5386fd7ff3f845c64a96bf6d2ce",
+        "available": 50,
+        "init_sha256": {
+          "44": "799ecc108b1966847adeddc3ab31f2d30c727d1ad95f78443722910a1c9a8cb8",
+          "45": "076e125c4aa827ae3af5a5c6de5b0411da9988c0525d925ce91cbad20d4accd2",
+          "46": "c17f5ac3121d7ff9044b9559640c83d3d187f447cf980751d25d0d82257cfd1c",
+          "47": "a8408ecb7b9a82f82cdd109cb24b6d80b930149b850d552c5f381cbc809d2977",
+          "48": "99bc9a0c6a8984edbf7a572d053d7c8b4e5b3e7c81056600da1cd8386ef3af4b",
+          "49": "e8279a7a5fa0e6e1dadb6d5fbb502ad7e671fba966f4b9c01397a5fb3e312e07"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 2,
+        "task_name": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "prompt": "turn on the stove and put the moka pot on it",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl",
+        "bddl_sha256": "491835cc2eb6956f7ce3d1ee4e266377116168fe453e6529fe105e3b0333635d",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init",
+        "init_file_sha256": "02a8401f8d59f5447fc8c5a16f4c158dd8c426c3eaed6779927a2a53e9abf3c5",
+        "available": 50,
+        "init_sha256": {
+          "44": "a1d906f1ce388e4ab73f05b43329194cb22bc558b87415a409c7066ca14982b2",
+          "45": "7e4ddbf236b7c6bb8fcc17a4af3e9cfa228c46e84b6846befa5c0ca710292644",
+          "46": "06d76489c17e10d5481cff85c6943af4fc2764b7b4366513f94a0c5ab83d403f",
+          "47": "bf8d5cee6a92924f34285c43b3e5be1531aaa55e4b16ea91ef26eb386eb43bd5",
+          "48": "fa7ae8af98f7e2ea18794519aa5ed415352748917668046e83cea58c58c2ebc9",
+          "49": "11852eee6ebd1b9f091ec3a2b32334786dd760e219d4ebaf1c4dec21c38b066f"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 3,
+        "task_name": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it",
+        "prompt": "put the black bowl in the bottom drawer of the cabinet and close it",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl",
+        "bddl_sha256": "5255fe54d7f25fad4dee8fa30a30033d8cb908f1708d953c91ab609264fb4fb8",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init",
+        "init_file_sha256": "e98ded151f64a036c74c872336dd09b968c379f3c9db7bc333aba37e7c235b86",
+        "available": 50,
+        "init_sha256": {
+          "44": "0374cc488ad5c68b2766bebee6364fe4536e3e6e8ab94fefa89007358d345ada",
+          "45": "4d80370d1bf87c890d7593e35fcf4b5fcbc9972564607e9a8e916aac70fd5514",
+          "46": "c4adf114e2be1857766e3a49c2128dcd46073851f64b79cb72fcb56e7d5504d0",
+          "47": "61f8f5125024b9aaf854e53e306355047dfc81583012e3b73f5a9a6973a755ae",
+          "48": "3428d3529e7a449c5dd47e563a2c4b1475d8bfec9d64c3068e0704438568cf6f",
+          "49": "cfc7e736d699eb7ef649505a6c358db039e60efcbe4dfdaaf3f009238038010a"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 4,
+        "task_name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "prompt": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl",
+        "bddl_sha256": "0c6749b920bff1e1efe47ffb0e0b801a3e6959a650e710f376dd2b812c74e865",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init",
+        "init_file_sha256": "b6f20784b381c75d715f4fdaadda1fb460cbe24adcbad76f381a009419b8474e",
+        "available": 50,
+        "init_sha256": {
+          "44": "62191cad0f123cb0a26b81756a9603459f183de24a5c932f9028a2c0a8b2881a",
+          "45": "819c380d76d7be83123be838534afb1adaacb3dd3490952865d98e50fcb1a59e",
+          "46": "98d7e2346932b6ba2631903e3e3cf9c72b30cbf81e8fc77ff2b84fd9f2f1eba6",
+          "47": "a55c930261998140dbd89fbd6260550f45b484fd40b52fbe7ba6e09b7dbbdd0b",
+          "48": "250724cabe1300ea7b56f9e1918077ca6bf3be060d034578a90ec33eff348fed",
+          "49": "71dd54233a61e7c209c9b67da5f0bb1ec26aeb802e9e4d39b361f9398c896657"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 5,
+        "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+        "prompt": "pick up the book and place it in the back compartment of the caddy",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.bddl",
+        "bddl_sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init",
+        "init_file_sha256": "6cd3937ba18d64e72223222af36888d26ea201840415adbc4dae590454d0a5a8",
+        "available": 50,
+        "init_sha256": {
+          "44": "421b7b95b81d27d7f576c990e91aae0f6e6ae5c34d841b0039e532390ab6d2b1",
+          "45": "8e56317a7503c5fad21b31c959bd0667971c1c8533b714f789eefef6193e9601",
+          "46": "e28c4e4d2a1b122ed427681b8cac635fcb90f19d8d3ee8370d5c6fc346e3108f",
+          "47": "45381b9291a8192ce3698c8a20efd309567a3d3daf000772be442622c1e1e120",
+          "48": "903d68be2acd7eb405343689fdd20681421faf529d84fd2f6d579bff44a38ec2",
+          "49": "0657c4c323cbe0fbb8b46b5ff30f42524288fb26d3c4aae437a4fac7cd9e829b"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 6,
+        "task_name": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "prompt": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl",
+        "bddl_sha256": "dbc9464b424cdc9b771b92d0b8a8c185b1b539f6a4133b323dc858bcf8f6a9c2",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init",
+        "init_file_sha256": "6e811394c4ff9a43ae23515d8512e9b657c04344b94dd5baed121b595490514f",
+        "available": 50,
+        "init_sha256": {
+          "44": "a12183dc8cdfce2481646a640bcce5e0eea045dceb87a8b8ed4cea827eb10036",
+          "45": "25ffb47d8b82c6a583deb9135508c36f9298050b8bf01873239402f8b4d43111",
+          "46": "b9f420d77d540e5ba1bb3286fb67cd133d38b708df502e29c4a10c755643daf6",
+          "47": "ca90d747242fa9c71cebfceffa5bcfa5bb482c0eada14053b9177afca49e5a31",
+          "48": "77f0e9e76b010a25fc0034807fe47c8f06bd321f54afe5edda6f2f4744c57290",
+          "49": "1719c4557708d0a258c0e1e21e1ac8f45333eb561f121afebedd43528942d831"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 7,
+        "task_name": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+        "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.bddl",
+        "bddl_sha256": "e27ab37f512fe42e35771d6130f531e6a9656929e7b4c60b348b81360cf5675d",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.pruned_init",
+        "init_file_sha256": "2113ea5923fcbbe1b57b428383934496072f062729d0b72d3021573d55d25abc",
+        "available": 50,
+        "init_sha256": {
+          "44": "afe7ebdcb82fc19acbd168a7fbc4a79a04475aabf3a455ccc110cd4127be46f8",
+          "45": "844d1f7897d8297f827202127054ea6e271fe4f023b26c564f5d673cf7c98c9b",
+          "46": "950d1766c5499e1c2ebaa12e7115e1cbe5f0af33c2d530a5129d76b37cf94fee",
+          "47": "836db62d40badc6ea2eccdaf274cfc8594f68444796764872a3e84fb1bc9b253",
+          "48": "1a0d81d963b76f0f93f30a2398f7f330cff2a8f1dcca2e6ea6542b0496c82764",
+          "49": "fa3c5caaa0c305a9e25c5efaceb19ca50ec0bc2d64ac1a8db7e3acf6f31e3695"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 8,
+        "task_name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+        "prompt": "put both moka pots on the stove",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+        "bddl_sha256": "ae1299a707d3e810096ad648948c517de40474bcdacca93a15e17d191e34454a",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init",
+        "init_file_sha256": "44f992e911c84a1340589510ecdaf947a4872966f7678c8364d8bb5d13dc4dac",
+        "available": 50,
+        "init_sha256": {
+          "44": "7bf972951c5c5a71f58dc0b2a61d34aa09eb4e81f0bf0b776e0dc2cd6cd71d5f",
+          "45": "fa5061643f7df81e4a68edd1844e02353a7391a1dd393fe80f6db2fde747446e",
+          "46": "5d8322ea3150fd7441398b0985f37b5d0de9b07daa338cb2e13feb577cd70319",
+          "47": "5160455588622c82722a67026a8ffcbf015f3ec320babba0f0daa6cbdcf6cd77",
+          "48": "cdeb63ad2241c847511d5b314f37028481f4cfa5015661845384402344ff8477",
+          "49": "bf46e04bf6046f0ee851b176316d9580530dad52017c8a5a3156098962e67427"
+        }
+      },
+      {
+        "suite": "libero_10",
+        "task": 9,
+        "task_name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+        "prompt": "put the yellow and white mug in the microwave and close it",
+        "bddl_path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl",
+        "bddl_sha256": "456d145f92be049f445fc77673dc583d9d17ea7afe92f6ffcb2fd1fa5565d420",
+        "init_file": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.pruned_init",
+        "init_file_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+        "available": 50,
+        "init_sha256": {
+          "44": "261ef237b3cecd1334d6cde43be08ff1de0811d71c4bd85f3d53ddcfb34faf93",
+          "45": "603099bdec6c226d4c72abcec7008005eec345a69a9c20c067b30417e108dd68",
+          "46": "2451da222ffec10a5559168fc1a499e1b71e424386eb82406b2ab74ea671d8d6",
+          "47": "969020ba2cd616f63d10de2c6074da2d65c8314b8b0d88c61b64ca5212398d61",
+          "48": "0d0f84e5e2821d6a167a652586e0313d5d6df3c6ae51a6fc7f63136916af209b",
+          "49": "34ac43543ccba0822ade0333e2be4a828f05fbd3ad98cd9643ea5ea1ed0b741d"
+        }
+      }
+    ],
+    "task_count": 40,
+    "calibration_init": null,
+    "reserved_future_inits": [
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "scope": "Official metadata and CPU state vectors; no simulator/model/CUDA context",
+    "discovery_inits": [
+      45,
+      46
+    ],
+    "reserved_confirmation_inits": [
+      47,
+      48,
+      49
+    ]
+  },
+  "health_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/analysis.json",
+    "sha256": "7dfdc3dfd1073e029e89eba3b418584b4fd0022f208df0c5d44b9f38ec41d9d0"
+  },
+  "resource_execution_revision": {
+    "name": "resource-pool-v4",
+    "plan": {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/resource_pool_v4/plan.json",
+      "sha256": "809ff617ed616390a81864c1e9a9429e53692f77e0f1a29e870cc5bc322d8dd7"
+    },
+    "original_GPU_leases_unchanged": true,
+    "idle_mib": 16384,
+    "running_placeholder_mib": 8192
+  },
+  "revision": "ease-cross-module-confirmation-v4",
+  "phase": "cross_module_confirm_v4",
+  "output_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4",
+  "conditions": [
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": []
+    },
+    {
+      "id": "vlm_c",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        17
+      ],
+      "ae_skip": []
+    },
+    {
+      "id": "ae14_d3",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 3,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "planned_conditions": [
+    "full_d10",
+    "vlm_c",
+    "ae14_d3"
+  ],
+  "suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "case_table": [
+    {
+      "suite": "libero_spatial",
+      "task": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9
+    },
+    {
+      "suite": "libero_object",
+      "task": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 3
+    },
+    {
+      "suite": "libero_object",
+      "task": 4
+    },
+    {
+      "suite": "libero_object",
+      "task": 5
+    },
+    {
+      "suite": "libero_object",
+      "task": 6
+    },
+    {
+      "suite": "libero_object",
+      "task": 7
+    },
+    {
+      "suite": "libero_object",
+      "task": 8
+    },
+    {
+      "suite": "libero_object",
+      "task": 9
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9
+    },
+    {
+      "suite": "libero_10",
+      "task": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 3
+    },
+    {
+      "suite": "libero_10",
+      "task": 4
+    },
+    {
+      "suite": "libero_10",
+      "task": 5
+    },
+    {
+      "suite": "libero_10",
+      "task": 6
+    },
+    {
+      "suite": "libero_10",
+      "task": 7
+    },
+    {
+      "suite": "libero_10",
+      "task": 8
+    },
+    {
+      "suite": "libero_10",
+      "task": 9
+    }
+  ],
+  "cases_per_condition": 120,
+  "noise_repeat": 1,
+  "protocol_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/protocol.json",
+    "sha256": "6ac596b923d33d1ffc71501a7a240b4721c461721b97969c18b54525fee2aa59"
+  },
+  "design_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/protocol.json",
+    "sha256": "6ac596b923d33d1ffc71501a7a240b4721c461721b97969c18b54525fee2aa59"
+  },
+  "historical_discovery_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/cross_module_completed_audit_v1/audit.json",
+    "sha256": "d5ab19b83c696b7612a07b8a2a5ae30f6b65d0be9a17c1b10d8bca915091f6bd"
+  },
+  "local_runtime_sources": {
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/__init__.py": "94ca61b714a8f50e40c4475ab5c80185a99243fc31cd02395bce569a2d325218",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/analyze_confirmation.py": "7af4555fb2510091668dd77c6b24e380be9e92ffafc2e773e6269e9d0634c8e1",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/common.py": "ac941764ac5a0ca2c9a3a10b8a2a534b0e88e6b2e1589f502b90c758333cf96c",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/gate.py": "620b299d621c85115b4a5a7af59f182fa8a2255aec2a9b6c1f4ec17bee70c85b",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/noise.py": "5fb89e7471795b40384fde19f441e7c47ebbb04442807ecfb9c68fa45ac50ce8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_calibration.py": "633b52c9d73aa818ffe2398906f26b4271a5451ce8e8eae2f2ebe26bb865eaa8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_confirmation.py": "40285f9fca0af4796cb9bf8170ed0a2b30c0cdef80c0e73a336a382d0a028ab4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/protocol.py": "117677a9cba88d38c9e132942595327a8dc7ba8c8ec57f17f8edfeb2f3c93687",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/rollout.py": "af605b347e766c3123fc17caf019325ddb3279841ac9ba4c23304a1eb66275a3",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/server.py": "c6801586e543298b06ce9bb7920ca98e7214a2d45fd26d7b85701c696015de34",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/statistics.py": "a841e3ee13fa3095dae834ceac84b9dced53ee481909d805eb32f204baaeed93",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_confirmation.py": "726bee919b4271c5d117967dda14eb3127b1d58de72be0a7fd4d5ef21b87fac0",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_contracts.py": "64edae8e4af6d85de07d625c0b6fbd194829e23e9b464108f86b61e66bed17b0",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/worker.py": "01b4462f395222b54fa4e097f1fed9092e0f61964eefc6e7bdd699d61732b09b"
+  },
+  "source_files": {
+    "policies/realtime-vla-flash/scripts/experiment10/backend.py": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+    "preparations/ease_insights_20261103/fastpath/gpu_binding.py": "cd3ccd178d46a08ad35b9101fca471622422ca70d62cd536abf7de40bee95e16",
+    "preparations/ease_insights_20261103/vlm/__init__.py": "5d571bbf4a033360af4cb4fbaa2b2a55ad9bcbc865639a1c141c51017e6172f8",
+    "preparations/ease_insights_20261103/vlm/backend.py": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+    "preparations/ease_insights_20261103/vlm/benchmark.py": "5797be691721324ee9592a7bbb8fd75c8647982a7289cf2667a0f55a33cf3b5b",
+    "preparations/ease_insights_20261103/vlm/common.py": "3fa3465890b9e832753fcd1e59a354d9c4d0465122198d37a38c34960898b592",
+    "preparations/ease_insights_20261103/vlm/gate.py": "a61fa631db3e35080c1a70afb7cce5b5c2fed6f4c55b8435989e9225c611d7d8",
+    "preparations/ease_insights_20261103/vlm/policy.py": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+    "preparations/ease_insights_20261103/vlm/prepare.py": "7ebaabd1feeac6c2ef710c0a702867b800ac84e12406f46c2a16234dac8c5592",
+    "preparations/ease_insights_20261103/vlm/runner.py": "4f7eaf09504ad18342b3d416daac9c6947a12255d7c1f427a7c41bcd8b6d0468",
+    "preparations/ease_insights_20261103/vlm/server.py": "7b650a380b3a9a343c295a25e2804f03d713356b314aa26ae1c38666c69764c6",
+    "preparations/ease_insights_20261103/vlm/test_protocol.py": "8c152c4ac3614f1830aacb615e7eabd70289d6bc4b0a0a1b606c48381ef985bf",
+    "preparations/ease_insights_20261103/vlm/worker.py": "fb97668aa469fb3835b7f973138655d94d1e1a829bcdaa5fb48a6c3bbcd7b20b",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v2_1/runtime_models.py": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+    "preparations/idea1_v2_2/common.py": "34b0647adc7ea50620617193a0190ef9a13ef43856d49d4fd8f81391cdbfc19c",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "preparations/idea1_v2_2/provenance.py": "2b98ca3c8bcb711fd1ce33b635f8bbdcd373a3246e7f3fc438989ae0d587029d",
+    "preparations/idea1_v3/io.py": "574d5bb7c900f90711648e7a5c17de5edfd7f8106251284fd682b02c4ba755d9",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v3_1/benchmark.py": "64940dc54a44de94e14ac1a6f1789c56fb8561e1f7b44704a797bdb43446660a",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3_4_v12_compensation/common.py": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c",
+    "preparations/ease_insights_20261103/vlm/prepare_confirmation.py": "23ec8c823ea6be7821314a7cf8a363095fde99e2b79238586d2c24fb32073819",
+    "preparations/ease_insights_20261103/vlm/confirm_common.py": "3bf73a3ca7944c93b68ab0db44eeb9ba0d43e0e215584d5b50214e4424efa679",
+    "preparations/ease_insights_20261103/vlm/confirm_runner.py": "a7d14b7383d64c39b0283aeeb7fda74d27875203861d6fa8c62456deb019ee04",
+    "preparations/ease_insights_20261103/vlm/confirm_worker.py": "9a5977b5d75e55d4d04296546b663f35fe63822804f262d4780f57c7cb0104be",
+    "preparations/ease_insights_20261103/vlm/recovery.py": "4378dd6a96dc62f2e1d13cfee2d4c12c672407b214e8d336e18f31f063dcbd37",
+    "preparations/ease_insights_20261103/vlm/worker_v2.py": "bf3e8b36b95905c066a2a2bdc32088480e79e0a9814b179788725af124e28499",
+    "preparations/ease_insights_20261103/vlm/runner_v2.py": "c6474ecf880298971555365a70607a5e3a620ed1f1276412c3a91fc16680b0d3",
+    "preparations/ease_insights_20261103/vlm/analyze.py": "235e976d305b25429cae20187f3c4fcd1a1c2463b30f429810c02003978214c6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/__init__.py": "2fcb99ec58447647b3cc33c6194348a8452e4cb68c808c28966e7a25665bef31",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/common.py": "5b78cbe3b280d4888e46dc1b6cf28a6227273a544a40e2afed9f686af3e0ae66",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/policy.py": "21d33fd349ae223426cbcfbf461547073b7837bd35a312fd4ce2a812e6d69380",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/server.py": "4c7ddfbaa1f6d310fcde9f5f1f1ae54234e99dd651004cca18a331dbd13fc8a6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/worker.py": "4ab8ef4041723012a442d624523115ca077c9c4f5879df77b3bb97a5026d1d2e",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/prepare.py": "6d8b3a2233dc4a50b3cd2be54481bf29679a78139714546cd371cb810de217a1",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/__init__.py": "e9df0afa5b58c4d08a5b8a7aef3aaf4ee8144a0a98c4a65cf39787d5009bb5f2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/common.py": "8568591ae47d9bd938a968d3f693da0b7e468f2c50d6b499a80d65fbf8a5d1ec",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/policy.py": "87830a8ebd6dfb0e7465aebdc31ab8096ff8da4f5f16f0d1a7577731f34301ce",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/rollout.py": "b933e042c0d52d567153dab88ee1b0494fe5e6ce7eb17ce1a227dceb045ec337",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/worker.py": "e22181be3a555c412f96e6d7b289a638ab3951df9958aabd20f3f25b2a98cec4",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/server.py": "05858003c1c14e96606a1b1ad6558009b11ccc02241694afe92a21f996c733b2",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/runner.py": "b6ab4057e5f79bef4677f8d8f6154924af2afd355922172345b035fffd553103",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/prepare.py": "2265b73993b53c8fa7ef45e2c9b26c6ff544f8ba6a08085f50d32022fde95eda",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/selection.py": "0e6248ed9d53c1c1bed994eb854469d80857f21a3f51b2a639602addde93403c",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/analyze.py": "84231a95c415c3504ba960c2ded3d2592901fb9936b40fcd218533546c58dcc5",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_science.py": "80410ead70e87e7558b9f22f13d5a1d8507b874b20b5ef0cae8540e385af029d",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/borrowed_controller.py": "10b6a2cbb31e5cb7ebf654d985f0a215ae6d46a1564f865b6a76be87dc697e5b",
+    "preparations/ease_insights_20261103/retry_resource_session_port.py": "98e6fae9353f5766a661014756b33d92727fec8d61a46ce5e645bac6d43bbfd1",
+    "preparations/ease_insights_20261103/vlm_within_suite_v1/test_runtime.py": "ebd1f0b305ea1ec9caac9c4da1df73c0f80d5fe971e3fa7fa7ec96379b66ef1e",
+    "preparations/ease_insights_20261103/await_assigned_gpu.py": "07aa0356850fa6d5199d5f3ba0b35632c4b5f500b163f5da4bb106da506a6e3f",
+    "preparations/ease_insights_20261103/gpu_owned_keeper.py": "c3719a70ed02b2ac42c8cfea261dba5436f59a10657e350c5d2687f5e2ca1566",
+    "preparations/ease_insights_20261103/gpu_resource_campaign.py": "0b498e158efacbd6de050f9b577e688c928991c5bfe538144e3d5f40a5005349",
+    "preparations/ease_insights_20261103/gpu_resource_session.py": "db4dbc38562401b58efa6403d692ab14b2776d2150b84533bb5949c3a3899c89",
+    "preparations/ease_insights_20261103/reassign_waiting_gate.py": "aa57f4fab5447101ce948fcf139a3cbec3930262396e96cbf5c9d11b15fa3583",
+    "preparations/ease_insights_20261103/reassign_waiting_gate_v2.py": "0238d949fd5585fc52dae19fc56c54b5b970cb4542714c4599024418c8169498",
+    "preparations/ease_insights_20261103/scheduler.py": "0786dd02cb35dc7da40ee06dd515dc4481aa0d28e09d4d78baa5df1338345752",
+    "preparations/ease_insights_20261103/vlm/analyze_confirmation.py": "3ca73a5dce5dca8cde2e54340df4a1b82b8aec627481b5780321adef3f240824",
+    "preparations/ease_insights_20261103/pipeline.py": "e0a02e6b31fbea4d06185b1babe635777949a83c330f9f47da69a5a298e40bbd",
+    "policies/realtime-vla-flash/scripts/spec/spec_client_libero.py": "f30ec5eda07f365b9bf60f17dda77caf14cd71d93a75ac693b6f26c086c89e60",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/__init__.py": "7f3f428099f962c1393eaa662bf11a18f98d9f100bdfb59e1c1209b5bb1465e6",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/analyze.py": "f555b0df8c897689a472a8e170ff3d2891ff6757ac4428fd3a7f7694baf7cb64",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/common.py": "59ad86dab9f9713dee568999f7be833372c0a18ae6712a2361c19e5c7efc611b",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/policy.py": "6446c0b07abde1aa4525e48a706b0e99643f869f1eacb7c12ff83df5d5a3eae4",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/prepare.py": "f3a28e6def9bc247d1cdb40c279a5f9e471523803bef79ad723d86729ddc46fb",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/rollout.py": "b118977c6411cb21c36d1f38150cf50325c37ac60750739202fff45cb5760711",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/runner.py": "0fa9283ed97f4ba23d4c6d21c2b50b7e639b147c20b40de3099c07928216eae8",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/server.py": "c06289bf5391ea0eac24df9b3033b24f96bb06a32d886134ef2d1d8f8134bd5f",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/test_calibration.py": "6f2cadf2946ef7d0b9670ef18691f9a0360e446bdac0c199e64d880d2fb3c7ba",
+    "preparations/ease_insights_20261103/baseline_recovery_v1/worker.py": "3bfe6ba1cce8b3ed32cda534a2ffc7a39c827c7ec62f87ef7fb80e470da8bd5f",
+    "preparations/ease_insights_20261103/reservoir_v1/README.md": "412db0c2d7f6c2d3b0730f4c4d4a5795bbb30d1b6ce1f1b39b82d6ff964ed0dd",
+    "preparations/ease_insights_20261103/reservoir_v1/__init__.py": "cc958d1f8b3d38ea959e578e83c39d4afe80cdb69f6b276e51c642f9b5c12967",
+    "preparations/ease_insights_20261103/reservoir_v1/guardian.py": "bd2fd749f0304250d4855eaf594a816fd367da908aabc048dbcf7da2c6051883",
+    "preparations/ease_insights_20261103/reservoir_v1/keeper.py": "ea07ef8644f0881626b516b71046def9d80c53cfc57a698f23a7f6a573ef6bc3",
+    "preparations/ease_insights_20261103/reservoir_v1/test_reservoir.py": "a5147ec5b8e3a78d1cb8d43deb8d79d814dd3dad00216b23e20daabf21e7eaa4",
+    "preparations/ease_insights_20261103/gpu_release_watch.py": "4314b4b5d7eca4f88968b0d66da305a5cd2f6aff4829f363ae76b951b9495680",
+    "preparations/ease_insights_20261103/resource_pool_v2/__init__.py": "f0adb175bff40e2f9c64aab010e6ca5214163635d3c824cd260657de41245408",
+    "preparations/ease_insights_20261103/resource_pool_v2/keeper.py": "ffcbee6ee0256ff3184050fe336c31433e93a5ece0cb60819aa0dcbc94951e8d",
+    "preparations/ease_insights_20261103/resource_pool_v2/guardian.py": "61fc74ff8ad1a460e26728e7586eb57fef97f44e9659e52ed3c9fdd76d57c0c0",
+    "preparations/ease_insights_20261103/resource_pool_v2/test_resource_pool.py": "9610539eb1d0d5377bb006428166b426e916ceaeac39402af6c38029f7636f23",
+    "preparations/ease_insights_20261103/resource_pool_v2/README.md": "475354e6f83d558c901a13f2453774ada0cad361cd915190b4a1b977af4181b8",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/__init__.py": "4c93b94204a6009f2811355020a3fa3a2ee87ed981f460c8548de548364c6a69",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/analyze.py": "a4ee496a8a8753c634bf4ffe7c8d0e6679937af6e36ac012ffeb723ca26410f9",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/common.py": "5c39010aebd82004fd9a6f24ff9b1a8c8608a89216479a5cf519dbcc0f734478",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/gate.py": "652769a19d1ead41ab91cd7b4e82cdbfe078fb5ba18d82641874a8c202121e2a",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/policy.py": "1aab1418408f9c03f5e063db7b30968682f2026946c66f871f1df7ac4c594f9d",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/prepare.py": "57dc3940448a3386644be86777838449ca543e84d9dfd976f4bb0bb40aad566a",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/runner.py": "17559b987b716033359f1c030260a3c8481511cbb8931adf45a84582f7fa771c",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/selection.py": "26dfdc77d203af70ced020c6b4f11e34317c27e2a111309b95f8065c0d129886",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/server.py": "d447699d06ca4c749f4b65b0901c23f3885415e03a9ec970c7fd0b81e5032226",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/statistics.py": "f03083d02ad74e2d12487064a19bd776fb64e21f3b94a1506edb06afa9bea52c",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/test_science.py": "1ad33f2e10d31d9579da6e8a6c95d5efcfd9bbc42a97169921f4820f949ccad2",
+    "preparations/ease_insights_20261103/vlm_diversity_v2/worker.py": "174c286d304d55150e3b3c1a44f53f0b95830068a1413d96ef57861693b04bdd",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/__init__.py": "21a9c9378f6a077a5773d525dee3c6e6be6384e41e453dda52ae73ccffa3da70",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/ae_dispatch.py": "aed5c435db6449d36b3e3dff1bbf24bb635095fa3887c45722956fa659b7ce00",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/backend.py": "1d3eb826ec81d1225b567a4bd02e22f4838e087d9dc6ef5e38303b8d5eb639b8",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/common.py": "768ddb246ef1269468757f057a3f8f919e66796d14ad2bceb51e1fe63357cd2b",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/gate.py": "ea489eaacf3ea589f9dfd132ed196547dbca4f58fa0a7ac321ccbe1b4b263462",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/policy.py": "51d209ad7c1ed75c88e4f9cac0421d5d5565e74ce0c5fac6dc49585a10c6dc4a",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/prepare_calibration.py": "8db0b3c046e470f4c66609112199b1f175c6d1525a0d7778b9d5e9e74c77f94c",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/protocol.py": "cea86dfd32aa3b8dcf3b85369b1f00456e790e177061b7d108d246ba638d6e52",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/runner.py": "2c0b315018494ade028b544db9a0954ab6e30116bf6ea85ddda5a0ddfe6721e7",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/server.py": "34fa530841b03fa2ec6e37b9f68ba8b0a1672470f26eca656db012d79f03e618",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_ae_dispatch.py": "480af4bd71b61336bfbed9b80dcbbbe293315cf94dd6c7b19561edbf802806f5",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_contracts.py": "3f5268a9b3a1ccbb3d8812bad59aa225d7e3bee9b43ce1c50aea6ca414cfccef",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_policy.py": "460257d3fe5af0e8b39d53f00ba56e837e600cdeda34274de79cd2e50f2ac887",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/worker.py": "5560166f10f0b72fe84f454fd5ee77b00fa2e3d8fa11503451bdf1a669c11d75",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/analyze.py": "6601ec7ed826a95478522e822ca1511c5a05a5919f92ec943236100f289dc60d",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/prepare_discovery.py": "9f6ee1bb4c81610396dec3b5f5cf3b72d0848c7df42c434922e350be17616318",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/selection.py": "183cf9bf2d08e1d92abe01c1f5c02011fb81a26a00122cf5cdbd69fb0cb2d20d",
+    "preparations/ease_insights_20261103/module_tradeoff_v1/test_selection.py": "19d8c07139d00a6f8ddfd162ac36f753bb79720d28970df076929f9a42839002",
+    "reports/ease_insights_20261103/common_case_audit_v1/audit.py": "2fec7afe6e80cca6286e52a467d42be9e525f6125da76d0b63873985b4a6d113",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/common.py": "82899acad7d3e7ff4f47a6401589567ca01f3beca8922658bc0fccb465841f7e",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_calibration.py": "3be33b7803cd04345d58de4592061687ac7a80b23d720769aa12a473b6990ee9",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/protocol.py": "0a477accd5472c2e49050bdf5166560e2765f6b30c6a581c2b0e194816ad4cc1",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/server.py": "a373a372db9ebb397342e6915c4b7c1152d056677dc5afb4611b7c8d9192edf7",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_pipeline.py": "1a9eb0bbdf24cb1db94dc573f316c4f50b4fa111cebf71cd6c29e7d045b6c466",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/calibration_audit.py": "8b41a4fcd5c4cc0ef960a0ef1959a7a66bc62f87b046288002e828ed549fa2da",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/service_audit.py": "24d02f031b4f353d5b317c452a1d9376d20f20fd89e0732bc1b6b92c6f745619",
+    "preparations/ease_insights_20261103/resource_pool_v3/guardian.py": "061ecce3b050dff50371d7a5b0cfb71768dc532234c5b88489f668edaff04728",
+    "preparations/ease_insights_20261103/resource_pool_v3/__init__.py": "da7b660b13ac9ef2f345fa98ca94e53516596007288efa286c03dcc126271470",
+    "preparations/ease_insights_20261103/resource_pool_v3/keeper.py": "413ce989a5c6ff388fce736ba978001e1c2b210e8c38d89448b3d4b48d03198b",
+    "preparations/ease_insights_20261103/resource_pool_v3/test_resource_pool.py": "3180ba2ed713468911334bbf97afd052ad771515e5ea68ef63abdb4858095e4a",
+    "preparations/ease_insights_20261103/resource_pool_v3/README.md": "52f756b3dfc8378bc68a3b97bee5a723d54f11496bccb105d696e83f1fc60ba5",
+    "preparations/ease_insights_20261103/resource_pool_v4/__init__.py": "da7b660b13ac9ef2f345fa98ca94e53516596007288efa286c03dcc126271470",
+    "preparations/ease_insights_20261103/resource_pool_v4/guardian.py": "43a7dabb973a52507ce4908110fd4d5a736d55f7a89ae7876cc8babb8ae3e707",
+    "preparations/ease_insights_20261103/resource_pool_v4/keeper.py": "413ce989a5c6ff388fce736ba978001e1c2b210e8c38d89448b3d4b48d03198b",
+    "preparations/ease_insights_20261103/resource_pool_v4/test_resource_pool.py": "8f5d1ed8b979cf5cd1ad6344bc16f21ef2dedcd9d6586026cb590ee1fb4eaed0",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/analyze.py": "adb7e57209b3c910e3d9c313ddb48ca6454592b444a77011c1e7c31d20d051c7",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_confirmation.py": "b128149fb0f670d3c2dd195c78c6557873639199d7ef4f11149e9e58f7acfe7d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/prepare_discovery.py": "dd048957f3e93a3e058ad890f2671616179a8e4f3e943a650c522b440319471c",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/selection.py": "93eac8f71fc4278d7be9d155deab48b220ebdc482526319d3f35664a6152c5b2",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/statistics.py": "ed22a2dd2c08d4eb510ac24a4fd1eb0b3cdd157b5404c6beb38b194f3d8eef0a",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_independent_selection.py": "45d90ed7338d0762a512661cbb69b059eb5e6957d334d5c54c936df84a6a997d",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_selection.py": "215204a8fac9daab3299037012d53c41f4b034c4dfb8cd2118ad47c28f1f4f0f",
+    "preparations/ease_insights_20261103/denoise_depth_paths_v1/test_statistics.py": "84acf99ad41f7cd79aed17cbaa96e916d5ef65c4889436e9206756ba53f9c6dd",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/confirmation_audit.py": "b9b77c40d61ef2b69d7c17de336d059ebe1e2a437240792863db32391a6e6846",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/confirmation_statistics_audit.py": "b30857a51adaf99b184db0acc31c8aaf0900660f9945462e874d165d177a42f5",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/discovery_audit.py": "8e215fe9469a8f8159b271d3a9bba80d1c03a5f8e5c7089d625d3182851959f5",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/finish_discovery.py": "feb947d9721d2eefa8e8c396084fcb87cd8a9a885ad68f3e305b984ec12f9b02",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/observe_progress.py": "25a4d858b98b577ac9324d5df1e76d5625dfdea4adb83dceb504004c038fd1a1",
+    "reports/ease_insights_20261103/denoise_depth_paths_v1/statistics_audit.py": "29b4ad2bc2935662aa91f5eec07499b7c6ecd7275464d7f219ffadb959ac02bb",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/__init__.py": "4d9ae11ad74e1001b28d1b9212ae6c62cbc1a6e39482c0b6983f98f7a7dcdb14",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/analyze.py": "dee15852ca1d1fea1f11b911d2babe6c7a398c636cfdb55ccaeab522ec38272c",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/common.py": "6aead30c57da39c6a87dee074b6d54a65eb9df2ee4436fa9bc07ba27715d84ce",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/gate.py": "b0eaedd02b204bff7efcc0f35df00ed371c242b4c4fffb0f98a11c2a4a777202",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/prepare_calibration.py": "fa2bea836494cf2d81c50dde87c66a9466c6a3d93e990a8193132fffa3a28365",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/prepare_confirmation.py": "f3005e78d6852b089be0df2a7a523ded9703638be784ee1f41b76dfae865f471",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/prepare_discovery.py": "2a06840fff9ed8fbe1c281f0ec3dd49078298d9ee9785f4db220386863461885",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/protocol.py": "ebf03c3af9aa6fd20273251c431334780b170742a20026bd376410fabd3ecc9c",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/rollout.py": "02a2cafa8edcfcfe33cf6fd35adaec5685a8dab6c9889ef879d81d6cc64cb21f",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/selection.py": "6eff85e980ddd6544d52d49c67a3863e1467c3bda858e46115197d6fc1746da6",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/server.py": "a27771181a36ddc0d48432ad00d8ffbf8bf73507e8ef9f8180e54125e73cd936",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/statistics.py": "ed22a2dd2c08d4eb510ac24a4fd1eb0b3cdd157b5404c6beb38b194f3d8eef0a",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/test_contracts.py": "620df6f80fdc29041e950854a749fdebf1df846cd209322c5122ba2b428fc0da",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/test_dispatch.py": "ee566cc7ddb4b05fa017dc2f7108e7b0c97a526a0e966815b255b0be2320b39e",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/test_selection.py": "0308e111b6710237924ec59ec3048b65a2c2954f5b4498ab4d1241da32e107e5",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/test_statistics.py": "e29a35e4303a125f76342de4cf11faee3cb55f034843adab690795447f4b1c34",
+    "preparations/ease_insights_20261103/ae_complement_beam_v3/worker.py": "d3d6772033814745d930e1a4d36c83f04a702dc2225b166e7f38e8f0b3736d8c",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/calibration_audit.py": "b29d972e7c67ee19ca83b54f96368bb3c2815e7e915b97e85ec62789b373ed7c",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/confirmation_audit.py": "eaecf58a13b6db891893f9d7799f95a0e317146cc7cd3149f85a4814e944b41a",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/confirmation_statistics_audit.py": "a863667fd4a1b947c9bab8e219b5961a1e55d6d20a2ae8f8d9ee2517e7eb1839",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/discovery_audit.py": "11753f094f874f8f8973e38e9513bdb8269bc63dd521e5640f091518e9b0b9bd",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/finish_confirmation.py": "8b52c636cb074c1cd256656da393cdb94fb30b8c380f020c14c82b6274f621f5",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/finish_discovery.py": "d36b510592f3871bb9f64ff13c96f5f5f10da31f295ebdac55c64c2a8c244497",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/observe_calibration.py": "0350302d1538b661610da969f950a69ca612dc237fa8e2ef7abc83be2e10f929",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/observe_progress.py": "dd0196819d716e53b0342139b1aafc8f90d1d736d3bcd6ac43cbfc076e14c271",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/service_audit.py": "24d02f031b4f353d5b317c452a1d9376d20f20fd89e0732bc1b6b92c6f745619",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/statistics_audit.py": "9eb707afff92cc48e1243f8e4d9a6f8740dd642daafdb75b2a2324c732b05c26",
+    "reports/ease_insights_20261103/ae_complement_beam_v3/test_confirmation_driver.py": "d8d6c688fafe21665f60d2e92d9cd87bbdb88ff003623b4145d8df2d6ffa1752",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/__init__.py": "94ca61b714a8f50e40c4475ab5c80185a99243fc31cd02395bce569a2d325218",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/common.py": "ac941764ac5a0ca2c9a3a10b8a2a534b0e88e6b2e1589f502b90c758333cf96c",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/gate.py": "620b299d621c85115b4a5a7af59f182fa8a2255aec2a9b6c1f4ec17bee70c85b",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/noise.py": "5fb89e7471795b40384fde19f441e7c47ebbb04442807ecfb9c68fa45ac50ce8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_calibration.py": "633b52c9d73aa818ffe2398906f26b4271a5451ce8e8eae2f2ebe26bb865eaa8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/protocol.py": "117677a9cba88d38c9e132942595327a8dc7ba8c8ec57f17f8edfeb2f3c93687",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/rollout.py": "af605b347e766c3123fc17caf019325ddb3279841ac9ba4c23304a1eb66275a3",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/server.py": "c6801586e543298b06ce9bb7920ca98e7214a2d45fd26d7b85701c696015de34",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_contracts.py": "64edae8e4af6d85de07d625c0b6fbd194829e23e9b464108f86b61e66bed17b0",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/worker.py": "01b4462f395222b54fa4e097f1fed9092e0f61964eefc6e7bdd699d61732b09b",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/calibration_audit.py": "45ba9b1aa15013ddc605288216a99f43eb3eeff34a44fbfa282065941683bc43",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/observe_calibration.py": "f6b1a92cc92e75dd736fdff8c54289dac1cc01d31e7e05f73c8947b9694f5aca",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/service_audit.py": "24d02f031b4f353d5b317c452a1d9376d20f20fd89e0732bc1b6b92c6f745619",
+    "reports/ease_insights_20261103/cross_module_completed_audit_v1/audit.py": "89e94cf01e26748a5d425ee6a1a299181bbfc38a7d09f434e197698145a5c35d",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/analyze_confirmation.py": "7af4555fb2510091668dd77c6b24e380be9e92ffafc2e773e6269e9d0634c8e1",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_confirmation.py": "40285f9fca0af4796cb9bf8170ed0a2b30c0cdef80c0e73a336a382d0a028ab4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/statistics.py": "a841e3ee13fa3095dae834ceac84b9dced53ee481909d805eb32f204baaeed93",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_confirmation.py": "726bee919b4271c5d117967dda14eb3127b1d58de72be0a7fd4d5ef21b87fac0",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_audit.py": "0cdaeedf472d456845cdb3bc6aaec6ff6fedf7fc197151a5d99180af78832bef",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/confirmation_statistics_audit.py": "cd72987ca114cf5955fae5a5eb14c2f066756f86898667df44ee6bb4616d013f",
+    "reports/ease_insights_20261103/ae_complement_beam_v4/finish_confirmation.py": "ff2045ebce69fd4e656540140837b517129f7406e2d2a1ccd98a29fc8e65da11"
+  },
+  "analysis_sources": {
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/__init__.py": "94ca61b714a8f50e40c4475ab5c80185a99243fc31cd02395bce569a2d325218",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/analyze_confirmation.py": "7af4555fb2510091668dd77c6b24e380be9e92ffafc2e773e6269e9d0634c8e1",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/backend.py": "b659ca66c0d97385d6caaefea7796c47d1e5e993bf5e78df26a225f3229ba8d4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/benchmark.py": "03d4c674c935908f96c70e16676b499b2bf6a74261b0a58d72acdb2e14153d11",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/common.py": "ac941764ac5a0ca2c9a3a10b8a2a534b0e88e6b2e1589f502b90c758333cf96c",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/cost_records.py": "56327f25a0deec6df43c8bfb8c293167f91195c493886a1e2c4aa3a396296086",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/dispatch.py": "530ac6e0880f83ccf5eb56c8d24878b6c15a33d6195a81186357058087831acf",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/gate.py": "620b299d621c85115b4a5a7af59f182fa8a2255aec2a9b6c1f4ec17bee70c85b",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/nodes.py": "d31915bb87773274caa11bdf43f94a0b5122d0ce951ec821fb11f3914c12fa7d",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/noise.py": "5fb89e7471795b40384fde19f441e7c47ebbb04442807ecfb9c68fa45ac50ce8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/policy.py": "e270389db70d0d2135a10f4571072ce18b2af8c9fd617e4089a42f6802995bfc",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_calibration.py": "633b52c9d73aa818ffe2398906f26b4271a5451ce8e8eae2f2ebe26bb865eaa8",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/prepare_confirmation.py": "40285f9fca0af4796cb9bf8170ed0a2b30c0cdef80c0e73a336a382d0a028ab4",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/protocol.py": "117677a9cba88d38c9e132942595327a8dc7ba8c8ec57f17f8edfeb2f3c93687",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/rollout.py": "af605b347e766c3123fc17caf019325ddb3279841ac9ba4c23304a1eb66275a3",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/runner.py": "5d6068c89a8c01068c68f2f40d85496178e4a4ba078c35239e02aee7e4798128",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/server.py": "c6801586e543298b06ce9bb7920ca98e7214a2d45fd26d7b85701c696015de34",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/statistics.py": "a841e3ee13fa3095dae834ceac84b9dced53ee481909d805eb32f204baaeed93",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_confirmation.py": "726bee919b4271c5d117967dda14eb3127b1d58de72be0a7fd4d5ef21b87fac0",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/test_contracts.py": "64edae8e4af6d85de07d625c0b6fbd194829e23e9b464108f86b61e66bed17b0",
+    "preparations/ease_insights_20261103/ae_complement_beam_v4/worker.py": "01b4462f395222b54fa4e097f1fed9092e0f61964eefc6e7bdd699d61732b09b"
+  },
+  "reference_origins": {
+    "full_d10": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+      "cohort": "vlm_diversity_v2",
+      "condition": "full_d10",
+      "manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b"
+    },
+    "vlm_c": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+      "cohort": "vlm_diversity_v2",
+      "condition": "spread_c",
+      "manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b"
+    },
+    "ae14_d3": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery",
+      "cohort": "denoise_depth_paths_v1",
+      "condition": "ae14_d3",
+      "manifest_sha256": "df34a6e280492733ee57862368cd41fdbd54cb114ae385feb06d0fc6bb076ddf"
+    }
+  },
+  "science": {
+    "module": "VLM_AE_allocation",
+    "H": 50,
+    "R": 5,
+    "depth": 18,
+    "vision_layers": 27,
+    "cameras": 2,
+    "refresh_D": 10,
+    "fast_D_options": [
+      2,
+      3
+    ],
+    "schedule": "FullD10 then two config-bound Fast requests",
+    "training": false,
+    "environment_seed": 7,
+    "settling_actions": 10,
+    "policy_action_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    }
+  },
+  "preflight": {
+    "status": "required_before_rollout",
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "fixed_input_cost": {
+    "warmup_requests": 72,
+    "measured_requests": 144,
+    "conditions": "All three definitions in every completed service"
+  },
+  "confirmation_inits": [
+    47,
+    48,
+    49
+  ],
+  "total_confirmation_episodes": 360,
+  "preregistered_hypotheses": [
+    {
+      "suite": "libero_spatial",
+      "better": "ae14_d3",
+      "worse": "vlm_c"
+    },
+    {
+      "suite": "libero_10",
+      "better": "vlm_c",
+      "worse": "ae14_d3"
+    }
+  ],
+  "calibration_evidence": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/calibration_acceptance.json",
+    "sha256": "8529ea9bb323f5da22110e90200682a70a0db030781c6f33cbfbd1ce30a0c74f"
+  },
+  "confirmation_initial_state_prior_use_audit": {
+    "passed": true,
+    "roots": [
+      "/root/nfs/embodied/benchmark/results/ease_insights_20261103"
+    ],
+    "requested_inits": [
+      47,
+      48,
+      49
+    ],
+    "catalog": {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/semantic_pool_feasibility/task_inventory.csv",
+      "sha256": "81ddefc200c9ce40e72f6d88aaf73f94aec5eb43ddc75a332a61bc90ebaa6bb0"
+    },
+    "inventoried_files": 14661,
+    "matching_existing_outcomes": [],
+    "unresolved": [],
+    "inspected_requested_documents": 0,
+    "outcome_success_not_used": true,
+    "time": 1793919268.4898934,
+    "scope": "Known EASE JSON outcomes and complete official physical-task aliases only; plans alone are not outcomes"
+  },
+  "heldout_preparation": {
+    "outcomes_inspected_before_freeze": false,
+    "official_initials": [
+      47,
+      48,
+      49
+    ],
+    "two_streams_frozen_together": true,
+    "policy_noise_repeats": [
+      0,
+      1
+    ],
+    "physical_states_shared_across_noise": true,
+    "total_new_rollouts": 720,
+    "unique_physical_states_per_algorithm": 120,
+    "rollouts_per_algorithm": 240,
+    "primary_clusters_per_suite": 10,
+    "observations_per_task": 6,
+    "controls_reused_for_confirmation": false
+  },
+  "policy_noise_design": {
+    "rule": "repeat0 original;repeat1 SHA256-derived condition-independent seed",
+    "explicit_model_noise": true,
+    "environment_seed": 7,
+    "order_dependent": false
+  },
+  "initial_pairing": "Each stream pairs all3 algorithms on the same physical observation and explicit noise; streams share physical states but use different policy noise",
+  "manifest_hash": "e710900d688a8261af20b2c64a526bd4b1a3bb3dd269d0bdcdf7aa414f8df386"
+}

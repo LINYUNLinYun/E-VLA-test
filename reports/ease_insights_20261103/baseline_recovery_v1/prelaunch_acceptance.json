@@ -1,0 +1,244 @@
+{
+  "status": "pass",
+  "time": 1793890667.902177,
+  "CPU_contract_tests": 6,
+  "manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+  "source_files": 91,
+  "prior_use_passed": true,
+  "official_task_count": 40,
+  "dry_runs": [
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "plan": {
+        "dry_run": true,
+        "episodes": 20,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.baseline_recovery_v1.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/manifest.json",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59300",
+          "--gpu-uuid",
+          "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/runs/calibration_shard00of02_1793890667898016222"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.baseline_recovery_v1.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59300",
+          "--stage",
+          "calibration",
+          "--shard-index",
+          "0",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/runs/calibration_shard00of02_1793890667898016222",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/calibration_shard00of02_complete.json",
+        "identity": {
+          "manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+          "condition": "full_d10",
+          "stage": "calibration",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "common-suite-full-calibration-v1",
+            "scientific_manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+            "phase": "common_suite_full_calibration_v1",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/protocol.json",
+              "sha256": "60c63454f117b36aef21075fa13188cae745ca329c5862682b634b834f4b289c"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/protocol.json",
+              "sha256": "60c63454f117b36aef21075fa13188cae745ca329c5862682b634b834f4b289c"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/baseline_recovery_v1/__init__.py": "7f3f428099f962c1393eaa662bf11a18f98d9f100bdfb59e1c1209b5bb1465e6",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/analyze.py": "f555b0df8c897689a472a8e170ff3d2891ff6757ac4428fd3a7f7694baf7cb64",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/common.py": "59ad86dab9f9713dee568999f7be833372c0a18ae6712a2361c19e5c7efc611b",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/policy.py": "6446c0b07abde1aa4525e48a706b0e99643f869f1eacb7c12ff83df5d5a3eae4",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/prepare.py": "f3a28e6def9bc247d1cdb40c279a5f9e471523803bef79ad723d86729ddc46fb",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/rollout.py": "b118977c6411cb21c36d1f38150cf50325c37ac60750739202fff45cb5760711",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/runner.py": "0fa9283ed97f4ba23d4c6d21c2b50b7e639b147c20b40de3099c07928216eae8",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/server.py": "c06289bf5391ea0eac24df9b3033b24f96bb06a32d886134ef2d1d8f8134bd5f",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/test_calibration.py": "6f2cadf2946ef7d0b9670ef18691f9a0360e446bdac0c199e64d880d2fb3c7ba",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/worker.py": "3bfe6ba1cce8b3ed32cda534a2ffc7a39c827c7ec62f87ef7fb80e470da8bd5f"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "no_task_filtering": true,
+            "scope": "Independent health calibration; no fast-path outcome claim",
+            "revision_hash": "2f93f28c30fa383083bb64092c346b41abd21824f22959a279200647a46edfb2"
+          },
+          "command_builder": "preparations.ease_insights_20261103.baseline_recovery_v1.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and Full-only arithmetic; does not cover all40 new initial inputs",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+        "stage": "calibration",
+        "condition": "full_d10"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "plan": {
+        "dry_run": true,
+        "episodes": 20,
+        "preflight_only": false,
+        "server": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.baseline_recovery_v1.server",
+          "--manifest",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/manifest.json",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59301",
+          "--gpu-uuid",
+          "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/runs/calibration_shard01of02_1793890667902070131"
+        ],
+        "worker": [
+          "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+          "-m",
+          "preparations.ease_insights_20261103.baseline_recovery_v1.worker",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration",
+          "--condition",
+          "full_d10",
+          "--port",
+          "59301",
+          "--stage",
+          "calibration",
+          "--shard-index",
+          "1",
+          "--shards",
+          "2"
+        ],
+        "logs": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/runs/calibration_shard01of02_1793890667902070131",
+        "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/baseline_recovery_v1/calibration/full_d10/calibration_shard01of02_complete.json",
+        "identity": {
+          "manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+          "condition": "full_d10",
+          "stage": "calibration",
+          "stateful_workers_per_server": 1,
+          "technical_runtime_revision": {
+            "name": "common-suite-full-calibration-v1",
+            "scientific_manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+            "phase": "common_suite_full_calibration_v1",
+            "protocol_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/protocol.json",
+              "sha256": "60c63454f117b36aef21075fa13188cae745ca329c5862682b634b834f4b289c"
+            },
+            "design_evidence": {
+              "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/baseline_recovery_v1/protocol.json",
+              "sha256": "60c63454f117b36aef21075fa13188cae745ca329c5862682b634b834f4b289c"
+            },
+            "wrapper_source_files": {
+              "preparations/ease_insights_20261103/baseline_recovery_v1/__init__.py": "7f3f428099f962c1393eaa662bf11a18f98d9f100bdfb59e1c1209b5bb1465e6",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/analyze.py": "f555b0df8c897689a472a8e170ff3d2891ff6757ac4428fd3a7f7694baf7cb64",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/common.py": "59ad86dab9f9713dee568999f7be833372c0a18ae6712a2361c19e5c7efc611b",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/policy.py": "6446c0b07abde1aa4525e48a706b0e99643f869f1eacb7c12ff83df5d5a3eae4",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/prepare.py": "f3a28e6def9bc247d1cdb40c279a5f9e471523803bef79ad723d86729ddc46fb",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/rollout.py": "b118977c6411cb21c36d1f38150cf50325c37ac60750739202fff45cb5760711",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/runner.py": "0fa9283ed97f4ba23d4c6d21c2b50b7e639b147c20b40de3099c07928216eae8",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/server.py": "c06289bf5391ea0eac24df9b3033b24f96bb06a32d886134ef2d1d8f8134bd5f",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/test_calibration.py": "6f2cadf2946ef7d0b9670ef18691f9a0360e446bdac0c199e64d880d2fb3c7ba",
+              "preparations/ease_insights_20261103/baseline_recovery_v1/worker.py": "3bfe6ba1cce8b3ed32cda534a2ffc7a39c827c7ec62f87ef7fb80e470da8bd5f"
+            },
+            "backend_reused": "preparations.ease_insights_20261103.vlm.backend.Backend",
+            "policy_action_limits": {
+              "libero_spatial": 220,
+              "libero_object": 280,
+              "libero_goal": 300,
+              "libero_10": 520
+            },
+            "settling_actions": 10,
+            "legacy_sources_changed": false,
+            "no_task_filtering": true,
+            "scope": "Independent health calibration; no fast-path outcome claim",
+            "revision_hash": "2f93f28c30fa383083bb64092c346b41abd21824f22959a279200647a46edfb2"
+          },
+          "command_builder": "preparations.ease_insights_20261103.baseline_recovery_v1.runner.run(launch=False)",
+          "scientific_protocol_is_new": true,
+          "gate_scope": {
+            "gate_bank_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "evaluation_suites": [
+              "libero_spatial",
+              "libero_object",
+              "libero_goal",
+              "libero_10"
+            ],
+            "gate_covers_new_case_universe": false,
+            "gate_covers_all_new_prompts": false,
+            "scope": "Four old-bank observations and Full-only arithmetic; does not cover all40 new initial inputs",
+            "case_gate": "Actual official state, BDDL, prompt, first observation and noise are checked and paired per new case before prediction"
+          },
+          "policy_action_limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "settling_actions": 10,
+          "resource_lifecycle": "external borrower monitors retained original holders and owns only its new Popen children"
+        },
+        "manifest_hash": "3e63b3207b19b4df1c2ba0b34be38c1a4a76ceabd7a2d30c5d3abf7fd070a4b3",
+        "stage": "calibration",
+        "condition": "full_d10"
+      }
+    }
+  ],
+  "new_CUDA_started": false
+}

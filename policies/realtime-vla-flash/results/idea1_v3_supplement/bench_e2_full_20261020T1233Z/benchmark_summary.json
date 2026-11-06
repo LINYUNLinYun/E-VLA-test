@@ -1,0 +1,143 @@
+{
+  "config": {
+    "experiment": "E2",
+    "reference": "pi05Full"
+  },
+  "revision": "supplement-prompt-resident-replay-v1",
+  "physical_gpu": 0,
+  "gpu": {
+    "uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+    "memory_mb": 2.0
+  },
+  "model_load_s": 24.537747632712126,
+  "warmup_requests": 20,
+  "measured_requests": 100,
+  "replay_executed_actions": 500,
+  "total_request_ms": 10210.475403815508,
+  "measured_periodic_full_calls": 0,
+  "measured_full_cache_age_ranges": {
+    "rounds": null,
+    "env_steps": null
+  },
+  "measured_requests_with_full_cache_age": 0,
+  "mean_request_ms": 102.10475403815508,
+  "p50_request_ms": 101.64064913988113,
+  "p95_request_ms": 107.90979955345392,
+  "replay_ms_per_executed_action": 20.420950807631016,
+  "measured_requests_with_runtime_setup": 0,
+  "execution_safety": null,
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "XLA_FLAGS": null
+  },
+  "model_protocol": {
+    "model": "pi05_libero",
+    "H": 10,
+    "R": 5,
+    "D": 10,
+    "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+    "backend": "native OpenPI JAX",
+    "skip": [],
+    "mask": "Full",
+    "depth": 18,
+    "mask_semantics": "prefix-only hidden-update bypass, original-index KV shell; action expert complete",
+    "native_H_preserved": true,
+    "normalization_asset": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero/assets/physical-intelligence/libero/norm_stats.json"
+  },
+  "input_files": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_10/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_goal/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_object/task00/init00/profile_inputs.pkl",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/p0_20261019T143600Z/episodes/E1/E1_D2_tau0.15_P2/A/libero_spatial/task00/init00/profile_inputs.pkl"
+  ],
+  "input_sha256": [
+    "b6fb26601f05aff66a638fdc7291362f7baf65b73493fe688145751ac58ab4c1",
+    "670ac4149a750142094bdb98211e0e991caa4d2ce84f6a6d2bc38dbe97bd9ebb",
+    "476d2b31db71c8cf0490af99c3e14685224d0b83b3ca3e3fd4c7fa352004b779",
+    "f15e2bd768497da94978a7bc53ec1cef3a23a6768748d7350a59d394b60f708b"
+  ],
+  "state_boundary": "virtual ack; router reset before each actual sequence (or each five-point E2 repeat); not physically executed history",
+  "order": "prompt outermost; captured mode <=5 warm then full actual <=25-point sequence once, otherwise five warm then five measured repeats; persistent model/backend",
+  "timing_boundary": "full input/predict/decode including rejected draft+verify+immediate Full; startup separately; runtime setup flagged",
+  "interpretation": "same-input replay only, not closed-loop route distribution or causal deployment speedup",
+  "native_stage_checks": [
+    {
+      "sequence": 0,
+      "max_abs": 0.0019527673721313477,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 53.67812141776085,
+        "image_embedding_ms": 3244.0087608993053,
+        "vlm_prefill_ms": 4901.0145626962185,
+        "ae_d10_ms": 3371.298238635063,
+        "decode_ms": 1.5723854303359985,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 1,
+      "max_abs": 0.0019526481628417969,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 48.09259623289108,
+        "image_embedding_ms": 12.832574546337128,
+        "vlm_prefill_ms": 38.851089775562286,
+        "ae_d10_ms": 26.259317994117737,
+        "decode_ms": 1.8019229173660278,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 2,
+      "max_abs": 0.0019527673721313477,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 48.05348068475723,
+        "image_embedding_ms": 12.817587703466415,
+        "vlm_prefill_ms": 35.35836935043335,
+        "ae_d10_ms": 20.357884466648102,
+        "decode_ms": 2.1115094423294067,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    },
+    {
+      "sequence": 3,
+      "max_abs": 0.0019527077674865723,
+      "atol": 0.02,
+      "rtol": 0.02,
+      "passed": true,
+      "stages": {
+        "input_ms": 49.68719556927681,
+        "image_embedding_ms": 12.206804007291794,
+        "vlm_prefill_ms": 36.7482528090477,
+        "ae_d10_ms": 20.332831889390945,
+        "decode_ms": 1.3512633740901947,
+        "stage_revision": "v2-native-scanned-suffix",
+        "ae_compilation_structure": "native nn.scan",
+        "native_reference_ae_structure": "native nn.scan (supplement revision)",
+        "attribution": "bounded split-stage parity against new supplement native fused total; separate compilation/sync, not summed native latency",
+        "boundary": "diagnostic split JAX methods, each block_until_ready; extra boundaries may alter fusion"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6226 @@
+{
+  "schema_version": 1,
+  "quality_background_only": true,
+  "timing_comparison_permitted": false,
+  "comparison_scope": "same fixed 36-case cohort for every condition; post-hoc quality background, separate from five prespecified primary comparisons",
+  "exploration": "previously used exploratory cases, not unseen validation; bootstrap intervals unadjusted",
+  "manifest_hash": "cf9ac44ea0fede5f6c81249467e6f28ff52d1d28b2d068e15d29d097643cde2d",
+  "main_audit_passed": true,
+  "main_strict_prefix_exclusions": 0,
+  "main_raw_error_warm_exclusions": 0,
+  "background_source": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/full_d10_background_36.json",
+  "input_hashes": {
+    "full_d10_background_36.json": "103df284fc602bf2c817ac47e72969dd624e687b50241254f87824b29e87c572",
+    "episodes.csv": "bae131187e51acebd93f780a31d1b0be3d21df38125b6b2167cbef93bcf04830",
+    "summary.csv": "eab612ea7e456bbbb3ae6c98912f98c41f027e04f0dc2923bc6f55f8e44bd887",
+    "paired.csv": "4699ac59f530e688874861e5c827ad926499a75428f94b7084c221d23bdd0fa1",
+    "audit.json": "60b805b33a76cecbe6f5ed53a46000c452a379109039dc947db8e59a938af9c5"
+  },
+  "cohort": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "n": 36,
+  "full_success": 35,
+  "full_failed_cases": [
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    }
+  ],
+  "excluded_from_40": [
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 281034,
+    "method": "suite-stratified task clusters; same-task init observations together; task-balanced point differs from episode proportion on this 36-case subset"
+  },
+  "comparisons": [
+    {
+      "condition": "B4_B-R+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 25,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 69.44444444444444,
+      "recovered_cases": [
+        {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 19
+        }
+      ],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 1,
+      "new_failures": 11,
+      "episode_delta_pp": -27.77777777777778,
+      "task_balanced_delta_pp": -30.000000000000004,
+      "exploratory_ci_low_pp": -47.5,
+      "exploratory_ci_high_pp": -12.5,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 8
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 5
+        }
+      }
+    },
+    {
+      "condition": "B4_B-E+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 28,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 77.77777777777777,
+      "recovered_cases": [
+        {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 19
+        }
+      ],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 1,
+      "new_failures": 8,
+      "episode_delta_pp": -19.444444444444443,
+      "task_balanced_delta_pp": -20.0,
+      "exploratory_ci_low_pp": -37.5,
+      "exploratory_ci_high_pp": -5.0,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 8
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 6
+        }
+      }
+    },
+    {
+      "condition": "B4_F-R0",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 29,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 80.55555555555556,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 6,
+      "episode_delta_pp": -16.666666666666668,
+      "task_balanced_delta_pp": -20.0,
+      "exploratory_ci_low_pp": -32.5,
+      "exploratory_ci_high_pp": -7.500000000000001,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 8
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 9
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 6
+        }
+      }
+    },
+    {
+      "condition": "B4_F-R+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 24,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 66.66666666666667,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 11,
+      "episode_delta_pp": -30.555555555555557,
+      "task_balanced_delta_pp": -35.0,
+      "exploratory_ci_low_pp": -52.5,
+      "exploratory_ci_high_pp": -17.5,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 4
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 7
+        }
+      }
+    },
+    {
+      "condition": "B4_F-E+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 26,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 72.22222222222223,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 9,
+      "episode_delta_pp": -25.0,
+      "task_balanced_delta_pp": -27.499999999999996,
+      "exploratory_ci_low_pp": -45.0,
+      "exploratory_ci_high_pp": -12.5,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 7
+        }
+      }
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 25,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 69.44444444444444,
+      "recovered_cases": [
+        {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 19
+        }
+      ],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 1,
+      "new_failures": 11,
+      "episode_delta_pp": -27.77777777777778,
+      "task_balanced_delta_pp": -27.500000000000004,
+      "exploratory_ci_low_pp": -45.0,
+      "exploratory_ci_high_pp": -10.0,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 8
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 6
+        }
+      }
+    },
+    {
+      "condition": "B6_B-R+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 19,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 52.77777777777778,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 16,
+      "episode_delta_pp": -44.44444444444444,
+      "task_balanced_delta_pp": -47.5,
+      "exploratory_ci_low_pp": -65.0,
+      "exploratory_ci_high_pp": -30.0,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 4
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 4
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 6
+        }
+      }
+    },
+    {
+      "condition": "B6_B-E+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 18,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 50.0,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 17,
+      "episode_delta_pp": -47.22222222222222,
+      "task_balanced_delta_pp": -50.0,
+      "exploratory_ci_low_pp": -67.5,
+      "exploratory_ci_high_pp": -32.5,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 4
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 4
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 4
+        }
+      }
+    },
+    {
+      "condition": "B6_F-R0",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 18,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 50.0,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 17,
+      "episode_delta_pp": -47.22222222222222,
+      "task_balanced_delta_pp": -47.5,
+      "exploratory_ci_low_pp": -62.5,
+      "exploratory_ci_high_pp": -32.5,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 1
+        }
+      }
+    },
+    {
+      "condition": "B6_F-R+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 17,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 47.22222222222222,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_object",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 18,
+      "episode_delta_pp": -50.0,
+      "task_balanced_delta_pp": -52.5,
+      "exploratory_ci_low_pp": -70.0,
+      "exploratory_ci_high_pp": -34.93750000000034,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 3
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 3
+        }
+      }
+    },
+    {
+      "condition": "B6_F-E+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 24,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 66.66666666666667,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 11,
+      "episode_delta_pp": -30.555555555555557,
+      "task_balanced_delta_pp": -32.5,
+      "exploratory_ci_low_pp": -50.0,
+      "exploratory_ci_high_pp": -15.000000000000002,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 7
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 5
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 6
+        }
+      }
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "n": 36,
+      "full_success": 35,
+      "candidate_success": 21,
+      "full_percent": 97.22222222222223,
+      "candidate_percent": 58.333333333333336,
+      "recovered_cases": [],
+      "new_failure_cases": [
+        {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_goal",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 3,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_goal",
+          "task": 5,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 5,
+          "init": 20
+        },
+        {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 20
+        },
+        {
+          "suite": "libero_spatial",
+          "task": 9,
+          "init": 19
+        },
+        {
+          "suite": "libero_10",
+          "task": 9,
+          "init": 19
+        }
+      ],
+      "recovered": 0,
+      "new_failures": 14,
+      "episode_delta_pp": -38.888888888888886,
+      "task_balanced_delta_pp": -40.0,
+      "exploratory_ci_low_pp": -57.49999999999999,
+      "exploratory_ci_high_pp": -25.0,
+      "suites": {
+        "libero_spatial": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_object": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_goal": {
+          "n": 9,
+          "full_success": 9,
+          "candidate_success": 6
+        },
+        "libero_10": {
+          "n": 9,
+          "full_success": 8,
+          "candidate_success": 3
+        }
+      }
+    }
+  ],
+  "case_records": [
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": true,
+      "delta": 1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": true,
+      "delta": 1
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": true,
+      "delta": 1
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B4_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_B-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R0",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-R+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-E+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 1,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 3,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 5,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 19
+      },
+      "full_success": false,
+      "candidate_success": false,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 7,
+        "init": 20
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_object",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_goal",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": true,
+      "delta": 0
+    },
+    {
+      "condition": "B6_F-Fixed+",
+      "case": {
+        "suite": "libero_10",
+        "task": 9,
+        "init": 19
+      },
+      "full_success": true,
+      "candidate_success": false,
+      "delta": -1
+    }
+  ],
+  "created_time": 1793539402.0303764,
+  "comparison_hash": "9a18bf3512245a213459ea493ad5b6eee2bfdb9af8737a0c757fe08d7c14d229"
+}

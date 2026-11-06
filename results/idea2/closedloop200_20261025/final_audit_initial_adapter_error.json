@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "pending": [
+    "See traceback"
+  ],
+  "cpu_only": true,
+  "checks": 4819,
+  "traceback": "Traceback (most recent call last):\n  File \"/root/nfs/embodied/benchmark/results/idea2/closedloop200_20261025/final_audit.py\", line 219, in main\n    try:result=audit()\n               ^^^^^^^\n  File \"/root/nfs/embodied/benchmark/results/idea2/closedloop200_20261025/final_audit.py\", line 107, in audit\n    c=original_cases[key];guard(c,c['gpu_before']['uuid']);require(c['client_exit_code']==0 and c['parent_drain']['ok'],'Pilot process/drain')\n      ~~~~~~~~~~~~~~^^^^^\nKeyError: ('fresh18', 'libero_object', 0, 0)\n",
+  "audit_source_sha256": "4d27064c108746d665c01265a8b586595aede51809f366cd4b1f50d1a29cafb8",
+  "classification": "audit_adapter_error_old_numeric_arm",
+  "experimental_data_failure": false
+}

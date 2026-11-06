@@ -1,0 +1,52 @@
+{
+  "protocol": "continuous_actor20Hz_latest_completed_target_R5",
+  "cases_per_arm": 100,
+  "total_primary_episodes": 300,
+  "configurations": [
+    "fresh18_no_encoder",
+    "sm16_no_encoder",
+    "sm16_encoder"
+  ],
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "checkpoint_files_stat": {
+    "model.safetensors": {
+      "bytes": 7233650408,
+      "mtime_ns": 1792577489209432139
+    },
+    "config.json": {
+      "bytes": 149,
+      "mtime_ns": 1792577491579431649
+    }
+  },
+  "weight_bytes_fully_rehashed": false,
+  "model": "full pi05_libero BF16 body B1 D10 H10 R5",
+  "environment_seed": 7,
+  "settling_steps": 10,
+  "control_hz": 20,
+  "sampling_noise": "original model_seed(suite,task,init,consumed_chunk_id); candidates of same target share same explicit noise",
+  "gpu_shards": {
+    "0": {
+      "gpu": 2,
+      "egl": 1,
+      "cpus": "0-15"
+    },
+    "1": {
+      "gpu": 3,
+      "egl": 0,
+      "cpus": "96-111"
+    }
+  },
+  "primary_gates": [
+    "gate_gpu2_v3",
+    "gate_gpu3_v3"
+  ],
+  "excluded_preliminary_protocol": [
+    "gate_gpu2_v2",
+    "gate_gpu3_v2"
+  ],
+  "old_synchronous_results_reused": false,
+  "old_one_chunk_lag_results_reused": false,
+  "baseline_preparation": "all three conditions hoist backend.prepare; only next Vision graph replay changes in encoder ablation",
+  "approval_scope": "user requested full-pipeline closed-loop success evaluation and previously allowed frame-latency tradeoff experiments",
+  "plan": "docs/experiments/idea2/idea2_continuous_encoder_plan_20261026.md"
+}

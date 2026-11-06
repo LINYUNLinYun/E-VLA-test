@@ -1,0 +1,195 @@
+{
+  "audit_scope": "CPU-only restricted checkpoint metadata and source inspection; no inference, no tensor values dumped, no weight hashes",
+  "loader": {
+    "weights_only": true,
+    "map_location": "cpu",
+    "mmap": true
+  },
+  "released_heads": [
+    {
+      "suite": "libero_spatial",
+      "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/draft_libero_spatial.pt",
+      "top_keys": [
+        "draft_head",
+        "meta"
+      ],
+      "meta": {
+        "chunk_m": 50,
+        "out_dim": 7,
+        "img_dim": 2048,
+        "draft_head_version": 2,
+        "draft_arch": "vlm1_query_decoder",
+        "draft_input_mode": "prefix_embs",
+        "draft_history_len": 6,
+        "draft_seed_len": 0,
+        "draft_hidden_dim": 16384,
+        "draft_hidden_size": 2048,
+        "draft_num_heads": 8,
+        "draft_num_kv_heads": 1,
+        "draft_head_dim": 256,
+        "draft_gripper_mode": "continuous",
+        "use_last_actions": false,
+        "use_seed_actions": false,
+        "cache_run_dir": "/mlp_vepfs/share/njh/star_cache/star_cache_pi0_libero_f0139b6b8b1a",
+        "target_source": "teacher_zero_noise",
+        "teacher_noise_mode": "zero",
+        "sample_semantics": "sliding_chunk_shift_v2",
+        "loss_prefix_mode": "sampled_prefix",
+        "loss_prefix_cap": 12,
+        "loss_gamma_prefix": 0.9,
+        "loss_gamma_tail": 1.0,
+        "loss_tail_weight": 0.1,
+        "best_val_weighted_huber": 0.08399102840572596,
+        "best_val_rms_exec": 0.2289832764863968,
+        "best_val_rms_all": 0.2612430773973465,
+        "eval_exec_steps": 12
+      },
+      "original_cache_directory_exists": false,
+      "training_normalization_fields_present": []
+    },
+    {
+      "suite": "libero_object",
+      "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/draft_libero_object.pt",
+      "top_keys": [
+        "draft_head",
+        "meta"
+      ],
+      "meta": {
+        "chunk_m": 50,
+        "out_dim": 7,
+        "img_dim": 2048,
+        "draft_arch": "vlm1_query_decoder",
+        "draft_input_mode": "prefix_embs",
+        "draft_hidden_size": 2048,
+        "draft_num_heads": 8,
+        "draft_num_kv_heads": 1,
+        "draft_head_dim": 256,
+        "draft_gripper_mode": "continuous",
+        "use_last_actions": false,
+        "use_seed_actions": false,
+        "cache_run_dir": "/mlp_vepfs/share/njh/star_cache/star_cache_pi0_libero_185220a6afac",
+        "target_source": "teacher_zero_noise",
+        "teacher_noise_mode": "zero",
+        "sample_semantics": "sliding_chunk_shift_v2",
+        "loss_prefix_mode": "sampled_prefix",
+        "loss_prefix_cap": 12,
+        "loss_gamma_prefix": 0.9,
+        "loss_gamma_tail": 1.0,
+        "loss_tail_weight": 0.1,
+        "best_val_weighted_huber": 0.05407686955481768,
+        "best_val_rms_exec": 0.17803088003396988,
+        "best_val_rms_all": 0.20523517161607743,
+        "eval_exec_steps": 12
+      },
+      "original_cache_directory_exists": false,
+      "training_normalization_fields_present": []
+    },
+    {
+      "suite": "libero_goal",
+      "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/draft_libero_goal.pt",
+      "top_keys": [
+        "draft_head",
+        "meta"
+      ],
+      "meta": {
+        "chunk_m": 50,
+        "out_dim": 7,
+        "img_dim": 2048,
+        "draft_arch": "vlm1_query_decoder",
+        "draft_input_mode": "prefix_embs",
+        "draft_hidden_size": 2048,
+        "draft_num_heads": 8,
+        "draft_num_kv_heads": 1,
+        "draft_head_dim": 256,
+        "use_last_actions": false,
+        "use_seed_actions": false,
+        "cache_run_dir": "/mlp_vepfs/share/njh/star_cache/star_cache_pi0_libero_32633a855f07",
+        "target_source": "teacher_zero_noise",
+        "teacher_noise_mode": "zero",
+        "sample_semantics": "sliding_chunk_shift_v2",
+        "loss_prefix_mode": "sampled_prefix",
+        "loss_prefix_cap": 12,
+        "loss_gamma_prefix": 0.9,
+        "loss_gamma_tail": 1.0,
+        "loss_tail_weight": 0.1,
+        "best_val_weighted_huber": 0.058336661402136086,
+        "best_val_rms_exec": 0.19874830240011215,
+        "best_val_rms_all": 0.25713533359766005,
+        "eval_exec_steps": 12
+      },
+      "original_cache_directory_exists": false,
+      "training_normalization_fields_present": []
+    },
+    {
+      "suite": "libero_10",
+      "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/draft_libero_10.pt",
+      "top_keys": [
+        "draft_head",
+        "meta"
+      ],
+      "meta": {
+        "chunk_m": 50,
+        "out_dim": 7,
+        "img_dim": 2048,
+        "draft_arch": "vlm1_query_decoder",
+        "draft_input_mode": "prefix_embs",
+        "draft_hidden_size": 2048,
+        "draft_num_heads": 8,
+        "draft_num_kv_heads": 1,
+        "draft_head_dim": 256,
+        "use_last_actions": false,
+        "use_seed_actions": false,
+        "cache_run_dir": "/mlp_vepfs/share/njh/star_cache/star_cache_pi0_libero_10",
+        "target_source": "teacher_zero_noise",
+        "teacher_noise_mode": "zero",
+        "sample_semantics": "sliding_chunk_shift_v2",
+        "loss_prefix_mode": "sampled_prefix",
+        "loss_prefix_cap": 12,
+        "loss_gamma_prefix": 0.9,
+        "loss_gamma_tail": 1.0,
+        "loss_tail_weight": 0.1,
+        "best_val_weighted_huber": 0.08551505393907428,
+        "best_val_rms_exec": 0.21192620438337326,
+        "best_val_rms_all": 0.25996617805957795,
+        "eval_exec_steps": 12
+      },
+      "original_cache_directory_exists": false,
+      "training_normalization_fields_present": []
+    }
+  ],
+  "current_inference_norm_asset": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/assets/physical-intelligence/libero/norm_stats.json",
+    "sha256": "dae37d79a22108af83df9189c6710a3ec8e077d65b28e34bdf1da724e5ae30f1",
+    "keys": [
+      "state",
+      "actions"
+    ]
+  },
+  "converted_draft_metadata": {
+    "draft_spatial": {
+      "manifest_keys": [
+        "prompts"
+      ],
+      "asset_directory_exists": false
+    },
+    "draft_object": {
+      "manifest_keys": [
+        "prompts"
+      ],
+      "asset_directory_exists": false
+    },
+    "draft": {
+      "manifest_keys": [
+        "prompts"
+      ],
+      "asset_directory_exists": false
+    },
+    "draft_10": {
+      "manifest_keys": [
+        "prompts"
+      ],
+      "asset_directory_exists": false
+    }
+  },
+  "conclusion": "The current code uses the base checkpoint normalization contract. Published head metadata does not independently establish equality of the actual four training norm-stat files."
+}

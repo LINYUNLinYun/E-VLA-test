@@ -1,0 +1,286 @@
+{
+  "conditions": [
+    {
+      "id": "v12_comp_error_stride2_extrapolate",
+      "base_id": "v12_comp_error_extrapolate",
+      "budget": 12,
+      "skip_count": 6,
+      "refresh_stride": 2,
+      "method": "comp_error",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate",
+      "jacobian_model_steps": 10
+    },
+    {
+      "id": "v12_comp_error_stride3_extrapolate",
+      "base_id": "v12_comp_error_extrapolate",
+      "budget": 12,
+      "skip_count": 6,
+      "refresh_stride": 3,
+      "method": "comp_error",
+      "model": "pi0",
+      "mode": "periodic",
+      "period": 3,
+      "full_steps": 10,
+      "fast_steps": 2,
+      "H": 50,
+      "R": 5,
+      "compensation": "extrapolate",
+      "jacobian_model_steps": 10
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_4_E2_sparse_refresh/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_E2_sparse_refresh/policy.py": "889e75029f4fc4c6b4e7737fa6d07c56762599ca2a009ef2bf1b35a46158f21b",
+    "preparations/idea1_v3_4_E2_sparse_refresh/common.py": "d8ad97a04bb8188d1f59a1278a02f441fc118cd0843c1bad0f8383ea9898d6ff",
+    "preparations/idea1_v3_4_E2_sparse_refresh/controller.py": "1d8e93356cc6e0ca91a61fa51f6da7b259eabc2704d3c674eb7f39e1f019de72",
+    "preparations/idea1_v3_4_E2_sparse_refresh/server.py": "b204b216d4fe2150c3d18d4090dc899bd02e6ffa5ed65fa0062bbd7f9ba15710",
+    "preparations/idea1_v3_4_E2_sparse_refresh/evaluate.py": "39be7fd12f44002c15b67a62acd5d0d65ea3838cea5311016a325eecabbdd46e",
+    "preparations/idea1_v3_4_E2_sparse_refresh/verify.py": "82f8930a1a1350755b188b61afa41b348686a84e1397689880822479824d9606",
+    "preparations/idea1_v3_4_E2_sparse_refresh/preflight.py": "b7785a979b71a3ad3c3d615ad8d854111a40769faa68a91ff55d298f5d83c1a2",
+    "preparations/idea1_v3_4_E2_sparse_refresh/finish.py": "3d30ea0bc9a7d73d9e3c06b87bab127ebd03d0406ce9e5d5c262ab7832b59af3",
+    "preparations/idea1_v3_4/analyze.py": "b1f4a34aea0c3e4193b3c01d115203f3ff078dc013768dd0309056bd8df89712",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/finish.py": "d9cfeb8a70eeb0b1dfd2e8d1f4d3a837fbeff18e54f77ca471a801c3bd2befd6",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_4_E2_max2_repair/evaluate.py": "ec80c95f9390a52214b3b702a750370a9bd605c602219c7fb543d1cc03390910",
+    "preparations/idea1_v3_4_E2_cycle3/common.py": "7b18d6794f01a1048c2c27ac44625609b6227dc52709bcbef4c347844f04ec57",
+    "preparations/idea1_v3_4_E2_cycle3/selection.py": "aec9931a82ad4beeb29ee029686529b53a454d00473904263433609db3cc96ec",
+    "preparations/idea1_v3_4_E2_cycle3/policy.py": "8ab6b8e1dbd149662a460f17bae524e83fb0ef0be9d4be30747ceb73d05131c7",
+    "preparations/idea1_v3_4_E2_cycle3_full10_jacobian/model.py": "3fb1503c7ec493d9ebc05750f7066d2f97bb5d6e86d935deda98614953e000b0",
+    "preparations/idea1_v3_4_E2_online_time_weights/selector.py": "80df545d65ad05c4054a3f3fda4b8b9f1a096630ce3f0838d9c53c35a635601b",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v3_4_E2_cycle3_extrapolate/backend.py": "b810f4e9cb24659b7e4364f42a8f5260ddb39f252a974e2e8d63c9f0652e5e60",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3_4_E2_comp_error_cost/model.py": "c8bf10288442f46c8d10fb81380e6e076f8e60d8f92254e82da471a1ba1a21c0",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "plan_sha256": "ed2f9650982905c3792ef18fae88e99ae1df2cc0f40fd60ee5f0d4c39f493546",
+  "references": {
+    "results/idea1_v3_4_E2_comp_error_closedloop/manifest.json": "cd13e62f51a46e244147de715cbecf05a7d5848ec7e32946bec62aed1a06dbb9",
+    "results/idea1_v3_4_E2_comp_error_closedloop/summary.csv": "cbb50f9ba0c9eb0107380047e750a2458cbf53face234d9008d784c482498f56",
+    "results/idea1_v3_4_E2_comp_error_closedloop/audit.json": "bcd4f88544af93700b4bae5620f2954303e80d92dac403df110aaf4cf8c103a3",
+    "results/idea1_v3_4_E2_cycle3_extrapolate/static_mask_reference.json": "0dac09c5164848299449851b9fb1c611e31a0b97fca2ae2c26074001b1af6163",
+    "results/idea1_v3_4_E2_comp_error_cost/manifest.json": "392e5d7d86d3534f717976b71acc696ab363eb09fe5c730ea14939a33cf889f6",
+    "results/idea1_v3_4_E2_comp_error_cost/summary.json": "687c11a201c9ba53979ac73cc13153cc79c7e0119ecc75836ae5814ba1967a88",
+    "results/idea1_v3_4_E2_comp_error_closedloop/prefix_audit.json": "4733f09038ebb40e35e618bf835eaa6784364fa2e33b63cb4f6cb2bf9cf399d7"
+  },
+  "steady_block_start_replan": 18,
+  "steady_block_requests": 18,
+  "refresh_phase": "cycle zero then every stride cycles",
+  "schedule": [
+    "full10",
+    "fast2",
+    "fast2"
+  ],
+  "time": 1793429529.8528466,
+  "manifest_hash": "8036efb6e9c8ccf4258c20c2b9f5c497040474ff817652f7bfa046017107345f"
+}

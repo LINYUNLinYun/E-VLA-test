@@ -1,0 +1,477 @@
+{
+  "status": "passed",
+  "scope": "Completed independent CPU evidence and final report audit. Scoped limitations retained; no GPU launched by auditor.",
+  "updated_utc": "2026-10-25T05:06:24.026307+00:00",
+  "same_task_bank": {
+    "checks": {
+      "original_hash": true,
+      "selected_hash": true,
+      "count": true,
+      "one_instruction": true,
+      "exact_selected_records": true
+    },
+    "passed": true,
+    "manifest": "results/idea2/progressive_kv_20261025/same_task_bank.json",
+    "hash": "18c86a476e15d17e6e99393f6c326b7f726064cd7652705193ab50af6f8fb756"
+  },
+  "excluded_original_inputs": {
+    "original_bank_rows": 100,
+    "instruction_count": 8,
+    "cases": [
+      "gate_v2.result.json",
+      "screen/result.json",
+      "formal/result.json"
+    ],
+    "reason": "Original bank traverses 8 task instructions within an epoch; violates same-task fixed-mask premise. Preserve as cross-task diagnostics, do not rank as intended same-task runs."
+  },
+  "original_gate_diagnostic": {
+    "status": "excluded_cross_task_bank",
+    "rows": 12,
+    "matched_schedule_max_abs": 0.0,
+    "not_same_task_evidence": true
+  },
+  "original_screen_diagnostic": {
+    "status": "excluded_cross_task_bank",
+    "rows": 1620,
+    "paired_rows": 1600,
+    "paired_groups": 200,
+    "matched_input_signatures_by_pair": true,
+    "verification_rows": 20,
+    "matched_schedule_max_abs": 0.0,
+    "all_frontiers_monotonic_length10": true,
+    "fresh18_all_new": true,
+    "source_unchanged": true,
+    "source_matches_current": true,
+    "scratch_bytes": 991232,
+    "kv_addresses_per_slot": [
+      36,
+      36
+    ],
+    "kv_addresses_disjoint": true
+  },
+  "replacement_gate": {
+    "path": "results/idea2/progressive_kv_20261025/gate_same_task.result.json",
+    "observed_status": "passed",
+    "rows_observed": 12,
+    "actual_steps_all_10": true,
+    "matched_schedule_max_abs": 0.0,
+    "frontier_checks_passed": true,
+    "epochs": [
+      1,
+      2
+    ],
+    "slots": [
+      0,
+      1
+    ],
+    "tickets": {
+      "registered": 3,
+      "claimed": 3,
+      "reset_drained": 0
+    },
+    "gate_script_sha256": "28eff1ece6ea08f0784e572d08274184487f1e71f9d2fd9a139d96715f67e9f2",
+    "result_sha256": "c6a98a593b3f05d9719ee93f8c4b95f56c8bfaf78ec3473dbbb173bbba555077",
+    "scope": "Gate source points at verified same_task_bank; result itself lacks embedded bank/source hashes. Final formal runs must supply those hashes."
+  },
+  "findings": [
+    {
+      "id": "input_contract",
+      "severity": "required",
+      "status": "resolved_same_task_gate_formal_repeat_verified",
+      "action": "Corrected single-instruction bank used; original cross-task runs excluded."
+    },
+    {
+      "id": "latency_name",
+      "severity": "required_reporting",
+      "status": "resolved_csv_and_report",
+      "action": "Capacity CSV labels loop_iteration_host_ms; true admission and capture times restricted to SLO driver."
+    },
+    {
+      "id": "camera_queue",
+      "severity": "required",
+      "status": "resolved_replacement_driver_and_3200_rows_verified",
+      "action": "Latest-arrived bounded driver verified; source/drop/age accounting and null bootstrap age pass."
+    },
+    {
+      "id": "runtime_events",
+      "severity": "scope_limit",
+      "status": "static_review_passed",
+      "action": "Preserve two distinct reader tail events; current metadata only; producer reset Event precedes frontier snapshot; retained per-request Event references survive future slot overwrite."
+    },
+    {
+      "id": "closedloop_task_reset",
+      "severity": "scope_limit",
+      "status": "static_and_40_terminal_cases_passed",
+      "action": "Reset/bootstrap and raw episode evidence passed for all 40 scoped cases. No next Encoder in closed-loop; no full LIBERO claim."
+    }
+  ],
+  "requirements": [
+    {
+      "id": "same_task_gate",
+      "state": "passed_scoped_evidence",
+      "requirement": "Matched-frontier serial oracle, reset, two-slot/ahead correctness on corrected bank"
+    },
+    {
+      "id": "formal_repeat",
+      "state": "passed_scoped_evidence",
+      "requirement": "Four lead Encoder variants and fresh18 controls: 100 alternating trajectory groups plus continuous and independent reverse repeat"
+    },
+    {
+      "id": "trace",
+      "state": "passed_scoped_evidence",
+      "requirement": "Actual Kernel overlap and AE/next Encoder completion deltas for representative leads"
+    },
+    {
+      "id": "slo",
+      "state": "passed_scoped_evidence",
+      "requirement": "Corrected 33/62ms latest-available camera source/drop/age metrics plus repeats"
+    },
+    {
+      "id": "quality",
+      "state": "passed_scoped_evidence",
+      "requirement": "40 finite closed-loop case artifacts, original seeds/actions/EEF and scoped quality statement"
+    },
+    {
+      "id": "delivery",
+      "state": "passed_report_links_and_conclusions",
+      "requirement": "Final report/CSV/commands/source hashes, negative records and requirement-by-requirement closure"
+    }
+  ],
+  "closedloop_terminal_audit": {
+    "status": "passed",
+    "checks": 11074,
+    "failures": [],
+    "modes": {
+      "lead0": {
+        "episodes": 8,
+        "success": 8,
+        "steps": 1149,
+        "requests": 234
+      },
+      "lead1": {
+        "episodes": 8,
+        "success": 8,
+        "steps": 1146,
+        "requests": 233
+      },
+      "lead3": {
+        "episodes": 8,
+        "success": 8,
+        "steps": 1200,
+        "requests": 243
+      },
+      "lead6": {
+        "episodes": 8,
+        "success": 8,
+        "steps": 1178,
+        "requests": 238
+      },
+      "fresh18": {
+        "episodes": 8,
+        "success": 8,
+        "steps": 1181,
+        "requests": 239
+      }
+    },
+    "bootstrap_exact_comparisons": 32,
+    "source_files": 71,
+    "source_mismatches": [],
+    "shutdown_source_unchanged": true,
+    "screen_same_task": {
+      "status": "passed",
+      "bank_hash_matches": true,
+      "sources_unchanged": true,
+      "source_mismatches": []
+    },
+    "scope": "CPU raw-artifact audit; no GPU executed; closed-loop quality subset, no future encoder and not matched-input performance"
+  },
+  "gpu1_formal_exclusion": {
+    "status": "excluded_gpu_interference",
+    "evidence": "results/idea2/progressive_kv_20261025/gpu1_interference.json",
+    "excluded_whole_run": "formal_same_task",
+    "replacement": "GPU2 isolated matrix ongoing"
+  },
+  "final_evidence_audit": {
+    "status": "passed",
+    "checked_utc": "2026-10-25T05:00:28.298778+00:00",
+    "cpu_only": true,
+    "checks": 85612,
+    "errors": [],
+    "matrices": {
+      "gpu2_confirmation_matrix": [
+        "formal_same_task_gpu2",
+        "repeat_same_task_gpu2",
+        "profile_lead0_encoder_same_task_gpu2",
+        "profile_lead3_encoder_same_task_gpu2",
+        "profile_lead6_encoder_same_task_gpu2",
+        "profile_lead18_encoder_same_task_gpu2",
+        "slo_33ms_same_task_gpu2",
+        "slo_33ms_repeat_same_task_gpu2",
+        "slo_62ms_same_task_gpu2",
+        "slo_62ms_repeat_same_task_gpu2"
+      ],
+      "gpu0_resource_clean_matrix": [
+        "gpu0_resource_sm16_cleanup_gate",
+        "gpu0_resource_sm16_lead3_screen_clean",
+        "gpu0_resource_sm32_lead3_screen_clean",
+        "gpu0_encoder_after_step4_lead3_screen_clean",
+        "gpu0_encoder_after_step7_lead3_screen_clean",
+        "gpu0_full_control_repeat_clean"
+      ],
+      "gpu0_selected_resource_confirmation_matrix": [
+        "gpu0_full_control_formal",
+        "gpu0_sm16_lead3_formal",
+        "gpu0_sm16_lead3_repeat",
+        "gpu0_full_control_formal_repeat",
+        "gpu0_full_lead3_profile",
+        "gpu0_sm16_lead3_profile",
+        "gpu0_sm32_exposure_profile"
+      ],
+      "gpu3_resource_slo_matrix": [
+        "gpu3_sm16_slo_33ms",
+        "gpu3_sm16_slo_33ms_repeat",
+        "gpu3_sm16_slo_62ms",
+        "gpu3_sm16_slo_62ms_repeat"
+      ]
+    },
+    "capacity": {
+      "formal_same_task_gpu2": {
+        "rows": 5412,
+        "groups": 612,
+        "phase_counts": {
+          "verification": 12,
+          "paired": 4800,
+          "continuous": 600
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+      },
+      "repeat_same_task_gpu2": {
+        "rows": 5412,
+        "groups": 612,
+        "phase_counts": {
+          "verification": 12,
+          "paired": 4800,
+          "continuous": 600
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+      },
+      "gpu0_full_control_formal": {
+        "rows": 2706,
+        "groups": 306,
+        "phase_counts": {
+          "verification": 6,
+          "paired": 2400,
+          "continuous": 300
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+      },
+      "gpu0_sm16_lead3_formal": {
+        "rows": 902,
+        "groups": 102,
+        "phase_counts": {
+          "verification": 2,
+          "paired": 800,
+          "continuous": 100
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+      },
+      "gpu0_sm16_lead3_repeat": {
+        "rows": 902,
+        "groups": 102,
+        "phase_counts": {
+          "verification": 2,
+          "paired": 800,
+          "continuous": 100
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+      },
+      "gpu0_full_control_formal_repeat": {
+        "rows": 2706,
+        "groups": 306,
+        "phase_counts": {
+          "verification": 6,
+          "paired": 2400,
+          "continuous": 300
+        },
+        "oracle_max_abs": 0.0,
+        "gpu": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+      }
+    },
+    "slo": {
+      "slo_33ms_same_task_gpu2": {
+        "rows": 700,
+        "groups": 7,
+        "scope": "same-GPU seven-arm age comparison"
+      },
+      "slo_33ms_repeat_same_task_gpu2": {
+        "rows": 700,
+        "groups": 7,
+        "scope": "same-GPU seven-arm age comparison"
+      },
+      "slo_62ms_same_task_gpu2": {
+        "rows": 700,
+        "groups": 7,
+        "scope": "same-GPU seven-arm age comparison"
+      },
+      "slo_62ms_repeat_same_task_gpu2": {
+        "rows": 700,
+        "groups": 7,
+        "scope": "same-GPU seven-arm age comparison"
+      },
+      "gpu3_sm16_slo_33ms": {
+        "rows": 100,
+        "groups": 1,
+        "scope": "Absolute candidate ages only; no unrestricted same-GPU baseline and no cross-GPU budget decision"
+      },
+      "gpu3_sm16_slo_33ms_repeat": {
+        "rows": 100,
+        "groups": 1,
+        "scope": "Absolute candidate ages only; no unrestricted same-GPU baseline and no cross-GPU budget decision"
+      },
+      "gpu3_sm16_slo_62ms": {
+        "rows": 100,
+        "groups": 1,
+        "scope": "Absolute candidate ages only; no unrestricted same-GPU baseline and no cross-GPU budget decision"
+      },
+      "gpu3_sm16_slo_62ms_repeat": {
+        "rows": 100,
+        "groups": 1,
+        "scope": "Absolute candidate ages only; no unrestricted same-GPU baseline and no cross-GPU budget decision"
+      }
+    },
+    "traces": [
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_lead0_encoder_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 9.45766425,
+        "AE_x_nextVision_ms": 9.338927
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_lead3_encoder_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 9.017495125,
+        "AE_x_nextVision_ms": 8.555878
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_lead6_encoder_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 7.48831,
+        "AE_x_nextVision_ms": 8.359160857142857
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_lead18_encoder_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 0.0,
+        "AE_x_nextVision_ms": 8.364848714285715
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_full_lead3_encoder_gpu0_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 9.191184,
+        "AE_x_nextVision_ms": 7.8944027142857145
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_sm16_lead3_encoder_gpu0_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 34.124268875,
+        "AE_x_nextVision_ms": 0.0
+      },
+      {
+        "trace": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/progressive_kv_sm32_lead3_encoder_gpu0_20261025_v1.nsys-rep",
+        "requests": 8,
+        "profile_rows": 8,
+        "AE_x_currentVLM_ms": 37.4840495,
+        "AE_x_nextVision_ms": 0.0
+      }
+    ],
+    "quality_cases": 56,
+    "quality_requests": 1708,
+    "quality_configurations": [
+      {
+        "configuration": "normal_lead0",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1149
+      },
+      {
+        "configuration": "normal_lead1",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1146
+      },
+      {
+        "configuration": "normal_lead3",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1200
+      },
+      {
+        "configuration": "normal_lead6",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1178
+      },
+      {
+        "configuration": "normal_fresh18",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1181
+      },
+      {
+        "configuration": "sm16_lead3",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1220
+      },
+      {
+        "configuration": "sm32_lead3",
+        "valid_cases": 8,
+        "successes": 8,
+        "total_steps": 1340
+      }
+    ],
+    "exclusions": {
+      "gate_v2.result.json": "excluded_cross_task_bank",
+      "screen/result.json": "excluded_cross_task_bank",
+      "formal/result.json": "excluded_cross_task_bank",
+      "formal_same_task/result.json": "excluded_gpu_interference",
+      "gpu0_resource_sm16_lead3_screen/result.json": "excluded_cleanup_failure"
+    },
+    "limitations": [
+      "Resource comparison uses GPU0 separate-process ABBA blocks, not paired within-capture resource switches.",
+      "GPU3 resource SLO has absolute ages only; no GPU3 full-card baseline or 5% budget verdict.",
+      "56 closed-loop episodes are a small quality subset; no future Encoder lookahead in closed-loop.",
+      "GPU2 and GPU0/GPU3 timings cannot be ranked directly."
+    ]
+  },
+  "pending": [],
+  "report_audit": {
+    "status": "passed",
+    "path": "docs/experiments/idea2/idea2_progressive_kv_report_20261025.md",
+    "sha256": "b6fd1936fd970e79e6b555d6a3b990de3c5c4308fde6d06a9b06f02728e10827",
+    "local_links_checked": 29,
+    "missing_links": [],
+    "checks": [
+      "Paired Event spans separated from 8-request all-work and continuous throughput.",
+      "GPU0 separate-process resource ABBA blocks; no cross-GPU performance ranking.",
+      "SM32 screen-only explicitly limited.",
+      "GPU3 resource SLO absolute ages only; no 5% budget verdict.",
+      "62ms fresh Encoder P95 179.54/131.76 and fail/pass retained.",
+      "Profile Host submission disturbance explicit; actual kernel overlap separated from no-profiler latency.",
+      "Matched-frontier exact implementation oracle separated from approximate-vs-fresh quality differences.",
+      "All quality aggregate rows populated from CSV.",
+      "Reproduction pins CUDA_VISIBLE_DEVICES to matching GPU UUID."
+    ]
+  }
+}

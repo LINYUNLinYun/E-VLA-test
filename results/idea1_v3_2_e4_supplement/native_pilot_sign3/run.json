@@ -1,0 +1,196 @@
+{
+  "status": "complete",
+  "environment": "calvin",
+  "family": "calvin_abc_d_native",
+  "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+  "created_utc": "2026-10-22T07:24:30.684768+00:00",
+  "controller_pid": 3325162,
+  "scientific_unit": "official5-subtask sequence",
+  "sequences": [
+    {
+      "index": 0,
+      "initial_condition": {
+        "led": 1,
+        "lightbulb": 1,
+        "slider": "left",
+        "drawer": "open",
+        "red_block": "slider_left",
+        "blue_block": "table",
+        "pink_block": "slider_right",
+        "grasped": 0
+      },
+      "tasks": [
+        "rotate_blue_block_right",
+        "move_slider_right",
+        "lift_red_block_slider",
+        "place_in_slider",
+        "turn_off_lightbulb"
+      ]
+    },
+    {
+      "index": 1,
+      "initial_condition": {
+        "led": 1,
+        "lightbulb": 1,
+        "slider": "right",
+        "drawer": "open",
+        "red_block": "slider_right",
+        "blue_block": "table",
+        "pink_block": "slider_left",
+        "grasped": 0
+      },
+      "tasks": [
+        "turn_off_led",
+        "push_into_drawer",
+        "lift_blue_block_drawer",
+        "place_in_slider",
+        "close_drawer"
+      ]
+    },
+    {
+      "index": 2,
+      "initial_condition": {
+        "led": 0,
+        "lightbulb": 1,
+        "slider": "right",
+        "drawer": "closed",
+        "red_block": "table",
+        "blue_block": "slider_right",
+        "pink_block": "slider_left",
+        "grasped": 0
+      },
+      "tasks": [
+        "lift_pink_block_slider",
+        "place_in_slider",
+        "open_drawer",
+        "rotate_red_block_right",
+        "lift_red_block_table"
+      ]
+    }
+  ],
+  "modes": [
+    "full_d10",
+    "v14_d10"
+  ],
+  "pilot": true,
+  "sequence_file_sha256": "6831fc1c6c4639b92ee51db8c73eb3edf22f8900d4ab9ada3114a51258f173dd",
+  "canonical_sequence_sha256": "4b23b7b61ed2257415c6b3c8d2e3174f3f7e29804a4f3f051c9eafed8ecd4e15",
+  "source_files": {
+    "preparations/idea1_v3_2_e4_supplement/evaluation.py": "813edf1ec1fd2613b8fcb3b9741edb81205a076774bfe6321b3111b9a8852dc1",
+    "preparations/idea1_v3_2_e4_supplement/native_envs.py": "67de3f67a2a1f09a0b7d3ace55ccef097ff3600ac824f88ab620f193c6e85b45"
+  },
+  "state_gripper_semantics": "action_sign",
+  "service": {
+    "family": "calvin_abc_d_native",
+    "H": 5,
+    "R": 5,
+    "D": 10,
+    "state": "XYZ+EulerXYZ+actual robot_obs[-1] stored controller sign; training dataset state.gripper +/-1",
+    "diagnostic_state": "Official standalone evaluator instead used robot_obs[6] opening width; retained only explicit preflight diagnostic",
+    "extra_delta": false,
+    "gripper": "decoded native action threshold >0:+1 else:-1 in environment client",
+    "policy_parity_gpu_verified": false,
+    "server_pid": 3324115,
+    "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+    "legacy_gate_passed": false
+  },
+  "results": [
+    {
+      "sequence": 0,
+      "mode": "full_d10",
+      "status": "complete",
+      "completed_subtasks": 2,
+      "failed_task": "lift_red_block_slider",
+      "wall_s": 115.55289327353239
+    },
+    {
+      "sequence": 0,
+      "mode": "v14_d10",
+      "status": "complete",
+      "completed_subtasks": 0,
+      "failed_task": "rotate_blue_block_right",
+      "wall_s": 49.409853495657444
+    },
+    {
+      "sequence": 1,
+      "mode": "full_d10",
+      "status": "complete",
+      "completed_subtasks": 3,
+      "failed_task": "place_in_slider",
+      "wall_s": 103.82992348074913
+    },
+    {
+      "sequence": 1,
+      "mode": "v14_d10",
+      "status": "complete",
+      "completed_subtasks": 0,
+      "failed_task": "turn_off_led",
+      "wall_s": 47.99527805671096
+    },
+    {
+      "sequence": 2,
+      "mode": "full_d10",
+      "status": "complete",
+      "completed_subtasks": 5,
+      "failed_task": null,
+      "wall_s": 49.3436893671751
+    },
+    {
+      "sequence": 2,
+      "mode": "v14_d10",
+      "status": "complete",
+      "completed_subtasks": 0,
+      "failed_task": "lift_pink_block_slider",
+      "wall_s": 47.834161426872015
+    }
+  ],
+  "native_input_preflight": {
+    "passed": true,
+    "full_max_abs": 0.0,
+    "full_bitwise": true,
+    "v14_observed_calls": {
+      "kv_shell_calls": 4
+    },
+    "v14_is_approximate": true,
+    "scope": "Same pinned loaded native model and real input/noise, canonical Full vs request wrapper; no target success-rate claim",
+    "ok": true,
+    "manifest_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1",
+    "protocol_hash": "0d3aa780d5f6c24a5cd9de645a1cc61d7cbd20a6803cca58f0f6652c0cc219f1"
+  },
+  "metrics": {
+    "full_d10": {
+      "sequences": 3,
+      "mean_completed_chain_length": 3.3333333333333335,
+      "success_at_least": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.6666666666666666,
+        "4": 0.3333333333333333,
+        "5": 0.3333333333333333
+      }
+    },
+    "v14_d10": {
+      "sequences": 3,
+      "mean_completed_chain_length": 0.0,
+      "success_at_least": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0
+      }
+    }
+  },
+  "failed_task_counts": {
+    "full_d10": {
+      "lift_red_block_slider": 1,
+      "place_in_slider": 1
+    },
+    "v14_d10": {
+      "rotate_blue_block_right": 1,
+      "turn_off_led": 1,
+      "lift_pink_block_slider": 1
+    }
+  }
+}

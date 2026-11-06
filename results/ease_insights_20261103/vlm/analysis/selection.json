@@ -1,0 +1,798 @@
+{
+  "discovery_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+  "complete_discovery_episodes": 160,
+  "selection": {
+    "status": "selected",
+    "selected": {
+      "pair": [
+        "fixed_v12_jacobian",
+        "fixed_v12_action_mse"
+      ],
+      "directions": [
+        {
+          "suite": "libero_spatial",
+          "better": "fixed_v12_jacobian",
+          "worse": "fixed_v12_action_mse",
+          "discovery_difference": 0.1
+        },
+        {
+          "suite": "libero_10",
+          "better": "fixed_v12_action_mse",
+          "worse": "fixed_v12_jacobian",
+          "discovery_difference": 0.1
+        }
+      ],
+      "objective_min_opposite_suite_difference": 0.1,
+      "tie_key": [
+        0,
+        1,
+        0,
+        3
+      ]
+    },
+    "condition_eligibility": {
+      "fixed_v12_jacobian": {
+        "success_rate": 0.875,
+        "success_rate_pass": true,
+        "mean_cycle_ms": 202.872392302379,
+        "full_mean_cycle_ms": 326.0305929463357,
+        "cost_pass": true
+      },
+      "fixed_v12_action_mse": {
+        "success_rate": 0.8,
+        "success_rate_pass": true,
+        "mean_cycle_ms": 201.7592783086002,
+        "full_mean_cycle_ms": 326.0305929463357,
+        "cost_pass": true
+      },
+      "fixed_v12_cosine": {
+        "success_rate": 0.375,
+        "success_rate_pass": false,
+        "mean_cycle_ms": 201.57655831426382,
+        "full_mean_cycle_ms": 326.0305929463357,
+        "cost_pass": true
+      }
+    },
+    "eligible_crossings": [
+      {
+        "pair": [
+          "fixed_v12_jacobian",
+          "fixed_v12_action_mse"
+        ],
+        "directions": [
+          {
+            "suite": "libero_spatial",
+            "better": "fixed_v12_jacobian",
+            "worse": "fixed_v12_action_mse",
+            "discovery_difference": 0.1
+          },
+          {
+            "suite": "libero_10",
+            "better": "fixed_v12_action_mse",
+            "worse": "fixed_v12_jacobian",
+            "discovery_difference": 0.1
+          }
+        ],
+        "objective_min_opposite_suite_difference": 0.1,
+        "tie_key": [
+          0,
+          1,
+          0,
+          3
+        ]
+      },
+      {
+        "pair": [
+          "fixed_v12_jacobian",
+          "fixed_v12_action_mse"
+        ],
+        "directions": [
+          {
+            "suite": "libero_goal",
+            "better": "fixed_v12_jacobian",
+            "worse": "fixed_v12_action_mse",
+            "discovery_difference": 0.3
+          },
+          {
+            "suite": "libero_10",
+            "better": "fixed_v12_action_mse",
+            "worse": "fixed_v12_jacobian",
+            "discovery_difference": 0.1
+          }
+        ],
+        "objective_min_opposite_suite_difference": 0.1,
+        "tie_key": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "rule": "Both success rates >=0.60 and both measured mean three-request costs < Full; maximize min(two opposite suite differences), then fixed condition/suite order",
+    "condition_order": [
+      "fixed_v12_jacobian",
+      "fixed_v12_action_mse",
+      "fixed_v12_cosine"
+    ],
+    "suite_order": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "limitation": "Discovery selects the pair and category labels; it is not independent evidence of reproducibility"
+  },
+  "evidence": {
+    "episodes": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task00/init30/episode_receipt.json",
+        "sha256": "151568ec56249dcd219abafa1bc650bc4db3702e42e4a5d15cf12a1d3b2c9e04"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task01/init30/episode_receipt.json",
+        "sha256": "0bddd4a41eeb78745697cb18d16dcbaa298589df6584ebdd695a64b4d2a080b9"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task02/init30/episode_receipt.json",
+        "sha256": "365337b21745c9434ae5523b533388a4902e1dbdfe6d875d9fa2fb94b8d93b8e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task03/init30/episode_receipt.json",
+        "sha256": "5a3cc3c196450052ff03374b33bf1361fb9231bc1662ff4aebd4fec41c96e92b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task04/init30/episode_receipt.json",
+        "sha256": "7fb99796231d7d7fbb9a292a71ba00e2be0cd811a92aab297eb730c98787427f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task05/init30/episode_receipt.json",
+        "sha256": "49b0db3f367c9d892afe644f87d0325591896c085e38a5f13c3b75649749ff2c"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task06/init30/episode_receipt.json",
+        "sha256": "3b80bc5d5cb7ff192535cdde9bb47590824b6cde47d9a2dfa7b783d75a9e1cdd"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task07/init30/episode_receipt.json",
+        "sha256": "e9fac284771240af6ec8b2006bc89d780b663eaa39651b837e53660e8fe4178f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task08/init30/episode_receipt.json",
+        "sha256": "345b7a434fd2540ded0ed9ac97d3de5305da59c2b175c1f4d7aaa9ca902d0320"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_spatial/task09/init30/episode_receipt.json",
+        "sha256": "a6929d2b74aa46d6deea60553a3b83700848aa5d873d624c8c4ed25a3e61002e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task00/init30/episode_receipt.json",
+        "sha256": "90bc89fed23e4acef5b946647a546a2dd467cc4f4b60bf38105d1318a04cf8d6"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task01/init30/episode_receipt.json",
+        "sha256": "59826d0bc63a40ac22372f247c92804bcaa72cacda42bdcef638d8d6798e7b38"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task02/init30/episode_receipt.json",
+        "sha256": "ac1ac5b7e5ef86a6a4a016111dc2b4f62952d0e8dcd7f9402a73ecc760c0abc6"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task03/init30/episode_receipt.json",
+        "sha256": "085f7559ec534fc4f159545e00292a9245712847f67dc84d0023fd0676cd83ce"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task04/init30/episode_receipt.json",
+        "sha256": "1632d871c5eeb22a9ab9601796961e3d5db9cb0b730ac5fd6fd43714723786c8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task05/init30/episode_receipt.json",
+        "sha256": "feac815d25a0a009fae571bb6fbb42af001f425026ddcf1a2e0f92609c18702c"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task06/init30/episode_receipt.json",
+        "sha256": "58ad2e26c94be7e96631314e4dc9d382bed0e99358e6db41049a47685b1a1737"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task07/init30/episode_receipt.json",
+        "sha256": "9f8b1266ef731a6ea658b4e92c5e5f499b98708d89be76afdb3b85d22deb3fb2"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task08/init30/episode_receipt.json",
+        "sha256": "2b00c4e7fe88a2983082c392babba2808038a5a94540cc1ce6610fb5748784a4"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_object/task09/init30/episode_receipt.json",
+        "sha256": "461515bc25575fcc51ffeb6743b88a188586b725d4e6ae85650f38b79b7106e1"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task00/init30/episode_receipt.json",
+        "sha256": "69165d8d01a4c83bdfe4085d3c38bc0d3de1470bf08906a50d19b3bf9c8b1346"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task01/init30/episode_receipt.json",
+        "sha256": "e53c8d4c3edbde1d740bdb394f4b9705ab61d0a848163e585f46b2ec58d80529"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task02/init30/episode_receipt.json",
+        "sha256": "e5b6dc6de49377b999327f124f241dd5f41b88c1fa9d265364fd73885aa6b437"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task03/init30/episode_receipt.json",
+        "sha256": "b412d641a6b54c8edd924995009e83a81f918f0c9a598ea7e4336a7cf266ef7e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task04/init30/episode_receipt.json",
+        "sha256": "f36656b7e1d823854f87d37e911b504ad04a5091426ffc13f4879acf6d814146"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task05/init30/episode_receipt.json",
+        "sha256": "5c33611ca4cea2306684d8f853afc7cdc28013908b3c4708a897323b1f965ec3"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task06/init30/episode_receipt.json",
+        "sha256": "80626476bf2c08d26005bab851a9667a361546bbaddb6fdcf200719f96ef686b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task07/init30/episode_receipt.json",
+        "sha256": "e1a4cd90981dc7495b6d5ca36b4302c5e7868202f7629bdcc804af9e44ef3395"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task08/init30/episode_receipt.json",
+        "sha256": "49ca34302d9800d35cb15c90f34e446b59d1c93c351e7b0b75c3de3e484137cd"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_goal/task09/init30/episode_receipt.json",
+        "sha256": "9b98f123ccbf2a3c818f98d2398bd0344ce3c8ba5677da276e27cc518ab4bc55"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task00/init30/episode_receipt.json",
+        "sha256": "c3f3bd38bfdd285c93fa7418587e8ff149551f7a1c48aa38f270be261e695135"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task01/init30/episode_receipt.json",
+        "sha256": "c5a0dec2e0720aa18082b2b768f383d97b82d38fa9420bc668e9cf7bd0bbd5f1"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task02/init30/episode_receipt.json",
+        "sha256": "69791890816a4aa22f0f2adf0c49525b917409b569ebddfae82d8abe664d507f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task03/init30/episode_receipt.json",
+        "sha256": "d395db5089be0efe30cd99e2af6dce87200de0b6351c4a711ca07253a40bce10"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task04/init30/episode_receipt.json",
+        "sha256": "45762017ab5dfdb493fb3660d3aa306b4078b219b538f4d518d9cf7ebed8c03f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task05/init30/episode_receipt.json",
+        "sha256": "ccde68eebb320144e5da6abbe4554ea01383a577337edf5359c4bb7727914000"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task06/init30/episode_receipt.json",
+        "sha256": "68f25f5ae5c596027d6a87bd08cbdeb2afbfcc968c42614c36655a4462357b62"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task07/init30/episode_receipt.json",
+        "sha256": "c8f2bb93c9e7a594128441412e33a028c856d3ae84c556d176562fcfc2bd937b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task08/init30/episode_receipt.json",
+        "sha256": "836153d66cdc51cf63215e8dee79d97aff74abcac6772faebe2b28571f0f5bfa"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/episodes/libero_10/task09/init30/episode_receipt.json",
+        "sha256": "4d121600907f0075fc61cbf43dc4ad107a4e79f31054befa073a1adfa95c5240"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task00/init30/episode_receipt.json",
+        "sha256": "5799e77cc9115024a71c3fff88ca970cb6c2d70966403d1d760374df59658296"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task01/init30/episode_receipt.json",
+        "sha256": "d3d8faccf13c714f7f4d68845c9e7dcd342fe4f2d377581431f0006794dfb889"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task02/init30/episode_receipt.json",
+        "sha256": "8fb86b64690c2904a453d0ea50a7bace0ed3080ae77a58e7ebc38cea7a54ca5f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task03/init30/episode_receipt.json",
+        "sha256": "322b8d5fc80c18ed0f28b9b17a7b3c8b1c57f38fd1b0a185c786d847fc50e6c7"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task04/init30/episode_receipt.json",
+        "sha256": "99963cbe5d1367be399dad3128730107041fd094fd1b34454a2385eb1db3bafe"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task05/init30/episode_receipt.json",
+        "sha256": "1fa40c53240faca0c5c9e5039e557bbe31cbf30070b0276fb560f77c9de1fbed"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task06/init30/episode_receipt.json",
+        "sha256": "579f0ffbc35e92cfa9bcb3a70c6e476b077e3d796720969103362c0a70697ff0"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task07/init30/episode_receipt.json",
+        "sha256": "4d6b40b0098f5fba0890a15b3a43ad0eb6cc6d440394eb9d1ca85fe810d41463"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task08/init30/episode_receipt.json",
+        "sha256": "e7a730ce2472cf82610ee42e47721d881d27975218a974ea1dcab01d52fc36a8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_spatial/task09/init30/episode_receipt.json",
+        "sha256": "bcc56ba2e4271189eba1d83d796fb1fed27db8f93c91398016043250d8abf397"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task00/init30/episode_receipt.json",
+        "sha256": "07e4f84d9f1a6815b823d0fc31fd55a77f8a5cda727efd9225686505a7c7ab6e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task01/init30/episode_receipt.json",
+        "sha256": "4bf85e0c95f473a90415fe69fca93233307a70068b229312610678a4ee400575"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task02/init30/episode_receipt.json",
+        "sha256": "cc4e140710b32188ce267e3437e4b83fb9168ae3c1a2a1ec3c203be873663496"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task03/init30/episode_receipt.json",
+        "sha256": "e97efc4c4c60c50f93ffb31c68c11b9540eb36129a1d72ad047245bff700c305"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task04/init30/episode_receipt.json",
+        "sha256": "640e062a8bef8fd27a2f53ab1e33e48422e45b3e72110f1ef20909deb3f76e37"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task05/init30/episode_receipt.json",
+        "sha256": "0bfc6f46e0d9af0916f06a26c3188b5c1cf4c964aeb102c7cb2d85f6c3537f2f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task06/init30/episode_receipt.json",
+        "sha256": "a0e3843b9694c9443bcccf07c6e5cfad9eddedfd7c0fdcfe07c55f53589c62d2"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task07/init30/episode_receipt.json",
+        "sha256": "6e30033cc042ad24f90dc53d0edfc4655339096b4a32356e9150b48ee214cd95"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task08/init30/episode_receipt.json",
+        "sha256": "d17bcc864e11f80bedc05a9925e1eb443ec6321032ef915d63be2927a801076a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_object/task09/init30/episode_receipt.json",
+        "sha256": "9300fd38e1ddcbb760276caf2ce20725ac9f023123ea9f771a3230588367f927"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task00/init30/episode_receipt.json",
+        "sha256": "65c90a6140801196bfdc982031af663811ebf48c28af10b33af642f7128134cc"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task01/init30/episode_receipt.json",
+        "sha256": "500a2fe0b558eb85af1ad717a61e8f1ff7f544130a7c6e57f5634851df66e0ac"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task02/init30/episode_receipt.json",
+        "sha256": "8f3c57f81eecd6f87893a63b453f0a2c985781549ec21b71b223d58badfaddd5"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task03/init30/episode_receipt.json",
+        "sha256": "a545beaa266df1e43383dda47f8d2d31447dcd96f1e229c3feb12fc461ab88b7"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task04/init30/episode_receipt.json",
+        "sha256": "db3459164612eaec9bf5d6bc184929c6f4c8b2e48d1e30b38c164d5e65bd231b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task05/init30/episode_receipt.json",
+        "sha256": "946af5b1e68c1d4264abd549c60e126ec7f72bc4b80a782b8473f64022f982b1"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task06/init30/episode_receipt.json",
+        "sha256": "273119a5eff5781639fa09252bd237649525d28b150024caa425e7d395fd030f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task07/init30/episode_receipt.json",
+        "sha256": "95dd1982cbeb7313cd358800ca38ca4dbf9ab5cec20780fc41e20975304ab720"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task08/init30/episode_receipt.json",
+        "sha256": "2082c589839300b735f5d2087491670a79c78c87ca699380ec33949779f4984a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_goal/task09/init30/episode_receipt.json",
+        "sha256": "3632483d23fd0fd2532dd2b43f525951f8019ca5cd1d2e0f4d6e7b6e2ed72270"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task00/init30/episode_receipt.json",
+        "sha256": "766c199022c10321822c807e8d28c30186468e3b44c7f27d6de0940bef4c0d97"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task01/init30/episode_receipt.json",
+        "sha256": "18503747a141418ad0e43a5d7dfd5c5150744cb7b5c2bd3663f89a8d96de2986"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task02/init30/episode_receipt.json",
+        "sha256": "afd3d72a09a1c7a2a52c50cf5ced983be97175f499f513234916ef18d25dc086"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task03/init30/episode_receipt.json",
+        "sha256": "3ad6043b5291d75c85680aee13f44f6241a4d089409038a769ff56221714f14a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task04/init30/episode_receipt.json",
+        "sha256": "5c4b9075666666ff223238663a007e9376720ec0ae82e097d317528d22b74ac8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task05/init30/episode_receipt.json",
+        "sha256": "e31594f6a9937d9edfa14f31afef0904a7a7c0cfdda45d074a31ccb52d4c70ef"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task06/init30/episode_receipt.json",
+        "sha256": "b7e87192f58542a51098cbceeae56ea991143d9502116249ef475a700ec05e3d"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task07/init30/episode_receipt.json",
+        "sha256": "3d7411057cf50277f8bee0adf0f3fb0b891440c6b32f6a1cdb1601c6e4765c9e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task08/init30/episode_receipt.json",
+        "sha256": "fc47e1dc75d90e75b2b1279105c864570c1f4d01c5d156fcdaeeda0d8194efaf"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/episodes/libero_10/task09/init30/episode_receipt.json",
+        "sha256": "eca2dce60e54ecb218edac4c0797d6a42f0de131a076887e70881f7fe57d32dd"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task00/init30/episode_receipt.json",
+        "sha256": "5c4abcd8705cdf844832ba0c6c7840a17b650ee67cb685e840e22eb5bc6a6df6"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task01/init30/episode_receipt.json",
+        "sha256": "1ae4fd90762bcf3c81614a6acce4a343a1d9173f0da3c4c2fc76cad05eabba7d"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task02/init30/episode_receipt.json",
+        "sha256": "06d000d341ce1bc0b572c42b60388eed01f7ca2d40b60287e10ba0c99ec8ff41"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task03/init30/episode_receipt.json",
+        "sha256": "3b46bc19e561b921ed7532aeec53a61e90bd01d9554a8f5ba5a35a139d919ba5"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task04/init30/episode_receipt.json",
+        "sha256": "b2b65faaabd5592eec01caac4ccbf8e61ad13f1199c89e19b41e183ce3028c10"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task05/init30/episode_receipt.json",
+        "sha256": "e48168d5bcb5c695d15d0d4a248873c15b31a70d08a592a1fe941c1a5aba661b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task06/init30/episode_receipt.json",
+        "sha256": "1785f8191769f77a05e0506f9bdc0fc2d4f35be5711c3b72b963e962d08a5250"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task07/init30/episode_receipt.json",
+        "sha256": "eac26031e3cd8090b511eafa753440cee0f61760f9d0ce34d08d4588fc7a9556"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task08/init30/episode_receipt.json",
+        "sha256": "cb454730069cb60c47cbaab20de8cab46a52bd55e2afd11f1fd14eaf50e5ca95"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_spatial/task09/init30/episode_receipt.json",
+        "sha256": "4b6a1d420b6bbd94287d1cc4e17508a181debf6bf2e5ba76b9b4a8bd452f6ead"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task00/init30/episode_receipt.json",
+        "sha256": "d37d64a56c8ad4664f0e8f2fbb1caaac790c35f12b23359f6ae1b82c4286b54e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task01/init30/episode_receipt.json",
+        "sha256": "f71f8b62eedb1932994e69e5507093b48486d29e55442cb77a3c5ee3bb79494f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task02/init30/episode_receipt.json",
+        "sha256": "abe9a7181824647f8dccb3c6ed54a5205602703313f8048ea6353bfb87599dfe"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task03/init30/episode_receipt.json",
+        "sha256": "3b1c6f5dd4255df7f417f5bf9622680621e193ae4b52849f14b2560a51833104"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task04/init30/episode_receipt.json",
+        "sha256": "33d1291a0c2d9d7d269ed91f2c15a01f833f6f35d23aa3b2b8c112d0cf14b3e9"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task05/init30/episode_receipt.json",
+        "sha256": "e2e67bc1a895cd8b7c99a23888908bd74f599b547fc5dec13d0fc0fbf399c725"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task06/init30/episode_receipt.json",
+        "sha256": "179c0c196d250fa40e53d7bd0daf1e586a3c7aec55b2570e0c4321b01d609882"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task07/init30/episode_receipt.json",
+        "sha256": "ede7c26e893a9a225e778c24cf9e0e36a6c1c8423fdf75f1367fad0a57a18535"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task08/init30/episode_receipt.json",
+        "sha256": "44e3c4c5e747fa88c9d79456e2aa47f06e161ea8e3e413fe142c5eb56df1438f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_object/task09/init30/episode_receipt.json",
+        "sha256": "6e71795594aba74135e2640797a8d7905bccb8b16a693e6c873c6a7ae29a6762"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task00/init30/episode_receipt.json",
+        "sha256": "f4883e3db4ddbf7561def2b561c265961e03aff8e853f5f6fd6142d8bc4c3083"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task01/init30/episode_receipt.json",
+        "sha256": "db314368d22901d472db2cbe014430a331e17a398acc11f20fdc8dbb685896e1"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task02/init30/episode_receipt.json",
+        "sha256": "ebbebd06f3542699a5727411da3f450826c82729ecab8cb26c67d855dff04aa2"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task03/init30/episode_receipt.json",
+        "sha256": "b7c8afc70132f73b02ebfcd0cb9dfd8c6983f8ce737d9f2e7a8030fb42c6d735"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task04/init30/episode_receipt.json",
+        "sha256": "4b08957e4593af73e777f1a332e342a2776a65742cbaf7b3ea3b0a60336a2c75"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task05/init30/episode_receipt.json",
+        "sha256": "3ab2b362773c8bdc63569c6d8d21bf5168bc3b018c1e502c3309a2ebd364c1a6"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task06/init30/episode_receipt.json",
+        "sha256": "a8ab484b12f30c1d5a516049efbb922410cdaf5929ace2f55765791e0aaa6445"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task07/init30/episode_receipt.json",
+        "sha256": "19eda038c9bd9f30da8a4aafd34f6b4b01d14551c934ab3876b402cd08fa59cf"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task08/init30/episode_receipt.json",
+        "sha256": "a3e385f7ac8f907847e5ea621a75508e704b435c509eb6b08eb9573da4356a07"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_goal/task09/init30/episode_receipt.json",
+        "sha256": "68bcdb9b7ef963dd82a4543d89ccabcb4756e932ad55bd9f3510df8b5f47febf"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task00/init30/episode_receipt.json",
+        "sha256": "69763f00dc5ead3acb048f8bc112d30ed2eb2252e38a2186fc3095ae0fa53b4e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task01/init30/episode_receipt.json",
+        "sha256": "4f855694ab2ccbb82375340b8efda81b74910e2fcad28c801896d882672970c9"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task02/init30/episode_receipt.json",
+        "sha256": "144f17b0b6e431eca27e68f1fb7e11d80148f163d3dc9797a15143209d942d1a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task03/init30/episode_receipt.json",
+        "sha256": "321f609f4125d29bc1bfc19663d7d59f9dc1c6b7ce5f49fabaf75a6c3a63e272"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task04/init30/episode_receipt.json",
+        "sha256": "b42737c7c31f712319d6f9ec8c167895bf5c0652909148ae615ef69c79fad949"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task05/init30/episode_receipt.json",
+        "sha256": "89e451aacc83e69b401da9bcbfbd98864fc113ff86a09f9d3a6aa48f28441689"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task06/init30/episode_receipt.json",
+        "sha256": "b35e59a585a5b63f965db6a3c6bc711746b56cb1dc9defb6a9688da1ac16b3cb"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task07/init30/episode_receipt.json",
+        "sha256": "b10bfed5a5189ad2c2fbb46f8ca6dd2427bfbd419efa2dc6ec22419b953c4cca"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task08/init30/episode_receipt.json",
+        "sha256": "bf6832c661b4c5c0af96d9dd3675d0cf8921d37267c5d48645216359df86ed91"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/episodes/libero_10/task09/init30/episode_receipt.json",
+        "sha256": "94cba04f53425658a2a1fefceccc4b6f661770968607b5b73e404ba8748fc8e2"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task00/init30/episode_receipt.json",
+        "sha256": "038b3524d2b2a894beff235619150a18e4c3d628e3fdbc4a712118e736a0ea27"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task01/init30/episode_receipt.json",
+        "sha256": "c833631500d97710429ca621234e67d20d17b0bf8729f96e51c055e4eed3345a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task02/init30/episode_receipt.json",
+        "sha256": "f238835fd72c767dfc72c972d6ea3a58cb42ca0ad530d6a10f55daee513a958a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task03/init30/episode_receipt.json",
+        "sha256": "b04cd8cb7c932aae7fd13cab543fb0883d3cda87fb5f391e795a4efc9f376ba3"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task04/init30/episode_receipt.json",
+        "sha256": "d4e149d3d39ec6c68c47c7f7e7478f564171ba150fc58c0227becf844100a7f8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task05/init30/episode_receipt.json",
+        "sha256": "5f5f38172a977deb5638644d8e6f65b300e2a635e4ccbca2e10380af18ea7fe3"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task06/init30/episode_receipt.json",
+        "sha256": "a1ecbe099abd1984574816b3a6a4532d2d4e3aabd4d7249b8585824a6dcd05ea"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task07/init30/episode_receipt.json",
+        "sha256": "b0508db1dfb6f5bf06f06119aec3dd40443bb516b3ab45a811ea1fc9a3620905"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task08/init30/episode_receipt.json",
+        "sha256": "32099e39391c4d495bf85b1082775b62385d409f9793dab118d3cf714b084d76"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_spatial/task09/init30/episode_receipt.json",
+        "sha256": "18ce1582f8f4aed360d20eabce84c3ddeaba24857311f4e57708e7d5768b4182"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task00/init30/episode_receipt.json",
+        "sha256": "5363e1a99d67321d935ffe7e650733d2b25a64bc7ed12d4246d3ed1260073e0d"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task01/init30/episode_receipt.json",
+        "sha256": "25c34ca28546972b63e648afec60a65f2081c7914c54fab26d99fa9d2185c46b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task02/init30/episode_receipt.json",
+        "sha256": "50ff25d1267744c249e18a7aa15ff7ad7bc40ba28d6e339ac6f9628c959625da"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task03/init30/episode_receipt.json",
+        "sha256": "6f1fbf9c8b9ae7f7419b9c4eab18bb58895015d0f940d50d80466e9f9fbcc6f3"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task04/init30/episode_receipt.json",
+        "sha256": "c882a744e59e28914a9a1876d9a2e49f368e80cf0cb286fe1270d4cdda9266ae"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task05/init30/episode_receipt.json",
+        "sha256": "61c41ced67c6fba74cd2bd0b2d36f354c8b9cf4e75255059121827f9f055a279"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task06/init30/episode_receipt.json",
+        "sha256": "c3dc011b06b2d9a68c1c888150dc7a66d91cd6351677a16934b4b9eaf15d78b7"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task07/init30/episode_receipt.json",
+        "sha256": "bb9f4307df740d841a6dafaafe4a32206e038b5825107dda12f5021b1d010995"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task08/init30/episode_receipt.json",
+        "sha256": "d8368ac1c682d06fff2a33d2cfe9857812500f405723b722629e94996232a4ef"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_object/task09/init30/episode_receipt.json",
+        "sha256": "fd184bcb21a0ed3c05d838dcc19becb98bc9686f0bd0b2dd171a31f088f913a0"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task00/init30/episode_receipt.json",
+        "sha256": "6e9c8868662e8da3142bccb6b40aa09aa7beb40d1feb1943621b545de22e98ff"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task01/init30/episode_receipt.json",
+        "sha256": "fde95248172a79bbf5bb785ab7fddcec62a16e3025ec7328b2bcb3cadf50061f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task02/init30/episode_receipt.json",
+        "sha256": "2b3bfbb7f63a4d3d10fba31e00f920ddba251a39d31673db68d3cdd5ed05e626"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task03/init30/episode_receipt.json",
+        "sha256": "9e45f0d1afe8c38fea982c6957f030257c010d51d0cc1d8149476420a8f8daa8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task04/init30/episode_receipt.json",
+        "sha256": "0585fcca98b9c0ee58acf54cdf406a47d693087bdabed7748afd37c5cb09bf73"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task05/init30/episode_receipt.json",
+        "sha256": "a134ebac13f20b7ef53a5e134774371330bd7f3f12943b6aa3fbd7b7f487cc77"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task06/init30/episode_receipt.json",
+        "sha256": "5435066c4405c3cc664837d319bbd4565c4cc2ce495277968636db4a611280b0"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task07/init30/episode_receipt.json",
+        "sha256": "da9cb1e517bf33a487bd8f32e5e5759fc8ad3cb510a829cfe6492a3c09565498"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task08/init30/episode_receipt.json",
+        "sha256": "649444eabb46341c13ad92a775af44c5a6addfa4bdf6583de05eb05d2569260d"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_goal/task09/init30/episode_receipt.json",
+        "sha256": "7fd048a3a6d6a019042ade7196fd0d20ff9a73448021ce53fabd0e1f0b1b11dd"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task00/init30/episode_receipt.json",
+        "sha256": "c84002c942ca38057b6867319bbbb468a1866e857051e624229921288ce0b06e"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task01/init30/episode_receipt.json",
+        "sha256": "b8b9309b9b6bc1c8338f04eaba68d5f7a1a3733d0642973877f5f14a0370ff7b"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task02/init30/episode_receipt.json",
+        "sha256": "315ab04dfa9956fbda4cc8d48c88f62da704a819c968ddef07d1794b1911fcda"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task03/init30/episode_receipt.json",
+        "sha256": "eaa11396d3e824618ef2b73851b5ccf19887a311268b64a235c12148dd2f8ed7"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task04/init30/episode_receipt.json",
+        "sha256": "4b633518d160cc56a0cdb3f47836baa514171d89063b007e38dd8e32c7add79f"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task05/init30/episode_receipt.json",
+        "sha256": "562728b6eafe222f9eaabef152c38a972af94bedc4f8d35154f7dc4b29e6ae1a"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task06/init30/episode_receipt.json",
+        "sha256": "041cf195ae96bcd529ea48cba6c46bb44d07d0ccf50ab917839541547d6ec7bf"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task07/init30/episode_receipt.json",
+        "sha256": "5608b760be459e3bd2f15ba540189f1f7941479ec11a83029864364327e30dc5"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task08/init30/episode_receipt.json",
+        "sha256": "c39da9338c7e7d2c766fdd51321e6810c567b852ca8c52630888311bc8ef2676"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/episodes/libero_10/task09/init30/episode_receipt.json",
+        "sha256": "ba02af3fab16d1de42c8f6425a26273b7748e6ba34006a3e2ed7916032c82210"
+      }
+    ],
+    "cost_services": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_action_mse/runs/discovery_shard00of01_1793702312542197640/fixed_input_cost.json",
+        "sha256": "99739a4a4083bf2d10dccac53a1ab741ff3bfc5b4371b457f98d418059da73c4"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_cosine/runs/discovery_shard00of01_1793702312542000823/fixed_input_cost.json",
+        "sha256": "da6e43184e1fd403f56e99da9e029980f57d3d5959f400b1a6d557e3b17d2784"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/fixed_v12_jacobian/runs/discovery_shard00of01_1793698878764719205/fixed_input_cost.json",
+        "sha256": "e69f6c9b6ec248d8cc0fa016baa285e38730c38546f90a556a90bf41144768e8"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/runs/discovery_shard00of01_1793697645844599576/fixed_input_cost.json",
+        "sha256": "e8cf4d33fb0d12417289a466eb45c97d281901fd717848becaa665671640d90c"
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm/full_d10/runs/discovery_shard00of01_1793698263792881021/fixed_input_cost.json",
+        "sha256": "c7b4fae8c4bd9c9a0851aa59e74c1f5b51ed308a4cb03fd999543582f73fedcf"
+      }
+    ],
+    "analysis_source": {
+      "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/vlm/analyze.py",
+      "sha256": "235e976d305b25429cae20187f3c4fcd1a1c2463b30f429810c02003978214c6"
+    }
+  },
+  "independent_validation_launched": false,
+  "selection_hash": "4ffecb4be2ac83697f0943de51b3837f46d952577503d05fe0079620122246a5"
+}

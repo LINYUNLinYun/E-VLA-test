@@ -1,0 +1,81 @@
+{
+  "time": 1793929601.7923837,
+  "bounded_diagnosis": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v5/completed_summary.json",
+    "sha256": "729ffb7acdc20346ada3601bc4c4819632cf9f34e003bf83d99ed358003b799f"
+  },
+  "resumes": [
+    {
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "attention_snapshot": {
+        "phase": "attention_holding",
+        "time": 1793928804.6291783,
+        "error": "RuntimeError('Frozen server exited before health gate')",
+        "guardian_pid": 976606
+      },
+      "attention_sha256": "61faca025ae8acd8ffbae6dfdc9f8e97665b877d539045f567e620e12eff8dbc",
+      "reservoir": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "pid": 976619,
+        "proc_start_ticks": 2628089741,
+        "nonce": "61b980ace27642dcbd8aed1af96f7d2d",
+        "nspid": [
+          976619
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "resized",
+        "sequence": 73,
+        "allocated_bytes": 17179869184,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "request": {
+        "schema": "ease-resource-pool-resume-v4",
+        "guardian_pid": 976606,
+        "guardian_start_ticks": "2628089708",
+        "plan_sha256": "809ff617ed616390a81864c1e9a9429e53692f77e0f1a29e870cc5bc322d8dd7",
+        "attention_sha256": "61faca025ae8acd8ffbae6dfdc9f8e97665b877d539045f567e620e12eff8dbc"
+      }
+    },
+    {
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "attention_snapshot": {
+        "phase": "attention_holding",
+        "time": 1793928804.629127,
+        "error": "RuntimeError('Frozen server exited before health gate')",
+        "guardian_pid": 977430
+      },
+      "attention_sha256": "832440b9fc4f7a148dc2ce7d05f2e51c4f0f66fabebc5f6fd6b4588581985af6",
+      "reservoir": {
+        "schema": "ease-resizable-vram-keeper-v1",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "pid": 977440,
+        "proc_start_ticks": 2628098622,
+        "nonce": "55ded2411c7d4ef6b5b5c3624e58b655",
+        "nspid": [
+          977440
+        ],
+        "pid_namespace_inode": 4026536790,
+        "phase": "resized",
+        "sequence": 76,
+        "allocated_bytes": 17179869184,
+        "total_memory_bytes": 25250627584,
+        "driver_version": 13000,
+        "context_created": true,
+        "error": null
+      },
+      "request": {
+        "schema": "ease-resource-pool-resume-v4",
+        "guardian_pid": 977430,
+        "guardian_start_ticks": "2628098586",
+        "plan_sha256": "809ff617ed616390a81864c1e9a9429e53692f77e0f1a29e870cc5bc322d8dd7",
+        "attention_sha256": "832440b9fc4f7a148dc2ce7d05f2e51c4f0f66fabebc5f6fd6b4588581985af6"
+      }
+    }
+  ],
+  "failed_scientific_request_will_not_retry": true,
+  "original_leases_preserved": true
+}

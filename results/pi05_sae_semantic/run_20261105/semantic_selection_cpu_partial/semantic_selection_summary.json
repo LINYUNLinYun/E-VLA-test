@@ -1,0 +1,95 @@
+{
+  "completed_observations": 32,
+  "expected_observations": 64,
+  "partial": true,
+  "ready_concepts": [],
+  "concepts": {
+    "object/bowl": {
+      "5": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      },
+      "16": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      }
+    },
+    "object/stove": {
+      "5": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      },
+      "16": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": false,
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      }
+    },
+    "spatial/on": {
+      "5": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": false,
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 3,
+          "positive_hits": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "false_positive_rate": 0.25,
+          "positive_tasks": 1,
+          "positive_episodes": 1
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      },
+      "16": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": false,
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      }
+    }
+  },
+  "scope": "Semantic calibration only; no rollout/action information used"
+}

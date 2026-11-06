@@ -1,0 +1,217 @@
+{
+  "status": "complete",
+  "pid": 3319293,
+  "started_unix": 1792653367.4572444,
+  "deadline_unix": 1792654567.4572444,
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_audit.py": "b70dd8e75c6d7205f3e41b7c753e7b23be11bcecf7211db529ff205da54628aa",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native.py": "951b489ae9b2f2bf7a4e2852406819fe7567b5378ce04dbdcb984cba8e56dfbd"
+  },
+  "input_path": "results/idea1_v3_2_e4_supplement/native_preflight/calvin_captured_formalD0/native_input.npz",
+  "input_sha256": "c101c0af2cc708e17de9cc4e597d9c3ca713b0c93a3ae4ada9144d22677045a1",
+  "constructed_unix": 1792653502.9376185,
+  "strict_load_passed": true,
+  "header_audit": {
+    "path": "/root/nfs/embodied/benchmark/shared/checkpoints/e4_supplement/RLinf/RLinf-Pi0-CALVIN-ABC-D-SFT/model.safetensors",
+    "header_sha256": "6a353f977a69ee878fa68bdcc89eefa8bb3653ca2f623b9cadf37a35754a7a05",
+    "header_bytes": 129072,
+    "tensor_count": 777,
+    "key_prefix": "",
+    "critical_shapes": {
+      "action_in_proj.weight": [
+        1024,
+        32
+      ],
+      "state_proj.weight": [
+        1024,
+        32
+      ],
+      "action_out_proj.weight": [
+        32,
+        1024
+      ]
+    },
+    "scope": "Header completeness/critical shapes only; constructor strict all-key load remains mandatory"
+  },
+  "gpu_preflight": {
+    "assigned": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+    "device": "3, GPU-555cde36-5e41-bc44-0c69-ea47358fd703, NVIDIA GeForce RTX 4090, 4 MiB, 0 %",
+    "preexisting_compute_processes": ""
+  },
+  "transformers_overlay": {
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/models_pytorch/transformers_replace/models/gemma/configuration_gemma.py": "26fd0d0f52730ab32b6f337eb73ae9a26cb71ae0915bc49eced1d0e2ed8d0ec6",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/models_pytorch/transformers_replace/models/gemma/modeling_gemma.py": "17eeb54e277939e58cd6f8a92719a275e36baf0c9f463b2754227d42f87aedde",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/models_pytorch/transformers_replace/models/siglip/modeling_siglip.py": "ef2e99500f263fdd78db9d4d9a255e29d844eb92f53c25ad640f8056700ef84b",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/models_pytorch/transformers_replace/models/siglip/check.py": "466e8eb7887ac5ccc98118a3169298d6ab65a284d834bae74751e3854dbc4245",
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/src/openpi/models_pytorch/transformers_replace/models/paligemma/modeling_paligemma.py": "c945d330b829264f927f3ee5339f977238631772de07a28e855e265bb85fd53c"
+  },
+  "state7": [
+    0.025868425145745277,
+    -0.23131318390369415,
+    0.5712804794311523,
+    3.0904552936553955,
+    -0.02908339910209179,
+    1.500135898590088,
+    0.07999926805496216
+  ],
+  "normalizer_sha256": "72903e3dad8fc7f4f799e36ee723d0c7f53cb815cc6c55f8ad75f62358f00b41",
+  "gate": {
+    "passed": true,
+    "full_max_abs": 0.0,
+    "full_bitwise": true,
+    "v14_observed_calls": {
+      "kv_shell_calls": 4
+    },
+    "v14_is_approximate": true,
+    "scope": "Same pinned loaded native model and real input/noise, canonical Full vs request wrapper; no target success-rate claim"
+  },
+  "full": {
+    "actions": [
+      [
+        0.7719998955726624,
+        0.159057155251503,
+        -0.0640176311135292,
+        -0.44363534450531006,
+        -0.026843473315238953,
+        0.04495813697576523,
+        0.9525783061981201
+      ],
+      [
+        0.6507760286331177,
+        0.21549007296562195,
+        -0.1096615344285965,
+        -0.307146281003952,
+        0.03305257856845856,
+        -0.02926950715482235,
+        0.9746729731559753
+      ],
+      [
+        0.7501832246780396,
+        0.31404760479927063,
+        -0.18193580210208893,
+        -0.24422065913677216,
+        0.11366035789251328,
+        -0.13999556005001068,
+        0.9828929901123047
+      ],
+      [
+        0.6293563842773438,
+        0.2955043315887451,
+        -0.18349400162696838,
+        -0.15313950181007385,
+        0.13007797300815582,
+        -0.1678345501422882,
+        0.9956398010253906
+      ],
+      [
+        0.6831485033035278,
+        0.3297772705554962,
+        -0.2412470132112503,
+        0.03020203672349453,
+        0.22544315457344055,
+        -0.34763678908348083,
+        1.0122907161712646
+      ]
+    ],
+    "execute_length": 5,
+    "protocol": {
+      "family": "target-trained RLinf CALVIN ABC-D SFT positive control",
+      "H": 5,
+      "R": 5,
+      "D": 10,
+      "state": "robot_obs[:7], XYZ+EulerXYZ+opening width; official evaluator convention",
+      "extra_delta": false,
+      "gripper": "decoded native action threshold >0:+1 else:-1 in environment client",
+      "policy_parity_gpu_verified": true,
+      "legacy_gate_passed": true
+    },
+    "timing": {
+      "sample_actions_ms": 292.63935983181
+    },
+    "mode": "full_d10",
+    "seed": 7,
+    "observed_calls": {
+      "kv_shell_calls": 0
+    },
+    "action_contract": "native_CALVIN_relative7_Euler_no_extraDelta",
+    "skip_vlm_1based": []
+  },
+  "v14": {
+    "actions": [
+      [
+        0.22728613018989563,
+        0.2771575152873993,
+        0.0665452778339386,
+        -0.29790326952934265,
+        -0.13893431425094604,
+        0.07219900190830231,
+        0.8004539012908936
+      ],
+      [
+        0.19638244807720184,
+        0.30635738372802734,
+        0.01136732567101717,
+        -0.20133715867996216,
+        -0.06995918601751328,
+        -0.0028033084236085415,
+        0.8545669317245483
+      ],
+      [
+        0.2309793382883072,
+        0.387710839509964,
+        -0.035801198333501816,
+        -0.15451650321483612,
+        -0.008899882435798645,
+        -0.10207284986972809,
+        0.9245127439498901
+      ],
+      [
+        0.20055876672267914,
+        0.3459024131298065,
+        -0.05117754638195038,
+        -0.09693464636802673,
+        0.016298172995448112,
+        -0.12081111967563629,
+        0.9345221519470215
+      ],
+      [
+        0.22507107257843018,
+        0.3817903995513916,
+        -0.09537390619516373,
+        0.009654377587139606,
+        0.08444458991289139,
+        -0.24286609888076782,
+        0.959746241569519
+      ]
+    ],
+    "execute_length": 5,
+    "protocol": {
+      "family": "target-trained RLinf CALVIN ABC-D SFT positive control",
+      "H": 5,
+      "R": 5,
+      "D": 10,
+      "state": "robot_obs[:7], XYZ+EulerXYZ+opening width; official evaluator convention",
+      "extra_delta": false,
+      "gripper": "decoded native action threshold >0:+1 else:-1 in environment client",
+      "policy_parity_gpu_verified": true,
+      "legacy_gate_passed": true
+    },
+    "timing": {
+      "sample_actions_ms": 292.99844056367874
+    },
+    "mode": "v14_d10",
+    "seed": 7,
+    "observed_calls": {
+      "kv_shell_calls": 4
+    },
+    "action_contract": "native_CALVIN_relative7_Euler_no_extraDelta",
+    "skip_vlm_1based": [
+      3,
+      4,
+      9,
+      11
+    ]
+  },
+  "completed_unix": 1792653511.6608322,
+  "gpu_resources_released": "process exit"
+}

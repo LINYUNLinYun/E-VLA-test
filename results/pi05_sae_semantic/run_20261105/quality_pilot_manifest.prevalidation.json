@@ -1,0 +1,132 @@
+{
+  "scope": "Exploratory 8-task x 1-init x 3-method pilot; no test SR used for rule selection",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "assets": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05",
+  "candidate": "/root/nfs/embodied/benchmark/results/pi05_sae_semantic/run_20261105/quality_candidate_relative_prior.json",
+  "candidate_sha256": "6bc54e625e98cd868025e831975c7ff76340012e75e361bcd44de8390694c2e2",
+  "conditions": [
+    {
+      "id": "original_full",
+      "mode": "full",
+      "model": "pi05",
+      "horizon": 10,
+      "execute_length": 5
+    },
+    {
+      "id": "fixed_mask",
+      "mode": "fixed",
+      "model": "pi05",
+      "horizon": 10,
+      "execute_length": 5
+    },
+    {
+      "id": "sae_semantic",
+      "mode": "sae_route",
+      "model": "pi05",
+      "horizon": 10,
+      "execute_length": 5
+    }
+  ],
+  "episodes": [
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 0,
+      "instruction": "put the cream cheese in the bowl"
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 0,
+      "instruction": "put the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 0,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 0,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 0,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 0,
+      "instruction": "pick up the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 0,
+      "instruction": "pick up the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 0,
+      "instruction": "pick up the cream cheese and place it in the basket"
+    }
+  ],
+  "H": 10,
+  "R": 5,
+  "num_steps": 10,
+  "limits": {
+    "libero_spatial": 220,
+    "libero_object": 280,
+    "libero_goal": 300,
+    "libero_10": 520
+  },
+  "environment_seed": 7,
+  "settling_steps": 10,
+  "mask": [
+    6,
+    15
+  ],
+  "delta_semantic": 1.1613027445120871,
+  "baseline": "Same pair for fixed and semantic methods isolates gating; fixed period calibrated on offline data only",
+  "baseline_budget": "Calibration replay counts matched; actual closed-loop budgets must be reported separately",
+  "seed_rule": "Existing preparations.idea1_v3_1.common.seed(suite,task,init,request); independent of method",
+  "latency_scope": "Synchronized complete policy wall time; differing closed-loop inputs are not a fixed-input speed benchmark",
+  "order": "Task-major; rotate three-method order by task index",
+  "source_files": {
+    "experiments/pi05_sae_semantic/__init__.py": "8630c911c5b699f17fb90238b82f4cac26245d7bbc5da74ba090a862a10ae73c",
+    "experiments/pi05_sae_semantic/analyze_public.py": "1a616035a96def3c9c4a3b9450bbe8d5e1c5d051b8adff7a7ee5d5f88a29fa02",
+    "experiments/pi05_sae_semantic/build_semantic_rules.py": "7d72de52b1de9903aab6b645a86561d6544daac973fe71bfc80c87788f6fcd88",
+    "experiments/pi05_sae_semantic/check_cpu_threads.py": "831834eeaf8a4d6395666def80d8e9b0272a9bfb47301a8acceafe2135a48e6f",
+    "experiments/pi05_sae_semantic/check_local_sae.py": "e1967b00da9c7ed69aa253a2aeacf36da1b0cae3226cec9a2f6e61dd0f43e70e",
+    "experiments/pi05_sae_semantic/check_public_sae.py": "6ec21dde3152ae2f1f22fe8175286b0e16bca344a3ec28e1db84124219baa1fc",
+    "experiments/pi05_sae_semantic/check_runtime.py": "928571e60b4e5175343622ea2bef61d2905b0a58499072102db53eb3abadc357",
+    "experiments/pi05_sae_semantic/collect_local.py": "41dc1b9326e8405a3e8ced3151da8afecb6c5033ff5a6b89351b3a2fbabb54f9",
+    "experiments/pi05_sae_semantic/dictionary_readouts.py": "45cb8a662a6738de40d1c91eba44ebb68690ca6caae926978e07ae002a697d75",
+    "experiments/pi05_sae_semantic/download_references.py": "30cc7db6e42cfdf7457354069d53005f9bcec5f978b1d778d5c9bae9229b81bb",
+    "experiments/pi05_sae_semantic/eval_frozen_readout.py": "9b0330885f3935107ee4069afcb398174d37f898f2ac5588191d81cf206fb866",
+    "experiments/pi05_sae_semantic/followup_diagnostics.py": "06740cb4d179b3ccfadc4d5ad4c3e63a7cb988939554675d7e31c3aadec8656b",
+    "experiments/pi05_sae_semantic/inspect_public_assets.py": "756477f3f10bd553cab6bd82857907b7fe0710599280df997a6764ec999ca7f7",
+    "experiments/pi05_sae_semantic/make_quality_candidate.py": "f146beca0720192027582fc915a2ca46039878a2624e26b1d879b990fcabc44c",
+    "experiments/pi05_sae_semantic/map_concept_ffn.py": "eec9ef1cee095b37bb3c4fc256ef51f48d4b3a39b283f293ed512742b4d5b890",
+    "experiments/pi05_sae_semantic/native_probe.py": "3cce1894d37de3978e7fe388ed78269547190049231577fd295a8c5524dd9c7d",
+    "experiments/pi05_sae_semantic/prepare_assets.py": "eb229b5181b1e95f065f2633dfe8ee3c01430ef6e335fb42a215fa336f446e15",
+    "experiments/pi05_sae_semantic/prepare_observations.py": "dc7bf2a2b1e236f1c2859e388ad73a304cae5cdeae81dc39e02075829b0d654b",
+    "experiments/pi05_sae_semantic/public_tail_check.py": "74a4b6f3f8857662de112df04a06e66b7311b95203def942b10f268c5d61ce3c",
+    "experiments/pi05_sae_semantic/quality_eval.py": "41d0010a6335905f8106a632a48929c995f10d9d165428347e780982e57b3138",
+    "experiments/pi05_sae_semantic/quality_service.py": "780c733b7f32021fe831214def2e6a9d98bc24777660ef11efd6b077175a6bd3",
+    "experiments/pi05_sae_semantic/runtime_router.py": "f1d4479fd89debabba1c95265fa49ec3fa58a7a7a4242f1d5cba356aff6ce694",
+    "experiments/pi05_sae_semantic/select_sae_concepts.py": "28b5e3f6ae9b2761bba0d9b3554fd381b9399f07e4418c3421582a44577aeadf",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea2/experiments.py": "ff8746694acaa29c7c3989188864c1839daed039bb2dee1f4ee702b443ffddbf",
+    "preparations/idea2/openpi_backend.py": "de6ad458cc21e98fd0bfcfc1dfdb8b1b82e02d80d900ccd9546ffac7fa0234f8"
+  },
+  "manifest_hash": "429b585f27386975fa3f86ee4d05ad68d5093fa6795bf6e0cc891002045e2884"
+}

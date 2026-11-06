@@ -1,0 +1,37 @@
+{
+  "status": "numerical_calibration_rejected_no_episodes",
+  "manifest_hash": "cb72c397bd21b98f670ca4500bb178789d741a22babdd2f0a1c698caa06805c5",
+  "time": 1793901516.7549708,
+  "GPU_services": 2,
+  "valid_quality_episodes": 0,
+  "gates": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v1/calibration/full_d10/runs/calibration_shard00of02_1793901292944845235/gate.json",
+      "sha256": "2aba428c8ec5935448d99985ded3e5ca05fe767b7ff68ea3b3842d51680939e4",
+      "passed": false,
+      "first_failure": {
+        "name": "libero_spatial/camera0/same_obs_raw_features",
+        "passed": false,
+        "max_abs": 16.0
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v1/calibration/full_d10/runs/calibration_shard01of02_1793901292899967049/gate.json",
+      "sha256": "2aba428c8ec5935448d99985ded3e5ca05fe767b7ff68ea3b3842d51680939e4",
+      "passed": false,
+      "first_failure": {
+        "name": "libero_spatial/camera0/same_obs_raw_features",
+        "passed": false,
+        "max_abs": 16.0
+      }
+    }
+  ],
+  "source_pins_verified": 152,
+  "failure": "Native batch1 changes the attention-output projection arithmetic: batch2 uses two-part BF16 partial sums while batch1 uses generic accumulation; raw vision parity failed with max_abs16. This source diagnosis is to be tested separately.",
+  "no_tolerance_relaxation": true,
+  "original_sources_unchanged": true,
+  "discovery_launched": false,
+  "confirmation_launched": false,
+  "original_GPU_leases_unchanged": true,
+  "next": "Separately versioned wrapper preserving native batch2 arithmetic for a genuine batch1 input; repeat fixed numerical gates before quality runs"
+}

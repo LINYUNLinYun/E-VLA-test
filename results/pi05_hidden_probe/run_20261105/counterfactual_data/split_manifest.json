@@ -1,0 +1,42 @@
+{
+  "total_samples": 320,
+  "independent_groups": 40,
+  "splits": {
+    "calibration": {
+      "samples": 96,
+      "independent_groups": 12,
+      "episodes": 12,
+      "scenes": 12,
+      "counterfactual_groups": 36,
+      "task_counts": {
+        "instruction_conditioned": 48,
+        "spatial_relation": 24,
+        "visual_attribute": 24
+      },
+      "label_counts": {
+        "blue": 12,
+        "left": 36,
+        "red": 12,
+        "right": 36
+      }
+    },
+    "test": {
+      "samples": 224,
+      "independent_groups": 28,
+      "episodes": 28,
+      "scenes": 28,
+      "counterfactual_groups": 84,
+      "task_counts": {
+        "instruction_conditioned": 112,
+        "spatial_relation": 56,
+        "visual_attribute": 56
+      },
+      "label_counts": {
+        "blue": 28,
+        "left": 84,
+        "red": 28,
+        "right": 84
+      }
+    }
+  }
+}

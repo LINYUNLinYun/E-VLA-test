@@ -1,0 +1,200 @@
+{
+  "schema": "ease-continuous-owned-gpu-handoff-design-v1",
+  "created_at_utc": "2026-11-05T02:00:10.371248+00:00",
+  "status": "design_only_not_implemented_or_deployed",
+  "scope": {
+    "reads": "Static source and saved JSON artifacts only",
+    "live_gpu_queries": 0,
+    "signals": 0,
+    "process_or_queue_mutations": 0,
+    "scientific_source_or_manifest_mutations": 0,
+    "written_files": [
+      "reports/ease_insights_20261103/gpu_continuous_handoff_20261105/design.json"
+    ]
+  },
+  "recommendation": {
+    "first_implementation": "A bounded chain of explicitly selected ready local-search tasks, executed inside one scheduler allocation by a new resource-only chain runner, with one small owned CUDA keeper alive for the entire chain.",
+    "scientific_execution": "Do not invoke the old runner after starting a keeper: its any-compute preflight intentionally rejects it. The new chain runner must reproduce its resource orchestration transparently and invoke the original frozen server and worker modules with the same science arguments. Do not monkeypatch nvidia-smi, subprocess, source verification, or the frozen guard.",
+    "why_bounded_chain": "The inspected local-search discovery queue entries have no depends_on edges and share one manifest. A fixed finite plan can continue directly from one task to the next without adding a dynamic scheduler/IPC protocol.",
+    "ownership_boundary": "Keep one scheduler flock FD continuously in the chain parent. Keep one control-pipe writer continuously in the same parent. Each scientific task uses a fresh original server and worker. The keeper survives their normal per-task exit.",
+    "no_unplanned_deployment": "Before deployment, verify current pending/ready state and chain membership again; this saved-artifact inspection is not a current process or GPU ownership check."
+  },
+  "source_evidence": [
+    {
+      "path": "preparations/ease_insights_20261103/scheduler.py",
+      "line": 130,
+      "fact": "Scheduler observes task exit, marks logical job complete/failed, then immediately calls finish_owned and removes it from active."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/scheduler.py",
+      "line": 83,
+      "fact": "finish_owned terminates its still-live job group if necessary, then closes job log and GPU flock lease at lines 93-94."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/scheduler.py",
+      "line": 143,
+      "fact": "The next task is allocated only via natural-idle scanning, elapsed idle window, flock acquisition and another idle scan at lines 143-177."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/scheduler.py",
+      "line": 176,
+      "fact": "A scheduler job starts in its own session and inherits the GPU lease FD. A single chain can preserve this allocation without modifying scheduler source."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py",
+      "line": 65,
+      "fact": "Original scientific server/worker argv construction is explicit at lines 65-68."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py",
+      "line": 71,
+      "fact": "Recovery, completed-case skip and original completion marker semantics are explicit at lines 71-78; task success additionally checks worker status and every scene at lines 128-136."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py",
+      "line": 82,
+      "fact": "Original runner rejects any compute process on the assigned UUID. Keeper compatibility cannot be achieved by adding an env variable alone."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py",
+      "line": 107,
+      "fact": "Original runner validates health server PID, manifest hash, condition, GPU UUID and real-input parity, then runs cross_service at line 116."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py",
+      "line": 137,
+      "fact": "Original runner always terminates client/server in finally. Simply retaining the scheduler flock does not preserve a CUDA context."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/server.py",
+      "line": 24,
+      "fact": "Frozen server verifies manifest sources, config, checkpoint and gates; these original checks must continue unmodified."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/server.py",
+      "line": 57,
+      "fact": "Server warmup resets policy on instruction boundaries and after preparation; resource wrapper must preserve it."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/server.py",
+      "line": 90,
+      "fact": "Server configure rejects any config different from its fixed frozen cfg. Cross-condition persistent-server reuse would require a scientific-runtime change."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/worker.py",
+      "line": 121,
+      "fact": "Original worker revalidates manifest sources and planned config, enforces saved health identity at lines 140-143 and skips completed/recovered cases at lines 149-159."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/vlm_local_search_v1/prepare.py",
+      "line": 265,
+      "fact": "Frozen manifest includes local runtime source hashes via source_files/local_runtime_sources, so editing old runner silently would invalidate source verification."
+    },
+    {
+      "path": "preparations/idea1_v3_1/common.py",
+      "line": 60,
+      "fact": "Manifest hash and each source file hash are validated; never disable or silently rewrite these to admit a resource change."
+    },
+    {
+      "path": "preparations/ease_insights_20261103/await_assigned_gpu.py",
+      "line": 124,
+      "fact": "Current gate performs a final fresh assigned-UUID idle scan before exec. Cold-start chain retains this outer gate exactly once; later chain tasks must use owned-keeper preflight rather than the original empty-GPU gate."
+    }
+  ],
+  "initial_minimum_file_scope": {
+    "new_implementation_files": [
+      "preparations/ease_insights_20261103/gpu_owned_keeper.py: stdlib ctypes CUDA Driver API helper, ready/control pipes, no CUDA on import, one bounded allocation and one assigned-UUID context.",
+      "preparations/ease_insights_20261103/gpu_resource_chain.py: stdlib-first resource parent, immutable chain-plan validation, ownership/preflight checks, original frozen server/worker launch orchestration and per-task receipts.",
+      "preparations/ease_insights_20261103/test_gpu_owned_keeper.py and test_gpu_resource_chain.py: mock Driver API and CPU dummy process/lease lifecycle tests."
+    ],
+    "new_operational_artifacts": [
+      "Immutable resource chain plan + SHA256, containing original logical task IDs, exact original runner argv, unchanged server/worker science args, manifest hashes, complete_file paths, task order and explicit failure/stop rules.",
+      "Operational revision manifest + hashes of new resource files and frozen source evidence; record that original runner resource orchestration is superseded by the new wrapper, while frozen server/worker/policy/backend and scientific manifest are unchanged.",
+      "Per-chain ownership/transition JSONL + aggregate completion receipt; per-task original completion markers and scientific episode files retain their existing schema and identity."
+    ],
+    "no_old_source_edit_needed_for_first_chain": [
+      "scheduler.py",
+      "await_assigned_gpu.py",
+      "vlm_local_search_v1/runner.py",
+      "vlm_local_search_v1/server.py",
+      "vlm_local_search_v1/worker.py",
+      "policy/backend/model code",
+      "scientific manifest"
+    ],
+    "deployment_queue_change": "An audited reversible operation must replace only the selected not-running logical queue jobs with one chain allocation; record old IDs as superseded/mapped and ensure none remain independently eligible. Keep all original complete_file paths. Rewrite downstream dependency references explicitly if any exist; reject grouping if unhandled dependencies or duplicate task ownership exist. Do not apply this to a currently running original runner."
+  },
+  "lifecycle": [
+    "Preflight the fixed chain plan on CPU: every task has an allowed original local-search runner shape, frozen manifest verifies, output root/config/stage/case universe match, dependencies and ready_files are satisfied, no duplicate shard ownership. Already completed tasks remain completed and are skipped through original checks.",
+    "Scheduler starts one gated chain allocation with its usual inherited GPU flock FD. The current 25-second/2-second cold-start resource policy and final fresh UUID idle scan remain the cold acquisition boundary.",
+    "Chain starts one keeper only after its own fresh assigned-UUID idle confirmation. Keeper creates one driver context and one explicit bounded allocation on the matching UUID, then reports ready, actual UUID, PID/start identity, amount and capacity. Ready has a finite timeout; failure never launches a model server.",
+    "Parent post-checks only that UUID. Require a live proven keeper, exactly one compute process, finite known memory compatible with allocation plus a documented finite driver-overhead allowance and no evidence of any other process. Container PID must not be compared directly to nvidia-smi host PID. A sole-small-process observation is a consistency check, not strict host attribution or exclusivity.",
+    "Execute one task using the original frozen server/worker module argv and original recovery, shard lock, health identity, cross-service comparison, completion validation and receipts. Use a fresh server for every different condition. Keeper stays live during CPU imports, model loading, rollout and all transitions.",
+    "On a normal task end, first validate and persist original task completion, then reap only its proven owned client/server, retaining keeper and GPU flock. Start the next prevalidated task immediately; do not re-enter empty-GPU waiting. No two model servers need coexist.",
+    "On technical task failure, preserve valid completed-case receipts. Follow an explicit bounded chain failure rule: hold the same small keeper while recording the error and deciding only predeclared retry/next-task policy; do not silently retry science or release/reacquire between eligible tasks.",
+    "When all planned tasks finish, explicit chain stop is requested, or a fatal ownership/driver condition makes continuation invalid, close only the chain control writer and await keeper EOF cleanup. Close the GPU flock only after own processes are reaped. Do not hold a GPU indefinitely after all authorized work is exhausted."
+  ],
+  "ownership_and_safety": {
+    "keeper_proof": [
+      "Popen child identity captured immediately",
+      "/proc PID start ticks or pidfd identity before cleanup",
+      "exact assigned full GPU UUID reported from Driver API",
+      "unpredictable per-chain capability/nonce in ready handshake",
+      "live parent-held control-pipe lease",
+      "source hash and declared allocation bound"
+    ],
+    "model_process_proof": [
+      "Owned Popen process handle and recorded start identity",
+      "inherited per-task capability/ancestry",
+      "health server PID + frozen manifest + condition + UUID match",
+      "cleanup limited to exact owned process handles, with start check/pidfd protection where available"
+    ],
+    "host_pid_namespace": "Use a verified namespace mapping only if available. Unknown host PID ownership must never authorize signalling. A small keeper ready/scan consistency check does not convert arbitrary host PID into an owned PID.",
+    "lease_fds": "Keeper inherits only control read + ready write FDs, never the project global GPU flock. Model server/client Popen close_fds=True; they must not inherit the keeper control writer. The chain parent holds both control writer and scheduler GPU lease continuously.",
+    "allocation": "Explicit 512 MiB proposed; configuration finite positive integer, at most 1024 MiB and at most 5% of device total. One small allocation; never a second model allocator, capacity-filling reservation or broad GPU scan.",
+    "conflict": "Any extra process, large/unknown memory, UUID mismatch or failed query refuses new model startup. Keep observations and release only own claim when fatal policy requires it; never terminate a foreign process.",
+    "limits": "CUDA context/keeper is cooperative visibility, not exclusive allocation or a guarantee against outside processes allocating later. Retaining it reduces our self-created empty windows only."
+  },
+  "alternatives": [
+    {
+      "option": "Reuse original model server across same condition/shards",
+      "assessment": "Potential later optimization only when manifest, config, checkpoint, runtime hashes and reset/gates match exactly. Existing per-episode configure resets are useful, but current runner owns service lifetime and logs. It does not solve cross-condition queues without additional wrapper and validation."
+    },
+    {
+      "option": "Retain old model until next model is ready",
+      "assessment": "Creates two model copies and uncertain capacity overlap; unnecessary for a small continuous context. Not recommended for the minimum fix."
+    },
+    {
+      "option": "CPU preload then release old context and start new model",
+      "assessment": "Still leaves a context-free handoff interval unless a keeper overlaps. CPU preload alone does not meet continuous visibility."
+    },
+    {
+      "option": "Dynamic scheduler-owned GPU slots and supervisor IPC",
+      "assessment": "Needed if every original logical scheduler job ID/dependency must remain live or new jobs must join indefinitely. Add a persistent per-GPU supervisor with keeper and lease, dispatch/reap logical jobs over authenticated pipes, and preserve scheduler state per logical job. This is a larger second stage than a bounded ready-task chain."
+    }
+  ],
+  "required_cpu_validation_before_any_deployment": [
+    "Mock Driver API only: invalid config, exact UUID matching, context/memory CUDA errors, memory/capacity bounds, no CUDA on import, ready timeout and EOF cleanup.",
+    "Mock assigned UUID scans: sole bounded keeper accepted; additional/unknown/large-memory process or UUID mismatch rejected; never infer ownership from equal container/host PID.",
+    "CPU dummy chain: exactly one keeper remains alive across two task/server exits, same inherited global flock stays held, next task begins without empty-idle gate; all descendants reap on normal exit, failure, exec/Popen error and parent exit.",
+    "Assert original server/worker science argv and env remain unchanged except documented resource data; all frozen manifest/source checks, health identity, real-input parity, cross_service and original complete-case checks still execute.",
+    "Queue-plan validation: selected pending/ready tasks only, no duplicate independent eligible entries, explicit logical-id mapping, dependency preservation, aggregate success only after every required original completion marker validates.",
+    "Invalid or already-completed cases are not rerun; technical failures cannot be converted to successful scientific receipts; original completed effective results remain immutable."
+  ],
+  "not_done": [
+    "No keeper implementation",
+    "No CUDA library load or GPU query",
+    "No experiment, keeper or background process launch/stop/signal",
+    "No scheduler, gate, runner, server, worker or queue mutation",
+    "No deployment or scientific rerun"
+  ],
+  "source_sha256": {
+    "preparations/ease_insights_20261103/scheduler.py": "0786dd02cb35dc7da40ee06dd515dc4481aa0d28e09d4d78baa5df1338345752",
+    "preparations/ease_insights_20261103/await_assigned_gpu.py": "07aa0356850fa6d5199d5f3ba0b35632c4b5f500b163f5da4bb106da506a6e3f",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py": "8df52ecd433ce6fc8d73ad55bdf08e1c51c134cc448a0cf928f417137dd4810b",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/server.py": "4c7ddfbaa1f6d310fcde9f5f1f1ae54234e99dd651004cca18a331dbd13fc8a6",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/worker.py": "4ab8ef4041723012a442d624523115ca077c9c4f5879df77b3bb97a5026d1d2e",
+    "preparations/ease_insights_20261103/vlm_local_search_v1/prepare.py": "6d8b3a2233dc4a50b3cd2be54481bf29679a78139714546cd371cb810de217a1",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "results/ease_insights_20261103/queue.json": "c5b2cbef42cceca177bc64510b58d9cc0646ed1a60257d172012cf491d7e5fd5"
+  }
+}

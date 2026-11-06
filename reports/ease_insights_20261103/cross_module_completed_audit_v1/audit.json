@@ -1,0 +1,2028 @@
+{
+  "status": "completed_source_discovery_audit_passed",
+  "time": 1793917254.0033612,
+  "new_quality_cases": 0,
+  "source_cases": 240,
+  "paired_initials": 80,
+  "algorithms": {
+    "full_d10": {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": [],
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "source_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery"
+    },
+    "vlm_c": {
+      "id": "spread_c",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        17
+      ],
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "source_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery"
+    },
+    "ae14_d3": {
+      "id": "ae14_d3",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 3,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ],
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e",
+      "source_root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery"
+    }
+  },
+  "source_manifests": [
+    {
+      "alias": "full_d10",
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+      "sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+      "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "alias": "vlm_c",
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/manifest.json",
+      "sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+      "manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "alias": "ae14_d3",
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/manifest.json",
+      "sha256": "df34a6e280492733ee57862368cd41fdbd54cb114ae385feb06d0fc6bb076ddf",
+      "manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    }
+  ],
+  "total_successes": {
+    "full_d10": 77,
+    "vlm_c": 70,
+    "ae14_d3": 68
+  },
+  "suite_successes": {
+    "full_d10": {
+      "libero_spatial": 20,
+      "libero_object": 20,
+      "libero_goal": 20,
+      "libero_10": 17
+    },
+    "vlm_c": {
+      "libero_spatial": 17,
+      "libero_object": 19,
+      "libero_goal": 17,
+      "libero_10": 17
+    },
+    "ae14_d3": {
+      "libero_spatial": 20,
+      "libero_object": 19,
+      "libero_goal": 18,
+      "libero_10": 11
+    }
+  },
+  "task_success_counts": {
+    "full_d10": {
+      "libero_spatial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "libero_object": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "libero_goal": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "libero_10": [
+        2,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ]
+    },
+    "vlm_c": {
+      "libero_spatial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "libero_object": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "libero_goal": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "libero_10": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        1
+      ]
+    },
+    "ae14_d3": {
+      "libero_spatial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "libero_object": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "libero_goal": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "libero_10": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "quality_qualification": {
+    "vlm_c": true,
+    "ae14_d3": true
+  },
+  "directions": [
+    {
+      "suite": "libero_spatial",
+      "better": "ae14_d3",
+      "worse": "vlm_c",
+      "difference_count": 3,
+      "difference": 0.15,
+      "task_difference_counts": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "positive_tasks": 2,
+      "every_task_LOO_positive": true,
+      "discovery_direction_pass": true
+    },
+    {
+      "suite": "libero_10",
+      "better": "vlm_c",
+      "worse": "ae14_d3",
+      "difference_count": 6,
+      "difference": 0.3,
+      "task_difference_counts": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "positive_tasks": 5,
+      "every_task_LOO_positive": true,
+      "discovery_direction_pass": true
+    }
+  ],
+  "success_discovery_gates_pass": true,
+  "preliminary_separate_service_cost_ratios": {
+    "vlm_c": 1.5962836533021632,
+    "ae14_d3": 1.4823094645683346
+  },
+  "preliminary_pair_cost_factor": 1.076889604673083,
+  "cost_sources": [
+    {
+      "alias": "vlm_c",
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery/analysis/analysis.json",
+      "sha256": "0b9278150c4c64afa33e47f01e1d4a2141e954bf81db9beceb8bb1abf948d4e4"
+    },
+    {
+      "alias": "ae14_d3",
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/analysis/analysis.json",
+      "sha256": "7a792139b6272ccd6c22f52c9e8f8d85ef5b0dbf07cf9b2c8c8645de5633df66"
+    }
+  ],
+  "joint_same_service_cost_gate_passed": false,
+  "cost_scope": "Separate completed historical service groups; normalizedFull ratios suggest a candidate only. A new joint fixed-input cost gate is required before acceptance.",
+  "same_layer_count_or_NFE_claim": false,
+  "post_hoc_cross_branch_selection": true,
+  "independent_validation": false,
+  "insight2_complete": false,
+  "current_AE14_partial_outcomes_read": false,
+  "current_frozen_AE14_experiment_changed": false,
+  "original_scientific_records_modified": false,
+  "evidence": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init46/episode_receipt.json",
+      "sha256": "425c425056a323c3117fee6e276dcb0dabb4be8e5cd2ff68f16ac676a8281e9a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task01/init45/episode_receipt.json",
+      "sha256": "da184cec24d201efea156b69e2aade1adce35930d570830b0bc3bfa58fd1d3d9",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task01/init46/episode_receipt.json",
+      "sha256": "fc61dd70fff1a262cfa4c27599448865e0598b5155b8d4f172ccabbd2543b81f",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task02/init45/episode_receipt.json",
+      "sha256": "0966b884ca4a9341069ed81aaed3ae573e403a49e5ed2f3a8f74855bc0a4ad52",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task02/init46/episode_receipt.json",
+      "sha256": "b5196a79bdbf137779e77b063a1e1af420fb79adc2d275a9db5815a8ec9f1346",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task03/init45/episode_receipt.json",
+      "sha256": "22c11a24bbea7588f222b565308b407c12fc1ae4f9f2927c85612bf608b553f6",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task03/init46/episode_receipt.json",
+      "sha256": "24f918dd9df19cde42456d14d88563ece83fde23845f894a404040ca1cffbb29",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task04/init45/episode_receipt.json",
+      "sha256": "409b79f363dc73fd3b9e46d6c623bccc593663c01149054415d91d8f68fe2d60",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task04/init46/episode_receipt.json",
+      "sha256": "1c28419a48629b065db5e44b27999d13115ab184c683369c2717221bf6410443",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task05/init45/episode_receipt.json",
+      "sha256": "6c723eabfa16b6676cd71860319871dba23a527236e85f60fecea76c59a220bc",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task05/init46/episode_receipt.json",
+      "sha256": "4e352073e96fbef0ea267e80230213ada9b2b762a4795fdf108cd427cc34ee8b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task06/init45/episode_receipt.json",
+      "sha256": "53cb1a0f4e70424d7a4a21ae5e8ad63349f7d57518404c70c6aaf19a25f75df1",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task06/init46/episode_receipt.json",
+      "sha256": "d13b392cac2a880b7af04ce118572a6f89f341d1cfd347cdc0a461d6241cf74b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task07/init45/episode_receipt.json",
+      "sha256": "3c8572819075bacdd08e2d995ef683ad58f604bd3616288d1bfed12d337207e5",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task07/init46/episode_receipt.json",
+      "sha256": "e98148d06ed355dcc72d376a72163fc2566a0a02b32c531760dc913377046c1d",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task08/init45/episode_receipt.json",
+      "sha256": "3663bc7a496711cd6ca76e460e1f5ebd382c58f00c2e0bfba7277350acdf4f7a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task08/init46/episode_receipt.json",
+      "sha256": "07094ac89432b06df70d96fbcef7bfb70ffb693efdc83d95e69bff840ca46237",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task09/init45/episode_receipt.json",
+      "sha256": "c9f0823ed4bcc111cb2bf85512171d2ef7ad31f4ffb3d3da5ca8d5b2662b78a3",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task09/init46/episode_receipt.json",
+      "sha256": "dce1e6e9ae0fc319e2202c9565d524b1dc340c5a14516c596424bfadd43844f9",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init46/episode_receipt.json",
+      "sha256": "a7392aa7c37693968f893762c168c9b92a190ec9c5e00e5701e0f38bc1985798",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task01/init45/episode_receipt.json",
+      "sha256": "5bb6337c180a9ac51906b4aa8a1cf370d219f46a4904980c4f26e42b419b6b69",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task01/init46/episode_receipt.json",
+      "sha256": "600c830b99f992cabf97c704f321abc9fd3caf28c30419312645c0f74d7a4535",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task02/init45/episode_receipt.json",
+      "sha256": "046ce450d9f63fa88a1af4db25c1dd5816647d8aa7adf0840d2ded3e37c55608",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task02/init46/episode_receipt.json",
+      "sha256": "23c5e67c96d1443690e8857249182d6ba849bc437ce2f57464bd43eee069c7a5",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task03/init45/episode_receipt.json",
+      "sha256": "0292184ad7025c6fa152238c498009cae08538aea4f9b68ff6372de4ad82deb8",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task03/init46/episode_receipt.json",
+      "sha256": "68681362e55a2130f25b453c679f795c20cad7f534b056f9f1dd7a3f9bbacd69",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task04/init45/episode_receipt.json",
+      "sha256": "d6e33f4ade86d77642e572bb87a0d20f4a42228348147b6438458bf5573ad485",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task04/init46/episode_receipt.json",
+      "sha256": "4c60c30497bb7d663aa8d3277e74a396fb8e621ae11cedd51461601ba1d271c2",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task05/init45/episode_receipt.json",
+      "sha256": "351c5b6a5234ffa6a216e1ff0c895da8b862dda004cecad6986d97daa70579b9",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task05/init46/episode_receipt.json",
+      "sha256": "4ef60c526eb58731a8f2fa7bdc01f1c4b59b883c034995fd44c8d3573e89b1ed",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task06/init45/episode_receipt.json",
+      "sha256": "114b7752bd8fd6be368733620fbda85bb0798a124a33295304e90086cf4eba9a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task06/init46/episode_receipt.json",
+      "sha256": "874d49e29727dfcf12aca6b3d1422c43e24a379428078261fd7ec899a7355741",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task07/init45/episode_receipt.json",
+      "sha256": "2acd8330698ba4d31153908011fbce9a8ddfca4a58517f0ae1cee9b31245e5c1",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task07/init46/episode_receipt.json",
+      "sha256": "7b5e6441ed50b17cef734d9a38adbb03bd8d9d36fec4aacb9ba44327e2e6a47f",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task08/init45/episode_receipt.json",
+      "sha256": "f7bbc483342658d3082b18cf5a3d8f80b5b9f7b625994523e8ad7ef66d688e4a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task08/init46/episode_receipt.json",
+      "sha256": "219f32402d4b1ba0bed20876d9752541b68b4553901cdfc00c0fddb8cc0fe62d",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task09/init45/episode_receipt.json",
+      "sha256": "91851138eb1bc7e9dea3830060b69803a2e1ad843bab60ec9270b42d9a05b3c7",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task09/init46/episode_receipt.json",
+      "sha256": "5893ccec52256427a6a2a5a834ddd6e39c06f108fd096dce3b06023ade60f350",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init46/episode_receipt.json",
+      "sha256": "60f6429e1e852d2ea97e308a9a856212cc98861e5a3b64e92287dfaa4942971b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task01/init45/episode_receipt.json",
+      "sha256": "f3c3c433c015e3fa699ecfc92033627e23f09b22235a523cc6e7c0928a7b771d",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task01/init46/episode_receipt.json",
+      "sha256": "45a3b5a825b9967edf01982b867774087969be887df1d35db1b5d66e771b0f30",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task02/init45/episode_receipt.json",
+      "sha256": "ede5cdb0777c607fdb365af333fa877e06511b0dca2e79aeddd9db2e8d66456e",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task02/init46/episode_receipt.json",
+      "sha256": "66513b22e186f1f2a3f4615dc6b857dba10bb65205d1774f2bc0b90a4c3170ad",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task03/init45/episode_receipt.json",
+      "sha256": "30f66d5be6792eb8f8e961ccc52d1de941f852559e931610be7efe0fd37d5150",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task03/init46/episode_receipt.json",
+      "sha256": "136824b121a9391a964e76413af7534a5f27b125cc9f7473e790f4e9c6cacb6d",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task04/init45/episode_receipt.json",
+      "sha256": "3c75deca088dbac4e05af4ca136f0b78951555b54da3b60ddec0425df015a7e8",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task04/init46/episode_receipt.json",
+      "sha256": "44f5b33b3463c33ad65a1fe62401900d7a18d860d0f18b22ca15ce544a12e6fd",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task05/init45/episode_receipt.json",
+      "sha256": "eff2f7405ef9f32a3d2f6cda967055dc00a2a1036bee910ba7dbccebdfba9a9b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task05/init46/episode_receipt.json",
+      "sha256": "acafb7f8558fa917112059adb47b5fb349db16c5fed5dc488475ad3c527b977b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task06/init45/episode_receipt.json",
+      "sha256": "c390dc945d13e4b8bf76d96d40045df72621ece3f7c64a8283746e44d800bafe",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task06/init46/episode_receipt.json",
+      "sha256": "e684f5026982d7893fe294e703d5fc467be376f9cb79b3d994c028566cea4cef",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task07/init45/episode_receipt.json",
+      "sha256": "72ce9d57b2729015c3041cd59252ef2e47d4d206e5e828306c6ae56f7d19e9da",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task07/init46/episode_receipt.json",
+      "sha256": "91611a93bd42a0aa5c389c447ebd7939937eb73364bd9296e1f100c54bbc8bca",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task08/init45/episode_receipt.json",
+      "sha256": "e6d3fdfd1aa4f4b6cd2447c6f3c4d9eaafc5f619bcb368e7344eab5af7af338e",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task08/init46/episode_receipt.json",
+      "sha256": "23d45b890c51fff9fda095a065f035d9b381419cdcb896eaba8e0dcc5b5019da",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task09/init45/episode_receipt.json",
+      "sha256": "185f4c121035206510e2088be80c67b20bd041a184e8fbcc1b2eb3c73a28be67",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task09/init46/episode_receipt.json",
+      "sha256": "bbd262f8aad81a389235426d4c14080a44ca8b3a22b7299f20e318a9b65678ff",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init46/episode_receipt.json",
+      "sha256": "7f4990644a2f24f259ea44700327fa5c4507b3356531ac42933af2cabcc8a9e6",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task01/init45/episode_receipt.json",
+      "sha256": "dcdabef21f0f4caace3705546c336ae31f8d9fcf343d9260fd8a18b61cf251b3",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task01/init46/episode_receipt.json",
+      "sha256": "75568a296314cbd9978ac9f2057d2fec0ac8ee389bf6228a8b3fce7551aa0ff9",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task02/init45/episode_receipt.json",
+      "sha256": "06da4e286019dc8b6555356be44fe5857e62aeeba825470228c0a4b0228ce322",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task02/init46/episode_receipt.json",
+      "sha256": "5d7a497da5936f735c7941386c8757f759e1baae21d048c9fe65e6b10ed70846",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task03/init45/episode_receipt.json",
+      "sha256": "42bf5a19815e2f19ccc45ce035c6066f90672a8423afdb4aaf84b58ce40ef03b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task03/init46/episode_receipt.json",
+      "sha256": "0048563de7985d01b49a11ab1268a4582a9721a03efa92b86dc38b2f194c72b6",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task04/init45/episode_receipt.json",
+      "sha256": "8dbe7768911f7c9db34104ffb40a870c4d8f5d18a4c0a8d28fb0bd4ada2b5a3b",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task04/init46/episode_receipt.json",
+      "sha256": "2e5f32c284f7fd04b008732d9f3c917d3dfad789cf449f81b5e5851047e9a293",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task05/init45/episode_receipt.json",
+      "sha256": "01181ce58b5fa07e2cd0c830dd00f834657d64616cfed90b9adfcfe880c36b4a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task05/init46/episode_receipt.json",
+      "sha256": "012072d676521ddf57a9ec7357ce357507605c44c4dd3d0ee1f283c0dba4d187",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task06/init45/episode_receipt.json",
+      "sha256": "90e84f0a1d97c6fc8873c6d8807a1ebdc87b1f4fcd543a3717f9fab4c33eb71f",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task06/init46/episode_receipt.json",
+      "sha256": "bc62c055ff35c478aad78dec226b3e79c454746f34e9b3444b3ecd9ad26cf15a",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task07/init45/episode_receipt.json",
+      "sha256": "0dcca6f36214e813ff1b9846020da6b802350d092242d3b247a8cb54f49bd6a1",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task07/init46/episode_receipt.json",
+      "sha256": "107317123c4e89608d104bf7894cc2e87b57cf3355ca11360c942f866d9bbea8",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task08/init45/episode_receipt.json",
+      "sha256": "563922a0be7671ba95ea1370cf579f54557684d2856b835de7554f26f6078826",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task08/init46/episode_receipt.json",
+      "sha256": "95d638677a4ecf5160557d7d2a2648bac7cc36a551290fbe842ef790270ac4fe",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task09/init45/episode_receipt.json",
+      "sha256": "4badb3484d9455c9842d094b0f0e76f6b60c84bda74de983733695e52ffe5e22",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task09/init46/episode_receipt.json",
+      "sha256": "531daa006017804611f2fbfaaba933878bf871c6098ada1ac955ce80accbbd34",
+      "analysis_alias": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "82bd8430210fe4f02fbb35c6d2346743557e917c96ab498fecf32f327de8adf8",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task00/init46/episode_receipt.json",
+      "sha256": "73cf2d8d6f0d1584e0ae710d3ea4914a69b9d87d6d70e323d02d950c6e38de09",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task01/init45/episode_receipt.json",
+      "sha256": "41539f7c02e2a6ce679e384989e9a097836f38d67a3043abccbe8ccb6946a3f4",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task01/init46/episode_receipt.json",
+      "sha256": "7997cdf4e18400014c7f563cd444423c21afccf223f55d8f9e9069335939dbd1",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task02/init45/episode_receipt.json",
+      "sha256": "4cc289dad058b9f42db14b11859f3e5317f97536240b36cef9111805e5606c9e",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task02/init46/episode_receipt.json",
+      "sha256": "2b7b0c740998c4ad7c5df8e0ec09fca2e4117a9e9f2011fc5369d76d28568a4d",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task03/init45/episode_receipt.json",
+      "sha256": "d37f4492c5f2f053b26e4c7d63de0ef44d19018fabff3d271474c8e5e7e7d5cb",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task03/init46/episode_receipt.json",
+      "sha256": "b6db4dbe2c3d3c7ac1fdc4ba1bfa9c4ab98019e943e739fe1cae7b53bef45c80",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task04/init45/episode_receipt.json",
+      "sha256": "81a95d585ea24d7638804779464f0bc6fd2ae932a0a50ea8825f1c82225391e9",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task04/init46/episode_receipt.json",
+      "sha256": "abc5989b73bd112dfd65c43eb6160a3b8d6dcbf3bc13067a848d729fa724cd69",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task05/init45/episode_receipt.json",
+      "sha256": "9c42ca999944427d5620607d63a755775393750229377f0046b67bea6a6c7f0f",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task05/init46/episode_receipt.json",
+      "sha256": "185138b55f1b567d75a83d8f2370cfb2643702c8a0937e097de890552184fa4b",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task06/init45/episode_receipt.json",
+      "sha256": "b1055e5e07dc36d6db489e7a9a117d8a54b506aca67e0ea16296785874152f66",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task06/init46/episode_receipt.json",
+      "sha256": "820462f2f129b70e2b499a39b5209007f3370b5343eaeaed927ec41a32a0d384",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task07/init45/episode_receipt.json",
+      "sha256": "ee5e4cdeda7db56584eb753146ca9d0b71d719bcd0be8f36bf29198417621a5f",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task07/init46/episode_receipt.json",
+      "sha256": "4db7b6ccd16046ac4c96e24c188c0d8137d4442008954e271d446a6b327973e0",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task08/init45/episode_receipt.json",
+      "sha256": "a1cf8acd196ca8b9d4032234d7240cd56a787fe8f9720619b36d715ee5ef9021",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task08/init46/episode_receipt.json",
+      "sha256": "6351acf4822526b4fbf1913dfdd3744363884e9fe1b8e67072c637ee987f9aab",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task09/init45/episode_receipt.json",
+      "sha256": "20faccb2942c826e5caa9d01b630efe5166d3c2b38b128975bdf6b63c10d3cb4",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task09/init46/episode_receipt.json",
+      "sha256": "dc3defa4bc5a992865d3006ee5effb8588341df33127d5d241f771b7410b2e4f",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "03add4c51b086f207aaa59da1bea68b866067ad7c050b689f39d0e7b2985b94a",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task00/init46/episode_receipt.json",
+      "sha256": "b1c629dd58e9e1d6408c67430c99f388c2847440f797a6919d3dd1967967ae2d",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task01/init45/episode_receipt.json",
+      "sha256": "d5019ade0edb8e66862c36d577e799b026c0ca567ea58d7fc5ad1601538e919a",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task01/init46/episode_receipt.json",
+      "sha256": "a3806e66f54b848986f3313c760942090f15cdc21a74f5824fc86eb456abaddb",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task02/init45/episode_receipt.json",
+      "sha256": "70aeafff2cbbb96e17d4307bde517f581f1a022d0ea8dea159e560772cae2073",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task02/init46/episode_receipt.json",
+      "sha256": "d7b81b724f1a49e5564bd07d408b860fd1e602537135662dae34ff5ea52a756b",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task03/init45/episode_receipt.json",
+      "sha256": "8e920a03a31f51e8657ebd801ed41a78118d8ad8d6daff0657c9eb8243e36ad0",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task03/init46/episode_receipt.json",
+      "sha256": "33eea7d33efc7b1fe0daa0d469f7bf77bc9c27a5b69326d9ea397118c63fbc30",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task04/init45/episode_receipt.json",
+      "sha256": "586a52a000074d3729d68fe1a36d23986a4fb8da9b207656e03e30df6c3a8d68",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task04/init46/episode_receipt.json",
+      "sha256": "6741208b70a73661c318cb7433d65002355edefac903d8014e1994d444962d82",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task05/init45/episode_receipt.json",
+      "sha256": "10cb5b0618ea2525c5ba767ec9b2fbfa8a00ed2910c7a890aef68ab83335cf63",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task05/init46/episode_receipt.json",
+      "sha256": "4ce2fbf04978a5abc009b8ee0b5a3703be373735aaff5a251af25807e275e792",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task06/init45/episode_receipt.json",
+      "sha256": "ab8ba1e0cfe0529b7e5e8cff4f9375f00679920578d283da4be64d99b06f190d",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task06/init46/episode_receipt.json",
+      "sha256": "6f02ebaed4fa1e5e7745fe5c82c7727a3d3d4590258d88b1763e18f7f3ab0f75",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task07/init45/episode_receipt.json",
+      "sha256": "406f46525007d3d77b44f1b82ef1c8d8bfa91491fe58841e6293fb60af76b0af",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task07/init46/episode_receipt.json",
+      "sha256": "a8f396683b3544be31a1853322d6cb37b6def716c25edbb520da85262f42e953",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task08/init45/episode_receipt.json",
+      "sha256": "1d28db723b36e9bfe8d1f274952be88f84c650ce3403dc87aed5684b0d867e49",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task08/init46/episode_receipt.json",
+      "sha256": "b551f127920159486c359f1c32d5ceaec79d0db7cbf15aee329dc08c54d336f4",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task09/init45/episode_receipt.json",
+      "sha256": "b6dec7dae05f0033b97f55b9f90f546ec3e4e1ae34c38f8c635825e4f897c2e8",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task09/init46/episode_receipt.json",
+      "sha256": "1939084d6d6a4e359d33834761776cea0314f4d442d9f57986867b80a05a671c",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "2617cae36c25fb925b3ee773168dbe15f4436ab732039ea52bb6912534e1090e",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task00/init46/episode_receipt.json",
+      "sha256": "de799680ca81b6cedb044c42e21a10617031325c51b89679fc55fdcd1af0a65a",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task01/init45/episode_receipt.json",
+      "sha256": "ba4e136df83c8a359fc762e4ecba9d4f07f08c7454fdd9caf4e70734d59c13c6",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task01/init46/episode_receipt.json",
+      "sha256": "5c8ec0a06983c4ff2eef3868ab70d3854e2fab97a5c09fdb26875ecf8cc31b7f",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task02/init45/episode_receipt.json",
+      "sha256": "20b6841c74c4f254e7498eddfc36bd6a7f2b5cc28a9cab9aa0ff3cd6c1c2ee66",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task02/init46/episode_receipt.json",
+      "sha256": "fd70b2a08ac8defd1bcc8258e23efbce5fcad4e332aa97ab8e9ea9e8ecc83aba",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task03/init45/episode_receipt.json",
+      "sha256": "bf659b644245c8756b27b8d769503e23718bff562a37ca821aa0f0332782c6b5",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task03/init46/episode_receipt.json",
+      "sha256": "0ee81e524f31959b94e5534f00e128ead6d14bdcdcdd25fd3930cf66eed988ac",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task04/init45/episode_receipt.json",
+      "sha256": "4f2e7bc58ca175245a9470221606b95bd45ffb667e295cc3a7274b13ea03171f",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task04/init46/episode_receipt.json",
+      "sha256": "7f5894ec283d311d2f88bd33ac65e18078632cb4bcfaf36f2c833842046ae9d2",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task05/init45/episode_receipt.json",
+      "sha256": "b4f56705b0b7063710ec038ad178cc9c89e54bc567adeda258ad6f7236171c24",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task05/init46/episode_receipt.json",
+      "sha256": "b5f0ac7a264ca2d5124f12ebaaa8ab4269ad85aa6cc5d5aee7c46e69dd1251ff",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task06/init45/episode_receipt.json",
+      "sha256": "e15391e6992c244cb64fa19827e7ccc2bd38149c2108e5bc0d612f749d5519e6",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task06/init46/episode_receipt.json",
+      "sha256": "487674d9f7e642178a68e49832f1d501fae009d3a4e871d8b393b926db95a63c",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task07/init45/episode_receipt.json",
+      "sha256": "650d9caca83a138bb339f0a88e449af681cdbb6893ade78bf93eb6f52cbf9f86",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task07/init46/episode_receipt.json",
+      "sha256": "22f694e0053c9b9b85cd3afc9281cd68b64cccd06ebf3b5e411760605f92325e",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task08/init45/episode_receipt.json",
+      "sha256": "2c545a27e52f13cfa7f2d141080f87a0b270e95efaa1e1d3b9bbf74cf5db1749",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task08/init46/episode_receipt.json",
+      "sha256": "dccd2de48890f978c2897514e3ae4aea448d0e9975f93e5c6c3369612af223c0",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task09/init45/episode_receipt.json",
+      "sha256": "4575416cf98adada2743211f8ff9e26e36c9779f5182c6f748217ed69b3099c9",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task09/init46/episode_receipt.json",
+      "sha256": "f8513fdb12393b1b9621b8c0d7cf344f583cf008022f2b26de0cd6bb0dff9331",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "803756426708c3ed8ccee167159f56c78012cfa4191fc3cd4be3bea537b8027c",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task00/init46/episode_receipt.json",
+      "sha256": "58e1721c5ebff343e259bd65e92b498556335548b214ffef977b5d5a4690f374",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task01/init45/episode_receipt.json",
+      "sha256": "e63c93931835f6c62c377c4e230a2774912989b523c9b5fb74ffb0bb51ab9319",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task01/init46/episode_receipt.json",
+      "sha256": "c8f9c2c2a93bc8ea78f6adf2afa934b78407b1ceac9ce0b11484de82bcc13eb9",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task02/init45/episode_receipt.json",
+      "sha256": "e9be6c79ea43f836dd78fae3c26baeee307fe2e3611b99df17c3ce8851ade1b4",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task02/init46/episode_receipt.json",
+      "sha256": "2837fc27fbd74df4451d02ab6054edbae147091fb800778161448b7bb5fc5909",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task03/init45/episode_receipt.json",
+      "sha256": "1d58cd57be26ef63a989b5a698ffded8b6700a5f945865ee84917baa195583f3",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task03/init46/episode_receipt.json",
+      "sha256": "a40728c627aa31afcc45ca3f5375957b76d789f700f81d5692d1c117d4d02c2c",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task04/init45/episode_receipt.json",
+      "sha256": "308a5aeeb436ba11b822edf0d10b998af4f015b319376392f9ce30badcea5236",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task04/init46/episode_receipt.json",
+      "sha256": "400f2f16430a8a4f254240102224d8e0a9c80a0189e95b7db362b4a30a0350c7",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task05/init45/episode_receipt.json",
+      "sha256": "0608bbc97eb82157307ac674e9f267f44c86192b08061f10f71f77fbe36a9664",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task05/init46/episode_receipt.json",
+      "sha256": "0b07d089afb165cd5654eabf51c35ab853b18f5db6b0c04e566a3c4e86cab781",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task06/init45/episode_receipt.json",
+      "sha256": "a6559bd90a8b1a5d24541bdf2df9aeb6cdbe114639740ddcd38af68dbbb220af",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task06/init46/episode_receipt.json",
+      "sha256": "665f1fc5a727a355832aca98f836eed6e273b8c07143bea2e50307495282ef0b",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task07/init45/episode_receipt.json",
+      "sha256": "63df0a23452e9d0ceea22fb1ab7cc7a0c69e9a812b7548a571c99d5b2310c9fd",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task07/init46/episode_receipt.json",
+      "sha256": "d34bcf6cb900378aeef1f461e6ff3bcc3e3a20f330f8cc2478df82619050218d",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task08/init45/episode_receipt.json",
+      "sha256": "155bdd2d9490cd76c3e530a97c16883da43e9ee5eaec5f1bc918fa0564bd0d09",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task08/init46/episode_receipt.json",
+      "sha256": "c7b26ee5d61f80a7db01d0c9e7f04d07bd2c2d9de57c9dff53a579887ca20f25",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task09/init45/episode_receipt.json",
+      "sha256": "fb4af3aa6476acaa45429315f31c585e87e740812e442444134de99c76abdb4c",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task09/init46/episode_receipt.json",
+      "sha256": "fc9366ca8216c4c5a16beb7564599dcaebbe1a099d2e042f3820a9e4e0b427fc",
+      "analysis_alias": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "1733dea969c2c27ba1c530ab14d19658e37f88a632e60c583798953bfc3e1e35",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task00/init46/episode_receipt.json",
+      "sha256": "d9f64b8984b151eea0794382200e3054430db7a3c77b13818e51515342241c7c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task01/init45/episode_receipt.json",
+      "sha256": "a754c3c75407c08fed554e49e6361ab2c82724f3550c836ea5b8f0c46a9608d1",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task01/init46/episode_receipt.json",
+      "sha256": "b862869209038509a29ba7fb526bf24531f2e53a9d2f26972d920ace3ae9b4e0",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task02/init45/episode_receipt.json",
+      "sha256": "9830ab0b47966a4b72f863d699edbe9c76faa00d41f96f3cc11a8f86f2ab7684",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task02/init46/episode_receipt.json",
+      "sha256": "0e8e4650ac17608f38c7e04369e2ad2b4204bc4e2e0e5c7adb2e6e35f202a6bc",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task03/init45/episode_receipt.json",
+      "sha256": "d1a1363978b7ee7b29ea21637deab5f64fa378525fd26f18f1b614368e77f94e",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task03/init46/episode_receipt.json",
+      "sha256": "3ab8ffa03557553f54f09dc13bc00f1fe950232182ae6a335de273786962b4bc",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task04/init45/episode_receipt.json",
+      "sha256": "78fd9823daa682cf9f07bf3180c37d8493dcc6039e3959a557f267a3992c0eaf",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task04/init46/episode_receipt.json",
+      "sha256": "da3b96564de62ea3efd8ac8255d56cc774103358a9824d5703b707b488f26607",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task05/init45/episode_receipt.json",
+      "sha256": "1b19f72be7ec9b2be0547a19653bca35b90c96f5ba61e7b5cc99d5f4cf6a3a5e",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task05/init46/episode_receipt.json",
+      "sha256": "f40c65f2a25eeef69d7c301be70211aa2a71c411bcee25b3eaec05d20ae57573",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task06/init45/episode_receipt.json",
+      "sha256": "d41c8db0652f9b6653cfd6160170fbe05065bf7ba10e2b7ecebbf4cb68fc7bdd",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task06/init46/episode_receipt.json",
+      "sha256": "60912f69b1a5103f64dc18f1d9b86918387bed4aca5f56ca1dfb3cf985a48cf2",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task07/init45/episode_receipt.json",
+      "sha256": "c50e1e950c6e44154b9278ae2cccc5e2feb76fbdcf03772cd0a667d2f8eef96f",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task07/init46/episode_receipt.json",
+      "sha256": "f467af5a7bd69cadb21db2eef6a4a99fdaaa36b6428d4ada0238a14fd20b9c7d",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task08/init45/episode_receipt.json",
+      "sha256": "4ee943de81d1a506db5c6eaac3638ec5c4f93c4aa0c66f6374f32ec536c25ce5",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task08/init46/episode_receipt.json",
+      "sha256": "f34612cdfa79812766e954bc0c3baa7c1537dfa7a23b982f39ec144d18655eb0",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task09/init45/episode_receipt.json",
+      "sha256": "6ebe8def1c7b58346b71d6836c961cede8ab0a386ce516e76b2010eb26f41e63",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task09/init46/episode_receipt.json",
+      "sha256": "bcc785fdd330a41fb3618713a2ec8ff083a6a55af2b222bc8c351a2d3f9ea22b",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "004e8889937cbf12d5192e0a8f75bd9463fbdb6b4612e5904f9a82864a071874",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task00/init46/episode_receipt.json",
+      "sha256": "bad38c69e0a5e88f4b39224e7543574f1181b4e6186fb1a36f698d836bcc86d7",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task01/init45/episode_receipt.json",
+      "sha256": "1d4d429f1482e27c3fb840e381c6b371bbd4ce288d6bb8278750c270549fead1",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task01/init46/episode_receipt.json",
+      "sha256": "2e239bc343ebc14dad814e42056ceb9d5df2ef96a9aceee6283d974a078eff6a",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task02/init45/episode_receipt.json",
+      "sha256": "0238c99a2129c88245b455d8b6839478224ed5c482a89b4847300b87b3a9796e",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task02/init46/episode_receipt.json",
+      "sha256": "06a89511701c9f7a74ae96a2dc1f8f12e98133fe7d7aa938842fc93f664c5c45",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task03/init45/episode_receipt.json",
+      "sha256": "0d3cfaa5df3b3c591469e2c9aae3f8d39ade48cd22a7dfd09f3c009e4c0b1b55",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task03/init46/episode_receipt.json",
+      "sha256": "67faf7a3f026b6892f1bf19cc652750a50e91726f258db706243c3333c5dc4f5",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task04/init45/episode_receipt.json",
+      "sha256": "b06779590c26f8f37e816a680ee76d700739b3b40c16d6413de5dadf85ddeca3",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task04/init46/episode_receipt.json",
+      "sha256": "23a495da6524b6dba15d906ce8c4eaf5ff4095f1e4bcd72bc7d99e75a505dba2",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task05/init45/episode_receipt.json",
+      "sha256": "deff7010302aa6aa49d013e8e2304771cca67abcec8863db07dec126c0677159",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task05/init46/episode_receipt.json",
+      "sha256": "5ea119106e4c8b7c4a32c3a17e558a9e147e9ef8ab439fb272338baf299d7701",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task06/init45/episode_receipt.json",
+      "sha256": "72aa5e3de923ac511a1825c54f0e60bb939e8670c115677058521a4d13f3c704",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task06/init46/episode_receipt.json",
+      "sha256": "1a52ace2c6fb3ea1420b6984e12daa6f43e0b3f5bda5feaa2b2b0bbde0dddaff",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task07/init45/episode_receipt.json",
+      "sha256": "a23059b57d91ba1d42a96d435404b88a2ba96823223167ffe4fe9cfff00ab41d",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task07/init46/episode_receipt.json",
+      "sha256": "70ef0eed1f9b5a780c15078ba78f2f7aed54744158097bc7e872d1d0ef2918c4",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task08/init45/episode_receipt.json",
+      "sha256": "ce8b97d1e66756f64ee84dab4c5155656104b60b5ccf35bf766b87222f0d0438",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task08/init46/episode_receipt.json",
+      "sha256": "e0ca28117d290f87eb386e24f2b3b3b6e69b5a6dd2d6f88b8c65ed847f0029f3",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task09/init45/episode_receipt.json",
+      "sha256": "fda272426ea208074594d9d1be96c27ff91a65762771d30e2056c4d448bf63c6",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task09/init46/episode_receipt.json",
+      "sha256": "11ea27a761f3f6b548f26a7b0a5374f10e49c4b94feb82c89a42d01869967f95",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "bdc461d096a76bce74352e4a23d120c80b15470450eaabfd2de08acb73dcb9eb",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task00/init46/episode_receipt.json",
+      "sha256": "1881847e1306b11960b582a61536415b8d5555f9375143539d22de20d3e966dd",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task01/init45/episode_receipt.json",
+      "sha256": "0ce092be0cc6119237544dcf351c6dd5b90d803749f47c695349a6ccb64af58c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task01/init46/episode_receipt.json",
+      "sha256": "ac9cc8a80c5f8d56af92bda0d0a81fa11670552166977be0ec886f8208570487",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task02/init45/episode_receipt.json",
+      "sha256": "668749ee7cff6e92fd09da6ffc25c400db95022a93188defe0ed4644a2df787c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task02/init46/episode_receipt.json",
+      "sha256": "545af4eebf014a8261aac60a6cc5c1771f4f31c700fb5ced8864c27a9fe95444",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task03/init45/episode_receipt.json",
+      "sha256": "86c441baa3be7c726b63143af81f10fb4fb51a455260dfef9ca2b5efb20a6d7c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task03/init46/episode_receipt.json",
+      "sha256": "e3e132a83a7399f91d26b85003a636cd6fdfcbca57ab82a6d9ed61c45ae3a650",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task04/init45/episode_receipt.json",
+      "sha256": "2ab6375b72da0cee15a6780c4be3fdfb47fe3bb1a93a20dd15a7fde15f84eed0",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task04/init46/episode_receipt.json",
+      "sha256": "8f787416027269f83d0d826aaf91b62e68ce81c2b16cc43ca32e7336dc09a500",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task05/init45/episode_receipt.json",
+      "sha256": "d9c56291c3fbfa66a9fbe1dff74a1530eae3a26c7e667d7c58aa46fe5dc07ef1",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task05/init46/episode_receipt.json",
+      "sha256": "dc0a7c17c2d268ca1e694fd3d85b6a46d6034fb1b507b8af45410bad7c760e7f",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task06/init45/episode_receipt.json",
+      "sha256": "24f6c9d011ec791a79dc735eadb9d8235e9e0047c10a83849ec3244990b73ccc",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task06/init46/episode_receipt.json",
+      "sha256": "56e5c5e757ba9115a7c94344b90e27c57ce27a89b6771c99f797f277bc01881c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task07/init45/episode_receipt.json",
+      "sha256": "319674f966eb8c375bd2257159747f9fb2f550b8110e9c144a72b435f9c49d4a",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task07/init46/episode_receipt.json",
+      "sha256": "bd19c55ad5a242dcc063b3ac2d4c5ee810d8f6bb8dfc1e8b0885bf9277071836",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task08/init45/episode_receipt.json",
+      "sha256": "ae160527c134cfeac88e0206c9db53994ac0f5b256e0ee277ecbdba6dc7d9e4e",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task08/init46/episode_receipt.json",
+      "sha256": "db4e9501e8cd3bc6c8f0d6aff8825f3fb5ce17c7154612dec539941ea4a10065",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task09/init45/episode_receipt.json",
+      "sha256": "ca5065f08ab3a3ecac957551ef81e55b5d43da643b7ca3975be4fcfa8a7d8035",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task09/init46/episode_receipt.json",
+      "sha256": "9c692937bc7127aee39f08af4d796d0f8dc54d95198f5c3deb3a9b37d451430a",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "0d07f0073b7e39d1d18be005ffea442a32c4102389f4b7c2cf2ebded024a5d63",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task00/init46/episode_receipt.json",
+      "sha256": "2d6321e4c7491ed67fca377c0e94fe7a03f00209d403e9098338b78337e5f09f",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task01/init45/episode_receipt.json",
+      "sha256": "72b1fe770187bfee4eb5c282686e3981acc3472bd7e99d79f8b3c160563c1006",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task01/init46/episode_receipt.json",
+      "sha256": "1c671c95292336dc25970c032062481a3c8998938092f8f30df4b765a5eb354e",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task02/init45/episode_receipt.json",
+      "sha256": "2732ce55e0c426ff5dc182386e24c90d28e6cdec8524dcc86c459b8a65e06536",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task02/init46/episode_receipt.json",
+      "sha256": "488a05e7731cf0481dcef77598bba0d92334e4ea23d879e0d9bd529b22a620be",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task03/init45/episode_receipt.json",
+      "sha256": "2694372976f36413914df18e2e5f3d9db5fe6943f0dff44f345366cc1506eecf",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task03/init46/episode_receipt.json",
+      "sha256": "639458ae82501d53da1d54c9c3b811bf79e85cfd20e2d92da3851dc2bb647846",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task04/init45/episode_receipt.json",
+      "sha256": "4a4bed8bf810b42b58ffb13f816ff5bc3b7d65f5f448037f1ce652d01162b17f",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task04/init46/episode_receipt.json",
+      "sha256": "437407fd48a4a1a87e56321b0c8ba20f62c0464a6834791d2887f5607bcb23a6",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task05/init45/episode_receipt.json",
+      "sha256": "4550ca374676ba04720f57c8d30ed22016b8ce4a32b5e8c4ae1f0d44ab0f52db",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task05/init46/episode_receipt.json",
+      "sha256": "41ebf3b9d31f71d2165c8b71eec15ee893636951f56f0c1509370f28fd3dd87c",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task06/init45/episode_receipt.json",
+      "sha256": "b45bc7b3b8581707a7eaa5f21b81e1e5c37d9a92d50ff8ac88e459b7fa8a4461",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task06/init46/episode_receipt.json",
+      "sha256": "cc4ef36680f7c53e74ef045ec7ee4f5fa072dd62eca6ae633ba05ac90fbfbb57",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task07/init45/episode_receipt.json",
+      "sha256": "4dae7861cb165404cab9e42a852069181b540d372a84a3a2dd6f13f1ddc54324",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task07/init46/episode_receipt.json",
+      "sha256": "e12ce109d4a2ed43118e65ed14f980b8e3b62e182288e3d047f44f7af012a48b",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task08/init45/episode_receipt.json",
+      "sha256": "b3bb0ec34c9abc6d08fd7ae597ec152eee16440d8ba24dac331ac74ce90efc44",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task08/init46/episode_receipt.json",
+      "sha256": "9539e21c8c8778082eb6feabb3af417de9b6f0688add865bb643e9ea5e48f385",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task09/init45/episode_receipt.json",
+      "sha256": "f46162da8671a3d70790940a5cbee25faae83c2838e0de05159ef2c9d0378cc9",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task09/init46/episode_receipt.json",
+      "sha256": "0a5e1b398de5d46c1d1236b708fa60e0cda41201b8682c13c732b2df60e2e1b2",
+      "analysis_alias": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e"
+    }
+  ],
+  "source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/cross_module_completed_audit_v1/audit.py",
+    "sha256": "89e94cf01e26748a5d425ee6a1a299181bbfc38a7d09f434e197698145a5c35d"
+  },
+  "next": "Finish the current320-case neighbor search. Preserve its own decision; if an independently versioned cross-module follow-up is warranted, freeze masks/directions, pass joint numerical/known-control/cost gates, and validate on untouched official states before claiming reproducibility."
+}

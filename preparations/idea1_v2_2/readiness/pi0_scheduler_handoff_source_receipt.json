@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "kind": "pi0_scheduler_handoff_source_receipt",
+  "destination": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/throughput_revisions/pi0_scheduler_handoff_v1",
+  "handoff_manifest_sha256": "4ea4fe8e5f8fdbad45eb4333c0d3846c3180918e6cd641a3597f4990400a0090",
+  "helper_source_sha256": "fa52e7f4ca6e720d4de09bd7ffc3403b41a6bc47e5b67591d9d18b8912c535e4",
+  "tests_sha256": "7e59afabb498bd3853a4f0133fef04c5bb26d3768c2a493e5b2d74bc2e812682",
+  "throughput_manifest_sha256": "edc507f247e5f51f5961599e471c624f3561efe508b2b6c41c1c4dcd43a94b59",
+  "cpu_tests": "8 mocked-signal CPU tests + py_compile passed",
+  "prepared_chain": {
+    "scheduler": {
+      "pid": 3877803,
+      "start_ticks": "2469307680",
+      "ppid": 1958185
+    },
+    "worker": {
+      "pid": 3877820,
+      "start_ticks": "2469307747",
+      "ppid": 3877803
+    },
+    "server": {
+      "pid": 3877844,
+      "start_ticks": "2469307802",
+      "ppid": 3877820
+    }
+  },
+  "compiler_processes": 33,
+  "interpreter": {
+    "executable": "/usr/bin/python3.10",
+    "executable_sha256": "d6bca2b84e73c7775a0dd5e6a76899cfe4ee62863d7c8f88513811d1fda23f49",
+    "version": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+    "native_pidfd_self_signal0": true
+  },
+  "real_process_signals_sent": false
+}

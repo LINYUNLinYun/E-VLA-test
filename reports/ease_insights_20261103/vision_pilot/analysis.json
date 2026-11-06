@@ -1,0 +1,1490 @@
+{
+  "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0",
+  "stage": "pilot",
+  "complete": true,
+  "artifact_hashes_verified": true,
+  "conditions": {
+    "pi0_full": {
+      "n": 40,
+      "expected": 40,
+      "successes": 39,
+      "success_rate": 0.975,
+      "actions": 6355,
+      "predictions": 1286,
+      "mean_model_request_ms": 108.1517834946351,
+      "sum_episode_wall_s": 423.3373212106526,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    },
+    "pi0_keep24_2_front_middle": {
+      "n": 40,
+      "expected": 40,
+      "successes": 36,
+      "success_rate": 0.9,
+      "actions": 7371,
+      "predictions": 1488,
+      "mean_model_request_ms": 108.54575598251915,
+      "sum_episode_wall_s": 457.362333226949,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    },
+    "pi0_keep24_1_uniform": {
+      "n": 40,
+      "expected": 40,
+      "successes": 38,
+      "success_rate": 0.95,
+      "actions": 6810,
+      "predictions": 1378,
+      "mean_model_request_ms": 110.22476510229927,
+      "sum_episode_wall_s": 434.2098028026521,
+      "caveat": "Model latency uses each condition's own closed-loop observations and excludes service preparation; it is an operational comparison, not same-input speedup."
+    }
+  },
+  "paired_suites": {
+    "libero_spatial": {
+      "n": 10,
+      "better": "pi0_keep24_2_front_middle",
+      "worse": "pi0_keep24_1_uniform",
+      "better_successes": 10,
+      "worse_successes": 10,
+      "difference": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 10,
+      "both_failure": 0,
+      "exact_one_sided_mcnemar_p": 1.0,
+      "paired_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "equal_task_difference": 0.0,
+      "task_cluster_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "task_sign_flip_one_sided_p": 1.0,
+      "tasks_better": 0,
+      "tasks_worse": 0,
+      "tasks_tied": 10,
+      "tasks": [
+        {
+          "task": 0,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 1,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 2,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 3,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 4,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 5,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 6,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 7,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 8,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 9,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        }
+      ],
+      "inits": [
+        {
+          "init": 20,
+          "n": 10,
+          "better_successes": 10,
+          "worse_successes": 10,
+          "difference": 0.0
+        }
+      ],
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 1103,
+      "caveat": "Episode McNemar and paired bootstrap assume independent episodes; task-cluster bootstrap and task sign-flip show sensitivity to repeated initial states within a task. Bootstrap intervals are percentile intervals, not exact intervals.",
+      "suite": "libero_spatial",
+      "predeclared": false,
+      "complete": true,
+      "direction": "descriptive A minus B"
+    },
+    "libero_object": {
+      "n": 10,
+      "better": "pi0_keep24_2_front_middle",
+      "worse": "pi0_keep24_1_uniform",
+      "better_successes": 10,
+      "worse_successes": 10,
+      "difference": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 10,
+      "both_failure": 0,
+      "exact_one_sided_mcnemar_p": 1.0,
+      "paired_episode_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "equal_task_difference": 0.0,
+      "task_cluster_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "task_sign_flip_one_sided_p": 1.0,
+      "tasks_better": 0,
+      "tasks_worse": 0,
+      "tasks_tied": 10,
+      "tasks": [
+        {
+          "task": 0,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 1,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 2,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 3,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 4,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 5,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 6,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 7,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 8,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 9,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        }
+      ],
+      "inits": [
+        {
+          "init": 20,
+          "n": 10,
+          "better_successes": 10,
+          "worse_successes": 10,
+          "difference": 0.0
+        }
+      ],
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 1104,
+      "caveat": "Episode McNemar and paired bootstrap assume independent episodes; task-cluster bootstrap and task sign-flip show sensitivity to repeated initial states within a task. Bootstrap intervals are percentile intervals, not exact intervals.",
+      "suite": "libero_object",
+      "predeclared": false,
+      "complete": true,
+      "direction": "descriptive A minus B"
+    },
+    "libero_goal": {
+      "n": 10,
+      "better": "pi0_keep24_2_front_middle",
+      "worse": "pi0_keep24_1_uniform",
+      "better_successes": 9,
+      "worse_successes": 10,
+      "difference": -0.1,
+      "wins": 0,
+      "losses": 1,
+      "both_success": 9,
+      "both_failure": 0,
+      "exact_one_sided_mcnemar_p": 1.0,
+      "paired_episode_bootstrap_ci95": [
+        -0.3,
+        0.0
+      ],
+      "equal_task_difference": -0.1,
+      "task_cluster_bootstrap_ci95": [
+        -0.3,
+        0.0
+      ],
+      "task_sign_flip_one_sided_p": 1.0,
+      "tasks_better": 0,
+      "tasks_worse": 1,
+      "tasks_tied": 9,
+      "tasks": [
+        {
+          "task": 0,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 1,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 2,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 3,
+          "n": 1,
+          "better_successes": 0,
+          "worse_successes": 1,
+          "difference": -1.0,
+          "wins": 0,
+          "losses": 1
+        },
+        {
+          "task": 4,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 5,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 6,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 7,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 8,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 9,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        }
+      ],
+      "inits": [
+        {
+          "init": 20,
+          "n": 10,
+          "better_successes": 9,
+          "worse_successes": 10,
+          "difference": -0.1
+        }
+      ],
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 1105,
+      "caveat": "Episode McNemar and paired bootstrap assume independent episodes; task-cluster bootstrap and task sign-flip show sensitivity to repeated initial states within a task. Bootstrap intervals are percentile intervals, not exact intervals.",
+      "suite": "libero_goal",
+      "predeclared": true,
+      "complete": true,
+      "direction": "predeclared"
+    },
+    "libero_10": {
+      "n": 10,
+      "better": "pi0_keep24_1_uniform",
+      "worse": "pi0_keep24_2_front_middle",
+      "better_successes": 8,
+      "worse_successes": 7,
+      "difference": 0.1,
+      "wins": 1,
+      "losses": 0,
+      "both_success": 7,
+      "both_failure": 2,
+      "exact_one_sided_mcnemar_p": 0.5,
+      "paired_episode_bootstrap_ci95": [
+        0.0,
+        0.3
+      ],
+      "equal_task_difference": 0.1,
+      "task_cluster_bootstrap_ci95": [
+        0.0,
+        0.3
+      ],
+      "task_sign_flip_one_sided_p": 0.5,
+      "tasks_better": 1,
+      "tasks_worse": 0,
+      "tasks_tied": 9,
+      "tasks": [
+        {
+          "task": 0,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 1,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 2,
+          "n": 1,
+          "better_successes": 0,
+          "worse_successes": 0,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 3,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 4,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 5,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 6,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 0,
+          "difference": 1.0,
+          "wins": 1,
+          "losses": 0
+        },
+        {
+          "task": 7,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 8,
+          "n": 1,
+          "better_successes": 0,
+          "worse_successes": 0,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        },
+        {
+          "task": 9,
+          "n": 1,
+          "better_successes": 1,
+          "worse_successes": 1,
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0
+        }
+      ],
+      "inits": [
+        {
+          "init": 20,
+          "n": 10,
+          "better_successes": 8,
+          "worse_successes": 7,
+          "difference": 0.1
+        }
+      ],
+      "bootstrap_samples": 20000,
+      "bootstrap_seed": 1106,
+      "caveat": "Episode McNemar and paired bootstrap assume independent episodes; task-cluster bootstrap and task sign-flip show sensitivity to repeated initial states within a task. Bootstrap intervals are percentile intervals, not exact intervals.",
+      "suite": "libero_10",
+      "predeclared": true,
+      "complete": true,
+      "direction": "predeclared"
+    }
+  },
+  "full_comparisons": {
+    "pi0_keep24_2_front_middle": {
+      "n": 40,
+      "fast_successes": 36,
+      "full_successes": 39,
+      "relative_success_retention": 0.9230769230769231,
+      "success_difference": -0.075
+    },
+    "pi0_keep24_1_uniform": {
+      "n": 40,
+      "fast_successes": 38,
+      "full_successes": 39,
+      "relative_success_retention": 0.9743589743589743,
+      "success_difference": -0.025
+    }
+  },
+  "paired_cases": [
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 20,
+      "pi0_keep24_2_front_middle": false,
+      "pi0_keep24_1_uniform": false,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 20,
+      "pi0_keep24_2_front_middle": false,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 20,
+      "pi0_keep24_2_front_middle": false,
+      "pi0_keep24_1_uniform": false,
+      "pi0_full": false
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 20,
+      "pi0_keep24_2_front_middle": false,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 20,
+      "pi0_keep24_2_front_middle": true,
+      "pi0_keep24_1_uniform": true,
+      "pi0_full": true
+    }
+  ],
+  "interpretation": "Pilot complete; execute the frozen full confirmation regardless of observed direction.",
+  "runs": [
+    {
+      "complete": true,
+      "condition": "pi0_full",
+      "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0",
+      "run_id": "pilot_shard00of01_1793696577376534480",
+      "gpu_binding": {
+        "egl_index": 3,
+        "cuda_ordinal": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "mapping": [
+          {
+            "egl_index": 0,
+            "cuda_ordinal": 3,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+          },
+          {
+            "egl_index": 1,
+            "cuda_ordinal": 2,
+            "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+          },
+          {
+            "egl_index": 2,
+            "cuda_ordinal": 1,
+            "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202"
+          },
+          {
+            "egl_index": 3,
+            "cuda_ordinal": 0,
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+          }
+        ]
+      },
+      "closed_loop_wall_s": 436.253257419914,
+      "total_wall_s": 486.66573080420494,
+      "completed_before": 0,
+      "completed_after": 40,
+      "new_episodes": 40,
+      "workers": 1,
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/fastpath/pi0_full/runs/pilot_shard00of01_1793696577376534480/result.json",
+      "preparation": {
+        "service_load_s": 27.012784983962774,
+        "parity_s": 20.980837270617485,
+        "parity_includes_first_compilation": true,
+        "warmup": [
+          {
+            "index": 0,
+            "wall_ms": 108.734380453825,
+            "timing": {
+              "request_wall_ms": 106.98442161083221
+            }
+          },
+          {
+            "index": 1,
+            "wall_ms": 103.24732214212418,
+            "timing": {
+              "request_wall_ms": 101.52419283986092
+            }
+          },
+          {
+            "index": 2,
+            "wall_ms": 102.22972929477692,
+            "timing": {
+              "request_wall_ms": 100.51735118031502
+            }
+          },
+          {
+            "index": 3,
+            "wall_ms": 105.5753193795681,
+            "timing": {
+              "request_wall_ms": 103.59393060207367
+            }
+          },
+          {
+            "index": 4,
+            "wall_ms": 104.33831065893173,
+            "timing": {
+              "request_wall_ms": 102.70831733942032
+            }
+          },
+          {
+            "index": 5,
+            "wall_ms": 104.10662367939949,
+            "timing": {
+              "request_wall_ms": 102.48389467597008
+            }
+          },
+          {
+            "index": 6,
+            "wall_ms": 104.58223894238472,
+            "timing": {
+              "request_wall_ms": 102.90137305855751
+            }
+          },
+          {
+            "index": 7,
+            "wall_ms": 103.96867245435715,
+            "timing": {
+              "request_wall_ms": 102.32721641659737
+            }
+          },
+          {
+            "index": 8,
+            "wall_ms": 106.97128623723984,
+            "timing": {
+              "request_wall_ms": 105.15894368290901
+            }
+          },
+          {
+            "index": 9,
+            "wall_ms": 105.12463748455048,
+            "timing": {
+              "request_wall_ms": 103.12454402446747
+            }
+          },
+          {
+            "index": 10,
+            "wall_ms": 104.11612316966057,
+            "timing": {
+              "request_wall_ms": 102.34705358743668
+            }
+          },
+          {
+            "index": 11,
+            "wall_ms": 103.58525440096855,
+            "timing": {
+              "request_wall_ms": 101.90996155142784
+            }
+          },
+          {
+            "index": 12,
+            "wall_ms": 101.79421678185463,
+            "timing": {
+              "request_wall_ms": 100.28396919369698
+            }
+          },
+          {
+            "index": 13,
+            "wall_ms": 104.69061508774757,
+            "timing": {
+              "request_wall_ms": 103.07067260146141
+            }
+          },
+          {
+            "index": 14,
+            "wall_ms": 101.98693349957466,
+            "timing": {
+              "request_wall_ms": 100.24958103895187
+            }
+          },
+          {
+            "index": 15,
+            "wall_ms": 111.17000877857208,
+            "timing": {
+              "request_wall_ms": 109.4575896859169
+            }
+          },
+          {
+            "index": 16,
+            "wall_ms": 105.87422549724579,
+            "timing": {
+              "request_wall_ms": 104.23384606838226
+            }
+          },
+          {
+            "index": 17,
+            "wall_ms": 113.59087377786636,
+            "timing": {
+              "request_wall_ms": 111.7682009935379
+            }
+          },
+          {
+            "index": 18,
+            "wall_ms": 105.69217056035995,
+            "timing": {
+              "request_wall_ms": 104.02439534664154
+            }
+          },
+          {
+            "index": 19,
+            "wall_ms": 105.0487756729126,
+            "timing": {
+              "request_wall_ms": 100.29097273945808
+            }
+          }
+        ],
+        "total_preparation_s": 50.40231743454933,
+        "note": "These cold and warmup costs are excluded from closed-loop request latency; all reported separately"
+      }
+    },
+    {
+      "complete": true,
+      "condition": "pi0_keep24_2_front_middle",
+      "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0",
+      "run_id": "pilot_shard00of01_1793697097891487014",
+      "gpu_binding": {
+        "egl_index": 3,
+        "cuda_ordinal": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "mapping": [
+          {
+            "egl_index": 0,
+            "cuda_ordinal": 3,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+          },
+          {
+            "egl_index": 1,
+            "cuda_ordinal": 2,
+            "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+          },
+          {
+            "egl_index": 2,
+            "cuda_ordinal": 1,
+            "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202"
+          },
+          {
+            "egl_index": 3,
+            "cuda_ordinal": 0,
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+          }
+        ]
+      },
+      "closed_loop_wall_s": 469.23809707164764,
+      "total_wall_s": 515.1719986572862,
+      "completed_before": 0,
+      "completed_after": 40,
+      "new_episodes": 40,
+      "workers": 1,
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/fastpath/pi0_keep24_2_front_middle/runs/pilot_shard00of01_1793697097891487014/result.json",
+      "preparation": {
+        "service_load_s": 24.014274045825005,
+        "parity_s": 19.61733829602599,
+        "parity_includes_first_compilation": true,
+        "warmup": [
+          {
+            "index": 0,
+            "wall_ms": 105.48750683665276,
+            "timing": {
+              "request_wall_ms": 103.76490280032158
+            }
+          },
+          {
+            "index": 1,
+            "wall_ms": 105.71270063519478,
+            "timing": {
+              "request_wall_ms": 104.00508716702461
+            }
+          },
+          {
+            "index": 2,
+            "wall_ms": 103.15394774079323,
+            "timing": {
+              "request_wall_ms": 101.01834312081337
+            }
+          },
+          {
+            "index": 3,
+            "wall_ms": 98.98488596081734,
+            "timing": {
+              "request_wall_ms": 97.38601371645927
+            }
+          },
+          {
+            "index": 4,
+            "wall_ms": 98.78095984458923,
+            "timing": {
+              "request_wall_ms": 97.18883782625198
+            }
+          },
+          {
+            "index": 5,
+            "wall_ms": 99.80250895023346,
+            "timing": {
+              "request_wall_ms": 98.03122282028198
+            }
+          },
+          {
+            "index": 6,
+            "wall_ms": 99.62800145149231,
+            "timing": {
+              "request_wall_ms": 97.92982041835785
+            }
+          },
+          {
+            "index": 7,
+            "wall_ms": 101.51426121592522,
+            "timing": {
+              "request_wall_ms": 99.86791759729385
+            }
+          },
+          {
+            "index": 8,
+            "wall_ms": 98.6391119658947,
+            "timing": {
+              "request_wall_ms": 97.08509594202042
+            }
+          },
+          {
+            "index": 9,
+            "wall_ms": 100.32505542039871,
+            "timing": {
+              "request_wall_ms": 99.02323782444
+            }
+          },
+          {
+            "index": 10,
+            "wall_ms": 98.86252507567406,
+            "timing": {
+              "request_wall_ms": 97.18455374240875
+            }
+          },
+          {
+            "index": 11,
+            "wall_ms": 99.50344637036324,
+            "timing": {
+              "request_wall_ms": 97.56924211978912
+            }
+          },
+          {
+            "index": 12,
+            "wall_ms": 99.47387874126434,
+            "timing": {
+              "request_wall_ms": 97.46900200843811
+            }
+          },
+          {
+            "index": 13,
+            "wall_ms": 99.07538443803787,
+            "timing": {
+              "request_wall_ms": 97.72200137376785
+            }
+          },
+          {
+            "index": 14,
+            "wall_ms": 100.91907903552055,
+            "timing": {
+              "request_wall_ms": 99.59914535284042
+            }
+          },
+          {
+            "index": 15,
+            "wall_ms": 100.99020227789879,
+            "timing": {
+              "request_wall_ms": 99.73039105534554
+            }
+          },
+          {
+            "index": 16,
+            "wall_ms": 98.64674881100655,
+            "timing": {
+              "request_wall_ms": 97.38802164793015
+            }
+          },
+          {
+            "index": 17,
+            "wall_ms": 100.99780187010765,
+            "timing": {
+              "request_wall_ms": 99.5965413749218
+            }
+          },
+          {
+            "index": 18,
+            "wall_ms": 99.86594691872597,
+            "timing": {
+              "request_wall_ms": 98.46750646829605
+            }
+          },
+          {
+            "index": 19,
+            "wall_ms": 99.73801672458649,
+            "timing": {
+              "request_wall_ms": 98.25653955340385
+            }
+          }
+        ],
+        "total_preparation_s": 45.913643941283226,
+        "note": "These cold and warmup costs are excluded from closed-loop request latency; all reported separately"
+      }
+    },
+    {
+      "complete": true,
+      "condition": "pi0_keep24_1_uniform",
+      "manifest_hash": "e08557210a7f8fa83fc7d2e9657213e62af4a3bd7c5fa4535187f7b3901d0ab0",
+      "run_id": "pilot_shard00of01_1793697177088519841",
+      "gpu_binding": {
+        "egl_index": 0,
+        "cuda_ordinal": 3,
+        "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "mapping": [
+          {
+            "egl_index": 0,
+            "cuda_ordinal": 3,
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+          },
+          {
+            "egl_index": 1,
+            "cuda_ordinal": 2,
+            "gpu_uuid": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25"
+          },
+          {
+            "egl_index": 2,
+            "cuda_ordinal": 1,
+            "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202"
+          },
+          {
+            "egl_index": 3,
+            "cuda_ordinal": 0,
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1"
+          }
+        ]
+      },
+      "closed_loop_wall_s": 445.196426615119,
+      "total_wall_s": 492.13374158367515,
+      "completed_before": 0,
+      "completed_after": 40,
+      "new_episodes": 40,
+      "workers": 1,
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/fastpath/pi0_keep24_1_uniform/runs/pilot_shard00of01_1793697177088519841/result.json",
+      "preparation": {
+        "service_load_s": 25.016021825373173,
+        "parity_s": 19.574915569275618,
+        "parity_includes_first_compilation": true,
+        "warmup": [
+          {
+            "index": 0,
+            "wall_ms": 104.94308918714523,
+            "timing": {
+              "request_wall_ms": 102.91963443160057
+            }
+          },
+          {
+            "index": 1,
+            "wall_ms": 106.26117512583733,
+            "timing": {
+              "request_wall_ms": 104.29065302014351
+            }
+          },
+          {
+            "index": 2,
+            "wall_ms": 101.9943468272686,
+            "timing": {
+              "request_wall_ms": 100.27015209197998
+            }
+          },
+          {
+            "index": 3,
+            "wall_ms": 101.77348554134369,
+            "timing": {
+              "request_wall_ms": 99.64939951896667
+            }
+          },
+          {
+            "index": 4,
+            "wall_ms": 104.62072491645813,
+            "timing": {
+              "request_wall_ms": 102.1835096180439
+            }
+          },
+          {
+            "index": 5,
+            "wall_ms": 105.20660504698753,
+            "timing": {
+              "request_wall_ms": 102.37172991037369
+            }
+          },
+          {
+            "index": 6,
+            "wall_ms": 104.58789020776749,
+            "timing": {
+              "request_wall_ms": 101.95779800415039
+            }
+          },
+          {
+            "index": 7,
+            "wall_ms": 102.86737605929375,
+            "timing": {
+              "request_wall_ms": 100.66300630569458
+            }
+          },
+          {
+            "index": 8,
+            "wall_ms": 100.87138786911964,
+            "timing": {
+              "request_wall_ms": 99.42182525992393
+            }
+          },
+          {
+            "index": 9,
+            "wall_ms": 100.99880024790764,
+            "timing": {
+              "request_wall_ms": 99.37536716461182
+            }
+          },
+          {
+            "index": 10,
+            "wall_ms": 102.18159109354019,
+            "timing": {
+              "request_wall_ms": 100.0782884657383
+            }
+          },
+          {
+            "index": 11,
+            "wall_ms": 110.8575388789177,
+            "timing": {
+              "request_wall_ms": 108.96461457014084
+            }
+          },
+          {
+            "index": 12,
+            "wall_ms": 101.6853116452694,
+            "timing": {
+              "request_wall_ms": 100.30019655823708
+            }
+          },
+          {
+            "index": 13,
+            "wall_ms": 100.97533091902733,
+            "timing": {
+              "request_wall_ms": 99.52118620276451
+            }
+          },
+          {
+            "index": 14,
+            "wall_ms": 99.63251650333405,
+            "timing": {
+              "request_wall_ms": 98.06651994585991
+            }
+          },
+          {
+            "index": 15,
+            "wall_ms": 100.74334964156151,
+            "timing": {
+              "request_wall_ms": 98.98462519049644
+            }
+          },
+          {
+            "index": 16,
+            "wall_ms": 101.45097225904465,
+            "timing": {
+              "request_wall_ms": 99.99636188149452
+            }
+          },
+          {
+            "index": 17,
+            "wall_ms": 106.61213845014572,
+            "timing": {
+              "request_wall_ms": 105.08310049772263
+            }
+          },
+          {
+            "index": 18,
+            "wall_ms": 100.52033513784409,
+            "timing": {
+              "request_wall_ms": 99.06533733010292
+            }
+          },
+          {
+            "index": 19,
+            "wall_ms": 100.12255236506462,
+            "timing": {
+              "request_wall_ms": 98.56243804097176
+            }
+          }
+        ],
+        "total_preparation_s": 46.927516642957926,
+        "note": "These cold and warmup costs are excluded from closed-loop request latency; all reported separately"
+      }
+    }
+  ],
+  "analysis_source_sha256": "491518d247e935fc5dcb9ff8abe12dc7022ea97319fc83a11adf61bacf345d3d",
+  "method_note": "Directions/candidates/cases were frozen before validation. One-sided exact McNemar and two-sided 95% paired percentile intervals report effect and uncertainty; equal-task cluster bootstrap and exact task sign-flip are sensitivity analyses. Strong wording additionally requires complete data and both positive cluster intervals. This wording rule is an analysis convention, not an additional preregistered statistical test.",
+  "throughput_note": "Per-run wall time includes workers and serial model queue; sum of concurrent run walls is resource time, not end-to-end makespan. Failed/incomplete run wall time must be counted separately for total experiment cost."
+}

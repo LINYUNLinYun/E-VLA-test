@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "scope": "independent sampled all-process benchmark guard source, not execution authorization",
+  "revision": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/benchmark_revisions/all_process_v2",
+  "revision_manifest_sha256": "3773aa2bdf6128574f89ae97834c4bfccdc1c3b7dd7e2d706617e3c096b945ce",
+  "sources": {
+    "benchmark_all_process_guard.py": "097daf360d67b94e7ba07c6631d0b7809c04a07c68f11e9ad8aaaa5c6a83d684",
+    "benchmark_all_process_revision.py": "6b81c6b8a06493a1b6b2c27569a6bc67637f2ebc3b0edb5db879ba388593a03f",
+    "benchmark_all_process_analysis.py": "318e1c225e68d0e7cbac3f0c4c1d367757c6ecf77b9d2c76d8a8aa6f12941998",
+    "final_provenance_analysis_v4.py": "4940fd9cc35bf94118da283c088ce79577bf4d175df366380f2c2a1f13b3340c"
+  },
+  "tests": {
+    "test_benchmark_all_process_guard.py": "5a121852273f8aaa1d7e1d7f8c241ed2eb58f3bfeb052c5e65b8e4cda3ef7437",
+    "test_benchmark_all_process_revision.py": "404d7f601a03c7f136c27da7d2d0463c9321ade9b3a9c895282450fccfc4240d",
+    "test_benchmark_all_process_analysis.py": "faddc3f442d788b2897862bb58ca93a2aba332cde67081c3de24aa8f561bce93"
+  },
+  "cpu_tests_passed": 13,
+  "abi_validation": "local nvml.h v2 process declarations; C compiler sizeof/offsetof equals ctypes, no NVML initialization",
+  "nominal_interval_seconds": 0.1,
+  "maximum_observed_gap_seconds": 0.5,
+  "scope_calls": 43200,
+  "conditions": 54,
+  "points_per_model": 32,
+  "calls_per_condition_point": 25,
+  "guard_cost": "synchronous checks outside measured interval; no subtraction of monitoring overhead",
+  "claim": "sampled all-process observations and per-call boundaries, not continuous nanosecond exclusivity or zero observer effect",
+  "authorization": "each model needs its own allocation_gate receipt and then its own benchmark receipt binding actual gate and UUID; global v1 receipt never accepted",
+  "gpu_queries_by_preparer": 0,
+  "model_calls_by_preparer": 0,
+  "signed_sources_modified": false,
+  "historical_samples_reused": false,
+  "independent_final_C_acceptance_required": true
+}

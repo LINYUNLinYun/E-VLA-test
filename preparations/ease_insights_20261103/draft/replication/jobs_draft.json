@@ -1,0 +1,429 @@
+{
+  "status": "draft_only_not_scheduled",
+  "selection_file": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json",
+  "selection_sha256": "2b13bbe89412527834f07a03ab43069002a6e72e7837e5f1cfeb601b64c98c60",
+  "jobs": [
+    {
+      "id": "replication_draft_from_libero_object_to_libero_object",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_object_to_libero_object",
+        "--mode",
+        "draft",
+        "--source-suite",
+        "libero_object",
+        "--target-suite",
+        "libero_object",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_draft_from_libero_object_to_libero_object.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_object_to_libero_object/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "draft",
+        "source_suite": "libero_object",
+        "target_suite": "libero_object",
+        "role": "matched source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "6802e9c6889998b796053f1ff14fae6127f23862f691484f6d7076b96bb43c24"
+    },
+    {
+      "id": "replication_draft_from_libero_spatial_to_libero_object",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_spatial_to_libero_object",
+        "--mode",
+        "draft",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_object",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_draft_from_libero_spatial_to_libero_object.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_spatial_to_libero_object/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "draft",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_object",
+        "role": "foreign source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "6802e9c6889998b796053f1ff14fae6127f23862f691484f6d7076b96bb43c24"
+    },
+    {
+      "id": "replication_flash_from_libero_object_to_libero_object",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_object_to_libero_object",
+        "--mode",
+        "flash",
+        "--source-suite",
+        "libero_object",
+        "--target-suite",
+        "libero_object",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_flash_from_libero_object_to_libero_object.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_object_to_libero_object/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "flash",
+        "source_suite": "libero_object",
+        "target_suite": "libero_object",
+        "role": "matched source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "6802e9c6889998b796053f1ff14fae6127f23862f691484f6d7076b96bb43c24"
+    },
+    {
+      "id": "replication_flash_from_libero_spatial_to_libero_object",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_spatial_to_libero_object",
+        "--mode",
+        "flash",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_object",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_flash_from_libero_spatial_to_libero_object.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_spatial_to_libero_object/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "flash",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_object",
+        "role": "foreign source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "6802e9c6889998b796053f1ff14fae6127f23862f691484f6d7076b96bb43c24"
+    },
+    {
+      "id": "replication_full_from_libero_spatial_to_libero_object",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_full_from_libero_spatial_to_libero_object",
+        "--mode",
+        "full",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_object",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_full_from_libero_spatial_to_libero_object.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_full_from_libero_spatial_to_libero_object/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "full",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_object",
+        "role": "Full baseline",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "6802e9c6889998b796053f1ff14fae6127f23862f691484f6d7076b96bb43c24"
+    },
+    {
+      "id": "replication_draft_from_libero_spatial_to_libero_spatial",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_spatial_to_libero_spatial",
+        "--mode",
+        "draft",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_spatial",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_draft_from_libero_spatial_to_libero_spatial.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_spatial_to_libero_spatial/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "draft",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_spatial",
+        "role": "matched source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "ddb0c41f76739bf2853b6273583684fabce0a09dc27f41ccaa53d46056cb7b00"
+    },
+    {
+      "id": "replication_draft_from_libero_object_to_libero_spatial",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_object_to_libero_spatial",
+        "--mode",
+        "draft",
+        "--source-suite",
+        "libero_object",
+        "--target-suite",
+        "libero_spatial",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_draft_from_libero_object_to_libero_spatial.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_draft_from_libero_object_to_libero_spatial/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "draft",
+        "source_suite": "libero_object",
+        "target_suite": "libero_spatial",
+        "role": "foreign source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "ddb0c41f76739bf2853b6273583684fabce0a09dc27f41ccaa53d46056cb7b00"
+    },
+    {
+      "id": "replication_flash_from_libero_spatial_to_libero_spatial",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_spatial_to_libero_spatial",
+        "--mode",
+        "flash",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_spatial",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_flash_from_libero_spatial_to_libero_spatial.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_spatial_to_libero_spatial/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "flash",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_spatial",
+        "role": "matched source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "ddb0c41f76739bf2853b6273583684fabce0a09dc27f41ccaa53d46056cb7b00"
+    },
+    {
+      "id": "replication_flash_from_libero_object_to_libero_spatial",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_object_to_libero_spatial",
+        "--mode",
+        "flash",
+        "--source-suite",
+        "libero_object",
+        "--target-suite",
+        "libero_spatial",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_flash_from_libero_object_to_libero_spatial.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_flash_from_libero_object_to_libero_spatial/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "flash",
+        "source_suite": "libero_object",
+        "target_suite": "libero_spatial",
+        "role": "foreign source",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "ddb0c41f76739bf2853b6273583684fabce0a09dc27f41ccaa53d46056cb7b00"
+    },
+    {
+      "id": "replication_full_from_libero_spatial_to_libero_spatial",
+      "argv": [
+        "python3",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/run.py",
+        "--gpu",
+        "{gpu}",
+        "--gpu-uuid",
+        "{gpu_uuid}",
+        "--port",
+        "{port}",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_full_from_libero_spatial_to_libero_spatial",
+        "--mode",
+        "full",
+        "--source-suite",
+        "libero_spatial",
+        "--target-suite",
+        "libero_spatial",
+        "--cases",
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/cases/replication_full_from_libero_spatial_to_libero_spatial.json"
+      ],
+      "complete_file": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_replication/replication_full_from_libero_spatial_to_libero_spatial/result.json",
+      "ready_files": [
+        "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/draft/replication/selection.json"
+      ],
+      "depends_on": [],
+      "condition": {
+        "mode": "full",
+        "source_suite": "libero_spatial",
+        "target_suite": "libero_spatial",
+        "role": "Full baseline",
+        "n": 40,
+        "init_ids": [
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "cases_sha256": "ddb0c41f76739bf2853b6273583684fabce0a09dc27f41ccaa53d46056cb7b00"
+    }
+  ],
+  "expected_episodes": 400,
+  "instruction": "Parent controller reviews and appends these jobs; this script never mutates the live queue or launches a process."
+}

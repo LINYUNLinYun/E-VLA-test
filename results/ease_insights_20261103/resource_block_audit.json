@@ -1,0 +1,27 @@
+{
+  "time": 1793701789.3167598,
+  "scheduler_pid": 235924,
+  "scheduler_alive": true,
+  "pipeline_pid": 236659,
+  "pipeline_alive": true,
+  "scheduler_status": "waiting_gpu",
+  "active_pids": [],
+  "pipeline_branches": {
+    "draft": "waiting_discovery",
+    "vlm": "waiting_discovery"
+  },
+  "resource_scan_time": 1793701760.1888564,
+  "free_gpus": [],
+  "last_successful_scientific_job_finished": 1793699580.6600673,
+  "discovery_counts": {
+    "draft_completed": 164,
+    "draft_required": 360,
+    "vlm_completed": 80,
+    "vlm_required": 160
+  },
+  "blocking_condition": "No naturally idle local GPU can be acquired; user explicitly requested waiting for natural local availability",
+  "consecutive_goal_turns_with_condition": 3,
+  "scope": "Goal turns ending with discovery164/360+VLM80/160, subsequent automatic-continuation pipeline preparation, and this revalidated continuation; no new scientific GPU job completed in this interval.",
+  "background_continuation": "Existing scheduler and pipeline remain authorized and running; they can proceed after the external GPU occupancy changes. Do not stop them or duplicate them.",
+  "completion_unproven": true
+}

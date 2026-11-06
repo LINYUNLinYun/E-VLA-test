@@ -1,0 +1,114 @@
+{
+  "method": "cpu_cached_v2",
+  "scope": "Host casts and repeated residual norms only; raw extraction math and full NPZ storage unchanged",
+  "math_sha256": "ec08b680bddad5151e39d3935c588317ed0fed55ac679010a439c47ed642b426",
+  "activated": [
+    {
+      "port": 48161,
+      "response": {
+        "ok": true,
+        "reloaded": true
+      },
+      "health": {
+        "ok": true,
+        "protocol": {
+          "revision": "pi05-representation-v1",
+          "model": "pi05_libero",
+          "backend": "native OpenPI JAX",
+          "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+          "H": 10,
+          "R": 5,
+          "D": 10,
+          "mask": [],
+          "env_seed": 7,
+          "settling_steps": 10,
+          "control_hz": 20,
+          "limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "init_ids": [
+            0,
+            1,
+            2
+          ],
+          "uniform_points": 12,
+          "event_points": 8,
+          "target_points": 20
+        },
+        "parity": {
+          "passed": true,
+          "max_abs": 0.0,
+          "scope": "Same real observation/noise, direct native sampler vs official Policy.infer; both decoded to float32 controller commands"
+        },
+        "pid": 563934,
+        "cuda_visible_devices": "1"
+      },
+      "time": 1793005849.4348707
+    },
+    {
+      "port": 48162,
+      "response": {
+        "ok": true,
+        "reloaded": true
+      },
+      "health": {
+        "ok": true,
+        "protocol": {
+          "revision": "pi05-representation-v1",
+          "model": "pi05_libero",
+          "backend": "native OpenPI JAX",
+          "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+          "H": 10,
+          "R": 5,
+          "D": 10,
+          "mask": [],
+          "env_seed": 7,
+          "settling_steps": 10,
+          "control_hz": 20,
+          "limits": {
+            "libero_spatial": 220,
+            "libero_object": 280,
+            "libero_goal": 300,
+            "libero_10": 520
+          },
+          "init_ids": [
+            0,
+            1,
+            2
+          ],
+          "uniform_points": 12,
+          "event_points": 8,
+          "target_points": 20
+        },
+        "parity": {
+          "passed": true,
+          "max_abs": 0.0,
+          "scope": "Same real observation/noise, direct native sampler vs official Policy.infer; both decoded to float32 controller commands"
+        },
+        "pid": 557914,
+        "cuda_visible_devices": "2"
+      },
+      "time": 1793005849.319744
+    }
+  ],
+  "before_progress": {
+    "0": {
+      "completed": 259,
+      "elapsed_s": 2292.9346795640886,
+      "last": "libero_spatial/8/1/16"
+    },
+    "1": {
+      "completed": 254,
+      "elapsed_s": 2293.037018172443,
+      "last": "libero_spatial/9/1/7"
+    }
+  },
+  "validation": "diagnostics/pool_cache_profile.json",
+  "sources": {
+    "preparations/idea1_visualization/features.py": "84f57c8ecd22afc06b26cf87aa7fef23bb11a82ade1a1a580cfc8db5121766d9",
+    "preparations/idea1_visualization/pooling.py": "1f68976a19be95feb57883c59733763092f0019f8109efa3fcfafc54b6a9148b"
+  }
+}

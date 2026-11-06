@@ -1,0 +1,124 @@
+{
+  "completed_observations": 64,
+  "expected_observations": 64,
+  "partial": false,
+  "candidate_pool": "released",
+  "readout_file": "readouts.npz",
+  "token_pool": "all",
+  "ready_concepts": [],
+  "concepts": {
+    "object/bowl": {
+      "5": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": false,
+        "feature_count_options": [
+          {
+            "features": 1,
+            "triggered": 3,
+            "positive_hits": 3,
+            "precision": 1.0,
+            "recall": 0.125,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 3,
+            "positive_episodes": 3
+          },
+          {
+            "features": 2,
+            "triggered": 1,
+            "positive_hits": 1,
+            "precision": 1.0,
+            "recall": 0.041666666666666664,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 1,
+            "positive_episodes": 1
+          },
+          {
+            "features": 3,
+            "triggered": 0,
+            "positive_hits": 0,
+            "precision": null,
+            "recall": 0.0,
+            "false_positive_rate": 0.0,
+            "positive_tasks": 0,
+            "positive_episodes": 0
+          }
+        ],
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 0,
+          "positive_hits": 0,
+          "precision": null,
+          "recall": 0.0,
+          "false_positive_rate": 0.0,
+          "positive_tasks": 0,
+          "positive_episodes": 0
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      },
+      "16": {
+        "positive_tasks": 6,
+        "negative_tasks": 6,
+        "supported": false,
+        "feature_count_options": [],
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      }
+    },
+    "object/stove": {
+      "5": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": false,
+        "feature_count_options": [],
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      },
+      "16": {
+        "positive_tasks": 2,
+        "negative_tasks": 10,
+        "supported": false,
+        "feature_count_options": [],
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      }
+    },
+    "spatial/on": {
+      "5": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": false,
+        "feature_count_options": [
+          {
+            "features": 1,
+            "triggered": 4,
+            "positive_hits": 3,
+            "precision": 0.75,
+            "recall": 0.15,
+            "false_positive_rate": 0.03571428571428571,
+            "positive_tasks": 2,
+            "positive_episodes": 3
+          }
+        ],
+        "theta": 0.8,
+        "calibration_metrics": {
+          "theta": 0.8,
+          "triggered": 5,
+          "positive_hits": 3,
+          "precision": 0.6,
+          "recall": 0.375,
+          "false_positive_rate": 0.25,
+          "positive_tasks": 1,
+          "positive_episodes": 2
+        },
+        "reason": "Candidate only; semantic calibration not supported"
+      },
+      "16": {
+        "positive_tasks": 5,
+        "negative_tasks": 7,
+        "supported": false,
+        "feature_count_options": [],
+        "reason": "No supported selective features under this pilot/configuration; inspect candidate statistics"
+      }
+    }
+  },
+  "scope": "Semantic calibration only; no rollout/action information used"
+}

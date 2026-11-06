@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "purpose": "Protocol-matched full closed-loop Action Expert denoising controls; reuse existing validated Full18-D10 baseline",
+  "baseline_reuse": "closed_loop/Full18_D10/*/run/validated.json",
+  "conditions": [
+    {
+      "name": "Full18_D3",
+      "skip": [],
+      "steps": 3,
+      "mode": "static",
+      "horizon": 12,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    },
+    {
+      "name": "Full18_D5",
+      "skip": [],
+      "steps": 5,
+      "mode": "static",
+      "horizon": 12,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    }
+  ]
+}

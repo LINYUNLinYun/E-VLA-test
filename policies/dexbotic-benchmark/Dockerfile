@@ -1,0 +1,325 @@
+FROM nvidia/cuda:12.1.1-devel-ubuntu22.04
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+# Install dependencies
+RUN sed -i -e "s/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g" /etc/apt/sources.list && \
+    sed -i -e "s/security.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g" /etc/apt/sources.list && \
+    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean && apt-get update -y && \
+    apt-get install --assume-yes --fix-missing build-essential && \
+    apt-get install -y curl  && \
+    apt-get install -y apt-utils \
+    tzdata \
+    git wget curl vim unzip ffmpeg \
+    build-essential cmake pkg-config \
+    llvm meson \
+    libegl1-mesa \
+    libegl1-mesa-dev \
+    libegl1 \
+    libgl1 \
+    mesa-utils \
+    libsm6 libxext6 libxrender-dev \
+    libosmesa6-dev \
+    python3.10 \
+    python3-pip
+RUN sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list && apt-get update && apt-get build-dep -y mesa && \
+    rm -rf /var/lib/apt/lists/* && apt-get clean
+
+# Install Conda
+RUN wget -q https://repo.anaconda.com/miniconda/Miniconda3-py310_25.5.1-1-Linux-x86_64.sh -O /tmp/miniconda.sh && \
+    bash /tmp/miniconda.sh -b -p /opt/conda && \
+    rm /tmp/miniconda.sh
+RUN /opt/conda/bin/conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main && \
+    /opt/conda/bin/conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+RUN /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ && \
+    /opt/conda/bin/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ && \
+    /opt/conda/bin/conda config --set show_channel_urls yes && \
+    pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+ENV PATH=/opt/conda/bin:$PATH
+
+# Install Vulkan libraries
+RUN apt-get update && apt-get install -y \
+    libvulkan1 mesa-vulkan-drivers vulkan-tools libglvnd-dev \
+    ninja-build libglu1-mesa libglib2.0-0 libx11-6 libice6 \
+    libxrandr2 libxi6 libxcursor1 libxinerama1 libxt6
+RUN mkdir -p /usr/share/vulkan/icd.d \
+             /usr/share/glvnd/egl_vendor.d \
+             /etc/vulkan/implicit_layer.d && \
+    printf '%s\n' \
+    '{' \
+    '    "file_format_version" : "1.0.0",' \
+    '    "ICD": {' \
+    '        "library_path": "libGLX_nvidia.so.0",' \
+    '        "api_version" : "1.2.155"' \
+    '    }' \
+    '}' > /usr/share/vulkan/icd.d/nvidia_icd.json && \
+    printf '%s\n' \
+    '{' \
+    '    "file_format_version" : "1.0.0",' \
+    '    "ICD" : {' \
+    '        "library_path" : "libEGL_nvidia.so.0"' \
+    '    }' \
+    '}' > /usr/share/glvnd/egl_vendor.d/10_nvidia.json && \
+    printf '%s\n' \
+    '{' \
+    '    "file_format_version" : "1.0.0",' \
+    '    "layer": {' \
+    '        "name": "VK_LAYER_NV_optimus",' \
+    '        "type": "INSTANCE",' \
+    '        "library_path": "libGLX_nvidia.so.0",' \
+    '        "api_version" : "1.2.155",' \
+    '        "implementation_version" : "1",' \
+    '        "description" : "NVIDIA Optimus layer",' \
+    '        "functions": {' \
+    '            "vkGetInstanceProcAddr": "vk_optimusGetInstanceProcAddr",' \
+    '            "vkGetDeviceProcAddr": "vk_optimusGetDeviceProcAddr"' \
+    '        },' \
+    '        "enable_environment": {' \
+    '            "__NV_PRIME_RENDER_OFFLOAD": "1"' \
+    '        },' \
+    '        "disable_environment": {' \
+    '            "DISABLE_LAYER_NV_OPTIMUS_1": ""' \
+    '        }' \
+    '    }' \
+    '}' > /etc/vulkan/implicit_layer.d/nvidia_layers.json
+
+# Set up application directory
+WORKDIR /app
+COPY simpler /app/simpler
+COPY calvin /app/calvin
+COPY libero /app/libero
+COPY RoboTwin /app/RoboTwin
+COPY maniskill2 /app/maniskill2
+COPY habitat-lab /app/habitat-lab
+COPY VLN-CE /app/VLN-CE
+COPY arena /app/arena
+COPY robodojo /app/robodojo
+COPY genie_sim /app/genie_sim
+
+# Install simpler environment
+RUN /opt/conda/bin/conda create -n simpler_env python=3.10 -y && \
+    /bin/bash -c "source activate simpler_env && \
+        cd simpler && \
+        cd ManiSkill2_real2sim && pip install -e . && \
+        cd .. && pip install -e . && \
+        pip install matplotlib mediapy omegaconf hydra-core && pip install numpy==1.24.4 && \
+        cd .."
+
+# Install calvin environment
+RUN /opt/conda/bin/conda create -n calvin_env python=3.8 -y && \
+    /bin/bash -c "source activate calvin_env && \
+        cd calvin && \
+        pip uninstall setuptools -y && \
+        pip install setuptools==57.5.0 && \
+        bash install.sh && \
+        pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121 -i https://pypi.tuna.tsinghua.edu.cn/simple/ && \
+        cd .."
+
+# Install libero environment
+RUN /opt/conda/bin/conda create -n libero_env python=3.8 -y && \
+    /bin/bash -c "source activate libero_env && \
+        cd libero && \
+        pip uninstall setuptools -y && \
+        pip install setuptools==57.5.0 && \
+        pip install -r requirements.txt && \
+        pip install -e . && \
+        pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121 -i https://pypi.tuna.tsinghua.edu.cn/simple/ && \
+        cd .."
+
+# Install RoboDojo in its own Python 3.11 environment.
+RUN /opt/conda/bin/conda create -n RoboDojo python=3.11 -y && \
+    /opt/conda/bin/conda run --no-capture-output -n RoboDojo /bin/bash -c "\
+        cd /app/robodojo && \
+        export PIP_USER=0 PYTHONNOUSERSITE=1 FORCE_CUDA=1 && \
+        export TORCH_CUDA_ARCH_LIST='7.0;7.5;8.0;8.6;8.9;9.0+PTX' && \
+        python -m pip install --upgrade pip && \
+        python -m pip install -r scripts/requirements.txt && \
+        python -m pip install \
+            opencv-python-headless==4.11.0.86 \
+            pillow \
+            matplotlib \
+            scipy==1.15.3 \
+            scikit-learn && \
+        python -m pip install \
+            numpy==1.26.0 \
+            typing_extensions==4.12.2 \
+            filelock==3.13.1 && \
+        python -m pip install \
+            torch==2.7.0 \
+            torchvision==0.22.0 \
+            torchaudio==2.7.0 \
+            --index-url https://download.pytorch.org/whl/cu128 && \
+        python -m pip install 'isaacsim[all,extscache]==5.1.0' \
+            --extra-index-url https://pypi.nvidia.com && \
+        cd third_party/IsaacLab && \
+        ./isaaclab.sh --install none && \
+        cd ../curobo && \
+        (python -m pip uninstall -y nvidia-curobo curobo 2>/dev/null || true) && \
+        python -m pip install -e '.[cu12]' --no-build-isolation && \
+        python -m pip install \
+            numpy==1.26.0 \
+            packaging==23.0 \
+            typing_extensions==4.12.2 \
+            filelock==3.13.1 \
+            websockets==13.1 \
+            click==8.1.7 \
+            psutil==5.9.8 \
+            wheel==0.45.1 \
+            starlette==0.45.3 \
+            scipy==1.15.3 \
+            warp-lang==1.11.0 \
+            'onnx>=1.18,<1.22' \
+            'ipython<9' \
+            virtualenv==20.30.0 && \
+        (python -m pip uninstall -y python-discovery 2>/dev/null || true)" && \
+    find /app/robodojo -name .git -prune -exec rm -rf {} +
+
+# Install RoboTwin environment
+RUN /opt/conda/bin/conda create -n RoboTwin python=3.10 -y && \
+/bin/bash -c "source activate RoboTwin && \
+    cd RoboTwin && \
+    export TORCH_CUDA_ARCH_LIST='7.5;8.0;8.9;9.0' && \
+    bash script/_install.sh && \
+    pip install omegaconf && \
+    cd .."
+
+ENV MS2_ASSET_DIR=/app/maniskill2/ManiSkill/data
+
+# Install ManiSkill2 environment
+RUN /opt/conda/bin/conda create -n maniskill2_env python=3.8 -y && \
+/bin/bash -c "source activate maniskill2_env && \
+    cd maniskill2/ManiSkill && \
+    pip install -e . && \
+    pip install gymnasium==0.29.1 && \
+    cd ../ManiSkill2-Learn && \
+    pip install torch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 --index-url https://download.pytorch.org/whl/cu113 && \
+    pip install -U fvcore==0.1.5.post20221221 && \
+    pip install --no-index --no-cache-dir pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py38_cu113_pyt1110/download.html && \
+    pip install ninja omegaconf && \
+    pip install -e . && \
+    cd ../.."
+
+# Build Warp library for soft-body environments
+RUN /bin/bash -c "source activate maniskill2_env && \
+    cd maniskill2/ManiSkill && \
+    export PYTHONPATH=\$PWD/warp_maniskill:\$PYTHONPATH && \
+    python -m warp_maniskill.build_lib && \
+    cd ../.."
+
+# Install VLN-CE environment
+RUN /opt/conda/bin/conda create -n vlnce python=3.8 -y && \
+    /bin/bash -c "source activate vlnce && \
+        cd /app && \
+        wget https://api.anaconda.org/download/aihabitat/habitat-sim/0.1.7/linux-64/habitat-sim-0.1.7-py3.8_headless_linux_856d4b08c1a2632626bf0d205bf46471a99502b7.tar.bz2 && \
+        conda install -y habitat-sim-0.1.7-py3.8_headless_linux_856d4b08c1a2632626bf0d205bf46471a99502b7.tar.bz2 && \
+        rm habitat-sim-0.1.7-py3.8_headless_linux_856d4b08c1a2632626bf0d205bf46471a99502b7.tar.bz2 && \
+        cd /app/habitat-lab && \
+        python -m pip install -r requirements.txt && \
+        python -m pip install 'moviepy>=1.0.1' tb-nightly -i https://mirrors.aliyun.com/pypi/simple/ && \
+        python -m pip install -r habitat_baselines/rl/ddppo/requirements.txt && \
+        python setup.py develop --no-deps && \
+        cd /app && \
+        cd /app/VLN-CE && \
+        grep -v -E 'torch|torchvision|tensorflow' requirements.txt | pip install -r /dev/stdin && \
+        cd /app && \
+        python -m pip install 'pip<24.1' && \
+        pip install setuptools==59.8.0 wheel==0.37.1 && \
+        pip install gym==0.21.0 && \
+        pip install gitpython matplotlib flask omegaconf && \
+        pip install numpy==1.23.0 && \
+        pip install torch==1.12.1 torchvision==0.13.1 && \
+        pip install webdataset==0.1.103"
+
+# Install VLA-Arena environment
+RUN /opt/conda/bin/conda create -n arena python=3.11 pip=25.3 -y && \
+    /opt/conda/bin/conda run -n arena python -m pip install \
+        torch==2.1.0 \
+        --index-url https://download.pytorch.org/whl/cu121 && \
+    /opt/conda/bin/conda run -n arena python -m pip install -e /app/arena && \
+    /opt/conda/bin/conda run -n arena python -m pip install \
+        omegaconf \
+        opencv-python-headless==4.11.0.86 \
+        requests \
+        tqdm \
+        Pillow
+
+# Install GenieSim in its own Python 3.11 environment.
+# The assets SDK is installed from the mounted assets checkout at runtime.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libtinyxml2.6.2v5 libminizip1 && \
+    rm -rf /var/lib/apt/lists/*
+RUN /opt/conda/bin/conda create -n genie_sim python=3.11 pip=25.3 -y && \
+    /opt/conda/bin/conda run --no-capture-output -n genie_sim /bin/bash -c "\
+        cd /app/genie_sim && \
+        export PIP_USER=0 PYTHONNOUSERSITE=1 PIP_NO_INPUT=1 && \
+        export ACCEPT_EULA=Y OMNI_KIT_ACCEPT_EULA=Y && \
+        python -m pip install --upgrade 'setuptools>=70,<81' 'wheel==0.45.1' && \
+        python -m pip install \
+            'isaacsim[all,extscache]==5.1.0.0' \
+            --extra-index-url https://pypi.nvidia.com \
+            numpy==1.26.0 \
+            scipy==1.15.3 \
+            opencv-python-headless==4.11.0.86 \
+            websockets==12.0 \
+            omegaconf==2.3.0 \
+            colorama future msgpack openai==1.109.1 PyYAML shapely trimesh \
+            requests Pillow imageio imageio-ffmpeg tqdm transforms3d networkx \
+            'mujoco>=3.6.0,<3.9.0' tomli Cython==0.29.37 && \
+        python -m pip install --no-build-isolation grasp_nms==1.0.2 && \
+        python -m pip install --no-deps \
+            3rdparty/ik_solver-0.4.3-cp311-cp311-linux_x86_64.whl && \
+        python -m pip install --no-deps --no-build-isolation \
+            -e source/geniesim_cli -e source/geniesim_benchmark && \
+        mkdir -p /opt/conda/envs/genie_sim/share && \
+        python -m pip freeze --all \
+            > /opt/conda/envs/genie_sim/share/requirements-resolved.txt"
+
+# Set up the native interpreter with Isaac Sim's bundled ROS bridge.
+RUN printf '%s\n' \
+    '#!/usr/bin/env bash' \
+    'set -eo pipefail' \
+    'PREFIX=/opt/conda/envs/genie_sim' \
+    'ISAAC_ROOT="${PREFIX}/lib/python3.11/site-packages/isaacsim"' \
+    'export PATH="${PREFIX}/bin:${PATH}"' \
+    'export PYTHONNOUSERSITE=1 ACCEPT_EULA=Y OMNI_KIT_ACCEPT_EULA=Y' \
+    'export GENIESIM_SKIP_AUTOBOOT=1 GENIESIM_PY_CMD=/usr/local/bin/genie_python' \
+    'export SIM_REPO_ROOT="${SIM_REPO_ROOT:-/app/genie_sim}"' \
+    'export GENIESIM_REPO_PATH="${GENIESIM_REPO_PATH:-${SIM_REPO_ROOT}}"' \
+    'export GENIESIM_ASSETS_PATH="${GENIESIM_ASSETS_PATH:-/geniesim_assets}"' \
+    'export SIM_ASSETS="${SIM_ASSETS:-${GENIESIM_ASSETS_PATH}}"' \
+    'export ROS_DISTRO="${ROS_DISTRO:-humble}"' \
+    'export RMW_IMPLEMENTATION="${RMW_IMPLEMENTATION:-rmw_fastrtps_cpp}"' \
+    'BRIDGE="${ISAAC_ROOT}/exts/isaacsim.ros2.bridge/${ROS_DISTRO}"' \
+    'if [[ -d "${BRIDGE}/lib" ]]; then' \
+    '    export LD_LIBRARY_PATH="${BRIDGE}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"' \
+    'fi' \
+    'if [[ -d "${BRIDGE}/rclpy" ]]; then' \
+    '    export PYTHONPATH="${BRIDGE}/rclpy${PYTHONPATH:+:${PYTHONPATH}}"' \
+    'fi' \
+    'exec "${PREFIX}/bin/python" "$@"' \
+    > /usr/local/bin/genie_python && \
+    chmod 0755 /usr/local/bin/genie_python && \
+    ln -s /usr/local/bin/genie_python /opt/conda/envs/genie_sim/bin/omni_python
+RUN /usr/local/bin/genie_python -c \
+    'import cv2, msgpack, ik_solver, geniesim_cli; from rclpy.serialization import serialize_message; from sensor_msgs.msg import Image; assert serialize_message(Image())'
+
+ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics \
+    PATH=/opt/conda/envs/arena/bin:$PATH \
+    GENIESIM_PY_CMD=/usr/local/bin/genie_python \
+    GENIESIM_SKIP_AUTOBOOT=1
+
+LABEL io.dexmal.genie_sim.environment="/opt/conda/envs/genie_sim" \
+      io.dexmal.genie_sim.isaacsim.version="5.1.0.0" \
+      io.dexmal.genie_sim.assets.included="none"
+
+RUN /opt/conda/bin/conda init bash
+
+# Avoid loading both the baked and NVIDIA Container Toolkit Vulkan ICDs. The
+# latter matches the host driver and is present whenever the image is run with
+# --gpus and NVIDIA_DRIVER_CAPABILITIES=all.
+ENV VK_ICD_FILENAMES=/etc/vulkan/icd.d/nvidia_icd.json \
+    VK_DRIVER_FILES=/etc/vulkan/icd.d/nvidia_icd.json
+
+CMD ["bash"]

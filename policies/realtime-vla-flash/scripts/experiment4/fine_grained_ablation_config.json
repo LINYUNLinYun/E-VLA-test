@@ -1,0 +1,24 @@
+{
+  "title": "π0 fine-grained Action Expert depth × denoising ablation",
+  "task_suite_name": "libero_goal",
+  "task_id": 5,
+  "task_description": "push the plate to the front of the stove",
+  "num_trials_per_task": 50,
+  "seed": 7,
+  "global_noise_seed": 12345,
+  "num_steps_wait": 10,
+  "replan_steps": 12,
+  "resize_size": 224,
+  "conditions": [
+    {"condition_id": "E8_D5", "action_layer_pattern": "first8", "denoise_steps": 5, "gpu": "0"},
+    {"condition_id": "E8_D10", "action_layer_pattern": "first8", "denoise_steps": 10, "gpu": "1"},
+    {"condition_id": "E12_D5", "action_layer_pattern": "first12", "denoise_steps": 5, "gpu": "2"},
+    {"condition_id": "E12_D10", "action_layer_pattern": "first12", "denoise_steps": 10, "gpu": "3"},
+    {"condition_id": "E15_D5", "action_layer_pattern": "first15", "denoise_steps": 5, "gpu": "0"},
+    {"condition_id": "E15_D10", "action_layer_pattern": "first15", "denoise_steps": 10, "gpu": "1"},
+    {"condition_id": "E18_D3", "action_layer_pattern": "full18", "denoise_steps": 3, "gpu": "2"},
+    {"condition_id": "E18_D5", "action_layer_pattern": "full18", "denoise_steps": 5, "gpu": "3"},
+    {"condition_id": "E18_D7", "action_layer_pattern": "full18", "denoise_steps": 7, "gpu": "0"},
+    {"condition_id": "E18_D10", "action_layer_pattern": "full18", "denoise_steps": 10, "gpu": "1"}
+  ]
+}

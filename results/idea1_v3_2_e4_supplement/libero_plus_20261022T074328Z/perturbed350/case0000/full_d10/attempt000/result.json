@@ -1,0 +1,106 @@
+{
+  "status": "complete",
+  "success": true,
+  "manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "case_hash": "372d14f219f3d791aa062de94c830ec69a072022487d8348062e6afc2d526bd4",
+  "case": {
+    "id": 1976,
+    "name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3",
+    "category": "Objects Layout",
+    "difficulty_level": 1,
+    "mother_suite": "libero_spatial",
+    "task_index": 1975,
+    "mother_task": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+    "matching_draft": "draft_spatial",
+    "native_max_steps": 600,
+    "trial": 0,
+    "environment": "libero_plus",
+    "seed": 2287189260
+  },
+  "mode": "full_d10",
+  "environment": "libero_plus",
+  "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+  "pid": 3372931,
+  "steps": 92,
+  "requests": 19,
+  "input_contract": "exact original unflipped native observation; server native_observation once",
+  "source_files": {
+    "preparations/idea1_v3_2_e4_supplement/run_plus.py": "ee2de53b2419f16e0b6bdcf91e56e4b84aea72762d6bc89e2a7448c34b7e5076",
+    "preparations/idea1_v3_2_e4_supplement/libero_plus_env.py": "68c7596ebbcec5bcaaa8133530dd05d978938fc71d859105b16516f040dd9453"
+  },
+  "native_info": {
+    "environment": "libero_plus",
+    "repository": "/policies/LIBERO-plus",
+    "actual_import": "/policies/LIBERO-plus/libero/libero/__init__.py",
+    "isolated_config": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/config_plus",
+    "runtime_task_index": 1975,
+    "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3",
+    "instruction": "pick the akita black bowl on the cookies box and place it on the plate",
+    "benchmark_definition_language": "pick up the black bowl on the cookie box and place it on the plate level1 sample3",
+    "benchmark_language_differs_from_parsed_bddl": true,
+    "instruction_source": "actual effective BDDL :language (rewritten language-perturbation BDDL kept); filename camera/noise/robot tags never sent as prompt",
+    "native_hz": 20.0,
+    "H": 50,
+    "R": 5,
+    "max_steps": 600,
+    "settle_steps": 5,
+    "category": "Objects Layout",
+    "difficulty": 1,
+    "matching_draft": "draft_spatial",
+    "binding": {
+      "gpu": 3,
+      "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+      "pci_bus_id": "00000000:E1:00.0",
+      "preconstructor_compute_pids": [
+        "51385"
+      ],
+      "idle_required": false,
+      "sapien_device": "pci:E1",
+      "verification": "SAPIEN documented exact PCI device selector resolved from assigned NVIDIA UUID; no default selector"
+    },
+    "physical_bddl_requested": "/policies/LIBERO-plus/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_level1_sample3.bddl",
+    "noise_pipeline": "Official Plus ControlEnv wrapper, including actual image corruption during rendered steps",
+    "controller": {
+      "input_min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "input_max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "output_min": [
+        -0.05,
+        -0.05,
+        -0.05,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "output_max": [
+        0.05,
+        0.05,
+        0.05,
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "initial_vector_sha256": "0fc6c2b9e23d121e01862aab40e3915b7808742072136459bbb8ee80c3bd77ba"
+  },
+  "termination": "native_success_oracle",
+  "video": {
+    "path": "results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/full_d10/attempt000/video.mp4",
+    "fps": 20.0,
+    "full_stream_decode_passed": true
+  },
+  "wall_s": 27.900081280618906
+}

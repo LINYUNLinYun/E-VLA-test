@@ -1,0 +1,143 @@
+{
+  "repo_id": "bag100/action-atlas-pi05",
+  "revision": "a7a717259aaadceb6896b8d4885fa72a104ad4d6",
+  "files": [
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/saes/per_token/paligemma/sae_layer5.safetensors",
+      "filename": "saes/per_token/paligemma/sae_layer5.safetensors",
+      "bytes": 268526576,
+      "sha256": "65c676f4d2b4915f8efcbc71627c62a6886a80bebab5b9a4230e0110925bedd2",
+      "metadata": {
+        "k": "64",
+        "expansion": "8",
+        "epoch": "30",
+        "suites": "[\"libero_goal\", \"libero_spatial\", \"libero_object\"]",
+        "input_dim": "2048",
+        "hidden_mult": "8",
+        "normalization": "x_norm = (x - mean) / std; recon = decoder(topk_k(encoder(x_norm)))",
+        "model": "pi05",
+        "layer": "5",
+        "hidden_dim": "16384",
+        "activation_source": "Pi0.5 PaliGemma pathway residual stream, per-token over the 50 action tokens (d=2048)",
+        "pathway": "paligemma",
+        "pooling": "per_token",
+        "weak_layer": "false",
+        "loss": "0.054900",
+        "d_sae": "16384",
+        "d_in": "2048"
+      },
+      "tensor_shapes": {
+        "decoder.bias": [
+          2048
+        ],
+        "decoder.weight": [
+          2048,
+          16384
+        ],
+        "encoder.bias": [
+          16384
+        ],
+        "encoder.weight": [
+          16384,
+          2048
+        ],
+        "mean": [
+          1,
+          2048
+        ],
+        "std": [
+          1,
+          2048
+        ]
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/saes/per_token/paligemma/sae_layer16.safetensors",
+      "filename": "saes/per_token/paligemma/sae_layer16.safetensors",
+      "bytes": 268526584,
+      "sha256": "8673be6af9ef4fe2638cd00fe80ec716b5f4b4b5340e323dece4164af54dfa4e",
+      "metadata": {
+        "hidden_dim": "16384",
+        "pooling": "per_token",
+        "normalization": "x_norm = (x - mean) / std; recon = decoder(topk_k(encoder(x_norm)))",
+        "activation_source": "Pi0.5 PaliGemma pathway residual stream, per-token over the 50 action tokens (d=2048)",
+        "input_dim": "2048",
+        "k": "64",
+        "layer": "16",
+        "expansion": "8",
+        "pathway": "paligemma",
+        "d_sae": "16384",
+        "model": "pi05",
+        "loss": "0.093042",
+        "hidden_mult": "8",
+        "suites": "[\"libero_goal\", \"libero_spatial\", \"libero_object\"]",
+        "weak_layer": "false",
+        "d_in": "2048",
+        "epoch": "30"
+      },
+      "tensor_shapes": {
+        "decoder.bias": [
+          2048
+        ],
+        "decoder.weight": [
+          2048,
+          16384
+        ],
+        "encoder.bias": [
+          16384
+        ],
+        "encoder.weight": [
+          16384,
+          2048
+        ],
+        "mean": [
+          1,
+          2048
+        ],
+        "std": [
+          1,
+          2048
+        ]
+      }
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/README.md",
+      "filename": "README.md",
+      "bytes": 3842,
+      "sha256": "a5b68dec65edae3d32c5a522648f88ee9037b7646ec0e636279ec8ff40026751"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/manifest.jsonl",
+      "filename": "manifest.jsonl",
+      "bytes": 34078,
+      "sha256": "e565154829a3a179f34fff6eea158b3ec3b97f898153617f11d63c575d51e05f"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/loader.py",
+      "filename": "loader.py",
+      "bytes": 3019,
+      "sha256": "9ba701ba192710fbee0bd0389afd5a910348da3d43bebc42052ef376f08d0f76"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/concepts/concept_features_pi05.json",
+      "filename": "concepts/concept_features_pi05.json",
+      "bytes": 1113834,
+      "sha256": "acd7ffd858a24404352274e8ee4540255884134085ca4b57f6140994ff3174bd"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/videos/baseline_index.json",
+      "filename": "videos/baseline_index.json",
+      "bytes": 17307,
+      "sha256": "37c2dd45e2ec7b5f3e16d602054a87c1696f3a2b49365edc962f8f7b11cbe99d"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/shared/caches/pi05_sae_semantic/action_atlas_pi05/videos/ablation_index.json",
+      "filename": "videos/ablation_index.json",
+      "bytes": 13622923,
+      "sha256": "29bab8da71a98af844da20454d5992856db245a824b9bd10f1175f595374859b"
+    }
+  ],
+  "started_unix": 1793882538.7890568,
+  "metadata_only": true,
+  "completed_unix": 1793883172.6556988
+}

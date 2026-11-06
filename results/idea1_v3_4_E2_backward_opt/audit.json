@@ -1,0 +1,255 @@
+{
+  "passed": true,
+  "accepted": [
+    "deterministic graph1",
+    "deterministic serial graph4"
+  ],
+  "numerical": {
+    "deterministic": {
+      "n": 32,
+      "passed": true,
+      "raw_max_abs": 0.0,
+      "gradient_relative_error_max": 0.0,
+      "mask_changes": 0,
+      "translation_max_mm": 0.0
+    },
+    "advanced": {
+      "n": 32,
+      "passed": true,
+      "raw_max_abs": 0.0,
+      "gradient_relative_error_max": 0.0,
+      "mask_changes": 0,
+      "translation_max_mm": 0.0
+    },
+    "fusion": {
+      "n": 16,
+      "passed": false,
+      "raw_max_abs": 0.05859375,
+      "gradient_relative_error_max": 0.10397253930568695,
+      "mask_changes": 4,
+      "translation_max_mm": 11.188829317688942
+    },
+    "fusion_preserve": {
+      "n": 16,
+      "passed": false,
+      "raw_max_abs": 0.03515625,
+      "gradient_relative_error_max": 0.1835447996854782,
+      "mask_changes": 6,
+      "translation_max_mm": 8.862663991749287
+    },
+    "batched": {
+      "n": 16,
+      "passed": false,
+      "raw_max_abs": 0.0,
+      "gradient_relative_error_max": 0.026504721492528915,
+      "mask_changes": 2,
+      "translation_max_mm": 0.0
+    }
+  },
+  "latency": {
+    "eager": {
+      "n": 80,
+      "mean_ms": 205.36611857824028,
+      "p50_ms": 204.34259623289108,
+      "p95_ms": 213.60090728849173
+    },
+    "graph": {
+      "n": 80,
+      "mean_ms": 64.00692979805171,
+      "p50_ms": 64.08163160085678,
+      "p95_ms": 64.64898064732552
+    }
+  },
+  "split_graph": {
+    "1": {
+      "mean_ms": 64.217395382002,
+      "p95_ms": 64.85836487263441,
+      "n": 80
+    },
+    "4": {
+      "mean_ms": 185.66630203276873,
+      "p95_ms": 187.736283428967,
+      "n": 80
+    }
+  },
+  "other_costs": {
+    "fusion": {
+      "mean_ms": 56.6923335660249,
+      "p95_ms": 57.26675447076559,
+      "n": 80,
+      "passed": false
+    },
+    "fusion_preserve": {
+      "mean_ms": 56.49474081583321,
+      "p95_ms": 57.10746515542269,
+      "n": 80,
+      "passed": false
+    },
+    "batched": {
+      "n": 80,
+      "mean_ms": 162.66648219898343,
+      "p95_ms": 164.6311603486538,
+      "passed": false
+    }
+  },
+  "decomposition": {
+    "1": {
+      "forward_ms": 23.595787000656127,
+      "backward_ms": 40.39759378433227,
+      "prepare_ms": 1102.385197300464
+    },
+    "4": {
+      "forward_ms": 23.605719041824344,
+      "backward_ms": 161.7338878631592,
+      "prepare_ms": 2589.0397019684315
+    }
+  },
+  "contention": {
+    "serial": {
+      "backward_complete_ms": 40.772132873535156,
+      "next_forward_complete_ms": 64.21420707702637,
+      "pair_complete_ms": 64.21599864959717
+    },
+    "overlap": {
+      "backward_complete_ms": 54.80278568267822,
+      "next_forward_complete_ms": 26.907079887390136,
+      "pair_complete_ms": 54.80478229522705
+    }
+  },
+  "old_mask_comparison": [
+    {
+      "id": 1,
+      "old_mask": [
+        3,
+        4,
+        10,
+        17
+      ],
+      "new_mask": [
+        3,
+        4,
+        10,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 9,
+      "old_mask": [
+        3,
+        12,
+        14,
+        16
+      ],
+      "new_mask": [
+        3,
+        12,
+        14,
+        16
+      ],
+      "same": true
+    },
+    {
+      "id": 41,
+      "old_mask": [
+        1,
+        5,
+        9,
+        17
+      ],
+      "new_mask": [
+        1,
+        5,
+        9,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 49,
+      "old_mask": [
+        4,
+        9,
+        15,
+        17
+      ],
+      "new_mask": [
+        4,
+        9,
+        15,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 81,
+      "old_mask": [
+        2,
+        3,
+        10,
+        17
+      ],
+      "new_mask": [
+        2,
+        3,
+        10,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 89,
+      "old_mask": [
+        7,
+        8,
+        10,
+        17
+      ],
+      "new_mask": [
+        7,
+        8,
+        10,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 121,
+      "old_mask": [
+        3,
+        11,
+        16,
+        17
+      ],
+      "new_mask": [
+        3,
+        11,
+        16,
+        17
+      ],
+      "same": true
+    },
+    {
+      "id": 129,
+      "old_mask": [
+        2,
+        4,
+        9,
+        12
+      ],
+      "new_mask": [
+        2,
+        4,
+        9,
+        12
+      ],
+      "same": true
+    }
+  ],
+  "profile": {
+    "kernel_count": 7145,
+    "kernel_time_ms": 53.488891999998835,
+    "note": "one instrumented call; profiler wall time is not used as latency"
+  },
+  "time": 1793334820.4594045
+}

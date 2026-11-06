@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "kind": "quick_stage_loop_invariant_sha_performance_v3_source_receipt",
+  "files": {
+    "preparations/idea1_v2_2/runtime_analysis_quick_v3.py": "4a962229ed5fd5854730571ede1320c8c8489c744c69f89255dacf3a637095e0",
+    "preparations/idea1_v2_2/quick_final_adapter_v3.py": "7ef85c342cd29590f64c3cb954025b58a0c1a9045ab523d9f029a161afc3c3a2",
+    "preparations/idea1_v2_2/test_quick_analysis_hash_v3.py": "db9a316bdf89869221bbcacb4b06944fb4549465e277ef4503bc91e9ced39761",
+    "preparations/idea1_v2_2/runtime_analysis_quick_v2.py": "c2a6129c1af89968486c61773ff3af204f45f9e2a5dba95cded57c6a571ad7bd",
+    "preparations/idea1_v2_2/quick_final_adapter_v2.py": "94f91b9baeca0b63f338ac34f21b10c3bf966ead9446fff11e7aed137fd363a0",
+    "preparations/idea1_v2_2/quick_stage_scope_v2.py": "15b04ff119b563d42896bcbfaf621b2d17a527fea16acccf8da1d47619ff38d4",
+    "preparations/idea1_v2_2/readiness/quick_stage_source_receipt_v2.json": "15b0faaed8b11b2e9aab381b01c508f24ffaf3322ec8bed0fe20dd852ba91f20",
+    "preparations/idea1_v2_2/readiness/quick_stage_medium_acceptance_v2.json": "f4f496ad560fa0686fd08d754ebf545953e0df6d11540f39d5fb73ff416a3fc4",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/quick_analysis/quick_final_light_repeat_v2_v2_20261019T0917Z/action_error_by_offset_phase.csv": "26c0b4c97baaad0fa351c2acc96caefa0c9375f0cb492e397cb80a8fb2dcb289",
+    "policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/quick_analysis/quick_final_light_repeat_v2_v2_20261019T0917Z/analysis_input_receipt.json": "a094a7a3b4e53bfc6f395f5e51e92b9563180be1a509f45b8eb7c7356c6e991c"
+  },
+  "source_files": [
+    "runtime_analysis_quick_v3.py",
+    "quick_final_adapter_v3.py"
+  ],
+  "unchanged_scope": "quick_stage_scope_v2.py",
+  "cause": "v2 table hashed 4581394-byte receipt for every output row; summaries hashed sealed 39984542-byte error CSV for every (group,metric) row; actual CPU interruption trace confirmed repeated CSV sha reads",
+  "fix": "One initial SHA per immutable path per analyze/audit operation; table receipt SHA once per call; hoisted source CSV/latency/offline hashes; one final full identity recheck",
+  "tests": {
+    "command": "/usr/bin/python3 -m unittest test_quick_analysis_hash_v3 -v",
+    "passed": 3,
+    "seconds": 0.217,
+    "table_calls_before": 200,
+    "table_calls_after": 1,
+    "actual_saved_csv_subset_rows": 12,
+    "summary_original_vs_new": "all generated summary dictionaries and CSV bytes identical on actual saved subset; new SHA once plus final once",
+    "drift_rejected": true
+  },
+  "old_sources_and_partial_view_preserved": true,
+  "numerical_or_row_or_schema_or_denominator_or_figure_changes": false,
+  "models_or_npz_or_video_access": false,
+  "full_6480_test_rerun": false,
+  "actual_final_completed": false
+}

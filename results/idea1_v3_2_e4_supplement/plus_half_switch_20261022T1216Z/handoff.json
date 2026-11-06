@@ -1,0 +1,90 @@
+{
+  "status": "safe_handoff_complete",
+  "outer": {
+    "pid": 3372667,
+    "state": "S",
+    "ppid": 1958185,
+    "start_ticks": "2504784102",
+    "argv": "/policies/LIBERO-plus/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.plus_continue --root results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z --extension-receipt results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/execution_extension_20261022T112629Z.json --deadline-unix 1792692000 --gpu-uuid GPU-555cde36-5e41-bc44-0c69-ea47358fd703 --port 19143 --launch ",
+    "cwd": "/root/nfs/embodied/benchmark"
+  },
+  "dispatcher": {
+    "pid": 3372794,
+    "state": "S",
+    "ppid": 3372667,
+    "start_ticks": "2504784250",
+    "argv": "/policies/LIBERO-plus/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.run_plus --protocol results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/manifest.json --port 19143 --gpu 3 --gpu-uuid GPU-555cde36-5e41-bc44-0c69-ea47358fd703 --deadline-unix 1792692000.0 --video --launch --output results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350 --max-new-cases 350 ",
+    "cwd": "/root/nfs/embodied/benchmark"
+  },
+  "signals": [
+    {
+      "pid": 3372667,
+      "signal": "SIGSTOP",
+      "unix": 1792671377.740198
+    },
+    {
+      "pid": 3372794,
+      "signal": "SIGSTOP",
+      "unix": 1792671377.7408924
+    },
+    {
+      "pid": 3372667,
+      "signal": "SIGTERM",
+      "unix": 1792671388.3259625
+    },
+    {
+      "pid": 3372667,
+      "signal": "SIGCONT",
+      "unix": 1792671388.32597
+    },
+    {
+      "pid": 3372794,
+      "signal": "SIGTERM",
+      "unix": 1792671388.3275628
+    },
+    {
+      "pid": 3372794,
+      "signal": "SIGCONT",
+      "unix": 1792671388.327564
+    }
+  ],
+  "children": [
+    {
+      "pid": 3417774,
+      "state": "S",
+      "ppid": 3372794,
+      "start_ticks": "2505058101",
+      "argv": "/policies/LIBERO-plus/.venv/bin/python -m preparations.idea1_v3_2_e4_supplement.run_plus --protocol results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/manifest.json --output results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0020/full_d10/attempt000 --port 19143 --gpu 3 --gpu-uuid GPU-555cde36-5e41-bc44-0c69-ea47358fd703 --deadline-unix 1792692000.0 --child-index 20 --child-mode full_d10 --launch ",
+      "cwd": "/root/nfs/embodied/benchmark"
+    }
+  ],
+  "child_results": [
+    {
+      "pid": 3417774,
+      "path": "results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0020/full_d10/attempt000/result.json",
+      "status": "complete",
+      "success": false
+    }
+  ],
+  "completed_unix": 1792671388.3285227,
+  "final_states": {
+    "3372667": {
+      "pid": 3372667,
+      "state": "Z",
+      "ppid": 1958185,
+      "start_ticks": "2504784102",
+      "argv": "",
+      "cwd": null
+    },
+    "3372794": {
+      "pid": 3372794,
+      "state": "Z",
+      "ppid": 3372667,
+      "start_ticks": "2504784250",
+      "argv": "",
+      "cwd": null
+    }
+  },
+  "renderer_child_signals_sent": false,
+  "reaping_note": "Outer exec session remains owned by tool launcher; finished child zombies are reaped by their parent/init, not falsely waitpid-owned here"
+}

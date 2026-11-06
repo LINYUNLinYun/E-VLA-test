@@ -1,0 +1,810 @@
+{
+  "status": "pass",
+  "manifest_hash": "71dff1c410fe8a28c4ca55a1b2f082b37d6686738a0c3405df0451ef65413d6c",
+  "known_controls": 12,
+  "independent_quality_cases": 0,
+  "GPU_adapter_parity_passed": true,
+  "actual_AE_visits_and_NFE_passed": true,
+  "exact_D2_D3_D10_node_receipts_passed": true,
+  "old_Full_bridge_passed": true,
+  "old_AE14_bridge_passed": true,
+  "old_VLM_c_bridge_passed": true,
+  "all_twelve_controls_bitwise_identical": true,
+  "joint_cost_qualification": {
+    "median_same_service_ratios": {
+      "vlm_c": 1.6246390947282694,
+      "ae14_d3": 1.5210357553159957
+    },
+    "pair_cost_factor": 1.0681136778344504,
+    "pair_matched": true,
+    "completed_services": 6,
+    "pass": true
+  },
+  "cases": [
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "5dcf44f87a7db734b09805dfaa4f4ca9a8b107490ae0df48511f54bea6614f43",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "17c8092e6acdd2b0142ee1594037061275e578f7f5339e41b1db9282b21e17a2",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "344cdbecb4dd200ed94e591f9baf4ac102333e001de94aaf4e381da2cd322f9d",
+      "success": true,
+      "predictions": 22
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "f0f34ba1eea311168a6810b76a25d0f711cdb36bef4e83f7047c898c19db63fa",
+      "success": true,
+      "predictions": 57
+    },
+    {
+      "condition": "vlm_c",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "1f5a0e343da88d252818879a0fe71e1b5737aea0f814326a5e02c204a4a33830",
+      "success": true,
+      "predictions": 21
+    },
+    {
+      "condition": "vlm_c",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "9dfb847d3b43653a141182447a91397048aefe33de6e62fe136fb47aeac2bffe",
+      "success": true,
+      "predictions": 32
+    },
+    {
+      "condition": "vlm_c",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "0a61438a68ed99b6cfdde26c4c82465ffcbf77a65e9878404bdd25d4d76f5abb",
+      "success": true,
+      "predictions": 29
+    },
+    {
+      "condition": "vlm_c",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "6fb9b2f7c66af4d83216a415dedd2cf52ffac4a4d5c9bc8308b0148dc62b8de9",
+      "success": true,
+      "predictions": 71
+    },
+    {
+      "condition": "ae14_d3",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "5a19cf33046c452e1513657aaf3a26bd29a5f7cc1d2bea53cfd81ef358138b26",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "ae14_d3",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "996adbbd5829e121fde6ddefb4b80e6c99cb554d510e88df8eeba642bb90eb64",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "ae14_d3",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "283d3375dae1eed392ac34b4d571e1ec9908212ea60cf898273aefdf20f0500e",
+      "success": true,
+      "predictions": 32
+    },
+    {
+      "condition": "ae14_d3",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "ec2db6d8f52b433cfbd9690fdc929b4ee91b200df3f1050e697d2ecd21fe1172",
+      "success": true,
+      "predictions": 61
+    }
+  ],
+  "services": [
+    {
+      "condition": "ae14_d3",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/runs/calibration_shard00of02_1793918389759771997",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "9242963742b6db9fbd8298c782f62168e39124d5b97026ea4b596b86406cb4de",
+        "identity.json": "6ad12e6f7c29442c47e2781f4fad3e3693380faf4bc133f7940d0a753dbbab0c",
+        "protocol.json": "4c2ca0a2ca9cb683cbcfb41dcd2d794f3c03873bd1a654733db733f7e353bece",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "34e6d4abd10e10ef870b5dcc1906a09c083b3753fffb3c785b94d190bac53b47"
+      }
+    },
+    {
+      "condition": "ae14_d3",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/runs/calibration_shard01of02_1793918412922458196",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "ffe43edc0ce9d80add1df997bd84a04c03ed3363394dd8511acc5897110f7066",
+        "identity.json": "9a591cd3e7efe0804f1a582cfc74897931397f5e823720f82b2eb17fcd7dfb8a",
+        "protocol.json": "bb4f24c86d387d7a9d3834951e8581546d41f9adcf08f4500802946f61f4aebb",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "cd8345508296293ea4f8cdc673d544bac9a8629eabba9adf14139c44c11e8f73"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/runs/calibration_shard00of02_1793918168399372222",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "06c0a2a616144e0cce17500150b40484003d457c07d35e18331f336d456c516a",
+        "identity.json": "a7f8b4c237240d5d14525deef3594c19789d7e7b13fa972ae7f863fbfc763b6c",
+        "protocol.json": "07146725e0ce12bbb4722af2a4bad65075a3aab8726a63e9d767c3198ecadbdc",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "76ec01047bcee543ce07e7c985012f6e2c7cab8c327205b544265ed82c1f9013"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/runs/calibration_shard01of02_1793918168428661292",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "8c55ac61e584acba2b892520e8ad6c211e44fb055ec675297a0ee8ff58e96989",
+        "identity.json": "faca4c6649161e699cd0979e39914eae8dab0a5c7bfe361843548e62600e1711",
+        "protocol.json": "738891d083733f93319af3d40ea85fbaf359b8b8de7c8e883cf6fea2532a88cc",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "d744dc84c38e1c1de3a34ac7b186667566782845b87680ad15ba1a2c6b1f97cf"
+      }
+    },
+    {
+      "condition": "vlm_c",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/runs/calibration_shard00of02_1793918280684026152",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "e6fea588dadd04d21605acaae1331487ba8723cc5f60748d1becb17a5a256937",
+        "identity.json": "58c9a07cac467d6c8845bd1c4239b206f11493a6efa8448f2b5a2e6ee9751553",
+        "protocol.json": "1eb65cffbb504c290d715790a8a06aed53a18fb095c524b85efd7c56b0cad562",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "645171568a488c778760079dd56a3534b34c0a69e335d9ea87babc60a7970a66"
+      }
+    },
+    {
+      "condition": "vlm_c",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/runs/calibration_shard01of02_1793918293836792421",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 244,
+      "cross_service_checks": 24,
+      "artifacts": {
+        "result.json": "4b57f52bf867d2ed84d2c79175f8f66e386f6857f2c7b5d9cc46e9f8050fa40b",
+        "identity.json": "74a7da0d4f72830a2b95819ec9a913f3acd45dda6d1aecaa8d68246ab9ab7594",
+        "protocol.json": "344cfc50715ae75520ac2b76dab26c5bcaffb5413549c52c93fbdecda93be705",
+        "gate.json": "8134acf111aac6b26d188c9db971f558a42ce915e3bc3a23478a1b4620a11045",
+        "cross_service.json": "3eb86ee4caea11448896d1078bda77074616a1303279c7aae8b7006d29c314f0",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "7cc99aeb8b8939731f4cba723894ea0b856580cc7e905049b3c8b2c12efa05c0"
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d",
+        "success": true,
+        "predictions": 17
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "5dcf44f87a7db734b09805dfaa4f4ca9a8b107490ae0df48511f54bea6614f43"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0",
+        "success": true,
+        "predictions": 27
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "17c8092e6acdd2b0142ee1594037061275e578f7f5339e41b1db9282b21e17a2"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b",
+        "success": true,
+        "predictions": 22
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "344cdbecb4dd200ed94e591f9baf4ac102333e001de94aaf4e381da2cd322f9d"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "full_d10",
+      "source_condition": "full_d10",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "full_d10",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1",
+        "success": true,
+        "predictions": 57
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "f0f34ba1eea311168a6810b76a25d0f711cdb36bef4e83f7047c898c19db63fa"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "spread_c",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "82bd8430210fe4f02fbb35c6d2346743557e917c96ab498fecf32f327de8adf8",
+        "success": true,
+        "predictions": 21
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "1f5a0e343da88d252818879a0fe71e1b5737aea0f814326a5e02c204a4a33830"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "spread_c",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "03add4c51b086f207aaa59da1bea68b866067ad7c050b689f39d0e7b2985b94a",
+        "success": true,
+        "predictions": 32
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "9dfb847d3b43653a141182447a91397048aefe33de6e62fe136fb47aeac2bffe"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "spread_c",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "2617cae36c25fb925b3ee773168dbe15f4436ab732039ea52bb6912534e1090e",
+        "success": true,
+        "predictions": 29
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "0a61438a68ed99b6cfdde26c4c82465ffcbf77a65e9878404bdd25d4d76f5abb"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "vlm_c",
+      "source_condition": "spread_c",
+      "source_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "spread_c",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/spread_c/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "803756426708c3ed8ccee167159f56c78012cfa4191fc3cd4be3bea537b8027c",
+        "success": true,
+        "predictions": 71
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "6fb9b2f7c66af4d83216a415dedd2cf52ffac4a4d5c9bc8308b0148dc62b8de9"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae14_d3",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "1733dea969c2c27ba1c530ab14d19658e37f88a632e60c583798953bfc3e1e35",
+        "success": true,
+        "predictions": 17
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "5a19cf33046c452e1513657aaf3a26bd29a5f7cc1d2bea53cfd81ef358138b26"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae14_d3",
+        "case": {
+          "suite": "libero_object",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "004e8889937cbf12d5192e0a8f75bd9463fbdb6b4612e5904f9a82864a071874",
+        "success": true,
+        "predictions": 27
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "996adbbd5829e121fde6ddefb4b80e6c99cb554d510e88df8eeba642bb90eb64"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae14_d3",
+        "case": {
+          "suite": "libero_goal",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "bdc461d096a76bce74352e4a23d120c80b15470450eaabfd2de08acb73dcb9eb",
+        "success": true,
+        "predictions": 32
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "283d3375dae1eed392ac34b4d571e1ec9908212ea60cf898273aefdf20f0500e"
+      },
+      "bitwise_actions_and_raw_identical": true
+    },
+    {
+      "analysis_condition": "ae14_d3",
+      "source_condition": "ae14_d3",
+      "source_manifest_hash": "3518514299c95a432ce50ab215548e0b9c8049c657bd11a9c2a6c02d9971204e",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "original_receipt": {
+        "condition": "ae14_d3",
+        "case": {
+          "suite": "libero_10",
+          "task": 0,
+          "init": 45
+        },
+        "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/denoise_depth_paths_v1/discovery/ae14_d3/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "0d07f0073b7e39d1d18be005ffea442a32c4102389f4b7c2cf2ebded024a5d63",
+        "success": true,
+        "predictions": 61
+      },
+      "known_control_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "ec2db6d8f52b433cfbd9690fdc929b4ee91b200df3f1050e697d2ecd21fe1172"
+      },
+      "bitwise_actions_and_raw_identical": true
+    }
+  ],
+  "cost_calls_validated": 1296,
+  "cost_records": {
+    "valid_services": 6,
+    "services": [
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/runs/calibration_shard00of02_1793918389759771997/fixed_input_cost.json",
+        "sha256": "34e6d4abd10e10ef870b5dcc1906a09c083b3753fffb3c785b94d190bac53b47",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 323.93910828977823,
+          "vlm_c": 205.2821118850261,
+          "ae14_d3": 210.3592457715422
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.578019172324227,
+          "ae14_d3": 1.5399328282512854
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 107.97970276325941,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 110.66973931156099,
+            "fast": 47.306186286732554
+          },
+          "ae14_d3": {
+            "full": 103.64362713880837,
+            "fast": 53.35780931636691
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/ae14_d3/runs/calibration_shard01of02_1793918412922458196/fixed_input_cost.json",
+        "sha256": "cd8345508296293ea4f8cdc673d544bac9a8629eabba9adf14139c44c11e8f73",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 317.3436396755278,
+          "vlm_c": 206.72582229599357,
+          "ae14_d3": 227.29877475649118
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.5350943396957433,
+          "ae14_d3": 1.39615200308714
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 105.78121322517593,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 111.15389131009579,
+            "fast": 47.78596549294889
+          },
+          "ae14_d3": {
+            "full": 113.844238454476,
+            "fast": 56.72726815100759
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/runs/calibration_shard00of02_1793918168399372222/fixed_input_cost.json",
+        "sha256": "76ec01047bcee543ce07e7c985012f6e2c7cab8c327205b544265ed82c1f9013",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 315.0132750160992,
+          "vlm_c": 194.38367942348123,
+          "ae14_d3": 211.80266793817282
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.6205747105435546,
+          "ae14_d3": 1.4872960670545214
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 105.0044250053664,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 104.62776781059802,
+            "fast": 44.877955806441605
+          },
+          "ae14_d3": {
+            "full": 105.23605975322425,
+            "fast": 53.28330409247428
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/full_d10/runs/calibration_shard01of02_1793918168428661292/fixed_input_cost.json",
+        "sha256": "d744dc84c38e1c1de3a34ac7b186667566782845b87680ad15ba1a2c6b1f97cf",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 330.74961439706385,
+          "vlm_c": 203.07540241628885,
+          "ae14_d3": 217.43392129428685
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.628703478912984,
+          "ae14_d3": 1.521150023088667
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 110.24987146568795,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 109.84704946167767,
+            "fast": 46.61417647730559
+          },
+          "ae14_d3": {
+            "full": 107.13933943770826,
+            "fast": 55.147290928289294
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/runs/calibration_shard00of02_1793918280684026152/fixed_input_cost.json",
+        "sha256": "645171568a488c778760079dd56a3534b34c0a69e335d9ea87babc60a7970a66",
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "cycle_mean_ms": {
+          "full_d10": 324.8788316268474,
+          "vlm_c": 199.08954459242523,
+          "ae14_d3": 213.60657620243728
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.6318226669910625,
+          "ae14_d3": 1.5209214875433243
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 108.29294387561579,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 107.39146755076945,
+            "fast": 45.84903852082789
+          },
+          "ae14_d3": {
+            "full": 105.0899273250252,
+            "fast": 54.25832443870604
+          }
+        }
+      },
+      {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v4/calibration/vlm_c/runs/calibration_shard01of02_1793918293836792421/fixed_input_cost.json",
+        "sha256": "7cc99aeb8b8939731f4cba723894ea0b856580cc7e905049b3c8b2c12efa05c0",
+        "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "cycle_mean_ms": {
+          "full_d10": 343.7290412839502,
+          "vlm_c": 197.85032980144024,
+          "ae14_d3": 215.64253862015903
+        },
+        "full_over_policy_cycle": {
+          "full_d10": 1.0,
+          "vlm_c": 1.7373185156118354,
+          "ae14_d3": 1.593976047042405
+        },
+        "stage_policy_mean_ms": {
+          "full_d10": {
+            "full": 114.57634709465007,
+            "fast": null
+          },
+          "vlm_c": {
+            "full": 106.71438905410469,
+            "fast": 45.56797037366778
+          },
+          "ae14_d3": {
+            "full": 106.86854156665504,
+            "fast": 54.386998526751995
+          }
+        }
+      }
+    ],
+    "excluded_or_pending": [],
+    "mean_cycle_ms": {
+      "full_d10": 325.9422517148778,
+      "vlm_c": 201.0678150691092,
+      "ae14_d3": 216.02395409718156
+    },
+    "full_over_policy_cycle": {
+      "full_d10": 1.0,
+      "vlm_c": 1.6210563167598349,
+      "ae14_d3": 1.5088245795568016
+    },
+    "pooling": "Equal completed-service weight and equally weighted four-suite old-bank inputs; full three-request cycles",
+    "scope": "Actual original-adapter policy cost, ordered AE visits and exact time-node receipts; not closed-loop or exclusive-GPU acceleration"
+  },
+  "auditor_source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v4/calibration_audit.py",
+    "sha256": "45ba9b1aa15013ddc605288216a99f43eb3eeff34a44fbfa282065941683bc43"
+  },
+  "time": 1793918530.7896013,
+  "scope": "Finite original-adapter arithmetic, actual dispatch/cost receipts and repeated-control trajectory bridge only; no independent quality or complementary-path evidence"
+}

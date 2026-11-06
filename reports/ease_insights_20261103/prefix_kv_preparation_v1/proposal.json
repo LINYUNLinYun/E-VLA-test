@@ -1,0 +1,59 @@
+{
+  "status": "CPU_preparation_only_not_a_policy",
+  "time": 1793915741.6329875,
+  "hypothesis": "Two equal visual-KV budgets may preserve different action-relevant information. This is a different attention-edge selection family, not evidence for the current layer-neighbor hypothesis.",
+  "patterns": [
+    "center_columns",
+    "checkerboard"
+  ],
+  "visual_tokens_per_camera": 128,
+  "cameras": 2,
+  "language_tokens": "all retained in original order",
+  "Full_visual_prefix_tokens": 512,
+  "fixed_candidate_science": {
+    "VLM_layers": 18,
+    "vision_layers": 27,
+    "AE_layers": 18,
+    "Fast_D": 2,
+    "Full_D": 10,
+    "H": 50,
+    "R": 5,
+    "training": false
+  },
+  "mechanism": "Compute both fresh images and the full dense VLM prefix, then gather retained per-layer K/V entries for action-expert attention. No VLM-prefill pruning or prefill-latency saving is claimed.",
+  "native_layout_findings": [
+    "The decoder writes its51 tokens into the K/V buffer tail starting at encoder_seq_len.",
+    "Attention kernels take total key length from actual K/V tensor shapes, not just the prefix scalar.",
+    "K/V and attention scratch therefore need matching compact contiguous allocations; changing c.seq alone is invalid.",
+    "Native decoder RoPE uses original encoder_seq_len+arange51. Keep these absolute positions while moving packed storage; retained prefix K/V are already rotated.",
+    "Resize optional FP32 attention-logit scratch too; preserve and restore original runtime buffer ownership.",
+    "The inspected native softmax block supports at most1024 keys; the CPU plan rejects unsupported full-prefix lengths."
+  ],
+  "layout_sources": {
+    "reports/ease_insights_20261103/prefix_kv_preparation_v1/layout_contract.py": "0b1163aee0ce45e33ff174d3ba1e35c8945b47deb8371430a66fd1be201ebdc5",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v1/test_layout_contract.py": "b294e51836630a1e5b45898a2f45d321ddce819800eb21fb40253f7e0b1d1b84"
+  },
+  "native_source_pins": {
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "policies/realtime-vla-flash/scripts/experiment1/run_intermediate_action_probe.py": "e3ebf445ebb5144f2a2615b63b5efd229a75b6bfe78550267768ac397ec8ef8e",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "CPU_tests": 8,
+  "GPU_numerical_gate_passed": false,
+  "GPU_or_model_or_environment_started": false,
+  "scientific_manifest_created": false,
+  "new_quality_cases": 0,
+  "gate_requirements": [
+    "Identity selection must match the unmodified original sampler on same input/noise, raw and decoded, including FullD10 and DenseD2 known trajectories.",
+    "Verify exact camera/text index sets, storage contiguity, unchanged decoder RoPE and full buffer restoration after success/errors.",
+    "Validate actual NFE and context-token counts; keep original source and numeric tolerances.",
+    "Profile packing cost and native policy cost versus Full and the existing DenseD2 path; no speed claim from token counts.",
+    "Only after numeric/known-control gates, prospectively freeze a separate matched-case closed-loop discovery and unused-state confirmation."
+  ],
+  "reference_scope": "Existing Full and DenseD2 controls may only be reused after a bitwise bridge and exact source-identity mapping. No current AE14 partial success results were read for this preparation.",
+  "decision_boundary": "If DenseD2 uniformly dominates, current evidence supports that fixed route; do not claim adaptive routing is needed. Same-input action error never substitutes for independent closed-loop preference.",
+  "current_AE14_discovery_changed": false,
+  "automatic_GPU_launch": false,
+  "next": "Assess only after the current frozen layer-neighbor search finishes; no execution or allocation is supplied by this preparation.",
+  "retained_GPU_slots_observed": 2
+}

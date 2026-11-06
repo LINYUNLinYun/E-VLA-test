@@ -1,0 +1,269 @@
+{
+  "condition": {
+    "id": "v12_p3_q4_optimized_async",
+    "model": "pi0",
+    "mode": "verified",
+    "budget": 12,
+    "skip_count": 6,
+    "adjacency_rule": "spaced",
+    "period": 3,
+    "selection": "jacobian",
+    "projections": 4,
+    "skip": [],
+    "compensation": "extrapolate",
+    "tau": 0.1,
+    "protect_gripper": true,
+    "kalman": false,
+    "H": 50,
+    "R": 5,
+    "full_steps": 10,
+    "fast_steps": 2,
+    "n": 40,
+    "phase": "main200",
+    "selection_stride": 1,
+    "batched": true,
+    "aggregation": "layer_rms_sum",
+    "asynchronous": true,
+    "attention": "original",
+    "cuda_graph": true,
+    "gradient_backend": "rms_rope_glu"
+  },
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "selected_probe": {
+    "method": "rms_rope_glu",
+    "n": 40,
+    "mean_ms": 195.70081233978271,
+    "p95_ms": 198.67883548140526,
+    "max_ms": 198.85168224573135,
+    "raw_passes": 8,
+    "serial_passes": 0,
+    "v12_mask_changes": 0
+  },
+  "selection_rule": "Minimum mean hot latency among completed eight-input candidates with original forward passing the fixed tolerance.",
+  "numerical_classification": "Changed reverse rounding; gradients failed original serial tolerance. Separate scientific condition.",
+  "parent_manifest_hash": "67249e33bc86fe33f5cd6c8e7b600949e02040ae22d0da54c52a4aa1ed657dd2",
+  "source_files": {
+    "reports/idea1_v3_4_selection_async_analysis.py": "310a8336ea786d1e3a187531635359f00e81eda35f0f318560a65e6a5f89ceee",
+    "reports/idea1_v3_4_selection_async_paced.py": "7c11a8d1d39c5197c5fd94c563e437e5cba46c821e0c83907dfbc4fddd752638",
+    "reports/idea1_v3_4_selection_async_diagnose.py": "f75d7c50e59caa5d9e5981cff1f3b7c62c73ba6473f9f5433d97444dcbcb8758",
+    "reports/idea1_v3_4_selection_async_followup.py": "097dc79f6cb4b415fc2a9c14303b6e1d9325932aded39e1fecf60a6a7007db29",
+    "reports/idea1_v3_4_selection_async_batched_attention.py": "a868c6393d5e56a69b3e55b213a5f4a04abef3389fd5fccddb7dee7527fe8709",
+    "reports/idea1_v3_4_selection_async_sdpa_probe.py": "86119323b116c45afad611a4a8adc9611bd2cb49e07ec78941eabe1d81083cb9",
+    "reports/idea1_v3_4_selection_async_report.py": "08d75377e751255705a347dbbc3e7d5000dde0fbcfe0b92889e1d9a9c325fc2e",
+    "reports/idea1_v3_4_selection_async_timing.py": "e4753c97c7f7914fa51a4c8a78ee99d527aff61b7e61a17aeca30a82b5dffa39",
+    "reports/idea1_v3_4_selection_async_projections.py": "7cb114991be686add124346b87b0ad9dcf9b6df84ab4b25302153c797987ea30",
+    "reports/idea1_v3_4_selection_async_plot.py": "3e5243a39a77c3120c0943fda4b1c696cd6c322e52b4c74619b896e1fd8be6a9",
+    "reports/idea1_v3_4_selection_async_rms_backward.py": "db6dee35f5af59a729ed214364bd97554e7b460a0b42109ce09e4c13b4baf0e2",
+    "reports/idea1_v3_4_selection_async_rms_probe.py": "661ce780be312e0782bb9d7f7ce6c98af4e5ebc4c9fdc4e1595b3ebd2f45fba5",
+    "reports/idea1_v3_4_selection_async_elementwise.py": "ecdb8b4ae3aaf42b38cea0f0c89a18e669b83fa209a8624246a4a80d2f6a0964",
+    "reports/idea1_v3_4_selection_async_elementwise_probe.py": "f208ea14d9e33f6ead0a8caf173375054504bb6c9735ebfc4e79cf483390495d",
+    "reports/idea1_v3_4_selection_async_optimized_server.py": "d17b1262062880f0be7db6f977a7e0b53ef195c21441e8006086c7e688ce761f",
+    "reports/idea1_v3_4_selection_async_optimized_gate.py": "8421c265288196c7afb4f0b268899c290dedf8a4476789ab46c20e98eaf6227e",
+    "reports/idea1_v3_4_selection_async_optimized_evaluate.py": "15d311dd8af85f50807978e029f05f67559c4ea7162a1d4e1f525f27dd13a4f0",
+    "reports/idea1_v3_4_selection_async_optimized_controller.py": "6f842f6d60721438b5a8c0d48c808305e21ccd94806ac7b71c727803914d97fc"
+  },
+  "probe_sha256": "eccc3c42eada91166b14dc8fd86bbba8c2fad6960d362d44c6cb53ae07797195",
+  "time": 1793551877.3581367,
+  "manifest_hash": "417cdf13f305c03044eead1503ed01432049f5996cfbdc2eef55a8c4cac73ca6"
+}

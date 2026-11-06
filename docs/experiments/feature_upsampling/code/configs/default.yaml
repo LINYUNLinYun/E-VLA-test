@@ -1,0 +1,43 @@
+# Feature upsampling experiment configuration
+checkpoint: /root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi0_libero/params
+openpi_root: /root/nfs/embodied/benchmark/policies/openpi
+libero_root: /root/nfs/embodied/benchmark/LIBERO/libero/datasets
+model:
+  variant: So400m/14
+  patch: 14
+  num_classes: 2048        # paligemma width (gemma_2b)
+  width: 1152              # pre-projector feature width
+  depth: 27
+  teacher_res: 224
+  student_res: 112
+  dtype_metrics: float32
+  dtype_latency: bfloat16
+data:
+  suites: [libero_spatial, libero_object, libero_goal, libero_10]
+  tasks_per_suite: 6
+  demos_per_task: 2
+  frames_per_demo: 6
+  camera: agentview_rgb
+  max_images: 288
+  seed: 0
+upsamplers:
+  jbu:
+    radius: 1
+    sigma_s: 1.0
+    sigma_r: 0.15
+  jbu5:
+    radius: 2
+    sigma_s: 1.5
+    sigma_r: 0.15
+  patch_guided:
+    radius: 1
+    tau: 0.2
+    lam: 2.0
+    use_pos: true
+  guided_filter:
+    radius: 2
+    eps: 1.0e-3
+latency:
+  warmup: 30
+  iters: 100
+  batch_size: 1

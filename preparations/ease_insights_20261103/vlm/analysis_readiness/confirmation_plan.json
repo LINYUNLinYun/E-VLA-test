@@ -1,0 +1,41 @@
+{
+  "status": "not_executed",
+  "executable": false,
+  "discovery_manifest_hash": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+  "selection_frozen": false,
+  "selected_pair": null,
+  "preregistered_directions": [],
+  "inits": [
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "conditions": null,
+  "episodes_per_condition": 200,
+  "total_if_selected": 600,
+  "protocol": "Same fixed global masks, own residual extrapolation, Full-D10/Fast-D2/Fast-D2, H50/R5, matched official initial states and request noise",
+  "launch_requirement": "New output directory, new confirmation manifest, independent wrapper; current discovery confirm lock remains untouched",
+  "analysis": "Paired success difference, discordant counts and exact paired tests in the two frozen suites; other suite/task outcomes descriptive",
+  "proposed_interpretation": "Report direction reproduction separately from statistical resolution; apply Holm correction to the two prespecified one-sided exact paired tests if used",
+  "boundary": "Do not rename preferred suites or reselect masks from validation outcomes; universal dominance supports a fixed path, not complementarity"
+}

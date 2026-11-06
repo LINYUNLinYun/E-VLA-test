@@ -1,0 +1,180 @@
+{
+  "status": "pass",
+  "manifest_hash": "aa9a8708f40c81eaf016d83a7ef89e8cb7c1ce9cc2c9cf639532beab4dbfdd3b",
+  "known_Full_controls": 4,
+  "independent_quality_cases": 0,
+  "GPU_native_parity_passed": true,
+  "actual_AE_visits_and_NFE_passed": true,
+  "actual_single_view_batch_passed": true,
+  "nontrivial_mixed_view_oracle_passed": true,
+  "old_Full_bridge_passed": true,
+  "all_four_controls_bitwise_identical": true,
+  "cases": [
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "c05651a63db5cd79e5fd18f0a7fadaeec7a28a0e8e50fe907055b647e853e0a8",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "6cdc69d1c1a70c8b69b811937d891f4d1ae40ff01e5ccd3d4017d2835a9678ff",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "25c55076d58ef482f27b8c50cc74a895f543ae9de1b37a938e7c48a15466b118",
+      "success": true,
+      "predictions": 22
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "65e9dde9922752e6546d0eb8372d4faa18000a3cad652725253936a22ca9bd9e",
+      "success": true,
+      "predictions": 57
+    }
+  ],
+  "services": [
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/runs/calibration_shard00of02_1793901788719255883",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 976606,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 464,
+      "cross_service_checks": 32,
+      "artifacts": {
+        "result.json": "cdbaeabee9ad1c6a3d55459ebcdbde95fb098dc66fb7790d2d383e905451926f",
+        "identity.json": "8afd5c3235dba7f7179a5ee7a23c1690fe7c7ae2768d0f719df3e6ef7d569cb8",
+        "protocol.json": "16fc5235013fe7fabbaae71e6985c18ebce272770c9c5990d604aeb1d9531498",
+        "gate.json": "3668aa3c0853679795aded6a5c72119a30238209d549dbe2f5f64f9aa79d2ad0",
+        "cross_service.json": "995aed261b60a56266855d1d5f5bedb4880ce554206b957b1c031c7c2e162b8c",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "bc9b5cca28060fdacf3df5d891bfb46f2333b3cd2fb5118ea9cc2a63152f0fdb"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/runs/calibration_shard01of02_1793901788498186112",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 977430,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 464,
+      "cross_service_checks": 32,
+      "artifacts": {
+        "result.json": "a5edc5526ef7067644927f3b8cd987509e17f5fa9437e479e92bf33d5ac7c08a",
+        "identity.json": "5b2b91b849f4a98efa607bbe3ca277cd159a7cf795698f056cb886b6e3cf0b41",
+        "protocol.json": "2dc02bd98cd5e899eb426fcd759d31836d36fefba3e4029b9753b60178495648",
+        "gate.json": "3668aa3c0853679795aded6a5c72119a30238209d549dbe2f5f64f9aa79d2ad0",
+        "cross_service.json": "995aed261b60a56266855d1d5f5bedb4880ce554206b957b1c031c7c2e162b8c",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "fba022ea4ea6d5a4c49285c5ae73c757c8b5db40b125e67759a9dd45aea6fb76"
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "c05651a63db5cd79e5fd18f0a7fadaeec7a28a0e8e50fe907055b647e853e0a8"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 17
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "6cdc69d1c1a70c8b69b811937d891f4d1ae40ff01e5ccd3d4017d2835a9678ff"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 27
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "25c55076d58ef482f27b8c50cc74a895f543ae9de1b37a938e7c48a15466b118"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 22
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/camera_paths_v2/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "65e9dde9922752e6546d0eb8372d4faa18000a3cad652725253936a22ca9bd9e"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 57
+    }
+  ],
+  "source_reference_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+  "source_reference_manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+  "auditor_source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v2/calibration_audit.py",
+    "sha256": "10ca1058e02bcd9e30f1964ab13d270491771722f96b955b70f4cf7bf0b92c2f"
+  },
+  "time": 1793902025.9987073,
+  "scope": "Finite numerical/runtime bridge and known-control reproduction only; no independent quality or complementary-path evidence"
+}

@@ -1,0 +1,36 @@
+{
+  "screen": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e2_screen_200_20261019T1444Z",
+  "candidates": [
+    {
+      "mask": "Full",
+      "successes": 40,
+      "episodes": 40
+    },
+    {
+      "mask": "transfer16",
+      "successes": 39,
+      "episodes": 40
+    },
+    {
+      "mask": "transfer15",
+      "successes": 39,
+      "episodes": 40
+    },
+    {
+      "mask": "V14_A03",
+      "successes": 33,
+      "episodes": 40
+    },
+    {
+      "mask": "V13_Custom",
+      "successes": 32,
+      "episodes": 40
+    }
+  ],
+  "selected_masks": [
+    "Full",
+    "transfer16",
+    "transfer15"
+  ],
+  "rule": "best screen success, plus most skipped within ten percentage points of best; deduplicate; Full retained"
+}

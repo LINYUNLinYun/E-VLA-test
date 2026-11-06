@@ -1,0 +1,16 @@
+{
+  "status": "source_layout_note_not_a_timing_result",
+  "time": 1793923814.6862667,
+  "source": {
+    "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py",
+    "sha256": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "findings": [
+    "NativeQKmatmulgriddependsontotalkeycountin32-keytiles",
+    "NativeVmatmulgridalsodependsontotalkeycount",
+    "Softmaxreductionretainsafixed1024-keyblockandmasksinvalidkeys"
+  ],
+  "interpretation": "ReducingprefixkeysreducestheQK/Vgridbutnotallsoftmaxwork. Packingoverheadandend-to-endpolicycostmustbemeasured;tokencountsaloneprove no acceleration.",
+  "GPU_measurements": 0,
+  "current720_changed": false
+}

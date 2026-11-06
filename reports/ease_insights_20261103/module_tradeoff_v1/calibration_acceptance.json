@@ -1,0 +1,178 @@
+{
+  "status": "pass",
+  "manifest_hash": "cac4754d465c9e1bef3b52dfd8e17847407a6ce0c5c885f81b03727e8774b9a2",
+  "known_Full_controls": 4,
+  "independent_quality_cases": 0,
+  "GPU_native_parity_passed": true,
+  "actual_AE_visits_and_NFE_passed": true,
+  "old_Full_bridge_passed": true,
+  "all_four_controls_bitwise_identical": true,
+  "cases": [
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+      "sha256": "b054e3db35b801ee6a9088f67d6dd60ba3556e24a17a2113928f83ca68e42d5b",
+      "success": true,
+      "predictions": 17
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+      "sha256": "01bdf522dc7c2de6fa7d9542c46be4b40dd9e01edd1655b033161d11264d5294",
+      "success": true,
+      "predictions": 27
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+      "sha256": "b72a39ef8749b89e8ab3484cf4d13bbf0c7e01396186f894e3d1c6052347308e",
+      "success": true,
+      "predictions": 22
+    },
+    {
+      "condition": "full_d10",
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "receipt": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+      "sha256": "3b014825410ad8f7efaf9eb6a8871a6c01c5986c3d55d923fcf8918d48acad98",
+      "success": true,
+      "predictions": 57
+    }
+  ],
+  "services": [
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/runs/calibration_shard00of02_1793894912376547709",
+      "shard": 0,
+      "shards": 2,
+      "controller_pid": 890047,
+      "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+      "gate_checks": 488,
+      "cross_service_checks": 32,
+      "artifacts": {
+        "result.json": "ff0b9ceecf76861676f982c6d14976b43a4fc1649d3c245d2abd0df959be7591",
+        "identity.json": "859963ffc271dce7da99eedccb2d392c4921a332e6e33104062875ef3db1bab2",
+        "protocol.json": "997f7db47fa65f11c73db8063a31f724e018646ff6e7e16f1d0cfdf4fc623322",
+        "gate.json": "354c4a92fea9809925edfea7f789463f15314fed10696c7ff33244338e7c209b",
+        "cross_service.json": "41cd988e6bf87da57743599f5abfebdc7db6fef8751beeda632562b160e816ab",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "3d42675a9022b3cab88449edbdbb5f41e507f97062b2fba8058210aa2547b868"
+      }
+    },
+    {
+      "condition": "full_d10",
+      "run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/runs/calibration_shard01of02_1793894912375633061",
+      "shard": 1,
+      "shards": 2,
+      "controller_pid": 890293,
+      "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+      "gate_checks": 488,
+      "cross_service_checks": 32,
+      "artifacts": {
+        "result.json": "fe3502bae41a8ce2833a3af9b3d5944c025539ec773e0e8b187d760213c19310",
+        "identity.json": "0856ef1bfe853b730f702d5fba964e4ecf13417bd4289057014c5094fd4d4e9b",
+        "protocol.json": "b0ac778f2fe2497fe5edab336291e3eeb576b6c9ea428459e288eaacc5913b82",
+        "gate.json": "354c4a92fea9809925edfea7f789463f15314fed10696c7ff33244338e7c209b",
+        "cross_service.json": "41cd988e6bf87da57743599f5abfebdc7db6fef8751beeda632562b160e816ab",
+        "qk_receipt.json": "631ac9710db512101e74b6de05075f583b5d373b6e3514bcb117afe1c3e91f1c",
+        "fixed_input_cost.json": "e57ab6673d4e9d67ceda3785dca34905ea382c24d173fed1feb3761d2d13c24d"
+      }
+    }
+  ],
+  "bridges": [
+    {
+      "case": {
+        "suite": "libero_spatial",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b7d9432ae41cee6dbf12f61b9ea1cade8a9e395aca34ca49ea122dfa82a9571d"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_spatial/task00/init45/episode_receipt.json",
+        "sha256": "b054e3db35b801ee6a9088f67d6dd60ba3556e24a17a2113928f83ca68e42d5b"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 17
+    },
+    {
+      "case": {
+        "suite": "libero_object",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "ebac50beb50f9098119765469d66a3b2eea653c0d13449207ce6ec38f97089c0"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_object/task00/init45/episode_receipt.json",
+        "sha256": "01bdf522dc7c2de6fa7d9542c46be4b40dd9e01edd1655b033161d11264d5294"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 27
+    },
+    {
+      "case": {
+        "suite": "libero_goal",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "d1b6aa4b016b3d52376c46a558125be2c21353ffa266a22767ef4e7e5a17cb4b"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_goal/task00/init45/episode_receipt.json",
+        "sha256": "b72a39ef8749b89e8ab3484cf4d13bbf0c7e01396186f894e3d1c6052347308e"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 22
+    },
+    {
+      "case": {
+        "suite": "libero_10",
+        "task": 0,
+        "init": 45
+      },
+      "source_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "9620ef92a74e31e7777560a6ee84376ca55dc6f45893cfa9d5d3519540d6d0d1"
+      },
+      "new_receipt": {
+        "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/calibration/full_d10/episodes/libero_10/task00/init45/episode_receipt.json",
+        "sha256": "3b014825410ad8f7efaf9eb6a8871a6c01c5986c3d55d923fcf8918d48acad98"
+      },
+      "bitwise_actions_and_raw_identical": true,
+      "requests": 57
+    }
+  ],
+  "source_reference_manifest_hash": "9666f2fa74a560d0a78f7f82836cfb3f80cb7919a03f34cf17e436d348c01c3d",
+  "source_reference_manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+  "auditor_source": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/module_tradeoff_v1/calibration_audit.py",
+    "sha256": "104ded6764a9583f4ae83619967f6b08f4cbae85836fbb2f34e765a745b46d31"
+  },
+  "time": 1793895105.0021842,
+  "scope": "Finite numerical/runtime bridge and known-control reproduction only; no independent quality or complementary-path evidence"
+}

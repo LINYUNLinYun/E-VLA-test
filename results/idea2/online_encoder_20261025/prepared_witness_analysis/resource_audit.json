@@ -1,0 +1,2179 @@
+{
+  "passed": true,
+  "partitioned": true,
+  "requested_ae_sm_min": 16,
+  "driver_queried_layouts": [
+    {
+      "requested_first_min": 16,
+      "sm_counts": [
+        16,
+        112
+      ],
+      "device_sm_count": 128,
+      "stream_handles": [
+        94318587994448,
+        94318600534272
+      ],
+      "green_handles": [
+        94318587157600,
+        94318600277440
+      ],
+      "priorities": [
+        0,
+        0
+      ],
+      "local_header_version": 12040,
+      "resource_abi_size": 144,
+      "partition": "one rounded group plus disjoint remainder; no priority-based quota"
+    }
+  ],
+  "expected_sm_pair": [
+    16,
+    112
+  ],
+  "assignments": [
+    {
+      "stage": "Vision",
+      "process": 287757272350720,
+      "local_process_id": 374454,
+      "device": 0,
+      "kernel_primary_context_id": 1,
+      "kernel_green_context_id": 3,
+      "stream_id": 18,
+      "kernel_count": 12825,
+      "actual_eligible_sms": 112,
+      "expected_eligible_sms": 112,
+      "context_metadata": {
+        "nullStreamId": 0,
+        "hwId": 0,
+        "vmId": 1,
+        "processId": 374454,
+        "deviceId": 0,
+        "contextId": 3,
+        "parentContextId": 1,
+        "isGreenContext": 1,
+        "numMultiprocessors": 112,
+        "numTpcs": 56,
+        "tpcMask": "0xbefaebbf,0xffffffef,0x0,0x0,0x0,0x0,0x0,0x0",
+        "workqueueResourceId": 0,
+        "workqueueConcurrencyLimit": 0,
+        "workqueueSharingScope": 0
+      },
+      "includes_helpers": 0,
+      "passed": true
+    },
+    {
+      "stage": "VLM",
+      "process": 287757272350720,
+      "local_process_id": 374454,
+      "device": 0,
+      "kernel_primary_context_id": 1,
+      "kernel_green_context_id": 3,
+      "stream_id": 18,
+      "kernel_count": 8118,
+      "actual_eligible_sms": 112,
+      "expected_eligible_sms": 112,
+      "context_metadata": {
+        "nullStreamId": 0,
+        "hwId": 0,
+        "vmId": 1,
+        "processId": 374454,
+        "deviceId": 0,
+        "contextId": 3,
+        "parentContextId": 1,
+        "isGreenContext": 1,
+        "numMultiprocessors": 112,
+        "numTpcs": 56,
+        "tpcMask": "0xbefaebbf,0xffffffef,0x0,0x0,0x0,0x0,0x0,0x0",
+        "workqueueResourceId": 0,
+        "workqueueConcurrencyLimit": 0,
+        "workqueueSharingScope": 0
+      },
+      "includes_helpers": 162,
+      "passed": true
+    },
+    {
+      "stage": "AE",
+      "process": 287757272350720,
+      "local_process_id": 374454,
+      "device": 0,
+      "kernel_primary_context_id": 1,
+      "kernel_green_context_id": 2,
+      "stream_id": 15,
+      "kernel_count": 86208,
+      "actual_eligible_sms": 16,
+      "expected_eligible_sms": 16,
+      "context_metadata": {
+        "nullStreamId": 0,
+        "hwId": 0,
+        "vmId": 1,
+        "processId": 374454,
+        "deviceId": 0,
+        "contextId": 2,
+        "parentContextId": 1,
+        "isGreenContext": 1,
+        "numMultiprocessors": 16,
+        "numTpcs": 8,
+        "tpcMask": "0x41051440,0x10,0x0,0x0,0x0,0x0,0x0,0x0",
+        "workqueueResourceId": 0,
+        "workqueueConcurrencyLimit": 0,
+        "workqueueSharingScope": 0
+      },
+      "includes_helpers": 1520,
+      "passed": true
+    }
+  ],
+  "contexts": [
+    {
+      "nullStreamId": 0,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "deviceId": 0,
+      "contextId": 3,
+      "parentContextId": 1,
+      "isGreenContext": 1,
+      "numMultiprocessors": 112,
+      "numTpcs": 56,
+      "tpcMask": "0xbefaebbf,0xffffffef,0x0,0x0,0x0,0x0,0x0,0x0",
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    },
+    {
+      "nullStreamId": 0,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "deviceId": 0,
+      "contextId": 2,
+      "parentContextId": 1,
+      "isGreenContext": 1,
+      "numMultiprocessors": 16,
+      "numTpcs": 8,
+      "tpcMask": "0x41051440,0x10,0x0,0x0,0x0,0x0,0x0,0x0",
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    },
+    {
+      "nullStreamId": 7,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "deviceId": 0,
+      "contextId": 1,
+      "parentContextId": 0,
+      "isGreenContext": 0,
+      "numMultiprocessors": 0,
+      "numTpcs": 0,
+      "tpcMask": null,
+      "workqueueResourceId": 0,
+      "workqueueConcurrencyLimit": 0,
+      "workqueueSharingScope": 0
+    }
+  ],
+  "stream_metadata": [
+    {
+      "streamId": 224,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 223,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 221,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 217,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 216,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 215,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 213,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 210,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 206,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 205,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 201,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 203,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 200,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 199,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 196,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 194,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 219,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 193,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 191,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 189,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 187,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 186,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 184,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 182,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 181,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 179,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 202,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 178,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 177,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 175,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 209,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 174,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 173,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 172,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 169,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 168,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 165,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 161,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 159,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 156,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 195,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 155,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 154,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 153,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 152,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 151,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 150,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 149,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 147,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 146,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 145,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 144,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 164,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 143,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 142,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 141,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 139,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 211,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 138,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 136,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 135,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 163,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 63,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 91,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 73,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 160,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 78,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 101,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 59,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 60,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 16,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 1
+    },
+    {
+      "streamId": 222,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 180,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 70,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 88,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 162,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 54,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 53,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 220,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 198,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 50,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 77,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 122,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 212,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 51,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 61,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 120,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 48,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 166,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 134,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 46,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 42,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 40,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 167,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 39,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 69,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 37,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 12,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967291,
+      "flag": 1
+    },
+    {
+      "streamId": 214,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 100,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 14,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 55,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 129,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 36,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 11,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 126,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 17,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 183,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 52,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 20,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 190,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 45,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 137,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 67,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 41,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 56,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 72,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 208,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 75,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 62,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 9,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 34,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 185,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 109,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 157,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 13,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 1
+    },
+    {
+      "streamId": 192,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 58,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 81,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 68,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 8,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 19,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 22,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 110,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 82,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 96,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 176,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 15,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 7,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 3
+    },
+    {
+      "streamId": 10,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 204,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 6,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 1
+    },
+    {
+      "streamId": 28,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 86,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 21,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 57,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 24,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 127,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 85,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 29,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 140,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 35,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 102,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 207,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 148,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 105,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 47,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 112,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 158,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 107,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 114,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 25,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 26,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 218,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 115,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 64,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 27,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 188,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 130,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 18,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 31,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 32,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 171,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 30,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 111,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 33,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 43,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 65,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 71,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 89,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 74,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 133,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 79,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 44,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 83,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 80,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 84,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 97,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 225,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 90,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 38,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 93,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 94,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 98,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 87,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 99,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 197,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 104,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 23,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 106,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 226,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 108,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 113,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 170,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 95,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 116,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 117,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 132,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 118,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 92,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 119,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 121,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 76,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 123,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 103,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 124,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    },
+    {
+      "streamId": 49,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 131,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 0,
+      "flag": 2
+    },
+    {
+      "streamId": 66,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967293,
+      "flag": 2
+    },
+    {
+      "streamId": 125,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967294,
+      "flag": 2
+    },
+    {
+      "streamId": 128,
+      "hwId": 0,
+      "vmId": 1,
+      "processId": 374454,
+      "contextId": 1,
+      "priority": 4294967295,
+      "flag": 2
+    }
+  ],
+  "private_graph_pool_evidence": {
+    "kind": "source_invariant_not_nsys_pool_measurement",
+    "source": "/root/nfs/embodied/benchmark/results/idea2/progressive_kv_20261025/resource_adapter.py",
+    "recorded_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+    "current_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+    "recorded_source_matches": true,
+    "profile_completed": true,
+    "constructor_contains_private_pool_check": true,
+    "explanation": "Frozen constructor checks six distinct private Graph pools and raises on alias before measured requests. Allocator pool IDs are not exported by this nsys trace; this is source/finished-run evidence, not a measured pool-ID claim."
+  },
+  "errors": [],
+  "definition": "Join CUPTI Kernel.greenContextId (not Kernel.contextId) with TARGET_INFO_CUDA_CONTEXT_INFO.contextId for same process/device; require isGreenContext and matching parentContextId. SM counts are resource eligibility limits queried by driver/trace metadata, not measured occupancy. Opaque driver stream handles cannot be numerically equated with CUPTI stream IDs. Primary greenContextId=0 means unrestricted, not zero-SM occupancy."
+}

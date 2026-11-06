@@ -1,0 +1,89 @@
+{
+  "phase": "complete",
+  "experiment_complete": true,
+  "dataset_samples": 320,
+  "source_features": {
+    "calibration": {
+      "feature_records": 192,
+      "samples": 96,
+      "all_npz_arrays_present_with_expected_shapes": true,
+      "source_layers": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18
+      ]
+    },
+    "test": {
+      "feature_records": 448,
+      "samples": 224,
+      "all_npz_arrays_present_with_expected_shapes": true,
+      "source_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "cache_files": 520,
+    "cache_bytes": 14256048832
+  },
+  "native_text_target_validated": false,
+  "external_target_cpu_tests_passed": true,
+  "test_answers_decoded": true,
+  "remaining": [],
+  "external_target_access": true,
+  "external_target_actual_generation_bacc": 1.0,
+  "external_target_integrity_passed": true,
+  "pilot_complete": {
+    "image_records": 1600,
+    "text_records": 1600,
+    "independent_groups": 1
+  },
+  "pipeline_supervisor": "results/pi05_hidden_probe/run_20261105/experiment_supervisor.json",
+  "resource_poll_seconds": 10,
+  "cached_generation_validation": {
+    "passed": true,
+    "cases": 32
+  },
+  "formal_selection_metric": "candidate-score balanced accuracy; free generation reported separately",
+  "calibration_complete": {
+    "image_records": 19200,
+    "text_records": 19200
+  },
+  "target_layers": {
+    "image": {
+      "visual_image": 3,
+      "spatial_image": 6,
+      "instruction_image": 12
+    },
+    "text": {
+      "visual_text": 6,
+      "spatial_text": 6,
+      "instruction_text": 9
+    }
+  },
+  "calibration_analysis_complete": true,
+  "formal_readout_records": 93056,
+  "final_report": "summary.md",
+  "completion_audit": "completion_audit.json",
+  "completion_review": "completion_review.json"
+}

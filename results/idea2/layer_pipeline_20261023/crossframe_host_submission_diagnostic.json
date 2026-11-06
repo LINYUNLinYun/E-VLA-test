@@ -1,0 +1,59 @@
+{
+  "note": "Done-after-lookahead is an upper-bound warning signal, not proof of late launch. Profiling GraphLaunch overhead can perturb overlap; do not infer need for workers from one profiled miss.",
+  "rows": [
+    {
+      "case": "crossframe_capacity_100",
+      "mode": "lookahead_serial",
+      "count": 98,
+      "ae_done_after_lookahead": 1,
+      "lookahead_host_p50": 31.561104580760002,
+      "ae_submit_p50": 0.26280805468559265,
+      "prefill_submit_p50": 1.3287775218486786
+    },
+    {
+      "case": "crossframe_capacity_100",
+      "mode": "encoder_overlap",
+      "count": 98,
+      "ae_done_after_lookahead": 1,
+      "lookahead_host_p50": 31.735962256789207,
+      "ae_submit_p50": 0.26872754096984863,
+      "prefill_submit_p50": 1.339232549071312
+    },
+    {
+      "case": "crossframe_capacity_100",
+      "mode": "combined",
+      "count": 98,
+      "ae_done_after_lookahead": 0,
+      "lookahead_host_p50": 30.690988525748253,
+      "ae_submit_p50": 0.26087649166584015,
+      "prefill_submit_p50": 1.325804740190506
+    },
+    {
+      "case": "crossframe_serial_profile",
+      "mode": "lookahead_serial",
+      "count": 7,
+      "ae_done_after_lookahead": 0,
+      "lookahead_host_p50": 34.01034325361252,
+      "ae_submit_p50": 3.7636011838912964,
+      "prefill_submit_p50": 5.389496684074402
+    },
+    {
+      "case": "crossframe_encoder_profile",
+      "mode": "encoder_overlap",
+      "count": 7,
+      "ae_done_after_lookahead": 2,
+      "lookahead_host_p50": 36.46543249487877,
+      "ae_submit_p50": 4.084248095750809,
+      "prefill_submit_p50": 5.981661379337311
+    },
+    {
+      "case": "crossframe_combined_profile",
+      "mode": "combined",
+      "count": 7,
+      "ae_done_after_lookahead": 3,
+      "lookahead_host_p50": 37.56864368915558,
+      "ae_submit_p50": 3.8933902978897095,
+      "prefill_submit_p50": 5.97134605050087
+    }
+  ]
+}

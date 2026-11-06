@@ -1,0 +1,23 @@
+{
+  "registered_before_model_comparison": true,
+  "source_index": 252,
+  "head": "draft_10",
+  "category": "Background Textures",
+  "scope": "One auxiliary input comparison, not a closed-loop rollout or suite success score",
+  "reason": "Exact substitution was rejected because actual texture is512x512 while mother texture is1024x1024; preserved v4 gate failure is not a zero-effect result",
+  "texture_name": "tex-living_room_table",
+  "source_shape": [1024,1024,3],
+  "target_shape": [512,512,3],
+  "dtype": "uint8",
+  "texture_type": "MuJoCo2D only; no cube adaptation",
+  "resampling": "PIL.Image.Resampling.LANCZOS, deterministic1024-to512 RGB downsampling",
+  "claim": "Approximate mother appearance at actual target resolution, not exact mother texture restoration",
+  "unchanged": ["physics and time", "task objects and success oracle", "camera geometry", "material coefficients", "nonimage observations", "model and released head", "actual instruction"],
+  "ownership_gate": "Exact runtime static furniture plus actual scene XML/material/mesh/body-parent proof; reject any shared non-arena geometry",
+  "repeat_order": ["actual","counterfactual","counterfactual","actual"],
+  "repeat_gate": "All50x32 raw and50x7 decoded same-input outputs bitwise equal",
+  "service_gate": "Recovered GPU0 service must first reproduce four historical draft heads raw and decoded bitwise",
+  "new_calls": 4,
+  "reuse_other_completed_pairs": 11,
+  "video": false
+}

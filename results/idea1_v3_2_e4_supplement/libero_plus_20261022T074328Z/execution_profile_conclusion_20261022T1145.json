@@ -1,0 +1,56 @@
+{
+  "status": "complete_bounded_profile",
+  "manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "production_changed": false,
+  "decision": "Keep existing sequential scientific execution; no robust >=20% acceleration demonstrated before11:45UTC cap",
+  "scientific_denominator_changed": false,
+  "all_probe_predictions_category": "warmup",
+  "strict_interleave_gate": {
+    "receipt": "parallel_profile_20261022T1137/interleave_gate.json",
+    "passed": true,
+    "reference_requests": 6,
+    "reset_A_B_A_requests": 9,
+    "modes": ["full_d10", "v14_d10", "draft_spatial", "draft_object"],
+    "raw_and_decoded_bitwise_equal": true,
+    "max_abs": 0.0
+  },
+  "fresh_child_profile": {
+    "serial_two_episode_wall_s": 84.43105285614729,
+    "parallel_two_episode_wall_s": 122.07986190542579,
+    "episode_and_action_speedup": 0.6916050816108826,
+    "same_success_and_steps": true,
+    "fixed_native_steps": [90, 155],
+    "confounds": [
+      "Live scientific sequential queue concurrently used same service/GPU",
+      "Parallel-only repeated nvidia-smi sampling was asymmetric observation overhead; sampler was stopped and no more repeated scans were made",
+      "This is not isolated evidence that environment concurrency is intrinsically unhelpful"
+    ],
+    "second_round": "Parallel pair completed; first serial episode also completed before controlled redispatch stop. Incomplete second paired round excluded from deployment decision",
+    "receipt": "parallel_profile_20261022T1137/receipt.json",
+    "stop_receipt": "parallel_profile_20261022T1137/controlled_stop.json",
+    "profile_parent_pid": 3379425,
+    "profile_parent_reaped_exit_code": 143,
+    "renderer_children_signalled": false
+  },
+  "persistent_original_worker_profile": {
+    "receipt": "persistent_profile_20261022T1140/receipt.json",
+    "worker_pids": [3383800, 3383801],
+    "cold_native_import_s": [0.7940636277198792, 0.7848598174750805],
+    "spawn_to_ready_s": [1.1070153564214706, 1.1042777560651302],
+    "persistent_serial_two_episode_wall_s": 78.91716911643744,
+    "fresh_serial_over_persistent_serial": 1.0698692540728933,
+    "persistent_serial_success": [true, true],
+    "persistent_serial_native_steps": [90, 155],
+    "fresh_vs_persistent_initial_RGB_pose_fingers_bitwise_equal": true,
+    "fresh_vs_persistent_all49_request_input_hashes_equal": true,
+    "fresh_vs_persistent_all49_decoded_actions_bitwise_equal": true,
+    "max_action_abs": 0.0,
+    "persistent_parallel2": "Incomplete: both warmup episodes reached explicit11:45UTC deadline, not OOM; preserved as technical/deadline attempts, never scientific zeros",
+    "all_workers_reaped": true,
+    "limitation": "One noisy original-case paired comparison, background queue interference, no CI; does not measure10k-task Plus import cost directly and does not establish robust20percent gain"
+  },
+  "cleanup_transient": "First owned profile-stop helper hit /proc child-exit race after stopping only profiling parent; retry with robust PID/start-tick/zombie handling drained child and TERM+CONT parent. No production PID or renderer child was signalled",
+  "prepared_parallel_pool": "parallel_continue.py is new orchestration only; not deployed or claimed production-validated",
+  "production_processes_retained": [3372667, 3372794, 3371306],
+  "production_remaining_scope": "All350perturbed x3 then remaining36original x3; fixed scientific manifest/source/weights unchanged; deadline18:00UTC"
+}

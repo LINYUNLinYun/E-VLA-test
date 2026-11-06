@@ -1,0 +1,116 @@
+{
+  "observer_started_unix": 1793791303.079863,
+  "deadline_unix": 1793792080.0,
+  "coordinator_pid": 356386,
+  "coordinator_start_ticks": "2617020452",
+  "gpu_queries": false,
+  "helper_invocations": false,
+  "signals": false,
+  "queue_or_scheduler_state_writes": false,
+  "observer_finished_unix": 1793792080.020455,
+  "reason": "verified_wait_deadline",
+  "last_snapshot": {
+    "observed_unix": 1793792080.0138702,
+    "coordinator": {
+      "pid": 356386,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2617020452",
+      "argv": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.gate_opportunity_coordinator",
+        "--launch"
+      ],
+      "stable_start_ticks": true,
+      "cpu_ticks": {
+        "user": 107,
+        "system": 160,
+        "child_user": 95,
+        "child_system": 839
+      },
+      "wait_channel": "do_select"
+    },
+    "coordinator_identity_matches": true,
+    "phase": "waiting",
+    "pending": null,
+    "status": {
+      "schema": "ease-gate-opportunity-coordinator-v1",
+      "phase": "waiting",
+      "time": 1793790950.9049525,
+      "pending_audit": null
+    },
+    "controllers": {
+      "scheduler": {
+        "pid": 335208,
+        "state": "S",
+        "ppid": 1,
+        "start_ticks": "2615895606",
+        "argv": [
+          "/usr/bin/python3",
+          "-u",
+          "-m",
+          "preparations.ease_insights_20261103.scheduler",
+          "--queue",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+          "--output",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+          "--max-gpus",
+          "2",
+          "--scan-seconds",
+          "30",
+          "--idle-seconds",
+          "0"
+        ],
+        "stable_start_ticks": true,
+        "cpu_ticks": {
+          "user": 1661,
+          "system": 732,
+          "child_user": 349467,
+          "child_system": 59500
+        },
+        "wait_channel": "do_select"
+      },
+      "supervisor": {
+        "pid": 338645,
+        "state": "S",
+        "ppid": 1,
+        "start_ticks": "2616104350",
+        "argv": [
+          "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+          "-u",
+          "-m",
+          "preparations.ease_insights_20261103.vlm_local_search_v1.supervisor",
+          "--root",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+          "--confirmation-root",
+          "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+          "--scheduler-pid",
+          "335208",
+          "--poll-seconds",
+          "10",
+          "--launch"
+        ],
+        "stable_start_ticks": true,
+        "cpu_ticks": {
+          "user": 1301,
+          "system": 2489,
+          "child_user": 0,
+          "child_system": 0
+        },
+        "wait_channel": "hrtimer_nanosleep"
+      }
+    },
+    "event_count": 1,
+    "events_tail": [
+      {
+        "schema": "ease-gate-opportunity-coordinator-v1",
+        "phase": "waiting",
+        "time": 1793790950.9049525,
+        "pending_audit": null
+      }
+    ],
+    "transactions": []
+  }
+}

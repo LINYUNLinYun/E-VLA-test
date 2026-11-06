@@ -1,0 +1,1622 @@
+{
+  "schema": "future-path-diversity-asset-split-feasibility-v1",
+  "status": "metadata_feasibility_only_not_protocol_approval_or_freeze",
+  "created_date": "2026-11-05",
+  "source_files": [
+    {
+      "path": "reports/ease_insights_20261103/semantic_pool_feasibility/within_suite_candidate/candidate.json",
+      "sha256": "478b637d0e688ca8178551ef4c18e548c70492045844b1f5374923aeeada47bc"
+    },
+    {
+      "path": "reports/ease_insights_20261103/future_path_diversity_preparation/plan.json",
+      "sha256": "3c50de72fbde814ce96f7b3839f8e97ce195e7d50b01c73689b9eb2bde996a9d"
+    },
+    {
+      "path": "reports/ease_insights_20261103/semantic_pool_feasibility/official_pool_audit.json",
+      "sha256": "c7863aa701e1caa5069a9582020bfc40ffb62a6acfcbd7da64aef7185a616144"
+    }
+  ],
+  "scope": {
+    "cpu_only": true,
+    "official_task_bddl_init_metadata_only": true,
+    "environment_or_model_started": false,
+    "gpu_used": false,
+    "current_within_suite_v1_outcomes_or_success_statistics_read": false,
+    "active_results_subtree_read": false,
+    "scientific_sources_modified": false,
+    "new_launch_or_protocol_freeze": false,
+    "tentative_rows_checked": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "current_branch_reserved_rows": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  "init_asset_feasibility": {
+    "candidate_tasks": 24,
+    "all_official_bddl_and_init_hashes_match_candidate_and_historical_metadata": true,
+    "official_audit_task_and_identity_bindings_match": true,
+    "all_shapes_match_and_rows_44_to_49_exist": true,
+    "all_rows_44_to_49_numeric_and_finite": true,
+    "statevector_hash_method": "For each zero-based NumPy row i, SHA-256 over UTF-8 framing `future-path-init-row-v1\\n{dtype.str}\\n{comma-separated row shape}\\n` followed by contiguous C-order row bytes. Source state values are not emitted.",
+    "tasks": [
+      {
+        "task": 15,
+        "task_name": "KITCHEN_SCENE2_put_the_middle_black_bowl_on_top_of_the_cabinet",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the middle black bowl on top of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE2_put_the_middle_black_bowl_on_top_of_the_cabinet.bddl",
+          "sha256": "7d42a8806524b08fa90f67e31e3c80a339f0ecba7a7d6cb378612a6b4648705e",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE2_put_the_middle_black_bowl_on_top_of_the_cabinet.pruned_init",
+          "sha256": "e686b0a9515791c0a37cfaca43a867b6ed763a4e7463630bf5aa6dae06ec0153",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            77
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "1117a5e6ced90a9f501a9dbeb0e51acdd0b09fa39bec13d94caabef1b2561de1",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "29b15565a0a6f09f6658bf558b64c103a05f7be7e25f1bab371c9f248f4c8fd7",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "2f4135efe679b80253f87a4bb67ffa276b9dbba73ca2241282b2a5846dcd2dc9",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "d5ebbe390c63f3513c33dcdb618374d98e959359041268e41fd3818b1c5bfdbf",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "0662bf9ae20c3d4b4d1ad5ff9c7ed04497fafd70b8cee5d26af4fdfe71d62b7a",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "a399be5749f5e0c6a8369ff64c5b1af88045f184eb33413a98f58e74ba5816cd",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 16,
+        "task_name": "KITCHEN_SCENE2_stack_the_black_bowl_at_the_front_on_the_black_bowl_in_the_middle",
+        "category": "single_object_placement",
+        "benchmark_instruction": "stack the black bowl at the front on the black bowl in the middle",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE2_stack_the_black_bowl_at_the_front_on_the_black_bowl_in_the_middle.bddl",
+          "sha256": "381cf12788739624b2037b3cabca34b8efdd7c6397bf38c1af7056caf49d38b7",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE2_stack_the_black_bowl_at_the_front_on_the_black_bowl_in_the_middle.pruned_init",
+          "sha256": "6627eb724a230e7440b28107601c1ac0b8c8a7fb560973d4926db022c3ad5818",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            77
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "2e9fed2998b4d569835f6444453a0cd76ebd14c3be4a60a6211e95b04a3382ab",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "d846db2c80e1f78258ef6e457cd1e714f664067a2d6f3917a0b3969e1c7c4c57",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "d5945deac59709f2033f18fe07cc4b13c3e7749e9c64f4159a23dd5736d01b0c",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "9dca86bde4db1362b0b0c252b459b092169bbc01774a72fbcf6e5b888f0026be",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "343b1963abec2288a5023510f08f58f83d5e7402e6585ef78445381e91766753",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "897cf7f46d9b6f5ee72d130e959e4686dde830373638dd8c037bcbc7db1511d2",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 27,
+        "task_name": "KITCHEN_SCENE4_put_the_wine_bottle_on_the_wine_rack",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the wine bottle on the wine rack",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE4_put_the_wine_bottle_on_the_wine_rack.bddl",
+          "sha256": "a5a1a379b1c9511105218c72417b1b4d76ece5119ef08cefcd51facfb2f1b108",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE4_put_the_wine_bottle_on_the_wine_rack.pruned_init",
+          "sha256": "5b73e2d08d8c194aabd844df8b0a9a9d21daebea2bfa4df4cd067bbdbe52e4ce",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            51
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "c3b0dbc5a8d4ae4a1a46cc069fbf9e7d98df866beb4180c479b04b1bb49cf983",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "28d209c720a5401e5ff88ad5a9b2088ff28d7067f0da849ad036be9a0225f2aa",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "dcca4099747068bcee08f16489825c989e09337076ff5ed33ca9e5b3a2f38b20",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "b06a73b38db03c95128ca7e8613f555e1367e29e4a652e8e02d307a24b5f1a64",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "e3afe1c30e64b6d2551f502dd0867ff3763ed7f047ad82bf9ef0287fd9eed958",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "b58fae7da05d84da9cdc06d4c6d631516da322752ee9ebc710553719c29aae26",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 29,
+        "task_name": "KITCHEN_SCENE5_put_the_black_bowl_in_the_top_drawer_of_the_cabinet",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the black bowl in the top drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE5_put_the_black_bowl_in_the_top_drawer_of_the_cabinet.bddl",
+          "sha256": "df10ccf402c0fdb47f50cf77c295e3014d5283504048c9da5089dd5af08f13ee",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE5_put_the_black_bowl_in_the_top_drawer_of_the_cabinet.pruned_init",
+          "sha256": "da8170456196b03420367a59387d8ff55ccf5d7c20c619806b4d220fc6a4d624",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            64
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "c2a1685093903a49827475d3ea8f8126beb0a51da97fb366d2427f3cdb10d111",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "9aa2fcba6981b13a7c7b416104924ca08a65ce2a462636f972b5f03dcc99e9b8",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "110dffe647d0b019c31cfcd6616b663e345fd84d62f123527a60bf4291715a30",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "eea2067f4f0fbe2891bd72333e95b6aa0ce5ba18cc92644deea69e6adccbed75",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "d1e29d2cf3e3f25bed8b4c4e7d5e02086b338b6412a6ea3fcb84c581c540113e",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "dd54a453dc3b46b1d9f99e65f1889297ab2aa21f2525793b34ec361a87e501e4",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 36,
+        "task_name": "KITCHEN_SCENE7_put_the_white_bowl_on_the_plate",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the white bowl on the plate",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE7_put_the_white_bowl_on_the_plate.bddl",
+          "sha256": "dc9b9db1cfc513b0ce88fa40c0406ccb6b4dbf42543404b88319e94f0f34c6ee",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE7_put_the_white_bowl_on_the_plate.pruned_init",
+          "sha256": "14712824e7f2e71ce97f33bccb7d06c70cd74956c35e68f786d04046274ab7bc",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "4b1b3652c8565e424115bead458f5ffcb731dee253a54729a72cf91e47939733",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "b603935a80ec7d04b2dd927565d4bc4e296a4ca549f02df78356a7cf330ae33d",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "b0a21fbd6229da6d674cf6cdc42e3f5e139e2f3eb219d32c167158c3426cd6a4",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "e6ef554e09a2beab2408d092c2db4e0e69d91ccf92722fe3e86000b517bf4a67",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "5dd543334f15bff01824871231384dbb71189c89ac9a0de6335889b3bb5b2dfc",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "b3ceda5e54864938f686c40aba6c09bc55c81e4b60fc8f332cf45a571999bb92",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 51,
+        "task_name": "LIVING_ROOM_SCENE2_pick_up_the_butter_and_put_it_in_the_basket",
+        "category": "single_object_placement",
+        "benchmark_instruction": "pick up the butter and put it in the basket",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/LIVING_ROOM_SCENE2_pick_up_the_butter_and_put_it_in_the_basket.bddl",
+          "sha256": "8d580df5f2bf9796b22f0bfa1f06b1c9b63643cffcff67e534cca56c5dd330b5",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/LIVING_ROOM_SCENE2_pick_up_the_butter_and_put_it_in_the_basket.pruned_init",
+          "sha256": "be5908a3e5c0d84f05c9370a94b96d6a5c2d15565926369ae4c87abaf57be258",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            123
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "0f956f43796814b6f32cbf7469e391ae609677b57c02d5851134b2890f23693b",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "811c32eae79fe8460634a02a0bb13362d93fb41eeccdfe7b86a888c97bfb5864",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "e5f03c99abd2dba6858a9dc316653c67122292036dfcb34731a1b21c27684cf8",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "55af35b8ddf2bd195376d137311fc2b4f62ac3ff9073b1fc77d04ab603e0dc30",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "17abf4511af98dc01cb158b5f173b7656263f1d6ff5f80f276c139e69f48f29c",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "7d25a9a62fd3f19ecec08b10007f71e4eca1f5d554c6abda85232c08d757e47a",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 59,
+        "task_name": "LIVING_ROOM_SCENE3_pick_up_the_tomato_sauce_and_put_it_in_the_tray",
+        "category": "single_object_placement",
+        "benchmark_instruction": "pick up the tomato sauce and put it in the tray",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/LIVING_ROOM_SCENE3_pick_up_the_tomato_sauce_and_put_it_in_the_tray.bddl",
+          "sha256": "7580a3282b33142c441a3a4f906e7f88415a9a734b3ef14e59e22f3a8d7d3315",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/LIVING_ROOM_SCENE3_pick_up_the_tomato_sauce_and_put_it_in_the_tray.pruned_init",
+          "sha256": "8c532c918c0688f8de05741693d05bb231b8a1734d5882936f2930e64ee62a38",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            97
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "41e15e3278a456d29dc76e5a68d8630cbd3438dbb9fda0851040ec9ac9d14f3a",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "79dac4aff8fbd8d21293dbdb3eae7cfbb22dd0db7629cc0aaed84ea9a2aa37af",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "89736df962ba228f56aff5c7c910a8752d070e2f5620ce2da760f6f489f64b90",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "7b5851e39755189d479488e631a66f7266db399f0b58e178122ad86c7c0443b5",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "b174e1c1a5469006bffa1843ca5de0cc968dd05fcebd93b6d8d0bd896e9c96d8",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "22dea3b99a03eede8923a869f185da616edeb0cc9bf0a18a74185e1ad465f4b2",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 65,
+        "task_name": "LIVING_ROOM_SCENE5_put_the_red_mug_on_the_left_plate",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the red mug on the left plate",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/LIVING_ROOM_SCENE5_put_the_red_mug_on_the_left_plate.bddl",
+          "sha256": "31b8c105f80a531465e4651d3d000fab366835d3634bfdf9cb4af0fe54e4e76c",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/LIVING_ROOM_SCENE5_put_the_red_mug_on_the_left_plate.pruned_init",
+          "sha256": "625296099d9e55a9de526aebc5bd2acb186961fca84ff64920fb2ac3fe4599cc",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            84
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "b8bcd78f73f839d7796351bf5d0ae31442e9906261b13ca6353b78981d180f43",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "2ee7ace9692e18a82c09e084ae171e79cfca2b2e39038b5dfa3fa9ec39c05c4f",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "a5032726ffb3eee80937b0ea3b8ad61b7bde031bb02ed761a284186ca070d1e8",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "ea9e55c9c62a8cfe33883696419685eac92f7b490a0f4cabc96fcd09779d82ee",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "5bccb39b4c4c7b9c5ab094854e94ca8709ea6254b5bbae3ac660b361e22011b6",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "462b58d8e4f1da4a04ae2bcff81aed53b845bb99031665a72d4c834207684474",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 67,
+        "task_name": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate",
+        "category": "single_object_placement",
+        "benchmark_instruction": "put the white mug on the left plate",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate.bddl",
+          "sha256": "4ea39c7b56d60c046e8034d209b8fbd2e734ec4f525a214c031e42ee3683a5a4",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate.pruned_init",
+          "sha256": "03c0f7be3461ee38735945d6de8aa890bf9f9d01e2005494c31431058a2e4a82",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            84
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "a428550530331e0e46e2234e6c8fbb0aea013b2befe7aefbf6d3eee7293ab637",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "56e15aa775181b250bd5abca4c57bc5649a7108ad05437ee66dc1535269f35fe",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "73097ba4f354ee9240b6caf572a45a115774c6f203d28a09d9629fafd5677dac",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "a9abcfad7f161609e159eac480f16623f1926572997b0d57ecab0ca89ac4f566",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "1b2cb469f4845a847e059f16ca231eb435b5482ab77db48778301e0127f59a52",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "cb063d453786d7847b05ac2cb71a11a7334ec9b8cde8c098571fdd5ba5e4ffbe",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 73,
+        "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy",
+        "category": "single_object_placement",
+        "benchmark_instruction": "pick up the book and place it in the front compartment of the caddy",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy.bddl",
+          "sha256": "9fd25c1eb92bd285325d639bdc5920e4ca38b2e39b346e46202dbe6eca7dd37b",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy.pruned_init",
+          "sha256": "243933134cc04a4157c5a6e8f82e1c5d62fa8255d1f648616e2f87e5ee9ddced",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            45
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "599fa8847353c91f236a37435057963c7e453f199dc92b4da399a20d799f76fb",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "70ae42efe3759b251ffe1b73a6713a1d7128f5d07a3461387fbfc427d1b5ecbf",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "ee860e84b5fc03a41b6d618e0da528da195079551837af6c72acdc4966e21625",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "7953625bcad5fe1b974d5445bba58226145fe2049cecb13ce8690a9f5dead8b3",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "a49bcfbf3991dba698e9e09694ef945c4275607747ef8019a0a4b8ec150bc2f2",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "aa607f88b7fcb62e1907b36b7024ab0ddd91d72eaca5261842e2a2bd61b71190",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 80,
+        "task_name": "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy",
+        "category": "single_object_placement",
+        "benchmark_instruction": "pick up the book and place it in the right compartment of the caddy",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.bddl",
+          "sha256": "5d3f98f9daa18ea19d7d27372641882eedb7fb28287f25a8ae22d61333efb5b4",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.pruned_init",
+          "sha256": "38b623f32e0b619f6c90766dad24c9f069c53a83ed1d7e7821d59f84bb89323f",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            45
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "64366b01a0950e16891801d63dc825e1f6cedc57419d82d6e82ef8e3ad778310",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "2f7d3eb9c8c9e92c3c1a3faffdbec222256aac3e17be9d6486d9e5f76feedc07",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "151306c346c34b2d74393b5314ac4d35af5b9a3b592ada22ec70335cc704665d",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "effcb1339dc6714c3c282de63018bb7b56bca897a75393abc43548eec7cc2ef6",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "70410c2fa5215b676c0c1bdf6ce5c98c010eeb7d015a69269490ff7f58ba49d5",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "903534e304d2218ec90d6c8c0fca17d5243b7c9dbca452192cf15b104f739210",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 83,
+        "task_name": "STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy",
+        "category": "single_object_placement",
+        "benchmark_instruction": "pick up the book and place it in the right compartment of the caddy",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.bddl",
+          "sha256": "63d362bdf1fbca21132b30fccc7a29846aa81f3811c6b6b258818501595f89ec",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/STUDY_SCENE3_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy.pruned_init",
+          "sha256": "2f26ac41337753b55409e78a9cc4d2cb77ab0b1ca4d91dd5e8216e0232f9a58a",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            58
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "eca274ba392aaf0a46e85351f11ed2f04a92088b524ae396587fe3a98016f17a",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "272c88e23cf8dee53daf9c37ca5ed5fd9242b2bb92c3ec1bbe9485026ddd0d6b",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "5e33ac32e5d16eda9fb5894ce393788753d6aa946a87088584f0065c472f7319",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "ec439c685091a33a36c8d168e15ef39584bdcaa9fb1df379ae000b6d3efaa22c",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "48154dc7c73022ea0bb2374533c7c0f4a326ad4f598de1f1edfc5581a0a9349c",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "24d8073f22c21083fdca7f6a67098993de29e299de0742efc8d415072f1f1430",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 0,
+        "task_name": "KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "close the top drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet.bddl",
+          "sha256": "a0824cbe6b3146c00984f5a01307a3e39aac9ddc434ee4ff040b5536a0c48bbc",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE10_close_the_top_drawer_of_the_cabinet.pruned_init",
+          "sha256": "a628eabfbb4919f510170af91b45e1c732ee8eb81ff205c4228b65f7659f2e39",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            77
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "6973acdc046457d5a0b3cd292353b3a88f252cf65797c7481cd774f56e483d35",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "b14a87315bf903a2c50d929318b4a23ad41cc82da4f8cf49c6fdccdfc3ac5cd7",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "56075e9130595e5702fb689b2fd893c635887997dec68ea7693d3b22439e3a87",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "9777dab03f8e99076e17f99a2bb0def3460998c2ec9d62b86d85ce52621bb3ed",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "f004b876677f6eb2652f56affe14e96fbdfeb06e40b65901c6514121e6144660",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "53b18d6abdd8023042ece2e4db09ad3f60d9cf8286e4ef94a48124958d1fb161",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 6,
+        "task_name": "KITCHEN_SCENE1_open_the_bottom_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "open the bottom drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE1_open_the_bottom_drawer_of_the_cabinet.bddl",
+          "sha256": "26453b960c3c071a731e13d1447c31dd4dc939a8852030edad5e90d0ee465e0e",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE1_open_the_bottom_drawer_of_the_cabinet.pruned_init",
+          "sha256": "02a601c937685ac78c30d771adf2df16231c1d4bcb4618cc051553ac52fb180a",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            51
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "cf3b1019bbb886bc7467d7fb507763eac2af9e23b27b14eff9059c42b703aa9b",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "4fa45f1145485ce0f0bf81affd4388597e5a80ae980d3c577316124b4a046155",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "6ff730ea8bdabf9fedb6540e821ef2973b3e06c9f5a0db3b6ae7081320fa843d",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "bfe0e716888f4aa755174ea39e41b06dcaa3ab5fc3bf141358d41eb66acb808f",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "9d7e07f1f025665252ea74925fb5bfb3dd8a68a836878578315beaabf54f7ff6",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "8d6711775b8c016ea1cef5649b3ee65f32e0406c7d443094df9e388ae4b98150",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 7,
+        "task_name": "KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "open the top drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet.bddl",
+          "sha256": "d4f8f86fec0d4fe418f8c063792d07d179a71f06fb799dc5132ca06896e16ac1",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE1_open_the_top_drawer_of_the_cabinet.pruned_init",
+          "sha256": "cac960a90dc86d245ccc09e8b17cc09e923aaedf7028c0337e216410f2b0a74c",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            51
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "20a8e10b53bcb55200c1ac58a862c1f091f1470ec5edbbf40c58f05bb338b49f",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "c7a0d0b965c75b4a5d8eda668ce85596f563aaac7e59f8b1373b347854fb0339",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "ea8478a79ab586bf6853408e2e893764c51c00d2a52ced768ab05a67a149b044",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "51c2313c22587ad24c6543cf29accbef6c04811b90a92e9684dbb312acc14347",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "29c099e5412aad9544b9bef8c5be24faa8a17dfbd61506c915114b9dc9181b7e",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "23d50bb02688f89b0c560addf95a8ae9d0069e8ed9fdf70921c97e6749368e33",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 11,
+        "task_name": "KITCHEN_SCENE2_open_the_top_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "open the top drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE2_open_the_top_drawer_of_the_cabinet.bddl",
+          "sha256": "f720fe5676043a9f543a02165f656e97ad2f4f82483a576a938d69b4ae404f26",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE2_open_the_top_drawer_of_the_cabinet.pruned_init",
+          "sha256": "cba16be033a396ee2d86cbf7d2c33a47e8ad4feb9932c9c8022790338b1bb129",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            77
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "8112417d4d775fb36663974dbd5ef85b938e550eea14131da67df73b920f3f2f",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "0acfad154905e45623b50fafe4a09cfd3c9f88a7b0384cccdb01f10624d24e8b",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "b48d32554d44e81e3388cb821d593d8f823544dd66afc9f536096ff99d37916c",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "d3e9e6ad65d5c52273f0ca421f0fc837cdfe009bfea01aaf2fe6fd7bac7f297f",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "d14d7263525d63d8cf7d9655bdc75c92602ce47eb64528472ba6f1813aad99df",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "bda91b9c5402ae4ff89d6674781f69b6f257fc248aa73b00eb43779c146e3033",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 20,
+        "task_name": "KITCHEN_SCENE3_turn_on_the_stove",
+        "category": "state_change_only",
+        "benchmark_instruction": "turn on the stove",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE3_turn_on_the_stove.bddl",
+          "sha256": "b081c85eec6ba5ede60bcb773e33cef284bd7befc96d4bbeeff48764d6fe16d6",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE3_turn_on_the_stove.pruned_init",
+          "sha256": "bd0f520bc5fbf9c7380c67cd66754438019bb5eeca826a8707c46e11094ecfed",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "8a53dfc157431ace8bfee5e3ef6533e57838151e3f85dcd1c6773907af3ac13f",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "6e4b098416b35ad9ed2ee1cfbf94f7558431cd91df43606fba092bbd22746d41",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "8e074124507bfe8567f3de2774d8dc3aed99a96e06cab22086f72744170b69c4",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "8fb682bdbbc03d5138e0ba79132751c00a956ed5c4ce20b3274cfc4bb06e12a9",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "be69a90790c76550cbb027543cf85e7098273b8b36e0283ddb732647ba50a8ff",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "78e9f2c1de677e54e84c56cde0cc09e7982aa393ab4d26efa2cf136b1bbe7421",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 22,
+        "task_name": "KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "close the bottom drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet.bddl",
+          "sha256": "625d60f5028da5944f596df6a10b19d4cff3df2d5721650da671612e58f21527",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet.pruned_init",
+          "sha256": "873baba7d6f169c81bd5415d840f7841bca73867b21bc23c93332fc8ff9056bf",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            51
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "eb3aa6813d6ab51351e317ce53886ea1d0b6e14e480fde5f1d81e05855bd8fad",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "114af7aebffdedfad94e39dfebc18a685b872af2e941c1f0ab90e7bf8990b3c2",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "21e2e5d294b9a0285905becb7b9dca9bdf3910e77a6de882f35e34bd26d09c35",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "cdb1fb554941c0030529bcb7b4812f671439c32aee58319e661628cd604fdba7",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "b2a3cf2ed8704d8265d91c7ee956bbe350bbd48c554a8a300fa992b82b0fbf39",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "0647ea3f5f8db576879a422121b9771932679926c228628dacff1774aa5dfb9d",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 23,
+        "task_name": "KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet_and_open_the_top_drawer",
+        "category": "state_change_only",
+        "benchmark_instruction": "close the bottom drawer of the cabinet and open the top drawer",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet_and_open_the_top_drawer.bddl",
+          "sha256": "18b09520ca3a22695c469c6537dc94ef58bbb2326b0d870e22ac7b1daf4f8f49",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE4_close_the_bottom_drawer_of_the_cabinet_and_open_the_top_drawer.pruned_init",
+          "sha256": "7cacb74a4b6da89f2c204a090b41e603a238bfad597895c91aba1b94f2ff1b1f",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            51
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "f9b1021aecc68a183b8ffb4ea6789ffa3b7cadd40a3a63cc5888d24da330f01b",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "502fe93fbeddaf6ae03857473d48695a2fea637a5b19ae6427390363322a8e1a",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "3d5d93d7d79ff2575e3be9def0d0209eaea32321149c3c29e1641c9c788abccf",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "ec592d48f9bc5d0dea04137494b0d9cd202c513d73ef6aa181bc2867349ee0dc",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "8206f989bb6ecfcb32bb81f66d599d5118af4c18e08f8f89609e09a2c6c36edd",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "eef18525e21a886404ba4525f73a8010917aad1192a5e9f66ffb2f461e17770a",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 28,
+        "task_name": "KITCHEN_SCENE5_close_the_top_drawer_of_the_cabinet",
+        "category": "state_change_only",
+        "benchmark_instruction": "close the top drawer of the cabinet",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE5_close_the_top_drawer_of_the_cabinet.bddl",
+          "sha256": "8a3a63e58724927992d314ce99b7308c4a80401d4f2bf832bbd6fb1b836b162f",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE5_close_the_top_drawer_of_the_cabinet.pruned_init",
+          "sha256": "b759e1144bb89dc713a9f4dec8aef3382f7d246e65c476355a1df61acf3b9bfd",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            64
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "049f2110aa0b2f8b9f9a25c0cd9d5799c40433f771085fa529db90975c447689",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "5df728a1f792bfa2d20d54a9cecdd5964bab23fed997260c00e439bc91a644a3",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "001007b5ea1a0333c230de91db374b4b45d7c3d3f7a6fec0e91d2b2854b44c54",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "7a31bf78dab46007392f27381357f9fbb47fcbdaf0cf3b52a55e537a9157e88b",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "9889b75608b88d459f974aad3484e912e458d9928018afbdaa426e27e439ea0b",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "dc58401a83397a21ff4982d7729954762d9ccba33083f481c96d19eebc298d6b",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 33,
+        "task_name": "KITCHEN_SCENE6_close_the_microwave",
+        "category": "state_change_only",
+        "benchmark_instruction": "close the microwave",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE6_close_the_microwave.bddl",
+          "sha256": "97df87deffb264990bcb06b877deaace02d296c01de7cc5c312c7bfc30da3b00",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE6_close_the_microwave.pruned_init",
+          "sha256": "1f4c6dc3ea162a5fc2291ffe0e0299d48f90c76154d7320cfb9b68dd878f054c",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "9a851e04218017b77c2acf8fd90b54c9c78fb1117a81271c8f378b9de6de82e5",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "f6a2b3f33f37f8d3b16752878e3aec840e27fd9c2ca7c32d27495686f21e1b70",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "cd5ce0e7ce48dd7461bcb3b6bc64b4f7c1771da65e9c1dc0266a9ef1b8a1aa97",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "fb55abd0b3786c2b877937f4b43245c8df24a3ad8e84597ac28ebf5545699d9c",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "13a285ded75c9b5350a62fdfbfc8eb4fa29f30feeb035b241e1f7250c198bbcc",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "eab686b07f56c6a9fa5a3af879f5b3c6c9e9b01e7c2f98ea0b465a587d3d4912",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 35,
+        "task_name": "KITCHEN_SCENE7_open_the_microwave",
+        "category": "state_change_only",
+        "benchmark_instruction": "open the microwave",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE7_open_the_microwave.bddl",
+          "sha256": "af12c019cde75245f2d301c2519dca670818f6827ad412853777ec9389874f2f",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE7_open_the_microwave.pruned_init",
+          "sha256": "7dd3a8f1306f45d14c82062c6e2d5e86808267be8e455d9122498b05a2bc2ea8",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "91d7f28459f5e2a46180ffba6601b5cc0aee3dec86b05d35273e90e4dd3a9456",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "be8e43f0984e24566640579d2d901ec283cc431624eeabd487fce1280945e1b0",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "86fa3860c61b5ce197119d5a70bf130ae5305dfb19f624b1afdc517974e7f49d",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "daf1643b7ce91d027abbfe237d644ff5a9b7dd5b99e0b8e584fbb8323d22f647",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "888c4a3a61697cac0230b21c526ccc1b845ec8aa5b4d0bf8c63b4957c801f9b4",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "693d5a31108c1ea002255840480a02aa977cf0e3dfe2dde91aedae6f3a7fea11",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 39,
+        "task_name": "KITCHEN_SCENE8_turn_off_the_stove",
+        "category": "state_change_only",
+        "benchmark_instruction": "turn off the stove",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE8_turn_off_the_stove.bddl",
+          "sha256": "f8853af24d192d8416cba268ad3b95ad697cb92a06922bad5f1e4a6d5646c4f3",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE8_turn_off_the_stove.pruned_init",
+          "sha256": "4aab0c74ea8e91b6f30e474811baf7b1540daac8cac0580ee413c25c2c187a8a",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "08373279aa3cd95046c702aa0e0cda37d0a8d5a4ecfa79eb8243018b11a15224",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "f9cd6a73c9334ca7a2b2479865369756220bf44bae04237bc1403814f6a931e9",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "0fbb91b351cb8e01d999f5947074bdf171b47e8b7a57897496ff1ee6d25addd8",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "575979be59831f72a10c30361c4a744596698f1d627747d9af7476b30ab4a166",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "b77c05ae69e4f5b57e64c18d3f8498449928b3dacdfb2ec8ac03188944b080a7",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "2fdeb5ff5ed29f643e7f0cfa7621093b30bf0d2196df4ba627cbb5c54e46a728",
+              "finite": true
+            }
+          ]
+        }
+      },
+      {
+        "task": 44,
+        "task_name": "KITCHEN_SCENE9_turn_on_the_stove",
+        "category": "state_change_only",
+        "benchmark_instruction": "turn on the stove",
+        "official_bddl": {
+          "path": "/root/nfs/embodied/benchmark/LIBERO/libero/libero/bddl_files/libero_90/KITCHEN_SCENE9_turn_on_the_stove.bddl",
+          "sha256": "e258902172935538f45757dfad6e5c25b2313138555cbf79e6119a4024948d13",
+          "matches_candidate_and_configured_copy": true
+        },
+        "init_asset": {
+          "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/third_party/libero/libero/libero/init_files/libero_90/KITCHEN_SCENE9_turn_on_the_stove.pruned_init",
+          "sha256": "fa113d804419f14000a3bfdf76d527442fa9449091d2e8e1bb8d9bc9578662a9",
+          "matches_candidate_and_historical_official_audit": true,
+          "shape": [
+            50,
+            47
+          ],
+          "dtype": "<f8",
+          "candidate_shape_match": true,
+          "row_index_convention": "zero_based_numpy_row_index",
+          "row_hashes": [
+            {
+              "row_index": 44,
+              "sha256": "ac68dfcfda9c877cf39ec683eda5e397c4569e6d1bdfc1744847d2199be32d67",
+              "finite": true
+            },
+            {
+              "row_index": 45,
+              "sha256": "8704dec783e43e868c9043acf23156a6310c8f5b5d5d458f19c243206485bfc1",
+              "finite": true
+            },
+            {
+              "row_index": 46,
+              "sha256": "f44916b1df10b848bb8797f7d51ae17f6fe9f5e622f5f386c5191a09784f1961",
+              "finite": true
+            },
+            {
+              "row_index": 47,
+              "sha256": "236f03dba7e851072a0923b47984a0cd825185ddf5959921f222b41d9c6913fd",
+              "finite": true
+            },
+            {
+              "row_index": 48,
+              "sha256": "3947a8c5f748d3eea8f124b95d922cbcf7aca1d847c4febd86eb80f2be8a3d9b",
+              "finite": true
+            },
+            {
+              "row_index": 49,
+              "sha256": "e2e64d01d9d7e4bd9fd5fc4dd28effc4f07ad8af13f7c97bd26c4f16e0ee528a",
+              "finite": true
+            }
+          ]
+        }
+      }
+    ],
+    "limit": "File identity and numeric finiteness do not establish simulator reset acceptance, rendered scene, or physical/control readiness; no environment was constructed."
+  },
+  "prompt_disjoint_split_feasibility": {
+    "candidate_tasks": 24,
+    "category_counts": {
+      "state_change_only": 12,
+      "single_object_placement": 12
+    },
+    "global_exact_prompt_count": 20,
+    "rule": "Within each category, group tasks by byte-for-byte exact benchmark_instruction. Enumerate prompt-group subsets totaling exactly six tasks. Canonicalize each subset as newline-joined lexicographically sorted prompt strings and hash UTF-8 `future-path-discovery-v1|libero_90|{category}|{canonical}`. Choose the feasible subset with lexicographically smallest SHA-256 digest for discovery; the complement is heldout. Inputs are candidate metadata only.",
+    "categories": [
+      {
+        "category": "single_object_placement",
+        "task_count": 12,
+        "exact_prompt_group_count": 11,
+        "group_sizes_sorted": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "feasible_exact_6_task_discovery_assignments": 420,
+        "assignment_sha256": "002defc17050206e94c240a56860e46024949523df7061cbb9f3dd2219edb12f",
+        "discovery_task_ids": [
+          15,
+          27,
+          51,
+          73,
+          80,
+          83
+        ],
+        "heldout_task_ids": [
+          16,
+          29,
+          36,
+          59,
+          65,
+          67
+        ],
+        "discovery_prompt_groups": [
+          {
+            "prompt": "pick up the book and place it in the front compartment of the caddy",
+            "task_ids": [
+              73
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "pick up the book and place it in the right compartment of the caddy",
+            "task_ids": [
+              80,
+              83
+            ],
+            "size": 2
+          },
+          {
+            "prompt": "pick up the butter and put it in the basket",
+            "task_ids": [
+              51
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the middle black bowl on top of the cabinet",
+            "task_ids": [
+              15
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the wine bottle on the wine rack",
+            "task_ids": [
+              27
+            ],
+            "size": 1
+          }
+        ],
+        "heldout_prompt_groups": [
+          {
+            "prompt": "pick up the tomato sauce and put it in the tray",
+            "task_ids": [
+              59
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the black bowl in the top drawer of the cabinet",
+            "task_ids": [
+              29
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the red mug on the left plate",
+            "task_ids": [
+              65
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the white bowl on the plate",
+            "task_ids": [
+              36
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "put the white mug on the left plate",
+            "task_ids": [
+              67
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "stack the black bowl at the front on the black bowl in the middle",
+            "task_ids": [
+              16
+            ],
+            "size": 1
+          }
+        ]
+      },
+      {
+        "category": "state_change_only",
+        "task_count": 12,
+        "exact_prompt_group_count": 9,
+        "group_sizes_sorted": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "feasible_exact_6_task_discovery_assignments": 92,
+        "assignment_sha256": "00633a1b4c79c1c511237f5d5d281313225c7e29c68a7331785d37b199087428",
+        "discovery_task_ids": [
+          0,
+          20,
+          23,
+          28,
+          35,
+          44
+        ],
+        "heldout_task_ids": [
+          6,
+          7,
+          11,
+          22,
+          33,
+          39
+        ],
+        "discovery_prompt_groups": [
+          {
+            "prompt": "close the bottom drawer of the cabinet and open the top drawer",
+            "task_ids": [
+              23
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "close the top drawer of the cabinet",
+            "task_ids": [
+              0,
+              28
+            ],
+            "size": 2
+          },
+          {
+            "prompt": "open the microwave",
+            "task_ids": [
+              35
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "turn on the stove",
+            "task_ids": [
+              20,
+              44
+            ],
+            "size": 2
+          }
+        ],
+        "heldout_prompt_groups": [
+          {
+            "prompt": "close the bottom drawer of the cabinet",
+            "task_ids": [
+              22
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "close the microwave",
+            "task_ids": [
+              33
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "open the bottom drawer of the cabinet",
+            "task_ids": [
+              6
+            ],
+            "size": 1
+          },
+          {
+            "prompt": "open the top drawer of the cabinet",
+            "task_ids": [
+              7,
+              11
+            ],
+            "size": 2
+          },
+          {
+            "prompt": "turn off the stove",
+            "task_ids": [
+              39
+            ],
+            "size": 1
+          }
+        ]
+      }
+    ],
+    "result": "Each category admits six discovery and six complementary heldout tasks without splitting any exact prompt group."
+  },
+  "bounded_prior_use_check": {
+    "status": "not_assessed_no_clearly_named_metadata_only_historical_prior_use_audit_found_in_bounded_filename_search",
+    "search_scope": "Repository/report filenames only, excluding the complete reports/ease_insights_20261103/vlm_within_suite_v1 subtree; no active result content was read.",
+    "claim_boundary": "No claim that rows 44–49 are globally unused or unused outside known EASE metadata."
+  },
+  "limits": [
+    "This report is not future-protocol approval, freeze, or work instruction.",
+    "Candidate and planned manifests are not actual outcomes.",
+    "The proposed 288-episode budget remains planning only; no performance, complementarity, latency, or quality claim follows."
+  ]
+}

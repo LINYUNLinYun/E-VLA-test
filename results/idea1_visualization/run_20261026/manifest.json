@@ -1,0 +1,638 @@
+{
+  "protocol": {
+    "revision": "pi05-representation-v1",
+    "model": "pi05_libero",
+    "backend": "native OpenPI JAX",
+    "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero",
+    "H": 10,
+    "R": 5,
+    "D": 10,
+    "mask": [],
+    "env_seed": 7,
+    "settling_steps": 10,
+    "control_hz": 20,
+    "limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "init_ids": [
+      0,
+      1,
+      2
+    ],
+    "uniform_points": 12,
+    "event_points": 8,
+    "target_points": 20
+  },
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 2
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 0
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 1
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 2
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 0
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 1
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 2
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 0
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 1
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 2
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 0
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 1
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 2
+    }
+  ],
+  "episodes": 120,
+  "gpus": [
+    1,
+    2
+  ],
+  "status": "pilot",
+  "created_at": 1793000861.3655286
+}

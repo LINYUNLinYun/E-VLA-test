@@ -1,0 +1,434 @@
+{
+  "stage/qkv__qkv/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.1.sqlite",
+    "kernel_count": 10,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.09664,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.013088,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.083552,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/qkv__qkv/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.1.sqlite",
+    "kernel_count": 10,
+    "overlap_ms": 0.075456,
+    "kernel_union_ms": 0.08704,
+    "overlap_fraction": 0.8669117647058824,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.075584,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.086912,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/qkv__pure_attention/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.2.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.107328,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.024288,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.08304,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/qkv__pure_attention/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.2.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.06704,
+    "kernel_union_ms": 0.089568,
+    "overlap_fraction": 0.7484816005716327,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.069344,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.087264,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/qkv__ffn/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.3.sqlite",
+    "kernel_count": 11,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.104384,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.022432,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.081952,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/qkv__ffn/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.3.sqlite",
+    "kernel_count": 11,
+    "overlap_ms": 0.086784,
+    "kernel_union_ms": 0.091552,
+    "overlap_fraction": 0.9479203075847605,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.08896,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.089376,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__qkv/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.4.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.171264,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.015648,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.155616,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__qkv/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.4.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.0472,
+    "kernel_union_ms": 0.16544,
+    "overlap_fraction": 0.2852998065764023,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.04736,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.16528,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__pure_attention/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.5.sqlite",
+    "kernel_count": 14,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.181824,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.026944,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.15488,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__pure_attention/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.5.sqlite",
+    "kernel_count": 14,
+    "overlap_ms": 0.069473,
+    "kernel_union_ms": 0.169121,
+    "overlap_fraction": 0.4107887252322302,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.072481,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.166113,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__ffn/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.6.sqlite",
+    "kernel_count": 13,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 0.192416,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.038496,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.15392,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/pure_attention__ffn/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.6.sqlite",
+    "kernel_count": 13,
+    "overlap_ms": 0.06848,
+    "kernel_union_ms": 0.179424,
+    "overlap_fraction": 0.3816657749242019,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.072416,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 0.175488,
+        "streams": [
+          29
+        ],
+        "kernels": 7
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__qkv/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.7.sqlite",
+    "kernel_count": 10,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 1.432896,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.016544,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.416352,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__qkv/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.7.sqlite",
+    "kernel_count": 10,
+    "overlap_ms": 0.030432,
+    "kernel_union_ms": 1.4192,
+    "overlap_fraction": 0.02144306651634724,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.032896,
+        "streams": [
+          33
+        ],
+        "kernels": 5
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.416736,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__pure_attention/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.8.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 1.439936,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.026624,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.413312,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__pure_attention/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.8.sqlite",
+    "kernel_count": 12,
+    "overlap_ms": 0.049664,
+    "kernel_union_ms": 1.420001,
+    "overlap_fraction": 0.03497462325730757,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.052416,
+        "streams": [
+          33
+        ],
+        "kernels": 7
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.417249,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__ffn/serial": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.9.sqlite",
+    "kernel_count": 11,
+    "overlap_ms": 0.0,
+    "kernel_union_ms": 1.455104,
+    "overlap_fraction": 0.0,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.04064,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.414464,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  },
+  "stage/ffn__ffn/concurrent": {
+    "trace": "nsys/idea2_experiment/cewp_stages_pi05.9.sqlite",
+    "kernel_count": 11,
+    "overlap_ms": 0.078336,
+    "kernel_union_ms": 1.44336,
+    "overlap_fraction": 0.054273362154971735,
+    "modules": {
+      "ae": {
+        "kernel_busy_ms": 0.085472,
+        "streams": [
+          33
+        ],
+        "kernels": 6
+      },
+      "vlm": {
+        "kernel_busy_ms": 1.436224,
+        "streams": [
+          29
+        ],
+        "kernels": 5
+      }
+    },
+    "synthetic_release_kernels_excluded": 2
+  }
+}

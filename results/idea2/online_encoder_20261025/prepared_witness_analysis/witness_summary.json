@@ -1,0 +1,34 @@
+{
+  "status": "overlap_observed",
+  "requests": 8,
+  "certified_next_encoder_requests": 7,
+  "requests_with_both_actual_kernel_intersections": 7,
+  "AE_x_currentVLM_ms": {
+    "n": 8,
+    "mean": 34.13425,
+    "p50": 33.6615015,
+    "p95": 35.99762225,
+    "min": 33.071985,
+    "max": 36.380573
+  },
+  "AE_x_nextEncoder_ms": {
+    "n": 7,
+    "mean": 10.884613571428572,
+    "p50": 10.755745,
+    "p95": 11.400267999999999,
+    "min": 10.720294,
+    "max": 11.663968
+  },
+  "matching_request_ids": [
+    "287757272350720:host_nvtx_row=2824",
+    "287757272350720:host_nvtx_row=2827",
+    "287757272350720:host_nvtx_row=2830",
+    "287757272350720:host_nvtx_row=2833",
+    "287757272350720:host_nvtx_row=2836",
+    "287757272350720:host_nvtx_row=2839",
+    "287757272350720:host_nvtx_row=2842"
+  ],
+  "resource_audit_passed": true,
+  "definition": "Union of actual kernel interval intersections for independently attributed AE/VLM/next-Vision graph replays, same process/device and distinct streams. Host NVTX ranges never clip GPU work; CUDA Event spans are auxiliary only.",
+  "boundary": "Offline preprepared recorded observations; no online causality, E2E speedup or quality claim."
+}

@@ -1,0 +1,278 @@
+{
+  "conditions": [
+    {
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "refresh_interval": 3,
+      "full_ae": false,
+      "verifier": false,
+      "fast_time_embedding": "openpi_linspace",
+      "id": "v12_d2_only",
+      "compensation": null
+    },
+    {
+      "model": "pi0",
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "refresh_interval": 3,
+      "full_ae": false,
+      "verifier": false,
+      "fast_time_embedding": "openpi_linspace",
+      "id": "v12_d2_refresh_extrapolate",
+      "compensation": "extrapolate"
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v4_2_refresh_only/__init__.py": "553248668d99409ceaac3ca082d7cf7a4c41d327b36fbb552f0f28f800308457",
+    "preparations/idea1_v4_2_refresh_only/common.py": "eef38e8b50f7415765fcc3ce7224389bb1b257b30cfba9f1fb9dc08e57c5479b",
+    "preparations/idea1_v4_2_refresh_only/policy.py": "ded11f880b2fe81c8ec0cd38842016ae31574ff6640d5b90f83868c74b767d04",
+    "preparations/idea1_v4_2_refresh_only/preflight.py": "917a3fe570d79e78300c66b6b6f7541b6851ed23c105c1f4cd69950feba7ce64",
+    "preparations/idea1_v4_2_refresh_only/server.py": "6f18bdae6b8a7251a23916ccb72634f2e4b0daf7d7c71c708e98d078ffde59a6",
+    "preparations/idea1_v4_2_refresh_only/evaluate.py": "5f99f2f10183d70d6487327ccdc662f55753fb863e47f09773de280b905357a6",
+    "preparations/idea1_v4_2_refresh_only/controller.py": "e37aa02adf48c4ca189ff2c378244bf5384ceb40de4ee5987dc2ef344ef4f9c5",
+    "preparations/idea1_v4_2_refresh_only/finish.py": "7fe6b23df73eca5a4c9d99293e4917358b34f0fd5d2931b362e8362bfd77026f",
+    "preparations/idea1_v4_2_refresh_only/test_policy.py": "5801bf20ed7211717fbf7ce6d00755545faa7695be080fc4b0cf3dc54af696bf",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v4_1_warmstart/sampling.py": "4cf4c63a3ead985f829ed78da10516ee0561565177539cd03ccfc173b52a826b",
+    "preparations/idea1_v4_1_warmstart/schedule.py": "b94f3bdbaeae005e47f3c74a728cd9a7e606959bcac1900684a5033a8a75b3ee",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3_1/rollout.py": "3113beb7eda597484fec10f6cdec0873b6ab60b6af33416e45637b9a258b96d2",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623"
+  },
+  "plan_sha256": "f41081dd7a60498b70a607af544c2a53cefd09f6c232b2b6bf9e40f9ed685547",
+  "target_episodes": 80,
+  "max_gpus": 2,
+  "env_seed": 7,
+  "settling": 10,
+  "control_hz": 20,
+  "refresh": "At replans 0,3,6,... run full VLM only, store own latest two true residual sets; then rerun V12 and execute its D2 actions",
+  "extrapolation": "Fresh refresh has ratio0; other rounds use actual age/gap; hold before second refresh",
+  "time_embedding": "Both arms use corrected OpenPI linspace frequencies; previous custom-D2 results are historical only",
+  "graphs": "No encoder, AE, verifier or selector CUDA Graph",
+  "timing": "Refresh includes a second vision/VLM preparation; all actual work is counted; no deployment speedup claim from this quick quality test",
+  "started": 1793613406.2719133,
+  "manifest_hash": "0d03048682de07705e8fe4c4446bf3f0056eb5d1e994802b35fa1a7a0fc9a511"
+}

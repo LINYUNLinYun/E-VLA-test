@@ -1,0 +1,112 @@
+{
+  "status": "technical_failure",
+  "supervisor_pid": 3412026,
+  "started_unix": 1792671015.911811,
+  "deadline_unix": 1792692000.0,
+  "manifest_hash": "6b255e5d58cc3dc10cbff4c1075ebf9d951abff6b101fdb4df82bab182cfca7e",
+  "protocol": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/manifest.json",
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch_v3.py": "f010bb1b030ab171007784945a515c6d14e7beb7bfbc20a7272644fc54a0e32c"
+  },
+  "candidate_indices": [
+    0,
+    1,
+    2
+  ],
+  "never_scan_or_use_gpu3": true,
+  "required_stable_idle_seconds": 0,
+  "sample_interval_seconds": 30,
+  "watcher_version": 3,
+  "allocations": [],
+  "shards": [
+    {
+      "index": 0,
+      "client_pid": 3413135,
+      "started_unix": 1792671094.8008466,
+      "command": [
+        "/root/nfs/embodied/benchmark/calvin/.venv/bin/python",
+        "-m",
+        "preparations.idea1_v3_2_e4_supplement.evaluation_v3",
+        "--protocol",
+        "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/manifest.json",
+        "--sequence-file",
+        "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/native_preflight/calvin_formal1000/sequences.json",
+        "--sequence-count",
+        "100",
+        "--max-new-sequences",
+        "10",
+        "--modes",
+        "full_d10",
+        "v14_d10",
+        "--preflight-input",
+        "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/native_preflight/calvin_captured_formalD0/native_input_gripper_sign.npz",
+        "--port",
+        "19144",
+        "--output",
+        "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/episodes",
+        "--deadline-unix",
+        "1792692000.0",
+        "--video",
+        "--launch"
+      ]
+    }
+  ],
+  "selected_gpu": {
+    "index": 1,
+    "uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+    "compute_processes": "",
+    "memory_mib": 2,
+    "utilization_percent": 0,
+    "idle": true,
+    "time_unix": 1792671016.5553505
+  },
+  "service_pid": 3412039,
+  "service_command": [
+    "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+    "-m",
+    "preparations.idea1_v3_2_e4_supplement.policy_calvin_server",
+    "--family",
+    "calvin_abc_d_native",
+    "--protocol",
+    "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/manifest.json",
+    "--port",
+    "19144",
+    "--output",
+    "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/service_20261022T121016Z.json",
+    "--deadline-unix",
+    "1792692000.0",
+    "--checkpoint",
+    "/root/nfs/embodied/benchmark/shared/checkpoints/e4_supplement/RLinf/RLinf-Pi0-CALVIN-ABC-D-SFT/model.safetensors",
+    "--norm-stats",
+    "/root/nfs/embodied/benchmark/shared/checkpoints/e4_supplement/RLinf/RLinf-Pi0-CALVIN-ABC-D-SFT/InternRobotics/InternData-Calvin_ABC/norm_stats.json",
+    "--launch"
+  ],
+  "service_receipt": "results/idea1_v3_2_e4_supplement/calvin_native100_v3_20261022T1210Z/execution/service_20261022T121016Z.json",
+  "service_health": {
+    "family": "calvin_abc_d_native",
+    "H": 5,
+    "R": 5,
+    "D": 10,
+    "state": "XYZ+EulerXYZ+actual robot_obs[-1] stored controller sign; training dataset state.gripper +/-1",
+    "diagnostic_state": "Official standalone evaluator instead used robot_obs[6] opening width; retained only explicit preflight diagnostic",
+    "extra_delta": false,
+    "gripper": "decoded native action threshold >0:+1 else:-1 in environment client",
+    "policy_parity_gpu_verified": false,
+    "final_model_cuda_allocation_guard": {
+      "checked": true,
+      "module_class": "PI0Pytorch",
+      "gpu_preflight": {
+        "assigned": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+        "device": "1, GPU-599477fb-0507-40dc-14df-d491f7a7b202, NVIDIA GeForce RTX 4090, 2 MiB, 0 %",
+        "preexisting_compute_processes": ""
+      }
+    },
+    "server_pid": 3412039,
+    "gpu_uuid": "GPU-599477fb-0507-40dc-14df-d491f7a7b202",
+    "manifest_hash": "6b255e5d58cc3dc10cbff4c1075ebf9d951abff6b101fdb4df82bab182cfca7e",
+    "legacy_gate_passed": false
+  },
+  "error": "Traceback (most recent call last):\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch_v3.py\", line 146, in supervise\n    time.sleep(2)\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch_v3.py\", line 80, in expired\n    def expired(signum,frame):raise TimeoutError(\"SUPERVISOR_DEADLINE_OR_TERMINATION\")\nTimeoutError: SUPERVISOR_DEADLINE_OR_TERMINATION\n",
+  "completed_unix": 1792671263.5809639,
+  "service_exit_code": 0
+}

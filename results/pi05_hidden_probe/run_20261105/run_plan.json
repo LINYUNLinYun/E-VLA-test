@@ -1,0 +1,56 @@
+{
+  "source": "pi05_libero JAX checkpoint; normal policy prefix, frozen",
+  "target_priority": [
+    "pi05_libero same-model",
+    "pi0_libero local same-family",
+    "official paligemma-3b-mix-224 external frozen reader"
+  ],
+  "current_target_branch": "external",
+  "allocated_gpus": {
+    "2": "GPU-83fdf473-8633-29d3-4a42-e482cfdf0c25",
+    "3": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703"
+  },
+  "dataset": "/root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data_v2/manifest.jsonl",
+  "sample_count": 320,
+  "calibration_count": 96,
+  "test_count": 224,
+  "independent_initial_states": 40,
+  "source_layers_calibration": [
+    0,
+    3,
+    6,
+    9,
+    12,
+    15,
+    18
+  ],
+  "source_layers_evaluation": "0..18",
+  "target_layers_calibration": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "controls": [
+    "real",
+    "nopatch",
+    "self",
+    "shuffle",
+    "random",
+    "direct",
+    "layer0"
+  ],
+  "stop_rules": "Follow plan phase gates; a failed Target does not imply absence of source information. Await external access before semantic layer scans.",
+  "external_model_access": "HF login confirmed; model-file access still HTTP403, requires account acceptance of gated model terms",
+  "resource_policy": {
+    "preferred_gpus": [
+      2,
+      3
+    ],
+    "poll_seconds_if_waiting": 10,
+    "use_immediately_when_idle": true,
+    "other_chat_coordination_authorized": true,
+    "coordination_attempt": "send_message_to_thread failed twice with local MCP transport connection error; no delivery claimed",
+    "never_interrupt_unknown_processes": true
+  }
+}

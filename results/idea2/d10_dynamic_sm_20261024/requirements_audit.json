@@ -1,0 +1,1113 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-24T14:54:55.988189+00:00",
+  "scope": "Final CPU-only independent artifact audit of the completed D10 program; model/runtime files unchanged; no GPU start or GPU probe",
+  "status": "passed",
+  "gpu_work_performed": false,
+  "checks": {
+    "d2_regression": {
+      "passed": true,
+      "rows": 12,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_whole_formal_stable": {
+      "passed": true,
+      "rows": 400,
+      "performance_eligible": true,
+      "status": "passed"
+    },
+    "d10_whole_repeat": {
+      "passed": true,
+      "rows": 400,
+      "performance_eligible": true,
+      "status": "passed"
+    },
+    "d10_split_full_formal_stable": {
+      "passed": true,
+      "rows": 400,
+      "performance_eligible": true,
+      "status": "passed"
+    },
+    "d10_split_full_repeat": {
+      "passed": true,
+      "rows": 400,
+      "performance_eligible": true,
+      "status": "passed"
+    },
+    "d10_fixed8_screen": {
+      "passed": true,
+      "rows": 80,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_fixed16_screen": {
+      "passed": true,
+      "rows": 80,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_dynamic8_screen": {
+      "passed": true,
+      "rows": 80,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_dynamic16_screen": {
+      "passed": true,
+      "rows": 80,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_encoder64_vlmfull_screen": {
+      "passed": true,
+      "rows": 1020,
+      "performance_eligible": false,
+      "status": "passed"
+    },
+    "d10_oldkv_formal": {
+      "passed": true,
+      "rows": 700,
+      "phase_counts": {
+        "paired": 400,
+        "continuous": 300
+      },
+      "reverse_order": false,
+      "max_error": 0.0
+    },
+    "d10_oldkv_repeat": {
+      "passed": true,
+      "rows": 700,
+      "phase_counts": {
+        "paired": 400,
+        "continuous": 300
+      },
+      "reverse_order": true,
+      "max_error": 0.0
+    },
+    "d10_crossframe_formal": {
+      "passed": true,
+      "rows": 6800,
+      "paired_trajectories": 400,
+      "paired_inputs_match": 1600,
+      "paired_signature_groups": 100,
+      "continuous_modes": 4,
+      "phase_counts": {
+        "paired": 6400,
+        "continuous": 400
+      },
+      "slots": [
+        0,
+        1
+      ],
+      "epochs": 408,
+      "max_error": 0.0,
+      "saved_gpu_group_ownership_passed": true,
+      "paired_identity_key": "pair,index (frame is modulo-13 bank index)"
+    },
+    "d10_crossframe_repeat": {
+      "passed": true,
+      "rows": 6800,
+      "paired_trajectories": 400,
+      "paired_inputs_match": 1600,
+      "paired_signature_groups": 100,
+      "continuous_modes": 4,
+      "phase_counts": {
+        "paired": 6400,
+        "continuous": 400
+      },
+      "slots": [
+        0,
+        1
+      ],
+      "epochs": 408,
+      "max_error": 0.0,
+      "saved_gpu_group_ownership_passed": true,
+      "paired_identity_key": "pair,index (frame is modulo-13 bank index)"
+    },
+    "slo_formula_frozen": {
+      "passed": true,
+      "trajectories": 200,
+      "reference_interval_ms": 67.01452889945358,
+      "near_period_ms": 71,
+      "default_budget": 0.05
+    },
+    "d10_async_serial_gate": {
+      "passed": true,
+      "rows": 80,
+      "phase_counts": {
+        "paired": 40,
+        "continuous": 40
+      },
+      "paired_identity_groups": 20,
+      "stable_two_slot_address_groups": 3,
+      "max_error": 0.0,
+      "same_kind": "vision_only",
+      "graph_engines_per_group": [
+        1,
+        1,
+        1
+      ],
+      "wrapper_sha256": "f19044aea32ec790903dce9ac287058edeed5bd4a57cec96dafbb99244721751",
+      "wrapper_snapshot_matches": true,
+      "reverse_order": false,
+      "continuous": {
+        "graph_async_serial": {
+          "response_wall_seconds": 1.4625021405518055,
+          "response_hz": 13.675193659856083,
+          "all_work_wall_seconds": 1.502536803483963,
+          "all_work_hz": 13.310822040182702,
+          "drain_wall_seconds": 0.03991866484284401,
+          "response_to_drain_begin_seconds": 0.00011599808931350708,
+          "all_work_end_monotonic_s": 25231804.82613584,
+          "completed_measured_prefills": 20,
+          "completed_measured_prefills_per_second": 13.310822040182702,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        },
+        "graph_vision_overlap": {
+          "response_wall_seconds": 1.3898349590599537,
+          "response_hz": 14.390197821421511,
+          "all_work_wall_seconds": 1.4194600954651833,
+          "all_work_hz": 14.089864212382547,
+          "drain_wall_seconds": 0.02945711836218834,
+          "response_to_drain_begin_seconds": 0.00016801804304122925,
+          "all_work_end_monotonic_s": 25231820.881232295,
+          "completed_measured_prefills": 20,
+          "completed_measured_prefills_per_second": 14.089864212382547,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        }
+      }
+    },
+    "d10_async_serial_formal": {
+      "passed": true,
+      "rows": 400,
+      "phase_counts": {
+        "paired": 200,
+        "continuous": 200
+      },
+      "paired_identity_groups": 100,
+      "stable_two_slot_address_groups": 3,
+      "max_error": 0.0,
+      "same_kind": "vision_only",
+      "graph_engines_per_group": [
+        1,
+        1,
+        1
+      ],
+      "wrapper_sha256": "f19044aea32ec790903dce9ac287058edeed5bd4a57cec96dafbb99244721751",
+      "wrapper_snapshot_matches": true,
+      "reverse_order": false,
+      "continuous": {
+        "graph_async_serial": {
+          "response_wall_seconds": 6.845726642757654,
+          "response_hz": 14.607653097833476,
+          "all_work_wall_seconds": 6.88599630817771,
+          "all_work_hz": 14.5222267809295,
+          "drain_wall_seconds": 0.040122196078300476,
+          "response_to_drain_begin_seconds": 0.00014746934175491333,
+          "all_work_end_monotonic_s": 25231979.937270965,
+          "completed_measured_prefills": 100,
+          "completed_measured_prefills_per_second": 14.5222267809295,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        },
+        "graph_vision_overlap": {
+          "response_wall_seconds": 6.3149641789495945,
+          "response_hz": 15.835402571774143,
+          "all_work_wall_seconds": 6.345111418515444,
+          "all_work_hz": 15.760164543083288,
+          "drain_wall_seconds": 0.0300028994679451,
+          "response_to_drain_begin_seconds": 0.00014434009790420532,
+          "all_work_end_monotonic_s": 25231999.098052338,
+          "completed_measured_prefills": 100,
+          "completed_measured_prefills_per_second": 15.760164543083288,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        }
+      }
+    },
+    "d10_async_serial_repeat": {
+      "passed": true,
+      "rows": 400,
+      "phase_counts": {
+        "paired": 200,
+        "continuous": 200
+      },
+      "paired_identity_groups": 100,
+      "stable_two_slot_address_groups": 3,
+      "max_error": 0.0,
+      "same_kind": "vision_only",
+      "graph_engines_per_group": [
+        1,
+        1,
+        1
+      ],
+      "wrapper_sha256": "f19044aea32ec790903dce9ac287058edeed5bd4a57cec96dafbb99244721751",
+      "wrapper_snapshot_matches": true,
+      "reverse_order": true,
+      "continuous": {
+        "graph_vision_overlap": {
+          "response_wall_seconds": 6.335979335010052,
+          "response_hz": 15.782879759004352,
+          "all_work_wall_seconds": 6.366081438958645,
+          "all_work_hz": 15.708250194229038,
+          "drain_wall_seconds": 0.029977872967720032,
+          "response_to_drain_begin_seconds": 0.0001242309808731079,
+          "all_work_end_monotonic_s": 25232158.40097015,
+          "completed_measured_prefills": 100,
+          "completed_measured_prefills_per_second": 15.708250194229038,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        },
+        "graph_async_serial": {
+          "response_wall_seconds": 6.8477254547178745,
+          "response_hz": 14.603389207302849,
+          "all_work_wall_seconds": 6.887960400432348,
+          "all_work_hz": 14.518085788315963,
+          "drain_wall_seconds": 0.04010399058461189,
+          "response_to_drain_begin_seconds": 0.00013095512986183167,
+          "all_work_end_monotonic_s": 25232179.81834779,
+          "completed_measured_prefills": 100,
+          "completed_measured_prefills_per_second": 14.518085788315963,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        }
+      }
+    },
+    "d10_async_serial_profile": {
+      "passed": true,
+      "rows": 8,
+      "phase_counts": {
+        "continuous": 8
+      },
+      "paired_identity_groups": 0,
+      "stable_two_slot_address_groups": 1,
+      "max_error": 0.0,
+      "same_kind": "vision_only",
+      "graph_engines_per_group": [
+        1
+      ],
+      "wrapper_sha256": "f19044aea32ec790903dce9ac287058edeed5bd4a57cec96dafbb99244721751",
+      "wrapper_snapshot_matches": true,
+      "reverse_order": false,
+      "continuous": {
+        "graph_async_serial": {
+          "response_wall_seconds": 0.6341006979346275,
+          "response_hz": 12.616292689879295,
+          "all_work_wall_seconds": 0.6741275414824486,
+          "all_work_hz": 11.867190565167387,
+          "drain_wall_seconds": 0.039919331669807434,
+          "response_to_drain_begin_seconds": 0.00010751187801361084,
+          "all_work_end_monotonic_s": 25232287.427855853,
+          "completed_measured_prefills": 8,
+          "completed_measured_prefills_per_second": 11.867190565167387,
+          "scope": "First measured request through final owned-stream drain. Intervening reset/bootstrap included; their Prefills excluded from measured numerator. Event-statistics collection and cleanup excluded. Drain is Host fence wall, not kernel busy time."
+        }
+      }
+    },
+    "resume_confirmation_matrix.execution.json": {
+      "passed": true,
+      "cases": 8,
+      "case_status": {
+        "d10_encoder64_vlmfull_profile_resumed": "passed",
+        "d10_oldkv_formal": "passed",
+        "d10_oldkv_repeat": "passed",
+        "d10_crossframe_formal": "passed",
+        "d10_crossframe_repeat": "passed",
+        "d10_oldkv_graph_serial_profile": "passed",
+        "d10_oldkv_graph_encoder_overlap_profile": "passed",
+        "d10_oldkv_graph_ae_first_profile": "passed"
+      },
+      "source_unchanged": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "async_serial_control_matrix.execution.json": {
+      "passed": true,
+      "cases": 4,
+      "case_status": {
+        "d10_async_serial_gate": "passed",
+        "d10_async_serial_formal": "passed",
+        "d10_async_serial_repeat": "passed",
+        "d10_async_serial_profile": "passed"
+      },
+      "source_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    "slo_remaining_matrix.execution.json": {
+      "passed": true,
+      "cases": 2,
+      "case_status": {
+        "d10_slo_62ms_repeat_resumed": "passed",
+        "d10_slo_33ms_repeat": "passed"
+      },
+      "source_unchanged": [
+        true,
+        true
+      ]
+    },
+    "historical_exclusions_preserved": {
+      "passed": true,
+      "cases": [
+        {
+          "case": "d10_whole_formal",
+          "status": "excluded_source_drift",
+          "performance_eligible": false,
+          "reason": {
+            "reason": "Runtime sources edited while this process was cold-loading; exact snapshot/import correspondence is not provable. Numerical/raw measurements retained, excluded from conclusions.",
+            "changed_runtime_files": [
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_bench.py",
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_crossframe_bench.py",
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_graphs.py",
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_lifecycle.py"
+            ]
+          }
+        },
+        {
+          "case": "d10_split_full_formal",
+          "status": "excluded_source_drift",
+          "performance_eligible": false,
+          "reason": {
+            "reason": "Runtime sources edited while this process was cold-loading; exact snapshot/import correspondence is not provable. Numerical/raw measurements retained, excluded from conclusions.",
+            "changed_runtime_files": [
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_bench.py",
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_crossframe_bench.py",
+              "/root/nfs/embodied/benchmark/preparations/idea2/layer_lifecycle.py"
+            ]
+          }
+        },
+        {
+          "case": "d10_encoder64_vlmfull_profile",
+          "status": "interrupted_user_pause",
+          "performance_eligible": false,
+          "reason": "Explicit user pause terminated this profile; complete replacement is d10_encoder64_vlmfull_profile_resumed."
+        },
+        {
+          "case": "d10_slo_62ms_repeat",
+          "status": "failed",
+          "performance_eligible": false,
+          "reason": "RuntimeError('GPU is not exclusive/idle; refusing experiment: {\"uuid\": \"GPU-599477fb-0507-40dc-14df-d491f7a7b202\", \"name\": \"NVIDIA GeForce RTX 4090\", \"memory_used_mib\": 1.0, \"utilization_percent\": 43.0, \"processes\": [], \"graphics_processes\": [], \"host_time\": 1792851193.8072257}')"
+        }
+      ]
+    },
+    "historical_d2_negative_trace_preserved": {
+      "passed": true,
+      "historical_passed": false
+    },
+    "trace_sqlite_ledger_d10_oldkv_graph_serial_20261024_v1": {
+      "passed": true,
+      "case": "analysis/d10_oldkv_graph_serial_20261024_v1",
+      "sqlite": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/d10_oldkv_graph_serial_20261024_v1.sqlite",
+      "sqlite_rows": 116172,
+      "csv_rows": 116172,
+      "csv_intervals_match_sqlite": true,
+      "scoped_model_kernels": 103160,
+      "requests": 8,
+      "model_intersections_ms": {
+        "Vision": 0.0,
+        "VLM": 0.0
+      },
+      "requests_prefill_after_api_return": 0,
+      "mapping_errors": 0,
+      "graph_mapping_complete": true,
+      "resource_counts": [
+        {
+          "stage": "AE",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 17,
+          "count": 84688
+        },
+        {
+          "stage": "Vision",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 11400
+        },
+        {
+          "stage": "VLM",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 7072
+        }
+      ]
+    },
+    "trace_sqlite_ledger_d10_oldkv_graph_encoder_overlap_20261024_v1": {
+      "passed": true,
+      "case": "analysis/d10_oldkv_graph_encoder_overlap_20261024_v1",
+      "sqlite": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/d10_oldkv_graph_encoder_overlap_20261024_v1.sqlite",
+      "sqlite_rows": 116172,
+      "csv_rows": 116172,
+      "csv_intervals_match_sqlite": true,
+      "scoped_model_kernels": 103160,
+      "requests": 8,
+      "model_intersections_ms": {
+        "Vision": 88.821898,
+        "VLM": 0.0
+      },
+      "requests_prefill_after_api_return": 8,
+      "mapping_errors": 0,
+      "graph_mapping_complete": true,
+      "resource_counts": [
+        {
+          "stage": "AE",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 17,
+          "count": 84688
+        },
+        {
+          "stage": "Vision",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 11400
+        },
+        {
+          "stage": "VLM",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 7072
+        }
+      ]
+    },
+    "trace_sqlite_ledger_d10_oldkv_graph_ae_first_20261024_v1": {
+      "passed": true,
+      "case": "analysis/d10_oldkv_graph_ae_first_20261024_v1",
+      "sqlite": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/d10_oldkv_graph_ae_first_20261024_v1.sqlite",
+      "sqlite_rows": 116172,
+      "csv_rows": 116172,
+      "csv_intervals_match_sqlite": true,
+      "scoped_model_kernels": 103160,
+      "requests": 8,
+      "model_intersections_ms": {
+        "Vision": 86.209196,
+        "VLM": 83.172738
+      },
+      "requests_prefill_after_api_return": 1,
+      "mapping_errors": 0,
+      "graph_mapping_complete": true,
+      "resource_counts": [
+        {
+          "stage": "AE",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 17,
+          "count": 84688
+        },
+        {
+          "stage": "Vision",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 11400
+        },
+        {
+          "stage": "VLM",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 7072
+        }
+      ]
+    },
+    "trace_sqlite_ledger_control": {
+      "passed": true,
+      "case": "async_control_analysis/control",
+      "sqlite": "/root/nfs/embodied/benchmark/nsys/idea2_experiment/d10_async_serial_profile_20261024_v1.sqlite",
+      "sqlite_rows": 116172,
+      "csv_rows": 116172,
+      "csv_intervals_match_sqlite": true,
+      "scoped_model_kernels": 103160,
+      "requests": 8,
+      "model_intersections_ms": {
+        "Vision": 0.0,
+        "VLM": 0.0
+      },
+      "requests_prefill_after_api_return": 8,
+      "mapping_errors": 0,
+      "graph_mapping_complete": true,
+      "resource_counts": [
+        {
+          "stage": "AE",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 17,
+          "count": 84688
+        },
+        {
+          "stage": "Vision",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 11400
+        },
+        {
+          "stage": "VLM",
+          "device": 0,
+          "context": 1,
+          "green_context": 0,
+          "stream": 13,
+          "count": 7072
+        }
+      ]
+    },
+    "newkv_six_trace_attribution": {
+      "passed": true,
+      "cases": [
+        {
+          "name": "d10_full_serial_profile",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": null
+        },
+        {
+          "name": "d10_full_overlap_profile",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": 7738
+        },
+        {
+          "name": "d10_fixed16_profile",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": 7738
+        },
+        {
+          "name": "d10_dynamic16_profile",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": 7738
+        },
+        {
+          "name": "d10_combined_profile",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": 7738
+        },
+        {
+          "name": "d10_encoder64_vlmfull_profile_resumed",
+          "frames": 8,
+          "resource_passed": true,
+          "matched_signature_types": 7738
+        }
+      ]
+    },
+    "oldkv_signature_graph_encoder_overlap": {
+      "passed": true,
+      "matched_types": 136,
+      "baseline_unmatched": 0,
+      "candidate_unmatched": 0
+    },
+    "oldkv_signature_graph_ae_first": {
+      "passed": true,
+      "matched_types": 136,
+      "baseline_unmatched": 0,
+      "candidate_unmatched": 0
+    },
+    "async_control_trace_checks": {
+      "passed": true,
+      "checks": {
+        "nonempty": true,
+        "all_requests_have_ae_vision_vlm": true,
+        "ae_x_vision_exactly_zero": true,
+        "ae_x_vlm_exactly_zero": true,
+        "ae_x_all_prefill_exactly_zero": true,
+        "ae_completed_by_api_return": true,
+        "every_request_prefill_continues_after_api_return": true,
+        "vision_waits_same_request_ae": true,
+        "vlm_follows_same_request_vision": true,
+        "graph_module_attribution_complete": true,
+        "launch_correlation_complete": true
+      },
+      "requests": 8,
+      "pair_overlap_total_ms": {
+        "AE_x_Vision": 0.0,
+        "AE_x_VLM": 0.0,
+        "AE_x_Prefill": 0.0
+      },
+      "requests_with_prefill_after_return": 8,
+      "definition": "Exact kernel-interval intersections across the whole selected group, including cross-request work. No epsilon hides small overlaps. Host return is the end of cewp request NVTX, not the GPU end. Ordering compares first/last measured model kernels, excludes copies/memsets and is not a substitute for Event/Lease source protocol verification.",
+      "signature_comparison": {
+        "direction": "graph_encoder_overlap elapsed / graph_async_serial elapsed",
+        "matched_types": 136,
+        "baseline_unmatched_types": 0,
+        "candidate_unmatched_types": 0,
+        "count_mismatched_types": 0,
+        "exact_signatures_and_counts_match": true
+      },
+      "matched_comparison_eligible": true
+    },
+    "d10_iteration_schedule_lifecycle": {
+      "passed": true,
+      "requests": 52,
+      "iterations": 520,
+      "slots": {
+        "0": 26,
+        "1": 26
+      },
+      "epochs": {
+        "1": 26,
+        "2": 26
+      },
+      "kv_addresses_per_slot": [
+        36,
+        36
+      ],
+      "inplace_input_reuses": 52,
+      "all_bitwise": true,
+      "schedule": {
+        "passed": true,
+        "expected_nfe": 10,
+        "slots": [
+          {
+            "slot": 0,
+            "times": [
+              1.0,
+              0.8999999761581421,
+              0.7999999523162842,
+              0.6999999284744263,
+              0.5999999046325684,
+              0.49999991059303284,
+              0.3999999165534973,
+              0.2999999225139618,
+              0.19999992847442627,
+              0.09999992698431015
+            ],
+            "captured_nfe": 10,
+            "condition_times": [
+              1.0,
+              0.8999999761581421,
+              0.7999999523162842,
+              0.6999999284744263,
+              0.5999999046325684,
+              0.49999991059303284,
+              0.3999999165534973,
+              0.2999999225139618,
+              0.19999992847442627,
+              0.09999992698431015
+            ]
+          },
+          {
+            "slot": 1,
+            "times": [
+              1.0,
+              0.8999999761581421,
+              0.7999999523162842,
+              0.6999999284744263,
+              0.5999999046325684,
+              0.49999991059303284,
+              0.3999999165534973,
+              0.2999999225139618,
+              0.19999992847442627,
+              0.09999992698431015
+            ],
+            "captured_nfe": 10,
+            "condition_times": [
+              1.0,
+              0.8999999761581421,
+              0.7999999523162842,
+              0.6999999284744263,
+              0.5999999046325684,
+              0.49999991059303284,
+              0.3999999165534973,
+              0.2999999225139618,
+              0.19999992847442627,
+              0.09999992698431015
+            ]
+          }
+        ],
+        "scope": "Time values from cold original-loop execution; NFE counted during capture. No diagnostic clones added to replay."
+      },
+      "tolerance": {
+        "max_abs": 1e-05,
+        "mae": 1e-06,
+        "time_nodes": "exact FP32 bytes"
+      },
+      "diagnostic_only": true
+    },
+    "independent_iteration_npz_audit": {
+      "passed": true,
+      "requests": 52,
+      "iterations": 520,
+      "scope": "CPU independent reread of every stored intermediate array and original oracle; all 52 requests, no GPU execution. Does not by itself prove all possible inputs."
+    },
+    "dynamic_resource_switch": {
+      "passed": true,
+      "counts": [
+        {
+          "phase": "VLM",
+          "green_context": 3,
+          "sms": 112,
+          "kernels": 7072
+        },
+        {
+          "phase": "AE1",
+          "green_context": 2,
+          "sms": 16,
+          "kernels": 8432
+        },
+        {
+          "phase": "AE_tail",
+          "green_context": 0,
+          "sms": 0,
+          "kernels": 75888
+        }
+      ],
+      "boundaries": 8,
+      "model_kernel_gap_us_range": [
+        4.288,
+        5.376
+      ],
+      "primary_context_is_unrestricted_not_128_sm_occupancy": true
+    },
+    "slo_independent_detailed_audit": {
+      "passed": true,
+      "auditor": "/root/d10_plan_review/closedloop_client_contract",
+      "valid_runs": 6,
+      "measured_rows": 2400,
+      "measurement_csv_rows_verified": 2400,
+      "summary_csv_rows_verified": 24,
+      "source_snapshot_hashes_verified": 426,
+      "same_source_smoke_rows_verified": 624,
+      "capture_latency_formula_max_residual_ms": 0,
+      "source_and_drop_accounting_verified": true,
+      "default_budget": 0.05,
+      "budgets": [
+        0,
+        0.02,
+        0.05,
+        0.1
+      ],
+      "failed_original_62_repeat_preserved": true
+    },
+    "oldkv_closedloop_independent_audit": {
+      "passed": true,
+      "auditor": "/root/d10_plan_review/closedloop_client_contract",
+      "errors": [],
+      "complete_valid": 16,
+      "modes": {
+        "O0": {
+          "episodes": 8,
+          "successes": 4,
+          "steps": 2137,
+          "requests": 428
+        },
+        "O1": {
+          "episodes": 8,
+          "successes": 4,
+          "steps": 2137,
+          "requests": 428
+        }
+      },
+      "matched_requests_all": 428,
+      "matched_requests_excluding_capture": 427,
+      "matched_requests_excluding_bootstrap": 420,
+      "input_npz_sha256_checked": 856,
+      "chunk_npz_sha256_checked": 856,
+      "paired_input_files_identical": 428,
+      "paired_action_chunks_bitwise_identical": 428,
+      "executed_actions_checked": 4274,
+      "paired_eef_rows_bitwise_identical": 2145,
+      "source_hashes_checked": 65,
+      "source_hash_mismatches": 0,
+      "mp4_files": 0,
+      "server_exit_code": 0
+    },
+    "fresh_closedloop_independent_audit": {
+      "passed": true,
+      "auditor": "/root/d10_plan_review/closedloop_client_contract",
+      "errors": [],
+      "valid_episodes": 8,
+      "successes": 8,
+      "steps": 1181,
+      "requests": 239,
+      "current_observation_age_zero_requests": 239,
+      "input_npz_hashes_verified": 239,
+      "action_npz_hashes_verified": 239,
+      "executed_actions_verified": 1181,
+      "finite_eef_rows": 1189,
+      "bootstrap_pairs_against_O0_O1": 16,
+      "bootstrap_input_sha_seed_identity_matches": 16,
+      "bootstrap_actions_bitwise_identical": 16,
+      "bootstrap_action_max_abs": 0,
+      "bootstrap_action_max_mae": 0,
+      "protocol_equal_except_mode": true,
+      "common_source_hashes_equal": 65,
+      "fresh_current_source_hashes_equal": 66,
+      "checkpoint_path_and_metadata_equal": true,
+      "old_valid_failures_retained": {
+        "O0": 4,
+        "O1": 4
+      },
+      "execution_status": "passed",
+      "source_unchanged": true,
+      "shutdown_ok": true,
+      "server_exit_code": 0,
+      "mp4_files": 0,
+      "top_level_health_mode_is_startup_default_episode_protocols_are_fresh": true,
+      "cross_gpu_latency_comparison_eligible": false
+    },
+    "reproduction_coverage": {
+      "passed": true,
+      "commands_document": "reports/idea2_d10_dynamic_sm_20261024/reproduction_commands.md",
+      "runtime_and_wrapper_source_hashes_recorded": true
+    }
+  },
+  "errors": [],
+  "evidence": {
+    "results/idea2/d10_dynamic_sm_20261024/d2_regression/result.json": {
+      "sha256": "fc68250842e1ccda806e51733623608937997ed5bf3dba9e9311218186a76367",
+      "bytes": 206041
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_whole_formal_stable/result.json": {
+      "sha256": "d5bc67bf3f7a710b05bbbcc0ad44113b37554b2236fe7d9bb985527831a957f5",
+      "bytes": 885445
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_whole_repeat/result.json": {
+      "sha256": "48a2d466d0b042b4eb3733253c32d5d57ee1c79eb1727cc14e8f4b0d81cff5f7",
+      "bytes": 885708
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_split_full_formal_stable/result.json": {
+      "sha256": "5f3dc8e9e60ac93164be92a652675b317a1ae29bfd06fb86fd0234ad1caca76a",
+      "bytes": 885632
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_split_full_repeat/result.json": {
+      "sha256": "a98fd1fb4b1a4550d484b423eab6638f48dc47c20bbb6f960311d260802d7e07",
+      "bytes": 885660
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_fixed8_screen/result.json": {
+      "sha256": "ceeb20147752cd4fecb8e79697e320f1cd1a8e711169537d76fd872ee4316760",
+      "bytes": 335727
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_fixed16_screen/result.json": {
+      "sha256": "21ecac29ed02fd3046e2e679c42246c591f81ec48ce8458dfc18805bce418987",
+      "bytes": 335253
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_dynamic8_screen/result.json": {
+      "sha256": "df22be25665937ce6f2c43970593cf424f39a424c0cb9b0843cb7b17a52e1227",
+      "bytes": 335318
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_screen/result.json": {
+      "sha256": "205167b1af65380c0c1ecfef161c4728c46c1cb14d1650319b9d61d375c6b817",
+      "bytes": 335296
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_screen/result.json": {
+      "sha256": "249b8c69799103162b0413109cc4b6aae14fa8e0507e59a85111a9b42939e656",
+      "bytes": 2900255
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_oldkv_formal/result.json": {
+      "sha256": "47f9b2aafd90c27725b6726b7c4ee30a7b53f6fa068dfc2bac783a07e460a00b",
+      "bytes": 3699493
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_oldkv_repeat/result.json": {
+      "sha256": "5135fea853ee823844d7974549a5ebed3c76800dd482607de7aefdb104c91f1f",
+      "bytes": 3699338
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_crossframe_formal/result.json": {
+      "sha256": "72dabb3fa2bef5dd46c87dc0cd8a23311312f82fdb5ab743708e509b028a6149",
+      "bytes": 17549725
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_crossframe_repeat/result.json": {
+      "sha256": "0bf4f5ee6b22371cb0925be3b8928ba6e8a5720e5a41300b2d3e2665afff6ff5",
+      "bytes": 17550467
+    },
+    "results/idea2/d10_dynamic_sm_20261024/slo_selection.json": {
+      "sha256": "a85d0f4acf1476aa12cb2e34ee0fdc6d872db8763d72859034f81db80c7036cc",
+      "bytes": 649
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_async_serial_gate/result.json": {
+      "sha256": "5c63ff9853c2aa856aec7a086a92f010d935547a89a078ec5df3f88d18ae2aa9",
+      "bytes": 451330
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_async_serial_formal/result.json": {
+      "sha256": "f1ed049ec8945fccffa87ea7fdcbe43daf44c02500936c0009a710232825d7b2",
+      "bytes": 2151765
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_async_serial_repeat/result.json": {
+      "sha256": "48cdbe3daffefab875ce8a6247373ef4c30cb95b8f9c3c67a373cb00baf5fa94",
+      "bytes": 2151802
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_async_serial_profile/result.json": {
+      "sha256": "e33cdefe885bed5a9ad6f179b02bf42338756b376254725c3148a788a21efb05",
+      "bytes": 60797
+    },
+    "results/idea2/d10_dynamic_sm_20261024/resume_confirmation_matrix.execution.json": {
+      "sha256": "ad500faaf0d244552fd364d1ca47d7deb858892abeb1a594b5871da447c1a7bf",
+      "bytes": 71285
+    },
+    "results/idea2/d10_dynamic_sm_20261024/async_serial_control_matrix.execution.json": {
+      "sha256": "07be08ca1296baf6cb7f59c1003aafd5dc5979e7e10221660dffc800d4e1f8f2",
+      "bytes": 37112
+    },
+    "results/idea2/d10_dynamic_sm_20261024/slo_remaining_matrix.execution.json": {
+      "sha256": "250be2dcd26c4a238095ae12fac1005220430da77c538afc1c634543527a49bf",
+      "bytes": 18371
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_whole_formal/result.json": {
+      "sha256": "da292d171bb2b3c64fd5650707d3a6e0485e9c3ff21562f73a6fd4ed21664f32",
+      "bytes": 886209
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_split_full_formal/result.json": {
+      "sha256": "b7308c462bbfdf159452ab8debbe23e164e070d9af11fbbbc4b8610fe9a6b380",
+      "bytes": 886150
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_encoder64_vlmfull_profile/result.json": {
+      "sha256": "75dc6ca9d480205a1e5d477c55e141a490cd1fc3f409a3e4b0acd43176a70bf9",
+      "bytes": 13970
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_repeat/result.json": {
+      "sha256": "bf0791f097a9a798e4e5ac5c4b0418bd7235c573ca162216c29ec08c2c393e0c",
+      "bytes": 15020
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_audit_historical_check.json": {
+      "sha256": "fb571b351c3cae5fe8f290f9c67c3bc388062ac5a6ce51aa55d57eb2c5733476",
+      "bytes": 6390
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/analysis/d10_oldkv_graph_serial_20261024_v1/report.json": {
+      "sha256": "874251a916e7056836be416e3dd1a7af26727734c6922e6b057c10341642a916",
+      "bytes": 100659
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/analysis/d10_oldkv_graph_encoder_overlap_20261024_v1/report.json": {
+      "sha256": "cce7875c6b75298611e5f79621407c2316f139c568c85c9e1f185c8fa29d0499",
+      "bytes": 104765
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/analysis/d10_oldkv_graph_ae_first_20261024_v1/report.json": {
+      "sha256": "8248e650957b209ac703085c6108018c350253d3ddb773aecd8e6778adbcd9fd",
+      "bytes": 106273
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/async_control_analysis/control/report.json": {
+      "sha256": "a5d6396e38e0aff7f7663eb219105785661b0cd98d045b4874d6c5966bd0b250",
+      "bytes": 100990
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/trace_summary.json": {
+      "sha256": "da1e834c4a9deb18a6bbe2758ae0b1714f03ec7401a6d2d5fc5ccac5dbb79bab",
+      "bytes": 98265
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/analysis/d10_oldkv_graph_encoder_overlap_20261024_v1/signature_comparison.json": {
+      "sha256": "19be636955836ec230cb8f9a24838a59c0cd923b17cdc82d2ca351283cb4414b",
+      "bytes": 93260
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/analysis/d10_oldkv_graph_ae_first_20261024_v1/signature_comparison.json": {
+      "sha256": "b6860b401d70c4b855276451353da88d3167704edab58084294caa8794186ca3",
+      "bytes": 93252
+    },
+    "results/idea2/d10_dynamic_sm_20261024/trace_analysis/oldkv/async_control_analysis/control_checks.json": {
+      "sha256": "43f7aa371ba3aa612833b5dd0597cf3426e7064bd8fe92d6e5a6ca4d1cc55c1b",
+      "bytes": 1349
+    },
+    "results/idea2/d10_dynamic_sm_20261024/iteration_audit/result.json": {
+      "sha256": "ef02fa7bc200d4d4b707f7205819d4a0bae17feb924301a2e329a806774e8203",
+      "bytes": 941367
+    },
+    "results/idea2/d10_dynamic_sm_20261024/iteration_artifacts_independent_audit.json": {
+      "sha256": "15126513a9349da0c58a0cb23d3f3f0e233ace9281820331e3f170861307fea5",
+      "bytes": 11957
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_dynamic16_trace_audit.json": {
+      "sha256": "cd34efc6a823d68cfda54ecf6e685fa9084c34c2994b879a360a1d1ea288eceb",
+      "bytes": 5186
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_formal/result.json": {
+      "sha256": "5540c671344748fa5037ddd87a711160e8ede99c1b83c9623fe81cc9c8371d2e",
+      "bytes": 1344697
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_33ms_repeat/result.json": {
+      "sha256": "f615d7fcfbbac5a4b7556300473e96a9e81598719d1c9697548472b6733f5d13",
+      "bytes": 1344977
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_formal/result.json": {
+      "sha256": "097dfb645a693771d8bf1d1295879168b801947bae7c0f480dbf44f8da4aba12",
+      "bytes": 1344904
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_62ms_repeat_resumed/result.json": {
+      "sha256": "fd7a442c7c050e77af92a9e0543451d394f002a256294b7dde4d951b6eec4307",
+      "bytes": 1344637
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_formal/result.json": {
+      "sha256": "9dc9a7b4af0ec2da4f9d4efece85523074777fb84c737a196a1d29e968607902",
+      "bytes": 1345597
+    },
+    "results/idea2/d10_dynamic_sm_20261024/d10_slo_71ms_repeat/result.json": {
+      "sha256": "7ffb91dc9baec135431ed064da91cc2743b904025f518e550b70963892951b4e",
+      "bytes": 1345629
+    },
+    "results/idea2/d10_dynamic_sm_20261024/closedloop_d10_o0_o1/execution.json": {
+      "sha256": "078c873917f1720c367ff7d4da41bdbc92fe0db8e2f1085400aadbe88938b0d7",
+      "bytes": 96642
+    },
+    "results/idea2/d10_dynamic_sm_20261024/closedloop_d10_fresh_gpu0/execution.json": {
+      "sha256": "82508f3e0c5991d78525619384af04b8aa10c2589167845b67fe9a563d999b28",
+      "bytes": 50286
+    },
+    "results/idea2/d10_dynamic_sm_20261024/closedloop_d10_o0_o1/plan.json": {
+      "sha256": "0062e32c97f2165f5ac9d92ab51fb4101d9279dc3738894501c0bef78d0ad380",
+      "bytes": 16630
+    },
+    "results/idea2/d10_dynamic_sm_20261024/closedloop_d10_fresh_gpu0/plan.json": {
+      "sha256": "d93771a81c1b249c7c782c2fc33773f6ae10453b671d96f39278bc031d620e70",
+      "bytes": 15683
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/closedloop_summary.json": {
+      "sha256": "8d4d5be84f98b5a822a54ab0815705f9f14949dd0eeea9b64ad36208914058f4",
+      "bytes": 4154
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/closedloop_fresh_vs_old.json": {
+      "sha256": "4266452a190bdf19fc25452ae7e7c7836f2e4f56350c0e1837ac63bea6bbbb6b",
+      "bytes": 3872
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/closedloop_pairs.csv": {
+      "sha256": "df8fc12b0bdf6b897df3d195baa7bab203f82953f401c8b0845a5a5e0432af8a",
+      "bytes": 716
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/closedloop_fresh_vs_old.csv": {
+      "sha256": "ee8bfdd6865ac39b94226a20b91a901f7d450c634934280473dcd5769e61359e",
+      "bytes": 680
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/slo_summary.csv": {
+      "sha256": "3511e5aeec2fe77c565f7dd404f3563d0c4d7459b5d69c3498d42b9844cf5e95",
+      "bytes": 12015
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/reproduction_commands.md": {
+      "sha256": "e6dbe5dea055d6da3b0639f1f5c102a27e0aa02a889922cccfba01705a995651",
+      "bytes": 29749
+    },
+    "reports/idea2_d10_dynamic_sm_20261024/reproduction_index.json": {
+      "sha256": "c0d8b57ab52bfaaab749f9fb15666def7b09b846aafa3b3626b7dc184c4ad667",
+      "bytes": 36996
+    }
+  },
+  "pending": [],
+  "limitations": [
+    "An audit pass means completion and evidence integrity, not that every candidate improves performance or quality. Historical excluded/failed results remain unchanged.",
+    "Two-slot/no-third-full-KV evidence uses implementation, stable address and lifecycle checks; no exhaustive allocation trace was collected.",
+    "Graph per-iteration inputs are reconstructed from noise and previous Euler outputs; the diagnostic is not an independent Graph input hook.",
+    "Kernel intersections are real CUPTI intervals; resource context does not prove occupancy or identify HBM/L2 bottlenecks.",
+    "Periodic SLO replay is not online robot control. Different modes may choose different source IDs; measured rows do not store per-request KV digests, while 624 same-source smoke rows verify actual digest/address.",
+    "Closed-loop raw noise bytes were not saved; seeds and construction protocol were verified. Checkpoint identity uses the same path and file metadata, not a new full-weight hash.",
+    "Fresh vs old KV uses different GPUs; only task quality and matched bootstrap numerical identity are compared, not absolute cross-GPU latency. Eight cases per mode cannot establish population quality equivalence.",
+    "Fresh execution.protocol.mode is the pre-configuration startup health default; episode protocols and all 239 requests are fresh_serial.",
+    "GPU release was reported by the scheduling root and is supported by completed shutdown receipts; this independent audit did not probe devices."
+  ]
+}

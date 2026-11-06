@@ -1,0 +1,406 @@
+{
+  "schema": "ease-startup-oom-diagnosis-v1",
+  "created_at_utc": "2026-11-04T19:07:09.753599+00:00",
+  "scope": {
+    "actions": "Read existing files and source; write only this report",
+    "live_gpu_queries": 0,
+    "process_signals": 0,
+    "process_changes": 0,
+    "queue_changes": 0,
+    "scientific_source_changes": 0,
+    "rerun_episodes": 0
+  },
+  "conclusions": [
+    "两次均为预评测模型启动技术失败，0 episode；UUID binding源码与identity一致，未见错卡证据。",
+    "fresh idle检查成功后，模型仍先进行CPU导入/hash/反序列化/输入bank处理，直到首次prepare才构造CUDA runtime；8669快照显示两卡仍无CUDA进程。",
+    "Pi0Inference首次明确CUDA tensor申请为1531行，约5171.6 MiB权重加约53–56 MiB scratch已先于1633行分配；1633不是首次小申请。它在首次GPU算术阶段报错，早于1650权重copy与1664 CUDA graph。",
+    "gate/runner/backend未见保护性大额GPU reservation；自有大内存是正常单份权重与scratch。CUDA arange/除法处可能是内核加载或此前异步错误暴露点，现有日志不足以区分，不能把报错行当精确分配根因。",
+    "释放后32秒内两卡重新进入18424 MiB/1 compute进程；8684和8699为host PID 65853/65855，各18414 MiB。既有watch最新status在两modelserver已退出数百秒后仍记录相同host PID和显存，强烈支持另有持续占用者。",
+    "未保存server子PID/NSpid映射，也未拍到双方compute进程同时存在；外部占用与启动OOM高度一致，但无法从这些快照完成严格host-to-container映射或直接证明完整内存重叠因果。"
+  ],
+  "startup_sequence": [
+    {
+      "source": "preparations/ease_insights_20261103/await_assigned_gpu.py:107-178",
+      "fact": "5s稳定等待与额外fresh scan后exec runner；只保留合作式lease FD，不创建CUDA context。"
+    },
+    {
+      "source": "preparations/ease_insights_20261103/vlm_local_search_v1/runner.py:79-101",
+      "fact": "EGL/UUID解析、一次assigned GPU compute空检查、设置CUDA_VISIBLE_DEVICES为完整UUID，随后Popen server。没有自有CUDA context。"
+    },
+    {
+      "source": "preparations/ease_insights_20261103/vlm_local_search_v1/server.py:22-46",
+      "fact": "校验完整UUID env；验证manifest；导入并安装safe_qk；Backend构造后才进入real-input gate，首次backend.prepare触发CUDA runtime。"
+    },
+    {
+      "source": "policies/realtime-vla-flash/scripts/experiment10/backend.py:45-72",
+      "fact": "CPU prompt embedding读取(map_location=cpu)、权重hash、pickle读取、CPU transforms。首次prepare调用empty_cache(未初始化时为no-op)，然后Pi0Inference。CPU checkpoint创建见triton_pi0_runtime.py:190及convert_for_triton.py:454-473。"
+    },
+    {
+      "source": "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py:1530-1633",
+      "fact": "1531起torch.empty CUDA权重；1596起scratch；1632 arange position_ids；1633 arange与除法/幂/倒数。前面均标准torch allocation，无自定义低层未检查分配可见。"
+    },
+    {
+      "source": "preparations/idea1_v3/policy.py:63-73; pi0_infer.py:1650-1665",
+      "fact": "正常record_infer_graph已由adapter临时禁用；失败发生在权重copy/graph之前，没有重复Full图/graph池可归因。"
+    }
+  ],
+  "source_only_memory_estimate": {
+    "method": "AST读取torch.empty shapes与dtype，不import torch、不访问GPU；num_views=2,chunk_size=50",
+    "weights_mib_at_prompt_len_0": 5171.607086181641,
+    "weights_prompt_increment_bytes_per_token": 4096,
+    "buffers_mib_at_prompt_len_0": 53.210378646850586,
+    "buffers_mib_at_prompt_len_20": 54.446645736694336,
+    "buffers_mib_at_prompt_len_48": 56.177419662475586,
+    "limitations": "声明tensor载荷，非实测allocator reserved/context/kernel module/fragmentation开销；prompt=20/48仅为范围示例，不声称实际首prompt长度。"
+  },
+  "timeline": {
+    "release_events": [
+      {
+        "path": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+        "line": 13,
+        "event_id": 13,
+        "index": 0,
+        "previous_state": "busy",
+        "state": "idle",
+        "memory_mib": 1.0,
+        "compute_process_count": 0,
+        "query_started_at": 1793818650.10772,
+        "query_finished_at": 1793818650.2636857
+      },
+      {
+        "path": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+        "line": 14,
+        "event_id": 14,
+        "index": 3,
+        "previous_state": "busy",
+        "state": "idle",
+        "memory_mib": 1.0,
+        "compute_process_count": 0,
+        "query_started_at": 1793818650.10772,
+        "query_finished_at": 1793818650.2636857
+      },
+      {
+        "path": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+        "line": 15,
+        "event_id": 15,
+        "index": 0,
+        "previous_state": "idle",
+        "state": "busy",
+        "memory_mib": 18424.0,
+        "compute_process_count": 1,
+        "query_started_at": 1793818682.1060047,
+        "query_finished_at": 1793818682.2583551
+      },
+      {
+        "path": "results/ease_insights_20261103/gpu_release_watch/events.jsonl",
+        "line": 16,
+        "event_id": 16,
+        "index": 3,
+        "previous_state": "idle",
+        "state": "busy",
+        "memory_mib": 18424.0,
+        "compute_process_count": 1,
+        "query_started_at": 1793818682.1060047,
+        "query_finished_at": 1793818682.2583551
+      }
+    ],
+    "scheduler_events": [
+      {
+        "event": "job_started",
+        "job": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916",
+        "status": "running",
+        "pid": 432881,
+        "gpu": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "started": 1793818654.805061,
+        "source": "results/ease_insights_20261103/scheduler/daemon.log:49-52"
+      },
+      {
+        "event": "job_started",
+        "job": "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a",
+        "status": "running",
+        "pid": 432890,
+        "gpu": 3,
+        "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "started": 1793818655.0026164,
+        "source": "results/ease_insights_20261103/scheduler/daemon.log:49-52"
+      },
+      {
+        "event": "job_finished",
+        "job": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916",
+        "status": "failed",
+        "pid": 432881,
+        "gpu": 0,
+        "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+        "started": 1793818654.805061,
+        "finished": 1793818700.3298445,
+        "returncode": 1,
+        "source": "results/ease_insights_20261103/scheduler/daemon.log:49-52"
+      },
+      {
+        "event": "job_finished",
+        "job": "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a",
+        "status": "failed",
+        "pid": 432890,
+        "gpu": 3,
+        "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+        "started": 1793818655.0026164,
+        "finished": 1793818700.3303664,
+        "returncode": 1,
+        "source": "results/ease_insights_20261103/scheduler/daemon.log:49-52"
+      }
+    ],
+    "runs": [
+      {
+        "condition": "full_d10",
+        "controller_local_pid": 432881,
+        "gpu_binding": {
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "egl_index": 3,
+          "cuda_ordinal": 0
+        },
+        "identity_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/full_d10/runs/discovery_shard00of01_1793818662106423845/identity.json",
+        "server_log_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/full_d10/runs/discovery_shard00of01_1793818662106423845/server.log",
+        "server_log_mtime": 1793818695.6301475,
+        "server_log_size": 1901,
+        "failure": "RuntimeError: CUDA error: out of memory at Pi0Inference.__init__ line 1633",
+        "own_server_local_pid": "not recorded before failed initialization",
+        "worker_started": false
+      },
+      {
+        "condition": "local_spatial",
+        "controller_local_pid": 432890,
+        "gpu_binding": {
+          "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+          "egl_index": 0,
+          "cuda_ordinal": 3
+        },
+        "identity_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/local_spatial/runs/discovery_shard00of01_1793818662086250240/identity.json",
+        "server_log_path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/local_spatial/runs/discovery_shard00of01_1793818662086250240/server.log",
+        "server_log_mtime": 1793818695.6301475,
+        "server_log_size": 1901,
+        "failure": "RuntimeError: CUDA error: out of memory at Pi0Inference.__init__ line 1633",
+        "own_server_local_pid": "not recorded before failed initialization",
+        "worker_started": false
+      }
+    ],
+    "observer_samples": [
+      {
+        "path": "results/ease_insights_20261103/resource_contention/observer/samples.jsonl",
+        "line": 758,
+        "observed_at": 1793818669.2473555,
+        "query_started_at": 1793818669.2508562,
+        "query_finished_at": 1793818669.5950122,
+        "gpus": [
+          {
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "memory_used_mib": 1.0,
+            "utilization_gpu_percent": 0.0,
+            "compute_processes": [],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818669.2508755,
+                "finished_at": 1793818669.3444772
+              },
+              "compute_apps": {
+                "started_at": 1793818669.3444803,
+                "finished_at": 1793818669.4422793
+              }
+            }
+          },
+          {
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "memory_used_mib": 1.0,
+            "utilization_gpu_percent": 0.0,
+            "compute_processes": [],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818669.4423034,
+                "finished_at": 1793818669.5331078
+              },
+              "compute_apps": {
+                "started_at": 1793818669.5331116,
+                "finished_at": 1793818669.5950017
+              }
+            }
+          }
+        ]
+      },
+      {
+        "path": "results/ease_insights_20261103/resource_contention/observer/samples.jsonl",
+        "line": 759,
+        "observed_at": 1793818684.2611177,
+        "query_started_at": 1793818684.263149,
+        "query_finished_at": 1793818684.605873,
+        "gpus": [
+          {
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "memory_used_mib": 18424.0,
+            "utilization_gpu_percent": 20.0,
+            "compute_processes": [
+              {
+                "host_pid": 65855,
+                "used_memory_mib": 18414.0
+              }
+            ],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818684.2631598,
+                "finished_at": 1793818684.3508801
+              },
+              "compute_apps": {
+                "started_at": 1793818684.3508837,
+                "finished_at": 1793818684.4778748
+              }
+            }
+          },
+          {
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "memory_used_mib": 18424.0,
+            "utilization_gpu_percent": 20.0,
+            "compute_processes": [
+              {
+                "host_pid": 65853,
+                "used_memory_mib": 18414.0
+              }
+            ],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818684.4778955,
+                "finished_at": 1793818684.546388
+              },
+              "compute_apps": {
+                "started_at": 1793818684.546391,
+                "finished_at": 1793818684.6058526
+              }
+            }
+          }
+        ]
+      },
+      {
+        "path": "results/ease_insights_20261103/resource_contention/observer/samples.jsonl",
+        "line": 760,
+        "observed_at": 1793818699.2716095,
+        "query_started_at": 1793818699.2735348,
+        "query_finished_at": 1793818699.5691228,
+        "gpus": [
+          {
+            "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+            "memory_used_mib": 18424.0,
+            "utilization_gpu_percent": 23.0,
+            "compute_processes": [
+              {
+                "host_pid": 65855,
+                "used_memory_mib": 18414.0
+              }
+            ],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818699.273546,
+                "finished_at": 1793818699.3943942
+              },
+              "compute_apps": {
+                "started_at": 1793818699.3943977,
+                "finished_at": 1793818699.4625626
+              }
+            }
+          },
+          {
+            "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+            "memory_used_mib": 18424.0,
+            "utilization_gpu_percent": 23.0,
+            "compute_processes": [
+              {
+                "host_pid": 65853,
+                "used_memory_mib": 18414.0
+              }
+            ],
+            "query_intervals": {
+              "gpu": {
+                "started_at": 1793818699.4625814,
+                "finished_at": 1793818699.5165045
+              },
+              "compute_apps": {
+                "started_at": 1793818699.5165079,
+                "finished_at": 1793818699.569094
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "latest_existing_watch_snapshot": {
+      "path": "results/ease_insights_20261103/gpu_release_watch/status.json",
+      "heartbeat_at": 1793819227.9086308,
+      "query_started_at": 1793819227.700881,
+      "query_finished_at": 1793819227.908572,
+      "devices": [
+        {
+          "index": 0,
+          "gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+          "memory_mib": 18424.0,
+          "compute_process_count": 1,
+          "host_compute_pids": [
+            65853
+          ],
+          "state": "busy",
+          "idle": false
+        },
+        {
+          "index": 3,
+          "gpu_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+          "memory_mib": 18424.0,
+          "compute_process_count": 1,
+          "host_compute_pids": [
+            65855
+          ],
+          "state": "busy",
+          "idle": false
+        }
+      ]
+    },
+    "latest_existing_scheduler_snapshot": {
+      "path": "results/ease_insights_20261103/scheduler/status.json",
+      "time": 1793819227.0961328,
+      "status": "waiting_gpu",
+      "active_pids": [],
+      "failed": [
+        "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916",
+        "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a"
+      ]
+    },
+    "limits": "2秒watch只永久保存状态转换，不保存每poll和host PID；status会覆盖。8682 busy转换不是CUDA首次出现的精确时刻。OOM行无时间；8695.630为文件mtime，scheduler8700为controller失败记录。observer只在verified runner运行时15秒采样。"
+  },
+  "pid_attribution": {
+    "local_controller_pids": [
+      432881,
+      432890
+    ],
+    "host_compute_pids": {
+      "GPU0": 65853,
+      "GPU3": 65855
+    },
+    "server_children_or_nspid_mapping_in_observer": false,
+    "fact": "observer明确声明local_pid来自容器/proc而host_pid来自nvidia-smi且未映射；watch事件也无NSpid/children/server_pid。coordinator旧snapshot只保存scheduler的两个runner子PID，无server子PID。",
+    "inference": "runner抛Server exited仅在server.poll非None；两controller于8700以1退出。最新watch仍同host PID占18GB，结合模型声明仅约5.2GB载荷，持续18GB占用不能合理解释为这两个已退出modelserver。未取host start ticks，保留PID复用/缺精确映射限制。"
+  },
+  "options": [
+    {
+      "name": "恢复更长真实稳定空闲等待",
+      "minimum": "仅资源gate策略恢复默认60秒稳定空闲，保留fresh assigned-UUID scan及原scheduler合作lease；不改科学source/manifest。",
+      "evidence": "本次8650释放至8682重新busy约32秒，60秒门槛会阻止这两次启动。",
+      "limit": "未来其他进程仍可能在模型CPU加载期或之后抢入；等待长度不是独占保证。"
+    },
+    {
+      "name": "已分配且fresh idle后尽早建立轻量自有CUDA可见性",
+      "minimum": "作为单独资源启动包装层设计：只用assigned UUID，在长CPU加载前建立很小context；持续到实际modelserver CUDA可见，再释放。不要改冻结模型/科学算法。",
+      "constraints": [
+        "CUDA context不是GPU独占锁，也不保证显存容量；只对尊重compute占用的其他调度者形成可见信号。",
+        "helper不得fork/exec继承已初始化CUDA；如用独立helper，必须明确PID身份与有界交接。runner现有any-compute拒绝会把helper视为busy，需工程层正确处理，不能随意忽略未知PID。",
+        "优先考虑同一server进程的资源包装层在进入冻结server模块前初始化，能避免独立helper交接窗口；具体调用和argv接入另行审查，不在本报告实现。",
+        "小context不能抵御外部进程硬抢，也不应升级成大额显存占坑。"
+      ]
+    }
+  ],
+  "recommendation": "先恢复稳定空闲门槛作为最小修复；如需缩短释放机会响应，另做很小的CUDA可见性启动包装，并明确它是合作式提示而非reservation。暂不实施、不恢复队列、不重跑有效case。"
+}

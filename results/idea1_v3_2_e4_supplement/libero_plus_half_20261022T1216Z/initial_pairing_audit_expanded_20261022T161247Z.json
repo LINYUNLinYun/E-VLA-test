@@ -1,0 +1,63 @@
+{
+  "kind": "expanded_read_only_initial_pairing_audit",
+  "recorded_at_utc": "2026-10-22T16:12:47Z",
+  "audited_ledger_unix": 1792685489.0712142,
+  "ledger_sha256": "1bb3adbe2e4bf411ce1be319f5ed33be0be216e76e0c80e4cb82849841672d58",
+  "source_ledger_snapshot": "results/idea1_v3_2_e4_supplement/libero_plus_half_20261022T1216Z/initial_pairing_audit_expanded_20261022T161247Z_ledger.json",
+  "completed_conditions_in_source_snapshot": 272,
+  "three_way_cases_checked": 90,
+  "perturbed_cases_checked": 86,
+  "original_cases_checked": 4,
+  "bound_completed_conditions": 270,
+  "unpaired_conditions_not_in_this_audit": 2,
+  "category_counts": {
+    "Original unperturbed sanity": 4,
+    "Objects Layout": 16,
+    "Camera Viewpoints": 12,
+    "Robot Initial States": 12,
+    "Language Instructions": 12,
+    "Light Conditions": 12,
+    "Background Textures": 11,
+    "Sensor Noise": 11
+  },
+  "bindings_sha256": "5fa9c36e22aecc3634dbad05cd63511a27cf61adc169e566dd53c16e095761b9",
+  "binding_definition": "Sorted(group,source_index), ledger mode order; each list element is [result_path,result_sha256,initial_npz_path,initial_npz_sha256,infer_jsonl_path,sha256(json.dumps(first_infer_row,sort_keys=True).encode())]; SHA256 of json.dumps(bindings,sort_keys=True).encode().",
+  "physical_state_instruction_first_seed_and_step_zero_mismatches": [],
+  "saved_initial_vs_first_request_input_hash_checks": 270,
+  "saved_initial_vs_first_request_input_hash_mismatches": [],
+  "exact_initial_three_way_cases": 89,
+  "nonidentical_case": {
+    "group": "perturbed350",
+    "source_index": 210,
+    "category": "Light Conditions",
+    "field": "robot0_eye_in_hand_image",
+    "comparisons": [
+      "Full versus V14",
+      "Full versus matching Object draft"
+    ],
+    "shape": [
+      256,
+      256,
+      3
+    ],
+    "different_pixels": 3,
+    "different_channels": 4,
+    "total_channels": 196608,
+    "max_absolute_uint8_difference": 1,
+    "mean_absolute_uint8_difference": 0.000020345052083333332,
+    "previously_reported": true,
+    "other_initial_arrays_and_instruction_identical": true
+  },
+  "all_saved_fields_checked": [
+    "agentview_image",
+    "robot0_eye_in_hand_image",
+    "robot0_eef_pos",
+    "robot0_eef_quat",
+    "robot0_gripper_qpos",
+    "instruction"
+  ],
+  "gpu_calls": 0,
+  "simulation_calls": 0,
+  "decision": "Preserve all results and continue unchanged. No new initial-state/seed contamination found in this90-case prefix; the previously disclosed tiny image difference remains. No exclusion, rerun, source/runtime change or cross-GPU gate relaxation.",
+  "scope": "Only270 completed conditions in90 three-way cases from the bound272-condition snapshot. Subsequent closed-loop observations should diverge; this is not an action-error or whole585-completion claim."
+}

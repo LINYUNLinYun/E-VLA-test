@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "purpose": "Test whether a higher-fidelity D5 candidate improves parallel verification acceptance and episode-level latency at H8/H12",
+  "conditions": [
+    {
+      "name": "ParallelVerifyD5_H8_T89",
+      "skip": [],
+      "steps": 5,
+      "mode": "parallel_verify",
+      "horizon": 8,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "translation_threshold_m": 0.07345216287796202,
+      "rotation_threshold_rad": 0.027639864398936148,
+      "threshold_source": "results/experiment10_phase_draft_20261009/verify_gate/calibration.json",
+      "threshold_split": "validation_tasks_6_7_only",
+      "reference_condition": "Full18_D10"
+    },
+    {
+      "name": "ParallelVerifyD5_H12_T89",
+      "skip": [],
+      "steps": 5,
+      "mode": "parallel_verify",
+      "horizon": 12,
+      "checkpoint_sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891",
+      "task_ids": [8, 9],
+      "init_indices": [0, 1, 2, 3, 4],
+      "translation_threshold_m": 0.07345216287796202,
+      "rotation_threshold_rad": 0.027639864398936148,
+      "threshold_source": "results/experiment10_phase_draft_20261009/verify_gate/calibration.json",
+      "threshold_split": "validation_tasks_6_7_only",
+      "reference_condition": "Full18_D10"
+    }
+  ]
+}

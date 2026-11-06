@@ -1,0 +1,36 @@
+{
+  "status": "CPU_preparation_only_not_a_policy",
+  "time": 1793920268.1326106,
+  "CPU_tests_passed": 11,
+  "predecessor": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/prefix_kv_preparation_v1/proposal.json",
+    "sha256": "552a6f8ec88c2069efb267c479fa0a7ede09c0c48084b578021aea7fefd6b7e2"
+  },
+  "source_pins": {
+    "reports/ease_insights_20261103/prefix_kv_preparation_v2/packing.py": "ed1a20a98aee41fdc75ce856afcd5ed7dae812248720c69a903619cc123736bc",
+    "reports/ease_insights_20261103/prefix_kv_preparation_v2/test_packing.py": "616a475f8bf3f7eb2b15724aaf985e29c8510dae86eede876dc97fa4f242883c"
+  },
+  "mechanism": "Transactionally gather full dense-prefill prefix K/V,replace contiguous matching native scratch,retain original decoder RoPE,and restore original buffer ownership after success or errors.",
+  "patterns": [
+    "identity",
+    "center_columns",
+    "checkerboard"
+  ],
+  "cameras": 2,
+  "selected_visual_tokens_per_camera": 128,
+  "all_language_tokens_retained": true,
+  "new_GPU_contexts": 0,
+  "new_model_or_environment_started": false,
+  "scientific_manifest_created": false,
+  "quality_cases": 0,
+  "GPU_numerical_parity_or_packing_latency_measured": false,
+  "automatic_GPU_launch": false,
+  "required_before_use": [
+    "Identity raw/decoded parity for actual D2/D10 and known trajectories",
+    "Actual native scratch,indices,absolute RoPE,and restored ownership checks",
+    "Packing plus policy cost accounting;no speed claim from token counts",
+    "Separately frozen closed-loop design and fresh independent cases"
+  ],
+  "current_720_confirmation_changed": false,
+  "current_partial_success_values_accessed": false
+}

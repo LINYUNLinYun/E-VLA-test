@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "kind": "receipt_of_previously_completed_cpu_check",
+  "new_experiment": false,
+  "rerun_for_receipt": false,
+  "gpu_calls": 0,
+  "video_decode_calls": 0,
+  "implementation": "preparations/idea1_v3/analysis.py: VerificationDetails and summarize",
+  "input_attempt": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e3_parent_d2_init6_20261019T1515Z",
+  "parent_attempt": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_main_init6_20261019T1514Z",
+  "input_selection": {
+    "reader": "collect([input_attempt]); only valid completion/result and inference/telemetry records",
+    "init": 6,
+    "include": [
+      "experiment == E3",
+      "analysis_stage == E1 and condition == E1_D2_tau0.1_P2"
+    ],
+    "expected_episodes": 80
+  },
+  "executed_command": "python3 - <<'PY' (inline CPU check importing collect, summarize and using tempfile.TemporaryDirectory; no benchmark, rollout, GPU or video command)",
+  "temporary_csv_outputs_persisted": false,
+  "temporary_output_note": "The prior check generated the new CSV tables in TemporaryDirectory, checked them, and automatically removed that directory. This receipt records its already observed stdout and assertions; it does not claim persistent CSV artifacts or repeat the check.",
+  "observed_stdout": {
+    "real_episodes": 80,
+    "verified_requests": 2016,
+    "future_vectors": 20160,
+    "phase_step_branch_groups": 520,
+    "verify_checks": {
+      "verify_gripper": 2016,
+      "post_verify_gripper": 2016
+    },
+    "episode_equal_verified": true
+  },
+  "passed_assertions": [
+    "Exactly 80 selected valid episodes: E3 init6 first40 and its E1-D2 tau0.1 P2 parent init6 first40.",
+    "Every saved signed_error examined had shape (2,5,6).",
+    "Aggregate future_index coverage was exactly {1,2,3,4,5}; verify_branch coverage exactly {1,2}.",
+    "Sum of observation-weighted table observations == 2016*10 == 20160.",
+    "Sum of per-episode table observations == 20160.",
+    "Each branch contributed 2016*5 == 10080 future vectors.",
+    "Each future index contributed 2016*2 == 4032 vectors.",
+    "Every phase/step/branch group had 1..40 independent contributing episodes.",
+    "Summed saved boolean-check denominators matched the direct inference-journal counts: verify_gripper=2016 and post_verify_gripper=2016.",
+    "For every episode-equal group, the number of matching per-episode rows equaled independent_episodes.",
+    "For every episode-equal group, axis0_mean_signed, translation_rms, rotation_rms and distance_mean equaled the arithmetic mean of corresponding per-episode metrics (numpy.isclose atol=1e-12)."
+  ],
+  "interpretation": {
+    "error_units": "model normalized coordinates, not mm or real EEF error",
+    "e3_history_prefix_included": false,
+    "phase_anchor": "current replanning telemetry at inference.step",
+    "episode_equal_definition": "mean of within-episode signed means, RMS and distance means; episodes without observations in that group are not zero-filled",
+    "gripper_definition": "saved request-level boolean checks; counts above are denominators, not positive-event counts or per-step gripper disagreement"
+  },
+  "source_hash_at_original_check": null,
+  "source_hash_note": "No source digest was recorded during the original inline check; none is reconstructed or presented as contemporaneous here."
+}

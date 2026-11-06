@@ -1,0 +1,494 @@
+{
+  "conditions": [
+    {
+      "id": "pure_v12",
+      "model": "pi0",
+      "mode": "pure",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "v12_channel",
+      "model": "pi0",
+      "mode": "pure",
+      "compensation": "channel",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "v12_hadamard",
+      "model": "pi0",
+      "mode": "pure",
+      "compensation": "hadamard",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "v12_linear",
+      "model": "pi0",
+      "mode": "pure",
+      "compensation": "linear",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "periodic_v12",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "periodic_reuse",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "reuse",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "periodic_extrapolate",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "suite": "libero_spatial",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 0,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 2,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 3,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 4,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 5,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 6,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 7,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 8,
+      "init": 19
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_object",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_goal",
+      "task": 9,
+      "init": 19
+    },
+    {
+      "suite": "libero_10",
+      "task": 9,
+      "init": 19
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_4_v12_compensation/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "preparations/idea1_v3_4_v12_compensation/backend.py": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13",
+    "preparations/idea1_v3_4_v12_compensation/policy.py": "66509a29fdde09d5c781b5ed30cddbb13db1b95bfd6a99f54cb2e493e771f81a",
+    "preparations/idea1_v3_4_v12_compensation/evaluate.py": "76a9e683f0512e9724b5e65191b04c15c68a4175aa61e1aa1f9b1e54480ae74b",
+    "preparations/idea1_v3_4_v12_compensation/controller.py": "d539a3c3f49fe1d76ddc14ce4cdf4f7543592d9412a0b6283cd457d944d0dbb5",
+    "preparations/idea1_v3_4_v12_compensation/test_policy.py": "f27abaaf95d170d51985ec8c9405cfed8fa449e7e2fc5a14df3f6bba785c8d06",
+    "preparations/idea1_v3_4_v12_compensation/common.py": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c",
+    "preparations/idea1_v3_4_v12_compensation/calibrate.py": "c07f4d18ad2447ef5e9f0a2231f96e0a93ca223aa1cc5e5e12e4de58fd0193b3",
+    "preparations/idea1_v3_4_v12_compensation/server.py": "0f9cc853f5dd3033e063ce96194eba285075b857c8e5bb3a4194878d0c8c1fe0",
+    "preparations/idea1_v3_4_v12_compensation/timing.py": "a5c8987d28505381bf99636e9aeaa464c23446093cb4fb653709e94da6a337b4",
+    "preparations/idea1_v3_4_v12_compensation/test_static.py": "b4bd061df7d7c69e4863c500e7fcac0061a0b6557ba599f8944e6908281c2234",
+    "preparations/idea1_v3_4_v12_compensation/finish.py": "20c733b77ce29473e8bafb3eb800cd5bf7c17c4d136fdcca6fcba870af98871c",
+    "preparations/idea1_v3_4/rollout.py": "80eb11d83450f3bf2ea5522ac1d9c2d6f84f2fb3162ebce95243afe3c99fa2ef",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+    "preparations/idea1_v3_4_E2_E4_single/fit.py": "93b8fee057ec63965b660a8692d9c44a7180eb224d6ea1422ce3214738d90bf9",
+    "preparations/idea1_v3_4_E2_E4_single/torch_model.py": "8258fe7531c1d60f141e28182d8125f195b1ba77bfc1810d01f334376e251c09",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+  },
+  "plan_sha256": "520d02590785d7fa0cd6384ca07b19965dcf08c06209698c9a68cbc53b8b2ecb",
+  "selection_sha256": "c2a04118e5e7382d96754001f3d3b49d4391d17ff98e3b27821b05ab4b3b546e",
+  "gpus": [
+    0,
+    2,
+    3
+  ],
+  "time": 1793331441.736861,
+  "mask": [
+    2,
+    3,
+    5,
+    14,
+    16,
+    17
+  ],
+  "batch": 1,
+  "calibration_ids": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11,
+    16,
+    17,
+    18,
+    19,
+    24,
+    25,
+    26,
+    27,
+    32,
+    33,
+    34,
+    35,
+    40,
+    41,
+    42,
+    43,
+    48,
+    49,
+    50,
+    51,
+    56,
+    57,
+    58,
+    59,
+    64,
+    65,
+    66,
+    67,
+    72,
+    73,
+    74,
+    75,
+    80,
+    81,
+    82,
+    83,
+    88,
+    89,
+    90,
+    91,
+    96,
+    97,
+    98,
+    99,
+    104,
+    105,
+    106,
+    107,
+    112,
+    113,
+    114,
+    115,
+    120,
+    121,
+    122,
+    123,
+    128,
+    129,
+    130,
+    131,
+    136,
+    137,
+    138,
+    139,
+    144,
+    145,
+    146,
+    147,
+    152,
+    153,
+    154,
+    155
+  ],
+  "validation_ids": [
+    4,
+    5,
+    6,
+    7,
+    20,
+    21,
+    22,
+    23,
+    44,
+    45,
+    46,
+    47,
+    60,
+    61,
+    62,
+    63,
+    84,
+    85,
+    86,
+    87,
+    100,
+    101,
+    102,
+    103,
+    124,
+    125,
+    126,
+    127,
+    140,
+    141,
+    142,
+    143
+  ],
+  "manifest_hash": "5b0780ad6fcc22c6eb23955a5397cbf19106f47629a8c973b43b03cec711947e"
+}

@@ -1,0 +1,115 @@
+{
+  "status": "next_authorized_branch_preparation_not_running",
+  "time": 1793905063.9875913,
+  "resource_pool": "resource_pool_v4",
+  "resource_plan_sha256": "809ff617ed616390a81864c1e9a9429e53692f77e0f1a29e870cc5bc322d8dd7",
+  "GPU_leases_and_idle16GiB_keep": true,
+  "previous_camera_summary": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/camera_paths_v3/completed_summary.json",
+    "sha256": "6b30ee8242b09fbfcf1928dcc737f502cafea82e7a9ba25166da16d6ce7dee02"
+  },
+  "fixed_new_paths": [
+    {
+      "id": "dense_d2",
+      "D": 2,
+      "ae_skip": []
+    },
+    {
+      "id": "ae14_d3",
+      "D": 3,
+      "ae_skip": [
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "ae12_d4",
+      "D": 4,
+      "ae_skip": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "ae16_d3",
+      "D": 3,
+      "ae_skip": [
+        2,
+        8
+      ]
+    }
+  ],
+  "proposed_reference_controls": {
+    "full_d10": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+      "source_condition": "full_d10",
+      "manifest_file_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+      "successes": 77,
+      "n": 80
+    },
+    "ae16_d2": {
+      "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery",
+      "source_condition": "ae_16",
+      "manifest_file_sha256": "80ea5dfd59fc51f90aa045a63b7c47f9ca66475da612eecb194e709429586e02",
+      "successes": 74,
+      "n": 80
+    }
+  },
+  "reference_warning": "These controls have DIFFERENT origin roots/manifests/workers. module_tradeoff discovery has no new Full quality directory: its Full is itself an original reference. Preserve original identities, do not copy or relabel old quality cells.",
+  "calibration_plan": {
+    "known_controls": 8,
+    "conditions": [
+      "full_d10",
+      "ae16_d2"
+    ],
+    "suites": 4,
+    "tasks": [
+      0
+    ],
+    "inits": [
+      45
+    ],
+    "independent_quality_cases": 0,
+    "require": "Native unwrapped original adapter uniform Euler D2/D3/D4/D10 versus scoped AE18 raw/decoded parity at1e-5, actual visits/NFE and exact local node receipts; six configs cost profile6warm/12measured; all eight known Full/AE16 trajectories bitwise bridge both origin roots"
+  },
+  "discovery_plan": {
+    "new_cases": 320,
+    "preserved_control_cells": 160,
+    "analytical_cells": 480,
+    "inits": [
+      45,
+      46
+    ],
+    "tasks": "All40 common-suite tasks, no outcome filtering",
+    "all_new_before_selection": true
+  },
+  "confirmation_plan": {
+    "if_qualified_only": true,
+    "new_cases": 360,
+    "inits": [
+      47,
+      48,
+      49
+    ],
+    "inits_still_unused_after_camera": true,
+    "conditions": "Full and exactly two frozen eligible paths",
+    "primary": "ten-task signflip including ties, Holm2, integer-sum whole-task bootstrap, no reselection"
+  },
+  "implementation_notes": [
+    "Unfrozen dispatch.py/nodes.py and six CPU contracts already exist; no backend/common/server/worker/manifest yet.",
+    "Reuse original module_tradeoff generic Policy with explicit new validator; VLM masks empty but own Full timestamps still produce Full+twoFast schedule.",
+    "Override DenseBackend.sample with the prepared dispatcher. Existing old sample/Visits.receipt only acceptsD2/D10; do not call that receipt forD3/D4.",
+    "Both worker and cost audits MUST use the new local nodes.scheduled_nfe, which accepts exactD2/D3/D4/D10. Explicitly check node receipts in GPU gates too.",
+    "New D3/D4 use unchanged Pi0Adapter.sample uniform Euler arithmetic; call them original-adapter schedules, not an unmodified released nativeD4 kernel.",
+    "Keep H50/R5,FullD10,vision27,bothfresh cameras,VLM18,FullAE18,period2,limits220/280/300/520,settle10,seed7; no camera caching.",
+    "Use measured completed-policy costs: each ratio>=1.15,pair within10%,both usable>=.75 and>=Full-.15,opposite suite gaps>=.10,>=2 positive tasks and each task LOOpositive; freeze before new GPU outcomes.",
+    "resource_pool_v4 already allows denoise_depth_paths_v1 and later versions; source-pin new cohort then request schema ease-resource-pool-request-v4. No further resource handoff needed."
+  ],
+  "goal_status": "active; insight2 remains unproven; retain every valid failure and previous no_candidate"
+}

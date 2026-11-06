@@ -1,0 +1,203 @@
+{
+  "status": "proposal_only_not_launched_not_frozen",
+  "purpose": "A small fixed-mask search if the vision pair does not reproduce; no evidence currently establishes complementary VLM task preferences for this trio.",
+  "candidates": [
+    {
+      "id": "fixed_v12_jacobian",
+      "skip_layers_1based": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "keep_layers_1based": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        18
+      ],
+      "closed_loop_evidence_in_checked_sources": "baseline_200",
+      "rationale": "Historical usable anchor."
+    },
+    {
+      "id": "fixed_v12_action_mse",
+      "skip_layers_1based": [
+        2,
+        3,
+        5,
+        11,
+        16,
+        17
+      ],
+      "keep_layers_1based": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        18
+      ],
+      "closed_loop_evidence_in_checked_sources": "not_found",
+      "rationale": "One swap from the anchor: replace skipped L14 with L11."
+    },
+    {
+      "id": "fixed_v12_cosine",
+      "skip_layers_1based": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "keep_layers_1based": [
+        1,
+        4,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "closed_loop_evidence_in_checked_sources": "not_found",
+      "rationale": "Distinct early-layer allocation at the same six-layer skip budget."
+    }
+  ],
+  "matched_protocol_proposal": {
+    "model": "pi0",
+    "mode": "periodic",
+    "compensation": "extrapolate",
+    "period": 2,
+    "H": 50,
+    "R": 5,
+    "D": 2,
+    "refresh_D": 10
+  },
+  "schedule_interpretation": "One Full-D10 refresh followed by two draft-D2 requests; H50/R5; identical residual extrapolation for every candidate.",
+  "baseline_historical_successes": [
+    {
+      "condition": "periodic_extrapolate",
+      "suite": "all",
+      "n": "200",
+      "success": "169"
+    },
+    {
+      "condition": "periodic_extrapolate",
+      "suite": "libero_spatial",
+      "n": "50",
+      "success": "45"
+    },
+    {
+      "condition": "periodic_extrapolate",
+      "suite": "libero_object",
+      "n": "50",
+      "success": "47"
+    },
+    {
+      "condition": "periodic_extrapolate",
+      "suite": "libero_goal",
+      "n": "50",
+      "success": "42"
+    },
+    {
+      "condition": "periodic_extrapolate",
+      "suite": "libero_10",
+      "n": "50",
+      "success": "35"
+    }
+  ],
+  "baseline_historical_inits": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "baseline_is_mixed_full_and_draft": true,
+  "discovery_proposal": {
+    "inits": [
+      30
+    ],
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "conditions": "three fixed masks plus Full-D10",
+    "episodes": 160,
+    "requires_official_init_availability_check": true
+  },
+  "confirmation_proposal": "Freeze a pair and its category directions from discovery, then use unused init31-35; do not rename preferences using validation outcomes.",
+  "implementation_requirements": [
+    "Use a new isolated adapter. The historical policy uses imported MASK rather than config['skip']; changing the manifest alone does not change its path.",
+    "Historical residual capture is also restricted to imported MASK. The new adapter must capture the chosen mask's residuals from its own Full path and validate per-layer identities.",
+    "Keep mask, compensation, refresh schedule, AE D, H/R, noise, and initialization protocol fixed across the comparison; preserve the original implementation and results.",
+    "The two new masks have only calibration provenance in the checked selection file. Its closedloop_tested=false predates the later anchor-only evaluation and is not evidence of failure.",
+    "Report this as a fixed-mask periodic Full/draft system. It does not establish the standalone submodel success rate or adaptive-path benefit."
+  ],
+  "sources": [
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_v12_candidates/selection.json",
+      "sha256": "e521d0c9f3e9c1f298ba6b8157040e6a2b651a006dd66f5cae461c2b6ba62c96"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_v12_compensation_200/manifest.json",
+      "sha256": "e46c4c8ecb21313ec2d69fbf70e5479d70339ff91b34f74dfc9be0c9334da4ba"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_v12_compensation_200/summary.csv",
+      "sha256": "9663fe4bfe976801b9da3788d36b18a41bf0c22f0e1f204105d78fbce30752d9"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_v12_compensation/common.py",
+      "sha256": "1a54dba06c93ddf58850781c381270cbef7117b4c33603f669ff492d8fa7663c"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_v12_compensation/policy.py",
+      "sha256": "66509a29fdde09d5c781b5ed30cddbb13db1b95bfd6a99f54cb2e493e771f81a"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_v12_compensation/backend.py",
+      "sha256": "c030c1591b9c231f9125dfc7879c65a45adcce61f93ad829a6fa58a92ab4df13"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history/extract_vlm_fallback.py",
+      "sha256": "89fdb44298887620e2ddd461b9b93109e6801c24cb7ba3537ba8f6c549de1d61"
+    }
+  ],
+  "reproduce": "python3 /root/nfs/embodied/benchmark/preparations/ease_insights_20261103/history/extract_vlm_fallback.py"
+}

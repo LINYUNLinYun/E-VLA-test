@@ -1,0 +1,61 @@
+stage: calibration
+manifest: ../data/manifest.jsonl
+output_dir: ../../../results/pi05_hidden_probe/calibration
+cache_dir: ../../../results/pi05_hidden_probe/source_cache
+model:
+  config_name: pi05_libero
+  openpi_root: ../../../policies/openpi
+  checkpoint: ../../../shared/checkpoints/openpi/openpi-assets/checkpoints/pi05_libero
+seed: 42
+source_layers: [0, 3, 6, 9, 12, 15, 18]
+max_new_tokens: 8
+score_candidates: true
+length_normalize: false
+# Fix this before running calibration. Candidate likelihood may instead select q,
+# but must be reported as closed-set decoding (score_prediction).
+selection_prediction: prediction
+controls:
+  - {id: gray, kind: constant, value: 127}
+  - {id: black, kind: constant, value: 0}
+conditions: [real, nopatch, self, shuffle, random, direct, layer0]
+integrity: {atol: 0.00001, rtol: 0.00001}
+aliases: {}
+probes:
+  - id: visual_image
+    task_type: visual_attribute
+    source_selector: image:base_0_rgb
+    target_selector: image:base_0_rgb
+    target_layers: [3, 6, 9, 12]
+    prompt: null
+  - id: visual_text
+    task_type: visual_attribute
+    source_selector: text:last_task
+    target_selector: text:placeholder
+    target_layers: [3, 6, 9, 12]
+    prompt: "answer en What color is X?\n"
+  - id: spatial_image
+    task_type: spatial_relation
+    source_selector: image:base_0_rgb
+    target_selector: image:base_0_rgb
+    target_layers: [3, 6, 9, 12]
+    prompt: null
+  - id: spatial_text
+    task_type: spatial_relation
+    source_selector: text:object
+    target_selector: text:placeholder
+    target_layers: [3, 6, 9, 12]
+    prompt: "answer en Is X to the left or right of the gripper?\n"
+  - id: instruction_image
+    task_type: instruction_conditioned
+    source_selector: images
+    target_selector: images
+    target_layers: [3, 6, 9, 12]
+    prompt: "answer en Is the task target to the left or right of the gripper?\n"
+    direct_include_instruction: true
+  - id: instruction_text
+    task_type: instruction_conditioned
+    source_selector: text:object
+    target_selector: text:placeholder
+    target_layers: [3, 6, 9, 12]
+    prompt: "answer en Is X to the left or right of the gripper?\n"
+    direct_include_instruction: true

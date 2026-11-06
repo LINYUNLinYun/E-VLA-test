@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "pi0_prompt_cache_source_receipt",
+  "revision": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/throughput_revisions/pi0_prompt_cache_v1",
+  "revision_manifest_sha256": "395dc6e595a6c5f3d692a424a87d9ac4f09d59fb61b3a90c325d2cca7f239301",
+  "base_manifest_sha256": "edc507f247e5f51f5961599e471c624f3561efe508b2b6c41c1c4dcd43a94b59",
+  "runtime_sources": {
+    "pi0_prompt_cache.py": "4dbaaa596c104ebdea5a05ef464ebc4b839aca3635a757e3953dd9aedfde5bc4",
+    "pi0_prompt_cache_server.py": "f3add11fe9533848c265d8fdef788aa3cbb5122be1a1f1490d4df188112ae793",
+    "pi0_prompt_cache_client.py": "af273317e65bb79e6ae39fc339cb62d95f3f3f530fd2953b7265bcfb8c705d49",
+    "pi0_prompt_cache_revision.py": "75bb19a2e7dc9814149bfa75c9370812973e31964a382a87a238cd572d25e92b"
+  },
+  "audit_sources": {
+    "pi0_prompt_cache_audit_helpers.py": "c520ea0257a98e941eb7597ce03505ad4833546f34add7497153ddb2a8e607d5",
+    "throughput_provenance_audit_v2.py": "c7309cbb18c97c1037c3b73cc279eb212c2338815c9635f35d7b890047551dd8",
+    "final_provenance_analysis_v2.py": "ab54905b89e0728013cdd411518af1eba7c1e6654456366c231510662440f83d"
+  },
+  "preserved_base_auditor_sha256": "bf88f2441ad3a25560c2cd5a07c3ea864f116b515eebad121680c647ce67db27",
+  "preserved_base_final_wrapper_sha256": "5529e65eef30965ec3a1bf6022fdedb1c2b73ea041ddc2981ef34fefcf100c4c",
+  "original_prepare_source_sha256": "f80f17bbf75f7d0f54f131cf130b85904d2ccf989440c534a27b56b217ab5c36",
+  "tests": {
+    "test_pi0_prompt_cache.py": "3b1f259cba3e49dbb56fed0dafd7e91d4fd3d5bb615a119db01920435904b6ce",
+    "test_acceptance_pi0_prompt_cache.py": "7cdd5bd432a0e2e054526ff171b31860b98704edc9613e0d37924dd41756be22",
+    "test_pi0_prompt_cache_audit.py": "17a7ca1a28b51d0d6c66e477b935c50a9149f2b796a0eba88945493f3a43a89b",
+    "test_throughput_provenance_audit_v2.py": "ed842e17e84877a2de37f69bfa5a6fb64f85173a7fd5fda53d2badccdb9403d6"
+  },
+  "cpu_tests_passed": 21,
+  "legacy_partial_regression": {"sessions": 9, "throughput_entries": 828, "snapshot_recheck": "passed_by_independent_medium"},
+  "cache_capacity": 2,
+  "gate_prompt_lengths": [14, 16],
+  "memory_cap_mib": 23552,
+  "gate_logical_calls": 16,
+  "gate_request_clients": 1,
+  "gate_environments": 0,
+  "pilot_run_environments": 2,
+  "diagnostic_conservative_before": 215,
+  "diagnostic_conservative_after_gate": 231,
+  "prepared_only": true,
+  "gpu_calls_executed_by_preparer": 0,
+  "old_session_stop_written_by_preparer": false,
+  "independent_source_gate_pilot_acceptance_required": true,
+  "independent_final_C_acceptance_required": true,
+  "benchmark_scope": "unchanged independent single-request benchmark; gate order is not a timing comparison"
+}

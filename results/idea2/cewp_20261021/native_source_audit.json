@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "head": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "git_status": " M src/openpi/models/pi0.py\n M src/openpi/models/siglip.py\n?? examples/libero/.libero/\n?? src/openpi/models/vision_compression.py\n",
+  "backend": "cpu",
+  "native_imported_config": "Pi0Config(action_dim=32, action_horizon=10, max_token_len=200, dtype='bfloat16', paligemma_variant='gemma_2b', action_expert_variant='gemma_300m', pi05=True, discrete_state_input=False, pytorch_compile_mode='max-autotune')",
+  "vision_compression_config": {
+    "mode": "off",
+    "keep_tokens": 256
+  },
+  "compression_active": false,
+  "pi0_ast_equals_head": true,
+  "siglip_off_block_same_params_outputs_max_abs": 0.0,
+  "siglip_output_leaf_count": 5,
+  "siglip_off_jaxpr_text_equals_head": true,
+  "compression_function_forbidden_sentinel_jit_passed": true,
+  "source_sha256": {
+    "src/openpi/models/pi0.py": "befecfc44129cd07e0c5b4e102770f6a0c44f38937827469edbd08ec876c87bc",
+    "src/openpi/models/siglip.py": "033f80d9f60ddf19bc25526f6d4777ba73254ccddebe528550b3d26541f803dd",
+    "src/openpi/models/vision_compression.py": "2502a46f175b1bb904d2ffe3bfde9ee7e39813d5685b52c3d06628e667f08817",
+    "src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+    "src/openpi/training/config.py": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+    "src/openpi/policies/policy_config.py": "aaf42ab04a33b6c91d2447926211646c33ebd8ebfa427f026d7b6c4f7c45ec52"
+  },
+  "conclusion": "Fresh native runner process defaults to compression off and follows original full SigLIP block operations. Local pi0 change is comment-only. No skip-layer or compression activation is present in native import/call path.",
+  "scope": "CPU default-import and small full-256-token BF16 SigLIP block audit with identical parameters; not a new full-checkpoint GPU validation.",
+  "optional_hardening": "No worktree isolation is necessary for current default: original and off-mode JAXPR match exactly in the CPU block probe. If strict byte-identical model source is required, a detached temporary worktree at recorded HEAD with its src first on PYTHONPATH isolates baseline without changing the current tree.",
+  "implemented_hardening": "cewp_native_baseline.native_provenance checks mode=off and keep_tokens=256 before model creation, rejects non-off without mutation, records six imported source hashes and git HEAD/status in native_provenance.json and result.json."
+}

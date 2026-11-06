@@ -1,0 +1,71 @@
+{
+  "experiment": "PaliGemma real-image residuals -> same checkpoint constant-image readout",
+  "scope": "diagnostic; previous calibration color pairs only; no new independent-test claim",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/pi05_hidden_probe/paligemma-3b-mix-224",
+  "dtype": "float32",
+  "manifest": "/root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/counterfactual_data_v2/manifest.jsonl",
+  "manifest_sha256": "4acb044354368cc8d62296d812d187d11ada8723f4845eaf0f0d70883c8cce2b",
+  "samples": [
+    {
+      "sample_id": "goal8_init03_visual_attribute_0024",
+      "group_id": "group_2d8da3b36a12d7ff",
+      "observation_sha256": "ab3443ca786b30285c94fc3ab0171f55eca7c90a9a79bf5cc6cbe4e8101038f0"
+    },
+    {
+      "sample_id": "goal8_init03_visual_attribute_0025",
+      "group_id": "group_2d8da3b36a12d7ff",
+      "observation_sha256": "27c67003b75476caeab171295e152e106ea134100a63997e331b247f99af2421"
+    },
+    {
+      "sample_id": "goal8_init04_visual_attribute_0032",
+      "group_id": "group_da0251ecbb4615fc",
+      "observation_sha256": "db25ec12f511d361023daacc9a754e5eebc8be9d4c00645c9b91089eadbdc758"
+    },
+    {
+      "sample_id": "goal8_init04_visual_attribute_0033",
+      "group_id": "group_da0251ecbb4615fc",
+      "observation_sha256": "766dde4d22822621edc61737be6ae32ced16293f33bec42ce72f25f13762619e"
+    }
+  ],
+  "layers": [
+    3
+  ],
+  "layer_convention": "0=scaled input; k=after k full blocks, before final RMSNorm",
+  "source_contexts": {
+    "same_question": "real images + exact readout question",
+    "robot_instruction": "real images + cleaned original robot instruction + newline, matching audited pi05_libero text format"
+  },
+  "target_context": "constant images + exact readout question; fixed bidirectional prefix",
+  "selectors": [
+    "image:base_0_rgb",
+    "images"
+  ],
+  "controls": {
+    "black": 0,
+    "gray": 127
+  },
+  "conditions": [
+    "real",
+    "shuffle",
+    "random"
+  ],
+  "donor": "opposite-color member of the same counterfactual pair",
+  "random": "per-token norm-matched; deterministic by sample/context/selector/layer, shared across controls",
+  "max_new_tokens": 8,
+  "seed": 42,
+  "candidate_scoring": "exact one-token label log probabilities; same prefill as generation",
+  "primary_comparison": "robot_instruction / base camera / layer 3, matching previous color readout",
+  "diagnostic_comparisons": "same_question context; both active cameras; all predeclared layers",
+  "code_sha256": {
+    "/root/nfs/embodied/benchmark/experiments/pi05_self_readout/run.py": "b4208437c15ad4477e775c69154deafdc0832a85c08883dcefbb1d1421357c97",
+    "/root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/cached_target.py": "4c50ed1e87d53e84d6ef2e9c3f3079b70f4b2e969f92c6b5cea2788902903b80",
+    "/root/nfs/embodied/benchmark/experiments/pi05_hidden_probe/hf_backend.py": "792620ad61706caaedd7d1d00944bf382f02cbe989ebe53ede620fe6f3f51c0f",
+    "/root/nfs/embodied/benchmark/experiments/pi05_hidden_probe/backend.py": "dbacb05f26894608e2946d1a94de261e7b5cc597eee945a1b5940ae6fd51c72f",
+    "/root/nfs/embodied/benchmark/experiments/pi05_hidden_probe/common.py": "a70bb98c3fbfe79303c4b925ba1487e7f580378588aa5ccc9909c5eec7b1a248",
+    "/root/nfs/embodied/benchmark/experiments/pi05_hidden_probe/data.py": "da8de22aeedd66dd73f6447f2b27d98158fb0881f421c4ba5a7625c536854743",
+    "/root/nfs/embodied/benchmark/experiments/pi05_hidden_probe/metrics.py": "0e60be433b3e24b1e52ff02d940dd8b74d8c25b1c1bdfc4189d206c14f1b8c2f"
+  },
+  "expected_records": 108,
+  "previous_checkpoint_verification": "/root/nfs/embodied/benchmark/results/pi05_hidden_probe/run_20261105/target_weight_verification.json",
+  "identity": "32dbd782b1bacaf69521215d2504a7baac831d6cadb7836659079753afb8783c"
+}

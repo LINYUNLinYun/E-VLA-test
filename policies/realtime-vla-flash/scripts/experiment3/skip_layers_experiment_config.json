@@ -1,0 +1,49 @@
+{
+  "title": "π0 VLM backbone × Action Expert × denoising skip-layer ablation",
+  "task_suite_name": "libero_goal",
+  "task_id": 5,
+  "task_description": "push the plate to the front of the stove",
+  "num_trials_per_task": 50,
+  "seed": 7,
+  "global_noise_seed": 12345,
+  "condition_order_seed": 20260930,
+  "num_steps_wait": 10,
+  "replan_steps": 12,
+  "resize_size": 224,
+  "video_fps": 10,
+  "server_gpu": "0",
+  "client_gpu": "1",
+  "server_args": {
+    "config": "pi0_libero",
+    "base_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/base",
+    "draft_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/draft",
+    "backend": "triton",
+    "task_suite_name": "libero_goal",
+    "tokenizer_source": "local",
+    "max_exec_steps": 12,
+    "force_full_each_round": true
+  },
+  "client_args": {
+    "task_suite_name": "libero_goal",
+    "task": "5",
+    "num_trials_per_task": 50,
+    "num_steps_wait": 10,
+    "replan_steps": 12,
+    "resize_size": 224,
+    "seed": 7
+  },
+  "vlm_layer_patterns": [
+    "vlm_first3_last3",
+    "vlm_first5_last5",
+    "vlm_first6",
+    "vlm_last6",
+    "vlm_full18"
+  ],
+  "action_conditions": [
+    {"id": "A", "action_layer_pattern": "full18", "denoise_steps": 10},
+    {"id": "B", "action_layer_pattern": "first5", "denoise_steps": 10},
+    {"id": "C", "action_layer_pattern": "full18", "denoise_steps": 5},
+    {"id": "D", "action_layer_pattern": "first5", "denoise_steps": 5}
+  ],
+  "baseline": {"vlm_layer_pattern": "vlm_full18", "action_condition_id": "A"}
+}

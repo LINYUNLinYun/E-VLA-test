@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "purpose": "Static export of existing formal statistics; no inferential recomputation",
+  "source_reports": [
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation/analysis.json",
+      "sha256": "90620b0763b8336de92372e33db6b969766a2fff0925c76357a38900e72278a9"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_confirmation_supplementary_analysis/supplementary_analysis.json",
+      "sha256": "db307d3ed437156e26672da2a30885b0c9d0585d887aaa127679b6fdddb1637c"
+    }
+  ],
+  "manifest_hash": "0fa449c833c888abf93ea82e5ccd203350ea0528a60e9a0c8683addfdae3d6da",
+  "selection_hash": "4ffecb4be2ac83697f0943de51b3837f46d952577503d05fe0079620122246a5",
+  "original_primary_conclusion": "both_prespecified_directions_not_reproduced",
+  "supplementary_goal_long_conclusion": "both_prespecified_directions_not_reproduced",
+  "valid_episodes": 600,
+  "paired_initial_states": [
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "matplotlib_version": "3.10.9",
+  "confidence_intervals_recomputed": false,
+  "directions_reselected": false,
+  "error_bars_in_panel_a": false,
+  "panel_b_interval": "Previously reported paired task-cluster percentile 95% CI, 10 tasks with five initial states each",
+  "cost_aggregation": "Ratio of cumulative policy/RPC time to cumulative actual executed actions across all 200 cases per condition",
+  "source_field_mapping": {
+    "panel_a": "primary.condition_summaries[level=suite].success_rate and successes/n",
+    "panel_b": "supplementary.contrasts[].success_difference and inference.confidence_intervals.task_cluster",
+    "cost_table": "primary.condition_summaries[level=all].{policy.total_ms,rpc.total_ms,actions}"
+  },
+  "outputs": [
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/README_zh.md",
+      "sha256": "25d7d998b3ba5956d3840f2f94d494c91c2b3912712881a1a881712666ccc123"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/caption.txt",
+      "sha256": "5a365ac320c072e01da9a4daf2607cf266fbbeeaae859f4e737df888cb26ee31"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/condition_quality_and_cost.csv",
+      "sha256": "2ff69d5fe120682a05f0cee5f058a825773848fe41b694534b82a04b79e3fe14"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/generate_figures.py",
+      "sha256": "7607e180e2c8a4b9acb8bbff4c59d5f791415f71f3d8a32dae40d8893c6735d6"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/registered_contrasts.csv",
+      "sha256": "dc09fc5517789e7c92f591c5dc9f7c442372ee52e34e4453e20b7990490153fc"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/suite_success.csv",
+      "sha256": "507c01a6c9e1c972fc20502321729384c204f5840c84121086e499c4f3ce5fe8"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/vlm_independent_confirmation.pdf",
+      "sha256": "838d7d7b6ffb49f6d019f25b92702815eaeb1af617971fabae9952e57087f7fe"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/vlm_independent_confirmation.png",
+      "sha256": "753c0ff19bc7f65031ec0d42fe1e69f9313f72c8aa676cb791d89cc5f4a480af"
+    },
+    {
+      "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_confirmation_figures/vlm_independent_confirmation.svg",
+      "sha256": "ff9a38c5bf9061088f775b95b15b555ac5aa116d6972a72d913d9257b54bef63"
+    }
+  ]
+}

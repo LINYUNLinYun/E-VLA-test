@@ -1,0 +1,28 @@
+{
+  "approved": true,
+  "revoked": false,
+  "issued_by": "root",
+  "issued_at_utc": "2026-10-22 15:55:05 UTC",
+  "priority": "plus_half585_only",
+  "plan_hash": "cc04d900d84509921cfed450d96a0c44b427259b10c4eaa64a77d5e53bac71a9",
+  "parent_manifest_hash": "a4168640cd0a455cd50489ee10bcc3295511f9561ad8710b334817f16ecb9f20",
+  "half_manifest_hash": "bd68b9a703729efb8ad649eab0a7f155fcffa98f9ecd44fac2bd359c347d1b6c",
+  "trigger_unix": 1792690200,
+  "old_deadline_unix": 1792692000,
+  "new_deadline_unix": 1792713600,
+  "child_drain_timeout_s": 1500,
+  "shutdown_safety_margin_s": 180,
+  "basis": "Complete the same user-requested Plus half585 matrix; actual >10-minute noise episodes exceed the old180-second drain bound. This only versions operational continuation timing.",
+  "acceptance": "Root reviewed full v2 and base implementations and all tests; independently passed25CPU tests, verified36 pinned sources/receipts and exact original model/worker identities.",
+  "launch_precondition": "Old guard3437927 must have exited after revocation; no dual active guard. Do not stop any current model, worker or renderer before the frozen trigger.",
+  "boundaries": [
+    "Only the exact original parent may stop dispatching at trigger; actual renderer child must finish naturally within the approved cap and old-deadline margin. Never signal a renderer child.",
+    "If drain exceeds its cap or priority/identity changes, CONT only the exact original parent and fail safe; do not force completion or count technical failures as policy zero.",
+    "Audit585 before trigger actions and after natural drain. If complete after drain, leave original model untouched; no unnecessary reload.",
+    "Otherwise close only verified owned old model; archive recoverably only dead exact-owner incomplete claims, never delete results or rerun completed conditions.",
+    "Resume only same physicalGPU3 UUID GPU-555cde36-5e41-bc44-0c69-ea47358fd703 after truly idle checks and finalpreCUDA guard. Foreign owner means wait>=30s, never reclaim or switchcard.",
+    "Weights/modes/H50/R5/D10/observations/language/seeds/actions/scientific identities unchanged; retain native6route startup gate. No new quality scope, profiling, mirrors, downloads, CALVIN/B, or relaxed crossGPU gate.",
+    "Before trigger: heavy checks every5min, lightweight approval check<=60s, noGPU scan or prediction. Newdeadline is execution scope, not a completion guarantee.",
+    "Root must revoke this approval or create its.cancel marker if user priority changes; background guard cannot read chat."
+  ]
+}

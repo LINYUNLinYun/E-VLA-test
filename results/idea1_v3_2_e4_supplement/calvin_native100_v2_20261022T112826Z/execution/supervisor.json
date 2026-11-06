@@ -1,0 +1,23 @@
+{
+  "status": "technical_failure",
+  "supervisor_pid": 3376377,
+  "started_unix": 1792668753.232739,
+  "deadline_unix": 1792692000.0,
+  "manifest_hash": "feafefc7474f5eb30d9a866f47d91f72a5b9a5c5d67fd990e1c79b3822e5a148",
+  "protocol": "results/idea1_v3_2_e4_supplement/calvin_native100_v2_20261022T112826Z/manifest.json",
+  "source_sha256": {
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch.py": "81c4741b15e9bb3c4c0792e2de7631d3ba0e4d48e8fa3d708277d3cff733fd0d"
+  },
+  "candidate_indices": [
+    0,
+    1,
+    2
+  ],
+  "never_scan_or_use_gpu3": true,
+  "required_stable_idle_seconds": 30,
+  "sample_interval_seconds": 30,
+  "allocations": [],
+  "shards": [],
+  "error": "Traceback (most recent call last):\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch.py\", line 99, in supervise\n    time.sleep(min(30,max(0,args.deadline_unix-time.time())))\n  File \"/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_native_watch.py\", line 80, in expired\n    def expired(signum,frame):raise TimeoutError(\"SUPERVISOR_DEADLINE_OR_TERMINATION\")\nTimeoutError: SUPERVISOR_DEADLINE_OR_TERMINATION\n",
+  "completed_unix": 1792669207.8617141
+}

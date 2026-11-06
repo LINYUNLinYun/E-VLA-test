@@ -1,0 +1,1846 @@
+{
+  "schema_version": 1,
+  "posthoc": true,
+  "quality_rollouts_added": 0,
+  "included_in_original_40_case_evaluation": false,
+  "source_identity": {
+    "matrix_manifest_hash": "cf9ac44ea0fede5f6c81249467e6f28ff52d1d28b2d068e15d29d097643cde2d",
+    "sources": {
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/manifest.json": "e311b73e5395c4432ea5aacc9df4ce2488e55cfb16a5837577907cc0ca4299b1",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/manifest.json": "93b64833b8421c19788c1e4d4186638a105a61fa055b76a3f3de3d03b2d02653",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/summary.json": "270fea9df8a6c90357097a74dbb77e118a8331874b4f2deef494a68254803862",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/requests.jsonl": "7c3d1c3cc580750e51aba8a016b3cdacd99e1ebf4628f8cab013b9b775f2da15",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task01_init19.json": "7f2f64345893e95a07cf4fcd823b4890482491ad2f0356687f650e27fe89eda0",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/identity.json": "d3b87c38444934457060226e5f5e43c9185ec5d2a2e0a4121968274b31177ef8",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/infer.jsonl": "5897304b7f0eecdd937d2d3dc0e6070c7325afa581e9a37846f19ad95150e9e3",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/arrays.npz": "56380d8c761aaa0c9edf8943e33b1229069082dcc68985dd97aafd59d8270d20",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task01_init19.npz": "a0df20618cc6f19fd6fee350659b236b4dbf127b9020411a407e94030810b4fe",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0012.npz": "38c4206cdde689b9a069b523a6e2497fce45e0dd9b52874a9313c0bd9783af38",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0013.npz": "a0bf50e5eaa21f17da4ff6cfd462c4b27e945799c6acd94d45f28cf05a3cafd5",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0014.npz": "480ab0d59160646ac47a0df4dc02ca77b4bd973ff493f0e31f99806426127180",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task01_init19.json": "56c64fe2ef5f1942ca0844ab4cf63e43e91d1ae8625a4e1d753d573a1c3c7bb1",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/identity.json": "d5744d109cc8e9909f4d6872c2187d3dd3fe45162a7575c8f527f5a4ae93db9f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/infer.jsonl": "eabb7ac667590bd130456c17c5fc91fbf1032ae6a2718b8e52c1c1d8d0ffeded",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/arrays.npz": "b3e9d4b96b350568071685391dbcffa6b3fbb270eeaf44df94bba3ee648078ab",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task01_init19.npz": "8769ff6c5d8a774556b61c7a063d6e2cb98e6f04dcf0360a4fe51eeffff5b570",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0012.npz": "4b9180712bbeeac44601fce46bc70b2a94908fabcebcd7495b1f67479e687b60",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0013.npz": "b9190ae4b0f83e24cc12ea8101948ce9fbca7716b96c2ec1649ed2ffe7ecab47",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0014.npz": "24c507231ad235c4945838cd6a7ab86ff84fcadfe564c28734d554b690bf4fa3",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task01_init19.json": "103d864783adc279fb25a75894571dcb77012b583a511c815ad655dd10d04596",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/identity.json": "67075fe2de3cf6b97bcbcc9608aede2d1eda06e0e35a55b3e50e83e0afa99856",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/infer.jsonl": "8bf6bcbf7eb3848eaf1bc3ed1d271597d0cb58fce72a3bf5aee98b48a1f86b48",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/arrays.npz": "e4d72fbc6d0c8aa052c3dc467a530dcbea01cb56d96928e53931f17bc1c21cc5",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task01_init19.npz": "8eb5e423675b6a944da1c096f6723fb6cd80fd73027fc735d9b345d53ae8a29c",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0012.npz": "4da962b55a13490503ac098e533e20d11d8ab8b3824183015803140f9715d4a0",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0013.npz": "f508cf48e1abcf86c8d315b6a0b1b9a51e7af14426c0e44598210c05a03eab12",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0014.npz": "5b43cba5b89ec2feca75294c11f1b78e308ae271edeed1e3d7dcc8e875827e21",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task01_init19.json": "2e974d1562a6590fc64f76db14fbd30f5c0eb6799b81c34200f5e1209b0fa2ed",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/identity.json": "f6d36d1d53b274fb756b13093689b9dd6abca2560c45e867fa271770e8c9a85b",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/infer.jsonl": "fa475a67230228ebf21126e9cc5af685a79b35dd18b8b767c2f4426f63599d95",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/arrays.npz": "f5bddc7415925027056aa18b2eab8b9e155a0d585593cb37695eff976e68820b",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task01_init19.npz": "b7fde389532cb76d3e669251eecb7b020dc1409805222551434fcbbb846b8a4a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0012.npz": "6605ca427e9042930b27d5fe0b9728130b47bc31ac70dc2eeab7698ce9f62a2d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0013.npz": "a6786d1832c907ca0344572f0a4aa04d6e00f6ce6a4118f8a0f605890b3837fb",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0014.npz": "fe44f0b841584f5a5f7d91a1bf42fc9f5b046e23cd5ee4797bd61e566b818c63",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task07_init19.json": "3f4822c84a54fa77f90474720c679ea2a34283ce27100e4a90a87b2e13f258b0",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/identity.json": "26a7a371bd2157fc1b5b0aaf602db05cca69217d5594e1de1cdbceca67c17267",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/infer.jsonl": "feb47b0dc12603f4e7eebb39127305a4edfd9a5cc944c9075b6d030b753cc7ee",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/arrays.npz": "09eb09c459a67ebedd533d480ec6c7d7d56996d186584dcee9d468bdd78a0eb7",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task07_init19.npz": "4d6cece321c6d42e5cd1556d47234398a2cd58ee52fc9522df9511fd2f907523",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0012.npz": "6c8bea78af849d7adaa34bf493568353f094d8d33e601221783723428d903696",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0013.npz": "a8c960f0610fdfcfc24db07bbcd43c86975a2820f438dd777b389e19ef0caf0d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0014.npz": "ee33e70ede834c3ca8722d31a710c867a30e5613f9abddc25f1ae23816a261d0",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task07_init19.json": "45118dfeb019a21605ca7825109ae31df471f9f61d617a8fbdd84543dff73fc3",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/identity.json": "4df1f84c7044f9046f62262881328014387396d727e271ef016641516a2bfb87",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/infer.jsonl": "f10a8325b335b88d35a187b14ecf196c21a7a0acc67d219f88460bb29701191a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/arrays.npz": "a17848bb8701353129c81a2f4fd391b190cfbbc17cc95bda64e30455e6161820",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task07_init19.npz": "496aea92dce5d7b41ba753f2fdac122afdd9446f6fb0f9ca4c5d2175f85e60a3",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0012.npz": "1e0b855fb87c617b2e5ac3e04e47e5fa5df48ea966c3b82398f6433d9b221785",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0013.npz": "aa5f18f335a98eb4f094919877d198ef05e52f332e2fe1e0e54b880ab187a08f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0014.npz": "63d6b35be2621aa3f24618f39157d68a7dd63d16c048a0d3b0b0d27139947e35",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task07_init19.json": "d4021b979ba2f96d3f35a7b9fc4a62cee42335d0c9f6fb7ac93db811caf9ae6c",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/identity.json": "338bdd137f85d98010a09e7d293cf0b1eaf6b77103203667a38e5b0e83600ae5",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/infer.jsonl": "815323629a611b4e6664ac97fe809bd03daaa08870774e96f631d88e9b3a4d54",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/arrays.npz": "8c4c3cab60e6b7483b34cd1cfbe03de471245f4a29dfe3d97919558e77cb2305",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task07_init19.npz": "2a5163f189c6d1ed20e1ae5cc3296ccbff35329ccc2405ded8b02f9f3530dd94",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0012.npz": "e6850a8c01080324128727722430670cf5549711137289da811d3025c451f84d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0013.npz": "5751e65d115c562ec87b2a2f9b17d1fd19e00619a4e6477226557290a54466fe",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0014.npz": "e1469d5c3c70f3ce7bfed2febadc1b34999a94a6b653c72b22454ec49f47ecbf",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task07_init19.json": "4c3919a9a898031694d4e7d50b81b6db2b213893c2dd7bf67ba090ddc4a5be5d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/identity.json": "73a8371adf396b41ca697c8071216c2dc6ab70c813d4f6495ae966bb74cdfe83",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/infer.jsonl": "45270e212fd8e2f146c3ac26f3af8c6dc4db6745fcb45c60c61dcc3b1257b8d7",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/arrays.npz": "565dd194ed70faf68c284a5f773071d01e7f8ce445e6413a4cdcdbb994ca3b1f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task07_init19.npz": "874b120dbe9b82a8fdc5cdb0d9dbec82d5732e667ba3940d1eaef2e1d2d68040",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0012.npz": "134c339e51540060ba06071fb25418e6b3d0a5401413795c353d4f9a9963532d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0013.npz": "715f4b1f0a91d5863c6940a260bf501dffec728eef150e6abbac9ba18a97b275",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0014.npz": "2ff510fa10d3c9d371e14f9e42f81c95398a62023324c85833af4f0f38bedd15",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task01_init19.json": "d2177603956c943847cd6d2520f2664f1034cb2c751a6a8e360adf5d9f702d93",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/identity.json": "7c85f08e2e03402dff10f103a2910a8ad07ff6670ce67674bc2af15ac7c0a166",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/infer.jsonl": "3a964572e8784d7b70be6e875bc468b813cb0b2790707c4e5e3dec6baba7f2c0",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/arrays.npz": "97a2c892a9d4ae5cc7b60a90440c7e352dd59f0ad3d3cabb0f985921eb970aa4",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task01_init19.npz": "fa706aa8f4a460212a617c40ef858b735d8054a5ee8a75b8ae128401e097876d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0012.npz": "209fb6249a005a43f5485231e8518f7eca8cc043e383543b2c4b7f60a37def65",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0013.npz": "10ea657d6b3476c1377e8bd817ff414588c9c26b44f8166888ad4b13e2d88423",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0014.npz": "acbfb696b41a8c86aaacbc7f0165e5049d4714a24acce1558cf1add33bc9cec5",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task01_init19.json": "22472d38607bd5c97094ac5d3995bc99fa8c347f25d123b236fcfed13d5c8c18",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/identity.json": "d95c18457fe2abc727fd82d588f3478a6ded8d54b79c5868a41b14f743357e74",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/infer.jsonl": "1b34bd69f2fd15a7a1986475fa0f3d12c8e8d966efd53e5485f73502a09a698a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/arrays.npz": "2a444a8f70e2b225273a37d40bc7165c9086360f62899a7f1dbb9342f921dc2c",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task01_init19.npz": "ebf283581963b743cab7b0160e7697db94404d5fd77b071ee65601b6a8fbeca7",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0012.npz": "aa79067d395bac299955c90aa96f6d33cd91365147f695b109fb3d64782b186f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0013.npz": "48e3690c6f83a1a94bd6f8831b5b79cd5522a444b9dcf8f75e3a10f0c5a2dc2a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0014.npz": "9922c0b7521538a3519c22f8dcaea88d40239fc7fae5f00ef0ff957dead81bef",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task01_init19.json": "6cd74e58fdffc33b2cf5efeb815314430d69ab95c42fa68ba0f9d2a012ae6877",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/identity.json": "03a24d0933bb7828b3b3c6c2a89b2d6b40d9cbc195659babaeae86bc6378fe86",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/infer.jsonl": "6afaec697a45f3d948f336c142bee4c97e5caab175d7a0427155a2b8ed8f673a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/arrays.npz": "bf47682ea792a18d926188212841f7a26ca99a3e42bf47e7a900a6bc2065d9d2",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task01_init19.npz": "d08c3a3855533730972702614df9350b0208c90b5ecb25fa0801de172ff0a2bf",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0012.npz": "b071053cbc56d7773b5a15e91496fe6bf5a681f2b13b01efe071a159cdc6c827",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0013.npz": "5b74839c26fede590aa3fd6b673bfc3a82de56f6e20b7aae89d8dfe69710b88e",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0014.npz": "47357170ee5afdf00bdd273cc85853334a2828034400d85a43cd8c27d2e5442e",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task01_init19.json": "0c70c3934a69092b8fdc164dcdd766c8e90fe4b5175009ea7d81f70c7efb47e1",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/identity.json": "1d66d08aaf65fe2517363e591032241e70a92484148837f82d50a0b171450d6e",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/infer.jsonl": "463091a98f54951d94252a443246b74020ec5a9a6e951b8fc8583adfb3aef97b",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/arrays.npz": "d2feb28c05ebda1e5de3b0f70cfc1fb177fdb9f2708f050716f148ccf980032f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task01_init19.npz": "976976bb781da49a15b1b7cd954ea9f3a3a325f072410f51016326de41e7a9d7",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0012.npz": "a5bd75d09e2647de757247671c2f4285b92b78a6805e5d8e4193549892c0ff2f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0013.npz": "4a8d8f7f8195f172ba03c7d758b24318ca3161054fa59666d6f32a5b1f030239",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0014.npz": "9ef63677056f53048e68f81af40b338ac1b56f3c34a6a124c6c3746e00ea170d",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task07_init19.json": "a0643d2c58612a666565e38fc5d9cca21307aa0b63f207e4a1b12d716a1ea4dd",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/identity.json": "72f7ec2a3b92a7c3102be503890ee09df4143c7a8f2eac7eab9348846a157bbb",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/infer.jsonl": "dde39392b89be5a64bf654dc85bc94128ce81edc9b22df4fccf9971486cb0c07",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/arrays.npz": "daff77b28a641dc482d86080817a6afc2a82dda008a6931e6b2b9a980d5254c6",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task07_init19.npz": "da2988089b1bfd3925eacb5b526dc9d55f6c51715bb503f878a856332e20e18f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0012.npz": "d9e59b52dc687027648911df8b0f396002a7c0f4c89427755cf7ae4a701388db",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0013.npz": "e8ad33457e5a45f40d9a8ea2e794dd5991ef2f0093593f90e764eafee8cbe7d9",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0014.npz": "9065f07f98c4157548ae601afedd394a62e1e27c08f214f4d8539eded23820af",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task07_init19.json": "0e1f76c7618869ac06288c593bfafba9c1ad230a246ad178096a34b52fa53d98",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/identity.json": "f48db499afa257d7266a4ef8dbd38967e725e56dd34ac683bb37aa2d82c366c3",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/infer.jsonl": "eebc5415e042d617a83f5288bfa5629821ae511f45790ff6c0c6c317452c572a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/arrays.npz": "09cbc79720e4b4f1edacee3a4e1da8e5521c8dee4438723788d2454a7ca388dd",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task07_init19.npz": "ca3f6fff754156e6d0c3aabb268f98232bd2457a66d6f4c3e8f178e82a9e22f5",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0012.npz": "7c4436f8bca75c3af56fd11c93ed8c079f54b9466463edf3171fe0fd9787b563",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0013.npz": "0ab87d64117ff6ae5d9dcd58eeb5044b8ba140875039da4865e490ed019e2293",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0014.npz": "2c58a02da5696403d2ecadb920c263526d56630b50634a180cf9d968bd38c72f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task07_init19.json": "e60e92ccd70b7a6714ee761118e7ce78c65d3457fafc9ce261b1b8b699552c9c",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/identity.json": "e12a99290438d490c8520d8516e9c88dbe4d6dcdec14b3bda0454ae032872004",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/infer.jsonl": "80c2e1a52a86146dfd38e43e0ebb966cd735d24c5a6eaa57d4251f8d8c75f086",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/arrays.npz": "1c43f4e1afcf7143650dea1cd25c6c40bf53f11916171d01af3053a3357a161f",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task07_init19.npz": "6e0c6d4f1f0fb744a5ad527874966a3366bb5f24741da06399b79535b1086559",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0012.npz": "f702ebb479a221dbb8b5e3859b4ca965e0825cc99e8616b55168df1c0dcbc193",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0013.npz": "35d43169e13bd276b83b6895da8818a2bdab63d17f5ed616b04cc4b5691aa873",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0014.npz": "448ac75627fb0667f2468184a95f86a56c01a284253788fb117b6640da869562",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task07_init19.json": "06001dc6128d83ca215f243bc93c08c202a4f3774cc5003d492b25405deea755",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/identity.json": "3fe7d5060a74a955a4452cd1dec0481f0ca1db9d0163bba1f6ed4aedd5d1c4a7",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/complete.json": "185dc4ba4392b7df8765c1130c9d192266bd3b7b8efbf8ec842c0e19ca05156a",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/infer.jsonl": "36c3e15046e10c5d500903738098b154372454286b0572f0b5b60a60149756ab",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/arrays.npz": "b607c62725e2d6a753868c2f8f2194e9312bde3a8eb88ceb322364fb3422baf2",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task07_init19.npz": "4226e6fddb30f8aab98956b4ab68e2a4b6dd70a135023b70d73bf008c3072086",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0012.npz": "1789d5e98ba39b77b3f1dcc0de5d93e64db2ba6b63355abacc2ef8bac8b88ecc",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0013.npz": "ab5d8e51c4a71a5a2c27b23c28bc107ababb949c00aa4af2f20932de99f03ead",
+      "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0014.npz": "72171dfbd3628a6246a7206cf87716118e8e096bbeea17c423af1c9437df19ff",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_E2_module_skip/backend.py": "d9a68f360f97f6f3f6f0a04e5cfa43729808abc59e83b5400b0cc653a2c7a11c",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3_4_E2_module_skip/offline.py": "265ced7fa0d43d6dc16a4c04b7686e357f0d42230dba55844c705a482acb62ef",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v3/safe_qk.py": "a3836af62e6036cb929977c8251b048190bb9e583bc150865af2f2c029084cd7",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+      "/root/nfs/embodied/benchmark/preparations/idea1_v2_2/schedules.py": "7831be52f4c493d6ca541b831018a04c216ad063afec91783346ba8847fb1db6",
+      "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+      "/root/nfs/embodied/benchmark/reports/idea1_v3_4_E2_module_skip_analysis/late_fast_probe.py": "33f4d28f5699ebc483cac04369b5ca05c55054a207c9bee1e5c3d44e5d286eaa"
+    },
+    "episodes": [
+      {
+        "key": "B4_libero_spatial_task01_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2210128845,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0012.npz",
+            "input_file_sha256": "38c4206cdde689b9a069b523a6e2497fce45e0dd9b52874a9313c0bd9783af38",
+            "input_hash": "d520e701d57c1c0e8f8d3f4f68c998cbd0bf801c0194d29f8f6e9af2269b81a5",
+            "skip_ffn": [
+              1,
+              4,
+              11,
+              13,
+              16
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3634268970,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0013.npz",
+            "input_file_sha256": "a0bf50e5eaa21f17da4ff6cfd462c4b27e945799c6acd94d45f28cf05a3cafd5",
+            "input_hash": "c8f41cfdefeb8778152109e831e41105abccfbd2f6b402be645bbde74e26e8db",
+            "skip_ffn": [
+              1,
+              4,
+              11,
+              13,
+              16
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 836200616,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task01/init19/input_0014.npz",
+            "input_file_sha256": "480ab0d59160646ac47a0df4dc02ca77b4bd973ff493f0e31f99806426127180",
+            "input_hash": "24f9a8f3414b0a0ff9bb20034f5f3d30fc360d4643a844a10777291d7c6b1903",
+            "skip_ffn": [
+              1,
+              4,
+              11,
+              13,
+              16
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_object_task01_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3959484179,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0012.npz",
+            "input_file_sha256": "4b9180712bbeeac44601fce46bc70b2a94908fabcebcd7495b1f67479e687b60",
+            "input_hash": "00583993413d641cd54691dfa59d2472f76af14e8b8cbe08c46cd784ae7a9872",
+            "skip_ffn": [
+              3,
+              8,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 1850830894,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0013.npz",
+            "input_file_sha256": "b9190ae4b0f83e24cc12ea8101948ce9fbca7716b96c2ec1649ed2ffe7ecab47",
+            "input_hash": "db99af4f95b0b2058388ba039b082782e674a1b274b7b6c2f24fa0c4c53b4bc7",
+            "skip_ffn": [
+              3,
+              8,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1694737868,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task01/init19/input_0014.npz",
+            "input_file_sha256": "24c507231ad235c4945838cd6a7ab86ff84fcadfe564c28734d554b690bf4fa3",
+            "input_hash": "c76647a5275b0dbfe3653f98b627b52a6d8c501ddf7a602507e32d79deb5e3bf",
+            "skip_ffn": [
+              3,
+              8,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_goal_task01_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_goal",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 1200215665,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0012.npz",
+            "input_file_sha256": "4da962b55a13490503ac098e533e20d11d8ab8b3824183015803140f9715d4a0",
+            "input_hash": "bddbfb5b0f017fd31cbcf8e79e96d3906b14e477d334ed7b617d2302e21484be",
+            "skip_ffn": [
+              2,
+              4,
+              11,
+              13,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 269573099,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0013.npz",
+            "input_file_sha256": "f508cf48e1abcf86c8d315b6a0b1b9a51e7af14426c0e44598210c05a03eab12",
+            "input_hash": "0710813aed3daeb85dab2f0dbf9fdf48c11b279943e4f7411de49b24f6a01453",
+            "skip_ffn": [
+              2,
+              4,
+              11,
+              13,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 812476948,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task01/init19/input_0014.npz",
+            "input_file_sha256": "5b43cba5b89ec2feca75294c11f1b78e308ae271edeed1e3d7dcc8e875827e21",
+            "input_hash": "785b8bff6a870dff7ce362ad4b933ed3eb3a5ba4601078e56acc7dc2146fdb3d",
+            "skip_ffn": [
+              2,
+              4,
+              11,
+              13,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_10_task01_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2121516956,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0012.npz",
+            "input_file_sha256": "6605ca427e9042930b27d5fe0b9728130b47bc31ac70dc2eeab7698ce9f62a2d",
+            "input_hash": "b4ef1236083786ec43c9879f3d7252041d2e6812ada5ea9b5c57375d21ca8711",
+            "skip_ffn": [
+              2,
+              4,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 2347620407,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0013.npz",
+            "input_file_sha256": "a6786d1832c907ca0344572f0a4aa04d6e00f6ce6a4118f8a0f605890b3837fb",
+            "input_hash": "bf1c5fdd36c5ff73ee14bc59f40697f247b46990ecce49b1fc0c061a447f76a9",
+            "skip_ffn": [
+              2,
+              4,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1791938057,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task01/init19/input_0014.npz",
+            "input_file_sha256": "fe44f0b841584f5a5f7d91a1bf42fc9f5b046e23cd5ee4797bd61e566b818c63",
+            "input_hash": "2724a04cc9209bef8eb27c5f286cb38eb9cb63df6152d20b14d00fa914ba8734",
+            "skip_ffn": [
+              2,
+              4,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_spatial_task07_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_spatial_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3184691605,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0012.npz",
+            "input_file_sha256": "6c8bea78af849d7adaa34bf493568353f094d8d33e601221783723428d903696",
+            "input_hash": "c780d8154370a6b364c0364e06899be44835dddb8bbc106d0777798665a7e026",
+            "skip_ffn": [
+              2,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 4003897865,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0013.npz",
+            "input_file_sha256": "a8c960f0610fdfcfc24db07bbcd43c86975a2820f438dd777b389e19ef0caf0d",
+            "input_hash": "347af7dd13c1672397e9848548d7dbe09f64c5e655a19a4a03f45eb5e32bfa77",
+            "skip_ffn": [
+              2,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 2413656367,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_spatial/task07/init19/input_0014.npz",
+            "input_file_sha256": "ee33e70ede834c3ca8722d31a710c867a30e5613f9abddc25f1ae23816a261d0",
+            "input_hash": "3136f28270a125f809dc1392c7ec23823f4a7db3dec38087a29846c332e64656",
+            "skip_ffn": [
+              2,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_object_task07_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_object_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3615638729,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0012.npz",
+            "input_file_sha256": "1e0b855fb87c617b2e5ac3e04e47e5fa5df48ea966c3b82398f6433d9b221785",
+            "input_hash": "ad4b81e8770e4a589f332c82916bd93a4018fde24f3ea6ef72285620588d43ff",
+            "skip_ffn": [
+              2,
+              4,
+              7,
+              13,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3281895624,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0013.npz",
+            "input_file_sha256": "aa5f18f335a98eb4f094919877d198ef05e52f332e2fe1e0e54b880ab187a08f",
+            "input_hash": "3923991cd77bf60a0388bb4b7ed878665eb651c770ec03b15714927ca4600714",
+            "skip_ffn": [
+              2,
+              4,
+              7,
+              13,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 2441297343,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_object/task07/init19/input_0014.npz",
+            "input_file_sha256": "63d6b35be2621aa3f24618f39157d68a7dd63d16c048a0d3b0b0d27139947e35",
+            "input_hash": "749cf22c98f500bf06def4762a6d2067df7176ccb1ce853ee43a93197e75d167",
+            "skip_ffn": [
+              2,
+              4,
+              7,
+              13,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_goal_task07_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_goal_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 1655113215,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0012.npz",
+            "input_file_sha256": "e6850a8c01080324128727722430670cf5549711137289da811d3025c451f84d",
+            "input_hash": "8f6079d7a674ea4d9accd73e20871fcf451b5c627f3aeac719adf99bfdd72f40",
+            "skip_ffn": [
+              2,
+              7,
+              9,
+              14,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3817289265,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0013.npz",
+            "input_file_sha256": "5751e65d115c562ec87b2a2f9b17d1fd19e00619a4e6477226557290a54466fe",
+            "input_hash": "d1c2b433b4c3d1dfdb73187e99fa6fa12a337caf0505375c9acf17961221af20",
+            "skip_ffn": [
+              2,
+              7,
+              9,
+              14,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1884358219,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_goal/task07/init19/input_0014.npz",
+            "input_file_sha256": "e1469d5c3c70f3ce7bfed2febadc1b34999a94a6b653c72b22454ec49f47ecbf",
+            "input_hash": "a2b35d6bd0dbb3669daf129ec33a12d00fe389a94cdb3e87a4d61d10cd6fa7e7",
+            "skip_ffn": [
+              2,
+              7,
+              9,
+              14,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B4_libero_10_task07_init19",
+        "budget": "B4",
+        "case": {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B4_libero_10_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2777772119,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0012.npz",
+            "input_file_sha256": "134c339e51540060ba06071fb25418e6b3d0a5401413795c353d4f9a9963532d",
+            "input_hash": "08c3b4cdc2b9634672fb9d3aa6bda2784fc34e230c7e65c3b1339c3670538197",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 789535273,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0013.npz",
+            "input_file_sha256": "715f4b1f0a91d5863c6940a260bf501dffec728eef150e6abbac9ba18a97b275",
+            "input_hash": "cbd05699cd2b1ac8face3dfc2268b370679c37e3b5ecb6eaf681411b9a932606",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 3616812655,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B4_F-R+/episodes/libero_10/task07/init19/input_0014.npz",
+            "input_file_sha256": "2ff510fa10d3c9d371e14f9e42f81c95398a62023324c85833af4f0f38bedd15",
+            "input_hash": "7b95124c7c47a507ae7e11019d2c068970f8eb3a54f467df98418a26a9a7ed0e",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_spatial_task01_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2210128845,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0012.npz",
+            "input_file_sha256": "209fb6249a005a43f5485231e8518f7eca8cc043e383543b2c4b7f60a37def65",
+            "input_hash": "55caf21242d04e770365432b57a86563908ed891b58f384160d9f3dc803e627b",
+            "skip_ffn": [
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3634268970,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0013.npz",
+            "input_file_sha256": "10ea657d6b3476c1377e8bd817ff414588c9c26b44f8166888ad4b13e2d88423",
+            "input_hash": "fb860e3a3a87592b0a6eca352a04dc7c00e205d24bfa6f66964df7c11a9c4f19",
+            "skip_ffn": [
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 836200616,
+            "prompt": "pick up the black bowl next to the ramekin and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task01/init19/input_0014.npz",
+            "input_file_sha256": "acbfb696b41a8c86aaacbc7f0165e5049d4714a24acce1558cf1add33bc9cec5",
+            "input_hash": "fade982a4266d135f4ea28e17d81e55ae1210ac847d09c009c10c610b44235df",
+            "skip_ffn": [
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_object_task01_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_object",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3959484179,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0012.npz",
+            "input_file_sha256": "aa79067d395bac299955c90aa96f6d33cd91365147f695b109fb3d64782b186f",
+            "input_hash": "c5de091de9b5395b73d8957e44beb93081917071f4f2ede2d6bc95f5366d56b1",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 1850830894,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0013.npz",
+            "input_file_sha256": "48e3690c6f83a1a94bd6f8831b5b79cd5522a444b9dcf8f75e3a10f0c5a2dc2a",
+            "input_hash": "cc08961914d20bc2b905e1310dcff8bca63e13c865727311468501d833ddc81d",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1694737868,
+            "prompt": "pick up the cream cheese and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task01/init19/input_0014.npz",
+            "input_file_sha256": "9922c0b7521538a3519c22f8dcaea88d40239fc7fae5f00ef0ff957dead81bef",
+            "input_hash": "90bcff822f4650c30f303524c91fce45ca54afdcf0129fa229ae332dbefc1472",
+            "skip_ffn": [
+              2,
+              4,
+              6,
+              9,
+              13,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_goal_task01_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_goal",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 1200215665,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0012.npz",
+            "input_file_sha256": "b071053cbc56d7773b5a15e91496fe6bf5a681f2b13b01efe071a159cdc6c827",
+            "input_hash": "d52b3070cd9037c6ccb228b78d0879a2534707d3416d68dd885435635463a551",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 269573099,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0013.npz",
+            "input_file_sha256": "5b74839c26fede590aa3fd6b673bfc3a82de56f6e20b7aae89d8dfe69710b88e",
+            "input_hash": "f6b21d8604979e89b90537518e7bbf72f35de791db1d2fd56dba39aff39a9e2b",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 812476948,
+            "prompt": "put the bowl on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task01/init19/input_0014.npz",
+            "input_file_sha256": "47357170ee5afdf00bdd273cc85853334a2828034400d85a43cd8c27d2e5442e",
+            "input_hash": "3aae280d4424952522e4f8c5ea6d4f374ed7ac048c3534b87048b7b198945ed5",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_10_task01_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_10",
+          "task": 1,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task01_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2121516956,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0012.npz",
+            "input_file_sha256": "a5bd75d09e2647de757247671c2f4285b92b78a6805e5d8e4193549892c0ff2f",
+            "input_hash": "a4683c30f6d0e4f15408c46507c623e05c3fc8ded6e5f462aec62ccc16d9e180",
+            "skip_ffn": [
+              1,
+              4,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 2347620407,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0013.npz",
+            "input_file_sha256": "4a8d8f7f8195f172ba03c7d758b24318ca3161054fa59666d6f32a5b1f030239",
+            "input_hash": "53ac5a8d57b733f503235d992c62bc3b817083a6ac7fec4e59426addd7598639",
+            "skip_ffn": [
+              1,
+              4,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1791938057,
+            "prompt": "put both the cream cheese box and the butter in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task01/init19/input_0014.npz",
+            "input_file_sha256": "9ef63677056f53048e68f81af40b338ac1b56f3c34a6a124c6c3746e00ea170d",
+            "input_hash": "9a22c1d5fe06515ba41da669626a13bc2b6a4087948b90760c024b0db21ae9bb",
+            "skip_ffn": [
+              1,
+              4,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_spatial_task07_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_spatial",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_spatial_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3184691605,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0012.npz",
+            "input_file_sha256": "d9e59b52dc687027648911df8b0f396002a7c0f4c89427755cf7ae4a701388db",
+            "input_hash": "54b673a95734c9473989e0cc75d648aacf7cc070fbcd772de9cf83ef4e56894b",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 4003897865,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0013.npz",
+            "input_file_sha256": "e8ad33457e5a45f40d9a8ea2e794dd5991ef2f0093593f90e764eafee8cbe7d9",
+            "input_hash": "4864595d39ead1486e4a6d7da14162fc8b96f738be167a408c9c41b28d7282aa",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 2413656367,
+            "prompt": "pick up the black bowl on the stove and place it on the plate",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_spatial/task07/init19/input_0014.npz",
+            "input_file_sha256": "9065f07f98c4157548ae601afedd394a62e1e27c08f214f4d8539eded23820af",
+            "input_hash": "6fdfd81f0bd9b1b0d94b2ebe57876544a6b0f911fa07978820296ecbc1956ba4",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              7,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_object_task07_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_object",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_object_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 3615638729,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0012.npz",
+            "input_file_sha256": "7c4436f8bca75c3af56fd11c93ed8c079f54b9466463edf3171fe0fd9787b563",
+            "input_hash": "e7dc6d4e33df65367a64e90fdcf04b48de49bb00c398550090e56704a2bcb1f2",
+            "skip_ffn": [
+              3,
+              5,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3281895624,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0013.npz",
+            "input_file_sha256": "0ab87d64117ff6ae5d9dcd58eeb5044b8ba140875039da4865e490ed019e2293",
+            "input_hash": "083820758afc68c16d54007cb78a7c4c0d19a35554555a518690879d47304ec1",
+            "skip_ffn": [
+              3,
+              5,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 2441297343,
+            "prompt": "pick up the milk and place it in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_object/task07/init19/input_0014.npz",
+            "input_file_sha256": "2c58a02da5696403d2ecadb920c263526d56630b50634a180cf9d968bd38c72f",
+            "input_hash": "40a68cd59f4768071e56a68fde9ce8b9da35478c6a00424e8fded9063548e317",
+            "skip_ffn": [
+              3,
+              5,
+              8,
+              10,
+              12,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_goal_task07_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_goal",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_goal_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 1655113215,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0012.npz",
+            "input_file_sha256": "f702ebb479a221dbb8b5e3859b4ca965e0825cc99e8616b55168df1c0dcbc193",
+            "input_hash": "4b5c2af1bcc926ce475a6893276c7342f877175d6d79bb5ae6471d7eec142f6a",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              9,
+              11,
+              15,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 3817289265,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0013.npz",
+            "input_file_sha256": "35d43169e13bd276b83b6895da8818a2bdab63d17f5ed616b04cc4b5691aa873",
+            "input_hash": "dd727dede5a2b443feb8ba54a480d1a8eb5eea456481db51528c878f8bd2c481",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              9,
+              11,
+              15,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 1884358219,
+            "prompt": "turn on the stove",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_goal/task07/init19/input_0014.npz",
+            "input_file_sha256": "448ac75627fb0667f2468184a95f86a56c01a284253788fb117b6640da869562",
+            "input_hash": "be9ca1c5f9d65d845423899c72dea119c71174037186453273c394059c25d966",
+            "skip_ffn": [
+              1,
+              3,
+              5,
+              9,
+              11,
+              15,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      },
+      {
+        "key": "B6_libero_10_task07_init19",
+        "budget": "B6",
+        "case": {
+          "suite": "libero_10",
+          "task": 7,
+          "init": 19
+        },
+        "controller": {
+          "input_min": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "input_max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "online_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/arrays.npz",
+        "old_reference_arrays": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/pilot_mechanism/B6_libero_10_task07_init19.npz",
+        "targets": [
+          {
+            "replan": 12,
+            "step": 60,
+            "seed": 2777772119,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0012.npz",
+            "input_file_sha256": "1789d5e98ba39b77b3f1dcc0de5d93e64db2ba6b63355abacc2ef8bac8b88ecc",
+            "input_hash": "161dbc290a11a0bfd54f6e2ecad441e0c205f7bd26f1373543025403ead06cc6",
+            "skip_ffn": [
+              2,
+              4,
+              8,
+              10,
+              12,
+              14,
+              17
+            ],
+            "age_env_steps": 10,
+            "extrapolation_ratio": 0.4
+          },
+          {
+            "replan": 13,
+            "step": 65,
+            "seed": 789535273,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0013.npz",
+            "input_file_sha256": "ab5d8e51c4a71a5a2c27b23c28bc107ababb949c00aa4af2f20932de99f03ead",
+            "input_hash": "77309fa6651cebdd4debe5b7ffcdebbe3017cb938cfc62ba2eaeead25170c7bd",
+            "skip_ffn": [
+              2,
+              4,
+              8,
+              10,
+              12,
+              14,
+              17
+            ],
+            "age_env_steps": 15,
+            "extrapolation_ratio": 0.6
+          },
+          {
+            "replan": 14,
+            "step": 70,
+            "seed": 3616812655,
+            "prompt": "put both the alphabet soup and the cream cheese box in the basket",
+            "input_path": "/root/nfs/embodied/benchmark/results/idea1_v3_4_E2_module_skip/B6_F-R+/episodes/libero_10/task07/init19/input_0014.npz",
+            "input_file_sha256": "72171dfbd3628a6246a7206cf87716118e8e096bbeea17c423af1c9437df19ff",
+            "input_hash": "8a945ed1cac1637da2f70dddfb39c6907bace11c7c0d63767a34bdcfbe5da156",
+            "skip_ffn": [
+              2,
+              4,
+              8,
+              10,
+              12,
+              14,
+              17
+            ],
+            "age_env_steps": 20,
+            "extrapolation_ratio": 0.8
+          }
+        ]
+      }
+    ],
+    "base_model_requests": 832
+  },
+  "fixed_observations": "16 declared pilots, saved replans 12/13/14; no replacement",
+  "comparison": "actual online compensated F-R+ versus same-mask native FFN skip without compensation, on the same input/seed/current complete-VLM-D2 reference",
+  "warmup": "two complete-VLM-D2 calls per episode on its replan12 input; every resumed partial episode warms a fresh runtime twice and charges both calls",
+  "first_run_native_requests": 128,
+  "shared_model_request_limit": 1000,
+  "reference_gate": {
+    "atol": 1e-05,
+    "rtol": 1e-05,
+    "failure": "terminal; retain consumed calls, do not retry to match"
+  },
+  "counterfactuals_enter_online_policy": false,
+  "source_sha256": "33f4d28f5699ebc483cac04369b5ca05c55054a207c9bee1e5c3d44e5d286eaa"
+}

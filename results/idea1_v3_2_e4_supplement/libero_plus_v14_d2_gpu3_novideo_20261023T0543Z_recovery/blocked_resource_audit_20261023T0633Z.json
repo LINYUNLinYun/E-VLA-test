@@ -1,0 +1,30 @@
+{
+  "observed_utc": "2026-10-23 06:33:26 UTC",
+  "goal_complete": false,
+  "remaining_scope_unchanged": "All195 same-physical-GPU3 no-video V14-D2 cases, followed by all-case execution audit and report integration",
+  "consecutive_goal_turns_with_same_resource_condition": "At least3: verified waits at06:24,06:28/29,06:32 and current06:33 UTC",
+  "condition": "The required original physical GPU3 is unavailable; alternate-device numerical differences were rejected and no authorized independent work remains to unblock quality inference",
+  "authoritative_live_processes": {
+    "GPU3_watcher_pid": 3752472,
+    "first_case_reviewer_pid": 3775288
+  },
+  "latest_sample_age_s": 13.0,
+  "GPU3_uuid": "GPU-555cde36-5e41-bc44-0c69-ea47358fd703",
+  "GPU3_memory_mib": 16402,
+  "GPU3_preexisting_compute_allocation": "369809,16392MiB; not identified as an owned process and not touched",
+  "watcher_status": "waiting_original_gpu3_idle",
+  "reviewer_status": "watching_fixed_watcher",
+  "D2_quality_completed": 0,
+  "D2_quality_target": 195,
+  "draft_diagnostics_complete": {
+    "closed_loop_episodes": 52,
+    "restore_cases": 8,
+    "input_pairs": 12,
+    "strict_input_pairs": 11,
+    "approximate_background_auxiliary_pairs": 1,
+    "restoration_language_input_response_checks": 739
+  },
+  "user_coordination_requested": "Original GPU3 release; no reply or new authority assumed",
+  "background_policy": "Do not pause, kill or restart either live process. Keep30-second waiting and original automatic first-case validation/continuation until the unchanged frozen deadline1792774358.",
+  "forbidden_shortcuts": ["No relaxed numerical gate", "No cross-device quality run", "No terminating unknown or external allocation", "No counting pending conditions as policy failures", "No marking the goal complete"]
+}

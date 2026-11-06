@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-11-05T21:17:11.512328+08:00",
+  "objective": "探索 SAE 语义/概念与 pi05 layer/module 的关系",
+  "plan": "pi05_sae_semantic_skipping_plan.md",
+  "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "checkpoint": "/root/nfs/embodied/benchmark/shared/checkpoints/openpi/pi05_libero_pytorch_idea2",
+  "weight_bytes": 7233650408,
+  "weight_mtime_ns": 1792577489209432139,
+  "weight_hash_status": "Not recomputed; current file path/stat recorded and local load checks used",
+  "checkpoint_public_sae_compatibility": "Pending multi-observation semantic check",
+  "model_config": "pi05_libero",
+  "model_changes": "Frozen checkpoint; SAE readout only; VLM FFN switches are separately named interventions",
+  "sample_seed": 1105,
+  "offline_split": {
+    "discovery_tasks": 12,
+    "calibration_tasks": 4,
+    "heldout_tasks": 8
+  },
+  "public_release_revisions": {
+    "bag100/action-atlas-pi05-activations": "82e03132f9119ea51fd522bb9ad4d5593aaba503",
+    "bag100/action-atlas-pi05": "a7a717259aaadceb6896b8d4885fa72a104ad4d6",
+    "bag100/action-atlas-viz": "ea09a0881066bddd3456096e1d9ab9d9cf67981d"
+  },
+  "code": [
+    {
+      "path": "pi05_sae_semantic_skipping_plan.md",
+      "sha256": "a741d4a807b498f5b820eff636974af1a16d4dfd4792adc9362873e119ae464b"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/__init__.py",
+      "sha256": "8630c911c5b699f17fb90238b82f4cac26245d7bbc5da74ba090a862a10ae73c"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/analyze_public.py",
+      "sha256": "1a616035a96def3c9c4a3b9450bbe8d5e1c5d051b8adff7a7ee5d5f88a29fa02"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/check_cpu_threads.py",
+      "sha256": "831834eeaf8a4d6395666def80d8e9b0272a9bfb47301a8acceafe2135a48e6f"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/check_local_sae.py",
+      "sha256": "e1967b00da9c7ed69aa253a2aeacf36da1b0cae3226cec9a2f6e61dd0f43e70e"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/check_public_sae.py",
+      "sha256": "6ec21dde3152ae2f1f22fe8175286b0e16bca344a3ec28e1db84124219baa1fc"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/collect_local.py",
+      "sha256": "c2e56fb87d51a6a08e9b2a4c65d56dfd08add7082a42a8b64edd046d66f58f3a"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/download_references.py",
+      "sha256": "30cc7db6e42cfdf7457354069d53005f9bcec5f978b1d778d5c9bae9229b81bb"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/inspect_public_assets.py",
+      "sha256": "756477f3f10bd553cab6bd82857907b7fe0710599280df997a6764ec999ca7f7"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/map_concept_ffn.py",
+      "sha256": "668aa097b24485995d224090128577260c7443225eefbdb703410e19237d0fab"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/native_probe.py",
+      "sha256": "7855164dd9da8deae1d056ded5712bfb50de9a18b4eb66b079ab0a491ae806f2"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/prepare_assets.py",
+      "sha256": "eb229b5181b1e95f065f2633dfe8ee3c01430ef6e335fb42a215fa336f446e15"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/prepare_observations.py",
+      "sha256": "dc7bf2a2b1e236f1c2859e388ad73a304cae5cdeae81dc39e02075829b0d654b"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/public_tail_check.py",
+      "sha256": "74a4b6f3f8857662de112df04a06e66b7311b95203def942b10f268c5d61ce3c"
+    },
+    {
+      "path": "experiments/pi05_sae_semantic/select_sae_concepts.py",
+      "sha256": "9e5c1247364d813bf894b7ffa260e6baed32dc5ac6c420edd32ca48b9234ec51"
+    }
+  ],
+  "full_trajectory_recollection": 0,
+  "runtime_policy": "CPU preparation and probes while GPUs are occupied; no foreign GPU workloads modified",
+  "public_asset_manifest": "shared/caches/pi05_sae_semantic/action_atlas_pi05/asset_manifest.json",
+  "selection_and_phase_plan": "results/pi05_sae_semantic/run_20261105/execution_plan.json"
+}

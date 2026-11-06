@@ -1,0 +1,72 @@
+{
+  "source_run": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/draft_smoke/flash_spatial",
+  "status": "passed",
+  "case_count": 4,
+  "requests": 103,
+  "actions": 652,
+  "cases": [
+    {
+      "case": "libero_spatial_t00_i20",
+      "requests": 7,
+      "actions": 80,
+      "telemetry": 81,
+      "success": true,
+      "init_vector_hash_match": true,
+      "first_policy_obs_hash_match": true,
+      "noise_hashes_match": true,
+      "executed_actions_match_decoded_prefix": true,
+      "request_count_match": true,
+      "action_count_match": true,
+      "route_pairs_valid": true
+    },
+    {
+      "case": "libero_object_t00_i20",
+      "requests": 23,
+      "actions": 140,
+      "telemetry": 141,
+      "success": true,
+      "init_vector_hash_match": true,
+      "first_policy_obs_hash_match": true,
+      "noise_hashes_match": true,
+      "executed_actions_match_decoded_prefix": true,
+      "request_count_match": true,
+      "action_count_match": true,
+      "route_pairs_valid": true
+    },
+    {
+      "case": "libero_goal_t00_i20",
+      "requests": 18,
+      "actions": 103,
+      "telemetry": 104,
+      "success": true,
+      "init_vector_hash_match": true,
+      "first_policy_obs_hash_match": true,
+      "noise_hashes_match": true,
+      "executed_actions_match_decoded_prefix": true,
+      "request_count_match": true,
+      "action_count_match": true,
+      "route_pairs_valid": true
+    },
+    {
+      "case": "libero_10_t00_i20",
+      "requests": 55,
+      "actions": 329,
+      "telemetry": 330,
+      "success": true,
+      "init_vector_hash_match": true,
+      "first_policy_obs_hash_match": true,
+      "noise_hashes_match": true,
+      "executed_actions_match_decoded_prefix": true,
+      "request_count_match": true,
+      "action_count_match": true,
+      "route_pairs_valid": true
+    }
+  ],
+  "runtime_file_hash_match": {
+    "common.py": true,
+    "server.py": true,
+    "client.py": true,
+    "run.py": true
+  },
+  "scope": "FLASH route integrity and case identity; not a pure-draft or cross-source parity gate"
+}

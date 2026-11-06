@@ -1,0 +1,181 @@
+{
+  "schema": "future-vlm-path-diversity-planning-v1",
+  "status": "planning_only_not_runnable_not_frozen",
+  "created_date": "2026-11-05",
+  "scope": {
+    "current_within_suite_outcomes_or_success_statistics_read": false,
+    "current_within_suite_results_tree_read": false,
+    "current_scientific_sources_or_plans_modified": false,
+    "model_or_environment_started": false,
+    "gpu_used": false,
+    "only_output_directory": "reports/ease_insights_20261103/future_path_diversity_preparation/",
+    "condition_for_future_use": "Only consider this separate branch if the owner concludes the active branch is negative; this report does not make that determination.",
+    "not_a_protocol_freeze": true
+  },
+  "current_mask_assessment": {
+    "source_masks_are_one_based": true,
+    "bit_vector_length": 18,
+    "skip_count_each": 6,
+    "nominal_unskipped_count_each": 12,
+    "common_skip_backbone": [2, 3, 17],
+    "distance_definition": "Hamming distance over the 18 binary skip indicators; for equal-size masks this equals the symmetric-difference cardinality. Distance 2 is one skipped-layer replacement (one swap), not a one-bit change.",
+    "masks": {
+      "jac_anchor": [2, 3, 5, 14, 16, 17],
+      "local_spatial": [2, 3, 5, 13, 16, 17],
+      "local_object": [2, 3, 5, 14, 15, 17],
+      "local_goal": [2, 3, 11, 14, 16, 17],
+      "local_long": [2, 3, 5, 12, 16, 17]
+    },
+    "pairwise_hamming_and_symmetric_difference": [
+      {"a": "jac_anchor", "b": "local_spatial", "distance": 2, "swaps": 1},
+      {"a": "jac_anchor", "b": "local_object", "distance": 2, "swaps": 1},
+      {"a": "jac_anchor", "b": "local_goal", "distance": 2, "swaps": 1},
+      {"a": "jac_anchor", "b": "local_long", "distance": 2, "swaps": 1},
+      {"a": "local_spatial", "b": "local_object", "distance": 4, "swaps": 2},
+      {"a": "local_spatial", "b": "local_goal", "distance": 4, "swaps": 2},
+      {"a": "local_spatial", "b": "local_long", "distance": 2, "swaps": 1},
+      {"a": "local_object", "b": "local_goal", "distance": 4, "swaps": 2},
+      {"a": "local_object", "b": "local_long", "distance": 4, "swaps": 2},
+      {"a": "local_goal", "b": "local_long", "distance": 4, "swaps": 2}
+    ],
+    "structural_conclusion": "Each of the four named local masks is one swap from jac_anchor. Half of all ten fastpath pairs are one swap apart, and all five share skipped layers {2,3,17}. This describes mask geometry only; it says nothing about quality, efficacy, or complementarity."
+  },
+  "runtime_constraints_from_source": {
+    "skip_capture_one_based_range": [1, 17],
+    "layer_18": "Not skip/capture eligible in the residual wrapper and never performs a hidden-state attention/FFN update in the current Triton encoder; preserve its existing terminal prefix-K/V behavior.",
+    "effective_update_count": "With six skips drawn from layers 1-17, the current implementation updates hidden state in 11 of those 17 layers; layer 18 is a non-updating terminal shell. The nominal 12/18 count is the number of unmasked indices, not 12 full hidden-state updates.",
+    "layer_1": "The source range permits skipping layer 1; the proposed initial panel keeps it retained as a conservative design choice, not because the code marks it unsupported or critical.",
+    "layer_17": "Supported by the implementation and already skipped by the current masks, but it is the last position with an attention/FFN hidden-state update because layer 18 has none. p3_late_stride also skips layer 17 to probe this code-level execution difference; this is not a claim that layer 17 is semantically critical.",
+    "residual_identity": "Every history and older-residual map must have exactly the same layer keys as the fixed mask. Do not change a mask within a path's episode history.",
+    "encoder_boundary": "The intervention is confined to the VLM prefix encoder. Keep the existing full vision path and inherited action-expert sample path unchanged.",
+    "fixed_science_contract": {
+      "nominal_vlm_retained_layers": 12,
+      "depth": 18,
+      "H": 50,
+      "R": 5,
+      "refresh_D": 10,
+      "fast_D": 2,
+      "schedule": "Full-D10, Fast-D2, Fast-D2, repeating",
+      "compensation": "own-path residual extrapolation",
+      "mask": "fixed per condition; selector-free"
+    },
+    "numeric_gate": "Retain existing fixed-input implementation/parity requirements and atol=rtol=1e-5 as written; do not loosen tolerances to admit a candidate."
+  },
+  "proposed_future_panel": [
+    {"id": "p1_early_even", "skip": [2, 4, 6, 8, 10, 12], "retained": 12},
+    {"id": "p2_mid_stride", "skip": [3, 6, 9, 12, 14, 16], "retained": 12},
+    {"id": "p3_late_stride", "skip": [4, 7, 10, 13, 15, 17], "retained": 12},
+    {"id": "p4_mid_high_mix", "skip": [4, 6, 8, 11, 13, 15], "retained": 12}
+  ],
+  "proposed_panel_distances": {
+    "minimum_distance_from_each_proposed_mask_to_any_current_fastpath": {
+      "p1_early_even": 8,
+      "p2_mid_stride": 6,
+      "p3_late_stride": 8,
+      "p4_mid_high_mix": 10
+    },
+    "proposed_to_current": [
+      {"proposed": "p1_early_even", "jac_anchor": 10, "local_spatial": 10, "local_object": 10, "local_goal": 10, "local_long": 8},
+      {"proposed": "p2_mid_stride", "jac_anchor": 6, "local_spatial": 8, "local_object": 8, "local_goal": 6, "local_long": 6},
+      {"proposed": "p3_late_stride", "jac_anchor": 10, "local_spatial": 8, "local_object": 8, "local_goal": 10, "local_long": 10},
+      {"proposed": "p4_mid_high_mix", "jac_anchor": 12, "local_spatial": 10, "local_object": 10, "local_goal": 10, "local_long": 12}
+    ],
+    "proposed_pairwise": [
+      {"a": "p1_early_even", "b": "p2_mid_stride", "distance": 8},
+      {"a": "p1_early_even", "b": "p3_late_stride", "distance": 8},
+      {"a": "p1_early_even", "b": "p4_mid_high_mix", "distance": 6},
+      {"a": "p2_mid_stride", "b": "p3_late_stride", "distance": 12},
+      {"a": "p2_mid_stride", "b": "p4_mid_high_mix", "distance": 10},
+      {"a": "p3_late_stride", "b": "p4_mid_high_mix", "distance": 6}
+    ],
+    "interpretation": "The proposed masks are structurally farther from the existing one-swap family and from each other. Distance is a design descriptor only; no path is claimed to work better or to complement another."
+  },
+  "bounded_prospective_stages": {
+    "arms": ["full_d10", "jac_anchor", "p1_early_even", "p2_mid_stride", "p3_late_stride", "p4_mid_high_mix"],
+    "tentative_official_init_ids": {
+      "calibration": [44, 45],
+      "discovery": [46, 47],
+      "heldout": [48, 49],
+      "validation_required_before_any_future_freeze": "The prior asset audit found 50 initial states per task, while the current frozen source defines inits 36-43. These proposed IDs are not asserted unused or verified case-by-case; a separate pre-freeze availability check is required."
+    },
+    "stages": [
+      {
+        "name": "static_usability",
+        "budget": "Zero episodes and zero model requests.",
+        "checks": ["Each mask has exactly six unique one-based layers in 1-17.", "Layer 1 and layer 18 remain retained.", "All arms share H50/R5, Full-D10/Fast-D2/Fast-D2, fixed mask, and own-path residual semantics."],
+        "failure_action": "Do not launch a scientific cohort; record the technical blocker without altering the current branch."
+      },
+      {
+        "name": "fixed_input_usability_calibration",
+        "cases": [
+          {"suite": "libero_90", "task": 15, "category": "single_object_placement", "inits": [44, 45]},
+          {"suite": "libero_90", "task": 0, "category": "state_change_only", "inits": [44, 45]}
+        ],
+        "request_sequence_per_task_and_arm": "For each fast arm, A: Full-D10, Fast-D2, Fast-D2; B: Full-D10, Fast-D2, Fast-D2, where A/B are two initial observations of the same prompt. The Full control makes six Full-D10 requests.",
+        "max_requests": 72,
+        "closed_loop_episodes": 0,
+        "purpose": "Technical usability only: prompt/input identity, fixed mask execution, two own-path residual histories, request schedule/noise bookkeeping, and existing numerical gates. No success or latency-based mask selection.",
+        "physical_observation_capture_if_needed": "At most four official reset observations and 40 settling actions; no policy actions are sent to the environment."
+      },
+      {
+        "name": "discovery",
+        "task_prompt_split": "Within each metadata category, group tasks by exact official benchmark instruction so duplicate prompts cannot cross the split. Use an outcome-blind deterministic SHA-256 assignment to create 6 tasks/category (12 tasks total); finalize the exact groups only in a later separate protocol review.",
+        "init_ids": [46, 47],
+        "cases_per_arm": 24,
+        "arms": 6,
+        "episodes": 144,
+        "outcome_role": "Exploratory only; all four new masks are fixed before any episode and none are selected using current-branch results."
+      },
+      {
+        "name": "heldout",
+        "task_prompt_split": "The complementary prompt-group-disjoint 6 tasks/category; do not replace tasks after seeing discovery outcomes.",
+        "init_ids": [48, 49],
+        "cases_per_arm": 24,
+        "arms": 6,
+        "episodes": 144,
+        "outcome_role": "Prospective heldout comparison of the four predeclared masks against Jac and Full; predeclare paired/category analyses and familywise handling before any future launch. Run the whole fixed panel, not a post-hoc winner subset."
+      }
+    ],
+    "maximum_closed_loop_budget": {
+      "episodes": 288,
+      "policy_actions_at_400_each": 115200,
+      "settling_actions_at_10_each": 2880,
+      "calibration_requests": 72,
+      "includes": "All six arms in both discovery and heldout; technical calibration is separate and not counted as a policy episode."
+    },
+    "identity_and_outcome_rules": [
+      "Pair every arm on identical suite/task/init, official prompt, physical-state identity, environment seed 7, and condition-independent request-noise seed.",
+      "Preserve 10 settling steps, a 400-policy-action cap, and 20 Hz control.",
+      "Keep technical gate failures separate from policy outcomes; do not retry or replace a difficult case based on success or step count.",
+      "An old finite four-suite numeric gate is not evidence for the new prompt pool; check actual prompt and first-input identity on every future case."
+    ],
+    "limits": [
+      "This is an illustrative maximum budget, not a runnable or frozen matrix.",
+      "The metadata pool has 12 tasks per category but only 20 distinct instruction strings; task/prompt separation does not make tasks statistically independent.",
+      "One new init pair per stage/task is a screening design, not an official full-init benchmark.",
+      "No future path-quality, efficiency, or complementarity claim follows from the proposed masks or budget."
+    ]
+  },
+  "owner_provided_resource_risk": {
+    "note": "A fresh model load for each condition can encounter an external-memory-availability gap and OOM even when a logical lease is held.",
+    "planning_implication": "Before a future branch, plan fresh-service memory headroom and startup order explicitly. A persistent backend/config-switch is only a separately reviewed possibility; it would require unchanged numerical parity and a residual-state reset audit before execution.",
+    "implementation_or_current_runtime_change_proposed": false
+  },
+  "prior_report_evidence": [
+    {"path": "reports/ease_insights_20261103/semantic_pool_feasibility/within_suite_candidate/candidate.json", "sha256": "478b637d0e688ca8178551ef4c18e548c70492045844b1f5374923aeeada47bc", "finding": "Metadata-only proposal; 24 tasks split 12/12; 20 exact instruction strings; says no success, complementarity, latency, or adaptive benefit is established."},
+    {"path": "reports/ease_insights_20261103/semantic_pool_feasibility/within_suite_candidate/runtime_feasibility.json", "sha256": "d75890f995586c075b2e63298891096fcf1e35861576439aee32e4c9083532a5", "finding": "Proposal-only; old numeric gate does not cover the new task/prompt pool; new prompt/input/noise/physical state identities need per-case checks."},
+    {"path": "reports/ease_insights_20261103/semantic_pool_feasibility/official_pool_audit.json", "sha256": "c7863aa701e1caa5069a9582020bfc40ffb62a6acfcbd7da64aef7185a616144", "finding": "CPU asset audit found 50 official initial states per task; it does not certify rendered-environment or model/GPU readiness."},
+    {"path": "reports/ease_insights_20261103/vlm_local_search_runtime_acceptance/audit.json", "sha256": "3f95ec613584ad6f2fecf01ddc1818341aa26b004bcf9fe14916201a8271ae45", "finding": "Prior runtime-only acceptance recorded fixed-mask execution and request schedule checks; its own limits say the fixed-input probe is not closed-loop acceleration or a path-quality/selection result."}
+  ],
+  "source_evidence": [
+    {"path": "preparations/ease_insights_20261103/vlm_within_suite_v1/common.py", "sha256": "8568591ae47d9bd938a968d3f693da0b7e468f2c50d6b499a80d65fbf8a5d1ec", "lines": "14-26,36-47,50-75", "supports": "Task/category identities, exact five masks, fixed D schedule, six-condition whitelist, and current stage scope; a new panel must be versioned separately."},
+    {"path": "preparations/ease_insights_20261103/vlm_within_suite_v1/policy.py", "sha256": "87830a8ebd6dfb0e7465aebdc31ab8096ff8da4f5f16f0d1a7577731f34301ce", "lines": "1-11", "supports": "Current branch policy is a thin frozen-policy wrapper with an isolated condition validator."},
+    {"path": "preparations/ease_insights_20261103/vlm_local_search_v1/policy.py", "sha256": "21d33fd349ae223426cbcfbf461547073b7837bd35a312fd4ce2a812e6d69380", "lines": "1-11", "supports": "The isolated wrapper delegates to the frozen VLM policy mechanics."},
+    {"path": "preparations/ease_insights_20261103/vlm/policy.py", "sha256": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845", "lines": "26-66,71-79", "supports": "Fixed Full/Fast cadence, per-condition residual history, two-history extrapolation, and policy action acknowledgement."},
+    {"path": "preparations/ease_insights_20261103/vlm/backend.py", "sha256": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6", "lines": "13-54,57-85", "supports": "Full vision projection, one-based skip/capture only for 1-17, exact residual-key identity, hidden updates only for first 17, and unchanged inherited sampling path."},
+    {"path": "preparations/idea1_v3/policy.py", "sha256": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b", "lines": "56-92", "supports": "Vision encoder runs before the VLM transformer; skip layer IDs are translated from one-based source masks to zero-based implementation indices."},
+    {"path": "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py", "sha256": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8", "lines": "934-956,968-1015", "supports": "Triton VLM has 18 zero-based positions, attention/FFN interventions only accept 0-16, and position 17/L18 has no hidden-state attention/FFN update."},
+    {"path": "preparations/ease_insights_20261103/vlm/prepare.py", "sha256": "7ebaabd1feeac6c2ef710c0a702867b800ac84e12406f46c2a16234dac8c5592", "lines": "61-75", "supports": "Twelve nominal retained layers, H50/R5, D10 refresh, D2 drafts, own-path residual extrapolation, fixed mask, and preflight requirements with 1e-5 tolerances."}
+  ],
+  "provenance_note": "Mask distances were computed from the literal frozen source MASKS in common.py. Candidate masks and budget were chosen from layer geometry, source support limits, and prior metadata/runtime reports only; no current within_suite_v1 outcome or success statistic was read."
+}

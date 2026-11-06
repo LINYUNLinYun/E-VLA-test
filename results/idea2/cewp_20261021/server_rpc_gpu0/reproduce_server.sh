@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /root/nfs/embodied/benchmark
+env CUDA_VISIBLE_DEVICES=0 JAX_PLATFORMS=cpu JAX_PLATFORM_NAME=cpu OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 OPENPI_DATA_HOME=/root/nfs/embodied/benchmark/shared/checkpoints/openpi PYTHONPATH=/root/nfs/embodied/benchmark:/root/nfs/embodied/benchmark/policies/openpi/src /root/nfs/embodied/benchmark/policies/openpi/.venv/bin/python -u -m preparations.idea2.server --checkpoint shared/checkpoints/openpi/pi05_libero_pytorch_idea2 --model-config pi05_libero --num-steps 10 --cuda-graphs --submission-order ae_first --ae-priority -1 --selective-overlap vision_only --hoist-modulation --await-previous-prefix --diagnostics --port 19012

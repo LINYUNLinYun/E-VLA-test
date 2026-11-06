@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "kind": "D2_case0_exact_legacy_initialization_branch_probe",
+  "parent_manifest": {
+    "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/d2_cross_device_bitwise_20261023_run1/manifest.json",
+    "sha256": "eba5d1b432001a04af983aca28e47dfd39efeaa13ba25076669c1fb07e810301"
+  },
+  "parent_manifest_hash": "00bc9f0cad3b4e8b3a82a674859493add471fe1dbcd5f69ae69f5acb0d17d65f",
+  "deadline_unix": 1792742812,
+  "created_unix": 1792740250.8792307,
+  "required_gpu_index": 0,
+  "required_gpu_uuid": "GPU-c7bded27-f806-bb96-48ac-6c3ca5cf20d1",
+  "legacy_bank": {
+    "path": "/root/nfs/embodied/benchmark/results/idea1_v3_1/input_bank.pkl",
+    "sha256": "2c2e90a3e1fcac3f02226a433c6db9e19a0f3c169deea77707a9a1fbe8996d55"
+  },
+  "legacy_mode_order": [
+    "full_d10",
+    "v14_d10",
+    "draft_goal",
+    "draft_object",
+    "draft_spatial",
+    "draft_10"
+  ],
+  "references": [
+    {
+      "group": "perturbed350",
+      "source_index": 0,
+      "mother_suite": "libero_spatial",
+      "case_hash": "372d14f219f3d791aa062de94c830ec69a072022487d8348062e6afc2d526bd4",
+      "mode": "full_d10",
+      "result": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/full_d10/attempt000/result.json",
+        "sha256": "4c054ce63edd0e65adf198955c5b958a302e40f9d6e5592922982266c6635d00"
+      },
+      "observation": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/full_d10/attempt000/initial_native_observation.npz",
+        "sha256": "2175a75fc4374d75e995104b683d567b2d23f67cf5ab76cf001482fff8377485"
+      },
+      "infer": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/full_d10/attempt000/infer.jsonl",
+        "sha256": "284490fff6bdfc8838f9844d7deaf0e24270b1a5d67f3145af4761dce19cd96f"
+      },
+      "capture": true,
+      "current_stable": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/d2_cross_device_bitwise_20261023_run1/gpu0/reference00/repeat0.npz",
+        "sha256": "a7af5792eee3430e163abe732298ee5edf489706430da05b66d6f9be09001a60"
+      }
+    },
+    {
+      "group": "perturbed350",
+      "source_index": 0,
+      "mother_suite": "libero_spatial",
+      "case_hash": "372d14f219f3d791aa062de94c830ec69a072022487d8348062e6afc2d526bd4",
+      "mode": "v14_d10",
+      "result": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/v14_d10/attempt000/result.json",
+        "sha256": "3ca63b5d0923212350873981928d6627ca93b28c81660e6df82c4d874904d0c5"
+      },
+      "observation": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/v14_d10/attempt000/initial_native_observation.npz",
+        "sha256": "2175a75fc4374d75e995104b683d567b2d23f67cf5ab76cf001482fff8377485"
+      },
+      "infer": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/libero_plus_20261022T074328Z/perturbed350/case0000/v14_d10/attempt000/infer.jsonl",
+        "sha256": "17c89f96145e4273d35075292bff072ad3c96ab5a1bcbe80e13dbe756e899d82"
+      },
+      "capture": true,
+      "current_stable": {
+        "path": "/root/nfs/embodied/benchmark/results/idea1_v3_2_e4_supplement/d2_cross_device_bitwise_20261023_run1/gpu0/reference01/repeat0.npz",
+        "sha256": "017bc6d4c3d0a9bb5f8ff25bc3ccb82d65075238a5e8191eeab3029fac6ac186"
+      }
+    }
+  ],
+  "source_files": {
+    "preparations/idea1_v3_2/transfer_policy.py": "e61039dccae6bcf99aa6e282d727e0e8c7481295d07663ba5b92f2c719978425",
+    "preparations/idea1_v3_2/transfer_server.py": "709bee6eaf580dfb6b819edb914d71948788a55eff5b3cffc3ff23e605665e66",
+    "preparations/idea1_v3_2/transfer_prompts.py": "8162fc00686e434268783c3a89ea3783fbedd065e1e41166cf40c4c1b13fb2e9",
+    "preparations/idea1_v3/policy.py": "202421f6c17bb1faab8c4ac92cd188c3f290a4268bc0f3a5f112bab93d777d4b",
+    "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+    "policies/realtime-vla-flash/scripts/experiment10/backend.py": "569a321519100339a588b6b22916bf1ec10e04ee9b3ebf8fca477678ed656a1f",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_spec_infer.py": "b2d98018e8fa37dfeb69b6594ebbee6b141610dfa64395d113cefb5970e861dd",
+    "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8",
+    "preparations/idea1_v3_2_e4_supplement/policy_plus.py": "4fc5c0d391783d95c4281bb872156f49bc21376bcaa81a0de01a8af0ace933ca",
+    "preparations/idea1_v3_2_e4_supplement/policy_native.py": "a5587967236f18bdd72ccabee6e2891bffe931963e8296bbddb144e7105ba2ad",
+    "preparations/idea1_v3_2_e4_supplement/policy_server.py": "efdb8b0cd743c54b8cc1cbb54845f73c2aab2a4333494d09c77fc934a84ea8d9",
+    "preparations/idea1_v2_1/runtime_models.py": "5b76c88218170e956f7599f0627fc3c33db210bb701a5c26cce2aa08d19d18fa",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "preparations/idea1_v3_2/transfer_protocol.py": "f3548f2829bb1f87760737a3072c55490b1fe67614645944c725f81eca9e820e",
+    "preparations/idea1_v3_1/common.py": "2c246f15219e4b696a0753f4be1c70f8f342993b8c5c0e7a8f4ed76665f4a7c5",
+    "preparations/idea1_v3_1/server.py": "ee0cfc42920a9b80c8acb868d7133eadfeda408d6b6cbd92639b1fcd6eb7f2a3",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/run_plus.py": "ee2de53b2419f16e0b6bdcf91e56e4b84aea72762d6bc89e2a7448c34b7e5076",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/libero_plus_env.py": "68c7596ebbcec5bcaaa8133530dd05d978938fc71d859105b16516f040dd9453",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/plus_preflight.py": "a43ead79fec2324e3260132dca6dc165ef83b62dd7ec912d9ed2b1ac61f6477b",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/native_envs.py": "67de3f67a2a1f09a0b7d3ace55ccef097ff3600ac824f88ab620f193c6e85b45",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/evaluation.py": "813edf1ec1fd2613b8fcb3b9741edb81205a076774bfe6321b3111b9a8852dc1",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/evaluation_v2.py": "bb217b70446d7b67e7b28d59e8f1a92f668a6c4950b4a95074cd5aa004c85cbf",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/native_exact.py": "259653759f7e64697df9c80ee3358028125203b563216c819dc941137a6133b0",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/plus_v14_d2.py": "7d374ba006937215e3b48a9b2ecd5b3ec427057abeda95bf49dcf121d9e30261",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_plus_v14_d2.py": "b18193c2129c931ae138f61c5663500a9b65ac6879a4883885d4f11409a62e77",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/run_plus_v14_d2.py": "1ffc9b50d1f8ae4433e53cfb6e2c93ff0ffc1be61af493651f039729af3bea9b",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/policy_plus_mirror.py": "13a06612ba97b98ab71a8d45ad8c7f123ac7ba326f0683acc73fed65f6bad62a",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/parallel_continue.py": "fc0a614d0ef82067745faa5d3118bf5aec8fba9723f41e13f5f4126b420ddeb9",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/d2_cross_device_probe.py": "912da8e80ca94dafd683e43a41fac394bac739a959bc5a3e1c1ef7e13c8c8a6a",
+    "/root/nfs/embodied/benchmark/preparations/idea1_v3_2_e4_supplement/d2_legacy_history_probe.py": "431a4490aa1a15eb77224e21efef6d614a9c1257beb66cfef76a0f6f44785a1c"
+  },
+  "source_checkpoint_metadata": {
+    "shared_base": {
+      "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/base/base_weights.pkl",
+      "sha256": "c423a508742f8461fa17d8fb42951837b4419804842ed27a4890a9903042f891"
+    },
+    "original_provenance": {
+      "path": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/experiment11_layer_skip_prefix_20261010/provenance/preflight.json",
+      "sha256": "ee16e60d9e5a724120f3c0de2841f5ffdfbeb064ce950fc484541dbe90548b15"
+    },
+    "draft_heads": {
+      "draft_goal": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft/draft_triton.pkl",
+        "sha256": "4bbd1b5819def487d4ecdafae6e4eaac2915e12d001f2e39d6ccb8bd76badcef"
+      },
+      "draft_object": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_object/draft_triton.pkl",
+        "sha256": "575627e83d72b8749e05c440640e1edd72421c87429aa0098d51e0df42d2b8e6"
+      },
+      "draft_spatial": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_spatial/draft_triton.pkl",
+        "sha256": "33569dbb99de8300e93331961a122db0aca5d8f7cdb2f677b4013fefce93e14c"
+      },
+      "draft_10": {
+        "path": "/root/nfs/embodied/benchmark/shared/checkpoints/realtime-vla-flash/converted/draft_10/draft_triton.pkl",
+        "sha256": "b385338b6c0543e070c11d6acd3f72fd3285132150d1029115e052f19296e064"
+      }
+    }
+  },
+  "model_call_order": "Unchanged TransferPolicy.legacy_preflight: each of6 modes reference then candidate; then uncaptured Full,Full,V14,V14; finally captured Full,V14. No D2 or other request inserted.",
+  "hypothesis": "Historical legacy initialization branch changes case0 outputs relative to v1 direct production route.",
+  "comparisons": "Complete raw50x32/decoded50x7 bytewise comparisons to both historical case0 and fixed v1 current outputs; capture bytewise comparison to first uncaptured corresponding mode.",
+  "quality_requests": 0,
+  "no_quality_marker": true,
+  "no_video": true,
+  "no_device_or_configuration_search": true,
+  "limitations": [
+    "V14 does not recreate the19 historical Full requests with evolving RGB: those complete images were not saved.",
+    "The legacy gate is run unchanged and its own original numeric criteria are recorded verbatim. Historical/currents reference comparisons remain bitwise; no relaxation or quality release."
+  ],
+  "manifest_hash": "89d069f31a78466b06bab518a2f2aef75ec318e3ee5aa1541126f430a14b7eb5"
+}

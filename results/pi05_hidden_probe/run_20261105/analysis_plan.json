@@ -1,0 +1,25 @@
+{
+  "written_unix": 1793869456.4924107,
+  "stage_when_written": "full calibration in progress; no independent test readout yet",
+  "primary_prediction": "score_prediction (closed-set candidate likelihood)",
+  "secondary_prediction": "prediction (greedy free generation; invalid answers count as errors)",
+  "target_layer_selection": "For each task/path, maximize mean calibration balanced accuracy over all seven source layers and both control images; tie -> shallowest q.",
+  "summary_source_layer_selection": "After q is frozen, choose one source layer per task/path by mean calibration candidate balanced accuracy over both controls; tie -> shallowest l. Do not choose it from test results.",
+  "full_test_curves": "Still report every source boundary 0..18 under the fixed q, with per-control metrics and grouped uncertainty.",
+  "summary_uncertainty": "1000 paired bootstrap draws of complete independent scene groups, preserving both control images, counterfactual pairs/quads and real/control correspondence.",
+  "summary_metrics": [
+    "candidate balanced accuracy",
+    "free-generation balanced accuracy",
+    "paired delta vs no-patch",
+    "paired delta vs shuffled donor",
+    "pair or quad all-correct rate",
+    "shuffled donor-label following"
+  ],
+  "interpretation_limits": [
+    "exploratory intervals; no first-significant-layer claim",
+    "one synthetic LIBERO scene template",
+    "readout under the selected frozen decoder; not proof of action-policy use",
+    "single-token failure is not proof of absent information",
+    "closed-set decoding is not free-form hidden-state explanation"
+  ]
+}

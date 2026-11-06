@@ -1,0 +1,49 @@
+{
+  "selected_date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "scope": "Default configuration for subsequent idea1 experiments, selected by user",
+  "policy": "preparations.idea1_v4_5_noise_sweep.policy.Policy",
+  "config": {
+    "model": "pi0",
+    "H": 50,
+    "R": 5,
+    "D": 1,
+    "skip": [
+      2,
+      3,
+      5,
+      14,
+      16,
+      17
+    ],
+    "refresh_interval": 3,
+    "full_ae": false,
+    "verifier": false,
+    "compensation": "extrapolate",
+    "fast_time_embedding": "openpi_linspace",
+    "id": "v12_d1_kf6_t50_refresh",
+    "initial": "kalman",
+    "start_time": 0.5,
+    "noise_scale": 1.0,
+    "kalman_dimensions": 6
+  },
+  "sampling": {
+    "tau": 0.5,
+    "rho": 1.0,
+    "noise_std": 0.5,
+    "prior_weight": 0.5,
+    "initial_formula": "0.5 * encoded_prior + 0.5 * epsilon",
+    "NFE": 1,
+    "dt": -0.5,
+    "bootstrap": "Gaussian D1, t1 -> t0"
+  },
+  "gripper_prior": "Last acknowledged executed gripper command, held across horizon, as in evaluated v4.5 condition",
+  "evidence": {
+    "manifest": "results/idea1_v4_5_noise_sweep/manifest.json",
+    "manifest_hash": "c75bc5ce7484e467c0e39f2cca5b10acacdf502920232ad05bd680c1edbdfe5a",
+    "report": "docs/experiments/idea1/idea1_v4_5_noise_sweep_report.md",
+    "success": 28,
+    "n": 40,
+    "success_rate": 0.7
+  }
+}

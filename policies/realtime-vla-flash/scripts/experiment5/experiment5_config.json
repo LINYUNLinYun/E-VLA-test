@@ -1,0 +1,49 @@
+{
+  "title": "π0 LIBERO multi-task VLM backbone pruning",
+  "global_noise_seed": 12345,
+  "condition_order_seed": 20261002,
+  "seed": 7,
+  "num_steps_wait": 10,
+  "replan_steps": 12,
+  "resize_size": 224,
+  "smoke_sample_count": 5,
+  "server_args": {
+    "config": "pi0_libero",
+    "base_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/base",
+    "draft_triton_path": "$WORKSPACE_ROOT/shared/checkpoints/realtime-vla-flash/converted/draft",
+    "backend": "triton",
+    "tokenizer_source": "local",
+    "max_exec_steps": 12,
+    "force_full_each_round": true
+  },
+  "conditions": [
+    {
+      "condition_id": "V12",
+      "vlm_layer_pattern": "vlm_first6_last6",
+      "vlm_layer_indices_1based": [1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18]
+    },
+    {
+      "condition_id": "V14",
+      "vlm_layer_pattern": "vlm_first7_last7",
+      "vlm_layer_indices_1based": [1, 2, 3, 4, 5, 6, 7, 12, 13, 14, 15, 16, 17, 18]
+    },
+    {
+      "condition_id": "V16",
+      "vlm_layer_pattern": "vlm_first8_last8",
+      "vlm_layer_indices_1based": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18]
+    },
+    {
+      "condition_id": "V10-Mid",
+      "vlm_layer_pattern": "vlm_first4_middle2_last4",
+      "vlm_layer_indices_1based": [1, 2, 3, 4, 9, 10, 15, 16, 17, 18]
+    },
+    {
+      "condition_id": "Control",
+      "vlm_layer_pattern": "vlm_full18",
+      "vlm_layer_indices_1based": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+      "is_control": true
+    }
+  ],
+  "action_layer_pattern": "full18",
+  "denoise_steps": 3
+}

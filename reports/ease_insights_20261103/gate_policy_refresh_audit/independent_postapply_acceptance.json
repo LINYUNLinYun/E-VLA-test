@@ -1,0 +1,242 @@
+{
+  "schema": "ease-gate-policy-refresh-postapply-independent-audit-v1",
+  "checked_unix": 1793813096.6640673,
+  "result": "passed",
+  "scope": "Read-only transaction/source/proc verification; only this acceptance report was written. No GPU query, tests, process signals, or queue changes.",
+  "pending_policy": {
+    "passed": true,
+    "changed_job_count": 3,
+    "only_resource_environment_and_gate_metadata_changed": true,
+    "queue_after_sha256": "d1e2601c734f78aca3195a3e972c150b8a319ff39b3f0c1226f83bf2ec3b7e7f"
+  },
+  "transactions": [
+    {
+      "directory": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gate_policy_refreshes/full_policy_1793812725391",
+      "passed": true,
+      "old_job_id": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6",
+      "new_job_id": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916",
+      "old_pid": 361717,
+      "stage": "complete",
+      "review_sha256": "21dce73f29ff8b86c45299430c6dbf4e0eea0bbce6daf9536482f2d8ff83c89c",
+      "event_times": {
+        "dry_run": 1793812729.3410487,
+        "stop_intent": 1793812811.0798829,
+        "stopped_verified": 1793812811.0997114,
+        "commit_intent": 1793812811.104075,
+        "committed_waiting_ack": 1793812811.126365,
+        "controllers_acknowledged": 1793812816.1802363,
+        "terminating_cpu_gate": 1793812816.1864364,
+        "complete": 1793812816.2747824
+      },
+      "committed_at": 1793812811.126201,
+      "supervisor_ack_time": 1793812816.0661454,
+      "scientific_inner_argv_unchanged": true,
+      "complete_file_unchanged": true,
+      "full_queue_comparison_passed": true,
+      "source_hashes_verified": 56,
+      "queue_after_sha256": "a8949e95937b20554c5bc2f5315e2c96c4515c22ddf81554430b3332344c7186"
+    },
+    {
+      "directory": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/gate_policy_refreshes/spatial_policy_1793812853600",
+      "passed": true,
+      "old_job_id": "vlm_local_v1_discovery_local_spatial_all120",
+      "new_job_id": "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a",
+      "old_pid": 344836,
+      "stage": "complete",
+      "review_sha256": "8d28a047368cc98d8c6d4c3acd9e8fb8094fce2610dbc5f1a3c781c0bc338e7a",
+      "event_times": {
+        "dry_run": 1793812856.4885013,
+        "stop_intent": 1793812887.6038527,
+        "stopped_verified": 1793812887.6392,
+        "commit_intent": 1793812887.644889,
+        "committed_waiting_ack": 1793812887.6742582,
+        "controllers_acknowledged": 1793812896.5411441,
+        "terminating_cpu_gate": 1793812896.5464118,
+        "complete": 1793812896.6283288
+      },
+      "committed_at": 1793812887.6740987,
+      "supervisor_ack_time": 1793812896.4674034,
+      "scientific_inner_argv_unchanged": true,
+      "complete_file_unchanged": true,
+      "full_queue_comparison_passed": true,
+      "source_hashes_verified": 56,
+      "queue_after_sha256": "7e3f98aa5aad9420e17baf08802d08a1cb013cb1642282b20e89f5203d1ed1b6"
+    }
+  ],
+  "current_queue_sha256": "7e3f98aa5aad9420e17baf08802d08a1cb013cb1642282b20e89f5203d1ed1b6",
+  "unfinished_jobs": [
+    {
+      "id": "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916",
+      "scheduler_state": "pending",
+      "resource_env": {
+        "EASE_GPU_GATE_IDLE_SECONDS": "5",
+        "EASE_GPU_GATE_POLL_SECONDS": "2"
+      }
+    },
+    {
+      "id": "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a",
+      "scheduler_state": "pending",
+      "resource_env": {
+        "EASE_GPU_GATE_IDLE_SECONDS": "5",
+        "EASE_GPU_GATE_POLL_SECONDS": "2"
+      }
+    },
+    {
+      "id": "vlm_local_v1_discovery_local_object_all120",
+      "scheduler_state": "pending",
+      "resource_env": {
+        "EASE_GPU_GATE_IDLE_SECONDS": "5",
+        "EASE_GPU_GATE_POLL_SECONDS": "2"
+      }
+    },
+    {
+      "id": "vlm_local_v1_discovery_local_goal_all120",
+      "scheduler_state": "pending",
+      "resource_env": {
+        "EASE_GPU_GATE_IDLE_SECONDS": "5",
+        "EASE_GPU_GATE_POLL_SECONDS": "2"
+      }
+    },
+    {
+      "id": "vlm_local_v1_discovery_local_long_all120",
+      "scheduler_state": "pending",
+      "resource_env": {
+        "EASE_GPU_GATE_IDLE_SECONDS": "5",
+        "EASE_GPU_GATE_POLL_SECONDS": "2"
+      }
+    }
+  ],
+  "current_queue_failed_jobs": [],
+  "scheduler_status": {
+    "status": "waiting_gpu",
+    "jobs": {
+      "fp_pilot_pi0_full": "complete",
+      "draft_pure_smoke": "complete",
+      "fp_pilot_pi0_keep24_2_front_middle": "complete",
+      "fp_pilot_pi0_keep24_1_uniform": "complete",
+      "vlm_discovery_full_d10_receipt_v2": "complete",
+      "discovery_full_libero_spatial": "complete",
+      "discovery_flash_libero_goal": "complete",
+      "vlm_discovery_fixed_v12_jacobian": "complete",
+      "vlm_discovery_fixed_v12_action_mse": "complete",
+      "vlm_discovery_fixed_v12_cosine": "complete",
+      "discovery_draft_libero_goal": "complete",
+      "discovery_flash_libero_spatial": "complete",
+      "discovery_draft_libero_spatial": "complete",
+      "discovery_flash_libero_object": "complete",
+      "discovery_draft_libero_object": "complete",
+      "discovery_flash_libero_10": "complete",
+      "discovery_draft_libero_10_resume2": "complete",
+      "vlm_confirm_full_d10_all200_retry2": "complete",
+      "vlm_confirm_fixed_v12_jacobian_all200": "complete",
+      "vlm_confirm_fixed_v12_action_mse_all200": "complete",
+      "replication_draft_from_libero_object_to_libero_object": "complete",
+      "replication_draft_from_libero_spatial_to_libero_object": "complete",
+      "replication_flash_from_libero_object_to_libero_object": "complete",
+      "replication_flash_from_libero_spatial_to_libero_object": "complete",
+      "replication_full_from_libero_spatial_to_libero_object": "complete",
+      "replication_draft_from_libero_spatial_to_libero_spatial": "complete",
+      "replication_draft_from_libero_object_to_libero_spatial": "complete",
+      "replication_flash_from_libero_spatial_to_libero_spatial": "complete",
+      "replication_flash_from_libero_object_to_libero_spatial": "complete",
+      "replication_full_from_libero_spatial_to_libero_spatial": "complete",
+      "vlm_local_v1_discovery_full_d10_all120__wait_reassign_5f9688a613c6__gate_policy_5s2s_aa673ea2c916": "pending",
+      "vlm_local_v1_discovery_jac_anchor_all120": "complete",
+      "vlm_local_v1_discovery_local_spatial_all120__gate_policy_5s2s_ece0430b8b3a": "pending",
+      "vlm_local_v1_discovery_local_object_all120": "pending",
+      "vlm_local_v1_discovery_local_goal_all120": "pending",
+      "vlm_local_v1_discovery_local_long_all120": "pending"
+    },
+    "active_pids": [],
+    "failed": [],
+    "time": 1793813096.6136386
+  },
+  "process_identities": [
+    {
+      "pid": 335208,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2615895606",
+      "argv": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.scheduler",
+        "--queue",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/queue.json",
+        "--output",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/scheduler",
+        "--max-gpus",
+        "2",
+        "--scan-seconds",
+        "30",
+        "--idle-seconds",
+        "0"
+      ]
+    },
+    {
+      "pid": 338645,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2616104350",
+      "argv": [
+        "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/.venv/bin/python",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.vlm_local_search_v1.supervisor",
+        "--root",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/discovery",
+        "--confirmation-root",
+        "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_local_search_v1/confirmation",
+        "--scheduler-pid",
+        "335208",
+        "--poll-seconds",
+        "10",
+        "--launch"
+      ]
+    },
+    {
+      "pid": 356386,
+      "state": "absent"
+    },
+    {
+      "pid": 415450,
+      "state": "S",
+      "ppid": 1,
+      "start_ticks": "2619222121",
+      "argv": [
+        "/usr/bin/python3",
+        "-u",
+        "-m",
+        "preparations.ease_insights_20261103.gate_opportunity_coordinator",
+        "--launch"
+      ]
+    },
+    {
+      "pid": 361717,
+      "state": "absent"
+    },
+    {
+      "pid": 344836,
+      "state": "absent"
+    }
+  ],
+  "coordinator_status": {
+    "schema": "ease-gate-opportunity-coordinator-v1",
+    "phase": "waiting_scheduler_capacity",
+    "time": 1793812967.6403587,
+    "pending_audit": null
+  },
+  "coordinator_pending": null,
+  "source_hashes": {
+    "await_assigned_gpu.py": "b4b5ca1bf95c8f43103e9a40b4de8b8cd8036bc6c870b12c2bf58dac6653e4cf",
+    "refresh_waiting_gate_policy.py": "b63b6a0344ae69d1973134a46cbe1988e46f5f2a956773f693428017b22a117b",
+    "reassign_waiting_gate_v2.py": "0238d949fd5585fc52dae19fc56c54b5b970cb4542714c4599024418c8169498",
+    "gate_opportunity_coordinator.py": "70ce6ef8a86153ad1f3cc6ffe0c4d05cc7e2d2dd334423ceb3af9598a7207432"
+  },
+  "interpretation": {
+    "historical_old_job_failed_states": "Technical CPU gate cleanup history; not failed episodes.",
+    "model_started_claim": false,
+    "resource_change_is_not_scientific_evidence": true
+  }
+}

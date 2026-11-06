@@ -1,0 +1,34 @@
+{
+  "status": "retrospective exploratory check, specified after aggregate/task summaries were available",
+  "input_sha256": "fbb7c043a9e63d5dcdcabb171068d278e8771d5ceea496ada9cc6f0f895a0ac6",
+  "train_trial_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluate_trial_indices": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "tie_choice": "L2",
+  "grouping_modes": [
+    "fixed_metadata_category",
+    "task"
+  ],
+  "baseline": "single fixed path selected only from the training half; tie L2",
+  "no_split_search": true,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20261105,
+  "bootstrap_scope": "heldout task means conditional on this fitted route; not training-selection uncertainty",
+  "limitations": [
+    "Historical aggregate/task summaries were already inspected; this is not independent confirmation.",
+    "Trial labels and seed match, but physical initial state hashes are absent.",
+    "Only the same 40 tasks are evaluated; not unseen-task generalization.",
+    "No paired Full baseline or measured latency; no adaptive speedup claim."
+  ]
+}

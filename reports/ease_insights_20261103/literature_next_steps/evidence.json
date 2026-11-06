@@ -1,0 +1,315 @@
+{
+  "title": "EASE fast path literature evidence and bounded follow-up experiments",
+  "prepared_on": "2026-11-04",
+  "scope": {
+    "purpose": "Use primary papers and the official OpenPI implementation to identify bounded, no-large-model-retraining experiments for the fast-path insight.",
+    "not_claimed": [
+      "The cited work does not prove complementary task preferences among Pi0/VLA paths.",
+      "The cited work does not prove runtime adaptive selection is useful in robot control.",
+      "Language-model or image-question-answering findings are not direct evidence for manipulation outcomes."
+    ],
+    "current_experiment_context": {
+      "source": "State supplied by the parent experiment agent; this subtask did not read or change the live queue.",
+      "flash_cross_suite_independent_replication_cases": 400,
+      "vlm_independent_confirmation_cases": 600,
+      "jacobian_successes": "170/200",
+      "action_mse_successes": "170/200",
+      "full_successes": "182/200",
+      "confirmed_suite_complementarity": false,
+      "queued_local_mask_search_cases": 720,
+      "queue_modified": false,
+      "local_mask_search_status": "Started; the Jac anchor has executed at least one run, per the parent experiment agent. This note does not claim local-search completion."
+    }
+  },
+  "sources": [
+    {
+      "id": "pi0",
+      "kind": "primary_robotics_paper_and_official_implementation",
+      "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+      "paper_url": "https://www.physicalintelligence.company/download/pi0.pdf",
+      "official_code_urls": [
+        "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/pi0.py",
+        "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/gemma.py",
+        "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/siglip.py"
+      ],
+      "source_facts": [
+        "The paper routes images and language through the pretrained VLM weights, while robot state and noisy action tokens use a smaller action expert; the weight sets interact through self-attention.",
+        "The VLM Gemma depth is 18. Official OpenPI config uses SigLIP So400m/14 with depth 27 and Gemma 2B / Gemma 300M variants with depth 18.",
+        "Official inference code computes the observation prefix and KV cache once, then repeatedly processes the action suffix for flow integration steps; the paper reports 10 flow steps and separates image-encoder, observation-forward, and repeated action-forward costs."
+      ],
+      "inference": "Equal skipped-layer counts are not equal compute budgets across image encoding, the VLM observation prefix, and repeated action-expert execution. Branch allocation is a candidate for separate experiments only; it is not what the present V12 masks implement.",
+      "upstream_code_snapshot": {
+        "commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+        "commit_url": "https://github.com/Physical-Intelligence/openpi/commit/215abfb217dbac7d5f1273282331b9b1866c0479",
+        "scope": "Architecture reference only. This upstream snapshot is not the local converted Triton runtime used by EASE experiments."
+      }
+    },
+    {
+      "id": "shortgpt",
+      "kind": "primary_research_paper",
+      "title": "ShortGPT: Layers in Large Language Models are More Redundant Than You Expect",
+      "url": "https://arxiv.org/abs/2403.03853",
+      "source_facts": [
+        "The paper defines Block Influence from adjacent-layer hidden-state similarity and reports non-uniform layer importance in Llama 2 and Baichuan2.",
+        "Removing some layers has small effects, while performance can fall sharply at particular layers as pruning increases.",
+        "Single attention-head effects vary across models without a universal redundancy ordering."
+      ],
+      "inference": "A one-layer exchange may be almost inert if it touches a redundant block, or cause broad damage if it touches a critical block; neither outcome guarantees category-specific complementarity."
+    },
+    {
+      "id": "fastv",
+      "kind": "primary_research_paper",
+      "title": "An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Inference Acceleration for Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2403.06764",
+      "source_facts": [
+        "The paper reports inefficient attention computation over visual tokens in deep layers of several LVLMs.",
+        "Its training-free method ranks and prunes visual tokens at a chosen layer, with layer and prune ratio controls; reported experiments include image and video understanding and approximately 45% FLOPs reduction for example settings."
+      ],
+      "inference": "Visual computation can have a distinct redundancy profile from text processing, making visual-branch or visual-token allocation a plausible Pi0 follow-up. The paper changes token count, not VLA layer masks, so transfer remains an untested hypothesis."
+    },
+    {
+      "id": "task_specific_compression",
+      "kind": "primary_research_paper",
+      "title": "Task-specific Compression for Multi-task Language Models using Attribution-based Pruning",
+      "url": "https://arxiv.org/abs/2205.04157",
+      "source_facts": [
+        "The paper uses attribution to identify task-important neurons and constructs task-specific pruned language models without additional training.",
+        "It evaluates six NLU datasets and reports an unseen-domain setting."
+      ],
+      "inference": "A task ID or instruction category can be frozen as a static route-selection signal after discovery. This only motivates testing the selector; the paper does not establish VLA complementarity or practical latency gains from arbitrary sparsity."
+    }
+  ],
+  "why_single_layer_exchange_may_not_be_robust": [
+    {
+      "claim": "The one-layer perturbation can be too small to change task outcomes, or large but non-selective.",
+      "basis": [
+        "shortgpt"
+      ],
+      "status": "inference_for_vla; not directly tested by cited work"
+    },
+    {
+      "claim": "The same layer count does not imply the same saved compute because Pi0 has a 27-layer visual encoder, an 18-layer VLM/expert stack, prefix caching, and repeated action-suffix inference.",
+      "basis": [
+        "pi0"
+      ],
+      "status": "architecture fact plus inference from official source"
+    },
+    {
+      "claim": "A whole-block V12 mask perturbs both image-token and language-token representations inside the observation prefix, but does not prune the action expert. Therefore these experiments do not establish preferences among AE layers, and a null result cannot rule out AE-path preferences.",
+      "basis": [
+        "pi0",
+        "local_runtime_contract"
+      ],
+      "status": "local implementation fact plus inference; task-category interaction remains unverified"
+    },
+    {
+      "claim": "Task-specific pruning in other model families motivates a separately validated task-conditioned route, but discovery-set choices cannot count as confirmation.",
+      "basis": [
+        "task_specific_compression",
+        "shortgpt"
+      ],
+      "status": "methodological recommendation"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "A_branch_budget",
+      "question": "At matched per-action compute, do the current observation-prefix mask path, a new image-encoder mask, or a new action-expert suffix mask have different task-category preferences?",
+      "conditions": [
+        "Full",
+        "current VLM observation-prefix mask",
+        "new SigLIP image-encoder mask",
+        "new action-expert suffix layer mask"
+      ],
+      "controls": [
+        "Same Pi0 checkpoint, preprocessing, normalization, action horizon, flow-step count, environment settings, and paired task/initial-state cases.",
+        "Match actual executed FLOPs or profiled compute per output using call counts and sequence shapes; skipped-layer counts alone are not a budget match.",
+        "Do not alter the existing queued 720-case local-mask search or reuse its confirmation cases for this independent proposal.",
+        "The current mask is not SigLIP-only, language-only, or AE-only: it skips VLM prefix hidden updates for the combined image-plus-language sequence, retains K/V shells, and applies residual compensation.",
+        "Image-encoder and action-expert masks are new experimental mechanisms requiring their own code revision, execution audit, and immutable manifest; no results from the current V12 masks validate them.",
+        "The 90% reference-FLOPs target is a proposal value, not a registered budget."
+      ],
+      "discovery": "Four predeclared categories (Spatial, Object, Goal, Long), 10 tasks/category, 2 initial states/task; select at most one candidate pair from the three branch paths.",
+      "confirmation": "Freeze masks and category contrast; use new initial states, at least 10 tasks/category and 4 unseen states/task.",
+      "primary_metric": "Paired success-rate interaction between the predeclared task-category pair, with task-clustered 95% bootstrap intervals.",
+      "secondary_metrics": [
+        "native-policy wall time per executed action",
+        "end-to-end RPC wall time",
+        "success-rate gap to Full",
+        "acceptance and Full-fallback rates when the runtime exposes them"
+      ],
+      "positive_rule": "Proposed criterion only: opposite A-versus-B preference of at least 10 percentage points in each category with both task-clustered 95% intervals excluding zero; each path would also need to meet a separately preregistered Full non-inferiority margin and show measured latency reduction. These thresholds are not in the current manifest.",
+      "falsification": "No reversed category preference, unstable independent replication, failure of the Full non-inferiority margin, or no measured speed gain means this does not establish a useful complementary fast-path pair."
+    },
+    {
+      "id": "B_attention_vs_mlp",
+      "question": "At matched compute, does bypassing attention residual sub-blocks versus MLP residual sub-blocks produce reproducible category-specific preferences?",
+      "conditions": [
+        "Full",
+        "attention-residual bypass",
+        "MLP-residual bypass"
+      ],
+      "controls": [
+        "Freeze branch and candidate layer positions before confirmation; no large-model retraining.",
+        "Use profiler-measured executed FLOPs or latency to match budgets (target approximately 10% of reference compute); do not equate one attention block with one MLP block by count.",
+        "Limit discovery to 12 preregistered layer-range combinations and select at most one pair.",
+        "The current EASE Backend skips whole VLM blocks using KV-only computation plus residual compensation; it does not use the lower-level attention/FFN skip arguments. This is a new sub-block mechanism and needs a separate runtime revision and manifest.",
+        "The approximately 10% compute target and 12 candidate layer ranges are proposals, not preregistered or frozen in the current queue."
+      ],
+      "discovery_and_confirmation": "Use the same separate discovery/confirmation scheme as proposal A with paired task/initial-state cases.",
+      "primary_metric": "The preregistered path-by-category success-rate interaction, clustered by task.",
+      "secondary_metrics": [
+        "per-action native-policy latency",
+        "RPC latency",
+        "gap to Full",
+        "acceptance/fallback if applicable"
+      ],
+      "positive_rule": "Proposed criterion only: independent confirmation would reproduce opposite category preferences at a newly frozen minimum effect and latency criterion; neither is registered for this future mechanism.",
+      "falsification": "An overall attention-versus-MLP difference without an independently reproduced category interaction supports only a general sub-module effect, not task-specific complementarity."
+    },
+    {
+      "id": "C_static_task_router",
+      "question": "After a complementary pair is independently identified, does selecting a fixed path by known task category outperform the best single fixed path?",
+      "conditions": [
+        "Full",
+        "fixed path A on every case",
+        "fixed path B on every case",
+        "frozen task-category-to-path mapping"
+      ],
+      "controls": [
+        "Only run after a path pair is confirmed in A, B, or the current frozen local-search branch.",
+        "Freeze one category-to-path mapping on discovery data; confirmation uses new initial states and the same per-case compute budget.",
+        "Selector reads only the known task/suite ID before inference; it cannot use images, state, trajectory history, or within-episode phase."
+      ],
+      "confirmation": "At least 10 tasks per category and 4 new initial states per task; compare all four conditions on paired cases.",
+      "primary_metric": "Paired success-rate gain of the frozen router over the discovery-selected best fixed path, with task-clustered 95% bootstrap interval.",
+      "positive_rule": "Proposed criterion only: confirmation would need at least a 5 percentage-point gain, a task-cluster bootstrap interval lower bound above zero, and a matched per-case budget. These are not currently registered.",
+      "falsification": "If routing does not beat the best fixed path, or A dominates B across categories, use one fixed path; do not claim task-level selection benefit. A positive result still does not establish within-episode adaptation."
+    }
+  ],
+  "phase_followup_boundary": {
+    "recommendation": "Only after static complementarity is confirmed, consider a separate new runtime revision testing a fixed route schedule keyed by known flow timestep while keeping total flow steps and total path-compute budget constant. Test early/late and reversed schedules on independent cases. This is not part of current V12 masks.",
+    "not_established_by_static_task_router": "Episode-phase detection, online path selection, transition overhead, and a runtime adaptive policy."
+  },
+  "validation_notes": {
+    "sources_opened": [
+      "https://www.physicalintelligence.company/download/pi0.pdf",
+      "https://github.com/Physical-Intelligence/openpi/tree/215abfb217dbac7d5f1273282331b9b1866c0479",
+      "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/pi0.py",
+      "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/gemma.py",
+      "https://github.com/Physical-Intelligence/openpi/blob/215abfb217dbac7d5f1273282331b9b1866c0479/src/openpi/models/siglip.py",
+      "https://arxiv.org/abs/2403.03853",
+      "https://arxiv.org/abs/2403.06764",
+      "https://arxiv.org/abs/2205.04157"
+    ],
+    "source_policy": "Primary research papers and official model code only.",
+    "gpu_started": false,
+    "queue_or_runtime_changed": false,
+    "upstream_commit_caveat": "The upstream OpenPI links are pinned to commit 215abfb217dbac7d5f1273282331b9b1866c0479. The local experiment runtime is separate and is identified by the local result manifests and their file hashes.",
+    "local_manifest_sha256": {
+      "vlm_confirmation": "0fa449c833c888abf93ea82e5ccd203350ea0528a60e9a0c8683addfdae3d6da",
+      "vlm_local_search_discovery": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9"
+    }
+  },
+  "local_runtime_contract": {
+    "evidence_source": "Read-only source trace of preparations/ease_insights_20261103/vlm/backend.py and policy.py, inherited preparations/idea1_v3/policy.py, preparations/idea1_v2_2/pi0_adapter.py, policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py, and both frozen result manifests.",
+    "mask_target": "Observation-prefix VLM transformer only. The prefix sequence contains projected image tokens plus language prompt embeddings.",
+    "image_encoder": "Runs fully in prepare; V12 skip mask is not applied to the image encoder.",
+    "skipped_vlm_layer_semantics": "For one-based layers 1-17, a skipped block computes the original-index K/V shell but omits Q, attention-output, and FFN hidden-state updates. The hidden state then receives the mask-specific residual compensation/extrapolation saved from that path. Layer 18 is K/V-only in this implementation and is not an eligible hidden-update skip.",
+    "action_expert": "sample receives no layer mask. Each flow integration step executes all 18 action-expert layers.",
+    "per_request_difference": "The VLM path uses the fixed V12 mask on Fast calls and recomputes/captures masked-layer residuals on Full refreshes. The action expert remains full-depth; Fast uses D=2 integration steps and Full refresh uses D=10.",
+    "schedule": "Full-D10 refresh followed by up to two Fast-D2 requests.",
+    "discovery_manifest": {
+      "path": "results/ease_insights_20261103/vlm/manifest.json",
+      "sha256": "d50d818fa78f6eca00ae19a20450c0930870ba49dc2b15bc247238c7519ccb0e",
+      "vlm_backend_sha256": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+      "vlm_policy_sha256": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+      "pi0_adapter_sha256": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+      "pi0_infer_sha256": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+    },
+    "independent_confirmation_manifest": {
+      "path": "results/ease_insights_20261103/vlm_confirmation/manifest.json",
+      "sha256": "0fa449c833c888abf93ea82e5ccd203350ea0528a60e9a0c8683addfdae3d6da"
+    },
+    "current_local_search_manifest": {
+      "path": "results/ease_insights_20261103/vlm_local_search_v1/discovery/manifest.json",
+      "sha256": "032eacba3709cd363e528b4f4ae1acbc52b325c6c99fb42a0e0ef0043c2817a9",
+      "runtime_reuses": "preparations.ease_insights_20261103.vlm.backend.Backend and preparations.ease_insights_20261103.vlm.policy.Policy",
+      "source_files_sha256": {
+        "preparations/ease_insights_20261103/vlm/backend.py": "33cbc9bd57f146e3b9a5e457fa78dbd075655f86e08469b5ee2c477d6cd561c6",
+        "preparations/ease_insights_20261103/vlm/policy.py": "91312c72c131c25b243859e8c07efcbdede5a4a6f6aed0a1a1e530b186433845",
+        "preparations/idea1_v2_2/pi0_adapter.py": "5048a70340b0c6cda65c9d665011b0c8f92cd7d997df1102df534992b4bda623",
+        "policies/realtime-vla-flash/scripts/spec/triton/pi0_infer.py": "c554399a9adf25b1ee512a73325cbe05f56943b1a4cbc1748934d2f413cd56b8"
+      }
+    },
+    "authority": "The local frozen manifests and their source-file SHA256 entries govern experimental implementation identity. The pinned upstream GitHub commit is a separate architecture reference.",
+    "fixed_prefix_skip_masks": {
+      "fixed_v12_jacobian": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "fixed_v12_action_mse": [
+        2,
+        3,
+        5,
+        11,
+        16,
+        17
+      ],
+      "local_search_jac_anchor": [
+        2,
+        3,
+        5,
+        14,
+        16,
+        17
+      ],
+      "local_search_spatial": [
+        2,
+        3,
+        5,
+        13,
+        16,
+        17
+      ],
+      "local_search_object": [
+        2,
+        3,
+        5,
+        14,
+        15,
+        17
+      ],
+      "local_search_goal": [
+        2,
+        3,
+        11,
+        14,
+        16,
+        17
+      ],
+      "local_search_long": [
+        2,
+        3,
+        5,
+        12,
+        16,
+        17
+      ]
+    }
+  },
+  "proposal_status": {
+    "status": "proposals_only; not preregistered in current discovery, confirmation, or local-search manifests",
+    "current_queue_must_remain_unchanged": true,
+    "proposed_thresholds_are_not_registered": true,
+    "requires_before_execution": [
+      "new technical runtime revision for any new branch/sub-block mechanism",
+      "new immutable manifest",
+      "separate freeze of budget, non-inferiority margins, sample sizes, and analysis before collecting confirmation outcomes"
+    ]
+  }
+}

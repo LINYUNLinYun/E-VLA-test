@@ -1,0 +1,13 @@
+{
+  "reason": "No-encoder arms in initial v2 gates did not hoist backend.prepare while encoder arms did; primary protocol standardizes ahead prepare in all arms, changing only next Vision replay.",
+  "affected_runs": [
+    "gate_gpu2_v2",
+    "gate_gpu3_v2"
+  ],
+  "valid_original_cases_preserved": 6,
+  "selection_independent_of_success": true,
+  "primary_gate_runs": [
+    "gate_gpu2_v3",
+    "gate_gpu3_v3"
+  ]
+}

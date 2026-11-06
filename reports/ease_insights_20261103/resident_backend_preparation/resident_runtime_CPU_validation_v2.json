@@ -1,0 +1,46 @@
+{
+  "schema": "resident-runtime-components-cpu-preparation-v2",
+  "status": "CPU18_passed_GPU_gate_pending_not_integrated",
+  "time": 1793877144.410512,
+  "tests": {
+    "prompt_lifecycle": 10,
+    "memory_floor": 8,
+    "total": 18
+  },
+  "exit_code": 0,
+  "command": [
+    "/root/nfs/embodied/benchmark/policies/libero-eval-v21/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "preparations.ease_insights_20261103.resident_runtime_v1.test_memory_floor",
+    "preparations.ease_insights_20261103.resident_runtime_v1.test_prompt_runtime"
+  ],
+  "sources": {
+    "preparations/ease_insights_20261103/resident_runtime_v1/README.md": "d5d786a6fc581fc404342d5886f0d542e453ade2e2e440a7aa9aa1c0b1f7e473",
+    "preparations/ease_insights_20261103/resident_runtime_v1/__init__.py": "3418564301ae069a0338b19c07181f23fad1e57ed14b1e350fda4e3ebc839c2a",
+    "preparations/ease_insights_20261103/resident_runtime_v1/memory_floor.py": "3934af3a56be3b4e35289c33243b18cad8ff846c88dfbe6c488c820ee013a2f2",
+    "preparations/ease_insights_20261103/resident_runtime_v1/prompt_runtime.py": "812916a90f07a30f6b78491bdb0920df70a3fca94d538e54b1a39340af2ab857",
+    "preparations/ease_insights_20261103/resident_runtime_v1/test_memory_floor.py": "ff0d50a9586786dd6853ea66a61762daffce024c8982d81db6a2f4d9d49c8904",
+    "preparations/ease_insights_20261103/resident_runtime_v1/test_prompt_runtime.py": "901f30c0be80698c95baae00750a7c686864eb900e06173c738682f9e2efca28"
+  },
+  "synthetic_example_gib": {
+    "working": 8,
+    "invariant": 6,
+    "minimum_retained": 10,
+    "extra_buffer": 4,
+    "combined_peak": 12,
+    "reviewed_capacity": 24
+  },
+  "scope": {
+    "torch_or_model_imported": false,
+    "GPU_queries_or_allocations": false,
+    "current_scientific_sources_modified": false,
+    "actual_NVML_floor_proven": false,
+    "GPU_numeric_parity_proven": false,
+    "resident_server_implemented": false,
+    "reservation_component_implemented": true
+  },
+  "next_validation": "ActualGPUparityonoldfinitebank+available20prompts; physicalweight/storageaddressesandNVMLflooracrossprompt/mask/CPUanalysis; separatelyversionedserverandmanifestneeded"
+}

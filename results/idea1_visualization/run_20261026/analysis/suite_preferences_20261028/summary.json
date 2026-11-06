@@ -1,0 +1,716 @@
+{
+  "suites": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "modules": [
+    "vision/base_0_rgb/hidden",
+    "vision/left_wrist_0_rgb/hidden",
+    "vlm/vision/hidden",
+    "vlm/language/hidden"
+  ],
+  "keys": [
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 3,
+      "label": "Base Vision H3"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 6,
+      "label": "Base Vision H6"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 9,
+      "label": "Base Vision H9"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 12,
+      "label": "Base Vision H12"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 18,
+      "label": "Base Vision H18"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 24,
+      "label": "Base Vision H24"
+    },
+    {
+      "feature": "vision/base_0_rgb/hidden",
+      "layer": 27,
+      "label": "Base Vision H27"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 3,
+      "label": "Wrist Vision H3"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 6,
+      "label": "Wrist Vision H6"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 9,
+      "label": "Wrist Vision H9"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 12,
+      "label": "Wrist Vision H12"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 18,
+      "label": "Wrist Vision H18"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 24,
+      "label": "Wrist Vision H24"
+    },
+    {
+      "feature": "vision/left_wrist_0_rgb/hidden",
+      "layer": 27,
+      "label": "Wrist Vision H27"
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "layer": 3,
+      "label": "VLM visual H3"
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "layer": 6,
+      "label": "VLM visual H6"
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "layer": 9,
+      "label": "VLM visual H9"
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "layer": 12,
+      "label": "VLM visual H12"
+    },
+    {
+      "feature": "vlm/vision/hidden",
+      "layer": 18,
+      "label": "VLM visual H18"
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "layer": 3,
+      "label": "VLM language H3"
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "layer": 6,
+      "label": "VLM language H6"
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "layer": 9,
+      "label": "VLM language H9"
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "layer": 12,
+      "label": "VLM language H12"
+    },
+    {
+      "feature": "vlm/language/hidden",
+      "layer": 18,
+      "label": "VLM language H18"
+    }
+  ],
+  "source_sha256": {
+    "conditional_probes.csv": "b115b5b63439fd18e40d921265a5021ad314f982ac134c19f1861ca23748c17b",
+    "backend_control_probes.csv": "ea1b6315cc43cb723e7e0de1918f61da81f608a4faf109d4ec9f23ed11c3b5f6"
+  },
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 7,
+  "simultaneous_family_cells": 112,
+  "simultaneous_critical": 3.446132695109973,
+  "clusters": {
+    "task": {
+      "tree": [
+        [
+          1.0,
+          3.0,
+          0.078911153640288,
+          2.0
+        ],
+        [
+          0.0,
+          4.0,
+          0.9886333020438312,
+          3.0
+        ],
+        [
+          2.0,
+          5.0,
+          1.724839986686799,
+          4.0
+        ]
+      ],
+      "distance": [
+        [
+          0.0,
+          0.963903629225185,
+          1.2952855227649174,
+          1.0133629748624773
+        ],
+        [
+          0.963903629225185,
+          0.0,
+          1.944748909548843,
+          0.078911153640288
+        ],
+        [
+          1.2952855227649174,
+          1.944748909548843,
+          0.0,
+          1.9344855277466364
+        ],
+        [
+          1.0133629748624773,
+          0.078911153640288,
+          1.9344855277466364,
+          0.0
+        ]
+      ],
+      "order": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "first_pair": "Object + LIBERO-10",
+      "leave_one_module_out": [
+        {
+          "omitted_module": "Base Vision",
+          "first_pair": [
+            "Object",
+            "LIBERO-10"
+          ]
+        },
+        {
+          "omitted_module": "Wrist Vision",
+          "first_pair": [
+            "Object",
+            "LIBERO-10"
+          ]
+        },
+        {
+          "omitted_module": "VLM visual",
+          "first_pair": [
+            "Object",
+            "LIBERO-10"
+          ]
+        },
+        {
+          "omitted_module": "VLM language",
+          "first_pair": [
+            "Object",
+            "LIBERO-10"
+          ]
+        }
+      ],
+      "equal_layer_weight_first_pair": [
+        "Object",
+        "LIBERO-10"
+      ]
+    },
+    "phase": {
+      "tree": [
+        [
+          1.0,
+          0.0,
+          0.8597893850455272,
+          2.0
+        ],
+        [
+          2.0,
+          3.0,
+          1.1590479386932087,
+          2.0
+        ],
+        [
+          4.0,
+          5.0,
+          1.4895927503012534,
+          4.0
+        ]
+      ],
+      "distance": [
+        [
+          0.0,
+          0.8597893850455272,
+          1.0944343191386845,
+          1.8786407173646031
+        ],
+        [
+          0.8597893850455272,
+          0.0,
+          1.876151736982537,
+          1.1091442277191887
+        ],
+        [
+          1.0944343191386845,
+          1.876151736982537,
+          0.0,
+          1.1590479386932087
+        ],
+        [
+          1.8786407173646031,
+          1.1091442277191887,
+          1.1590479386932087,
+          0.0
+        ]
+      ],
+      "order": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "first_pair": "Spatial + Object",
+      "leave_one_module_out": [
+        {
+          "omitted_module": "Base Vision",
+          "first_pair": [
+            "Spatial",
+            "Object"
+          ]
+        },
+        {
+          "omitted_module": "Wrist Vision",
+          "first_pair": [
+            "Spatial",
+            "Object"
+          ]
+        },
+        {
+          "omitted_module": "VLM visual",
+          "first_pair": [
+            "Spatial",
+            "Object"
+          ]
+        },
+        {
+          "omitted_module": "VLM language",
+          "first_pair": [
+            "Object",
+            "LIBERO-10"
+          ]
+        }
+      ],
+      "equal_layer_weight_first_pair": [
+        "Spatial",
+        "Object"
+      ],
+      "coassignment": [
+        [
+          1.0,
+          0.5996,
+          0.3904,
+          0.0902
+        ],
+        [
+          0.5996,
+          1.0,
+          0.074,
+          0.4698
+        ],
+        [
+          0.3904,
+          0.074,
+          1.0,
+          0.537
+        ],
+        [
+          0.0902,
+          0.4698,
+          0.537,
+          1.0
+        ]
+      ],
+      "first_pair_bootstrap_frequency": {
+        "Spatial + Object": 0.3796,
+        "Goal + LIBERO-10": 0.1952,
+        "Spatial + Goal": 0.1536,
+        "Object + LIBERO-10": 0.2678,
+        "Spatial + LIBERO-10": 0.0022,
+        "Object + Goal": 0.0016
+      }
+    }
+  },
+  "row_clusters": {
+    "task": [
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 3,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 6,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 9,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 12,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 18,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 24,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 27,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 3,
+        "cluster": 4
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 6,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 9,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 12,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 18,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 24,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 27,
+        "cluster": 4
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 3,
+        "cluster": 2
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 6,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 9,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 12,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 18,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 3,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 6,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 9,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 12,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 18,
+        "cluster": 3
+      }
+    ],
+    "phase": [
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 3,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 6,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 9,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 12,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 18,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 24,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/base_0_rgb/hidden",
+        "layer": 27,
+        "cluster": 3
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 3,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 6,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 9,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 12,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 18,
+        "cluster": 2
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 24,
+        "cluster": 1
+      },
+      {
+        "feature": "vision/left_wrist_0_rgb/hidden",
+        "layer": 27,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 3,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 6,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 9,
+        "cluster": 2
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 12,
+        "cluster": 2
+      },
+      {
+        "feature": "vlm/vision/hidden",
+        "layer": 18,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 3,
+        "cluster": 3
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 6,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 9,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 12,
+        "cluster": 1
+      },
+      {
+        "feature": "vlm/language/hidden",
+        "layer": 18,
+        "cluster": 4
+      }
+    ]
+  },
+  "module_preference": {
+    "phase": [
+      [
+        0.04364357078468395,
+        0.0009770996689941747,
+        -0.009200231680212112,
+        -0.035420438773466234
+      ],
+      [
+        0.027926196795825642,
+        0.005104906540941534,
+        0.00021279344570357406,
+        -0.03324389678247108
+      ],
+      [
+        -0.025726781302464863,
+        0.035006262996985615,
+        -0.025839471129998515,
+        0.01655998943547765
+      ],
+      [
+        -0.04584298627804495,
+        -0.041088269206921546,
+        0.03482690936450705,
+        0.05210434612045933
+      ]
+    ],
+    "task": [
+      [
+        0.021079294305098584,
+        0.09302034076891452,
+        -0.21569419459292738,
+        0.1015945595189146
+      ],
+      [
+        -0.05248178771405765,
+        -0.004425404079189121,
+        0.061742752122436184,
+        -0.004835560329189192
+      ],
+      [
+        0.015045065235181343,
+        -0.0428895050773187,
+        0.07231597616945629,
+        -0.044471536327318595
+      ],
+      [
+        0.016357428173777833,
+        -0.045705431612406366,
+        0.08163546630103524,
+        -0.052287462862406375
+      ]
+    ]
+  },
+  "raw_module_auc": {
+    "phase": [
+      [
+        0.7305919184981685,
+        0.626758308531746,
+        0.8086140873015873,
+        0.5519327876984128
+      ],
+      [
+        0.7845902777777778,
+        0.6945311259920635,
+        0.8693090277777779,
+        0.6205798611111111
+      ],
+      [
+        0.7314819291819291,
+        0.7069009920634921,
+        0.8467222222222223,
+        0.6511539682539682
+      ],
+      [
+        0.6266614163614164,
+        0.558866865079365,
+        0.8074444444444444,
+        0.5890464285714285
+      ]
+    ],
+    "task": [
+      [
+        0.866171875,
+        0.9868750000000001,
+        0.6390306533797729,
+        1.0
+      ],
+      [
+        0.8374671052631578,
+        0.9390624999999999,
+        0.891124306630547,
+        0.945
+      ],
+      [
+        0.9731973684210526,
+        0.99,
+        0.9812916666666667,
+        0.995
+      ],
+      [
+        0.9855,
+        0.999,
+        1.0,
+        1.0
+      ]
+    ]
+  },
+  "supported_phase_module_cells": 0,
+  "supported_phase_depth_cells": 0,
+  "caveat": "Readout preference only; no causal layer/module importance or ablation result",
+  "source_code_sha256": "8336367d51ba4faad4a4bb7961e02bd594ee11162c0d4736b90a6e2880fe4191"
+}

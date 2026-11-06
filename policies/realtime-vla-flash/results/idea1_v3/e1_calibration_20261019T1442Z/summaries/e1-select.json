@@ -1,0 +1,177 @@
+{
+  "calibration": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v3/e1_calibration_20261019T1442Z",
+  "candidates": [
+    {
+      "condition": "E1_D2_tau0.1_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 2
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 31.94114213712384
+    },
+    {
+      "condition": "E1_D2_tau0.1_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.1,
+        "period": 4
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 33.09685919293711
+    },
+    {
+      "condition": "E1_D2_tau0.15_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.15,
+        "period": 2
+      },
+      "successes": 6,
+      "episodes": 8,
+      "policy_ms_per_action": 28.08952494692583
+    },
+    {
+      "condition": "E1_D2_tau0.15_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.15,
+        "period": 4
+      },
+      "successes": 6,
+      "episodes": 8,
+      "policy_ms_per_action": 24.787721294604516
+    },
+    {
+      "condition": "E1_D2_tau0.25_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.25,
+        "period": 2
+      },
+      "successes": 6,
+      "episodes": 8,
+      "policy_ms_per_action": 34.37674824398075
+    },
+    {
+      "condition": "E1_D2_tau0.25_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 2,
+        "tau": 0.25,
+        "period": 4
+      },
+      "successes": 6,
+      "episodes": 8,
+      "policy_ms_per_action": 25.436666818677036
+    },
+    {
+      "condition": "E1_D10_tau0.1_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.1,
+        "period": 2
+      },
+      "successes": 6,
+      "episodes": 8,
+      "policy_ms_per_action": 34.91844681769875
+    },
+    {
+      "condition": "E1_D10_tau0.1_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.1,
+        "period": 4
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 39.262060007869366
+    },
+    {
+      "condition": "E1_D10_tau0.15_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.15,
+        "period": 2
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 40.212164559540895
+    },
+    {
+      "condition": "E1_D10_tau0.15_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.15,
+        "period": 4
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 35.35699493656255
+    },
+    {
+      "condition": "E1_D10_tau0.25_P2",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.25,
+        "period": 2
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 35.85412542973271
+    },
+    {
+      "condition": "E1_D10_tau0.25_P4",
+      "config": {
+        "experiment": "E1",
+        "draft_steps": 10,
+        "tau": 0.25,
+        "period": 4
+      },
+      "successes": 7,
+      "episodes": 8,
+      "policy_ms_per_action": 36.833881945011456
+    }
+  ],
+  "selected": [
+    {
+      "experiment": "E1",
+      "draft_steps": 2,
+      "tau": 0.15,
+      "period": 2
+    },
+    {
+      "experiment": "E1",
+      "draft_steps": 2,
+      "tau": 0.1,
+      "period": 2
+    },
+    {
+      "experiment": "E1",
+      "draft_steps": 10,
+      "tau": 0.15,
+      "period": 2
+    },
+    {
+      "experiment": "E1",
+      "draft_steps": 10,
+      "tau": 0.15,
+      "period": 4
+    }
+  ],
+  "rule": "success count descending, policy ms per actual action ascending, tau ascending, P ascending",
+  "calibration_is_separate_from_init6_10": true
+}

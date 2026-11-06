@@ -1,0 +1,141 @@
+{
+  "revision": "ease-insight1-latency-confirmation-v1",
+  "preregistered_utc": "2026-11-03T09:36:44Z",
+  "preregistered_beijing": "2026-11-03 17:36:44 +08:00",
+  "status": "prospective_subset_protocol_no_runtime_change",
+  "selection_rule_unchanged": true,
+  "heldout_outcomes_read_for_this_design": false,
+  "scope": "Independent selected source-target confirmation only, official init21-24; discovery init20 is excluded from these subsets.",
+  "fixed_subsets": [
+    {
+      "name": "all4_init21_24",
+      "init_ids": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "tasks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected_episodes_per_condition": 40,
+      "purpose": "Primary inclusive actual measured cost across all four held-out initial states"
+    },
+    {
+      "name": "first_task_init21",
+      "init_ids": [
+        21
+      ],
+      "tasks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected_episodes_per_condition": 10,
+      "purpose": "First scheduled initial state of each task; report separately without labeling every request cold"
+    },
+    {
+      "name": "repeat_task_init22_24",
+      "init_ids": [
+        22,
+        23,
+        24
+      ],
+      "tasks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expected_episodes_per_condition": 30,
+      "purpose": "Fixed repeated-task subset; not guaranteed free of compilation/capture or other cold costs"
+    }
+  ],
+  "selection_policy": "Include every valid planned episode in each fixed subset, irrespective of success, failure, duration, request latency, acceptance or fallback. Technical interruptions remain explicit; no outcome/speed filtering or favorable reruns.",
+  "execution_context": "Existing manifest orders each task init21,22,23,24 in a persistent same-source/mode service. Confirm order from manifest. If service restarts, preserve the fixed subset and disclose the restart; never silently exclude its costs.",
+  "metrics": {
+    "primary": "sum(complete native policy-call wall ms, including rejected zero-action requests) / sum(actually executed actions)",
+    "secondary": "sum(complete client RPC ms) / sum(actually executed actions)",
+    "quality": "Successful episodes / valid completed episodes and actual episode-wall totals/means for every subset",
+    "full_run_cost": "For all four inits, report run wall_seconds, closed_loop_seconds, sum episode wall, and preparation_seconds separately. Do not subtract preparation from per-request latency; lazy graph construction may occur after service readiness.",
+    "preparation_attribution": "Preparation is a once-per-run separate cost. Do not assign it entirely to init21 or prorate it away from repeat-task subsets. Preserve missing cost fields as missing.",
+    "gpu_stage": "Retain native stage costs as diagnostics only; GPU-stage timings are not complete policy/RPC or end-to-end latency.",
+    "mean_request_latency": "Diagnostic only; it cannot by itself support actual acceleration because rejected FLASH requests may execute zero actions."
+  },
+  "comparisons": "Within each fixed subset, pair identical target suite/task/init cases. Compare foreign source against target-matching source within the same mode, and each condition against Full. Report reference/condition per-action cost ratios, actual episode-wall ratio, both success counts and matched n. Do not mix discovery or first-task and repeat-task rows.",
+  "cold_marker_audit": {
+    "reliable_persisted_cold_capture_marker_found": false,
+    "inspected_json_records": [
+      {
+        "path": "results/ease_insights_20261103/draft_smoke/flash_spatial/requests.jsonl",
+        "line_numbers": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "path": "results/ease_insights_20261103/draft_discovery/full_libero_spatial/requests.jsonl",
+        "line_numbers": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "observed_cold_warm_graph_compile_capture_timing_keys": [],
+    "rejected_surrogates": [
+      "did_prefill denotes Full-route prefix computation, not first compilation",
+      "is_full_pipeline_round/ease_initial_full denote policy routing/reset, not CUDA graph capture",
+      "latency threshold or first-request index cannot prove cold versus warm",
+      "NVTX graph-replay labels are not persisted per-request capture-success indicators"
+    ],
+    "code_evidence": {
+      "policies/realtime-vla-flash/scripts/spec/triton/triton_pi0_runtime.py": {
+        "sha256": "50f9290961aa24288c5b741e6342e9cbec43acdb5e784fc5f8c905d637bb2fc5",
+        "functions": [
+          "_StagedPi0Runtime._capture_stage_graph:1979",
+          "TritonRuntimePool.get_runtime:2222",
+          "SpecTritonPolicyRuntime.sample_actions_with_timing:1757"
+        ]
+      },
+      "policies/realtime-vla-flash/scripts/spec/triton/pi0_spec_infer.py": {
+        "sha256": "b2d98018e8fa37dfeb69b6594ebbee6b141610dfa64395d113cefb5970e861dd",
+        "functions": [
+          "Pi0SpecInference._get_or_create_draft_graph:2001",
+          "Pi0SpecInference._get_or_create_verify_semantics_graph:3455"
+        ]
+      },
+      "policies/realtime-vla-flash/scripts/spec/spec_serve_policy.py": {
+        "sha256": "9ee4a3ef3b187c6114b22879146641607c767d470c2f23d74504a355d6be72c8",
+        "functions": [
+          "TritonServerPolicy.infer:699"
+        ]
+      }
+    },
+    "conclusion": "No request-level warm/cold partition will be manufactured. The fixed init22-24 result is named repeat-task, never deployment warm-state acceleration. New direct instrumentation would require a separate prospectively registered measurement."
+  },
+  "reporting_bounds": "Inclusive costs answer this evaluated run workload; repeated-task costs describe the fixed later initial states. Neither alone proves deployment steady-state speedup. Preserve actual success/trajectory differences and technical gaps."
+}

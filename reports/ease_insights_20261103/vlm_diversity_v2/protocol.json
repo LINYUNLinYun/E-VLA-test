@@ -1,0 +1,187 @@
+{
+  "revision": "ease-vlm-diversity-v2",
+  "status": "prospectively_frozen_before_new_path_outcomes",
+  "frozen_at": 1793891072.2495878,
+  "conditions": [
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": []
+    },
+    {
+      "id": "spread_a",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "spread_b",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        3,
+        6,
+        9,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "spread_c",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        17
+      ]
+    },
+    {
+      "id": "spread_d",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [
+        4,
+        6,
+        8,
+        11,
+        13,
+        15
+      ]
+    }
+  ],
+  "suite_order": [
+    "libero_spatial",
+    "libero_object",
+    "libero_goal",
+    "libero_10"
+  ],
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "proposal_basis": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/future_path_diversity_preparation/plan.json",
+    "sha256": "3c50de72fbde814ce96f7b3839f8e97ce195e7d50b01c73689b9eb2bde996a9d",
+    "scope": "Four geometric masks proposed before any outcomes for them. The LIBERO90 task pool was discarded after failed Full health; these proposals move to the complete common-suite pool."
+  },
+  "fixed_science": {
+    "H": 50,
+    "R": 5,
+    "refresh_D": 10,
+    "fast_D": 2,
+    "cycle": [
+      "FullD10",
+      "FastD2",
+      "FastD2"
+    ],
+    "VLM_layers_skipped": 6,
+    "nominal_VLM_layers_retained": 12,
+    "actual_fast_hidden_updates": 11,
+    "AE_layers": 18,
+    "vision_layers": 27,
+    "compensation": "own-path residual extrapolation",
+    "policy_action_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "settling_actions": 10,
+    "environment_seed": 7
+  },
+  "health_gate": {
+    "calibration_init": 44,
+    "minimum_total_successes": 32,
+    "minimum_suite_successes": 6,
+    "no_task_filtering": true
+  },
+  "discovery": {
+    "inits": [
+      45,
+      46
+    ],
+    "episodes": 400,
+    "conditions": [
+      "full_d10",
+      "spread_a",
+      "spread_b",
+      "spread_c",
+      "spread_d"
+    ],
+    "usability": "overall>=.75 and >=Full-.15",
+    "minimum_fixed_input_cost_ratio": 1.15,
+    "selection": "All six pairs and ordered distinct-suite contrasts. Require each opposite gap>=.10, at least two positive tasks, every task leave-one-out gap>0. Rank by minimum gap, sum gaps, minimum overall success, then lexical ids/suites. Freeze only after all400 accepted.",
+    "inferential_status": "Exploratory selection; no discovery significance claim"
+  },
+  "confirmation": {
+    "inits": [
+      47,
+      48,
+      49
+    ],
+    "episodes": 360,
+    "conditions": "Full and exactly two frozen selected paths",
+    "primary": "One-sided exact ten-task sign-flip randomization including ties; Holm2 across exactly two frozen directions",
+    "sensitivity": "One-sided paired-case exact McNemar, Holm2, descriptive only",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261105,
+    "bootstrap_quantile_method": "linear",
+    "verdict": "Both directions positive, Holm2 primary p<.05, whole-task bootstrap lower>0, every task leave-one-out>0; both paths remain>=.75 and >=Full-.15 overall",
+    "no_reselection": true
+  },
+  "new_episode_cap": 760,
+  "termination": "No qualified discovery pair means no confirmation. Valid policy failures are never rerun. This bounded branch ending does not complete the overall research goal.",
+  "interpretation": "Suite-conditioned path behavior only; no universal semantic-category, runtime-selector or exclusive-GPU acceleration claim",
+  "all_previous_negative_evidence_preserved": true
+}

@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "replay_samples": [
+    {
+      "suite": "libero_object",
+      "task": 1,
+      "init": 0,
+      "replans": 26,
+      "old_kalman_max_abs": 0.0,
+      "frozen_kalman_max_abs": 0.0,
+      "hold_max_abs": 0.0,
+      "source_telemetry_sha256": "64463c54fcf6705c94eaa4b0ddb4cd00b5e7485fdf55fff9cc3c7a7626687bf3"
+    },
+    {
+      "suite": "libero_spatial",
+      "task": 1,
+      "init": 0,
+      "replans": 25,
+      "old_kalman_max_abs": 0.0,
+      "frozen_kalman_max_abs": 0.0,
+      "hold_max_abs": 0.0,
+      "source_telemetry_sha256": "3bf0766352c36b98e8b95ec9b911c079555052ea67ca9f8ba6d1ff87ff324c9e"
+    },
+    {
+      "suite": "libero_goal",
+      "task": 1,
+      "init": 0,
+      "replans": 17,
+      "old_kalman_max_abs": 0.0,
+      "frozen_kalman_max_abs": 0.0,
+      "hold_max_abs": 0.0,
+      "source_telemetry_sha256": "a82a9978a995729c392b45b9480482242dd6b60f4a2ec671e89b280b97dffef4"
+    },
+    {
+      "suite": "libero_10",
+      "task": 1,
+      "init": 0,
+      "replans": 50,
+      "old_kalman_max_abs": 0.0,
+      "frozen_kalman_max_abs": 0.0,
+      "hold_max_abs": 0.0,
+      "source_telemetry_sha256": "232dece4206564bf20d90572d522930bc19d9e3f0a645f90ddd40b3ff3fd304f"
+    }
+  ],
+  "original_source_snapshot_sha256": {
+    "predictor.py": "075a1714918a51083c3d3b097b622d0736419fe3324663de7915b382d3e11eb4",
+    "predictor_experiment.py": "ec247d66ad38b2e865aae75abeff55c9ad7fff4a5cdd3989bd1ae6beeb4ac51a"
+  },
+  "sample_scope": "4 complete episodes, deterministic suite/task1/init0, all replans/all50 horizons",
+  "no_future_interface": "predict_history takes only executed actions/cutoff/config/horizon; unit future mutation checks all51 configs",
+  "source_code_sha256": {
+    "preparations/idea1_v3_2/predictor.py": "075a1714918a51083c3d3b097b622d0736419fe3324663de7915b382d3e11eb4",
+    "preparations/idea1_v3_2/predictor_experiment.py": "931ef3ef41cc720e1e441d1c2f5ebb5a27a00e708fa8cacf2b937a700356a598",
+    "preparations/idea1_v3_2/test_predictor.py": "26df53120acdfa31f5825ba14a0640277f70bf054154c1d399812f3a01ad52a9",
+    "preparations/idea1_v3_2/test_predictor_metrics.py": "c413a2dd58167196a927b281b8a895992f29bdd5da18c7da276ffec3b760e50d",
+    "preparations/idea1_v3_2/predictor_audit.py": "25817015553387764b02bb8e9f96ed12d4c886c6e444c459b404c0f91a595b56",
+    "preparations/idea1_v3_2/predictor_revision2.py": "0de49c02e72b3cb404f299d86837b46a8efc1eaaee74cfbb572f016a5d0b042f"
+  },
+  "innovations": [
+    {
+      "method": "WLP",
+      "defined_replans": 6165,
+      "mean_norm_proxy_mm": 2.2329829016358085,
+      "norm_p95_proxy_mm": 4.962858248880044,
+      "definition": "Last already-observed command minus its prior one-step prediction; frozen Kalman original innovation preserved"
+    },
+    {
+      "method": "ConstantTurn",
+      "defined_replans": 6165,
+      "mean_norm_proxy_mm": 3.042813068394519,
+      "norm_p95_proxy_mm": 7.1316087002276225,
+      "definition": "Last already-observed command minus its prior one-step prediction; frozen Kalman original innovation preserved"
+    },
+    {
+      "method": "VAR",
+      "defined_replans": 6165,
+      "mean_norm_proxy_mm": 3.058549314188936,
+      "norm_p95_proxy_mm": 7.104046910583683,
+      "definition": "Last already-observed command minus its prior one-step prediction; frozen Kalman original innovation preserved"
+    },
+    {
+      "method": "KalmanFrozen",
+      "defined_replans": 6165,
+      "mean_norm_proxy_mm": 1.2724342219544207,
+      "norm_p95_proxy_mm": 2.72997667230108,
+      "definition": "Last already-observed command minus its prior one-step prediction; frozen Kalman original innovation preserved"
+    }
+  ]
+}

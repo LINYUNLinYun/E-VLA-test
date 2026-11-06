@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "input_pairs": 12,
+  "model_calls_checked": 48,
+  "exact_controlled_input_pairs": 11,
+  "approximate_background_auxiliary_pairs": 1,
+  "checks": [
+    "All12 metadata-selected cases have a complete valid pair and unchanged frozen source hashes",
+    "ABBA arm order with bitwise identical same-input raw and decoded repeats",
+    "All decoded50x7 and raw50x32 arrays finite",
+    "Every mode matches the selected suite-specific head; vision1/head1, AE/VLM/verify/Full0",
+    "All non-robot interventions preserve complete recorded physical fields and all nonimage observations bitwise",
+    "Noise pairs preserve wrist image bitwise; background replacement is nonempty and static-arena-owned",
+    "Original camera image shapes are unchanged"
+  ],
+  "selected_versions": {
+    "case0102": "capture_v2", "case0302": "capture_v2",
+    "case0253": "capture_v3", "case0103": "capture_v3", "case0303": "capture_v3",
+    "case0250": "capture_v3", "case0100": "capture_v3", "case0300": "capture_v3",
+    "case0251": "capture_v3", "case0101": "capture_v3", "case0301": "capture_v3",
+    "case0252": "capture_v5"
+  },
+  "case0252_scope": "Preregistered LANCZOS1024-to512 mother furniture texture at actual resolution; not exact native-resolution restoration. Original v4 mismatch rejection preserved.",
+  "service_recovery": "Only case0252 uses recovered service PID3752040; it passed all four recorded-head raw/decoded bitwise gates before requests",
+  "resource_cleanup": {
+    "owned_service_shutdown": "RPC after PID/UUID/source identity verification",
+    "owned_service_receipt_status": "complete",
+    "owned_service_pid_absent": true,
+    "GPU0_memory_after_shutdown_mib": 1,
+    "GPU3_d2_watcher_remains_active": 3752472
+  },
+  "limitations": "Input sensitivity is not closed-loop failure causality. Robot arm-qpos/qvel interventions legitimately change required actions. No numerical model-feature conclusions use invalid visual_preencoder buffers. D2 quality evaluation is still pending separately."
+}

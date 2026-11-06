@@ -1,0 +1,1140 @@
+{
+  "scope": "CPU summary of existing completed JSON only; no SQL/test/GPU rerun. GPU0 comparisons only. Profile establishes mechanism, not steady-state ranking.",
+  "profiles": [
+    {
+      "case": "gpu0_full",
+      "requests": 8,
+      "next_encoder_requests": 7,
+      "distributions": {
+        "AE_x_currentVLM_ms": {
+          "n": 8,
+          "mean": 9.191184,
+          "p50": 9.146936499999999,
+          "p95": 9.5793904,
+          "min": 8.760795,
+          "max": 9.598016
+        },
+        "AE_x_nextVision_ms": {
+          "n": 7,
+          "mean": 7.8944027142857145,
+          "p50": 9.750093,
+          "p95": 11.716376200000001,
+          "min": 0.0,
+          "max": 11.734771
+        },
+        "ae_busy_ms": {
+          "n": 8,
+          "mean": 33.145079375,
+          "p50": 32.7990455,
+          "p95": 35.807521949999995,
+          "min": 30.379912,
+          "max": 35.844784
+        },
+        "ae_envelope_ms": {
+          "n": 8,
+          "mean": 56.31929625,
+          "p50": 55.5574555,
+          "p95": 60.8125054,
+          "min": 51.769694,
+          "max": 60.891331
+        },
+        "ae_finish_minus_currentVLM_finish_kernel_ms": {
+          "n": 8,
+          "mean": 25.261650500000002,
+          "p50": 25.491214499999998,
+          "p95": 28.4471392,
+          "min": 21.458988,
+          "max": 28.598608
+        },
+        "ae_finish_minus_currentVLM_finish_profile_event_ms": {
+          "n": 8,
+          "mean": 25.26928400993347,
+          "p50": 25.49839973449707,
+          "p95": 28.454454612731933,
+          "min": 21.467744827270508,
+          "max": 28.60585594177246
+        },
+        "ae_graph_launch_after_vlm_graph_launch_ms": {
+          "n": 8,
+          "mean": 2.071151375,
+          "p50": 1.9954304999999999,
+          "p95": 2.4562682,
+          "min": 1.890281,
+          "max": 2.648197
+        },
+        "ae_kernel_start_after_vlm_kernel_start_ms": {
+          "n": 8,
+          "mean": 3.75855,
+          "p50": 3.7614419999999997,
+          "p95": 3.9088388,
+          "min": 3.60221,
+          "max": 3.909186
+        },
+        "exposed_ae_after_currentVLM_kernel_ms": {
+          "n": 8,
+          "mean": 25.261650500000002,
+          "p50": 25.491214499999998,
+          "p95": 28.4471392,
+          "min": 21.458988,
+          "max": 28.598608
+        },
+        "exposed_ae_after_currentVLM_profile_event_ms": {
+          "n": 8,
+          "mean": 25.26928400993347,
+          "p50": 25.49839973449707,
+          "p95": 28.454454612731933,
+          "min": 21.467744827270508,
+          "max": 28.60585594177246
+        },
+        "next_encoder_finish_minus_AE_finish_kernel_ms": {
+          "n": 7,
+          "mean": 1.7952832857142857,
+          "p50": 1.910337,
+          "p95": 9.102814699999996,
+          "min": -8.243877,
+          "max": 10.545158
+        },
+        "next_encoder_finish_minus_AE_finish_profile_event_ms": {
+          "n": 7,
+          "mean": 1.7878399235861642,
+          "p50": 1.901695966720581,
+          "p95": 9.094847774505611,
+          "min": -8.251104354858398,
+          "max": 10.536383628845215
+        },
+        "next_vision_busy_ms": {
+          "n": 7,
+          "mean": 12.145125,
+          "p50": 12.568931,
+          "p95": 13.671668799999999,
+          "min": 9.617793,
+          "max": 13.676008
+        },
+        "next_vision_envelope_ms": {
+          "n": 7,
+          "mean": 13.106366285714286,
+          "p50": 13.727048,
+          "p95": 14.7041904,
+          "min": 10.38871,
+          "max": 14.728488
+        },
+        "vision_busy_ms": {
+          "n": 8,
+          "mean": 11.944121124999999,
+          "p50": 12.0230445,
+          "p95": 13.6709456,
+          "min": 9.617793,
+          "max": 13.676008
+        },
+        "vision_envelope_ms": {
+          "n": 8,
+          "mean": 12.88583525,
+          "p50": 13.0559115,
+          "p95": 14.7001408,
+          "min": 10.38871,
+          "max": 14.728488
+        },
+        "vlm_busy_ms": {
+          "n": 8,
+          "mean": 34.591514124999996,
+          "p50": 33.967922,
+          "p95": 36.1888149,
+          "min": 33.400977,
+          "max": 36.200787
+        },
+        "vlm_envelope_ms": {
+          "n": 8,
+          "mean": 34.81619575,
+          "p50": 34.1890275,
+          "p95": 36.44084755,
+          "min": 33.605267,
+          "max": 36.457748
+        }
+      },
+      "ae_kernel_tail_before_or_at_vlm_requests": 0,
+      "resource_verified": true,
+      "driver_sm_pair": [
+        null,
+        null
+      ],
+      "resource_assignments": [
+        {
+          "stage": "Vision",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 0,
+          "stream_id": 13,
+          "kernel_count": 12825,
+          "actual_eligible_sms": null,
+          "passed": true
+        },
+        {
+          "stage": "VLM",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 0,
+          "stream_id": 17,
+          "kernel_count": 8118,
+          "actual_eligible_sms": null,
+          "passed": true
+        },
+        {
+          "stage": "AE",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 0,
+          "stream_id": 21,
+          "kernel_count": 86208,
+          "actual_eligible_sms": null,
+          "passed": true
+        }
+      ],
+      "private_graph_pool_evidence": {
+        "kind": "source_invariant_not_nsys_pool_measurement",
+        "source": "/root/nfs/embodied/benchmark/preparations/idea2/progressive_kv.py",
+        "recorded_sha256": "f67f9309016294acf4da408277b64ab23a9a6e372b79e0cb5da616b85a1074ec",
+        "current_sha256": "f67f9309016294acf4da408277b64ab23a9a6e372b79e0cb5da616b85a1074ec",
+        "recorded_source_matches": true,
+        "profile_completed": true,
+        "constructor_contains_private_pool_check": true,
+        "explanation": "Frozen constructor checks six distinct private Graph pools and raises on alias before measured requests. Allocator pool IDs are not exported by this nsys trace; this is source/finished-run evidence, not a measured pool-ID claim."
+      },
+      "nsys_device_event_timestamps_available": 0,
+      "profile_host_and_event_metrics": {
+        "ae_submit_ms": {
+          "n": 8,
+          "mean": 18.118546344339848
+        },
+        "lookahead_prepare_ms": {
+          "n": 8,
+          "mean": 26.989415753632784
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 7,
+          "mean": 13.887981619153704
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 7,
+          "mean": -1.7878399235861642
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 8,
+          "mean": 25.26928400993347
+        }
+      },
+      "lookahead_prepare_only_next_encoder_ms": {
+        "n": 7,
+        "mean": 30.845046575580323
+      },
+      "final_step_frontier_mean": 18,
+      "ae_nonkernel_gap_mean_ms": 23.174216875,
+      "ae_vlm_kernel_vs_profile_event_delta_max_abs_ms": 0.008816726928710494
+    },
+    {
+      "case": "gpu0_sm16",
+      "requests": 8,
+      "next_encoder_requests": 7,
+      "distributions": {
+        "AE_x_currentVLM_ms": {
+          "n": 8,
+          "mean": 34.124268875,
+          "p50": 33.433997000000005,
+          "p95": 36.331604999999996,
+          "min": 33.343241,
+          "max": 36.364953
+        },
+        "AE_x_nextVision_ms": {
+          "n": 7,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "ae_busy_ms": {
+          "n": 8,
+          "mean": 48.715155,
+          "p50": 47.8206845,
+          "p95": 51.5350271,
+          "min": 47.720545,
+          "max": 51.546652
+        },
+        "ae_envelope_ms": {
+          "n": 8,
+          "mean": 49.177302375,
+          "p50": 48.288444,
+          "p95": 52.0275608,
+          "min": 48.147277,
+          "max": 52.032836
+        },
+        "ae_finish_minus_currentVLM_finish_kernel_ms": {
+          "n": 8,
+          "mean": 14.4579495,
+          "p50": 14.257886,
+          "p95": 15.104708,
+          "min": 14.172095,
+          "max": 15.1359
+        },
+        "ae_finish_minus_currentVLM_finish_profile_event_ms": {
+          "n": 8,
+          "mean": 14.46448004245758,
+          "p50": 14.264352321624756,
+          "p95": 15.11176609992981,
+          "min": 14.178976058959961,
+          "max": 15.14310359954834
+        },
+        "ae_graph_launch_after_vlm_graph_launch_ms": {
+          "n": 8,
+          "mean": 2.072903375,
+          "p50": 2.0603325,
+          "p95": 2.13664395,
+          "min": 2.039072,
+          "max": 2.161243
+        },
+        "ae_kernel_start_after_vlm_kernel_start_ms": {
+          "n": 8,
+          "mean": 4.459693375,
+          "p50": 4.3549815,
+          "p95": 4.7817048,
+          "min": 4.338646,
+          "max": 4.78194
+        },
+        "exposed_ae_after_currentVLM_kernel_ms": {
+          "n": 8,
+          "mean": 14.4579495,
+          "p50": 14.257886,
+          "p95": 15.104708,
+          "min": 14.172095,
+          "max": 15.1359
+        },
+        "exposed_ae_after_currentVLM_profile_event_ms": {
+          "n": 8,
+          "mean": 14.46448004245758,
+          "p50": 14.264352321624756,
+          "p95": 15.11176609992981,
+          "min": 14.178976058959961,
+          "max": 15.14310359954834
+        },
+        "next_encoder_finish_minus_AE_finish_kernel_ms": {
+          "n": 7,
+          "mean": 28.452654142857142,
+          "p50": 28.107997,
+          "p95": 34.145995,
+          "min": 24.050246,
+          "max": 34.719565
+        },
+        "next_encoder_finish_minus_AE_finish_profile_event_ms": {
+          "n": 7,
+          "mean": 28.44879068647112,
+          "p50": 28.10358428955078,
+          "p95": 34.14113883972168,
+          "min": 24.045408248901367,
+          "max": 34.71443176269531
+        },
+        "next_vision_busy_ms": {
+          "n": 7,
+          "mean": 10.033447142857142,
+          "p50": 9.904223,
+          "p95": 10.5848766,
+          "min": 9.866337,
+          "max": 10.869411
+        },
+        "next_vision_envelope_ms": {
+          "n": 7,
+          "mean": 10.993811428571428,
+          "p50": 10.818214,
+          "p95": 11.597783799999998,
+          "min": 10.793798,
+          "max": 11.848516
+        },
+        "vision_busy_ms": {
+          "n": 8,
+          "mean": 10.140494875,
+          "p50": 9.9074895,
+          "p95": 10.8826827,
+          "min": 9.866337,
+          "max": 10.889829
+        },
+        "vision_envelope_ms": {
+          "n": 8,
+          "mean": 11.1087455,
+          "p50": 10.845334,
+          "p95": 11.890615200000001,
+          "min": 10.793798,
+          "max": 11.913284
+        },
+        "vlm_busy_ms": {
+          "n": 8,
+          "mean": 38.861185375000005,
+          "p50": 38.0588985,
+          "p95": 41.40997555,
+          "min": 37.947301,
+          "max": 41.439196
+        },
+        "vlm_envelope_ms": {
+          "n": 8,
+          "mean": 39.17904625,
+          "p50": 38.382436,
+          "p95": 41.731092000000004,
+          "min": 38.248453,
+          "max": 41.767324
+        }
+      },
+      "ae_kernel_tail_before_or_at_vlm_requests": 0,
+      "resource_verified": true,
+      "driver_sm_pair": [
+        16,
+        112
+      ],
+      "resource_assignments": [
+        {
+          "stage": "Vision",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 3,
+          "stream_id": 18,
+          "kernel_count": 12825,
+          "actual_eligible_sms": 112,
+          "passed": true
+        },
+        {
+          "stage": "VLM",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 3,
+          "stream_id": 18,
+          "kernel_count": 8118,
+          "actual_eligible_sms": 112,
+          "passed": true
+        },
+        {
+          "stage": "AE",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 2,
+          "stream_id": 15,
+          "kernel_count": 86208,
+          "actual_eligible_sms": 16,
+          "passed": true
+        }
+      ],
+      "private_graph_pool_evidence": {
+        "kind": "source_invariant_not_nsys_pool_measurement",
+        "source": "/root/nfs/embodied/benchmark/results/idea2/progressive_kv_20261025/resource_adapter.py",
+        "recorded_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+        "current_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+        "recorded_source_matches": true,
+        "profile_completed": true,
+        "constructor_contains_private_pool_check": true,
+        "explanation": "Frozen constructor checks six distinct private Graph pools and raises on alias before measured requests. Allocator pool IDs are not exported by this nsys trace; this is source/finished-run evidence, not a measured pool-ID claim."
+      },
+      "nsys_device_event_timestamps_available": 0,
+      "profile_host_and_event_metrics": {
+        "ae_submit_ms": {
+          "n": 8,
+          "mean": 18.311037216335535
+        },
+        "lookahead_prepare_ms": {
+          "n": 8,
+          "mean": 49.927028361707926
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 7,
+          "mean": 31.272389275687082
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 7,
+          "mean": -28.44879068647112
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 8,
+          "mean": 14.46448004245758
+        }
+      },
+      "lookahead_prepare_only_next_encoder_ms": {
+        "n": 7,
+        "mean": 57.05946098480906
+      },
+      "final_step_frontier_mean": 18,
+      "ae_nonkernel_gap_mean_ms": 0.4621473749999936,
+      "ae_vlm_kernel_vs_profile_event_delta_max_abs_ms": 0.007203599548340378
+    },
+    {
+      "case": "gpu0_sm32",
+      "requests": 8,
+      "next_encoder_requests": 7,
+      "distributions": {
+        "AE_x_currentVLM_ms": {
+          "n": 8,
+          "mean": 37.4840495,
+          "p50": 36.7825435,
+          "p95": 39.03123925,
+          "min": 36.699199,
+          "max": 39.04515
+        },
+        "AE_x_nextVision_ms": {
+          "n": 7,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "ae_busy_ms": {
+          "n": 8,
+          "mean": 37.758188875,
+          "p50": 37.043296999999995,
+          "p95": 39.32378185,
+          "min": 36.969627,
+          "max": 39.33292
+        },
+        "ae_envelope_ms": {
+          "n": 8,
+          "mean": 38.240714499999996,
+          "p50": 37.494209,
+          "p95": 39.81872995,
+          "min": 37.417074,
+          "max": 39.824968
+        },
+        "ae_finish_minus_currentVLM_finish_kernel_ms": {
+          "n": 8,
+          "mean": -0.848405,
+          "p50": -0.5529740000000001,
+          "p95": -0.49743065000000003,
+          "min": -1.570939,
+          "max": -0.476991
+        },
+        "ae_finish_minus_currentVLM_finish_profile_event_ms": {
+          "n": 8,
+          "mean": -0.8409960083663464,
+          "p50": -0.5460480153560638,
+          "p95": -0.4896320030093193,
+          "min": -1.5633920431137085,
+          "max": -0.46992000937461853
+        },
+        "ae_graph_launch_after_vlm_graph_launch_ms": {
+          "n": 8,
+          "mean": 2.010166375,
+          "p50": 2.0141245000000003,
+          "p95": 2.04602725,
+          "min": 1.968608,
+          "max": 2.048829
+        },
+        "ae_kernel_start_after_vlm_kernel_start_ms": {
+          "n": 8,
+          "mean": 4.99882125,
+          "p50": 4.823982,
+          "p95": 5.3036376,
+          "min": 4.808878,
+          "max": 5.304108
+        },
+        "exposed_ae_after_currentVLM_kernel_ms": {
+          "n": 8,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "exposed_ae_after_currentVLM_profile_event_ms": {
+          "n": 8,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "next_encoder_finish_minus_AE_finish_kernel_ms": {
+          "n": 7,
+          "mean": 13.576767,
+          "p50": 13.042383,
+          "p95": 15.0808518,
+          "min": 12.802416,
+          "max": 15.083367
+        },
+        "next_encoder_finish_minus_AE_finish_profile_event_ms": {
+          "n": 7,
+          "mean": 13.573970249720983,
+          "p50": 13.03929615020752,
+          "p95": 15.077794933319092,
+          "min": 12.798720359802246,
+          "max": 15.080703735351562
+        },
+        "next_vision_busy_ms": {
+          "n": 7,
+          "mean": 11.574785142857143,
+          "p50": 11.247237,
+          "p95": 12.420564,
+          "min": 11.21988,
+          "max": 12.420939
+        },
+        "next_vision_envelope_ms": {
+          "n": 7,
+          "mean": 12.660839142857142,
+          "p50": 12.449873,
+          "p95": 13.4858498,
+          "min": 12.234482,
+          "max": 13.489133
+        },
+        "vision_busy_ms": {
+          "n": 8,
+          "mean": 11.681474125000001,
+          "p50": 11.2476985,
+          "p95": 12.4257217,
+          "min": 11.21988,
+          "max": 12.428297
+        },
+        "vision_envelope_ms": {
+          "n": 8,
+          "mean": 12.763287875,
+          "p50": 12.462609,
+          "p95": 13.4860866,
+          "min": 12.234482,
+          "max": 13.489133
+        },
+        "vlm_busy_ms": {
+          "n": 8,
+          "mean": 43.756483875,
+          "p50": 42.543558,
+          "p95": 46.328506250000004,
+          "min": 42.467835,
+          "max": 46.344622
+        },
+        "vlm_envelope_ms": {
+          "n": 8,
+          "mean": 44.08794075,
+          "p50": 42.855948999999995,
+          "p95": 46.6854102,
+          "min": 42.78723,
+          "max": 46.700015
+        }
+      },
+      "ae_kernel_tail_before_or_at_vlm_requests": 8,
+      "resource_verified": true,
+      "driver_sm_pair": [
+        32,
+        96
+      ],
+      "resource_assignments": [
+        {
+          "stage": "Vision",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 3,
+          "stream_id": 18,
+          "kernel_count": 12825,
+          "actual_eligible_sms": 96,
+          "passed": true
+        },
+        {
+          "stage": "VLM",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 3,
+          "stream_id": 18,
+          "kernel_count": 8118,
+          "actual_eligible_sms": 96,
+          "passed": true
+        },
+        {
+          "stage": "AE",
+          "kernel_primary_context_id": 1,
+          "kernel_green_context_id": 2,
+          "stream_id": 15,
+          "kernel_count": 86208,
+          "actual_eligible_sms": 32,
+          "passed": true
+        }
+      ],
+      "private_graph_pool_evidence": {
+        "kind": "source_invariant_not_nsys_pool_measurement",
+        "source": "/root/nfs/embodied/benchmark/results/idea2/progressive_kv_20261025/resource_adapter.py",
+        "recorded_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+        "current_sha256": "7d9f9178782a92ea05dc4e00bdf7294d48f9bba229ef9495234327c0261b3887",
+        "recorded_source_matches": true,
+        "profile_completed": true,
+        "constructor_contains_private_pool_check": true,
+        "explanation": "Frozen constructor checks six distinct private Graph pools and raises on alias before measured requests. Allocator pool IDs are not exported by this nsys trace; this is source/finished-run evidence, not a measured pool-ID claim."
+      },
+      "nsys_device_event_timestamps_available": 0,
+      "profile_host_and_event_metrics": {
+        "ae_submit_ms": {
+          "n": 8,
+          "mean": 17.994457855820656
+        },
+        "lookahead_prepare_ms": {
+          "n": 8,
+          "mean": 25.27508419007063
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 7,
+          "mean": 0.0015497143280559353
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 7,
+          "mean": -13.573970249720983
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 8,
+          "mean": -0.8409960083663464
+        }
+      },
+      "lookahead_prepare_only_next_encoder_ms": {
+        "n": 7,
+        "mean": 28.88581050293786
+      },
+      "final_step_frontier_mean": 16.625,
+      "ae_nonkernel_gap_mean_ms": 0.48252562499999385,
+      "ae_vlm_kernel_vs_profile_event_delta_max_abs_ms": 0.009150008811950716
+    }
+  ],
+  "nonprofile_boundaries": [
+    {
+      "case": "gpu0_full_control_formal",
+      "phase": "paired",
+      "requests": 800,
+      "pairs": 100,
+      "resource_ae_min": 0,
+      "metrics": {
+        "ae_ms": {
+          "n": 800,
+          "mean": 54.98390658378601
+        },
+        "vlm_ms": {
+          "n": 800,
+          "mean": 33.795946612358094
+        },
+        "ae_submit_ms": {
+          "n": 800,
+          "mean": 0.3852383513003588
+        },
+        "lookahead_prepare_ms": {
+          "n": 800,
+          "mean": 24.75257550366223
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 800,
+          "mean": 24.8326464176178
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 800,
+          "mean": 24.8326464176178
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 700,
+          "mean": 12.290887701511384
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 700,
+          "mean": 0.0891889378403513
+        }
+      }
+    },
+    {
+      "case": "gpu0_full_control_formal",
+      "phase": "continuous",
+      "requests": 100,
+      "pairs": 100,
+      "resource_ae_min": 0,
+      "metrics": {
+        "ae_ms": {
+          "n": 100,
+          "mean": 55.698882522583006
+        },
+        "vlm_ms": {
+          "n": 100,
+          "mean": 33.94236392974854
+        },
+        "ae_submit_ms": {
+          "n": 100,
+          "mean": 0.3852969780564308
+        },
+        "lookahead_prepare_ms": {
+          "n": 100,
+          "mean": 27.507306560873985
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 100,
+          "mean": 25.41905916213989
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 100,
+          "mean": 25.41905916213989
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 99,
+          "mean": 12.3020774306673
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 99,
+          "mean": 0.09957623794307989
+        }
+      }
+    },
+    {
+      "case": "gpu0_full_control_formal_repeat",
+      "phase": "paired",
+      "requests": 800,
+      "pairs": 100,
+      "resource_ae_min": 0,
+      "metrics": {
+        "ae_ms": {
+          "n": 800,
+          "mean": 55.02614020824432
+        },
+        "vlm_ms": {
+          "n": 800,
+          "mean": 33.8232808637619
+        },
+        "ae_submit_ms": {
+          "n": 800,
+          "mean": 0.3870876645669341
+        },
+        "lookahead_prepare_ms": {
+          "n": 800,
+          "mean": 24.68532918486744
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 800,
+          "mean": 24.85211775302887
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 800,
+          "mean": 24.85211775302887
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 700,
+          "mean": 12.343279912812369
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 700,
+          "mean": 0.046156069145571174
+        }
+      }
+    },
+    {
+      "case": "gpu0_full_control_formal_repeat",
+      "phase": "continuous",
+      "requests": 100,
+      "pairs": 100,
+      "resource_ae_min": 0,
+      "metrics": {
+        "ae_ms": {
+          "n": 100,
+          "mean": 55.66528522491455
+        },
+        "vlm_ms": {
+          "n": 100,
+          "mean": 33.93274555206299
+        },
+        "ae_submit_ms": {
+          "n": 100,
+          "mean": 0.3947494179010391
+        },
+        "lookahead_prepare_ms": {
+          "n": 100,
+          "mean": 28.92235368490219
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 100,
+          "mean": 25.39727872848511
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 100,
+          "mean": 25.39727872848511
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 99,
+          "mean": 12.16062061110455
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 99,
+          "mean": 0.20585503390957272
+        }
+      }
+    },
+    {
+      "case": "gpu0_sm16_lead3_formal",
+      "phase": "paired",
+      "requests": 800,
+      "pairs": 100,
+      "resource_ae_min": 16,
+      "metrics": {
+        "ae_ms": {
+          "n": 800,
+          "mean": 48.81665406703949
+        },
+        "vlm_ms": {
+          "n": 800,
+          "mean": 38.57754983425141
+        },
+        "ae_submit_ms": {
+          "n": 800,
+          "mean": 0.42298207990825176
+        },
+        "lookahead_prepare_ms": {
+          "n": 800,
+          "mean": 24.87191534601152
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 800,
+          "mean": 14.630411529541016
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 800,
+          "mean": 14.630411529541016
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 700,
+          "mean": 3.7983129621190685
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 700,
+          "mean": 0.009455908521111788
+        }
+      }
+    },
+    {
+      "case": "gpu0_sm16_lead3_formal",
+      "phase": "continuous",
+      "requests": 100,
+      "pairs": 100,
+      "resource_ae_min": 16,
+      "metrics": {
+        "ae_ms": {
+          "n": 100,
+          "mean": 49.31677192687988
+        },
+        "vlm_ms": {
+          "n": 100,
+          "mean": 38.83200927734375
+        },
+        "ae_submit_ms": {
+          "n": 100,
+          "mean": 0.42730003595352173
+        },
+        "lookahead_prepare_ms": {
+          "n": 100,
+          "mean": 28.321140483021736
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 100,
+          "mean": 14.90082815170288
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 100,
+          "mean": 14.90082815170288
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 99,
+          "mean": 3.7539012552511815
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 99,
+          "mean": 0.0015204848446459932
+        }
+      }
+    },
+    {
+      "case": "gpu0_sm16_lead3_repeat",
+      "phase": "paired",
+      "requests": 800,
+      "pairs": 100,
+      "resource_ae_min": 16,
+      "metrics": {
+        "ae_ms": {
+          "n": 800,
+          "mean": 48.789256892204286
+        },
+        "vlm_ms": {
+          "n": 800,
+          "mean": 38.5492645072937
+        },
+        "ae_submit_ms": {
+          "n": 800,
+          "mean": 0.42022706009447575
+        },
+        "lookahead_prepare_ms": {
+          "n": 800,
+          "mean": 24.725694032385945
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 800,
+          "mean": 14.629991697072983
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 800,
+          "mean": 14.629991697072983
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 700,
+          "mean": 3.810859888281141
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 700,
+          "mean": 0.003259245789210711
+        }
+      }
+    },
+    {
+      "case": "gpu0_sm16_lead3_repeat",
+      "phase": "continuous",
+      "requests": 100,
+      "pairs": 100,
+      "resource_ae_min": 16,
+      "metrics": {
+        "ae_ms": {
+          "n": 100,
+          "mean": 49.29764366149902
+        },
+        "vlm_ms": {
+          "n": 100,
+          "mean": 38.81718315124512
+        },
+        "ae_submit_ms": {
+          "n": 100,
+          "mean": 0.4187193512916565
+        },
+        "lookahead_prepare_ms": {
+          "n": 100,
+          "mean": 27.2307962551713
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 100,
+          "mean": 14.891458559036256
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 100,
+          "mean": 14.891458559036256
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 99,
+          "mean": 3.763489610016948
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 99,
+          "mean": 0.001572202017408504
+        }
+      }
+    },
+    {
+      "case": "gpu0_resource_sm32_lead3_screen_clean",
+      "phase": "paired",
+      "requests": 160,
+      "pairs": 20,
+      "resource_ae_min": 32,
+      "metrics": {
+        "ae_ms": {
+          "n": 160,
+          "mean": 36.07100801467895
+        },
+        "vlm_ms": {
+          "n": 160,
+          "mean": 42.8544718503952
+        },
+        "ae_submit_ms": {
+          "n": 160,
+          "mean": 0.4122057231143117
+        },
+        "lookahead_prepare_ms": {
+          "n": 160,
+          "mean": 25.246989424340427
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 160,
+          "mean": -1.9429952025413513
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 160,
+          "mean": 0.0
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 140,
+          "mean": -14.21533876827785
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 140,
+          "mean": 0.001791999995475635
+        }
+      }
+    },
+    {
+      "case": "gpu0_resource_sm32_lead3_screen_clean",
+      "phase": "continuous",
+      "requests": 20,
+      "pairs": 20,
+      "resource_ae_min": 32,
+      "metrics": {
+        "ae_ms": {
+          "n": 20,
+          "mean": 36.11499500274658
+        },
+        "vlm_ms": {
+          "n": 20,
+          "mean": 42.92510719299317
+        },
+        "ae_submit_ms": {
+          "n": 20,
+          "mean": 0.44722873717546463
+        },
+        "lookahead_prepare_ms": {
+          "n": 20,
+          "mean": 26.688757352530956
+        },
+        "ae_finish_after_vlm_ms": {
+          "n": 20,
+          "mean": -1.9613695919513703
+        },
+        "exposed_ae_after_vlm_ms": {
+          "n": 20,
+          "mean": 0.0
+        },
+        "ae_finish_minus_next_encoder_ms": {
+          "n": 19,
+          "mean": -14.242115271718879
+        },
+        "next_encoder_start_after_vlm_ms": {
+          "n": 19,
+          "mean": 0.0017785263112991263
+        }
+      }
+    }
+  ],
+  "sources": {
+    "results/idea2/progressive_kv_20261025/trace_analysis/gpu0_full/report.json": {
+      "sha256": "7cea8e492ce63dca2e33e8be718a58bbe8b59274ec5c671d7d211dfa0c7c82d7"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_full_lead3_profile/result.json": {
+      "sha256": "19c0026b021e974f78f771db97bea1dd85042949c3c598439e5d3ae540f54a64"
+    },
+    "results/idea2/progressive_kv_20261025/trace_analysis/gpu0_sm16/report.json": {
+      "sha256": "d1e577643647adb4073af18670ecc26b86782e45e58bb6bde400e93eb123337b"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_sm16_lead3_profile/result.json": {
+      "sha256": "53bfe4da6d9ccfb69c01c4987ed1de3a7414de21e85147b94a35ad919fdb8314"
+    },
+    "results/idea2/progressive_kv_20261025/trace_analysis/gpu0_sm32/report.json": {
+      "sha256": "7ceef78276622bc5eaed2401ff65bcd6909e66518302ed5b42f41b6f8f855de3"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_sm32_exposure_profile/result.json": {
+      "sha256": "a4f7e019013fdb79d747453c4bed29a84a64ea01ff59538620da1bfc2affeb9b"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_full_control_formal/result.json": {
+      "sha256": "9085ff9ad9b1ecb8eee30db1105a0420829535f1065c57b6827e059cf758ec09"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_full_control_formal_repeat/result.json": {
+      "sha256": "b03fb979280aad20f01d5ad263ba8ede2ded192eb9ad413fc9bed5706b1afbe9"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_sm16_lead3_formal/result.json": {
+      "sha256": "852a081b2a36dcd81705ee04c68cf0fab597529e9a4dbdfff62c8519da33eadd"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_sm16_lead3_repeat/result.json": {
+      "sha256": "a6be396ad81d6b00a4e4f6f3b417b3adf883217d4a9442694a352a7561e32d9e"
+    },
+    "results/idea2/progressive_kv_20261025/gpu0_resource_sm32_lead3_screen_clean/result.json": {
+      "sha256": "f68dbd35b4ba2994b59369e953d6a6049abd45121c5061fdfd8e2e2376129691"
+    }
+  },
+  "mechanism_conclusions": [
+    "SM16/112 and SM32/96 allocations are verified by CUPTI Kernel.greenContextId -> Green context metadata and driver-queried actual_resources. All ordinary kernel contextId values are 1, so ordinary contextId would not prove partitioning. Counts denote eligibility, not occupancy.",
+    "Full -> SM16: AE kernel busy time increases 33.145 to 48.715 ms, but its kernel envelope falls 56.319 to 49.177 ms; nonkernel gaps fall 23.174 to 0.462 ms. Actual AE x VLM intersection increases 9.191 to 34.124 ms. This supports less scheduling/resource interference while individual AE execution uses fewer SMs; it is a profile mechanism comparison, not a steady latency estimate.",
+    "SM32: all eight AE last kernels finish before VLM last kernel by 0.477 to 1.571 ms (mean 0.848 ms). AE x VLM intersection is 37.484 ms, but AE x next Vision is zero because next Vision begins after VLM finishes. The final-step frontier is 16 or 17 instead of 18, so zero exposed AE is not automatically a better freshness/quality condition.",
+    "SM16 profile next Vision overlap is zero, with next Encoder starting 31.272 ms after VLM by profile Events. Non-profile formal paired repeats place it only 0.00946/0.00326 ms after VLM and Encoder ends 3.798/3.811 ms before AE. The profiler case therefore does not establish zero steady-state next Encoder overlap.",
+    "Full profile next Encoder ends 1.788 ms after AE on average; non-profile paired repeats place it 12.291/12.343 ms before AE. Near-aligned profile endpoints must not be advertised as steady-state alignment.",
+    "SM32 non-profile exploratory screen (20 pairs, 160 paired requests) also has no exposed AE, with AE ending about 1.943 ms before VLM and next Encoder ending about 14.215 ms after AE. This supports the mechanism, but is not the 100-pair selected-candidate confirmation.",
+    "CUDA Event deltas from the matching profile result agree closely with kernel endpoint deltas; nsys export contains zero populated device Event timestamps, so no direct nsys Event timestamp validation is claimed.",
+    "Six private Graph pools are supported by matching frozen constructor source hashes, explicit uniqueness checks, and passed runs. Allocator pool IDs are not directly observable in these nsys exports."
+  ]
+}

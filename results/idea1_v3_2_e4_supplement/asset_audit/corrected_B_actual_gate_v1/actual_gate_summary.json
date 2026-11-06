@@ -1,0 +1,1105 @@
+{
+  "status": "actual_interfaces_measured_parent_review_required",
+  "registration_hash": "0741c77193c559b07d1c9d95173821d03d764cef27043a042f038dd858d8c386",
+  "model_calls": 0,
+  "quality_requests": 0,
+  "scientific_samples": 0,
+  "source_files": {
+    "preparations/idea1_v3_2_e4_supplement/transfer_registration.py": "66efbd59634279907566bc3375442cd82f555b74a3ff9037a3913192d38b8dd8",
+    "preparations/idea1_v3_2_e4_supplement/evaluate_transfer.py": "f710d2246efc5bf99cbb2e76fd2a0c756e6a1200b8fe156ed8b8ee1da7a941e4",
+    "preparations/idea1_v3_2_e4_supplement/corrected_transfer_envs.py": "32c7a6dc78681c83fa523dbda1a22c7080d506572caa8b55106fedf3761113ce",
+    "preparations/idea1_v3_2_e4_supplement/policy_native.py": "a5587967236f18bdd72ccabee6e2891bffe931963e8296bbddb144e7105ba2ad",
+    "preparations/idea1_v3_2_e4_supplement/native_envs.py": "67de3f67a2a1f09a0b7d3ace55ccef097ff3600ac824f88ab620f193c6e85b45",
+    "preparations/idea1_v3_2/transfer_envs.py": "a06e2562eb6a26265df5024a0b4a937b66b693659f661eab60f586e3df059f60",
+    "preparations/idea1_v3_2/transfer_client.py": "f805961dc17d8cde002f29bcebbf98fba7f1dc6ec2b62496039ce1e2ff310d2c",
+    "preparations/idea1_v2_1/runtime_client.py": "32e541081a7a325c2efe8ce51108964498d54497d2963dca15f9861fc50499dd",
+    "SimplerEnv/scripts/octo_pick_coke_can_visual_matching.sh": "3b34dec9cfa47fcc01282a2d6636c8408c112a05ef21bb112fda55ee80c7cf42",
+    "SimplerEnv/scripts/octo_move_near_visual_matching.sh": "707bb0a95af2fbcc4103b5db510f5677b294934c7e42a922d4774de642f2de60",
+    "SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/envs/custom_scenes/grasp_single_in_scene.py": "c067aa46582a2ad9ced5a360b583221a9be635fab578368a0441685dced1965d",
+    "SimplerEnv/ManiSkill2_real2sim/mani_skill2_real2sim/envs/custom_scenes/move_near_in_scene.py": "32f67ef26591b7b652ade2c583ec68645ab7a6de5e01739b584dec3c5a953d29",
+    "SimplerEnv/simpler_env/evaluation/maniskill2_evaluator.py": "f248e5e36bc351ae256450b296be3a5919d132a442ee9fbda005486a3f42452b",
+    "SimplerEnv/simpler_env/evaluation/argparse.py": "ae4c9942d0bafe23cf5f2bdc8d18ae3518211ea77fd628a3defb9f8aa6cdb6ec",
+    "SimplerEnv/simpler_env/__init__.py": "ed5079f2aa8d9c85938f86440195ecdf90c4ee3afebb96b778375aad7cccac25"
+  },
+  "gate_sources": {
+    "preparations/idea1_v3_2_e4_supplement/transfer_actual_gate.py": "94faa6cfb867d392868fb95ded1ec9e1e631011ae1d0208b47f43b2b5ffab46c",
+    "preparations/idea1_v3_2_e4_supplement/test_transfer_actual_gate.py": "2d8f422891b4a834b4822f9a96a53d121579a4fb8e5c3176e5ad949b824012c1"
+  },
+  "tests": {
+    "passed": 2
+  },
+  "environments": {
+    "calvin": {
+      "status": "complete_actual_interface_gate_requires_parent_review",
+      "rows": 2,
+      "wall_s": 3.885182425379753,
+      "receipt_sha256": "ac12ae4b8403c14e5069131212a3fef5022ea1c9ba0bfc0fa7f381888c63812e",
+      "fresh_initial_comparison": {
+        "max_abs_state_difference": 0.0,
+        "initial_raw_hashes_equal": true,
+        "state_equal": true
+      },
+      "cases": [
+        {
+          "case_id": "calvin_seq0000",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                0.025868424822843045,
+                -0.2313131826364944,
+                0.5712804965677825
+              ],
+              "eef_euler_world": [
+                3.090455184366489,
+                -0.02908339967118504,
+                1.5001358568296401
+              ],
+              "gripper_width_m": 0.079999265105995
+            },
+            "native_observation_fields": {
+              "robot_obs": [
+                0.025868424822843045,
+                -0.2313131826364944,
+                0.5712804965677825,
+                3.090455184366489,
+                -0.02908339967118504,
+                1.5001358568296401,
+                0.079999265105995,
+                -1.217790424680681,
+                1.0398761151208846,
+                2.1197824715503697,
+                -2.34205014,
+                -0.8701585120731463,
+                1.6411883363363506,
+                0.5534499103241034,
+                1.0
+              ],
+              "scene_obs": [
+                0.28,
+                0.22,
+                0.0,
+                0.088,
+                1.0,
+                1.0,
+                -0.24085633205640333,
+                0.09238823169906385,
+                0.4608681417204517,
+                -0.0027288998438842684,
+                -0.0025934169218012333,
+                1.8859447466013783,
+                0.23002537860742317,
+                -0.12003233429931191,
+                0.4599563400942585,
+                0.0018869514085834108,
+                -0.001971391553283066,
+                1.4881414775069177,
+                0.07034599933100182,
+                0.09238707166382512,
+                0.46087111696268174,
+                0.0018231829415301891,
+                -0.0024921344394519427,
+                1.4683770643731602
+              ]
+            }
+          },
+          "initialization_check": {
+            "status": "native_nonGoogle_reset"
+          },
+          "state8": [
+            -0.2941315770149231,
+            0.22868682444095612,
+            1.2432805299758911,
+            2.28554630279541,
+            2.1279094219207764,
+            0.08766809850931168,
+            0.03999963402748108,
+            -0.03999963402748108
+          ],
+          "rgb_shape": [
+            200,
+            200,
+            3
+          ],
+          "rgb_std": 63.030940221317216,
+          "wrist_black": false,
+          "instruction": null,
+          "controller": null,
+          "verified_width_mapping": true
+        },
+        {
+          "case_id": "calvin_seq0000",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                0.025868424822843045,
+                -0.2313131826364944,
+                0.5712804965677825
+              ],
+              "eef_euler_world": [
+                3.090455184366489,
+                -0.02908339967118504,
+                1.5001358568296401
+              ],
+              "gripper_width_m": 0.079999265105995
+            },
+            "native_observation_fields": {
+              "robot_obs": [
+                0.025868424822843045,
+                -0.2313131826364944,
+                0.5712804965677825,
+                3.090455184366489,
+                -0.02908339967118504,
+                1.5001358568296401,
+                0.079999265105995,
+                -1.217790424680681,
+                1.0398761151208846,
+                2.1197824715503697,
+                -2.34205014,
+                -0.8701585120731463,
+                1.6411883363363506,
+                0.5534499103241034,
+                1.0
+              ],
+              "scene_obs": [
+                0.28,
+                0.22,
+                0.0,
+                0.088,
+                1.0,
+                1.0,
+                -0.24085633205640333,
+                0.09238823169906385,
+                0.4608681417204517,
+                -0.0027288998438842684,
+                -0.0025934169218012333,
+                1.8859447466013783,
+                0.23002537860742317,
+                -0.12003233429931191,
+                0.4599563400942585,
+                0.0018869514085834108,
+                -0.001971391553283066,
+                1.4881414775069177,
+                0.07034599933100182,
+                0.09238707166382512,
+                0.46087111696268174,
+                0.0018231829415301891,
+                -0.0024921344394519427,
+                1.4683770643731602
+              ]
+            }
+          },
+          "initialization_check": {
+            "status": "native_nonGoogle_reset"
+          },
+          "state8": [
+            -0.2941315770149231,
+            0.22868682444095612,
+            1.2432805299758911,
+            2.28554630279541,
+            2.1279094219207764,
+            0.08766809850931168,
+            0.03999963402748108,
+            -0.03999963402748108
+          ],
+          "rgb_shape": [
+            200,
+            200,
+            3
+          ],
+          "rgb_std": 63.030940221317216,
+          "wrist_black": false,
+          "instruction": null,
+          "controller": null,
+          "verified_width_mapping": true
+        }
+      ]
+    },
+    "pusht": {
+      "status": "complete_actual_interface_gate_requires_parent_review",
+      "rows": 2,
+      "wall_s": 1.4430218860507011,
+      "receipt_sha256": "e393d3250e222b9acae77f7bc120f053357c2037bd43b3531342f15fa4877e21",
+      "fresh_initial_comparison": {
+        "max_abs_state_difference": 0.0,
+        "initial_raw_hashes_equal": true,
+        "state_equal": true
+      },
+      "cases": [
+        {
+          "case_id": "pusht_stress_seed000",
+          "actual_initial": {
+            "actual": {
+              "agent_xy_pixels": [
+                222.0,
+                97.0
+              ],
+              "block_xy_angle": [
+                217.0,
+                292.0,
+                3.0079994677219553
+              ]
+            },
+            "native_observation_fields": {
+              "native_state": [
+                222.0,
+                97.0,
+                217.0,
+                292.0,
+                3.0079994677219553
+              ]
+            }
+          },
+          "initialization_check": {
+            "status": "native_nonGoogle_reset"
+          },
+          "state8": [
+            -0.2510853707790375,
+            -0.1974187195301056,
+            1.174249529838562,
+            3.140895366668701,
+            -0.00284781982190907,
+            -0.08773931115865707,
+            0.03872336447238922,
+            -0.0387222021818161
+          ],
+          "rgb_shape": [
+            256,
+            256,
+            3
+          ],
+          "rgb_std": 21.859627468005463,
+          "wrist_black": true,
+          "instruction": null,
+          "controller": null
+        },
+        {
+          "case_id": "pusht_stress_seed000",
+          "actual_initial": {
+            "actual": {
+              "agent_xy_pixels": [
+                222.0,
+                97.0
+              ],
+              "block_xy_angle": [
+                217.0,
+                292.0,
+                3.0079994677219553
+              ]
+            },
+            "native_observation_fields": {
+              "native_state": [
+                222.0,
+                97.0,
+                217.0,
+                292.0,
+                3.0079994677219553
+              ]
+            }
+          },
+          "initialization_check": {
+            "status": "native_nonGoogle_reset"
+          },
+          "state8": [
+            -0.2510853707790375,
+            -0.1974187195301056,
+            1.174249529838562,
+            3.140895366668701,
+            -0.00284781982190907,
+            -0.08773931115865707,
+            0.03872336447238922,
+            -0.0387222021818161
+          ],
+          "rgb_shape": [
+            256,
+            256,
+            3
+          ],
+          "rgb_std": 21.859627468005463,
+          "wrist_black": true,
+          "instruction": null,
+          "controller": null
+        }
+      ]
+    },
+    "simpler": {
+      "status": "complete_actual_interface_gate_requires_parent_review",
+      "rows": 6,
+      "wall_s": 32.562328066676855,
+      "receipt_sha256": "ce9fc61ec2d3698704d9bdcb6917ea88a2730d204b341c65c77a89271c23b275",
+      "fresh_initial_comparison": null,
+      "cases": [
+        {
+          "case_id": "google_robot_pick_coke_can_init000",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03249869868159294,
+                -0.7801727056503296,
+                -0.6038522720336914,
+                0.16011546552181244
+              ],
+              "robot_base_xyz_world": [
+                0.3499999940395355,
+                0.19999998807907104,
+                0.0790499895811081
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.1459333449602127,
+                  0.4457443058490753,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.0018131053075194359,
+                  0.402965784072876,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865667139038478,
+              "object_poses_world": {
+                "opened_coke_can": {
+                  "xyz": [
+                    -0.3491050601005554,
+                    -0.019844546914100647,
+                    0.919625461101532
+                  ],
+                  "quaternion_wxyz": [
+                    -1.2308359146118164e-05,
+                    0.013943105936050415,
+                    0.0024877425748854876,
+                    0.9998997449874878
+                  ]
+                }
+              },
+              "native_urdf_visual_version": ""
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "requested_xy": [
+              -0.35,
+              -0.02
+            ],
+            "orientation": "lr_switch",
+            "actual_pose_is_separately_measured": true
+          },
+          "state8": [
+            -0.22061558067798615,
+            -0.21841692924499512,
+            1.8738688230514526,
+            2.1185994148254395,
+            -2.7372148036956787,
+            0.11402080208063126,
+            0.07932833582162857,
+            -0.07932833582162857
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 46.64590254071909,
+          "wrist_black": true,
+          "instruction": "pick coke can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        },
+        {
+          "case_id": "google_robot_pick_coke_can_init024",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03249869868159294,
+                -0.7801727056503296,
+                -0.6038522720336914,
+                0.16011546552181244
+              ],
+              "robot_base_xyz_world": [
+                0.3499999940395355,
+                0.19999998807907104,
+                0.0790499895811081
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.1459333449602127,
+                  0.4457443058490753,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.0018131053075194359,
+                  0.402965784072876,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865667139038478,
+              "object_poses_world": {
+                "opened_coke_can": {
+                  "xyz": [
+                    -0.11911948025226593,
+                    0.4201514422893524,
+                    0.9196261167526245
+                  ],
+                  "quaternion_wxyz": [
+                    0.0004145179409533739,
+                    0.013925671577453613,
+                    0.0024802384432405233,
+                    0.9998999834060669
+                  ]
+                }
+              },
+              "native_urdf_visual_version": "recolor_tabletop_visual_matching_2"
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "requested_xy": [
+              -0.12,
+              0.42
+            ],
+            "orientation": "lr_switch",
+            "actual_pose_is_separately_measured": true
+          },
+          "state8": [
+            -0.22061558067798615,
+            -0.21841692924499512,
+            1.8738688230514526,
+            2.1185994148254395,
+            -2.7372148036956787,
+            0.11402080208063126,
+            0.07932833582162857,
+            -0.07932833582162857
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 45.96845719960277,
+          "wrist_black": true,
+          "instruction": "pick coke can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        },
+        {
+          "case_id": "google_robot_pick_coke_can_init025",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03249869868159294,
+                -0.7801727056503296,
+                -0.6038522720336914,
+                0.16011546552181244
+              ],
+              "robot_base_xyz_world": [
+                0.3499999940395355,
+                0.19999998807907104,
+                0.0790499895811081
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.1459333449602127,
+                  0.4457443058490753,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.0018131053075194359,
+                  0.402965784072876,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865667139038478,
+              "object_poses_world": {
+                "opened_coke_can": {
+                  "xyz": [
+                    -0.3503499925136566,
+                    -0.02029385417699814,
+                    0.9564727544784546
+                  ],
+                  "quaternion_wxyz": [
+                    0.7056318521499634,
+                    0.708574116230011,
+                    -0.0018563208868727088,
+                    0.0017416696064174175
+                  ]
+                }
+              },
+              "native_urdf_visual_version": ""
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "requested_xy": [
+              -0.35,
+              -0.02
+            ],
+            "orientation": "upright",
+            "actual_pose_is_separately_measured": true
+          },
+          "state8": [
+            -0.22061558067798615,
+            -0.21841692924499512,
+            1.8738688230514526,
+            2.1185994148254395,
+            -2.7372148036956787,
+            0.11402080208063126,
+            0.07932833582162857,
+            -0.07932833582162857
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 46.55494482814148,
+          "wrist_black": true,
+          "instruction": "pick coke can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        },
+        {
+          "case_id": "google_robot_pick_coke_can_init049",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.08938442170619965,
+                0.41841691732406616,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03249869868159294,
+                -0.7801727056503296,
+                -0.6038522720336914,
+                0.16011546552181244
+              ],
+              "robot_base_xyz_world": [
+                0.3499999940395355,
+                0.19999998807907104,
+                0.0790499895811081
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.1459333449602127,
+                  0.4457443058490753,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.0018131053075194359,
+                  0.402965784072876,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865667139038478,
+              "object_poses_world": {
+                "opened_coke_can": {
+                  "xyz": [
+                    -0.12000022828578949,
+                    0.4199998676776886,
+                    0.9565699696540833
+                  ],
+                  "quaternion_wxyz": [
+                    0.7071065306663513,
+                    0.7071071267127991,
+                    -1.3401731848716736e-06,
+                    1.6229460015892982e-06
+                  ]
+                }
+              },
+              "native_urdf_visual_version": "recolor_tabletop_visual_matching_2"
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "requested_xy": [
+              -0.12,
+              0.42
+            ],
+            "orientation": "upright",
+            "actual_pose_is_separately_measured": true
+          },
+          "state8": [
+            -0.22061558067798615,
+            -0.21841692924499512,
+            1.8738688230514526,
+            2.1185994148254395,
+            -2.7372148036956787,
+            0.11402080208063126,
+            0.07932833582162857,
+            -0.07932833582162857
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 46.000134214775784,
+          "wrist_black": true,
+          "instruction": "pick coke can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        },
+        {
+          "case_id": "google_robot_move_near_init000",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.067975252866745,
+                0.46702393889427185,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03966853767633438,
+                -0.8065471053123474,
+                -0.5681449770927429,
+                0.1584913283586502
+              ],
+              "robot_base_xyz_world": [
+                0.34999996423721313,
+                0.20999997854232788,
+                0.07905001938343048
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.044984862208366394,
+                -2.9802322387695312e-08,
+                -1.4901161193847656e-08,
+                0.9989877343177795
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.12183918803930283,
+                  0.499323308467865,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.021464424207806587,
+                  0.4434386193752289,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865669744027455,
+              "object_poses_world": {
+                "blue_plastic_bottle": {
+                  "xyz": [
+                    -0.3319035470485687,
+                    0.04483913257718086,
+                    0.9746599793434143
+                  ],
+                  "quaternion_wxyz": [
+                    0.5194656252861023,
+                    0.4805901348590851,
+                    0.5079048275947571,
+                    0.491143137216568
+                  ]
+                },
+                "baked_opened_pepsi_can_v2": {
+                  "xyz": [
+                    -0.3299998641014099,
+                    0.3399990499019623,
+                    0.9518200159072876
+                  ],
+                  "quaternion_wxyz": [
+                    0.7071078419685364,
+                    0.7071057558059692,
+                    -1.1046722647733986e-06,
+                    -4.069542228535283e-06
+                  ]
+                },
+                "orange": {
+                  "xyz": [
+                    -0.1297542005777359,
+                    0.19045114517211914,
+                    0.9234077334403992
+                  ],
+                  "quaternion_wxyz": [
+                    0.7072345018386841,
+                    -0.0020030811429023743,
+                    0.006878388114273548,
+                    0.7069426774978638
+                  ]
+                }
+              },
+              "native_urdf_visual_version": "",
+              "episode_source_obj": "blue_plastic_bottle",
+              "episode_target_obj": "baked_opened_pepsi_can_v2"
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "official_episode_id": 0,
+            "object_ids": [
+              "blue_plastic_bottle",
+              "baked_opened_pepsi_can_v2",
+              "orange"
+            ],
+            "layout_index": 0,
+            "not_50_unique_geometry": true
+          },
+          "state8": [
+            -0.22061553597450256,
+            -0.2184167057275772,
+            1.8738688230514526,
+            2.1185991764068604,
+            -2.7372148036956787,
+            0.11402072012424469,
+            0.07932835072278976,
+            -0.07932835072278976
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 50.663383928203956,
+          "wrist_black": true,
+          "instruction": "move blue plastic bottle near pepsi can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        },
+        {
+          "case_id": "google_robot_move_near_init049",
+          "actual_initial": {
+            "actual": {
+              "eef_xyz_world": [
+                -0.067975252866745,
+                0.46702393889427185,
+                1.0409188270568848
+              ],
+              "eef_quaternion_wxyz": [
+                0.03966853767633438,
+                -0.8065471053123474,
+                -0.5681449770927429,
+                0.1584913283586502
+              ],
+              "robot_base_xyz_world": [
+                0.34999996423721313,
+                0.20999997854232788,
+                0.07905001938343048
+              ],
+              "robot_base_quaternion_wxyz": [
+                0.044984862208366394,
+                -2.9802322387695312e-08,
+                -1.4901161193847656e-08,
+                0.9989877343177795
+              ],
+              "native_qpos": [
+                -0.26394572854042053,
+                0.08319133520126343,
+                0.5017611384391785,
+                1.156859040260315,
+                0.028583671897649765,
+                1.5925981998443604,
+                -1.0806529521942139,
+                0.0,
+                0.0,
+                -0.0028596099000424147,
+                0.7851361036300659
+              ],
+              "actual_fingertip_world_positions": {
+                "link_finger_tip_right": [
+                  -0.12183918803930283,
+                  0.499323308467865,
+                  1.127332091331482
+                ],
+                "link_finger_tip_left": [
+                  0.021464424207806587,
+                  0.4434386193752289,
+                  1.0884357690811157
+                ]
+              },
+              "measured_gripper_width_m": 0.15865669744027455,
+              "object_poses_world": {
+                "orange": {
+                  "xyz": [
+                    -0.1298324465751648,
+                    0.04030820354819298,
+                    0.923409104347229
+                  ],
+                  "quaternion_wxyz": [
+                    0.7071430683135986,
+                    -0.0013771653175354004,
+                    0.004696068353950977,
+                    0.707053542137146
+                  ]
+                },
+                "baked_opened_pepsi_can_v2": {
+                  "xyz": [
+                    -0.32999926805496216,
+                    0.1900002360343933,
+                    0.9518200755119324
+                  ],
+                  "quaternion_wxyz": [
+                    0.7071075439453125,
+                    0.7071061134338379,
+                    -1.3400327588897198e-05,
+                    -1.3153767213225365e-05
+                  ]
+                },
+                "baked_opened_redbull_can_v2": {
+                  "xyz": [
+                    -0.13010823726654053,
+                    0.34024715423583984,
+                    0.9525974988937378
+                  ],
+                  "quaternion_wxyz": [
+                    0.7084405422210693,
+                    0.7057700753211975,
+                    -0.0005733006983064115,
+                    0.0006027132039889693
+                  ]
+                }
+              },
+              "native_urdf_visual_version": "recolor_tabletop_visual_matching_2",
+              "episode_source_obj": "baked_opened_redbull_can_v2",
+              "episode_target_obj": "baked_opened_pepsi_can_v2"
+            },
+            "native_observation_fields": {}
+          },
+          "initialization_check": {
+            "status": "registered_native_options_honored",
+            "official_episode_id": 59,
+            "object_ids": [
+              "orange",
+              "baked_opened_pepsi_can_v2",
+              "baked_opened_redbull_can_v2"
+            ],
+            "layout_index": 1,
+            "not_50_unique_geometry": true
+          },
+          "state8": [
+            -0.22061553597450256,
+            -0.2184167057275772,
+            1.8738688230514526,
+            2.1185991764068604,
+            -2.7372148036956787,
+            0.11402072012424469,
+            0.07932835072278976,
+            -0.07932835072278976
+          ],
+          "rgb_shape": [
+            512,
+            640,
+            3
+          ],
+          "rgb_std": 49.94501101672664,
+          "wrist_black": true,
+          "instruction": "move redbull can near pepsi can",
+          "controller": {
+            "control_mode": "arm_pd_ee_delta_pose_align_interpolate_by_planner_gripper_pd_joint_target_delta_pos_interpolate_by_planner",
+            "arm_translation": "meters in robot-base axes at actualEEF origin",
+            "arm_rotation": "rotation vector radians, left-composed in base axes",
+            "normalize_arm": false,
+            "use_target_arm": false,
+            "frame": "ee_align",
+            "gripper": "normalized joint target delta; positive closes",
+            "native_hz": 3
+          }
+        }
+      ]
+    }
+  },
+  "failure_history": [
+    "simpler/receipt.json: missing CUDA_VISIBLE_DEVICES refused before renderer; parent approved environment-only corrected newattempt"
+  ],
+  "limitations": [
+    "Sequential short physical probes retain dynamics; controller target is not identical to observed one-cycle response.",
+    "Gripper opening after closing can lag; no parameter tuning or target-success optimization.",
+    "PushT remains synthetic arm-state XY projection stress, not native pi0.",
+    "CPU CALVIN uses width state plus actual-branch quaternion lift, not native target-trained sign-state."
+  ],
+  "artifact_sha256": {
+    "calvin/initial_00.npz": "fb053593e4a3a82b59abe0d54e761aafa35a3355c913fa97022b5edf300f1fd9",
+    "calvin/probe_0_pos.npz": "081c9dd743de44133552a7c5ce2bc83d5ac62dda3154c7faf8682fafdab0bac3",
+    "calvin/probe_0_neg.npz": "ae95244ba3918fd29d29096b112bc705793fc9848ae5abcbdb756a9fd59aa18d",
+    "calvin/probe_1_pos.npz": "6a9bd1669cd797c4d9db753151192d71824aed2ba7c189c3c89f025b478de8ed",
+    "calvin/probe_1_neg.npz": "59fb4dcd2bea888709847ee6bfdbe77f4ba085fa4d66037747e15787550e376b",
+    "calvin/probe_2_pos.npz": "6da161d72fec227fd21857e47e2c41da816d41009b62cde096974ffb40398a3a",
+    "calvin/probe_2_neg.npz": "21cf051c0e51aee8311094960c21356cfd7381e4185fffd5b987a50ccfc986ed",
+    "calvin/probe_3_pos.npz": "657e2f693efd4944797f7e69331833a9bf103ba9e595cf5932eefb4bba5ee901",
+    "calvin/probe_3_neg.npz": "6ab32e51d5d054aef8f3938ce8a21a84a75eb22329048bdc8f3e89f69deddc95",
+    "calvin/probe_4_pos.npz": "eda043e4d4524a56f0a1c7f2e1d3e69f9336ef932ba4a89bc42d572f2bbadbba",
+    "calvin/probe_4_neg.npz": "d38a4d238087f57692d1a9cd49e5299e1277e86f08980ccac42e5215d1bf4d35",
+    "calvin/probe_5_pos.npz": "2bde7118dd4e733b8455f65ef9820442b9f930fe0d160191b71468f1cc9bb49c",
+    "calvin/probe_5_neg.npz": "260c71c716b353bd07aa8a03eacbd4b8e9ca93f8b7d6389c585903ee09b2aea1",
+    "calvin/probe_6_pos.npz": "a5db18a768671a5465c4e83fe4b32f7bbe289b455db233f7e86955fc6f72bd02",
+    "calvin/probe_6_neg.npz": "8f823e309f81f7e0f8de3b45d6943bd34996b6e78b6cb1cad814b999a4eba834",
+    "calvin/receipt.json": "ac12ae4b8403c14e5069131212a3fef5022ea1c9ba0bfc0fa7f381888c63812e",
+    "calvin/initial_01.npz": "fb053593e4a3a82b59abe0d54e761aafa35a3355c913fa97022b5edf300f1fd9",
+    "pusht/initial_00.npz": "a545e43b28e028a9208e11e4fc509b9053803c272ed3d1276ba0e63d58bce3c0",
+    "pusht/probe_0_pos.npz": "8193efa8af84ff41203f11768d8eaac902942552553042a019557ed2bcbadfc9",
+    "pusht/probe_0_neg.npz": "0bf5ceb17080ecbeb207ae92cb7523000547be9799d7429ddd0e79b1ef37f426",
+    "pusht/probe_1_pos.npz": "421e2a95e7dc178a642918fc0ae337ed43cd0d89393a169836456a3d2f628018",
+    "pusht/probe_1_neg.npz": "27c4a9332d49c549e84fdb986298fb3c682d9d477754bb3c3678b300be9c6ba4",
+    "pusht/receipt.json": "e393d3250e222b9acae77f7bc120f053357c2037bd43b3531342f15fa4877e21",
+    "pusht/initial_01.npz": "a545e43b28e028a9208e11e4fc509b9053803c272ed3d1276ba0e63d58bce3c0",
+    "simpler/receipt.json": "015b3e26afa191b34dddb32fa675b492f052f57ab10f21cea1031b05fb819514",
+    "simpler_attempt001/initial_00.npz": "06200d7a324131c295dd987ede79105ac5de250e839931a123c83f829e026932",
+    "simpler_attempt001/probe_0_pos.npz": "e0083696abb2804f83e923118b7d7dce3f2ae16b720d54e8804fb3cf5752566b",
+    "simpler_attempt001/probe_0_neg.npz": "81f24b1ff5d8e78175f70521c7ebcc70e0db5015b185b872dd521e2364dbea77",
+    "simpler_attempt001/probe_1_pos.npz": "aeec8dd05cd6a1dde5333a521df61d3750a70550fd0accb3f518caf610b3f3fc",
+    "simpler_attempt001/probe_1_neg.npz": "fcbd53a7e74432ddc41cc5d6a17952b0c0444150bbdf04658eed53576e422ced",
+    "simpler_attempt001/probe_2_pos.npz": "e0700bbd26a945dcbf0a4a04471608d0b46d6f6167302debf6810fce0371955f",
+    "simpler_attempt001/probe_2_neg.npz": "abd04e8127cedbc4e68da5903de8f8750419497c5b16bdd8fb6b51d33cd3fe88",
+    "simpler_attempt001/probe_3_pos.npz": "6128e97edeecaf0886518286f75a661db84b7874485a13ed76be65a1ff06ef76",
+    "simpler_attempt001/probe_3_neg.npz": "c7cbf0956fffc4dbbf8a79b1f2a87015197a1e004dc10b2b465ef2b61056e424",
+    "simpler_attempt001/probe_4_pos.npz": "69a40105d883774efd7c8b5a9368ac94c85b3ed8bc45eb42bd2f578ddeedcae6",
+    "simpler_attempt001/probe_4_neg.npz": "7110c4bf11668e54347b2f33ffd07957ebe378f9d44132a3de356f852311bbe1",
+    "simpler_attempt001/probe_5_pos.npz": "ee6d1fecedc8a291ab45da904afd024664028ce53337c395ef6ebfc98607c69e",
+    "simpler_attempt001/probe_5_neg.npz": "6de22392bfa60d54f976c2cd1ac8e9b368bec024b3301fef6088e7cf416b6d10",
+    "simpler_attempt001/probe_6_pos.npz": "afaf24a3338956b1a11382077ceba6f1566f6ac1a1d7df2b93da97b679301435",
+    "simpler_attempt001/probe_6_neg.npz": "c4c40962862356a99cd812633616cef3a9adeaa2943033a07cd5997ca00e43d9",
+    "simpler_attempt001/receipt.json": "ce9fc61ec2d3698704d9bdcb6917ea88a2730d204b341c65c77a89271c23b275",
+    "simpler_attempt001/initial_01.npz": "cc6417f2e343b7d5381ae8de9040f39e49f6a64e6c3692632f4f1b47766a341d",
+    "simpler_attempt001/initial_02.npz": "a33928961b5e2f2b8a4fdcb21e269727e4cd496d2b3343548a879ad260b00d4d",
+    "simpler_attempt001/initial_03.npz": "7553424fe71a87eccd41c5fe44262986c58864914f4c7e361e4c81ea87ac372d",
+    "simpler_attempt001/initial_04.npz": "cd58c2a9b06c774e09d11da39658f1bf35cec19c39e5f20541aa9da0e0072951",
+    "simpler_attempt001/initial_05.npz": "67d82834177ec4d32342aa29fb2f0932d53c1505f72a617a11c6e7dc72d51eb2"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "status": "complete_and_independently_verified",
+  "audited_utc": "2026-10-22 06:17 UTC",
+  "workspace": "/root/nfs/embodied/benchmark",
+  "objective": "我更新了idea1文档的3.2主线实验，请你开始实验吧，完成可停止",
+  "requirements": {
+    "E1": {
+      "result": "Bounded batch exploration completed; retain B1, no practical rollout gain demonstrated",
+      "real_bank_inputs": 100,
+      "closed_loop_execution_records": 48,
+      "within_user_60_minute_budget": true,
+      "evidence": "results/idea1_v3_2/E1_BATCH_REPORT_ZH.md"
+    },
+    "E2": {
+      "result": "Ten Euler updates, full Transformer refresh at 0 and 3; native equivalence, timing and quality checked",
+      "actual_euler_updates": 10,
+      "actual_transformer_refreshes": 2,
+      "real_gate_inputs": 24,
+      "new_quality_episodes": 80,
+      "residual_successes_out_of_40": 34,
+      "native_d2_successes_out_of_40": 35,
+      "reused_native_d10_successes_out_of_40": 34,
+      "within_user_90_minute_budget": true,
+      "evidence": "results/idea1_v3_2/e2_lifecycle.json"
+    },
+    "E3": {
+      "result": "Weighted local polynomial, constant-turn and short VAR all evaluated; no eligible short-prefix improvement",
+      "calibration_episodes": 20,
+      "evaluation_episodes": 180,
+      "evaluation_replans": 6345,
+      "future_offsets": 50,
+      "candidate_count": 51,
+      "within_user_90_minute_budget": true,
+      "evidence": "results/idea1_v3_2/e3/revision2/report_zh.md"
+    },
+    "E4": {
+      "result": "All CALVIN, SimplerEnv and explicitly projected PushT cases completed for Full, V14 and all four released draft heads",
+      "unique_valid_episodes": 108,
+      "total_attempts": 138,
+      "historical_step0_technical_attempts": 30,
+      "resumed_prior_complete_keys_without_rerun": 78,
+      "manifest_hash": "3eeeb50e43b1078a61d9015bbb0fe371ff5f4bd98809e0242699de700369222f",
+      "manifest_file_sha256": "6ad4dc50b2140ebd01d3ac13ec34a7c6432393e708b2bf9032506c5b0bede7db",
+      "evidence": "results/idea1_v3_2/e4_transfer_20261022T051417Z/outcomes_audit_20261022T061020Z/audit.json",
+      "interpretation": "Full controls failed in the frozen zero-shot deployment; model-capacity causation is not established. Object draft had one native CALVIN success. PushT is not a native arm-policy benchmark."
+    }
+  },
+  "independent_e4_raw_record_audit": {
+    "status": "PASS",
+    "paired_initial_cases": 18,
+    "quality_requests": 5580,
+    "quality_requests_by_mode": {"full_d10":956,"v14_d10":866,"draft_goal":956,"draft_object":890,"draft_spatial":956,"draft_10":956},
+    "cross_condition_noise_groups": 956,
+    "actual_position_samples": 28005,
+    "executed_actions_matched_exactly_to_chunks": 27897,
+    "initial_npz_data_hashes_recomputed": 108,
+    "all_model_routes_and_uniform_d10_nodes_checked": true,
+    "both_services_quality_counters_match_all_selected_inference_logs": true,
+    "all_frozen_source_and_receipt_hashes_match": true,
+    "all_30_historical_errors_precede_policy_calls": true
+  },
+  "independent_media_audit": {
+    "E4_fixed_videos": 18,
+    "all_fully_decoded": true,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "frame_count_rule": "executed steps plus initial frame",
+    "calvin": {"videos":6,"frames_each":361,"fps":30,"resolution":[200,200]},
+    "simpler": {"videos":6,"frames_each":81,"fps":3,"resolution":[640,512]},
+    "pusht": {"videos":6,"frames_each":301,"fps":10,"resolution":[256,256]},
+    "E2_prior_independent_decode_count": 12
+  },
+  "other_acceptance": {
+    "core_cpu_tests_passed": 45,
+    "E2_source_input_and_artifact_hashes_rechecked": 16,
+    "E3_code_and_parent_input_hashes_rechecked": 11,
+    "main_report_local_links_checked": 30,
+    "E4_html_local_links_checked": 40,
+    "missing_checked_links": 0,
+    "main_report_sha256": "dc983a985b6734423ef400587bd63bf438c6915e7351819e3b9a5625502727ec"
+  },
+  "cleanup": {
+    "all_E4_owned_child_processes_absent": true,
+    "known_E1_E2_controllers_services_and_clients_absent": true,
+    "GPU3_final_compute_pids": [],
+    "GPU3_final_memory_mib": 1,
+    "no_foreign_processes_signalled": true,
+    "remaining_scientific_runs": 0
+  },
+  "final_report": "docs/experiments/idea1/idea1_v3_2_report.md"
+}

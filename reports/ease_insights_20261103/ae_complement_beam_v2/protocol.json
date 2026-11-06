@@ -1,0 +1,216 @@
+{
+  "revision": "ease-AE16-joint-mask-world-v2",
+  "status": "prospective_before_new_pair_world_outcomes",
+  "time": 1793911067.1709664,
+  "proxy_selection": {
+    "path": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/ae_complement_beam_v1/analysis/selection.json",
+    "sha256": "8bdd13b5c091387ecba67c721df8452543cccc03a9305e08fde5646cceb42c11",
+    "selection_hash": "d54f2e2fd6e24c92752e01037991f8d75024f4d4140f6b1366674083df617fba"
+  },
+  "independent_proxy_reconstruction": {
+    "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/ae_complement_beam_v1/independent_audit.json",
+    "sha256": "bc958744a182396b3b830410a5e510b44a9cce4502192cc0722dac61a26d146d"
+  },
+  "conditions": [
+    {
+      "id": "full_d10",
+      "model": "pi0",
+      "mode": "full",
+      "compensation": null,
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 10,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": []
+    },
+    {
+      "id": "ae16_d2",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        8
+      ]
+    },
+    {
+      "id": "path_a",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        2,
+        13
+      ]
+    },
+    {
+      "id": "path_b",
+      "model": "pi0",
+      "mode": "periodic",
+      "compensation": "extrapolate",
+      "period": 2,
+      "H": 50,
+      "R": 5,
+      "D": 2,
+      "refresh_D": 10,
+      "skip": [],
+      "ae_skip": [
+        7,
+        14
+      ]
+    }
+  ],
+  "preregistered_directions": [
+    {
+      "suite": "libero_object",
+      "better": "path_a",
+      "worse": "path_b"
+    },
+    {
+      "suite": "libero_spatial",
+      "better": "path_b",
+      "worse": "path_a"
+    }
+  ],
+  "rationale": "The complete153-mask fixed-budget offline screen selected [2,13] versus [7,14]. Object/Spatial error preferences are a heuristic; new closed-loop outcomes must establish whether preferences transfer to success.",
+  "fixed_science": {
+    "H": 50,
+    "R": 5,
+    "Full_D": 10,
+    "Fast_D": 2,
+    "Full_AE": 18,
+    "Fast_AE": 16,
+    "VLM_layers": 18,
+    "vision_layers": 27,
+    "fresh_both_cameras": true,
+    "refresh_period": 2,
+    "cycle": "FullD10 then two FastD2 requests",
+    "training": false,
+    "residual_compensation": "Unused with empty VLM masks; established own-Full timestamps and receipts retained.",
+    "sampler": "Unmodified Pi0Adapter.sample, native eager arithmetic; observed helper dispatch bypasses two AE layers only on FastD2"
+  },
+  "calibration": {
+    "episodes": 8,
+    "independent_quality_cases": 0,
+    "conditions": [
+      "full_d10",
+      "ae16_d2"
+    ],
+    "tasks": [
+      0
+    ],
+    "inits": [
+      45
+    ],
+    "requirement": "Native no-bypassD2/D10 raw/decoded parity1e-5; actual ordered layer visits/NFE and full prefix, period/reset; all eight known Full/AE16 controls bitwise reproduce their two original roots.",
+    "fixed_cost": "All four definitions on each service, four fixed suite inputs,6 warmups plus12 measured requests; whole three-request native policy cycles."
+  },
+  "discovery": {
+    "new_conditions": [
+      "path_a",
+      "path_b"
+    ],
+    "new_episodes": 160,
+    "original_control_cells": 160,
+    "analytical_cells": 320,
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inits": [
+      45,
+      46
+    ],
+    "original_controls": {
+      "full_d10": {
+        "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/vlm_diversity_v2/discovery",
+        "cohort": "vlm_diversity_v2",
+        "condition": "full_d10",
+        "manifest_sha256": "a4a996b03059874ceb10a21e1099985508051d7ae0392af944e739911cd1494b",
+        "case_audit": {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/vlm_diversity_v2/full_discovery_audit.json",
+          "sha256": "41d70066f98bbe69ddb003a13cc87495e8e46fff4b8bdb5942e84ce0af31a383"
+        }
+      },
+      "ae16_d2": {
+        "root": "/root/nfs/embodied/benchmark/results/ease_insights_20261103/module_tradeoff_v1/discovery",
+        "cohort": "module_tradeoff_v1",
+        "condition": "ae_16",
+        "manifest_sha256": "80ea5dfd59fc51f90aa045a63b7c47f9ca66475da612eecb194e709429586e02",
+        "case_audit": {
+          "path": "/root/nfs/embodied/benchmark/reports/ease_insights_20261103/module_tradeoff_v1/discovery_acceptance.json",
+          "sha256": "f76ce8cc10b5943b909de1e39c28a62d1fd09ddc71b40bd184fa799099019d09"
+        }
+      }
+    },
+    "qualification": "Both new paths overall>=.75 and>=Full-.15, each completed-service median native fixed-input cost ratio>=1.15, pair costs within10%; both fixed proxy directions gap>=10pp,>=2 positive tasks, every task LOO positive.",
+    "direction_selection": "Exactly path_a>path_b onObject and path_b>path_a onSpatial. No suite/path reselection, no promotion of another screened mask, and no use of known AE16 benchmark as a selectable alternative."
+  },
+  "confirmation": {
+    "episodes": 360,
+    "inits": [
+      47,
+      48,
+      49
+    ],
+    "conditions": [
+      "full_d10",
+      "path_a",
+      "path_b"
+    ],
+    "directions": [
+      {
+        "suite": "libero_object",
+        "better": "path_a",
+        "worse": "path_b"
+      },
+      {
+        "suite": "libero_spatial",
+        "better": "path_b",
+        "worse": "path_a"
+      }
+    ],
+    "primary": "One-sided exact ten-task signflip including ties; Holm2 for exactly the two fixed directions.",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261109,
+    "bootstrap_arithmetic": "Integer paired/task difference sums before division; linear percentile quantiles.",
+    "success": "Both differences positive, both task-signflip Holm2p<.05, both whole-task-bootstrap lower bounds>0 and all task LOO positive. Both paths also pass the same quality/native-cost gates.",
+    "no_reselection": true
+  },
+  "physical_contract": {
+    "policy_action_limits": {
+      "libero_spatial": 220,
+      "libero_object": 280,
+      "libero_goal": 300,
+      "libero_10": 520
+    },
+    "settling_actions": 10,
+    "environment_seed": 7
+  },
+  "total_new_episode_cap": 528,
+  "independence": "init45\u201346 and original Full/AE16 controls are known discovery cases, not new controls or confirmation. Offline observations use historical initial/phase inputs and are not heldout quality results.",
+  "no_candidate": "Preserve all valid outcomes, keep confirmation locked, do not lower gates; continue the overall goal with a new bounded branch if warranted.",
+  "limits": "Suite-conditioned fixed paths only; no online phase-selection, runtime-routing gain, universal category inference, exclusive-GPU speed, or study-wide5% family-error claim."
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "kind": "independent_retry_history_source_receipt",
+  "source_hashes": {
+    "retry_history_audit.py": "ba222844a2b5d1c4bf88e77688d3e3e7869ac42656d3f156260cf10156c382ae",
+    "retry_history_transition.py": "55abdb500f36df55aa59afb41e48bf0b8c47958808241452dda1949a589febe4",
+    "independent_media_history_audit.py": "a3dac0b424cd0c5e884e5fea71656372fc20639fc991aa1458518f06a55319f3",
+    "throughput_provenance_audit_v4.py": "9f6522f0687057684913b5d3087b101aaa7913b8cd03c16caf1c058b4d9f2b97",
+    "final_provenance_analysis_v5.py": "dcdbbf4503e967ec3026c5c74a40b4a3bae133137849269ccdbc5e4c23219959"
+  },
+  "test_hashes": {
+    "test_retry_history_audit.py": "78a9ff2c1210c7dda1b47c721578a7ee7343e06da462986526324da9b466a53c",
+    "test_independent_media_history_audit.py": "096f3edace49ff01673d0b5d04324e902a6aa99e36322c704b6f23ea6f674f0f",
+    "test_throughput_provenance_audit_v4.py": "3aca02c8181e4706a75bf500efeefa432f0d4bcd7c6e0e89a511674ec1d1d546"
+  },
+  "cpu_tests_passed": 38,
+  "test_groups": {
+    "core_and_native_temp_cli": 12,
+    "history_provenance_and_final_wrapper": 9,
+    "media_temp_fixtures_including_preserved_base": 17
+  },
+  "media_controller_evidence": "/root/nfs/embodied/benchmark/policies/realtime-vla-flash/results/idea1_v2_2_sampling_steps/run_20261018T024042Z/media_audits/retry_history_v1",
+  "media_controller_source_manifest_sha256": "29208b41510d3cf8affa9f5f95c4aa910c428f6651d62ab9e242a5aeb5fbe915",
+  "preserved_guard_final_v4_sha256": "4940fd9cc35bf94118da283c088ce79577bf4d175df366380f2c2a1f13b3340c",
+  "preserved_media_helper_sha256": "c448d033123d9cc16b1d21855f43c47b7bb70c65fef85ff0ba68510134c191c0",
+  "scope": "complete actual append-order ledger resolution plus independent media/final composition; no scientific change or ledger projection",
+  "manifest_interface": "{data, file_sha256, path}: original manifest bytes identity, not a synthesized manifest",
+  "transition_scope": "only a single exact original shard0 dead reserved attempt with no episode/artifact/authorization fields; native reserve exact expected exception and status/error-only target delta",
+  "authorization_scope": "independent next phase runs original runtime_runner retry --launch; no automatic next phase or worker; exact root key/token/attempt/source/targetchain authority required",
+  "phase_evidence": "both phases register only own immutable receipt; index old/new bytes preserved by SHA, unknown/duplicate/drifted refs rejected",
+  "final_scope": "10800 unique effective valid with no unresolved history; all original offline/benchmark/media/C requirements retained",
+  "production_ledger_writes": 0,
+  "real_media_decodes": 0,
+  "gpu_queries": 0,
+  "model_calls": 0,
+  "signed_sources_modified": false,
+  "actual_execution_authorized": false,
+  "operator_templates": {
+    "plan": "<eval-python> retry_history_transition.py --attempt P --key KEY --token TOKEN",
+    "transition_only": "<eval-python> retry_history_transition.py --attempt P --key KEY --token TOKEN --phase transition_only --execute --approval ROOT_EXACT_PHASE_APPROVAL --evidence P/retry_recovery/UNIQUE_TRANSITION",
+    "authorize_retry": "<eval-python> retry_history_transition.py --attempt P --key KEY --token TOKEN --phase authorize_retry --execute --approval ROOT_EXACT_NEW_APPROVAL --transition-receipt PRIOR_RECEIPT --evidence P/retry_recovery/UNIQUE_AUTHORIZATION"
+  },
+  "independent_final_C_acceptance_required": true
+}
